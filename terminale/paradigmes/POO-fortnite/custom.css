@@ -1,0 +1,14 @@
+td.objet{
+    border: 1px solid black !important;
+    text-align: center !important;
+    font-size: xx-large !important;
+}
+table.classe{
+    margin: 0 10% 0 0;/*auto !important;*/
+    float: left;
+}
+.attributs{
+    float:right;
+    width:100px;
+    margin:5px;
+}

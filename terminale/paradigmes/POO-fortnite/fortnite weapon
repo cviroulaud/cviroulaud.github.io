@@ -1,0 +1,17 @@
+The dataset features the following columns:
+
+    Name: Name of the weapon
+    DPS: The damage per second of the weapon
+    Damage: The damage done by the weapon
+    Critical %: The critical hit chance of the weapon
+    Crit. Damage: The critical hit damage of the weapon
+    Fire Rate: The fire rate of the weapon
+    Mag. Size: The size of the magazine of the weapon
+    Range: The range of the weapon
+    Durability: The durability of the weapon
+    Reload Time: The reload time of the weapon
+    Ammo Cost: The cost in ammunition to fire a single projectile
+    Impact: The impact of the weapon i.e. the damage it does to buildings
+    Rarity: The rarity of the weapon
+    Type: What type of weapon is in question
+

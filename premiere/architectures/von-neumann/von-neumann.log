@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  22 AUG 2020 10:26
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 AUG 2020 07:57
  restricted system commands enabled.
 **von-neumann.tex
 (./von-neumann.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.121 seconds
+luaotfload | main : initialization completed in 0.072 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1028,10 +1028,10 @@ LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-<ressources/inside-pc.jpg, id=83, 803.0pt x 712.6625pt>
+<ressources/inside-pc.jpg, id=91, 803.0pt x 712.6625pt>
 File: ressources/inside-pc.jpg Graphic file (type jpg)
 <use ressources/inside-pc.jpg>
-Package luatex.def Info: ressources/inside-pc.jpg  used on input line 21.
+Package luatex.def Info: ressources/inside-pc.jpg  used on input line 22.
 (luatex.def)             Requested size: 199.16928pt x 176.76239pt.
 
 
@@ -1040,60 +1040,56 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=84, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=92, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 47.
+input line 48.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 <./ressources/inside-pc.jpg></home/tof/Documents/Cozy/latex-include/cc.png>]
-<ressources/von-neumann.png, id=100, 514.92375pt x 468.24937pt>
+<ressources/von-neumann.png, id=108, 514.92375pt x 468.24937pt>
 File: ressources/von-neumann.png Graphic file (type png)
 <use ressources/von-neumann.png>
-Package luatex.def Info: ressources/von-neumann.png  used on input line 56.
+Package luatex.def Info: ressources/von-neumann.png  used on input line 57.
 (luatex.def)             Requested size: 199.16928pt x 181.11607pt.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 79.
+input line 83.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 
 [2<./ressources/von-neumann.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 122.
+input line 117.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 122.
+input line 137.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (./von-neumann.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `von-neumann.out' has not changed.
-(rerunfilecheck)             Checksum: 8E7157F68CD842E3B1178ED971D84886;2674.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 6B8414635EECAD09DDC98806C8EA945C;2966.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26783 strings out of 494383
+ 26787 strings out of 494383
  100000,794899 words of node,token memory allocated
- 35052 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 39 glue, 4 kern, 1 penalty, 4565 glyph, 1010 attrib
-ute, 55 glue_spec, 170 attribute_list, 1 write nodes
-   avail lists: 1:5,2:1120,3:154,4:42,5:188,6:45,7:2161,8:78,9:180,10:9,11:247
- 30335 multiletter control sequences out of 65536+600000
+ 41646 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 41 glue, 4 kern, 1 penalty, 5483 glyph, 1076 attrib
+ute, 55 glue_spec, 181 attribute_list, 1 write nodes
+   avail lists: 1:5,2:824,3:144,4:42,5:184,6:34,7:1791,8:70,9:162,10:9,11:266
+ 30337 multiletter control sequences out of 65536+600000
  48 fonts using 7682447 bytes
  55i,15n,95p,1106b,636s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
@@ -1105,10 +1101,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/zapfding/uzdr.pfb>
-Output written on von-neumann.pdf (4 pages, 539459 bytes).
+Output written on von-neumann.pdf (4 pages, 541261 bytes).
 
-PDF statistics: 173 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 131072)
- 187 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 181 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 131072)
+ 203 words of extra memory for PDF output out of 10000 (max. 100000000)
 

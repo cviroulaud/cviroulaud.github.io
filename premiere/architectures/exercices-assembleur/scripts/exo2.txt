@@ -1,0 +1,16 @@
+      LDR R0, x
+      LDR R1, y
+      LDR R2, z
+      ADD R1,R1,#42
+      CMP R0,R1
+      BEQ egal
+      MOV R2,#2
+      B fin
+x:0
+y:0
+z:0
+egal:
+      MOV R2,#1
+fin:
+      STR R2,z
+      HALT

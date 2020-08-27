@@ -1,0 +1,3 @@
+      LDR R0, xCoordinate
+      ADD R0, R0, #6
+xCoordinate:

@@ -11,9 +11,10 @@
 \begin{document}
 \begin{Form}
 \begin{commentprof}
-\paragraph{Instruction:} Construire ce cours sous forme de carte mentale.
+\paragraph{devoir:} Construire ce cours sous forme de carte mentale.
 \end{commentprof}
-\paragraph{Objectif:}
+\paragraph{Objectif:}Distinguer les constituants d'une machine et leur rôle.
+
 \section{Problématique: comment ça fonctionne?}
 Une tablette, un smartphone, un ordinateur portable sont des objets du quotidien. Il s'agit d'objets qui reposent tous sur le même principe: l'ordinateur.
 \begin{figure}[!h]
@@ -74,6 +75,11 @@ chef d'orchestre de l'ordinateur. Elle doit:
 \item commander leur exécution (par l'UAL).
 \end{itemize} 
 \subsection{Mémoire}
+\subsection{Organisation de la mémoire}
+Une mémoire est un circuit à semi-conducteur permettant d’enregistrer, de conserver et de restituer des
+informations (instructions et variables). C’est cette capacité de mémorisation qui explique la polyvalence
+des systèmes numériques et leur adaptabilité à de nombreuses situations. Les informations peuvent être
+écrites ou lues.
 \subsubsection{Mémoire vive ou volatile}
 Elle contient à la fois les données et le programme qui indiquera à l’unité de contrôle quels sont les calculs à faire sur ces données. Les données stockées peuvent être lues, effacées, déplacées. Rapidité d'accès. Perd son contenu dès qu'on éteint l'ordinateur. On parle souvent de RAM (Random Access Memory).
 \subsubsection{Mémoire non volatile}
@@ -99,6 +105,15 @@ Conserve ses données à l'extinction. Exemple: mémoire ROM (Read Only Memory) 
 \end{itemize}
 \subsection{Transmission des données}
 Les \emph{bus} sont les liaisons très rapides qui permettent aux bits de circuler. Le terme dérive du latin omnibus (à tous). En pratique, des câbles.
+\section{Évolution}
+\begin{itemize}
+\item Les entrées-sorties, initialement commandées par l’unité centrale, sont depuis le début des années 1960 sous le contrôle de processeurs autonomes; mise en place utilisation en temps partagé.
+\item Les ordinateurs comportent maintenant des processeurs multiples; gain rapidité de calculs.
+\end{itemize}
+Ces deux évolutions ont pour conséquence de mettre la mémoire, plutôt que l’unité centrale, au centre de
+l’ordinateur, et d’augmenter le degré de parallélisme dans le traitement et la circulation de l’information.
+Mais elles ne remettent pas en cause les principes de base que sont la séparation entre traitement et
+commande et la notion de programme enregistré.
 \section{Limites du modèle}
 \subsection{Temps d'accès}
 Ce modèle impose un va-et-vient constant entre CPU et mémoire. Cependant la différence entre vitesse des microprocesseurs (nombre d'opérations par seconde) et mémoire (temps d'accès) est très importante. Les CPU passeraient la majorité de leur temps à attendre. Un processeur cadencé à 3GHz effectue $3.10^9$ opérations par seconde. C'est \emph{le goulot d'étranglement} du modèle de von Neumann.\\Les fabricants ont inventés des \emph{mémoires caches} situées proches du CPU. L'idée principale est qu'une donnée utilisée une fois a de grandes chances d'être utilisée plusieurs fois.

@@ -1,0 +1,45 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Structure de l'internet}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{\displaydate{madate}} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\paragraph{Objectif:} Comprendre ce qu'est internet.
+\section*{Retour historique}
+\begin{commentprof}
+\begin{itemize}
+\item Licklider imagina un ensemble d’ordinateurs interconnectés au niveau mondial à travers lequel chacun pourrait accéder rapidement aux données et programmes depuis n’importe quel site. En théorie, le concept était très semblable à l’Internet d’aujourd’hui. 
+\item Pendant son emploi à DARPA, il persuada ses successeurs, Ivan Sutherland, Bob Taylor et Lawrence G. Roberts, chercheur au MIT, de l’intérêt de ce concept de réseau informatique.
+\item 1972 démo ARPANET (Advanced Research Projects Agency Network) par Kahn; 23 nœuds en 1971, 111 en 1974; En 1980, Arpanet se divise en deux réseaux distincts, l'un militaire et l'autre, universitaire, que les militaires abandonnent au monde civil. Opérationnel le 20 septembre 1969, Arpanet sert de banc d'essai à de nouvelles technologies de gestion de réseau, liant plusieurs universités et centres de recherches. Les deux premiers nœuds qui forment l'Arpanet sont l'université de Californie à Los Angeles (UCLA) et l'Institut de recherche de Stanford (le premier message, le simple mot « login », sera envoyé sur le réseau le 29 octobre 1969 à 22 h 30 entre ces deux institutions, à la suite d'un bug, les trois dernières lettres mettront une heure pour arriver).
+\item 1990: disparition d'ARPANET (démilitarisé) pour internet (civil).
+\end{itemize}
+\end{commentprof}
+\section{Différentes topologies de réseaux}
+\subsection{Les topologies possibles}
+\begin{commentprof}
+vocabulaire: terminal, ordinateur, machine, hôte
+\end{commentprof}
+\begin{itemize}
+\item linéaire
+\item anneau: en pratique un réseau en anneau est souvent composé de 2 anneaux contra-rotatifs.
+\item bus: vient de omnibus ("pour tous")
+\item étoile: autre inconvénient: longueur des câbles à utiliser.
+\item hiérarchique: ou en arbre 
+\item maillée: nb de liaison croît en $n^2$: s'il y a N terminaux, le nombre de liaisons nécessaires est de $\dfrac{N×(N-1)}{2}$
+\end{itemize}
+\subsection{Les topologies de l'internet}
+\begin{commentprof}
+"petits réseaux" peut signifier plusieurs centaines de machines\\
+LAN\\
+MAN Metropolitan Area Network\\
+WAN Wide Area Network (réseau étendu)\\
+GAN
+\end{commentprof}
+\end{Form}
+\end{document}

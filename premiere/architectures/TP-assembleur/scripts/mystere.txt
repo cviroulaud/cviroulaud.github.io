@@ -1,0 +1,14 @@
+      LDR R0,.InputNum
+      MOV R1,#10
+      CMP R0,R1
+      BNE NOTEGAL
+      MOV R2,#GAGNE
+      STR R2,.WriteString
+      B SUITE
+NOTEGAL:
+      MOV R2,#PERDU
+      STR R2,.WriteString
+SUITE:
+      HALT
+GAGNE:.ASCIZ "Bien joué!"
+PERDU: .ASCIZ "Perdu!"

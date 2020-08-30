@@ -11,6 +11,38 @@
 \begin{document}
 \begin{Form}
 \begin{exo}
+\begin{enumerate}
+\item Définir une classe \emph{Livre} avec les attributs suivants : \emph{titre, auteur (Nom complet), prix}.
+\item Définir les méthodes d’accès aux différents attributs de la classe.
+\item Définir un constructeur permettant d’initialiser les attributs de la méthode par des valeurs saisies par l’utilisateur.
+\item Définir la méthode \emph{afficher() -> str} permettant d’afficher les informations du livre en cours.
+\item Écrire un programme testant la classe Livre.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Définir une classe Rectangle ayant les attributs suivants : \emph{longueur et largeur}.
+\item Définir à l’aide des propriétés les méthodes d’accès aux attributs de la classe.
+\item Ajouter les méthodes suivantes:
+\begin{itemize}
+\item \emph{perimetre() -> float}: retourne le périmètre du rectangle.
+\item \emph{aire() -> float} retourne l'aire du rectangle.
+\item est\_carre() -> bool : vérifie si le rectangle est un carré.
+\end{itemize}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Écrire une classe Complexe permettant de représenter des nombres complexes. Un nombre complexe Z comporte une partie réelle et une partie imaginaire :                             Z = \emph{reel} + \emph{imaginaire} * i
+\item Définir les méthodes d’accès aux attributs de la classe.
+\item Définir un constructeur d’initialisation pour la classe.
+\item Ajouter la méthode \emph{addition(Complexe) -> Complexe}: ajoute (sans le modifier) au nombre en cours un nombre complexe passé en argument et retourne le nombre complexe obtenu.
+\item Ajouter la méthode \emph{soustraction(Complexe) -> Complexe}: soustraie (sans le modifier) au nombre en cours un nombre complexe passé en argument et retourne le nombre complexe obtenu.
+\item Ajouter la méthode \emph{afficher() -> str} : Elle donne une représentation d'un nombre complexe comme suit : a+b*i.
+\item Écrire un programme permettant de tester la classe Complexe.
+\end{enumerate}
+\end{exo}
+\begin{exo}
 En Python, la fonction \emph{\_\_init\_\_} est nommée \emph{constructeur}. Elle est appelée automatiquement lors de l'instanciation de l'objet.
 \begin{commentprof}
 En pratique elle est réalisée par la composition de deux opérations : l'allocation et l'initialisation. L'allocation consiste à réserver un espace mémoire au nouvel objet. L'initialisation consiste à fixer l'état du nouvel objet. 

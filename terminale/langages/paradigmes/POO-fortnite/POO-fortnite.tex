@@ -36,12 +36,12 @@ Il faut ajouter à cela les objets récupérés en cours de partie et gérer l'�
 \end{center}
 \section{Un concept déjà utilisé: paradigme impératif}
 \begin{commentprof}
-\subsection*{Un peu d'histoire}
+\subsection*{Retour historique}
 Un paradigme de programmation est un style de programmation informatique qui traite de la manière dont les solutions aux problèmes doivent être formulées dans un langage de programmation.\\
-La programmation impérative (du latin imperare: ordonner) est une séquence ordonnée d'instructions, fournies à l'ordinateur. premiers programmes = bas niveau = instructions aux plus proches de la machine (lis cette adresse mémoire...). Programmation impérative se calque sur le schéma de fonctionnement des ordinateurs (Von Neumann voir cours 1ere).\\1951: Grace Hopper 1° compilateur (A-0) = traduire programme en langage machine, puis langage Cobol en 1957 (programme doit être calqué sur langage humain plutôt que machine)\\1954: FORTRAN FORmula TRANslator; reste encore très utilisé (même si remplacé par C, C++) car nombreuses bibliothèques, coût important pour les remplacer, performant.\\1991: Fortran 90: modernisation, modules, récursivité\\1963: BASIC: dérivé du Fortran pour les débutants, l'apprentissage; mais trop simple, maintenance difficile; Djikstra écrit article assassin; fait disparaître au profit du Pascal\\1970: Pascal; écrit par Niklaus Wirth; très rapide car travaillant principalement en mémoire vive; Turbo Pascal dans les années 80.\\1972: C; crée par Dennis Ritchie (B trop limité) pour dvp système UNIX; avec Ken Thomson.
+La programmation impérative (du latin imperare: ordonner) est une séquence ordonnée d'instructions, fournies à l'ordinateur. premiers programmes = bas niveau = instructions aux plus proches de la machine (lis cette adresse mémoire...). Programmation impérative se calque sur le schéma de fonctionnement des ordinateurs (Von Neumann voir cours 1ere).\\1951: Grace Hopper 1° compilateur (A-0) = traduire programme en langage machine, puis langage Cobol en 1959 (programme doit être calqué sur langage humain plutôt que machine)\\1954: FORTRAN FORmula TRANslator; reste encore très utilisé (même si remplacé par C, C++) car nombreuses bibliothèques, coût important pour les remplacer, performant.\\1991: Fortran 90: modernisation, modules, récursivité\\1963: BASIC: dérivé du Fortran pour les débutants, l'apprentissage; mais trop simple, maintenance difficile; Djikstra écrit article assassin; fait disparaître au profit du Pascal\\1970: Pascal; écrit par Niklaus Wirth; très rapide car travaillant principalement en mémoire vive; Turbo Pascal dans les années 80.\\1972: C; crée par Dennis Ritchie (B trop limité) pour dvp système UNIX; avec Ken Thomson.
 \end{commentprof}
 \subsection{Stocker les informations}
-Différentes structure de données abordées en Première permettent de contenir les informations du combattant.
+Différentes structures de données abordées en Première permettent de contenir les informations du combattant.
 \begin{activite}
 \begin{enumerate}
 \item Proposer un type (construit) de données et construire la structure permettant de stocker les éléments qui composent un combattant.
@@ -50,7 +50,7 @@ Différentes structure de données abordées en Première permettent de contenir
 \end{enumerate} 
 \end{activite}
 \begin{commentprof}
-Itération sur un dictionnaire. Pas de garantie d'ordre.\\\url{https://docs.python.org/fr/3/tutorial/datastructures.html#looping-techniques}
+Itération sur un dictionnaire. Pas de garantie d'ordre (selon version de Python <3.7).\\\url{https://docs.python.org/fr/3/tutorial/datastructures.html#looping-techniques}
 \end{commentprof}
 \subsection{Modifier les informations}
 Lors d'une partie le joueur peut ramasser des objets pour les mettre dans son sac. Il peut également subir des dégâts lors d'une attaque.
@@ -70,7 +70,7 @@ Les fonctions définies influent sur le combattant, mais d'autres items du jeu �
 \end{commentprof}
 \section{Une nouvelle approche: paradigme objet}
 \begin{commentprof}
-\subsection*{Un peu d'histoire}
+\subsection*{Retour historique}
 Dvpt informatique = pb de + en + complexe à résoudre (\emph{abstraction})
 \begin{itemize}
 \item impératif pas forcément suffisant ou pratique
@@ -144,7 +144,7 @@ class Combattant:
 		self.outfit=nouvelle
 \end{lstlisting}
 \begin{commentprof}
-getters et setters
+getters (accesseurs) et setters (mutateurs)
 \end{commentprof}
 \begin{activite}
 \begin{enumerate}
@@ -158,7 +158,7 @@ Et Python dans tout ça; quel paradigme?
 \subsection{Le monde est objet}
 \begin{activite}
 \begin{enumerate}
-\item Créer un objet \emph{weapon} possédant les attributs présentés précédemment.
+\item Créer un objet \emph{Weapon} possédant les attributs présentés précédemment.
 \item Ajouter une méthode \emph{tirer} qui vide une balle du magasin. Cette méthode renverra le texte \emph{Chargeur vide!} quand toutes les balles auront été tirées.
 \item Implémenter une méthode \emph{recharger} qui remplit le magasin.
 \end{enumerate}

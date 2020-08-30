@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  21 AUG 2020 11:06
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 AUG 2020 14:43
  restricted system commands enabled.
-**POO-exercices.tex
-(./POO-exercices.tex
+**recursivite-exercices.tex
+(./recursivite-exercices.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.119 seconds
+luaotfload | main : initialization completed in 0.097 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -475,15 +475,14 @@ File: listings.cfg 2018/09/02 1.7 listings configuration
 ))
 Package: listings 2018/09/02 1.7 (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write3
-
-Excluding comment 'comment')
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks18
 \verbatim@line=\toks19
 \verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
@@ -495,9 +494,6 @@ Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
 Package: fmtcount 2017/12/24 v3.05
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
@@ -723,7 +719,7 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \the@fancyput=\toks31
 \this@fancyput=\toks32
 \EndVerbatimTokens=\toks33
-\Verbatim@Outfile=\write4
+\Verbatim@Outfile=\write3
 \Verbatim@Infile=\read3
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
@@ -831,14 +827,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 93.
+Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 93.
+(hyperref)                setting the option has no effect on input line 87.
 
-Package hyperref Info: Option `frenchlinks' set `true' on input line 93.
-Package hyperref Info: Option `unicode' set `true' on input line 93.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 87.
+Package hyperref Info: Option `unicode' set `true' on input line 87.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 )
@@ -855,8 +851,8 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \c@compteuractivite=\count328
 \c@compteurexo=\count329
 )
-(./POO-exercices.aux)
-\openout1 = POO-exercices.aux
+(./recursivite-exercices.aux)
+\openout1 = recursivite-exercices.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -874,7 +870,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 11.
@@ -1024,16 +1021,16 @@ LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
-(./POO-exercices.out) (./POO-exercices.out)
-\@outlinefile=\write5
+(./recursivite-exercices.out) (./recursivite-exercices.out)
+\@outlinefile=\write4
 
-\openout5 = POO-exercices.out
+\openout4 = recursivite-exercices.out
 LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1045,38 +1042,43 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 54.
+input line 69.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
- (./POO-exercices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
-Package rerunfilecheck Info: File `POO-exercices.out' has not changed.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
+ (./recursivite-exercices.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
+Package rerunfilecheck Info: File `recursivite-exercices.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26709 strings out of 494383
+ 26692 strings out of 494383
  100000,794899 words of node,token memory allocated
- 16383 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 2145 glyph, 344 attribu
-te, 55 glue_spec, 59 attribute_list, 1 write nodes
-   avail lists: 1:5,2:1293,3:136,4:50,5:218,6:29,7:3076,8:29,9:151,10:5,11:252
- 30316 multiletter control sequences out of 65536+600000
- 29 fonts using 6016295 bytes
- 55i,15n,95p,1108b,479s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 10468 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 28 glue, 4 kern, 1 penalty, 1290 glyph, 332 attribu
+te, 55 glue_spec, 57 attribute_list, 1 write nodes
+   avail lists: 1:5,2:1041,3:101,4:24,5:137,6:24,7:2099,8:39,9:140,10:3,11:132
+ 30296 multiletter control sequences out of 65536+600000
+ 43 fonts using 7025103 bytes
+ 55i,15n,95p,1116b,479s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/p
 ublic/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans
-10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on recursivite-exercices.pdf (1 page, 73638 bytes).
 
-Output written on POO-exercices.pdf (1 page, 25597 bytes).
-
-PDF statistics: 69 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 131072)
+PDF statistics: 89 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 131072)
  51 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,0 +1,58 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Réseau physique}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Seconde - SNT} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\paragraph{Objectif:}Comparer les différents modes de connexion au réseau internet.
+\begin{commentprof}
+\textbf{MATÉRIEL:}câble coaxial, câble Ethernet, fibre optique?
+\end{commentprof}
+\section{Modes de connexion}
+\subsection{La bonne connexion}
+\begin{enumerate}
+\item Sur la figure placer le(s) mode(s) de connexion adapté(s) aux différentes situations.
+\item Citer ceux qui sont utilisés pour le réseau.
+\end{enumerate}
+\begin{framed}
+\textbf{coaxial:} Le principe est de faire circuler le signal électrique dans le fil de données central. On se sert du maillage de masse pour avoir un signal de référence à 0V. On obtient le signal électrique en faisant la différence de potentiel entre le fil de données et la masse. Le câble 10B2 possède les caractéristiques suivantes:
+\begin{itemize}
+\item le 10 indique le débit en Mb/s (mégabits par seconde),
+\item le B indique la façon de coder les 0 et les 1, soit ici la bande de Base,
+\item le dernier chiffre indique la taille maximale du réseau, exprimée en mètres et divisée par 100.
+\end{itemize}
+\end{framed}
+\begin{framed}
+\textbf{Ethernet:} Il est composé de 4 fois 2 paires de fils torsadés. La différence de potentiel entre les 2 fils d'une même paire permet de transporter le signal. Nous utilisons 2 paires de fils: une pour envoyer les données, l'autre pour les recevoir. Le débit peut aller de 10 à 1000 mégabits par seconde selon le câble. On les branche à l'aide de prise RJ45. Nous rencontrons des diminutions de débit au delà de 100 mètres.
+\end{framed}
+\begin{framed}
+\textbf{ADSL:} C'est une technologie qui permet de faire passer des données numériques par la paire de cuivre d’une ligne téléphonique. Ces données sont transmises et reçues indépendamment du service téléphonique (voix) grâce à un filtre branché sur la prise téléphonique. On considère qu’avec l’ADSL, un utilisateur métropolitain bénéficie d’un débit de l’ordre de 8 Mb/s pouvant atteindre 20Mb/s avec l'ADSL2+.
+\end{framed}
+\begin{framed}
+\textbf{Fibre optique:} Une fibre optique est un fil dont l’âme, très fine, en verre ou en plastique, a la propriété de conduire la lumière et sert pour la transmission de données numériques. Les fournisseurs promettent un débit pouvant atteindre 1 Gbit/s (gigabits par seconde) avec un affaiblissement négligeable par rapport aux autres technologies.
+\end{framed}
+\begin{framed}
+\textbf{WIFI:} La norme IEEE 802.11 est un standard international décrivant les caractéristiques d'un réseau local sans fil (WLAN). Grâce au Wi-Fi, il est possible de créer des réseaux locaux sans fils à haut débit pour peu que l'ordinateur à connecter ne soit pas trop distant du point d'accès (la box). La norme IEEE 802.11n annonce un débit théorique de 450Mb/s pour une portée de 250m. Ces chiffres sont à relativiser car très dépendants des infrastructures (mur, béton, colline...).
+\end{framed}
+\begin{framed}
+\textbf{Bluetooth:} BNC
+\end{framed}
+\begin{framed}
+\textbf{4G:} BNC
+\end{framed}
+\begin{framed}
+\textbf{USB:} BNC
+\end{framed}
+\subsection{Comparer les modes de connexion}
+\subsection{Débit}
+\section{Trafic internet}
+cable google privé?
+carte cable sous-marins
+\end{Form}
+\end{document}

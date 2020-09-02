@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 AUG 2020 07:57
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  1 SEP 2020 14:06
  restricted system commands enabled.
 **von-neumann.tex
 (./von-neumann.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.072 seconds
+luaotfload | main : initialization completed in 0.078 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -827,14 +827,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 86.
+Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 86.
+(hyperref)                setting the option has no effect on input line 87.
 
-Package hyperref Info: Option `frenchlinks' set `true' on input line 86.
-Package hyperref Info: Option `unicode' set `true' on input line 86.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 87.
+Package hyperref Info: Option `unicode' set `true' on input line 87.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 )
@@ -1085,8 +1085,8 @@ Package rerunfilecheck Info: File `von-neumann.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  26787 strings out of 494383
  100000,794899 words of node,token memory allocated
- 41646 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 41 glue, 4 kern, 1 penalty, 5483 glyph, 1076 attrib
+ 41618 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 41 glue, 4 kern, 1 penalty, 5479 glyph, 1076 attrib
 ute, 55 glue_spec, 181 attribute_list, 1 write nodes
    avail lists: 1:5,2:824,3:144,4:42,5:184,6:34,7:1791,8:70,9:162,10:9,11:266
  30337 multiletter control sequences out of 65536+600000
@@ -1101,7 +1101,7 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/zapfding/uzdr.pfb>
-Output written on von-neumann.pdf (4 pages, 541261 bytes).
+Output written on von-neumann.pdf (4 pages, 541259 bytes).
 
 PDF statistics: 181 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 AUG 2020 10:31
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 SEP 2020 11:10
  restricted system commands enabled.
 **POO-exercices.tex
 (./POO-exercices.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.088 seconds
+luaotfload | main : initialization completed in 0.089 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1062,10 +1062,10 @@ Package rerunfilecheck Info: File `POO-exercices.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  26691 strings out of 494383
  100000,794899 words of node,token memory allocated
- 27415 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 33 glue, 4 kern, 1 penalty, 3604 glyph, 638 attribu
+ 27387 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 33 glue, 4 kern, 1 penalty, 3600 glyph, 638 attribu
 te, 55 glue_spec, 108 attribute_list, 1 write nodes
-   avail lists: 1:5,2:1313,3:170,4:64,5:218,6:37,7:2200,8:33,9:173,10:5,11:258
+   avail lists: 1:5,2:1313,3:170,4:64,5:218,6:37,7:2199,8:33,9:173,10:5,11:259
  30283 multiletter control sequences out of 65536+600000
  29 fonts using 6016295 bytes
  55i,15n,95p,1108b,644s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1074,7 +1074,7 @@ f/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/p
 ublic/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans
 10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
 
-Output written on POO-exercices.pdf (2 pages, 30727 bytes).
+Output written on POO-exercices.pdf (2 pages, 30868 bytes).
 
 PDF statistics: 88 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

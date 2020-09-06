@@ -1,0 +1,58 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Projet Astéroïde}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Présentation du projet}
+Afin de mettre en application la notion de POO, nous allons développer un mini-jeu \emph{Astéroïde}. Le principe de base est le suivant:
+\begin{itemize}
+\item Le vaisseau est en bas de l'écran. Il ne peut effectuer que des mouvements latéraux.
+\item Le vaisseau doit éviter les astéroïdes qui tombent aléatoirement du haut de l'écran.
+\item La partie est perdue quand un astéroïde touche le vaisseau
+\end{itemize}
+Il est demandé d'implémenter a minima ce principe de base. Cependant des évolutions peuvent être imaginées:
+\begin{itemize}
+\item faire défiler un fond,
+\item accélérer le jeu toutes les X secondes,
+\item afficher le temps réalisé,
+\item recommencer une partie.
+\end{itemize}
+\medskip
+Le projet sera réalisé en groupe de deux. Nous consacrerons quelques temps en classe pour avancer, effectuer des points de vérification, apporter des aides. Cependant il est indispensable de progresser en dehors des heures de cours pour mener le projet à terme. 
+\section{Étapes}
+\subsection{Découpage}
+La première étape consiste à \emph{réfléchir en objets}: dans le contexte de la Programmation Orientée Objet, quelles classes seront nécessaires? Il peut être intéressant de s'aider d'un schéma pour définir ces classes et établir les relations entre elles.
+\subsection{Interface graphique}
+Afin de créer un jeu graphique, il faut utiliser des bibliothèques adaptées. En Python, il en existe plusieurs telles \emph{Pygame} ou \emph{Tkinter}. Dans le cadre de ce projet nous utiliserons \emph{Tkinter} car elle a l'avantage d'être fournie dans les modules de base de Python.\\
+Plusieurs tutoriels peuvent permettre de découvrir les fonctionnalités de cette bibliothèque:
+\begin{itemize}
+\item \url{http://tableauxmaths.fr/spip/spip.php?article48}
+\item \url{http://tkinter.fdex.eu/doc/}
+\item \url{https://pythonfaqfr.readthedocs.io/en/latest/prog_even_tkinter.html}
+\end{itemize}
+Cette liste n'est pas exhaustive.
+\section{Évaluation}
+L'évaluation comportera quatre axes:
+\begin{itemize}
+\item le respect des principes du jeu,
+\item le découpage adéquat en classe,
+\item le partage des tâches dans le groupe,
+\item le travail de recherche et d'utilisation de la documentation.
+\end{itemize}
+\begin{commentprof}
+Des aides:
+\begin{itemize}
+\item gestion des constantes globales
+\item class moteur: principe + donner un squelette
+\item principe de tkinter: fenêtre, canvas, objets "collés" sur canvas (=context), loop, after
+\end{itemize}
+\end{commentprof}
+\end{Form}
+\end{document}

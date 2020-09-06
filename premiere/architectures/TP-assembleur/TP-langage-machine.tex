@@ -3,7 +3,7 @@
 \newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
 \fancyhead[L]{TP langage machine}
 \newdate{madate}{10}{09}{2020}
-\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI} %\today
 \fancyfoot[L]{~\\Christophe Viroulaud}
 \fancyfoot[C]{\textbf{Page \thepage}}
 \fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
@@ -71,7 +71,7 @@ La documentation (en anglais) est située sur cette page:
 \end{activite}
 \begin{figure}[!h]
 \centering
-\includegraphics[width=2cm]{ressources/pasapas.png}
+\includegraphics[width=1cm]{ressources/pasapas.png}
 \captionof{figure}{Pas à pas}
 \label{pasapas}
 \end{figure}
@@ -84,7 +84,7 @@ Observer les \emph{status bits}.
 \begin{enumerate}
 \item Dans la documentation trouver la signification et la syntaxe des instructions \emph{CMP, BEQ, BNE}.
 \item Charger le code \ref{mystere} dans le simulateur:
-\lstinputlisting[caption=Programme mystère,label=mystere]{scripts/mystere.txt}
+\lstinputlisting[caption=Programme mystère,label=mystere,basicstyle=\tiny]{scripts/mystere.txt}
 \item Que fait ce programme?
 \item Que se passe-t-il si on retire la ligne 7? Donner la signification de cette instruction.
 \end{enumerate}

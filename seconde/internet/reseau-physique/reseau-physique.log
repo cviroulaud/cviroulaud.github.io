@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 SEP 2020 21:46
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  4 SEP 2020 12:52
  restricted system commands enabled.
 **reseau-physique.tex
 (./reseau-physique.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.121 seconds
+luaotfload | main : initialization completed in 0.087 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1035,48 +1035,69 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=35, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=43, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 43.
+input line 41.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+<ressources/bonne-connexion.png, id=54, 831.105pt x 466.74374pt>
+File: ressources/bonne-connexion.png Graphic file (type png)
+<use ressources/bonne-connexion.png>
+Package luatex.def Info: ressources/bonne-connexion.png  used on input line 54.
+(luatex.def)             Requested size: 483.69684pt x 271.6374pt.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 58.
+input line 72.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+ [2<./ressources/bonne-connexion.png>]
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 108.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 125.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
  (./reseau-physique.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
 Package rerunfilecheck Info: File `reseau-physique.out' has not changed.
-(rerunfilecheck)             Checksum: 5B0FD22E17A7D31FE3D115B3789FA890;722.
+(rerunfilecheck)             Checksum: 1EDE5B2BB59177EED690D6F757EE03E1;1038.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26688 strings out of 494383
+ 26775 strings out of 494383
  100000,794899 words of node,token memory allocated
- 17615 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 19 glue, 4 kern, 1 penalty, 2332 glyph, 296 attribu
-te, 55 glue_spec, 51 attribute_list, 1 write nodes
-   avail lists: 1:5,2:1069,3:156,4:41,5:186,6:22,7:2893,8:45,9:168,10:21,11:210
- 30295 multiletter control sequences out of 65536+600000
- 33 fonts using 6543079 bytes
- 55i,15n,95p,1110b,559s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf/
-fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/pub
-lic/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10
--regular.otf></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on reseau-physique.pdf (2 pages, 30006 bytes).
+ 50501 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 52 glue, 4 kern, 1 penalty, 6813 glyph, 848 attribu
+te, 55 glue_spec, 143 attribute_list, 1 write nodes
+   avail lists: 1:5,2:1594,3:231,4:60,5:233,6:45,7:2782,8:46,9:195,10:21,11:259
+ 30322 multiletter control sequences out of 65536+600000
+ 49 fonts using 7808527 bytes
+ 55i,15n,95p,1110b,583s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
+f/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/ope
+ntype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/
+lmroman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf
+></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/te
+xmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/zapfding/uzdr.pfb>
+Output written on reseau-physique.pdf (4 pages, 592610 bytes).
 
-PDF statistics: 85 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 131072)
- 91 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 156 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 131072)
+ 107 words of extra memory for PDF output out of 10000 (max. 100000000)
 

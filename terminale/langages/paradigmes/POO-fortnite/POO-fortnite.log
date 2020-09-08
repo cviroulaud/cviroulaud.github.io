@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 SEP 2020 11:04
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  8 SEP 2020 17:50
  restricted system commands enabled.
 **POO-fortnite.tex
 (./POO-fortnite.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.093 seconds
+luaotfload | main : initialization completed in 0.074 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -827,14 +827,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 87.
+Package hyperref Info: Option `colorlinks' set `true' on input line 88.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 87.
+(hyperref)                setting the option has no effect on input line 88.
 
-Package hyperref Info: Option `frenchlinks' set `true' on input line 87.
-Package hyperref Info: Option `unicode' set `true' on input line 87.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 88.
+Package hyperref Info: Option `unicode' set `true' on input line 88.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 )
@@ -1092,45 +1092,44 @@ Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on
 input line 146.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 170.
+input line 174.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
 
 (./POO-fortnite.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
 Package rerunfilecheck Info: File `POO-fortnite.out' has not changed.
 (rerunfilecheck)             Checksum: 769BDAD3FAE201656783A1E8C06BF580;2350.
 )
 
 Here is how much of LuaTeX's memory you used:
  27060 strings out of 494383
- 156254,794899 words of node,token memory allocated
- 58796 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 46 glue, 4 kern, 1 penalty, 7698 glyph, 1766 attrib
-ute, 55 glue_spec, 296 attribute_list, 1 write nodes
-   avail lists: 1:7,2:5236,3:201,4:1760,5:1535,6:42,7:2469,8:1291,9:2399,10:22,1
+ 156266,794899 words of node,token memory allocated
+ 59545 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 47 glue, 4 kern, 1 penalty, 7792 glyph, 1802 attrib
+ute, 55 glue_spec, 302 attribute_list, 1 write nodes
+   avail lists: 1:6,2:5194,3:201,4:1760,5:1535,6:42,7:2390,8:1291,9:2399,10:22,1
 1:336
- 30555 multiletter control sequences out of 65536+600000
- 49 fonts using 7808527 bytes
+ 30554 multiletter control sequences out of 65536+600000
+ 48 fonts using 7677967 bytes
  55i,15n,95p,1201b,752s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype
 /public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmrom
-ancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.o
-tf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/tex
-mf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/openty
-pe/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/urw
-/zapfding/uzdr.pfb>
-Output written on POO-fortnite.pdf (5 pages, 440881 bytes).
+an12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></us
+r/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/f
+onts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/font
+s/type1/urw/zapfding/uzdr.pfb>
+Output written on POO-fortnite.pdf (5 pages, 439609 bytes).
 
-PDF statistics: 214 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 65 named destinations out of 1000 (max. 131072)
+PDF statistics: 209 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 67 named destinations out of 1000 (max. 131072)
  155 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -13245,8 +13245,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Retour-historique">Retour historique<a class="anchor-link" href="#Retour-historique">&#182;</a></h2><p><a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Mta9N7GPfJMs1Vw8zNMBbb-yS_6bQ8no8lYpnq4KW-0&font=Default&lang=fr&initial_zoom=2&height=650" target=_blank><img src="../../../../retour.png"></a></p>
-
+<h2 id="Retour-historique">Retour historique<a class="anchor-link" href="#Retour-historique">&#182;</a></h2><div align="middle">
+<a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Mta9N7GPfJMs1Vw8zNMBbb-yS_6bQ8no8lYpnq4KW-0&font=Default&lang=fr&initial_zoom=2&height=650" target=_blank><img src="../../../../retour.png"></a></div>
 </div>
 </div>
 </div></div></section></section><section><section>
@@ -13258,6 +13258,7 @@ a.anchor-link {
 <li>Ajouter une structure permettant de stocker et gérer les objets du sac à dos.</li>
 <li>Ajouter enfin deux variables exprimant l'énergie et le bouclier. Ces variables seront initialisées à 100.</li>
 </ul>
+<p>Le personnage aura les paramètres suivants: 1 tenue "cuddle-team-leader", 1 parachute "glider", 1 trainée "flames", 1 décoration "royale-shield", 1 danse "disco-fever", 1 pioche "pick-squeak", 1 jouet tomato.</p>
 
 </div>
 </div>
@@ -13283,13 +13284,13 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <table>
     <tr>
-        <td><img src="ressources/outfits/cuddle-team-leader.png" width=100px></td>
-        <td><img src="ressources/gliders/glider.png" width=100px></td>
-        <td><img src="ressources/contrails/flames.png" width=100px></td>
-        <td><img src="ressources/back-blings/royale-shield.png" width=100px></td>
-        <td><img src="ressources/emotes/disco-fever.png" width=100px></td>
-        <td><img src="ressources/pickaxes/pickaxe.png" width=100px></td>
-        <td><img src="ressources/toys/tomato.png" width=100px></td>
+        <td><img src="ressources/outfits/cuddle-team-leader.png" width=60px></td>
+        <td><img src="ressources/gliders/glider.png" width=60px></td>
+        <td><img src="ressources/contrails/flames.png" width=60px></td>
+        <td><img src="ressources/back-blings/royale-shield.png" width=60px></td>
+        <td><img src="ressources/emotes/disco-fever.png" width=60px></td>
+        <td><img src="ressources/pickaxes/pickaxe.png" width=60px></td>
+        <td><img src="ressources/toys/tomato.png" width=60px></td>
     </tr>
 </table>
 </div>
@@ -13606,8 +13607,8 @@ Objet ajouté.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Retour-historique">Retour historique<a class="anchor-link" href="#Retour-historique">&#182;</a></h2><p><a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1M6_l_jim6MXKmG91aZlXYHDw36n6ZhV4tsGdR_xKA0E&font=Default&lang=fr&initial_zoom=2&height=650" target=_blank><img src="../../../../retour.png"></a></p>
-
+<h2 id="Retour-historique">Retour historique<a class="anchor-link" href="#Retour-historique">&#182;</a></h2><div align="middle">
+<a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1M6_l_jim6MXKmG91aZlXYHDw36n6ZhV4tsGdR_xKA0E&font=Default&lang=fr&initial_zoom=2&height=650" target=_blank><img src="../../../../retour.png"></a></div>
 </div>
 </div>
 </div></div></section></section><section><section>
@@ -13619,7 +13620,7 @@ Objet ajouté.
         <td class="objet">Combattant</td>
     </tr>
 </table>
-<img src="ressources/joueur.jpg" width=200px></p>
+<img src="ressources/joueur.png" width=200px></p>
 
 </div>
 </div>
@@ -13649,7 +13650,7 @@ Objet ajouté.
     </tr>
 </table></p>
 <div style=float:right;>
-<img src="ressources/joueur.jpg" width=200px>
+<img src="ressources/joueur.png" width=200px>
     <div>
         <img class="attributs" src="ressources/contrails/rainbow.png">
         <img class="attributs" src="ressources/gliders/glider.png">
@@ -13718,7 +13719,7 @@ public class Combattant {
   private String glider;
   private String contrail;
 
-  public Ville(String tenue, String parachute, String trainee){
+  public Combattant(String tenue, String parachute, String trainee){
       outfit=tenue;
       glider=parachute;
       contrail=trainee;
@@ -13839,7 +13840,7 @@ public class Combattant {
   private String glider;
   private String contrail;
 
-  public Ville(String tenue, String parachute, String trainee){
+  public Combattant(String tenue, String parachute, String trainee){
       outfit=tenue;
       glider=parachute;
       contrail=trainee;
@@ -13852,7 +13853,7 @@ public class Combattant {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="ressources/encapsulation.jpg" height=500px></p>
+<p><img src="ressources/encapsulation.png" height=500px></p>
 
 </div>
 </div>
@@ -13879,7 +13880,7 @@ public class Combattant {
     </tr>
 </table></p>
 <div style=float:right;>
-<img src="ressources/joueur.jpg" width=200px>
+<img src="ressources/joueur.png" width=200px>
     <div>
         <img class="attributs" src="ressources/contrails/rainbow.png">
         <img class="attributs" src="ressources/gliders/glider.png">
@@ -13888,7 +13889,7 @@ public class Combattant {
 </div>
 </div>
 </div>
-</div></div><div class="fragment">
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
@@ -13912,7 +13913,7 @@ public class Combattant {
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>

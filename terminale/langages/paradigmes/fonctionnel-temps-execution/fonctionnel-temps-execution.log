@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  7 SEP 2020 12:25
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  8 SEP 2020 13:54
  restricted system commands enabled.
-**tp-koch.tex
-(./tp-koch.tex
+**fonctionnel-temps-execution.tex
+(./fonctionnel-temps-execution.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.081 seconds
+luaotfload | main : initialization completed in 0.073 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -850,8 +850,9 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 )
 \c@compteuractivite=\count328
 \c@compteurexo=\count329
-) (./tp-koch.aux)
-\openout1 = tp-koch.aux
+)
+(./fonctionnel-temps-execution.aux)
+\openout1 = fonctionnel-temps-execution.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -1020,104 +1021,84 @@ LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
-(./tp-koch.out) (./tp-koch.out)
+(./fonctionnel-temps-execution.out) (./fonctionnel-temps-execution.out)
 \@outlinefile=\write4
 
-\openout4 = tp-koch.out
+\openout4 = fonctionnel-temps-execution.out
 LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-<ressources/koch_etapes.png, id=39, 240.9pt x 123.46124pt>
-File: ressources/koch_etapes.png Graphic file (type png)
-<use ressources/koch_etapes.png>
-Package luatex.def Info: ressources/koch_etapes.png  used on input line 22.
-(luatex.def)             Requested size: 199.16928pt x 102.07718pt.
-<ressources/flocon.png, id=40, 260.975pt x 264.99pt>
-File: ressources/flocon.png Graphic file (type png)
-<use ressources/flocon.png>
-Package luatex.def Info: ressources/flocon.png  used on input line 24.
-(luatex.def)             Requested size: 113.81102pt x 115.56084pt.
-<ressources/etoile.png, id=43, 321.2pt x 311.1625pt>
-File: ressources/etoile.png Graphic file (type png)
-<use ressources/etoile.png>
-Package luatex.def Info: ressources/etoile.png  used on input line 48.
-(luatex.def)             Requested size: 85.35826pt x 82.6903pt.
-<ressources/koch1.png, id=45, 218.8175pt x 92.345pt>
-File: ressources/koch1.png Graphic file (type png)
-<use ressources/koch1.png>
-Package luatex.def Info: ressources/koch1.png  used on input line 57.
-(luatex.def)             Requested size: 56.9055pt x 24.01476pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=46, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=67, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 62.
+input line 56.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-<./ressources/koch_etapes.png><./ressources/flocon.png><./ressources/etoile.png>
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-<ressources/koch3.png, id=71, 223.83624pt x 80.3pt>
-File: ressources/koch3.png Graphic file (type png)
-<use ressources/koch3.png>
-Package luatex.def Info: ressources/koch3.png  used on input line 70.
-(luatex.def)             Requested size: 85.35826pt x 30.62213pt.
-File: ressources/flocon.png Graphic file (type png)
-<use ressources/flocon.png>
-Package luatex.def Info: ressources/flocon.png  used on input line 80.
-(luatex.def)             Requested size: 85.35826pt x 86.67062pt.
-<ressources/vonkochcarre.png, id=73, 227.85126pt x 100.375pt>
-File: ressources/vonkochcarre.png Graphic file (type png)
-<use ressources/vonkochcarre.png>
-Package luatex.def Info: ressources/vonkochcarre.png  used on input line 90.
-(luatex.def)             Requested size: 85.35826pt x 37.60376pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 95.
+input line 106.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2<./ressources/koch1.png><./ressources/koch3.png><./ressources/vonkochcarre.pn
-g>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
- (./tp-koch.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
-Package rerunfilecheck Info: File `tp-koch.out' has not changed.
-(rerunfilecheck)             Checksum: 85B9AF96A05D044337BB26A1DA5333BA;704.
+ [2]
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 141.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 167.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
+
+(./fonctionnel-temps-execution.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
+Package rerunfilecheck Info: File `fonctionnel-temps-execution.out' has not chan
+ged.
+(rerunfilecheck)             Checksum: 01EF623684C06DD0C1AE1A86EA4C365B;2286.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26806 strings out of 494383
+ 26993 strings out of 494383
  100000,794899 words of node,token memory allocated
- 16929 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 16 glue, 4 kern, 1 penalty, 2171 glyph, 494 attribu
-te, 55 glue_spec, 84 attribute_list, 1 write nodes
-   avail lists: 1:5,2:1792,3:191,4:52,5:187,6:41,7:1522,8:68,9:223,10:11,11:136
- 30344 multiletter control sequences out of 65536+600000
- 49 fonts using 7808527 bytes
- 55i,15n,95p,1102b,568s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share
-/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opent
-ype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lm
-roman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf
-></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/te
-xmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/zapfding/uzdr.pfb>
-Output written on tp-koch.pdf (2 pages, 54530 bytes).
+ 40616 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 37 glue, 4 kern, 1 penalty, 5161 glyph, 1610 attrib
+ute, 55 glue_spec, 270 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:5,2:3292,3:187,4:1212,5:1130,6:37,7:1942,8:906,9:1726,10:19,11
+:252
+ 30533 multiletter control sequences out of 65536+600000
+ 48 fonts using 7677967 bytes
+ 55i,15n,95p,1122b,767s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
+f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
+/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmrom
+an12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></us
+r/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/f
+onts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on fonctionnel-temps-execution.pdf (4 pages, 82984 bytes).
 
-PDF statistics: 140 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 131072)
- 99 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 199 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 131072)
+ 155 words of extra memory for PDF output out of 10000 (max. 100000000)
 

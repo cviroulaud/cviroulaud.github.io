@@ -56,8 +56,8 @@ Itération sur un dictionnaire. Pas de garantie d'ordre (selon version de Python
 Lors d'une partie le joueur peut ramasser des objets pour les mettre dans son sac. Il peut également subir des dégâts lors d'une attaque.
 \begin{activite}
 \begin{enumerate}
-\item Implémenter une fonction \emph{subir\_attaque} qui prendra un paramètre \emph{degat} de type \emph{integer} et qui modifiera les caractéristiques \emph{shield} et \emph{energy} du combattant. 
-\item Implémenter une fonction \emph{ramasser\_objet} qui ajoute un objet dans le sac s'il n'est pas plein (trois objets maximum). Cette fonction prendra un paramètre \emph{objet} de type \emph{string}.
+\item Implémenter une fonction \textbf{ramasser\_objet} qui ajoute un objet dans le sac s'il n'est pas plein (trois objets maximum). Cette fonction prendra un paramètre \emph{objet} de type \emph{string}.
+\item Implémenter une fonction \textbf{subir\_attaque} qui prendra un paramètre \emph{degat} de type \emph{integer} et qui modifiera les caractéristiques \emph{shield} et \emph{energy} du combattant. 
 \item Dans Fortnite chaque objet a également plusieurs propriétés. Construire un type construit de données qui stocke les caractéristiques des armes présentées.
 \end{enumerate}
 \end{activite}
@@ -146,6 +146,10 @@ class Combattant:
 \begin{commentprof}
 getters (accesseurs) et setters (mutateurs)
 \end{commentprof}
+Dans le programme principal, le code ci-après affiche la tenue du combattant:
+\begin{lstlisting}
+joueur1.get_outfit()
+\end{lstlisting}
 \begin{activite}
 \begin{enumerate}
 \item Ajouter les attributs \emph{energy, shield} et \emph{backpack}.

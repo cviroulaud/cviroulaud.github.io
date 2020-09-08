@@ -1,0 +1,166 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Paradigme fonctionnel}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{commentprof}
+Donner page 1 seule d'abord
+\end{commentprof}
+\paragraph{Objectif:}Découvrir un nouveau paradigme de programmation.
+\section{Problématique}
+\emph{Le tri} est une fonctionnalité très utilisée en programmation. Il est donc primordial qu'il soit le plus efficace possible.
+\begin{center}
+\shadowbox{\parbox{12cm}{\centering Peut-on concevoir un outil de comparaison des algorithmes de tri?}}
+\end{center}
+\section{Algorithmes de tri}
+\begin{activite}
+\begin{enumerate}
+\item Choisir un des trois algorithmes de tri ci-après et implémenter une fonction qui accepte une liste et renvoie cette dernière triée.
+\item Construire (en compréhension) une liste \textbf{tab} de 1000 entiers compris entre 0 et 100.
+\item Par groupe de trois ayant choisis un algorithme différent, partager puis présenter les codes.
+\end{enumerate}
+\end{activite}
+\begin{commentprof}
+\begin{itemize}
+\item utiliser jupyter?
+\item docstring (+doctest?)
+\item amélioration tri à bulles possible: Si lors du parcours de la liste une permutation au moins a été effectuée, recommencer un nouveau parcours.
+\end{itemize}
+\end{commentprof}
+\subsection{Tri par sélection}
+En partant du début du tableau et pour chaque élément de rang \emph{n}:
+\begin{itemize}
+\item Rechercher la plus petite valeur et la permuter avec l'élément de rang \emph{n}.
+\end{itemize}
+\subsection{Tri par insertion}
+En partant du début du tableau et pour chaque élément de rang \emph{n}:
+\begin{itemize}
+\item Mémoriser l'élément de rang \emph{n}.
+\item En partant de l'élément \emph{n-1}, décaler vers la droite les éléments qui sont plus grands que celui mémorisé.
+\item Placer dans le trou l'élément mémorisé.
+\end{itemize}
+\subsection{Tri à bulles}
+En partant du début du tableau et pour chaque élément de rang \emph{n}:
+\begin{itemize}
+\item Parcourir le tableau en comparant chaque élément avec son successeur.
+\item Si ce dernier est le plus petit des deux, les permuter.
+\end{itemize}
+\pagebreak
+\section{Notion de complexité}
+\label{complexite}
+Il est légitime de se demander si certains algorithmes sont plus rapides que d'autres. La première question à se poser est de déterminer quels sont les paramètres qui influencent la durée d'exécution.\\
+Le tri par sélection ci-après est composé de deux boucles. Chaque boucle dépend de la taille (notée \emph{n}) du tableau à trier. La durée d'exécution dépend donc du facteur $n×n$.
+\begin{center}
+\shadowbox{\parbox{10cm}{\centering Le tri par sélection a une \textbf{complexité en temps} en $O(n^2).$}}
+\end{center}
+\begin{lstlisting}
+def tri_selection(tab):
+    taille = len(tab)
+    for i in range(taille):
+        rang_mini = i
+        for j in range (i+1,taille):
+            if tab[j] < tab[rang_mini]:
+                rang_mini = j
+        tab[i],tab[rang_mini] = tab[rang_mini],tab[i]
+    return tab
+\end{lstlisting}
+\begin{commentprof}
+\begin{itemize}
+\item Évoquer complexité en espace
+\item tri bulles/insertion: meilleur des cas = (n-1) comparaisons, linéaire. Pire des cas: tableau trié à l'envers, quadratique $\dfrac{n.(n-1)}{2}$ comparaisons
+\item évoquer stabilité (insertion et bulles) $\leftarrow$ on reverra en exo
+\end{itemize}
+\end{commentprof}
+\begin{activite}
+Déterminer la complexité en temps des algorithmes de tri à bulles et tri par insertion.
+\end{activite}
+\section{Comparaison des temps d'exécution}
+\subsection{Contexte}
+Nous désirons comparer la durée d'exécution des trois fonctions de tri précédentes. Nous pouvons déjà remarquer que ces fonctions implémentent le même schéma, à savoir elles:
+\begin{itemize}
+\item acceptent une liste en entrée,
+\item renvoient la liste triée en sortie.
+\end{itemize}
+\medskip
+La bibliothèque \emph{time} propose la fonction:
+\begin{framed}
+time.time() → float
+\\Renvoie le temps en secondes depuis \emph{epoch} sous forme de nombre à virgule flottante. 
+\end{framed}
+\begin{commentprof}
+Pour Unix, epoch est le 1er janvier 1970 à 00:00:00 (UTC: Universel Temps Coordonné). 
+\end{commentprof}
+\subsection{Paradigme fonctionnel: une fonction est une donnée comme une autre}
+\begin{commentprof}
+\section*{Contexte historique}
+$\lambda-calcul$ de Church / machine de Turing = principe équivalent qui peret de montrer calculabilité (cherche à identifier la classe des fonctions qui peuvent être calculées à l'aide d'un algorithme)\\
+Quand von Neumann décrit son architecture d'un ordinateur, un des plus grands bouleversements tient au fait que données et programmes sont stockés dans la mémoire: un programme peut être considéré comme une donnée.\\
+Ocaml, Scheme. langages sans effet de bord = plus facile à maintenir.
+\end{commentprof}
+Un des premiers principes du \emph{paradigme fonctionnel} est de considérer une fonction comme une donnée. Elle peut donc être passée en variable à une autre fonction.
+\begin{activite}
+\begin{enumerate}
+\item Implémenter une fonction \textbf{duree\_tri(fonction, tab: list) $\rightarrow$ float} qui mesure la durée que met \emph{fonction} pour trier la liste \emph{tab} et renvoie cette durée.
+\item Tester la fonction \textbf{duree\_tri} avec une fonction de tri et la liste \emph{tab}. 
+\end{enumerate}
+\end{activite}
+\subsection{Paradigme fonctionnel: données immuables}
+\subsubsection{Effet de bord}
+Une fonction est dite à \emph{effet de bord} si elle modifie un état en dehors de son environnement local.
+\begin{activite}
+Un enseignant a obtenu des résultats décevants au dernier devoir donné. Il veut tester différentes majorations.
+\begin{lstlisting}
+notes = [7,12,8,5,19,10,7,6,1,15,13,8]
+
+def majoration(bonus: int):
+    for i in range(len(notes)):
+        if notes[i] <= 8:
+            notes[i] += bonus
+\end{lstlisting}
+Que devient la liste \emph{notes} après les deux appels suivants?
+\begin{lstlisting}
+majoration(2)
+majoration(3)
+\end{lstlisting}
+\end{activite}
+\subsubsection{Tuple}
+Afin de s'affranchir des effets de bord, la programmation fonctionnel n'utilise que des données non mutables. En Python les \emph{tuples} possèdent ces caractéristiques.
+\begin{activite}
+\begin{enumerate}
+\item Construire (en compréhension) un tuple \textbf{tab\_immuable} de 1000 entiers compris entre 0 et 100.
+\item Implémenter une fonction \textbf{duree\_tri\_fonctionnel(fonction, tab: tuple) $\rightarrow$ float} qui mesure la durée que met \emph{fonction} pour trier \emph{tab} et renvoie cette durée.
+\end{enumerate}
+\end{activite}
+\begin{commentprof}
+\begin{itemize}
+\item pour tuple en compréhension, voir slides: il faut ajouter \emph{tuple} sinon on crée un générateur
+\item list(t) convertit tuple t en liste
+\end{itemize}
+\end{commentprof}
+\subsection{Évolution du temps d'exécution}
+\begin{commentprof}
+À faire en devoir?
+\end{commentprof}
+Le module \emph{pyplot} de la bibliothèque \emph{matplotlib} permet de réaliser des représentations graphiques facilement. Il est commun de l'importer avec un alias:
+\begin{lstlisting}
+import matplotlib.pyplot as plt
+\end{lstlisting}
+Le site ci-après présente un rapide tutoriel permettant de tracer la courbe représentative d'une fonction:
+\begin{center}
+\url{https://zestedesavoir.com/tutoriels/469/introduction-aux-graphiques-en-python-avec-matplotlib-pyplot/}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Réaliser une représentation graphique de la durée d'exécution d'un des tris étudiés, pour des tailles de listes variant de 10 à 5000 items. Il est conseillé d'utiliser au moins 10 listes pour avoir un résultat significatif.
+\item La courbe obtenue confirme-t-elle les résultats du chapitre \ref{complexite}?
+\end{enumerate}
+\end{activite}
+\end{Form}
+\end{document}

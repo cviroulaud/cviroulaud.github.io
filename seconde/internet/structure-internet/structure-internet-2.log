@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  1 SEP 2020 11:08
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  9 SEP 2020 16:01
  restricted system commands enabled.
 **structure-internet-2.tex
 (./structure-internet-2.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.080 seconds
+luaotfload | main : initialization completed in 0.086 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -827,14 +827,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 87.
+Package hyperref Info: Option `colorlinks' set `true' on input line 88.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 87.
+(hyperref)                setting the option has no effect on input line 88.
 
-Package hyperref Info: Option `frenchlinks' set `true' on input line 87.
-Package hyperref Info: Option `unicode' set `true' on input line 87.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 88.
+Package hyperref Info: Option `unicode' set `true' on input line 88.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 )
@@ -1048,16 +1048,21 @@ input line 50.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
+Overfull \hbox (4.358pt too wide) in paragraph at lines 56--57
+[]\TU/lmr/m/n/10.95 Ta-per l’ins-truc-tion \TU/lmr/bx/n/10.95 ip ad-dress\TU/
+lmr/m/n/10.95 . Re-trou-ver l’adresse de la ma-chine ; elle est de la forme \
+TU/lmr/m/it/10.95 192.X.X.X 
+ []
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
 input line 68.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2]
+[2]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
-
-(./structure-internet-2.aux)
+ (./structure-internet-2.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `structure-internet-2.out' has not changed.
@@ -1067,10 +1072,10 @@ Package rerunfilecheck Info: File `structure-internet-2.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  26732 strings out of 494383
  100000,794899 words of node,token memory allocated
- 23599 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 18 glue, 4 kern, 1 penalty, 3143 glyph, 428 attribu
+ 23543 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 18 glue, 4 kern, 1 penalty, 3135 glyph, 428 attribu
 te, 55 glue_spec, 73 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:5,2:1260,3:193,4:49,5:216,6:30,7:3044,8:124,9:175,10:14,11:254
+   avail lists: 1:5,2:1260,3:193,4:49,5:215,6:30,7:3044,8:124,9:175,10:14,11:254
 
  30312 multiletter control sequences out of 65536+600000
  49 fonts using 7804359 bytes
@@ -1085,7 +1090,7 @@ nts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts
 public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr
 .pfb>
-Output written on structure-internet-2.pdf (2 pages, 66995 bytes).
+Output written on structure-internet-2.pdf (2 pages, 67293 bytes).
 
 PDF statistics: 130 PDF objects out of 1000 (max. 8388607)
  95 compressed objects within 1 object stream

@@ -40,7 +40,7 @@ Il faut bien entendu au préalable importer la classe dans le programme.
 environnement de développement « intégré » (abrégé EDI en français ou IDE en anglais, pour integrated development environment)\\réponse: 285.05K / 53.42°F
 \end{commentprof}
 \end{activite}
-\pagebreak
+
 \section{Définir les classes}
 Notre banque est définie par 3 classes: \emph{Banque, Client, Compte}. Dans un premier temps chaque groupe devra implémenter une des classes au choix, en respectant la documentation ci-après. Chaque classe sera construite dans un fichier indépendant avec les noms \emph{mod\_banque.py, mod\_client.py, mod\_compte.py}. Ensuite, il devra récupérer les deux autres classes créées par les autres groupes et construire le programme de gestion de la banque.
 \paragraph{NB:}Les attributs précédés d'un \_ sont considérés privés. Lors de la création de l'objet, ils sont crées avec une valeur par défaut indépendamment des variables fournies par l'utilisateur. 
@@ -59,9 +59,9 @@ La banque possède les attributs suivants:
 \end{itemize}
 Les méthodes fournies à l'utilisateur sont:
 \begin{itemize}
-\item\emph{cree\_client(nom:str) -> None}: crée un nouveau client, lui crée un compte courant et un compte rémunéré par défaut,
-\item \emph{trouve\_client(nom:str) -> Client}: renvoie le client avec le \emph{nom} spécifié s'il existe False sinon,
-\item \emph{remunere() -> None}: applique le taux de rémunération à tous les comptes rémunérés des clients.
+\item\emph{cree\_client(nom: str) $\rightarrow$ None}: crée un nouveau client, lui crée un compte courant et un compte rémunéré par défaut,
+\item \emph{trouve\_client(nom: str) $\rightarrow$ Client}: renvoie le client avec le \emph{nom} spécifié s'il existe False sinon,
+\item \emph{remunere() $\rightarrow$ None}: applique le taux de rémunération à tous les comptes rémunérés des clients.
 \end{itemize}
 \subsection{Module client}
 Le client possède les attributs suivants:
@@ -71,9 +71,9 @@ Le client possède les attributs suivants:
 \end{itemize}
 Les méthodes fournies à l'utilisateur sont:
 \begin{itemize}
-\item \emph{ouvre\_compte(remunere:bool, i:int) -> None}: crée un nouveau compte dans \emph{\_comptes} avec \emph{i} pour clé,
-\item \emph{ferme\_compte(i:int) -> str}: clôture le compte ayant \emph{i} pour clé et renvoie "Le compte est supprimé"; sinon renvoie "Ce compte n'existe pas.",
-\item \emph{get\_comptes() -> dict}: renvoie le dictionnaire des comptes.
+\item \emph{ouvre\_compte(remunere: bool, i: int) $\rightarrow$ None}: crée un nouveau compte dans \emph{\_comptes} avec \emph{i} pour clé,
+\item \emph{ferme\_compte(i:vint) $\rightarrow$ str}: clôture le compte ayant \emph{i} pour clé et renvoie "Le compte est supprimé"; sinon renvoie "Ce compte n'existe pas.",
+\item \emph{get\_comptes() $\rightarrow$ dict}: renvoie le dictionnaire des comptes.
 %\item \emph{credite\_compte(s:float,i:integer) -> None}: crédite le compte de rang \emph{i} dans la liste \emph{\_comptes} de la somme \emph{s},
 %\item \emph{debite\_compte(s:float,i:integer) -> string}: débite le compte de rang \emph{i} dans la liste \emph{\_comptes} seulement si le crédit restant est supérieur à \emph{s}; renvoie le message "opération effectuée" ou "le compte n'est pas suffisamment approvisionné" sinon. 
 \end{itemize}
@@ -85,10 +85,10 @@ Le compte possède les attributs suivants:
 \end{itemize}
 Les méthodes fournies à l'utilisateur sont:
 \begin{itemize}
-\item \emph{credite(s:float) -> None}: crédite le compte de la somme \emph{s},
-\item \emph{debite(s:float) -> str}: débite le compte de la somme \emph{s} seulement si le crédit restant est supérieur ou égal à \emph{s}; renvoie le message "Opération effectuée" ou "Crédit insuffisant" sinon,
+\item \emph{credite(s: float) $\rightarrow$ None}: crédite le compte de la somme \emph{s},
+\item \emph{debite(s: float) $\rightarrow$ str}: débite le compte de la somme \emph{s} seulement si le crédit restant est supérieur ou égal à \emph{s}; renvoie le message "Opération effectuée" ou "Crédit insuffisant" sinon,
 %\item \emph{est\_solvable() -> boolean}: renvoie True si le crédit est strictement positif,
-\item \emph{get\_credit() -> float}: renvoie la somme sur le compte.
+\item \emph{get\_credit() $\rightarrow$ float}: renvoie la somme sur le compte.
 \end{itemize}
 \section{Créer la banque}
 \begin{commentprof}

@@ -47,9 +47,8 @@ Le programme sur la page web ci-après simule une architecture de von Neumann:
 \begin{commentprof}
 \noindent 1MB=1MiB=1mébiBytes (méga binaire) = $2^{20}$ Bytes = 1048576 Bytes (octets)\\ PC = Program Counter = va de 4 en 4 car les adresses de cellules mémoire vont de 4 en 4\\LR = Link Register = holds the address to return to when a function call completes.\\SP = Stack Pointer = pointeur de pile = garde une trace de la pile d'appel.\\1 mot mémoire = 32 bits = 8 chiffres hex\\Il y a 1048756 octets = 1048756*8 bits\\Un mot mémoire = 4 octets = 32 bits\\1048756÷4 = nombre de mot mémoire = 262144; ils ne sont pas tous affichés à l'écran
 \end{commentprof}
-\begin{activite}
+\begin{activite} Recherche dans la documentation
 \begin{enumerate}
-\item En bas à droite, placer le menu déroulant sur \emph{Decimal (signed)}.
 \item De combien de registres dispose l'UAL?
 \item Que représente le registre \emph{PC}?
 %\item Combien y-a-t-il de cellules dans la mémoire?
@@ -60,12 +59,13 @@ La documentation (en anglais) est située sur cette page:
 \begin{center}
 \url{https://peterhigginson.co.uk/ARMlite/Programming%20reference%20manual.pdf}
 \end{center}
-\begin{activite}
+\begin{activite} Utilisation du simulateur
 \begin{enumerate}
-\item Retrouver et noter la syntaxe des instructions du chapitre~\ref{simulmanuel}.
+\item Repérer visuellement les principaux éléments de l'architecture de von Neumann.
+\item En bas à droite du simulteur, placer le menu déroulant sur \emph{Decimal (signed)}.
+\item Retrouver et noter la syntaxe des instructions de l'activité 1.
 \item Quelle instruction permet de terminer un programme?
-\item Traduire alors sur papier le programme de l'activité 1.
-\item Le réaliser sur le simulateur.
+\item Traduire alors le programme de l'activité 1 sur le simulateur.
 \item Lancer le programme en mode pas à pas avec le bouton \ref{pasapas}
 \end{enumerate}
 \end{activite}
@@ -81,6 +81,7 @@ Charger des données en mémoire est une première étape mais il semble limité
 Observer les \emph{status bits}.
 \end{commentprof}
 \begin{activite}
+Comparaisons de valeur
 \begin{enumerate}
 \item Dans la documentation trouver la signification et la syntaxe des instructions \emph{CMP, BEQ, BNE}.
 \item Charger le code \ref{mystere} dans le simulateur:

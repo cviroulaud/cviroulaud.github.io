@@ -13255,45 +13255,81 @@ a.anchor-link {
 <h3 id="Topologie-lin&#233;aire">Topologie lin&#233;aire<a class="anchor-link" href="#Topologie-lin&#233;aire">&#182;</a></h3><p><img src="ressources/topo-lineaire.png" width=300px style="float:left;margin:10px"></p>
 <ul>
 <li>Un ordinateur doit transmettre le message au suivant jusqu'à atteindre l'ordinateur cible.</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><span style="color:green">Faible coût de déploiement.</span></li>
 <li><span style="color:red">Si un ordinateur tombe en panne, le réseau est coupé en deux sous-réseaux.</span></li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Topologie-en-anneau">Topologie en anneau<a class="anchor-link" href="#Topologie-en-anneau">&#182;</a></h3><p><img src="ressources/topo-anneau.png" width=300px style="float:left;margin:10px"></p>
 <ul>
-<li>Similaire à la topologie en anneau. Le message ne circule que dans un seul sens.</li>
+<li>Similaire à la topologie linéaire. Le message ne circule que dans un seul sens.</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><span style="color:green">Faible coût de déploiement.</span></li>
 <li><span style="color:red">La défaillance d'un hôte rompt la structure si la communication est unidirectionnelle.</span></li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Topologie-en-bus">Topologie en bus<a class="anchor-link" href="#Topologie-en-bus">&#182;</a></h3><p><img src="ressources/topo-bus.png" width=300px style="float:left;margin:10px"></p>
 <ul>
 <li>Les machines sont reliées à un fil (<strong>le bus</strong>) et envoient le message sur toute la longueur pour communiquer.</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><span style="color:green">Pas de perturbation du réseau si une machine est défectueuse.</span></li>
 <li><span style="color:red">Un seul message peut circuler à la fois sur le bus.</span></li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Topologie-en-&#233;toile">Topologie en &#233;toile<a class="anchor-link" href="#Topologie-en-&#233;toile">&#182;</a></h3><p><img src="ressources/topo-etoile.png" width=300px style="float:left;margin:10px"></p>
 <ul>
 <li>Chaque machine est reliée à l'ordinateur central qui fait office de service postal. C'est cet ordinateur qui distribue le message.</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><span style="color:green">Pas de perturbation du réseau si une machine est défectueuse.</span></li>
 <li><span style="color:green">Plusieurs messages peuvent circuler en même temps.</span></li>
 <li><span style="color:red">La défaillance du nœud central bloque le réseau.</span></li>
@@ -13301,32 +13337,50 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Topologie-hi&#233;rarchique">Topologie hi&#233;rarchique<a class="anchor-link" href="#Topologie-hi&#233;rarchique">&#182;</a></h3><p><img src="ressources/topo-hierarchique.png" width=300px style="float:left;margin:10px"></p>
 <ul>
 <li>Le sommet, de haut niveau, est connectée à plusieurs nœuds de niveau inférieur, dans la hiérarchie. Chaque terminal doit s'apuyer sur l'ordinateur central.</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><span style="color:red">Si l'ordinateur "père" tombe en panne, le réseau est coupé en deux sous-réseaux.</span></li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Topologie-maill&#233;e">Topologie maill&#233;e<a class="anchor-link" href="#Topologie-maill&#233;e">&#182;</a></h3><p><img src="ressources/topo-maillee.png" width=300px style="float:left;margin:10px"></p>
+<h3 id="Topologie-maill&#233;e">Topologie maill&#233;e<a class="anchor-link" href="#Topologie-maill&#233;e">&#182;</a></h3><p><img src="ressources/topo-maillee.png" width=300px style="float:left!important;margin:10px"></p>
 <ul>
 <li>Tous les terminaux sont reliés entre eux. L'information peut parcourir le réseau suivant des itinéraires divers.</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><span style="color:green">Même en cas de panne d'une machine le message peut être transmis.</span></li>
 <li><span style="color:red">Le nombre de liaisons nécessaires devient très élevé lorsque le nombre de terminaux croît.</span></li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13354,9 +13408,10 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Chaque réseau est relié aux autres par une <strong>topologie maillée</strong> qui forme l'internet. On parle de <strong>GAN (Global Area Network)</strong>.
-<img src="ressources/wan-lan.png" width=200px></p>
-
+<p>Chaque réseau est relié aux autres par une <strong>topologie maillée</strong> qui forme l'internet. On parle de <strong>GAN (Global Area Network)</strong>.</p>
+<div align="middle">
+<img src="ressources/wan-lan.png" width=200px>
+</div>
 </div>
 </div>
 </div></div></section></section><section><section>

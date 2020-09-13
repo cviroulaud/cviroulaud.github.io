@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 SEP 2020 11:22
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  10 SEP 2020 15:18
  restricted system commands enabled.
 **TP-langage-machine.tex
 (./TP-langage-machine.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.094 seconds
+luaotfload | main : initialization completed in 0.071 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -827,14 +827,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 87.
+Package hyperref Info: Option `colorlinks' set `true' on input line 88.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 87.
+(hyperref)                setting the option has no effect on input line 88.
 
-Package hyperref Info: Option `frenchlinks' set `true' on input line 87.
-Package hyperref Info: Option `unicode' set `true' on input line 87.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 88.
+Package hyperref Info: Option `unicode' set `true' on input line 88.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 )
@@ -1049,7 +1049,7 @@ input line 49.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-<ressources/pasapas.png, id=58, 114.4275pt x 110.4125pt>
+<ressources/pasapas.png, id=57, 114.4275pt x 110.4125pt>
 File: ressources/pasapas.png Graphic file (type png)
 <use ressources/pasapas.png>
 Package luatex.def Info: ressources/pasapas.png  used on input line 74.
@@ -1058,21 +1058,21 @@ Package luatex.def Info: ressources/pasapas.png  used on input line 74.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 91.
+input line 92.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 
 [2<./ressources/pasapas.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 105.
+input line 106.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (./TP-langage-machine.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `TP-langage-machine.out' has not changed.
 (rerunfilecheck)             Checksum: F4B917B7FE89CF82AD30B1B4A147AA8E;1056.
 )
@@ -1080,11 +1080,11 @@ Package rerunfilecheck Info: File `TP-langage-machine.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  27002 strings out of 494383
  100000,794899 words of node,token memory allocated
- 33148 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 38 glue, 4 kern, 1 penalty, 4266 glyph, 1094 attrib
+ 34079 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 38 glue, 4 kern, 1 penalty, 4399 glyph, 1094 attrib
 ute, 55 glue_spec, 184 attribute_list, 1 write nodes
-   avail lists: 1:5,2:4373,3:269,4:1131,5:1012,6:56,7:2516,8:838,9:1599,10:11,11
-:230
+   avail lists: 1:5,2:4359,3:267,4:1129,5:1023,6:55,7:2694,8:837,9:1599,10:11,11
+:249
  30538 multiletter control sequences out of 65536+600000
  49 fonts using 7808527 bytes
  55i,15n,95p,1113b,1017s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1098,10 +1098,10 @@ e/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lms
 ans10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on TP-langage-machine.pdf (3 pages, 74344 bytes).
+Output written on TP-langage-machine.pdf (3 pages, 74371 bytes).
 
-PDF statistics: 178 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
+PDF statistics: 177 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  42 named destinations out of 1000 (max. 131072)
  99 words of extra memory for PDF output out of 10000 (max. 100000000)
 

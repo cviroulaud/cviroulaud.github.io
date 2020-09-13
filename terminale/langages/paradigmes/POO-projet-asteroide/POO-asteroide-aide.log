@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 SEP 2020 12:21
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  10 SEP 2020 14:36
  restricted system commands enabled.
 **POO-asteroide-aide.tex
 (./POO-asteroide-aide.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.093 seconds
+luaotfload | main : initialization completed in 0.103 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -827,14 +827,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 87.
+Package hyperref Info: Option `colorlinks' set `true' on input line 88.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 87.
+(hyperref)                setting the option has no effect on input line 88.
 
-Package hyperref Info: Option `frenchlinks' set `true' on input line 87.
-Package hyperref Info: Option `unicode' set `true' on input line 87.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 88.
+Package hyperref Info: Option `unicode' set `true' on input line 88.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 )
@@ -1030,7 +1030,7 @@ LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1042,15 +1042,15 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 58.
+input line 59.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (./POO-asteroide-aide.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `POO-asteroide-aide.out' has not changed.
 (rerunfilecheck)             Checksum: 42EF89A2C933D11D72C78B099606CB94;594.
 )
@@ -1058,10 +1058,10 @@ Package rerunfilecheck Info: File `POO-asteroide-aide.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  26709 strings out of 494383
  100000,794899 words of node,token memory allocated
- 14934 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 1892 glyph, 482 attribu
-te, 55 glue_spec, 82 attribute_list, 1 write nodes
-   avail lists: 1:5,2:1132,3:185,4:54,5:163,6:41,7:2812,8:75,9:145,10:2,11:185
+ 15823 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 2007 glyph, 518 attribu
+te, 55 glue_spec, 88 attribute_list, 1 write nodes
+   avail lists: 1:5,2:1174,3:191,4:58,5:169,6:42,7:2974,8:75,9:150,10:2,11:195
  30311 multiletter control sequences out of 65536+600000
  48 fonts using 7677967 bytes
  55i,15n,95p,1113b,479s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1071,7 +1071,7 @@ ublic/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
 12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></u
 sr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive
 /texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on POO-asteroide-aide.pdf (1 page, 32569 bytes).
+Output written on POO-asteroide-aide.pdf (1 page, 32758 bytes).
 
 PDF statistics: 96 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream

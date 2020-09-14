@@ -1,9 +1,9 @@
 \documentclass[a4paper,11pt]{article}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
-\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+%\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
 \fancyhead[L]{TP La banque périgourdine}
 \newdate{madate}{10}{09}{2020}
-\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Terminale - NSI} %\today
 \fancyfoot[L]{~\\Christophe Viroulaud}
 \fancyfoot[C]{\textbf{Page \thepage}}
 \fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
@@ -47,7 +47,8 @@ Notre banque est définie par 3 classes: \emph{Banque, Client, Compte}. Dans un 
 \begin{commentprof}
 déclaration fonction avec type:
 def maf(d:int, t:str) -> bool:
-\\Il est possible de créer d'autres méthodes dites \emph{internes}.
+\\Il est possible de créer d'autres méthodes dites \emph{internes}.\\
+comment gérer le pb des erreurs qui s'affichent tant qu'on n'a pas récupéré le module de l'autre? créer classe "vide" avec \textbf{pass}
 \end{commentprof}
 \subsection{Module banque}
 La banque possède les attributs suivants:
@@ -71,9 +72,9 @@ Le client possède les attributs suivants:
 \end{itemize}
 Les méthodes fournies à l'utilisateur sont:
 \begin{itemize}
-\item \emph{ouvre\_compte(remunere: bool, i: int) $\rightarrow$ None}: crée un nouveau compte dans \emph{\_comptes} avec \emph{i} pour clé,
-\item \emph{ferme\_compte(i:vint) $\rightarrow$ str}: clôture le compte ayant \emph{i} pour clé et renvoie "Le compte est supprimé"; sinon renvoie "Ce compte n'existe pas.",
-\item \emph{get\_comptes() $\rightarrow$ dict}: renvoie le dictionnaire des comptes.
+\item \emph{ouvre\_compte(remunere: bool, i: int)\;\rightarrow\;None}: crée un nouveau compte dans \emph{\_comptes} avec \emph{i} pour clé,
+\item \emph{ferme\_compte(i: int) \rightarrow str}: clôture le compte ayant \emph{i} pour clé et renvoie "Le compte est supprimé"; sinon renvoie "Ce compte n'existe pas.",
+\item \emph{get\_comptes() $x\rightarrow x$ dict}: renvoie le dictionnaire des comptes.
 %\item \emph{credite\_compte(s:float,i:integer) -> None}: crédite le compte de rang \emph{i} dans la liste \emph{\_comptes} de la somme \emph{s},
 %\item \emph{debite\_compte(s:float,i:integer) -> string}: débite le compte de rang \emph{i} dans la liste \emph{\_comptes} seulement si le crédit restant est supérieur à \emph{s}; renvoie le message "opération effectuée" ou "le compte n'est pas suffisamment approvisionné" sinon. 
 \end{itemize}

@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>TP-langage-machine-correction slides</title>
+<title>circuits-combinatoires slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13202,88 +13202,349 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Activit&#233;-3:-Addition">Activit&#233; 3: Addition<a class="anchor-link" href="#Activit&#233;-3:-Addition">&#182;</a></h1>
+<script type="text/javascript" src="../../../custom_slides.js"></script>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Circuits-combinatoires">Circuits combinatoires<a class="anchor-link" href="#Circuits-combinatoires">&#182;</a></h1>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Probl&#233;matique">1. Probl&#233;matique<a class="anchor-link" href="#1.-Probl&#233;matique">&#182;</a></h2>
 </div>
 </div>
 </div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>      <span class="n">LDR</span> <span class="n">R0</span><span class="p">,</span><span class="mi">16</span>
-      <span class="n">ADD</span> <span class="n">R1</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="c1">#49</span>
-      <span class="n">STR</span> <span class="n">R1</span><span class="p">,</span><span class="mi">20</span>
-      <span class="n">HALT</span>
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Repr&#233;sentation-en-m&#233;moire-d'un-octet">Repr&#233;sentation en m&#233;moire d'un octet<a class="anchor-link" href="#Repr&#233;sentation-en-m&#233;moire-d'un-octet">&#182;</a></h3><div align="middle"><img src="ressources/octet.png" width=400px></div>
 </div>
 </div>
-
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Portes-logiques-OR-(&#224;-partir-de-portes-NAND)">Portes logiques OR (&#224; partir de portes NAND)<a class="anchor-link" href="#Portes-logiques-OR-(&#224;-partir-de-portes-NAND)">&#182;</a></h3><div align="middle"><img src="ressources/or-from-nand.png" width=200px></div>
+</div>
+</div>
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Activit&#233;-4:-Programme-myst&#232;re">Activit&#233; 4: Programme myst&#232;re<a class="anchor-link" href="#Activit&#233;-4:-Programme-myst&#232;re">&#182;</a></h1>
+<h2 id="Comment-traduire-le-programme-assembleur-de-l'addition-en-circuit-&#233;lectronique?">Comment traduire le programme assembleur de l'addition en circuit &#233;lectronique?<a class="anchor-link" href="#Comment-traduire-le-programme-assembleur-de-l'addition-en-circuit-&#233;lectronique?">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.-Fonctions-logiques">2. Fonctions logiques<a class="anchor-link" href="#2.-Fonctions-logiques">&#182;</a></h2>
 </div>
 </div>
 </div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>          <span class="n">LDR</span> <span class="n">R0</span><span class="p">,</span><span class="o">.</span><span class="n">InputNum</span>    <span class="o">//</span> <span class="n">Copie</span> <span class="n">d</span><span class="s1">&#39;une entrée clavier dans R0</span>
-          <span class="n">MOV</span> <span class="n">R1</span><span class="p">,</span><span class="c1">#10          // Charge 10 dans R1</span>
-          <span class="n">CMP</span> <span class="n">R0</span><span class="p">,</span><span class="n">R1</span>           <span class="o">//</span> <span class="n">Compare</span> <span class="n">RO</span> <span class="n">et</span> <span class="n">R1</span>
-          <span class="n">BNE</span> <span class="n">NOTEGAL</span>         <span class="o">//</span> <span class="n">S</span><span class="s1">&#39;il n&#39;</span><span class="n">y</span> <span class="n">a</span> <span class="n">pas</span> <span class="n">égalité</span><span class="p">,</span> <span class="n">aller</span> <span class="n">au</span> <span class="n">label</span> <span class="n">NOTEGAL</span>
-          <span class="n">MOV</span> <span class="n">R2</span><span class="p">,</span><span class="c1">#GAGNE       // Copie du texte GAGNE dans R2</span>
-          <span class="n">STR</span> <span class="n">R2</span><span class="p">,</span><span class="o">.</span><span class="n">WriteString</span> <span class="o">//</span> <span class="n">Affiche</span> <span class="n">R2</span> <span class="n">dans</span> <span class="n">la</span> <span class="n">sortie</span>
-          <span class="n">B</span> <span class="n">SUITE</span>             <span class="o">//</span> <span class="n">Aller</span> <span class="n">au</span> <span class="n">label</span> <span class="n">SUITE</span>
-    <span class="n">NOTEGAL</span><span class="p">:</span>
-          <span class="n">MOV</span> <span class="n">R2</span><span class="p">,</span><span class="c1">#PERDU</span>
-          <span class="n">STR</span> <span class="n">R2</span><span class="p">,</span><span class="o">.</span><span class="n">WriteString</span>
-    <span class="n">SUITE</span><span class="p">:</span>
-          <span class="n">HALT</span>
-    <span class="n">GAGNE</span><span class="p">:</span><span class="o">.</span><span class="n">ASCIZ</span> <span class="s2">&quot;Bien joué!&quot;</span>
-    <span class="n">PERDU</span><span class="p">:</span> <span class="o">.</span><span class="n">ASCIZ</span> <span class="s2">&quot;Perdu!&quot;</span>
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.1-Notations-bool&#233;ennes">2.1 Notations bool&#233;ennes<a class="anchor-link" href="#2.1-Notations-bool&#233;ennes">&#182;</a></h3><ul>
+<li>$\lnot(x)$ pour NOT</li>
+<li>$\land(x)$ pour AND</li>
+<li>$\lor(x)$ pour OR</li>
+</ul>
 
-    </div>
 </div>
 </div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.2-Nouvelle-porte-logique">2.2 Nouvelle porte logique<a class="anchor-link" href="#2.2-Nouvelle-porte-logique">&#182;</a></h3><table>
+    <tr>
+        <td><img src="ressources/xor-us.png" width=160px></td>
+        <td><img src="ressources/xor-eu.png" width=160px></td>
+    </tr>
+</table><h4 id="Porte-XOR-ou-OU-EXCLUSIF">Porte XOR ou OU EXCLUSIF<a class="anchor-link" href="#Porte-XOR-ou-OU-EXCLUSIF">&#182;</a></h4><p>Fromage ou dessert?</p>
 
+</div>
+</div>
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Activit&#233;-5:-Moyenne">Activit&#233; 5: Moyenne<a class="anchor-link" href="#Activit&#233;-5:-Moyenne">&#182;</a></h1>
+<h3 id="2.3-Op&#233;rations-bool&#233;ennes">2.3 Op&#233;rations bool&#233;ennes<a class="anchor-link" href="#2.3-Op&#233;rations-bool&#233;ennes">&#182;</a></h3>$$f(x,y,z)=(x\land y)\oplus (\lnot y \lor z)$$<div align="middle">f(x, y, z) = (x AND y) XOR (NOT y OR z)</div>
 </div>
 </div>
 </div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>      <span class="n">MOV</span> <span class="n">R0</span><span class="p">,</span><span class="c1">#0</span>
-<span class="n">loop</span><span class="p">:</span>
-      <span class="n">LDR</span> <span class="n">R1</span><span class="p">,</span><span class="o">.</span><span class="n">InputNum</span>
-      <span class="n">ADD</span> <span class="n">R2</span><span class="p">,</span><span class="n">R2</span><span class="p">,</span><span class="n">R1</span>
-      <span class="n">ADD</span> <span class="n">R0</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="c1">#1</span>
-      <span class="n">CMP</span> <span class="n">R0</span><span class="p">,</span><span class="c1">#8</span>
-      <span class="n">BNE</span> <span class="n">loop</span>
-      <span class="n">LSR</span> <span class="n">R2</span><span class="p">,</span><span class="n">R2</span><span class="p">,</span><span class="c1">#3</span>
-      <span class="n">STR</span> <span class="n">R2</span><span class="p">,</span><span class="o">.</span><span class="n">WriteUnsignedNum</span>
-      <span class="n">HALT</span>
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Activit&#233;-1:-correction">Activit&#233; 1: correction<a class="anchor-link" href="#Activit&#233;-1:-correction">&#182;</a></h3><p>3 entrées $\rightarrow 2^3$ sorties</p>
 
-    </div>
 </div>
 </div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>x</td>
+        <td>y</td>
+        <td>z</td>
+        <td>(x $\land$ y)</td>
+        <td>$\lnot$ y</td>
+        <td>($\lnot$ y $\lor$ z)</td>        
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>x</td>
+        <td>y</td>
+        <td>z</td>
+        <td>(x$\land$ y)$\oplus$ ($\lnot$ y $\lor$ z)</td>        
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.-R&#233;aliser-un-additionneur">3. R&#233;aliser un additionneur<a class="anchor-link" href="#3.-R&#233;aliser-un-additionneur">&#182;</a></h2><h3 id="3.1-D&#233;composition">3.1 D&#233;composition<a class="anchor-link" href="#3.1-D&#233;composition">&#182;</a></h3>$$\begin{array}{ccccc}
+        &amp; 1 &amp; 1 &amp; &amp; retenues \\
+        &amp; 1 &amp; 0 &amp; 1 &amp; \\
+        + &amp; 1 &amp; 1 &amp; 1 &amp;\\
+        \_&amp;\_&amp;\_&amp;\_&amp;\\
+        1 &amp; 1 &amp; 0 &amp; 0 &amp;\\
+   \end{array}
+$$
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.2-Demi-additioneur">3.2 Demi-additioneur<a class="anchor-link" href="#3.2-Demi-additioneur">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><div align="middle"><img src="ressources/demi-add.png" width=300px><div></p>
 
-</div></div></section></section>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.3-Additionneur-1-bit">3.3 Additionneur 1 bit<a class="anchor-link" href="#3.3-Additionneur-1-bit">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>$e_0$</td>
+        <td>$e_1$</td>
+        <td>$c_0$</td>
+        <td>s</td>
+        <td>c</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><div align="middle"><img src="ressources/additionneur.png" width=400px><div></p>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 

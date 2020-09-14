@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>TP-langage-machine-correction slides</title>
+<title>exponentiation slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13202,22 +13202,114 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Activit&#233;-3:-Addition">Activit&#233; 3: Addition<a class="anchor-link" href="#Activit&#233;-3:-Addition">&#182;</a></h1>
+<h1 id="R&#233;cursivit&#233;">R&#233;cursivit&#233;<a class="anchor-link" href="#R&#233;cursivit&#233;">&#182;</a></h1>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Probl&#233;matique">1. Probl&#233;matique<a class="anchor-link" href="#1.-Probl&#233;matique">&#182;</a></h2>$$a^n=\underbrace{a ×....× a}_{n fois}\qquad et\ a^0=1$$<h4 id="Comment-calculer-la-puissance-d'un-nombre-de-mani&#232;re-optimis&#233;e?">Comment calculer la puissance d'un nombre de mani&#232;re optimis&#233;e?<a class="anchor-link" href="#Comment-calculer-la-puissance-d'un-nombre-de-mani&#232;re-optimis&#233;e?">&#182;</a></h4>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.-&#201;tude-la-fonction-native">2. &#201;tude la fonction native<a class="anchor-link" href="#2.-&#201;tude-la-fonction-native">&#182;</a></h2><h3 id="2.1-Fonctions--Python-&quot;built-in&quot;">2.1 Fonctions  Python "built-in"<a class="anchor-link" href="#2.1-Fonctions--Python-&quot;built-in&quot;">&#182;</a></h3>
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>      <span class="n">LDR</span> <span class="n">R0</span><span class="p">,</span><span class="mi">16</span>
-      <span class="n">ADD</span> <span class="n">R1</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="c1">#49</span>
-      <span class="n">STR</span> <span class="n">R1</span><span class="p">,</span><span class="mi">20</span>
-      <span class="n">HALT</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">puissance_star</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span><span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="n">n</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">puissance_builtin</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span><span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">pow</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">puissance_star</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>35184372088832</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">puissance_builtin</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>35184372088832</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13225,32 +13317,80 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Activit&#233;-4:-Programme-myst&#232;re">Activit&#233; 4: Programme myst&#232;re<a class="anchor-link" href="#Activit&#233;-4:-Programme-myst&#232;re">&#182;</a></h1>
+<h3 id="2.2-Tester-un-programme">2.2 Tester un programme<a class="anchor-link" href="#2.2-Tester-un-programme">&#182;</a></h3>
 </div>
 </div>
 </div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="2.2.1-Pr&#233;conditions">2.2.1 Pr&#233;conditions<a class="anchor-link" href="#2.2.1-Pr&#233;conditions">&#182;</a></h4><p>Nous nous limitons au cas positif.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Activit&#233;">Activit&#233;<a class="anchor-link" href="#Activit&#233;">&#182;</a></h4><ul>
+<li>Mettre en place un test qui lèvera une <em>AssertionError</em> si l'exposant est négatif.</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>          <span class="n">LDR</span> <span class="n">R0</span><span class="p">,</span><span class="o">.</span><span class="n">InputNum</span>    <span class="o">//</span> <span class="n">Copie</span> <span class="n">d</span><span class="s1">&#39;une entrée clavier dans R0</span>
-          <span class="n">MOV</span> <span class="n">R1</span><span class="p">,</span><span class="c1">#10          // Charge 10 dans R1</span>
-          <span class="n">CMP</span> <span class="n">R0</span><span class="p">,</span><span class="n">R1</span>           <span class="o">//</span> <span class="n">Compare</span> <span class="n">RO</span> <span class="n">et</span> <span class="n">R1</span>
-          <span class="n">BNE</span> <span class="n">NOTEGAL</span>         <span class="o">//</span> <span class="n">S</span><span class="s1">&#39;il n&#39;</span><span class="n">y</span> <span class="n">a</span> <span class="n">pas</span> <span class="n">égalité</span><span class="p">,</span> <span class="n">aller</span> <span class="n">au</span> <span class="n">label</span> <span class="n">NOTEGAL</span>
-          <span class="n">MOV</span> <span class="n">R2</span><span class="p">,</span><span class="c1">#GAGNE       // Copie du texte GAGNE dans R2</span>
-          <span class="n">STR</span> <span class="n">R2</span><span class="p">,</span><span class="o">.</span><span class="n">WriteString</span> <span class="o">//</span> <span class="n">Affiche</span> <span class="n">R2</span> <span class="n">dans</span> <span class="n">la</span> <span class="n">sortie</span>
-          <span class="n">B</span> <span class="n">SUITE</span>             <span class="o">//</span> <span class="n">Aller</span> <span class="n">au</span> <span class="n">label</span> <span class="n">SUITE</span>
-    <span class="n">NOTEGAL</span><span class="p">:</span>
-          <span class="n">MOV</span> <span class="n">R2</span><span class="p">,</span><span class="c1">#PERDU</span>
-          <span class="n">STR</span> <span class="n">R2</span><span class="p">,</span><span class="o">.</span><span class="n">WriteString</span>
-    <span class="n">SUITE</span><span class="p">:</span>
-          <span class="n">HALT</span>
-    <span class="n">GAGNE</span><span class="p">:</span><span class="o">.</span><span class="n">ASCIZ</span> <span class="s2">&quot;Bien joué!&quot;</span>
-    <span class="n">PERDU</span><span class="p">:</span> <span class="o">.</span><span class="n">ASCIZ</span> <span class="s2">&quot;Perdu!&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">puissance_star</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span><span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;L&#39;exposant doit être positif.&quot;</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="n">n</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">puissance_star</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AssertionError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-6-719183b3f84a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>puissance_star<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">9</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-5-e0903e75bc79&gt;</span> in <span class="ansi-cyan-fg">puissance_star</span><span class="ansi-blue-fg">(x, n)</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">def</span> puissance_star<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">:</span>int<span class="ansi-blue-fg">,</span>n<span class="ansi-blue-fg">:</span>int<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">-&gt;</span>int<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">assert</span> n<span class="ansi-blue-fg">&gt;</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;L&#39;exposant doit être positif.&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     <span class="ansi-green-fg">return</span> x<span class="ansi-blue-fg">**</span>n
+
+<span class="ansi-red-fg">AssertionError</span>: L&#39;exposant doit être positif.</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13258,32 +13398,558 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Activit&#233;-5:-Moyenne">Activit&#233; 5: Moyenne<a class="anchor-link" href="#Activit&#233;-5:-Moyenne">&#182;</a></h1>
+<h4 id="2.2.2-Mettre-en-place-des-tests">2.2.2 Mettre en place des tests<a class="anchor-link" href="#2.2.2-Mettre-en-place-des-tests">&#182;</a></h4>
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>      <span class="n">MOV</span> <span class="n">R0</span><span class="p">,</span><span class="c1">#0</span>
-<span class="n">loop</span><span class="p">:</span>
-      <span class="n">LDR</span> <span class="n">R1</span><span class="p">,</span><span class="o">.</span><span class="n">InputNum</span>
-      <span class="n">ADD</span> <span class="n">R2</span><span class="p">,</span><span class="n">R2</span><span class="p">,</span><span class="n">R1</span>
-      <span class="n">ADD</span> <span class="n">R0</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="c1">#1</span>
-      <span class="n">CMP</span> <span class="n">R0</span><span class="p">,</span><span class="c1">#8</span>
-      <span class="n">BNE</span> <span class="n">loop</span>
-      <span class="n">LSR</span> <span class="n">R2</span><span class="p">,</span><span class="n">R2</span><span class="p">,</span><span class="c1">#3</span>
-      <span class="n">STR</span> <span class="n">R2</span><span class="p">,</span><span class="o">.</span><span class="n">WriteUnsignedNum</span>
-      <span class="n">HALT</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">doctest</span>
+
+<span class="k">def</span> <span class="nf">puissance_star</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span><span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    &gt;&gt;&gt; puissance_star(2,8)</span>
+<span class="sd">    256</span>
+<span class="sd">    &gt;&gt;&gt; puissance_star(2,9)</span>
+<span class="sd">    512</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="n">n</span>
+
+<span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div></div></section></section>
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Trying:
+    puissance_star(2,8)
+Expecting:
+    256
+ok
+Trying:
+    puissance_star(2,9)
+Expecting:
+    512
+ok
+2 items had no tests:
+    __main__
+    __main__.puissance_builtin
+1 items passed all tests:
+   2 tests in __main__.puissance_star
+2 tests in 3 items.
+2 passed and 0 failed.
+Test passed.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>TestResults(failed=0, attempted=2)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.3-Temps-d'ex&#233;cution">2.3 Temps d'ex&#233;cution<a class="anchor-link" href="#2.3-Temps-d'ex&#233;cution">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
+
+<span class="n">debut</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="n">puissance_star</span><span class="p">(</span><span class="mi">2701</span><span class="p">,</span><span class="mi">19406</span><span class="p">)</span>
+<span class="n">fin</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;opérande **&quot;</span><span class="p">,</span><span class="n">fin</span><span class="o">-</span><span class="n">debut</span><span class="p">)</span>
+
+<span class="n">debut</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="n">puissance_builtin</span><span class="p">(</span><span class="mi">2701</span><span class="p">,</span><span class="mi">19406</span><span class="p">)</span>
+<span class="n">fin</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fonction pow()&quot;</span><span class="p">,</span><span class="n">fin</span><span class="o">-</span><span class="n">debut</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>opérande ** 0.005665779113769531
+fonction pow() 0.004601955413818359
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.-Impl&#233;menter-la-fonction-puissance">3. Impl&#233;menter la fonction <em>puissance</em><a class="anchor-link" href="#3.-Impl&#233;menter-la-fonction-puissance">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.1-S'appuyer-sur-la-d&#233;finition-math&#233;matique">3.1 S'appuyer sur la d&#233;finition math&#233;matique<a class="anchor-link" href="#3.1-S'appuyer-sur-la-d&#233;finition-math&#233;matique">&#182;</a></h3>$$a^n=\underbrace{a ×....× a}_{n fois}$$<p>et $a^0=1$</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Activit&#233;:">Activit&#233;:<a class="anchor-link" href="#Activit&#233;:">&#182;</a></h3><ul>
+<li>Implémenter la fonction <strong>puissance_perso(x:int,exp:int)-&gt;int</strong> sans utiliser les fonctions buitin de Python.</li>
+<li>Mettre en place un test de vérification de la fonction.</li>
+<li>Mesurer le temps d'exécution de la fonction en l'appelant avec les paramètres (2701,19406).</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Une-solution">Une solution<a class="anchor-link" href="#Une-solution">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">puissance_perso</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span><span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">res</span><span class="o">*=</span><span class="n">x</span>
+    <span class="k">return</span> <span class="n">res</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">puissance_perso</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span><span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    &gt;&gt;&gt; puissance_perso(2,8)</span>
+<span class="sd">    256</span>
+<span class="sd">    &gt;&gt;&gt; puissance_perso(2,9)</span>
+<span class="sd">    512</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">res</span><span class="o">*=</span><span class="n">x</span>
+    <span class="k">return</span> <span class="n">res</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">puissance_perso</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>35184372088832</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.2-Invariant-de-boucle">3.2 Invariant de boucle<a class="anchor-link" href="#3.2-Invariant-de-boucle">&#182;</a></h3><p>Il permet de prouver la <strong>correction</strong> d'un algorithme.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>On appelle <strong>invariant d’une boucle</strong> une propriété qui si elle est vraie avant l’exécution d’une itération le demeure après l’exécution de l’itération.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La propriété $res = x^i$ est un invariant de boucle.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>C'est en fait un raisonnement par récurrence comme en mathématiques.</p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Preuve">Preuve<a class="anchor-link" href="#Preuve">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>initialisation:</em> Avant la première itération pour i=0, res vaut 1.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>hérédité:</em> On considère que pour n, la propriété $res=x^n$ est vraie.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>conclusion:</em> Pour n+1, $res=x.x^n=x^{n+1}$</p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.3-Temps-d'ex&#233;cution">3.3 Temps d'ex&#233;cution<a class="anchor-link" href="#3.3-Temps-d'ex&#233;cution">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">debut</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="n">puissance_perso</span><span class="p">(</span><span class="mi">2701</span><span class="p">,</span><span class="mi">19406</span><span class="p">)</span>
+<span class="n">fin</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fin</span><span class="o">-</span><span class="n">debut</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.11108088493347168
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.-Formulations-r&#233;cursives">4. Formulations r&#233;cursives<a class="anchor-link" href="#4.-Formulations-r&#233;cursives">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.1-Notation-math&#233;matique">4.1 Notation math&#233;matique<a class="anchor-link" href="#4.1-Notation-math&#233;matique">&#182;</a></h3>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+puissance(x,n) = \left\{
+    \begin{array}{ll}
+        1 &amp; \mbox{si } n=0 \\
+        x.puissance(x,n-1) &amp; \mbox{si } n&gt;0
+    \end{array}
+\right.
+$$
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.2-Traduction-en-code">4.2 Traduction en code<a class="anchor-link" href="#4.2-Traduction-en-code">&#182;</a></h3>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">puissance_recursif</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span><span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">puissance_recursif</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="http://pythontutor.com/visualize.html#code=def%20puissance_recursif%28x%3Aint,n%3Aint%29-%3Eint%3A%0A%20%20%20%20if%20n%3D%3D0%3A%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20x*puissance_recursif%28x,n-1%29%0A%0Apuissance_recursif%286,4%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target=_blank>Visualisation de la pile d'exécution</a></p>
+
+</div>
+</div>
+</div></div></section></section><section><section>puissance_recursif(6,4)=
+    return 6 * puissance_recursif(6,3)
+                    |
+                    return 6 * puissance_recursif(6,2)
+                                    |
+                                    return 6 * puissance_recursif(6,1)
+                                                    |
+                                                    return 6 * puissance_recursif(6,0)
+                                                                    |
+                                                                    return 1</section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">setrecursionlimit</span><span class="p">(</span><span class="mi">20000</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">debut</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="n">puissance_recursif</span><span class="p">(</span><span class="mi">2701</span><span class="p">,</span><span class="mi">19406</span><span class="p">)</span>
+<span class="n">fin</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fin</span><span class="o">-</span><span class="n">debut</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.13154125213623047
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.3-Nouvelle-formulation-math&#233;matique">4.3 Nouvelle formulation math&#233;matique<a class="anchor-link" href="#4.3-Nouvelle-formulation-math&#233;matique">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$x^8=(x^4)^2=((x^2)^2)^2$$
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="ressources/exponentiationrapide.png" width=400px></p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$
+puissance(x,n) = \left\{
+    \begin{array}{ll}
+        1 &amp; \mbox{si } n=0 \\
+        puissance(x*x,n/2) &amp; \mbox{si } n&gt;0 \mbox{ et n pair}\\
+        x.puissance(x*x,(n-1)/2) &amp; \mbox{si } n&gt;0 \mbox{ et n impair}\
+    \end{array}
+\right.
+$$
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">puissance_recursif_rapide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">n</span><span class="o">%</span><span class="k">2</span>==0:
+        <span class="k">return</span> <span class="n">puissance_recursif_rapide</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">puissance_recursif_rapide</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">debut</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="n">puissance_recursif_rapide</span><span class="p">(</span><span class="mi">2701</span><span class="p">,</span><span class="mi">19406</span><span class="p">)</span>
+<span class="n">fin</span><span class="o">=</span><span class="n">time</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fin</span><span class="o">-</span><span class="n">debut</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.021120786666870117
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Implémentation des fonctions builtin</p>
+<p><a href="https://github.com/python/cpython/blob/master/Python/bltinmodule.c">https://github.com/python/cpython/blob/master/Python/bltinmodule.c</a></p>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 

@@ -3,7 +3,7 @@
 \newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
 \fancyhead[L]{Récursivité - exponentiation}
 \newdate{madate}{10}{09}{2020}
-\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Terminale - NSI} %\today
 \fancyfoot[L]{~\\Christophe Viroulaud}
 \fancyfoot[C]{\textbf{Page \thepage}}
 \fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
@@ -69,11 +69,12 @@ print("opérande **",fin-debut)
 $$a^n=\underbrace{a ×....× a}_{n fois}\qquad et \qquad a^0=1$$
 \begin{activite}
 \begin{enumerate}
-\item Implémenter la fonction \emph{puissance\_perso(x:int,exp:int)->int} sans utiliser les fonctions buitin de Python.
+\item Implémenter la fonction \textbf{puissance\_perso(x: int, n: int)\;\rightarrow\;int} sans utiliser les fonctions buitin de Python.
 \item Mettre en place un test de vérification de la fonction.
 \item Mesurer le temps d'exécution de la fonction en l'appelant avec les paramètres (2701,19406).
 \end{enumerate}
 \end{activite}
+\begin{commentprof}
 \begin{lstlisting}
 def puissance_perso(x:int,n:int)->int:
     """
@@ -87,11 +88,15 @@ def puissance_perso(x:int,n:int)->int:
         res*=x
     return res
 \end{lstlisting}
+\end{commentprof}
 \subsection{Invariant de boucle}
 Il permet de prouver la \emph{correction} d'un algorithme.\\
 On appelle \emph{invariant d’une boucle} une propriété qui si elle est vraie avant l’exécution d’une itération le demeure après l’exécution de l’itération.\\
 La propriété $res = x^i$ est un invariant de boucle. C'est en fait un raisonnement par récurrence comme en mathématiques.
 \subsection{Temps d'exécution}
+\begin{activite}
+Que peut-on conclure à propos de l'implémentation de la fonction \emph{exponentielle} fournie par Python?
+\end{activite}
 \begin{commentprof}
 durée ×20 par rapport aux fonctions builtin. Qu'en conclure?
 \end{commentprof}

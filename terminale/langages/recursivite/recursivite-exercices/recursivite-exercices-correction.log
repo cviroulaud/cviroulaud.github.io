@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 SEP 2020 11:13
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 SEP 2020 15:20
  restricted system commands enabled.
-**POO-TP-banque.tex
-(./POO-TP-banque.tex
+**recursivite-exercices-correction.tex
+(./recursivite-exercices-correction.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.084 seconds
+luaotfload | main : initialization completed in 0.096 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -860,8 +860,8 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \c@compteuractivite=\count330
 \c@compteurexo=\count331
 )
-(./POO-TP-banque.aux)
-\openout1 = POO-TP-banque.aux
+(./recursivite-exercices-correction.aux)
+\openout1 = recursivite-exercices-correction.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -879,7 +879,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 11.
@@ -1035,22 +1036,25 @@ LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
-(./POO-TP-banque.out) (./POO-TP-banque.out)
+(./recursivite-exercices-correction.out)
+(./recursivite-exercices-correction.out)
 \@outlinefile=\write4
 
-\openout4 = POO-TP-banque.out
+\openout4 = recursivite-exercices-correction.out
 LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
-){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} (./scripts/somme-entiers.p
+y)
+(./scripts/factorielle.py) (./scripts/syracuse.py) (./scripts/syracuse.py)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=43, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=15, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
@@ -1058,51 +1062,58 @@ input line 46.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-</home/tof/Documents/Cozy/latex-include/cc.png>]
+</home/tof/Documents/Cozy/latex-include/cc.png>] (./scripts/entiers.py)
+(./scripts/entiers.py) (./scripts/pgcd.py) (./scripts/nombre-chiffres.py)
+(./scripts/coef-binomiaux.py
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 92.
+input line 12.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
+ [2]) (./scripts/coef-binomiaux.py)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 120.
+input line 83.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
- (./POO-TP-banque.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
-Package rerunfilecheck Info: File `POO-TP-banque.out' has not changed.
-(rerunfilecheck)             Checksum: 7F80E7FAEC59142B1DD693FB956274C2;856.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
+
+(./recursivite-exercices-correction.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
+Package rerunfilecheck Info: File `recursivite-exercices-correction.out' has not
+ changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27255 strings out of 494383
- 100000,794899 words of node,token memory allocated
- 37418 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 68 glue, 4 kern, 1 penalty, 4958 glyph, 758 attribu
-te, 55 glue_spec, 128 attribute_list, 1 write nodes
-   avail lists: 1:3,2:1221,3:193,4:118,5:300,6:37,7:2276,8:93,9:267,10:10,11:261
+ 27445 strings out of 494383
+ 156254,794899 words of node,token memory allocated
+ 19946 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 15 glue, 4 kern, 1 penalty, 1739 glyph, 3086 attrib
+ute, 55 glue_spec, 516 attribute_list, 1 write nodes
+   avail lists: 1:5,2:8501,3:186,4:3216,5:2661,6:57,7:2717,8:2373,9:4352,10:24,1
+1:259
+ 30827 multiletter control sequences out of 65536+600000
+ 44 fonts using 7151183 bytes
+ 55i,16n,95p,1127b,1242s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
+f/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype
+/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmrom
+an10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf><
+/usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/
+uzdr.pfb>
+Output written on recursivite-exercices-correction.pdf (3 pages, 80065 bytes).
 
- 30823 multiletter control sequences out of 65536+600000
- 48 fonts using 7677967 bytes
- 55i,15n,95p,1108b,771s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
-f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
-/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
-10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></us
-r/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/f
-onts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/zapfding/uzdr.pfb>
-Output written on POO-TP-banque.pdf (3 pages, 50593 bytes).
-
-PDF statistics: 130 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 131072)
- 107 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 191 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 92 named destinations out of 1000 (max. 131072)
+ 51 words of extra memory for PDF output out of 10000 (max. 100000000)
 

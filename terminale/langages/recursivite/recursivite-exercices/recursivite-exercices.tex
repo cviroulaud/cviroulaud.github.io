@@ -3,7 +3,7 @@
 \newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
 \fancyhead[L]{Récursivité - exercices}
 \newdate{madate}{10}{09}{2020}
-\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Terminale - NSI} %\today
 \fancyfoot[L]{~\\Christophe Viroulaud}
 \fancyfoot[C]{\textbf{Page \thepage}}
 \fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
@@ -15,7 +15,7 @@ La somme des entiers s'écrit:
 $$0+1+2+...+n$$
 \begin{enumerate}
 \item Donner une définition récursive de la somme des entiers.
-\item Implémenter la fonction \emph{somme(n:int) -> int}.
+\item Implémenter la fonction \textbf{somme(n: int)\;\rightarrow\;int}.
 \end{enumerate}
 \end{exo}
 \begin{exo}
@@ -23,7 +23,7 @@ La fonction factorielle est définie par:
 $$n!=1×2×3...×n \qquad si\qquad n>0 \qquad et \qquad 0!=1$$
 \begin{enumerate}
 \item Donner une définition récursive qui correspond au calcul de la fonction factorielle.
-\item Implémenter la fonction \emph{factoriel(n:int) -> int}.
+\item Implémenter la fonction \textbf{factorielle(n: int)\;\rightarrow\;int}.
 \end{enumerate}
 \end{exo}
 \begin{exo}
@@ -36,19 +36,26 @@ u_{n+1} = \left\{
     \end{array}
 \right.
 $$
-Écrire la fonction \emph{syracuse(u:int) -> str} qui affiche les valeurs successives de la suite $u_n$ tant que $u_n>1$.
+Écrire la fonction \emph{syracuse(u:int)\;\rightarrow\;None} qui affiche les valeurs successives de la suite $u_n$ tant que $u_n>1$. L'appel de la fonction s'effectuera avec une valeur de $u_0$ quelconque.
 \end{exo}
 \begin{exo}
 \begin{enumerate}
-\item Écrire une fonction récursive \emph{entiers(i:int, k:int) -> str} qui affiche les entiers entre i et k. Par exemple, entiers(0,3) doit afficher 0 1 2 3.
-\item Écrire une fonction récursive \emph{impairs(i:int, k:int) -> str} qui affiche les nombres impairs entre i et k.
+\item Écrire une fonction récursive \textbf{entiers(i: int, k: int)\;\rightarrow\;None} qui affiche les entiers entre i et k. Par exemple, entiers(0,3) doit afficher 0 1 2 3.
+\item Écrire une fonction récursive \textbf{impairs(i: int, k: int)\;\rightarrow\;None} qui affiche les nombres impairs entre i et k.
 \end{enumerate}
 \end{exo}
 \begin{exo}
-Écrire la fonction récursive \emph{pgcd(a:int, b:int) -> int} qui renvoie le Plus Grand Commun Diviseur de a et b.
+Écrire la fonction récursive \textbf{pgcd(a: int, b: int)\;\rightarrow\;int} qui renvoie le Plus Grand Commun Diviseur de a et b. On donne comme précondition: a < b.
+\begin{commentprof}
+méthode d'Euclide: (20,35)\\
+$35 = \overbrace{20}^{a\rightarrow b}×1 + \overbrace{15}^{b\%a\rightarrow a}$\\
+20 = 15×1 + 5\\
+15 = 5×3 + 0\\
+pgcd = 5
+\end{commentprof}
 \end{exo}
 \begin{exo}
-Écrire une fonction récursive \emph{nombre\_chiffres(n:int) -> int} qui renvoie le nombre de chiffres qui compose n.
+Écrire une fonction récursive \textbf{nombre\_chiffres(n: int)\;\rightarrow\;int} qui renvoie le nombre de chiffres qui compose n.
 \end{exo}
 \begin{exo}
 La formulation récursive ci-après permet de calculer les coefficients binomiaux:
@@ -56,14 +63,18 @@ $$
 C(n,p) = \left\{
     \begin{array}{ll}
         1 & \mbox{si } p=0 \mbox{ ou } n=p\\
-        C(n-1,p-1)+C(n-1,p) & \mbox{sinon}\
+        C(n-1,p-1)+C(n-1,p) & \mbox{sinon}\\
     \end{array}
 \right.
 $$
 \begin{enumerate}
-\item Écrire une fonction récursive \emph{C(n:int, p:int) -> int} qui renvoie la valeur de C(n,p).
+\item Écrire une fonction récursive \textbf{C(n: int, p: int)\;\rightarrow\;int} qui renvoie la valeur de C(n,p).
 \item Le triangle de Pascal est une présentation des coefficients binomiaux sous la forme d'un triangle. Dessiner le triangle de Pascal à l'aide d'une double boucle \emph{for} pour n variant de 0 à 10.
 \end{enumerate}
 \end{exo}
+\begin{commentprof}
+Pour ceux qui ont fini: palindrome
+\lstinputlisting[firstline=9,lastline=18]{"scripts/palindrome.py"}
+\end{commentprof}
 \end{Form}
 \end{document}

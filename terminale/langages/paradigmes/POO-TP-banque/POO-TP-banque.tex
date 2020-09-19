@@ -1,6 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
-%\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
 \fancyhead[L]{TP La banque périgourdine}
 \newdate{madate}{10}{09}{2020}
 \fancyhead[R]{Terminale - NSI} %\today
@@ -73,8 +73,8 @@ Le client possède les attributs suivants:
 Les méthodes fournies à l'utilisateur sont:
 \begin{itemize}
 \item \emph{ouvre\_compte(remunere: bool, i: int)\;\rightarrow\;None}: crée un nouveau compte dans \emph{\_comptes} avec \emph{i} pour clé,
-\item \emph{ferme\_compte(i: int) \rightarrow str}: clôture le compte ayant \emph{i} pour clé et renvoie "Le compte est supprimé"; sinon renvoie "Ce compte n'existe pas.",
-\item \emph{get\_comptes() $x\rightarrow x$ dict}: renvoie le dictionnaire des comptes.
+\item \emph{ferme\_compte(i: int)\;\rightarrow\;str}: clôture le compte ayant \emph{i} pour clé et renvoie "Le compte est supprimé"; sinon renvoie "Ce compte n'existe pas.",
+\item \emph{get\_comptes() $\rightarrow $ dict}: renvoie le dictionnaire des comptes.
 %\item \emph{credite\_compte(s:float,i:integer) -> None}: crédite le compte de rang \emph{i} dans la liste \emph{\_comptes} de la somme \emph{s},
 %\item \emph{debite\_compte(s:float,i:integer) -> string}: débite le compte de rang \emph{i} dans la liste \emph{\_comptes} seulement si le crédit restant est supérieur à \emph{s}; renvoie le message "opération effectuée" ou "le compte n'est pas suffisamment approvisionné" sinon. 
 \end{itemize}

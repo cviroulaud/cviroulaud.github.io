@@ -13542,7 +13542,7 @@ fonction pow() 0.004601955413818359
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Activit&#233;:">Activit&#233;:<a class="anchor-link" href="#Activit&#233;:">&#182;</a></h3><ul>
-<li>Implémenter la fonction <strong>puissance_perso(x:int,exp:int)-&gt;int</strong> sans utiliser les fonctions buitin de Python.</li>
+<li>Implémenter la fonction <strong>puissance_perso(x: int,n: int) $\rightarrow$ int</strong> sans utiliser les fonctions buitin de Python.</li>
 <li>Mettre en place un test de vérification de la fonction.</li>
 <li>Mesurer le temps d'exécution de la fonction en l'appelant avec les paramètres (2701,19406).</li>
 </ul>
@@ -13793,16 +13793,14 @@ $$
 
 </div>
 </div>
-</div></div></section></section><section><section>puissance_recursif(6,4)=
-    return 6 * puissance_recursif(6,3)
-                    |
-                    return 6 * puissance_recursif(6,2)
-                                    |
-                                    return 6 * puissance_recursif(6,1)
-                                                    |
-                                                    return 6 * puissance_recursif(6,0)
-                                                                    |
-                                                                    return 1</section></section><section><section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div align="middle"><img src="ressources/pile-appels.png" height=500px></div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[15]:</div>

@@ -1,0 +1,83 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Récursivité - correction exercices}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+\begin{enumerate}
+\item $$
+somme(n) = \left\{
+    \begin{array}{ll}
+        0 & \mbox{si  }n=0\\
+        \mbox{n + somme(n-1)} & \mbox{si }n>0\
+    \end{array}
+\right.
+$$
+\item Programme
+\lstinputlisting[firstline=10,lastline=16]{"scripts/somme-entiers.py"}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item $$
+n! = \left\{
+    \begin{array}{ll}
+        1 & \mbox{si  }n=0\\
+        \mbox{n × (n-1)!} & \mbox{si }n>0\
+    \end{array}
+\right.
+$$
+\item Programme
+\lstinputlisting[firstline=10,lastline=16]{"scripts/factorielle.py"}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+La première version affiche les termes à chaque appel.
+\lstinputlisting[firstline=21,lastline=29]{"scripts/syracuse.py"}
+Une seconde version enregistre les termes dans une liste et renvoie cette liste. Il faut noter l'utilisation d'une variable supplémentaire initialisée par défaut.
+\lstinputlisting[firstline=10,lastline=19]{"scripts/syracuse.py"}
+\begin{commentprof}
+\paragraph{Conjecture de Syracuse:} quelle que soit la valeur de $u_0$ il existe un \emph{n} tel que $u_n=1$. Toujours pas prouvée à ce jour.\\
+Il faut noter que la fonction ne renvoie rien à chaque appel cette fois.
+\end{commentprof}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Programme
+\lstinputlisting[firstline=10,lastline=15]{"scripts/entiers.py"}
+\item Programme
+\lstinputlisting[firstline=19,lastline=25]{"scripts/entiers.py"}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Appliquons la méthode d'Euclide:
+$$
+pgcd(a,b) = \left\{
+    \begin{array}{ll}
+        b & \mbox{si } a=0\\
+        pgcd(b\%a,b) & \mbox{sinon}\\
+    \end{array}
+\right.
+$$
+\lstinputlisting[firstline=10,lastline=16]{"scripts/pgcd.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=10,lastline=16]{"scripts/nombre-chiffres.py"}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Fonction
+\lstinputlisting[firstline=10,lastline=14]{"scripts/coef-binomiaux.py"}
+\item Programme
+\lstinputlisting[firstline=16,lastline=19]{"scripts/coef-binomiaux.py"}
+\end{enumerate}
+\end{exo}
+\end{Form}
+\end{document}

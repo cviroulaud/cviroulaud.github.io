@@ -1,0 +1,71 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Représentation des entiers - correction exercices}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Première - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+\begin{commentprof}
+faire les ÷
+\end{commentprof}
+\begin{itemize}
+\item $14_{10} \rightarrow 00001110_2$
+\item $222_{10} \rightarrow 11011110_2$
+\item $42_{10} \rightarrow 00101010_2$
+\item $79_{10} \rightarrow 01001111_2$
+\end{itemize}
+\end{exo}
+\begin{exo}
+Donner la représentation décimale des nombres binaires (non signés) suivants:
+\begin{itemize}
+\item $1010_2 \rightarrow 10_{10}$
+\item $111110_2 \rightarrow 62_{10}$
+\item $100101001_2 \rightarrow 297_{10}$
+\end{itemize}
+\end{exo}
+\begin{exo}
+Donner la représentation hexadécimale des nombres binaires suivants:
+\begin{commentprof}
+penser à faire blocs de 4
+\end{commentprof}
+\begin{itemize}
+\item $10010101_2 \rightarrow 95_{16}$
+\item $11010101_2 \rightarrow D5_{16}$
+\item $100010001_2 \rightarrow 111_{16}$
+\item $11001101001010_2 \rightarrow 334A_{16}$
+\end{itemize}
+\end{exo}
+\begin{exo}
+$B×16^3+E×16^2+E×16^1+F×16^0=11×16^3+14×16^2+14×16^1+15×16^0=48879$
+\end{exo}
+\begin{exo}
+\begin{itemize}
+\item $10_{10}=00001010_2 donc -10_{10}=11110101+1=11110110_2$
+\item $128_{10}=10000000_2 donc -128_{10}=01111111+1=10000000_2$ Nous remarquons qu'il s'agit de la même représentation que 128: sur 8 bits, nous ne pouvons pas représenter l'entier positif 128!!!
+\item $42_{10}=00101010_2 donc -42_{10}=11010101+1=11010110_2$
+\item $97_{10}=01100001_2$
+\end{itemize}
+\end{exo}
+\begin{exo}
+\begin{commentprof}
+La méthode rapide: 11100111 \rightarrow on inverse les bits à partir du premier 1: 00011001 \rightarrow 25
+\end{commentprof}
+\begin{itemize}
+\item Le complément à 2 de $11100111_2$ vaut $00011000_2$. Ensuite $00011000_2+1_2=00011001_2=25_{10}$ donc $11100111_2=-25_{10}$. 
+\item Le complément à 2 de $11000001_2$ vaut $00111110_2$. Ensuite $00111110_2+1_2=00111111_2=63_{10}$ donc $11000001_2=-63_{10}$. 
+\end{itemize}
+\end{exo}
+\begin{exo}
+Réaliser le QCM d’entraînement depuis le site \url{https://cviroulaud.github.io} 
+\end{exo}
+\begin{exo}
+Il faut lire 1\;0 en binaire et non 10 en décimal et $10_2=2_{10}$.
+\end{exo}
+\end{Form}
+\end{document}

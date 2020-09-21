@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 SEP 2020 16:18
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  19 SEP 2020 14:43
  restricted system commands enabled.
 **representation-entier-relatif.tex
 (./representation-entier-relatif.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.108 seconds
+luaotfload | main : initialization completed in 0.084 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1086,10 +1086,10 @@ anged.
 Here is how much of LuaTeX's memory you used:
  27263 strings out of 494383
  100000,794899 words of node,token memory allocated
- 20569 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 36 glue, 4 kern, 1 penalty, 2365 glyph, 1412 attrib
+ 20576 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 36 glue, 4 kern, 1 penalty, 2366 glyph, 1412 attrib
 ute, 55 glue_spec, 237 attribute_list, 1 write nodes
-   avail lists: 1:3,2:2561,3:172,4:150,5:234,6:36,7:2434,8:132,9:329,10:7,11:133
+   avail lists: 1:3,2:2561,3:172,4:150,5:235,6:36,7:2434,8:132,9:329,10:7,11:133
 
  30829 multiletter control sequences out of 65536+600000
  49 fonts using 7809647 bytes

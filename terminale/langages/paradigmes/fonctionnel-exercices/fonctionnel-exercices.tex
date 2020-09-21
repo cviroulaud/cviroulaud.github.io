@@ -1,0 +1,80 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Paradigme fonctionnel - exercices}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+\begin{enumerate}
+\item Écrire une fonction \textbf{applique(f, t: tuple)\;\rightarrow\;tuple} qui applique la fonction \emph{f} sur tous les éléments du tuple \emph{t} et renvoie le nouvel ensemble.
+\item Écrire une fonction \textbf{double(x: int)\;\rightarrow\;int} qui renvoie le double de \emph{x}.
+\item Tester \emph{applique} avec la fonction \emph{double} et un tuple d'entiers.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Écrire une fonction \textbf{repeter\_delai(f, n: int, t: int)\;\rightarrow\;None} qui effectue n appels \emph{f(0,...,f(n-1)} où chaque appel est suivi d'une pause de \emph{t} secondes. La documentation Python ci-après peut être utile pour effectuer la pause: \url{https://docs.python.org/fr/3/library/time.html}
+\item Écrire une fonction \textbf{dessine(n: int)\;\rightarrow\;None} qui trace un trait de longueur $n*50$ avec la bibliothèque \emph{turtle} puis qui tourne à gauche d'un angle de 90°.
+\item Tester \emph{repeter\_delai} avec la fonction \emph{dessine}.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Écrire une fonction \textbf{trouve(p, t: tuple)\;\rightarrow\;object} qui reçoit une fonction \emph{p} et un tuple \emph{t} et renvoie le premier élément \emph{x} de \emph{t} tel que $p(x)=True$. Si aucun élément ne satisfait p alors la fonction renvoie \emph{None}.
+\item Écrire une fonction \textbf{est\_positif(x: int)\;\rightarrow\;bool} qui renvoie True si \emph{x} est positif. \item Utiliser la fonction \emph{trouve} sur un tuple d'entiers et la fonction \emph{est\_positif}.
+\item Écrire une fonction \textbf{est\_premier(n: int)\;\rightarrow\;bool} qui renvoie True si \emph{n} est un nombre premier.
+\item Utiliser la fonction \emph{trouve} sur un tuple d'entiers et la fonction \emph{est\_premier}.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Notion d'invariant
+\begin{lstlisting}
+def tri_insertion(tab):
+    taille = len(tab)
+    for i in range(1,taille):
+        en_cours = tab[i]
+        j = i-1
+        while j >= 0 and tab[j] > en_cours:
+            tab[j+1] = tab[j]
+            j -= 1
+        tab[j+1] = en_cours
+    return tab
+\end{lstlisting}
+L'invariant du tri par insertion peut être: \guill{Le tableau tab[0:i] est trié.}
+\begin{enumerate}
+\item Rappeler la définition d'un invariant. À quoi sert-il?
+\item Quelle est la valeur de \emph{i} avant la première itération du tri? L'invariant est-il vérifié?
+\item Appliquer un raisonnement par récurrence pour montrer que l'invariant est vrai pour tout \emph{i}. Conclure.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+L'expression Python \textbf{lambda} crée une fonction anonyme
+(\url{https://docs.python.org/fr/3/reference/expressions.html?#lambda}).
+\begin{enumerate}
+\item Dans la console, tester le code ci-après:
+\begin{lstlisting}
+f = lambda x: x*2
+f(5)
+\end{lstlisting}
+\item Écrire une fonction \emph{g} telle que pour tout x, $g(x) = 2x+3$.
+\item Écrire une fonction \textbf{h(f,g)} qui reçoit deux fonctions \emph{f} et \emph{g} en arguments et renvoie leur composition, c'est à dire une fonction \emph{h} telle que pour tout x, $h(x)=f(g(x))$.
+\item Tester \emph{h(5)}.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Écrire une fonction \textbf{calcul(operation, l: tuple)\;\rightarrow\;int} qui effectue le calcul suivant:
+$$t[0]\;operation\;t[1]\;operation\;...\;operation\;t[n-1]$$
+\item Écrire une fonction anonyme \textbf{addition} qui additionne deux entiers \emph{x} et \emph{y}.
+\item Utiliser la fonction \emph{calcul} avec un tuple d'entiers et la fonction \emph{addition}.
+\item Tester la fonction \emph{calcul} avec d'autres opérations.
+\end{enumerate}
+\end{exo}
+\end{Form}
+\end{document}

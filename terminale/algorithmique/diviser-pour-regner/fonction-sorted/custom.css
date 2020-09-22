@@ -1,0 +1,21 @@
+.celselect{
+    color:white;
+    background:red;
+}
+
+.dejatrie{
+    color:white;
+    background:black;
+}
+
+.vide{
+    background:white;
+    width: 75px;
+}
+
+.rendered_html td:not(.vide){
+    font-size:xx-large;
+    border: 1px blue solid !important;
+    padding:10px 25px 10px 25px !important;
+
+}

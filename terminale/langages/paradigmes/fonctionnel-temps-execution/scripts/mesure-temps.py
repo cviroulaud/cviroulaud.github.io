@@ -17,6 +17,12 @@ def duree_tri(fonction, tab: list)->tuple:
     fin = time()
     return (fonction.__name__, fin-deb)
 
+def duree_tri_fonctionnel(fonction, tab: tuple)->tuple:
+    deb = time()
+    tab = fonction(list(tab))
+    fin = time()
+    return (fonction.__name__, fin-deb, tuple(tab))
+
 def tri_selection(tab):
     taille = len(tab)
     for i in range(taille):
@@ -34,14 +40,17 @@ l1 = tuple(randint(0,100) for _ in range(10))
 print(l1)
 
 #représentation graphique
-nb_elements=[10,100,250,500,750,1000,1500,2000,3000,4000,5000] #[10**i for i in range(1,5)]
-temps = []
-for nb in nb_elements:
-    tab = [randint(0,100) for _ in range(nb)]
-    temps.append(duree_tri(tri_selection,tab)[1])
+def evolution_duree(fonction):
+    nb_elements=[10,100,250,500,750,1000,1500,2000,3000,4000,5000] #[10**i for i in range(1,5)]
+    temps = []
+    for nb in nb_elements:
+        tab = [randint(0,100) for _ in range(nb)]
+        temps.append(duree_tri(fonction,tab)[1])
 
-plt.plot(nb_elements,temps)
-plt.title("tri par sélection")
+    plt.plot(nb_elements,temps)
+    plt.title(fonction.__name__)
 
-plt.grid()
-plt.show()
+    plt.grid()
+    plt.show()
+
+evolution_duree(tri_selection)

@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>portes-logiques slides</title>
+<title>fonction-sorted slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13202,398 +13202,227 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Portes-logiques">Portes logiques<a class="anchor-link" href="#Portes-logiques">&#182;</a></h1>
+<h1 id="Fonction-native-sorted">Fonction native <em>sorted</em><a class="anchor-link" href="#Fonction-native-sorted">&#182;</a></h1>
 </div>
 </div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.-Probl&#233;matique">1. Probl&#233;matique<a class="anchor-link" href="#1.-Probl&#233;matique">&#182;</a></h2><div align="middle">
-<img src="ressources/loi-moore.png" width=400px></div>
+<h2 id="1.-Probl&#233;matique">1. Probl&#233;matique<a class="anchor-link" href="#1.-Probl&#233;matique">&#182;</a></h2>
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comment-utiliser-les-propri&#233;t&#233;s-d'un-transistor-pour-effectuer-des-calculs?">Comment utiliser les propri&#233;t&#233;s d'un transistor pour effectuer des calculs?<a class="anchor-link" href="#Comment-utiliser-les-propri&#233;t&#233;s-d'un-transistor-pour-effectuer-des-calculs?">&#182;</a></h3>
+<p>Comparons les performances du tri par insertion à celles de la fonction native <em>sorted</em>.</p>
+
 </div>
 </div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
+
+<span class="k">def</span> <span class="nf">duree_tri</span><span class="p">(</span><span class="n">fonction</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">tuple</span><span class="p">:</span>
+    <span class="n">deb</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
+    <span class="n">fonction</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+    <span class="n">fin</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">fonction</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">fin</span><span class="o">-</span><span class="n">deb</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">tri_insertion</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
+    <span class="n">taille</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">taille</span><span class="p">):</span>
+        <span class="n">en_cours</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span>
+        <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">en_cours</span><span class="p">:</span>
+            <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">en_cours</span>
+    <span class="k">return</span> <span class="n">tab</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="n">l</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">duree_tri</span><span class="p">(</span><span class="n">tri_insertion</span><span class="p">,</span> <span class="n">l</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(&#39;tri_insertion&#39;, 4.343232870101929)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">duree_tri</span><span class="p">(</span><span class="nb">sorted</span><span class="p">,</span> <span class="n">l</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(&#39;sorted&#39;, 0.0029120445251464844)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Retour-historique">Retour historique<a class="anchor-link" href="#Retour-historique">&#182;</a></h2><div align="middle">
-<a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1U8-OPDvvQ2zGIC_ba_hFrJhQkqHZDaqi4I4Yyln07wE&font=Default&lang=fr&initial_zoom=2&height=650" target=_blank><img src="../../../retour.png"></a></div>
+<h3 id="Quel-algorithme-de-tri-est-impl&#233;ment&#233;-dans-la-fonction-sorted?">Quel algorithme de tri est impl&#233;ment&#233; dans la fonction <em>sorted</em>?<a class="anchor-link" href="#Quel-algorithme-de-tri-est-impl&#233;ment&#233;-dans-la-fonction-sorted?">&#182;</a></h3>
 </div>
 </div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-Portes-logiques">2. Portes logiques<a class="anchor-link" href="#2.-Portes-logiques">&#182;</a></h2>
+<table>
+    <tr>
+        <td>5</td><td>8</td><td>4</td><td>7</td><td>9</td><td>6</td><td>3</td>
+    </tr>
+</table>
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Le-transistor">Le transistor<a class="anchor-link" href="#Le-transistor">&#182;</a></h3><p><img src="ressources/transistor-schema.png" width=300px></p>
-
+<table>
+    <tr>
+        <td>5</td><td>8</td><td>4</td><td>7</td><td class="vide"> </td><td>9</td><td>6</td><td>3</td>
+    </tr>
+</table>
 </div>
 </div>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Le fonctionnement d'un transistor implique une logique binaire.</p>
+<table>
+    <tr>
+        <td>5</td><td>8</td><td class="vide"> </td><td>4</td><td>7</td><td class="vide"> </td><td>9</td><td>6</td><td class="vide"> </td><td>3</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>5</td><td class="vide"> </td><td>8</td><td class="vide"> </td><td>4</td><td class="vide"> </td><td>7</td><td class="vide"> </td><td>9</td><td class="vide"> </td><td>6</td><td class="vide"> </td><td>3</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>5</td><td class="vide"> </td><td>8</td><td class="vide"> </td><td>4</td><td class="vide"> </td><td>7</td><td class="vide"> </td><td>9</td><td class="vide"> </td><td>6</td><td class="vide"> </td><td>3</td>
+    </tr>
+</table>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>5</td><td>8</td><td class="vide"> </td><td>4</td><td>7</td><td class="vide"> </td><td>6</td><td>9</td><td class="vide"> </td><td>3</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>4</td><td>5</td><td>7</td><td>8</td><td class="vide"> </td><td>3</td><td>6</td><td>9</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+    </tr>
+</table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 
+    </div>
 </div>
 </div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Premi&#232;re-porte-logique">Premi&#232;re porte logique<a class="anchor-link" href="#Premi&#232;re-porte-logique">&#182;</a></h3><table>
-    <tr>
-        <td>Entrée</td>
-        <td>Sortie</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>1</td>
-    </tr>
-</table>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table>
-    <tr>
-        <td><img src="ressources/not-us.png" width=300px></td>
-        <td><img src="ressources/not-eu.png" width=300px></td>
-    </tr>
-    <tr>
-        <td>symbole us</td>
-        <td>symbole européen</td>
-    </tr>
-</table>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.-Combinaisons-de-transistors">3. Combinaisons de transistors<a class="anchor-link" href="#3.-Combinaisons-de-transistors">&#182;</a></h2>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Activit&#233;:">Activit&#233;:<a class="anchor-link" href="#Activit&#233;:">&#182;</a></h3><ul>
-<li>Se mettre par groupe de 2.</li>
-<li>Chacun choisit une combinaison et établit la table logique.</li>
-<li>La présenter à l'autre élément du groupe.<table>
-  <tr>
-      <td><img src="ressources/schema-nand.png" width=130px></td>
-      <td><img src="ressources/schema-nor.png" width=260px></td>
-      <td>
-          <table>
-              <tr>
-                  <td>E1</td>
-                  <td>E2</td>
-                  <td>S</td>
-              </tr>
-              <tr>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>...</td>
-              </tr>
-              <tr>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>...</td>
-              </tr>
-                      <tr>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>...</td>
-              </tr>
-                      <tr>
-                  <td>1</td>
-                  <td>1</td>
-                  <td>...</td>
-              </tr>
-          </table>
-      </td>
-  </tr>
-</table></li>
-</ul>
 
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Correction:">Correction:<a class="anchor-link" href="#Correction:">&#182;</a></h6>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.1-Porte-NAND">3.1 Porte NAND<a class="anchor-link" href="#3.1-Porte-NAND">&#182;</a></h3><p><img src="ressources/schema-nand.png" width=130px style="float:left;margin:10px;"></p>
-<table>
-    <tr>
-        <td>E1</td>
-        <td>E2</td>
-        <td>S</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>0</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-            <tr>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-    </tr>
-            <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-    </tr>
-</table>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table>
-    <tr>
-        <td><img src="ressources/not-and-us.png" width=200px></td>
-        <td><img src="ressources/not-and-eu.png" width=200px></td>
-    </tr>
-</table><h4 id="Porte-NOT-AND-ou-NON-ET">Porte NOT AND ou NON ET<a class="anchor-link" href="#Porte-NOT-AND-ou-NON-ET">&#182;</a></h4>
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Correction:">Correction:<a class="anchor-link" href="#Correction:">&#182;</a></h6><h3 id="3.2-Porte-NOR">3.2 Porte NOR<a class="anchor-link" href="#3.2-Porte-NOR">&#182;</a></h3><p><img src="ressources/schema-nor.png" width=260px style="float:left;margin:10px;"></p>
-<table>
-    <tr>
-        <td>E1</td>
-        <td>E2</td>
-        <td>S</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>0</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-    </tr>
-            <tr>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-            <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-    </tr>
-</table>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table>
-    <tr>
-        <td><img src="ressources/not-or-us.png" width=200px></td>
-        <td><img src="ressources/not-or-eu.png" width=200px></td>
-    </tr>
-</table><h4 id="Porte-NOT-OR-ou-NON-OU">Porte NOT OR ou NON OU<a class="anchor-link" href="#Porte-NOT-OR-ou-NON-OU">&#182;</a></h4>
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.-Combinaisons-de-portes-logiques">4. Combinaisons de portes logiques<a class="anchor-link" href="#4.-Combinaisons-de-portes-logiques">&#182;</a></h2>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.1-Encore-une-fonction-NOT">4.1 Encore une fonction NOT<a class="anchor-link" href="#4.1-Encore-une-fonction-NOT">&#182;</a></h3><p><img src="ressources/not-from-nand.png" width=200px></p>
-
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Activit&#233;:-M&#234;mes-instructions-que-pr&#233;c&#233;demment-mais-en-combinant-des-fonctions-logiques">Activit&#233;: M&#234;mes instructions que pr&#233;c&#233;demment mais en combinant des fonctions logiques<a class="anchor-link" href="#Activit&#233;:-M&#234;mes-instructions-que-pr&#233;c&#233;demment-mais-en-combinant-des-fonctions-logiques">&#182;</a></h3><table>
-    <tr>
-        <td><img src="ressources/and-from-nor.png" width=260px></td>
-        <td><img src="ressources/or-from-nand.png" width=260px></td>
-        <td>
-            <table>
-                <tr>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>Q</td>
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>...</td>
-                </tr>
-                        <tr>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>...</td>
-                </tr>
-                        <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>...</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h6 id="Correction:">Correction:<a class="anchor-link" href="#Correction:">&#182;</a></h6>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.2-Porte-AND">4.2 Porte AND<a class="anchor-link" href="#4.2-Porte-AND">&#182;</a></h3><p><img src="ressources/and-from-nor.png" width=260px style="float:left;margin:10px;"></p>
-<table>
-    <tr>
-        <td>A</td>
-        <td>B</td>
-        <td>Q</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-    </tr>
-            <tr>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-            <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-</table>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table>
-    <tr>
-        <td><img src="ressources/and-us.png" width=200px></td>
-        <td><img src="ressources/and-eu.png" width=200px></td>
-    </tr>
-</table><h4 id="Porte-AND-ou-ET">Porte AND ou ET<a class="anchor-link" href="#Porte-AND-ou-ET">&#182;</a></h4>
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.3-Porte-OR">4.3 Porte OR<a class="anchor-link" href="#4.3-Porte-OR">&#182;</a></h3><p><img src="ressources/or-from-nand.png" width=260px style="float:left;margin:10px;"></p>
-<table>
-    <tr>
-        <td>A</td>
-        <td>B</td>
-        <td>Q</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-            <tr>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-    </tr>
-            <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-</table>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table>
-    <tr>
-        <td><img src="ressources/or-us.png" width=200px></td>
-        <td><img src="ressources/or-eu.png" width=200px></td>
-    </tr>
-</table><h4 id="Porte-OR-ou-OU">Porte OR ou OU<a class="anchor-link" href="#Porte-OR-ou-OU">&#182;</a></h4>
-</div>
-</div>
 </div></div></section></section>
 </div>
 </div>

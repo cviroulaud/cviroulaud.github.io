@@ -16,36 +16,38 @@ def duree_tri(fonction, t: tuple)->tuple:
     fin = time()
     return (fonction.__name__, fin-deb)
 
-def fusionner(gauche,droite):
+def fusionner(gauche: list, droite: list)-> list:
+    res = []
+    i,j = 0,0
+    while i < len(gauche) and j < len(droite):
+        if droite[j] < gauche[i]:
+            res.append(droite[j])
+            j += 1
+        else:
+            res.append(gauche[i])
+            i += 1
+
+    #ajout de la fin de liste restante
+    if i == len(gauche):
+        res.extend(droite[j:])
+    if j == len(droite):
+        res.extend(gauche[i:])
+    return res
+
+def fusionner2(gauche: list,droite: list)->list:
     res = []
     while gauche and droite:
         if gauche[0] < droite[0]:
             res.append(gauche.pop(0))
         else:
             res.append(droite.pop(0))
+
+    #ajout de la fin de liste restante
     if gauche:
         res.extend(gauche)
     if droite:
         res.extend(droite)
     return res
-
-def fusionner2(l1,l2):
-    nb1 = len(l1)
-    nb2 = len(l2)
-    l = []
-    i,j = 0,0
-    while i < nb1 and j < nb2:
-        if l2[j] < l1[i]:
-            l.append(l2[j])
-            j += 1
-        else:
-            l.append(l1[i])
-            i += 1
-    if i == nb1:
-        l.extend(l2[j:])
-    if j == nb2:
-        l.extend(l1[i:])
-    return l
 
 def tri_fusion(tab):
     taille = len(tab)

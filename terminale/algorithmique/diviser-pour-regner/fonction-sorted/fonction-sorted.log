@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  22 SEP 2020 10:43
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  22 SEP 2020 14:48
  restricted system commands enabled.
 **fonction-sorted.tex
 (./fonction-sorted.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.073 seconds
+luaotfload | main : initialization completed in 0.130 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1384,11 +1384,11 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=70, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=78, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 141.
+input line 142.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
@@ -1396,28 +1396,35 @@ input line 141.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 173.
+input line 170.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
- (./fonction-sorted.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 279.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
+
+(./fonction-sorted.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
 Package rerunfilecheck Info: File `fonction-sorted.out' has not changed.
-(rerunfilecheck)             Checksum: BFEB43CBA2341ABCD2779B6D6117F9F9;2142.
+(rerunfilecheck)             Checksum: 47E5BEC3DADD1078A5C2234E24B60955;2647.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37402 strings out of 494383
+ 37439 strings out of 494383
  100000,953878 words of node,token memory allocated
- 22439 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 20 glue, 4 kern, 1 penalty, 2916 glyph, 602 attribu
-te, 58 glue_spec, 102 attribute_list, 1 write nodes
-   avail lists: 1:6,2:6103,3:546,4:29,5:153,6:35,7:2320,8:63,9:314,10:10,11:157
- 40573 multiletter control sequences out of 65536+600000
+ 29796 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 24 glue, 4 kern, 1 penalty, 3879 glyph, 854 attribu
+te, 58 glue_spec, 144 attribute_list, 1 write nodes
+   avail lists: 1:6,2:8715,3:760,4:29,5:166,6:34,7:2092,8:62,9:525,10:10,11:153
+ 40598 multiletter control sequences out of 65536+600000
  49 fonts using 7814127 bytes
- 55i,16n,95p,1110b,774s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 55i,15n,95p,1110b,774s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/
 texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/openty
 pe/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/l
@@ -1426,13 +1433,15 @@ m/lmroman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic
 e/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding
-/uzdr.pfb>
-Output written on fonction-sorted.pdf (2 pages, 71486 bytes).
+e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on fonction-sorted.pdf (3 pages, 103639 bytes).
 
-PDF statistics: 165 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 131072)
- 170 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 192 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 131072)
+ 186 words of extra memory for PDF output out of 10000 (max. 100000000)
 

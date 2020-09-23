@@ -17,7 +17,6 @@ Lors du cours précédent nous sommes revenus sur plusieurs algorithmes de tris 
 \shadowbox{\parbox{12cm}{\centering Quel algorithme de tri est implémenté dans la fonction \emph{sorted}?}}
 \end{center}
 \section{Nouvelle approche}
-\subsection{•}
 \subsection{Résoudre des petits problèmes...}
 La propriété triviale suivante va nous permettre de construire une nouvelle méthode de tri:
 \begin{center}
@@ -143,7 +142,7 @@ Cet algorithme est celui du \emph{tri fusion}.
 \subsection{L'étape de fusion}
 Il est aisé de construire une liste triée à partir de deux listes déjà triées. Il suffit de prendre le plus petits éléments parmi nos deux listes et l'ajouter à la liste finale, et ce jusqu'à épuisement des listes.
 \begin{activite}
-Écrire une fonction \textbf{fusionner(l1: list, l2: list)\;\rightarrow\;list} qui renvoie une liste triée composée des éléments de \emph{l1} et \emph{l2} déjà triées.
+Écrire une fonction \textbf{fusionner(gauche: list, droite: list)\;\rightarrow\;list} qui renvoie une liste triée composée des éléments de \emph{gauche} et \emph{droite} déjà triées.
 \end{activite}
 \subsection{Le code complet du tri fusion}
 \begin{activite}
@@ -163,7 +162,114 @@ En s'appuyant sur la description récursive de l'algorithme au paragraphe \ref{a
 La fonction \emph{fusionner} n'est pas optimisée: elle utilise pop(0) qui reconstruit une liste à chaque fois.
 \end{commentprof}
 \subsection{Complexité}
+\subsubsection{Découper en sous-listes}
+À chaque appel de la fonction \emph{tri\_fusion} nous divisons la liste en deux. La question à se poser est de savoir combien de fois faut-il couper la liste en deux pour obtenir des listes de un élément. Mathématiquement nous cherchons \emph{a} tel que: $$\dfrac{n}{2^a}=1$$
+Le logarithme base 2 noté $log_2$ se définit: $log_2(2^x)=x$.
+\begin{activite}
+Déterminer la valeur de \emph{a} en fonction de \emph{n}.
+\end{activite}
+\begin{commentprof}
+La complexité de la fonction \emph{tri\_fusion} est en $O(log_2(n))$
+\end{commentprof}
+\subsubsection{Fusionner deux listes}
+La fonction \emph{fusionner} réalise \emph{n} comparaisons pour assembler deux listes de taille $\dfrac{n}{2}$.
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[scale=0.45]
+\draw (0,1) circle(1);
+\draw (-6,-2) circle(1);
+\draw (6,-2) circle(1);
+\draw (-8,-5) circle(1);
+\draw (-4,-5) circle(1);
+\draw (4,-5) circle(1);
+\draw (8,-5) circle(1);
+\draw (-9,-8) circle(1);
+\draw (-7,-8) circle(1);
+\draw (-5,-8) circle(1);
+\draw (-3,-8) circle(1);
+\draw (3,-8) circle(1);
+\draw (5,-8) circle(1);
+\draw (7,-8) circle(1);
+\draw (9,-8) circle(1);
+
+\draw (-10,-12) circle(1);
+\draw (-8,-12) circle(1);
+\draw (-6,-12) circle(1);
+\draw (-4,-12) circle(1);
+\draw (-2,-12) circle(1);
+\draw (0,-12) circle(1);
+\draw (2,-12) circle(1);
+\draw (4,-12) circle(1);
+\draw (6,-12) circle(1);
+\draw (8,-12) circle(1);
+\draw (10,-12) circle(1);
+
+\draw (0,0) -- (-6,-1) ;
+\draw (0,0) -- (6,-1) ;
+\draw (-6,-3) -- (-8,-4) ;
+\draw (-6,-3) -- (-4,-4) ;
+\draw (6,-3) -- (8,-4) ;
+\draw (6,-3) -- (4,-4) ;
+\draw (-8,-6) -- (-9,-7) ;
+\draw (-8,-6) -- (-7,-7) ;
+\draw (-4,-6) -- (-5,-7) ;
+\draw (-4,-6) -- (-3,-7) ;
+\draw (8,-6) -- (9,-7) ;
+\draw (8,-6) -- (7,-7) ;
+\draw (4,-6) -- (5,-7) ;
+\draw (4,-6) -- (3,-7) ;
+
+\draw (0,1) node{$n$};
+\draw (-6,-2) node{$\dfrac{n}{2}$};
+\draw (6,-2) node{$\dfrac{n}{2}$};
+\draw (-8,-5) node{$\dfrac{n}{4}$};
+\draw (-4,-5) node{$\dfrac{n}{4}$};
+\draw (4,-5) node{$\dfrac{n}{4}$};
+\draw (8,-5) node{$\dfrac{n}{4}$};
+\draw (-9,-8) node{$\dfrac{n}{8}$};
+\draw (-7,-8) node{$\dfrac{n}{8}$};
+\draw (-5,-8) node{$\dfrac{n}{8}$};
+\draw (-3,-8) node{$\dfrac{n}{8}$};
+\draw (3,-8) node{$\dfrac{n}{8}$};
+\draw (5,-8) node{$\dfrac{n}{8}$};
+\draw (7,-8) node{$\dfrac{n}{8}$};
+\draw (9,-8) node{$\dfrac{n}{8}$};
+\draw (0,-10) node{.........};
+
+\draw (-10,-12) node{$1$};
+\draw (-8,-12) node{$1$};
+\draw (-6,-12) node{$1$};
+\draw (-4,-12) node{$1$};
+\draw (-2,-12) node{$1$};
+\draw (0,-12) node{$1$};
+\draw (2,-12) node{$1$};
+\draw (4,-12) node{$1$};
+\draw (6,-12) node{$1$};
+\draw (8,-12) node{$1$};
+\draw (10,-12) node{$1$};
+
+\draw (18,1) node{$n$};
+\draw (18,-2) node{$2×(\dfrac{n}{2})=n$};
+\draw (18,-5) node{$2^2×(\dfrac{n}{2^2})=n$};
+\draw (18,-8) node{$2^3×(\dfrac{n}{2^3})=n$};
+\draw (18,-12) node{$2^{log_2(n)}×(\dfrac{n}{2^{log_2(n)}})=n$};
+
+\end{tikzpicture}
+\captionof{figure}{Nombre de comparaisons}
+\end{figure}
+\subsubsection{Complexité du tri fusion}
+Chaque niveau de fusion a un coup de \emph{n} et il y a $log_2(n)$ niveaux.
+\begin{center}
+\shadowbox{\parbox{10cm}{\centering La complexité du tri fusion est en $O(n×log_2(n))$.}}
+\end{center}
 \subsection{Stabilité}
+On dit qu'un algorithme de tri est stable s'il ne modifie pas l'ordre initial des clés identiques.
+\begin{activite}
+\begin{enumerate}
+\item À la main sur quelques exemples, vérifier si le tris par sélection et par insertion sont stables.
+\item Vérifier la stabilité du tri fusion.
+\end{enumerate}
+\end{activite}
 \section{La fonction native \emph{sorted}}
 Elle implémente l'algorithme \emph{Timsort} mis au point par Tim Peters en 2002. C'est un algorithme hybride de plusieurs tris.
 \begin{activite}

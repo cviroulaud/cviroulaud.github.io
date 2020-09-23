@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 SEP 2020 13:32
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 SEP 2020 14:12
  restricted system commands enabled.
-**recursivite-exercices-correction.tex
-(./recursivite-exercices-correction.tex
+**tp-koch-correction.tex
+(./tp-koch-correction.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.090 seconds
+luaotfload | main : initialization completed in 0.078 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -909,9 +909,9 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \c@compteuractivite=\count339
 \c@compteurexo=\count340
 )
-(./recursivite-exercices-correction.aux)
-\openout1 = recursivite-exercices-correction.aux
+No file tp-koch-correction.aux.
 
+\openout1 = tp-koch-correction.aux
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -928,7 +928,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1084,19 +1083,16 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
-
-(./recursivite-exercices-correction.out)
-(./recursivite-exercices-correction.out)
 \@outlinefile=\write4
 
-\openout4 = recursivite-exercices-correction.out
+\openout4 = tp-koch-correction.out
 LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
-){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} (./scripts/somme-entiers.p
-y)
-(./scripts/factorielle.py) (./scripts/syracuse.py) (./scripts/syracuse.py)
+){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} (./scripts/flocon_koch.py)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
@@ -1107,62 +1103,46 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 46.
+input line 15.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-</home/tof/Documents/Cozy/latex-include/cc.png>] (./scripts/entiers.py)
-(./scripts/entiers.py) (./scripts/pgcd.py) (./scripts/nombre-chiffres.py)
-(./scripts/coef-binomiaux.py
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 12.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2]) (./scripts/coef-binomiaux.py)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 83.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
+</home/tof/Documents/Cozy/latex-include/cc.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
+ (./tp-koch-correction.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 
-(./recursivite-exercices-correction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
-Package rerunfilecheck Info: File `recursivite-exercices-correction.out' has not
- changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package rerunfilecheck Warning: File `tp-koch-correction.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tp-koch-correction.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27563 strings out of 494383
- 156274,794899 words of node,token memory allocated
- 19842 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 15 glue, 4 kern, 1 penalty, 1732 glyph, 3056 attrib
-ute, 58 glue_spec, 511 attribute_list, 1 write nodes
-   avail lists: 1:4,2:8536,3:186,4:3216,5:2661,6:57,7:2716,8:2373,9:4352,10:21,1
-1:259
- 30938 multiletter control sequences out of 65536+600000
- 44 fonts using 7151183 bytes
- 55i,16n,95p,1127b,1242s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
-f/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype
-/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmrom
-an10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf><
-/usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/
-uzdr.pfb>
-Output written on recursivite-exercices-correction.pdf (3 pages, 79954 bytes).
+ 27328 strings out of 494383
+ 100000,794899 words of node,token memory allocated
+ 5975 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 penalty, 493 glyph, 860 attribute
+, 58 glue_spec, 145 attribute_list, 1 write nodes
+   avail lists: 1:3,2:4723,3:102,4:1834,5:1530,6:36,7:1565,8:1359,9:2477,10:10,1
+1:132
+ 30914 multiletter control sequences out of 65536+600000
+ 31 fonts using 6274055 bytes
+ 55i,15n,95p,1113b,771s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/
+fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/p
+ublic/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
+10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on tp-koch-correction.pdf (1 page, 23853 bytes).
 
-PDF statistics: 191 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 92 named destinations out of 1000 (max. 131072)
+PDF statistics: 91 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 29 named destinations out of 1000 (max. 131072)
  51 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -13,7 +13,7 @@ def C(n: int, p: int)->int:
     else:
         return C(n-1, p-1) + C(n-1, p)
 
-for i in range(10):
-    for j in range(i+1):
-        print(C(i, j), sep=" ", end=" ")
+for n in range(10):
+    for p in range(n+1):
+        print(C(n, p), end=" ")
     print()

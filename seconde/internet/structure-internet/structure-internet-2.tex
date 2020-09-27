@@ -27,12 +27,15 @@ requests for comments (RFC), littéralement « demande de commentaires » sont u
 \subsection{Pénurie des adresses}
 Lire l'article sur la page web suivante:
 \begin{center}
+\begin{commentprof}
 \url{https://www.zdnet.fr/actualites/ipv4-la-penurie-d-adresses-disponibles-c-est-pour-novembre-2019-39891627.htm}
+\end{commentprof}
+\url{https://tinyurl.com/y3ut9u4v}
 \end{center}
 ainsi que cet extrait:
 \begin{framed}
 \noindent\textbf{Extrait de la page \url{https://fr.wikipedia.org/wiki/IPv6}:} IPv6 est l'aboutissement des travaux menés au sein de l'IETF au cours des années 1990 pour succéder à IPv4 et ses spécifications ont été finalisées dans la RFC 2460 en décembre 1998. IPv6 a été standardisé dans la RFC 8200 en juillet 2017.
-Grâce à des adresses de 128 bits au lieu de 32 bits, IPv6 dispose d'un espace d'adressage bien plus important qu'IPv4 (plus de $340.10^{36}$). Cette quantité d'adresses considérable permet une plus grande flexibilité dans l'attribution des adresses et une meilleure agrégation des routes dans la table de routage d'Internet. La traduction d'adresse, qui a été rendue populaire par le manque d'adresses IPv4, n'est plus nécessaire. 
+Grâce à des adresses de 128 bits au lieu de 32 bits, IPv6 dispose d'un espace d'adressage bien plus important qu'IPv4 (plus de $2^128 = 3,4.10^{38}$). Cette quantité d'adresses considérable permet une plus grande flexibilité dans l'attribution des adresses et une meilleure agrégation des routes dans la table de routage d'Internet.
 \end{framed}
 \begin{enumerate}
 \item Quel problème de l'internet est évoqué dans ces documents?
@@ -53,8 +56,8 @@ Effectuer les manipulations suivantes sur un des quatre ordinateurs portables en
 \begin{enumerate}
 \item Ouvrir une session avec l'identifiant \emph{test} et le mot de passe \emph{test}.
 \item Ouvrir un terminal avec la combinaison \emph{Ctrl+Alt+t}.
-\item Taper l'instruction \textbf{ip address}. Retrouver l'adresse de la machine; elle est de la forme \emph{192.X.X.X}
-\item Demander à un autre élève, l'adresse de sa machine. Taper alors l'instruction \begin{center}\textbf{ping -c4 sonadresse}.\end{center}
+\item Taper l'instruction \textbf{ip address}. Retrouver l'adresse de la machine; elle est de la forme \emph{192.X.X.X}. Attention 192.168.0.255 n'est pas l'adresse de la machine.
+\item Demander à un autre élève, l'adresse de sa machine. Taper alors l'instruction \begin{center}\textbf{ping -c4 adresse\_du\_voisin}.\end{center}
 \item Interpréter le résultat obtenu. Il n'est pas nécessaire d'expliquer chaque information mais plutôt d'en comprendre le sens général.
 \end{enumerate}
 \begin{commentprof}

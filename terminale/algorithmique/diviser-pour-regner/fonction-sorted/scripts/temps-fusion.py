@@ -20,7 +20,7 @@ def fusionner(gauche: list, droite: list)-> list:
     res = []
     i,j = 0,0
     while i < len(gauche) and j < len(droite):
-        if droite[j] < gauche[i]:
+        if droite[j] <= gauche[i]:
             res.append(droite[j])
             j += 1
         else:
@@ -37,7 +37,7 @@ def fusionner(gauche: list, droite: list)-> list:
 def fusionner2(gauche: list,droite: list)->list:
     res = []
     while gauche and droite:
-        if gauche[0] < droite[0]:
+        if gauche[0] <= droite[0]:
             res.append(gauche.pop(0))
         else:
             res.append(droite.pop(0))
@@ -60,6 +60,5 @@ def tri_fusion(tab):
         return fusionner(gauche,droite)
 
 l = tuple(randint(0,100) for _ in range(10000))
-print(duree_tri(tri_fusion, l))
+#print(duree_tri(tri_fusion, l))
 print(duree_tri(sorted, l))
-

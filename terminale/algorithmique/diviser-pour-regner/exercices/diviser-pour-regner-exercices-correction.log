@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  24 SEP 2020 20:17
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  24 SEP 2020 22:43
  restricted system commands enabled.
 **diviser-pour-regner-exercices-correction.tex
 (./diviser-pour-regner-exercices-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.083 seconds
+luaotfload | main : initialization completed in 0.104 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1111,47 +1111,59 @@ input line 27.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>] (./scripts/tri_rapide.py)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
+<ressources/separation.png, id=72, 855.195pt x 373.395pt>
+File: ressources/separation.png Graphic file (type png)
+<use ressources/separation.png>
+Package luatex.def Info: ressources/separation.png  used on input line 33.
+(luatex.def)             Requested size: 284.52756pt x 124.22919pt.
+<ressources/combinaison.png, id=73, 730.73pt x 465.74pt>
+File: ressources/combinaison.png Graphic file (type png)
+<use ressources/combinaison.png>
+Package luatex.def Info: ressources/combinaison.png  used on input line 39.
+(luatex.def)             Requested size: 284.52756pt x 181.3465pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 31.
+input line 46.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
- (./diviser-pour-regner-exercices-correction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
+[2<./ressources/separation.png><./ressources/combinaison.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+
+(./diviser-pour-regner-exercices-correction.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `diviser-pour-regner-exercices-correction.out'
  has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27470 strings out of 494383
+ 27499 strings out of 494383
  244183,794899 words of node,token memory allocated
- 15866 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 7 glue, 4 kern, 1 penalty, 1336 glyph, 2564 attribu
-te, 58 glue_spec, 429 attribute_list, 1 write nodes
-   avail lists: 1:4,2:12152,3:193,4:5294,5:4232,6:61,7:3748,8:3788,9:6861,10:33,
+ 17084 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 8 glue, 4 kern, 1 penalty, 1491 glyph, 2618 attribu
+te, 58 glue_spec, 438 attribute_list, 1 write nodes
+   avail lists: 1:4,2:12089,3:193,4:5294,5:4232,6:61,7:3592,8:3788,9:6861,10:33,
 11:401
- 30933 multiletter control sequences out of 65536+600000
- 44 fonts using 7153055 bytes
+ 30947 multiletter control sequences out of 65536+600000
+ 45 fonts using 7283615 bytes
  55i,15n,95p,1135b,968s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
-f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
-/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
-10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on diviser-pour-regner-exercices-correction.pdf (2 pages, 53153 b
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share
+/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/ope
+ntype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/
+lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.
+otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/zapfding/uzdr.pfb>
+Output written on diviser-pour-regner-exercices-correction.pdf (2 pages, 90113 b
 ytes).
 
-PDF statistics: 144 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 64 named destinations out of 1000 (max. 131072)
+PDF statistics: 158 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 66 named destinations out of 1000 (max. 131072)
  51 words of extra memory for PDF output out of 10000 (max. 100000000)
 

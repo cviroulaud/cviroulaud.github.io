@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  24 SEP 2020 20:33
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  24 SEP 2020 22:43
  restricted system commands enabled.
 **diviser-pour-regner-exercices.tex
 (./diviser-pour-regner-exercices.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.120 seconds
+luaotfload | main : initialization completed in 0.085 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1094,6 +1094,8 @@ LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} (./scripts/maxi.py)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
@@ -1104,37 +1106,36 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 56.
+input line 58.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 Missing character: There is no ! (U+0021) in font nullfont!
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 59.
+input line 58.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 
 (./diviser-pour-regner-exercices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `diviser-pour-regner-exercices.out' has not ch
 anged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27381 strings out of 494383
- 125002,794899 words of node,token memory allocated
- 15831 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 19 glue, 4 kern, 1 penalty, 1817 glyph, 1070 attrib
-ute, 58 glue_spec, 180 attribute_list, 1 write nodes
-   avail lists: 1:4,2:6296,3:206,4:2094,5:1818,6:51,7:3552,8:1521,9:2839,10:30,1
-1:317
+ 27380 strings out of 494383
+ 125005,794899 words of node,token memory allocated
+ 15614 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 18 glue, 4 kern, 1 penalty, 1791 glyph, 1058 attrib
+ute, 58 glue_spec, 178 attribute_list, 1 write nodes
+   avail lists: 1:5,2:6263,3:201,4:2092,5:1803,6:50,7:3510,8:1520,9:2835,10:30,1
+1:315
  30928 multiletter control sequences out of 65536+600000
  44 fonts using 7151807 bytes
  55i,15n,95p,1124b,799s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1147,10 +1148,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/zapfding/uzdr.pfb>
-Output written on diviser-pour-regner-exercices.pdf (2 pages, 57140 bytes).
+Output written on diviser-pour-regner-exercices.pdf (2 pages, 57268 bytes).
 
-PDF statistics: 116 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 32 named destinations out of 1000 (max. 131072)
+PDF statistics: 115 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 31 named destinations out of 1000 (max. 131072)
  51 words of extra memory for PDF output out of 10000 (max. 100000000)
 

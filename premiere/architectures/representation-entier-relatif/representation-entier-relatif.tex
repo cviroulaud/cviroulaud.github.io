@@ -106,7 +106,7 @@ Par contre la valeur $2^n - \vert x\vert$ représente l'entier négatif \emph{x}
 \end{tabular}
 \end{center}
 \subsection{Calculer le complément à 2}
-Voici le protocole pour une première méthode. Pour coder (−4):
+Voici le protocole pour une première méthode. Pour coder (−20):
 \begin{itemize}
 \item Prendre le nombre positif 20 : 00010100
 \item Inverser les bits : 11101011
@@ -117,8 +117,8 @@ Voici le protocole pour une première méthode. Pour coder (−4):
 Un deuxième protocole de garder tous les chiffres depuis la droite jusqu'au premier 1 (compris) puis d'inverser tous les suivants.
 \begin{itemize}
 \item Prendre le nombre positif 20 : 00010100
-\item Garder la partie à droite telle quelle : 00010\textbf{100}
-\item Inverser la partie de gauche après le premier un : \textbf{11101}100
+\item Garder la partie à droite telle quelle : 00010\underline{100}
+\item Inverser la partie de gauche après le premier un : \underline{11101}100
 \item −20 : 11101100
 \end{itemize}
 \begin{commentprof}

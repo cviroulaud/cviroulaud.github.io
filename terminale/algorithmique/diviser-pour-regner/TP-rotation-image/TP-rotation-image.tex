@@ -1,0 +1,72 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{TP rotation image}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Termianle - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Problématique}
+La rotation d'une image est ne fonctionnalité proposée par n'importe quel logiciel de retouche tel \emph{Gimp}. L'opération n'est cependant pas triviale et peut demander une durée non négligeable.
+\begin{center}
+\shadowbox{\parbox{14cm}{\centering Construire un algorithme de rotation d'une image en appliquant le principe de \guill{diviser pour régner}.}}
+\end{center}
+\section{Principe}
+Un algorithme de type \guill{diviser pour régner} se décompose en trois parties:
+\begin{itemize}
+\item \emph{diviser:} Le problème est partagé en plusieurs petits problèmes identiques.
+\item \emph{traitement:} Chaque petit problème est résolu.
+\item \emph{recombinaison:} Les petits problèmes résolus sont assemblés pour remonter au problème principal.
+\end{itemize}
+\begin{activite}
+\textbf{Réflexion commune:} Considérons une image aux dimensions connues. Quelles étapes pourrions-nous imaginer pour répondre à notre problématique?
+\end{activite}
+\section{Algorithme de rotation}
+\subsection{Chargement de l'image}
+\emph{PIL (Python Image Library) -anciennement pillow-} est une bibliothèque de traitement d'image. Le code ci-après charge et affiche une image:
+\begin{lstlisting}
+from PIL import Image
+
+im = Image.open("image.png")
+im.show()
+\end{lstlisting}
+Afin de travailler sur l'image nous pouvons récupérer des informations:
+\begin{lstlisting}
+largeur, hauteur = im.size
+px = im.load()
+\end{lstlisting}
+La variable \emph{px} est une matrice représentative des pixels de l'image. La couleur du pixel de coordonnées \emph{(x,y)} est donnée par l'instruction \textbf{px[x,y]}. Il est également possible d'affecter une nouvelle couleur \emph{c} à un pixel: \textbf{px[x,y] = c}.
+\begin{activite}
+Charger et afficher une image carrée. Il est possible de récupérer cette image sur \url{https://www.freepng.fr/}.
+\end{activite}
+\subsection{Application de l'algorithme \emph{Diviser pour régner}}
+\begin{activite}
+\begin{enumerate}
+\item Écrire une double boucle qui effectue la rotation de quatre pixels dans le sens anti-horaire.
+\item Écrire une fonction \textbf{rotation\_auxiliaire(px: object, x: int, y: int, t: int)\;\rightarrow\;None} qui applique l'algorithme récursif exprimé dans l'activité 1. Inclure la boucle de la question précédente dans cette fonction.
+\item Écrire la fonction \textbf{rotation(px: object, taille: int)->None} qui effectuera l'appel principal de la fonction précédente.
+\end{enumerate}
+\begin{commentprof}
+Plutôt qu'une seconde fonction nous pourrions donner des valeurs par défaut à x et y.\\
+im.save("fichier.png") pour sauvegarder le fichier.
+\end{commentprof}
+\end{activite}
+\section{Créer une bibliothèque}
+Afin de pouvoir réutiliser la fonctionnalité de rotation développée, il peut être intéressant de l'intégrer dans une classe.
+\begin{activite}
+\begin{enumerate}
+\item Créer une classe \textbf{Image\_lib} et son constructeur qui demande un argument: le chemin du fichier source.
+\item Créer les méthodes \textbf{montrer()$\;\rightarrow\;$None} et \textbf{sauvegarder(nom: str)$\;\rightarrow\;$None}.
+\item Adapter les fonctions \emph{rotation} et \emph{rotation\_auxiliaire} pour en faire des méthodes. La fonction \emph{rotation\_auxiliaire} peut être vue comme une fonctionnalité interne à la classe, invisible pour l'utilisateur.
+\item Adapter la fonction pour pouvoir proposer une rotation horaire ou anti-horaire.
+\end{enumerate}
+\begin{commentprof}
+fonction \textbf{filtrer} pour les plus avancés
+\end{commentprof}
+\end{activite}
+\end{Form}
+\end{document}

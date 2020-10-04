@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 OCT 2020 14:18
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  3 OCT 2020 15:04
  restricted system commands enabled.
-**fonction-sorted.tex
-(./fonction-sorted.tex
+**listes-chainees.tex
+(./listes-chainees.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.151 seconds
+luaotfload | main : initialization completed in 0.086 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1199,8 +1199,8 @@ File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
-))) (./fonction-sorted.aux)
-\openout1 = fonction-sorted.aux
+))) (./listes-chainees.aux)
+\openout1 = listes-chainees.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -1375,10 +1375,10 @@ LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
 
-(./fonction-sorted.out) (./fonction-sorted.out)
+(./listes-chainees.out) (./listes-chainees.out)
 \@outlinefile=\write5
 
-\openout5 = fonction-sorted.out
+\openout5 = listes-chainees.out
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Try loading font information for U+pzd on input line 14.
@@ -1386,80 +1386,161 @@ LaTeX Font Info:    Try loading font information for U+pzd on input line 14.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+(./scripts/liste.py
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=78, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=50, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 142.
+input line 16.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-</home/tof/Documents/Cozy/latex-include/cc.png>]
+</home/tof/Documents/Cozy/latex-include/cc.png>])
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 136.
+
+
+Package xcolor Warning: Incompatible color definition on input line 136.
+
+
+Package xcolor Warning: Incompatible color definition on input line 136.
+
+
+Package xcolor Warning: Incompatible color definition on input line 136.
+
+
+Package xcolor Warning: Incompatible color definition on input line 136.
+
+
+Package xcolor Warning: Incompatible color definition on input line 136.
+
+
+Package xcolor Warning: Incompatible color definition on input line 136.
+
+(./scripts/liste.py)
+
+Package xcolor Warning: Incompatible color definition on input line 136.
+
+
+Package xcolor Warning: Incompatible color definition on input line 136.
+
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 174.
+input line 182.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2]
+[2]
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 284.
+input line 201.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
-
-(./fonction-sorted.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
-Package rerunfilecheck Info: File `fonction-sorted.out' has not changed.
-(rerunfilecheck)             Checksum: 47E5BEC3DADD1078A5C2234E24B60955;2647.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+ (./listes-chainees.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
+Package rerunfilecheck Info: File `listes-chainees.out' has not changed.
+(rerunfilecheck)             Checksum: 33B3D7FB054BCCD0FCDDA8A2C53A313A;1033.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37525 strings out of 494383
- 100000,953878 words of node,token memory allocated
- 30741 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 26 glue, 4 kern, 1 penalty, 4010 glyph, 860 attribu
-te, 58 glue_spec, 145 attribute_list, 1 write nodes
-   avail lists: 1:6,2:8715,3:761,4:30,5:173,6:34,7:2125,8:62,9:525,10:10,11:156
- 40657 multiletter control sequences out of 65536+600000
- 55 fonts using 8184879 bytes
- 55i,15n,95p,1110b,774s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/
-texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/openty
-pe/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/l
-m/lmroman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic
-.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/shar
-e/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on fonction-sorted.pdf (3 pages, 103881 bytes).
+ 37918 strings out of 494383
+ 125007,953878 words of node,token memory allocated
+ 30391 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 22 glue, 4 kern, 1 penalty, 3772 glyph, 1436 attrib
+ute, 58 glue_spec, 241 attribute_list, 1 write nodes
+   avail lists: 1:6,2:11107,3:817,4:1310,5:1174,6:43,7:1983,8:967,9:1969,10:21,1
+1:181
+ 41016 multiletter control sequences out of 65536+600000
+ 55 fonts using 8179279 bytes
+ 55i,16n,95p,1110b,1242s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/
+fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/p
+ublic/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
+10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.o
+tf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/tex
+mf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/openty
+pe/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on listes-chainees.pdf (3 pages, 80295 bytes).
 
-PDF statistics: 192 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 131072)
- 186 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 176 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 131072)
+ 130 words of extra memory for PDF output out of 10000 (max. 100000000)
 

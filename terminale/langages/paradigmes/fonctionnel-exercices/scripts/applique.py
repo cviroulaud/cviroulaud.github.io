@@ -12,7 +12,7 @@ def applique(f, t: tuple)->tuple:
 
 #Question 2
 def double(x: int)->int:
-    return x*x
+    return x*2
 
 #Question 3
 l = (2,4,5,8,10)

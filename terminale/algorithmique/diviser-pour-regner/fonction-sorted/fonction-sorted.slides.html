@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="../../../../reveal.js/css/reveal.css">
+<link rel="stylesheet" href="../../../../reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/print/pdf.css';
+        link.href = '../../../../reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
+<script src="../../../../reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -13457,7 +13457,17 @@ tri(liste) = \left\{
 $$
 </div>
 </div>
-</div></section></section><section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>idée de ce tri reviendrait à von Neumann</p>
+
+</div>
+</div>
+</div>
+</aside></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13465,7 +13475,17 @@ $$
 
 </div>
 </div>
-</div><div class="fragment">
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>les deux listes ne sont pas forcément de la même longueur</p>
+
+</div>
+</div>
+</div>
+</aside><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13632,9 +13652,7 @@ $$
         <span class="k">return</span> <span class="n">tab</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">milieu</span> <span class="o">=</span> <span class="n">taille</span><span class="o">//</span><span class="mi">2</span>
-        <span class="n">gauche</span> <span class="o">=</span> <span class="n">tri_fusion</span><span class="p">(</span><span class="n">tab</span><span class="p">[:</span><span class="n">milieu</span><span class="p">])</span>
-        <span class="n">droite</span> <span class="o">=</span> <span class="n">tri_fusion</span><span class="p">(</span><span class="n">tab</span><span class="p">[</span><span class="n">milieu</span><span class="p">:])</span>
-        <span class="k">return</span> <span class="n">fusionner</span><span class="p">(</span><span class="n">gauche</span><span class="p">,</span><span class="n">droite</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">fusionner</span><span class="p">(</span><span class="n">tri_fusion</span><span class="p">(</span><span class="n">tab</span><span class="p">[:</span><span class="n">milieu</span><span class="p">]),</span> <span class="n">tri_fusion</span><span class="p">(</span><span class="n">tab</span><span class="p">[</span><span class="n">milieu</span><span class="p">:]))</span>
 </pre></div>
 
     </div>
@@ -13911,8 +13929,8 @@ require(
       waitSeconds: 15
     },
     [
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.js"
+      "../../../../reveal.js/lib/js/head.min.js",
+      "../../../../reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -13927,9 +13945,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
+                { src: "../../../../reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
+                { src: "../../../../reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]

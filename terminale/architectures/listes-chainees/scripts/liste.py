@@ -56,16 +56,14 @@ class Liste:
         """
         renvoie l'élément de rang n. Les indices commencent à 0.
         """
-        if self.tete is None or n < 0:
-            raise IndexError("indice invalide")
-
         maillon = self.tete
         i = 0
-        while not(i == n):
+        while i < n and maillon is not None:
             maillon = maillon.suivant
-            if maillon is None:
-                raise IndexError("indice invalide")
             i += 1
+
+        if maillon is None or n < 0:
+                raise IndexError("indice invalide")
 
         return maillon.valeur
 

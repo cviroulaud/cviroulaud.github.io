@@ -13607,16 +13607,14 @@ $( document ).ready(function(){
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        renvoie l&#39;élément de rang n. Les indices commencent à 0.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">tete</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="s2">&quot;indice invalide&quot;</span><span class="p">)</span>
-
         <span class="n">maillon</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tete</span>
         <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="k">while</span> <span class="ow">not</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="ow">and</span> <span class="n">maillon</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">maillon</span> <span class="o">=</span> <span class="n">maillon</span><span class="o">.</span><span class="n">suivant</span>
-            <span class="k">if</span> <span class="n">maillon</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="s2">&quot;indice invalide&quot;</span><span class="p">)</span>
             <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">if</span> <span class="n">maillon</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="s2">&quot;indice invalide&quot;</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">maillon</span><span class="o">.</span><span class="n">valeur</span>
 </pre></div>

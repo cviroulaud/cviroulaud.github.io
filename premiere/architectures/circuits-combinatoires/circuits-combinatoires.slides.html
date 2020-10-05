@@ -8,26 +8,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <meta charset="utf-8"/>
-
-<!-- javascript from CDN for conversion -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.js"></script>
-
-    
-
-
-<script type="text/x-mathjax-config">
-// make sure that equations numbers are enabled
-MathJax.Hub.Config({ TeX: { equationNumbers: {
-    autoNumber: "AMS", // All AMS equations are numbered
-    useLabelIds: true, // labels as ids
-    // format the equation number - uses an offset eqNumInitial (default 0)
-    formatNumber: function (n) {return String(Number(n)+Number(1)-1)} 
-    } } 
-});
-</script>
-
-
 
 <title>circuits-combinatoires slides</title>
 
@@ -13207,64 +13187,10 @@ a.anchor-link {
 }
 </style>
 
-
-
-<!-- stylesheet from CDN -->
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/jfbercher/jupyter_latex_envs/master/src/latex_envs/static/latex_envs.css">
-
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css"> 
-
-<!-- Load mathjax -->
-<script type="text/javascript"  src="https://rawgit.com/jfbercher/jupyter_latex_envs/master/src/latex_envs/static/thmsInNb4.js"> </script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-
-<script>
-$( document ).ready(function(){
-
-        //Value of configuration variables, some taken from the notebook's metada. 
-        eqNum = 0; // begins equation numbering at eqNum+1
-        eqLabelWithNumbers = "True"=="True" ? true : false; //if true, label equations with equation numbers; 
-                                       //otherwise using the tag specified by \label
-        conversion_to_html = false;
-        current_cit=1;
-        cite_by='key';  //only number and key are supported
-        //var document={}
-        document.bibliography={};
-
-        // Read environment map config
-        initmap();
-        // Read user envs config, if specified
-        
-                environmentMap = $.extend(true,{}, environmentInitialMap)        
-        
-
-        // fire the main function with these parameters
-        var html_to_analyse = $('body').html()
-        var html_converted = thmsInNbConv(marked,html_to_analyse);
-        html_converted = html_converted.replace(/%[\S\t ]*<\/p>/gm,"</p>")
-        $('body').html(html_converted)
-        // Show/hide anchors
-        var labels_anchors = "False"=="True" ? true : false;
-        $('.latex_label_anchor').toggle(labels_anchors)
-        // Number all environments
-        report_style_numbering = "True"=="True" ? true : false;
-        reset_counters();
-        renumberAllEnvs();
-
-    });
-</script>
-
+<link rel="stylesheet" href="custom.css">
 
 </head>
-
-
-
-
 
 
 <body>
@@ -13500,8 +13426,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.-R&#233;aliser-un-additionneur">3. R&#233;aliser un additionneur<a class="anchor-link" href="#3.-R&#233;aliser-un-additionneur">&#182;</a></h2><h3 id="3.1-D&#233;composition">3.1 D&#233;composition<a class="anchor-link" href="#3.1-D&#233;composition">&#182;</a></h3>$$
-\begin{array}{ccccc}
+<h2 id="3.-R&#233;aliser-un-additionneur">3. R&#233;aliser un additionneur<a class="anchor-link" href="#3.-R&#233;aliser-un-additionneur">&#182;</a></h2><h3 id="3.1-D&#233;composition">3.1 D&#233;composition<a class="anchor-link" href="#3.1-D&#233;composition">&#182;</a></h3>$$\begin{array}{ccccc}
         &amp; 1 &amp; 1 &amp; &amp; retenues \\
         &amp; 1 &amp; 0 &amp; 1 &amp; \\
         + &amp; 1 &amp; 1 &amp; 1 &amp;\\

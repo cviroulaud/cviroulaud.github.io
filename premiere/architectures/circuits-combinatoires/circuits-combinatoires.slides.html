@@ -13219,14 +13219,34 @@ a.anchor-link {
 <h3 id="Repr&#233;sentation-en-m&#233;moire-d'un-octet">Repr&#233;sentation en m&#233;moire d'un octet<a class="anchor-link" href="#Repr&#233;sentation-en-m&#233;moire-d'un-octet">&#182;</a></h3><div align="middle"><img src="ressources/octet.png" width=400px></div>
 </div>
 </div>
-</div></div><div class="fragment">
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un ordinateur manipule des données codées sous forme de bits en mémoire.</p>
+
+</div>
+</div>
+</div>
+</aside></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Portes-logiques-OR-(&#224;-partir-de-portes-NAND)">Portes logiques OR (&#224; partir de portes NAND)<a class="anchor-link" href="#Portes-logiques-OR-(&#224;-partir-de-portes-NAND)">&#182;</a></h3><div align="middle"><img src="ressources/or-from-nand.png" width=200px></div>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Des combinaisons de transistors assurent des opérations booléennes élémentaires.</p>
+
+</div>
+</div>
+</div>
+</aside></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13276,11 +13296,23 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Activit&#233;-1:-correction">Activit&#233; 1: correction<a class="anchor-link" href="#Activit&#233;-1:-correction">&#182;</a></h3><p>3 entrées $\rightarrow 2^3$ sorties</p>
+<h3 id="Activit&#233;-1:">Activit&#233; 1:<a class="anchor-link" href="#Activit&#233;-1:">&#182;</a></h3><ul>
+<li>La fonction <em>f</em> a trois paramètres. Combien de combinaisons possibles peut-on réaliser avec ces paramètres?</li>
+<li>Établir la table de vérité des différentes expressions.</li>
+<li>En déduire la table de vérité de <em>f</em>.</li>
+</ul>
 
 </div>
 </div>
 </div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Activit&#233;-1:-correction">Activit&#233; 1: correction<a class="anchor-link" href="#Activit&#233;-1:-correction">&#182;</a></h3><p>3 entrées $\rightarrow 2^3$ sorties</p>
+
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13369,54 +13401,81 @@ a.anchor-link {
         <td>x</td>
         <td>y</td>
         <td>z</td>
+        <td>(x $\land$ y)</td>
+        <td>$\lnot$ y</td>
+        <td>($\lnot$ y $\lor$ z)</td>  
         <td>(x$\land$ y)$\oplus$ ($\lnot$ y $\lor$ z)</td>        
     </tr>
     <tr>
         <td>0</td>
         <td>0</td>
         <td>0</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>0</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-    <tr>
         <td>0</td>
         <td>1</td>
         <td>1</td>
         <td>1</td>
     </tr>
     <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+    </tr>
+    <tr>
         <td>1</td>
         <td>0</td>
         <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>1</td>
     </tr>
     <tr>
         <td>1</td>
         <td>0</td>
         <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>1</td>
     </tr>
     <tr>
         <td>1</td>
         <td>1</td>
         <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>1</td>
     </tr>
     <tr>
         <td>1</td>
         <td>1</td>
         <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>0</td>
     </tr>
 </table>
@@ -13436,11 +13495,80 @@ a.anchor-link {
 $$
 </div>
 </div>
-</div></section></section><section><section>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>On a:</p>
+<ul>
+<li>2 entrées $e_0$ et $e_1$</li>
+<li>2 sorties <em>somme</em> et <em>retenue</em></li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="3.2-Demi-additioneur">3.2 Demi-additioneur<a class="anchor-link" href="#3.2-Demi-additioneur">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Additionnons 2 bits</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>e0</td>
+        <td>e1</td>
+        <td>s</td>
+        <td>c</td>      
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Activit&#233;-2:">Activit&#233; 2:<a class="anchor-link" href="#Activit&#233;-2:">&#182;</a></h3><ul>
+<li>Quelles fonctions logiques reconnaît-on en <em>s</em> et <em>c</em>?</li>
+<li>En déduire le schéma du demi-additionneur 1 bit.</li>
+</ul>
+
 </div>
 </div>
 </div><div class="fragment">
@@ -13458,7 +13586,18 @@ $$
 <h3 id="3.3-Additionneur-1-bit">3.3 Additionneur 1 bit<a class="anchor-link" href="#3.3-Additionneur-1-bit">&#182;</a></h3>
 </div>
 </div>
-</div><div class="fragment">
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Activit&#233;-3:">Activit&#233; 3:<a class="anchor-link" href="#Activit&#233;-3:">&#182;</a></h3><ul>
+<li>Établir la table de vérité de l'additionneur 1 bit.</li>
+<li>Sur la figure placer les entrées $e_0$, $e_1$, $c_0$ et les sorties $s$ et $c$.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13529,7 +13668,7 @@ $$
 </table>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13537,7 +13676,17 @@ $$
 
 </div>
 </div>
-</div></section></section>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>la porte OR vérifie s'il y a une retenue</p>
+
+</div>
+</div>
+</div>
+</aside></section></section>
 </div>
 </div>
 

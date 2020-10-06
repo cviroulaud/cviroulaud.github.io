@@ -60,5 +60,6 @@ def tri_fusion(tab):
         return fusionner(gauche,droite)
 
 l = tuple(randint(0,100) for _ in range(10000))
-#print(duree_tri(tri_fusion, l))
+print(duree_tri(tri_fusion, l))
 print(duree_tri(sorted, l))
+

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 SEP 2020 15:53
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  7 OCT 2020 10:34
  restricted system commands enabled.
 **TP-rotation-image.tex
 (./TP-rotation-image.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.155 seconds
+luaotfload | main : initialization completed in 0.076 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1143,14 +1143,14 @@ Package rerunfilecheck Info: File `TP-rotation-image.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27468 strings out of 494383
+ 27469 strings out of 494383
  100000,794899 words of node,token memory allocated
  19562 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 27 glue, 4 kern, 1 penalty, 2500 glyph, 596 attribu
 te, 58 glue_spec, 101 attribute_list, 1 write nodes
    avail lists: 1:3,2:3237,3:207,4:664,5:695,6:41,7:2476,8:514,9:1018,10:14,11:2
 45
- 31005 multiletter control sequences out of 65536+600000
+ 31006 multiletter control sequences out of 65536+600000
  55 fonts using 8180399 bytes
  55i,15n,95p,1112b,777s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/

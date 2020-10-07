@@ -8,26 +8,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <meta charset="utf-8"/>
-
-<!-- javascript from CDN for conversion -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.js"></script>
-
-    
-
-
-<script type="text/x-mathjax-config">
-// make sure that equations numbers are enabled
-MathJax.Hub.Config({ TeX: { equationNumbers: {
-    autoNumber: "AMS", // All AMS equations are numbered
-    useLabelIds: true, // labels as ids
-    // format the equation number - uses an offset eqNumInitial (default 0)
-    formatNumber: function (n) {return String(Number(n)+Number(1)-1)} 
-    } } 
-});
-</script>
-
-
 
 <title>listes-chainees slides</title>
 
@@ -13207,64 +13187,10 @@ a.anchor-link {
 }
 </style>
 
-
-
-<!-- stylesheet from CDN -->
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/jfbercher/jupyter_latex_envs/master/src/latex_envs/static/latex_envs.css">
-
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css"> 
-
-<!-- Load mathjax -->
-<script type="text/javascript"  src="https://rawgit.com/jfbercher/jupyter_latex_envs/master/src/latex_envs/static/thmsInNb4.js"> </script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-
-<script>
-$( document ).ready(function(){
-
-        //Value of configuration variables, some taken from the notebook's metada. 
-        eqNum = 0; // begins equation numbering at eqNum+1
-        eqLabelWithNumbers = "True"=="True" ? true : false; //if true, label equations with equation numbers; 
-                                       //otherwise using the tag specified by \label
-        conversion_to_html = false;
-        current_cit=1;
-        cite_by='key';  //only number and key are supported
-        //var document={}
-        document.bibliography={};
-
-        // Read environment map config
-        initmap();
-        // Read user envs config, if specified
-        
-                environmentMap = $.extend(true,{}, environmentInitialMap)        
-        
-
-        // fire the main function with these parameters
-        var html_to_analyse = $('body').html()
-        var html_converted = thmsInNbConv(marked,html_to_analyse);
-        html_converted = html_converted.replace(/%[\S\t ]*<\/p>/gm,"</p>")
-        $('body').html(html_converted)
-        // Show/hide anchors
-        var labels_anchors = "False"=="True" ? true : false;
-        $('.latex_label_anchor').toggle(labels_anchors)
-        // Number all environments
-        report_style_numbering = "True"=="True" ? true : false;
-        reset_counters();
-        renumberAllEnvs();
-
-    });
-</script>
-
+<link rel="stylesheet" href="custom.css">
 
 </head>
-
-
-
-
 
 
 <body>
@@ -13372,7 +13298,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="http://pythontutor.com/visualize.html#code=class%20Maillon%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20Cr%C3%A9e%20un%20maillon%20de%20la%20liste%20cha%C3%AEn%C3%A9e%0A%20%20%20%20%22%22%22%0A%20%20%20%20def%20__init__%28self,%20val%3A%20int,%20suiv%3A%20object%29-%3ENone%3A%0A%20%20%20%20%20%20%20%20self.valeur%20%3D%20val%0A%20%20%20%20%20%20%20%20self.suivant%20%3D%20suiv%0A%0Alst%20%3D%20Maillon%283,%20Maillon%285,%20Maillon%288,%20None%29%29%29&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=nevernest&amp;mode=display&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false">Visualisation sur PythonTutor</a></p>
+<p><a href="http://pythontutor.com/visualize.html#code=class%20Maillon%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20Cr%C3%A9e%20un%20maillon%20de%20la%20liste%20cha%C3%AEn%C3%A9e%0A%20%20%20%20%22%22%22%0A%20%20%20%20def%20__init__%28self,%20val%3A%20int,%20suiv%3A%20object%29-%3ENone%3A%0A%20%20%20%20%20%20%20%20self.valeur%20%3D%20val%0A%20%20%20%20%20%20%20%20self.suivant%20%3D%20suiv%0A%0Alst%20%3D%20Maillon%283,%20Maillon%285,%20Maillon%288,%20None%29%29%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">Visualisation sur PythonTutor</a></p>
 
 </div>
 </div>
@@ -13464,7 +13390,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="http://pythontutor.com/visualize.html#code=class%20Maillon%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20Cr%C3%A9e%20un%20maillon%20de%20la%20liste%20cha%C3%AEn%C3%A9e%0A%20%20%20%20%22%22%22%0A%20%20%20%20def%20__init__%28self,%20val%3A%20int,%20suiv%3A%20object%29-%3ENone%3A%0A%20%20%20%20%20%20%20%20self.valeur%20%3D%20val%0A%20%20%20%20%20%20%20%20self.suivant%20%3D%20suiv%0A%0Aclass%20Liste%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20Cr%C3%A9e%20une%20liste%20cha%C3%AEn%C3%A9e%0A%20%20%20%20%22%22%22%0A%20%20%20%20def%20__init__%28self%29%3A%0A%20%20%20%20%20%20%20%20self.tete%3A%20object%20%3D%20None%0A%0A%20%20%20%20def%20est_vide%28self%29-%3Ebool%3A%0A%20%20%20%20%20%20%20%20return%20self.tete%20is%20None%0A%0A%20%20%20%20def%20ajoute%28self,%20val%3A%20int%29-%3ENone%3A%0A%20%20%20%20%20%20%20%20self.tete%20%3D%20Maillon%28val,%20self.tete%29%0A%0Alst%20%3D%20Liste%28%29%0Alst.ajoute%288%29%0Alst.ajoute%285%29%0Alst.ajoute%283%29&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=nevernest&amp;mode=display&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false">Visualisation sur PythonTutor</a></p>
+<p><a href="http://pythontutor.com/visualize.html#code=class%20Maillon%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20Cr%C3%A9e%20un%20maillon%20de%20la%20liste%20cha%C3%AEn%C3%A9e%0A%20%20%20%20%22%22%22%0A%20%20%20%20def%20__init__%28self,%20val%3A%20int,%20suiv%3A%20object%29-%3ENone%3A%0A%20%20%20%20%20%20%20%20self.valeur%20%3D%20val%0A%20%20%20%20%20%20%20%20self.suivant%20%3D%20suiv%0A%0Aclass%20Liste%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20Cr%C3%A9e%20une%20liste%20cha%C3%AEn%C3%A9e%0A%20%20%20%20%22%22%22%0A%20%20%20%20def%20__init__%28self%29%3A%0A%20%20%20%20%20%20%20%20self.tete%3A%20object%20%3D%20None%0A%0A%20%20%20%20def%20est_vide%28self%29-%3Ebool%3A%0A%20%20%20%20%20%20%20%20return%20self.tete%20is%20None%0A%0A%20%20%20%20def%20ajoute%28self,%20val%3A%20int%29-%3ENone%3A%0A%20%20%20%20%20%20%20%20self.tete%20%3D%20Maillon%28val,%20self.tete%29%0A%0Alst%20%3D%20Liste%28%29%0Alst.ajoute%288%29%0Alst.ajoute%285%29%0Alst.ajoute%283%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">Visualisation sur PythonTutor</a></p>
 
 </div>
 </div>

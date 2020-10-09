@@ -8,26 +8,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <meta charset="utf-8"/>
-
-<!-- javascript from CDN for conversion -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.js"></script>
-
-    
-
-
-<script type="text/x-mathjax-config">
-// make sure that equations numbers are enabled
-MathJax.Hub.Config({ TeX: { equationNumbers: {
-    autoNumber: "AMS", // All AMS equations are numbered
-    useLabelIds: true, // labels as ids
-    // format the equation number - uses an offset eqNumInitial (default 0)
-    formatNumber: function (n) {return String(Number(n)+Number(1)-1)} 
-    } } 
-});
-</script>
-
-
 
 <title>portes-logiques slides</title>
 
@@ -35,8 +15,8 @@ MathJax.Hub.Config({ TeX: { equationNumbers: {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="../../../reveal.js/css/reveal.css">
-<link rel="stylesheet" href="../../../reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -44,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = '../../../reveal.js/css/print/pdf.css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="../../../reveal.js/lib/js/html5shiv.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -13207,64 +13187,10 @@ a.anchor-link {
 }
 </style>
 
-
-
-<!-- stylesheet from CDN -->
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/jfbercher/jupyter_latex_envs/master/src/latex_envs/static/latex_envs.css">
-
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css"> 
-
-<!-- Load mathjax -->
-<script type="text/javascript"  src="https://rawgit.com/jfbercher/jupyter_latex_envs/master/src/latex_envs/static/thmsInNb4.js"> </script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-
-<script>
-$( document ).ready(function(){
-
-        //Value of configuration variables, some taken from the notebook's metada. 
-        eqNum = 0; // begins equation numbering at eqNum+1
-        eqLabelWithNumbers = "True"=="True" ? true : false; //if true, label equations with equation numbers; 
-                                       //otherwise using the tag specified by \label
-        conversion_to_html = false;
-        current_cit=1;
-        cite_by='key';  //only number and key are supported
-        //var document={}
-        document.bibliography={};
-
-        // Read environment map config
-        initmap();
-        // Read user envs config, if specified
-        
-                environmentMap = $.extend(true,{}, environmentInitialMap)        
-        
-
-        // fire the main function with these parameters
-        var html_to_analyse = $('body').html()
-        var html_converted = thmsInNbConv(marked,html_to_analyse);
-        html_converted = html_converted.replace(/%[\S\t ]*<\/p>/gm,"</p>")
-        $('body').html(html_converted)
-        // Show/hide anchors
-        var labels_anchors = "False"=="True" ? true : false;
-        $('.latex_label_anchor').toggle(labels_anchors)
-        // Number all environments
-        report_style_numbering = "True"=="True" ? true : false;
-        reset_counters();
-        renumberAllEnvs();
-
-    });
-</script>
-
+<link rel="stylesheet" href="custom.css">
 
 </head>
-
-
-
-
 
 
 <body>
@@ -13681,8 +13607,8 @@ require(
       waitSeconds: 15
     },
     [
-      "../../../reveal.js/lib/js/head.min.js",
-      "../../../reveal.js/js/reveal.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -13697,9 +13623,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "../../../reveal.js/lib/js/classList.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "../../../reveal.js/plugin/notes/notes.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]

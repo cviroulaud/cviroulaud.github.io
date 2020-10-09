@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 OCT 2020 14:45
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  8 OCT 2020 22:54
  restricted system commands enabled.
 **listes-chainees-exercices.tex
 (./listes-chainees-exercices.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.078 seconds
+luaotfload | main : initialization completed in 0.074 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1406,42 +1406,42 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 62.
+input line 73.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 
 (./listes-chainees-exercices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `listes-chainees-exercices.out' has not change
 d.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37552 strings out of 494383
+ 37556 strings out of 494383
  100000,953878 words of node,token memory allocated
- 7249 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 11 glue, 4 kern, 1 penalty, 873 glyph, 248 attribut
-e, 58 glue_spec, 43 attribute_list, 1 write nodes
-   avail lists: 1:6,2:4100,3:315,4:19,5:126,6:15,7:1402,8:22,9:186,10:4,11:76
- 40725 multiletter control sequences out of 65536+600000
+ 8901 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 13 glue, 4 kern, 1 penalty, 1093 glyph, 290 attribu
+te, 58 glue_spec, 50 attribute_list, 1 write nodes
+   avail lists: 1:6,2:4296,3:337,4:25,5:143,6:19,7:1731,8:25,9:200,10:4,11:94
+ 40726 multiletter control sequences out of 65536+600000
  50 fonts using 7526479 bytes
- 55i,15n,95p,1120b,776s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 55i,15n,95p,1120b,799s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share
 /texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/ope
 ntype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lm
 roman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.
 otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on listes-chainees-exercices.pdf (1 page, 33454 bytes).
+Output written on listes-chainees-exercices.pdf (1 page, 34534 bytes).
 
-PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 131072)
+PDF statistics: 78 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

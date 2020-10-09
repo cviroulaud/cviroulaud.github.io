@@ -20,7 +20,7 @@ Reprendre la classe \emph{Liste} vue en cours et ajouter les méthodes ci-après
 \item Construire la méthode \textbf{concatener(self, l: object)$\;\rightarrow\;$object} qui renvoie une nouvelle liste composée de la liste interne de la classe et \emph{l}. Il sera nécessaire d'écrire une méthode supplémentaire \textit{récursive} \textbf{concatener\_rec(self, tete1: object, tete2: object)$\;\rightarrow\;$object}. Attention les deux listes ne sont pas modifiées mais une nouvelle liste concaténée est renvoyée.
 \item Estimer la complexité de la méthode \emph{concatener}.
 \end{enumerate}
-\end{exo}
+
 \begin{figure}[!h]
 \centering
 \begin{tikzpicture}[scale=0.4]
@@ -59,5 +59,15 @@ Reprendre la classe \emph{Liste} vue en cours et ajouter les méthodes ci-après
 \end{tikzpicture}
 \captionof{figure}{Fonctionnement de \textbf{concatener\_rec}}
 \end{figure}
+\end{exo}
+
+\begin{exo}
+\begin{enumerate}
+\item En utilisant la classe \emph{Liste} précédente, créer la liste triée 1,3,7,9,10.
+\item Créer la méthode \emph{récursive} \textbf{inserer(self, val: int)$\;\rightarrow\;$None} qui insère l'élément \emph{val} à la bonne place dans la liste triée.
+\end{enumerate}
+\end{exo}
+
+
 \end{Form}
 \end{document}

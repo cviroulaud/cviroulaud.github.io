@@ -66,6 +66,22 @@ class Liste:
     def __str__(self):
         return self.afficher_rec(self.tete)
 
+    def inserer_rec(self, val: int, lst: object)->object:
+        """
+        méthode interne pour recréer la liste avec l'élément inséré
+        """
+        if lst is None or val <= lst.valeur:
+            return Maillon(val, lst)
+        else:
+            return Maillon(lst.valeur, self.inserer_rec(val, lst.suivant))
+
+    def inserer(self, val: int)->None:
+        """
+        appel principal pour l'insertion dans une liste triée
+        """
+        self.tete = self.inserer_rec(val, self.tete)
+
+
     def __len__(self)->int:
         maillon = self.tete
         taille = 0
@@ -143,3 +159,24 @@ lst2.ajoute(13)
 lst_add = lst.concatener(lst2)
 
 print(lst_add)
+
+lst_triee = Liste()
+lst_triee.ajoute(10)
+lst_triee.ajoute(9)
+lst_triee.ajoute(7)
+lst_triee.ajoute(3)
+lst_triee.ajoute(1)
+
+print(lst_triee)
+
+lst_triee.inserer(4)
+
+print(lst_triee)
+
+lst_triee.inserer(12)
+
+print(lst_triee)
+
+lst_triee.inserer(0)
+
+print(lst_triee)

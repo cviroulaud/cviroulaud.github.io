@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 OCT 2020 14:51
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  8 OCT 2020 22:41
  restricted system commands enabled.
 **listes-chainees-exercices-correction.tex
 (./listes-chainees-exercices-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.127 seconds
+luaotfload | main : initialization completed in 0.076 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1481,45 +1481,77 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 66.
+input line 29.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
 
-(./listes-chainees-exercices-correction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+(./scripts/liste-exo.py)
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 34.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+ (./listes-chainees-exercices-correction.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `listes-chainees-exercices-correction.out' has
  not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37774 strings out of 494383
- 195333,953878 words of node,token memory allocated
- 12520 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 8 glue, 4 kern, 1 penalty, 1181 glyph, 1592 attribu
-te, 58 glue_spec, 267 attribute_list, 1 write nodes
-   avail lists: 1:7,2:13550,3:408,4:3811,5:3041,6:49,7:3590,8:2714,9:5028,10:25,
-11:301
- 40911 multiletter control sequences out of 65536+600000
- 32 fonts using 6404991 bytes
+ 37664 strings out of 494383
+ 195332,953878 words of node,token memory allocated
+ 18246 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 9 glue, 4 kern, 1 penalty, 1658 glyph, 2612 attribu
+te, 58 glue_spec, 437 attribute_list, 1 write nodes
+   avail lists: 1:8,2:10948,3:176,4:4639,5:3673,6:54,7:3568,8:3283,9:5952,10:26,
+11:350
+ 40759 multiletter control sequences out of 65536+600000
+ 31 fonts using 6275055 bytes
  55i,15n,95p,1131b,989s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share
-/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/ope
-ntype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/
-lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.o
-tf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/
-texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-di
-st/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on listes-chainees-exercices-correction.pdf (1 page, 33999 bytes)
-.
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
+f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
+/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmrom
+an10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf><
+/usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on listes-chainees-exercices-correction.pdf (2 pages, 34192 bytes
+).
 
-PDF statistics: 118 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 37 named destinations out of 1000 (max. 131072)
+PDF statistics: 138 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 60 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

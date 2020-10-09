@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  19 SEP 2020 15:28
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  8 OCT 2020 13:54
  restricted system commands enabled.
 **exercices-fonctions-booleennes-correction.tex
 (./exercices-fonctions-booleennes-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.106 seconds
+luaotfload | main : initialization completed in 0.138 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -332,6 +332,14 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
@@ -356,7 +364,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen152
 \Gm@layouthoffset=\dimen153
 \Gm@layoutvoffset=\dimen154
-\Gm@dimlist=\toks16
+\Gm@dimlist=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -502,7 +510,7 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count273
 \lst@gtempboxa=\box71
-\lst@token=\toks17
+\lst@token=\toks18
 \lst@length=\count274
 \lst@currlwidth=\dimen164
 \lst@column=\count275
@@ -528,15 +536,15 @@ Package: listings 2018/09/02 1.7 (Carsten Heinz)
 Package: enumitem 2019/02/04 v3.8 Customized lists
 \labelindent=\skip51
 \enit@outerparindent=\dimen168
-\enit@toks=\toks18
+\enit@toks=\toks19
 \enit@inbox=\box73
 \enit@count@id=\count281
 \enitdp@description=\count282
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks19
-\verbatim@line=\toks20
+\every@verbatim=\toks20
+\verbatim@line=\toks21
 \verbatim@in@stream=\read2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -557,8 +565,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks21
-\XKV@tempa@toks=\toks22
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
 )
 \XKV@depth=\count284
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -572,7 +580,7 @@ Package: fcnumparser 2017/06/15
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks23
+\@emptytoks=\toks24
 \ex@=\dimen169
 )
 \c@padzeroesN=\count286
@@ -615,8 +623,8 @@ LaTeX Info: Redefining \today on input line 736.
 File: dt-french.def 2013/09/10
 LaTeX Info: Redefining \datefrench on input line 91.
 )
-\dt@a=\toks24
-\dt@b=\toks25
+\dt@a=\toks25
+\dt@b=\toks26
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -669,7 +677,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen179
 \ar@mcellbox=\box75
 \extrarowheight=\dimen180
-\NC@list=\toks26
+\NC@list=\toks27
 \extratabsurround=\skip58
 \backup@length=\skip59
 \ar@cellbox=\box76
@@ -735,21 +743,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \dotsspace@=\muskip16
 \c@parentequation=\count323
 \dspbrk@lvl=\count324
-\tag@help=\toks27
+\tag@help=\toks28
 \row@=\count325
 \column@=\count326
 \maxfields@=\count327
-\andhelp@=\toks28
+\andhelp@=\toks29
 \eqnshift@=\dimen196
 \alignsep@=\dimen197
 \tagshift@=\dimen198
 \tagwidth@=\dimen199
 \totwidth@=\dimen256
 \lineht@=\dimen257
-\@envbody=\toks29
+\@envbody=\toks30
 \multlinegap=\skip61
 \multlinetaggap=\skip62
-\mathdisplay@stack=\toks30
+\mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
@@ -773,10 +781,10 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box79
 \shadowsize=\dimen258
 \@Sbox=\box80
-\do@VerbBox=\toks31
-\the@fancyput=\toks32
-\this@fancyput=\toks33
-\EndVerbatimTokens=\toks34
+\do@VerbBox=\toks32
+\the@fancyput=\toks33
+\this@fancyput=\toks34
+\EndVerbatimTokens=\toks35
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read3
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -806,7 +814,7 @@ Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks35
+\pdftexcmds@toks=\toks36
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
 
@@ -885,14 +893,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip72
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 89.
+Package hyperref Info: Option `colorlinks' set `true' on input line 90.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 89.
+(hyperref)                setting the option has no effect on input line 90.
 
-Package hyperref Info: Option `frenchlinks' set `true' on input line 89.
-Package hyperref Info: Option `unicode' set `true' on input line 89.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 90.
+Package hyperref Info: Option `unicode' set `true' on input line 90.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 )
@@ -909,11 +917,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \c@compteuractivite=\count339
 \c@compteurexo=\count340
 )
-(./exercices-fonctions-booleennes-correction.aux
-
-LaTeX Warning: Label `ex3' multiply defined.
-
-)
+(./exercices-fonctions-booleennes-correction.aux)
 \openout1 = exercices-fonctions-booleennes-correction.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -932,7 +936,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 11.
@@ -944,7 +949,7 @@ LaTeX Font Info:    ... okay on input line 11.
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup4
+\symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 11.
 LaTeX Font Info:    Redeclaring math accent \acute on input line 11.
@@ -1046,12 +1051,12 @@ LaTeX Info: Redefining \up on input line 11.
 \scratchbox=\box81
 \nofMPsegments=\count342
 \nofMParguments=\count343
-\everyMPshowfont=\toks36
+\everyMPshowfont=\toks37
 \MPscratchCnt=\count344
 \MPscratchDim=\dimen268
 \MPnumerator=\count345
 \makeMPintoPDFobject=\count346
-\everyMPtoPDFconversion=\toks37
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1098,9 +1103,16 @@ LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 
-LaTeX Warning: Reference `ex5' on page 1 undefined on input line 142.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1114,7 +1126,7 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=16, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=17, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
@@ -1137,24 +1149,17 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `exercices-fonctions-booleennes-correction.out
 ' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 )
 
 Here is how much of LuaTeX's memory you used:
- 27137 strings out of 494383
+ 27224 strings out of 494383
  100000,794899 words of node,token memory allocated
- 12228 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 1010 glyph, 1958 attrib
-ute, 58 glue_spec, 328 attribute_list, 1 write nodes
-   avail lists: 1:3,2:3764,3:134,4:40,5:107,6:30,7:2916,8:556,9:473,10:11,11:35
- 30724 multiletter control sequences out of 65536+600000
- 43 fonts using 7025103 bytes
+ 12347 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 12 glue, 4 kern, 1 penalty, 1031 glyph, 1952 attrib
+ute, 58 glue_spec, 327 attribute_list, 1 write nodes
+   avail lists: 1:3,2:3764,3:135,4:42,5:107,6:31,7:2913,8:556,9:472,10:11,11:37
+ 30784 multiletter control sequences out of 65536+600000
+ 49 fonts using 7395919 bytes
  55i,15n,95p,1136b,488s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/
 fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/
@@ -1163,11 +1168,11 @@ public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public
 ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on exercices-fonctions-booleennes-correction.pdf (2 pages, 55707
+Output written on exercices-fonctions-booleennes-correction.pdf (2 pages, 55656
  bytes).
 
-PDF statistics: 76 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+PDF statistics: 77 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 131072)
  51 words of extra memory for PDF output out of 10000 (max. 100000000)
 

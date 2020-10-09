@@ -9,14 +9,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>routage slides</title>
+<title>circuits-combinatoires slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="../../../reveal.js/css/reveal.css">
+<link rel="stylesheet" href="../../../reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/print/pdf.css';
+        link.href = '../../../reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
+<script src="../../../reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -13202,91 +13202,21 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Routage">Routage<a class="anchor-link" href="#Routage">&#182;</a></h1>
+<h1 id="Circuits-combinatoires">Circuits combinatoires<a class="anchor-link" href="#Circuits-combinatoires">&#182;</a></h1>
 </div>
 </div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.-Probl&#233;matique">1. Probl&#233;matique<a class="anchor-link" href="#1.-Probl&#233;matique">&#182;</a></h2><p><img src="ressources/laposte.jpg" width=350px></p>
-
+<h2 id="1.-Probl&#233;matique">1. Probl&#233;matique<a class="anchor-link" href="#1.-Probl&#233;matique">&#182;</a></h2>
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Quel-syst&#232;me-dans-le-r&#233;seau-internet-tient-le-r&#244;le-du-facteur-et-de-ses-interm&#233;diaires?">Quel syst&#232;me dans le r&#233;seau internet tient le r&#244;le du facteur et de ses interm&#233;diaires?<a class="anchor-link" href="#Quel-syst&#232;me-dans-le-r&#233;seau-internet-tient-le-r&#244;le-du-facteur-et-de-ses-interm&#233;diaires?">&#182;</a></h4>
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-Des-mat&#233;riels-et-des-protocoles">2. Des mat&#233;riels et des protocoles<a class="anchor-link" href="#2.-Des-mat&#233;riels-et-des-protocoles">&#182;</a></h2>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.1-Un-dispositif-central">2.1 Un dispositif central<a class="anchor-link" href="#2.1-Un-dispositif-central">&#182;</a></h3><p><img src="ressources/routage.png" width=400px></p>
-
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.2-Transmettre-au-bon-destinataire">2.2 Transmettre au bon destinataire<a class="anchor-link" href="#2.2-Transmettre-au-bon-destinataire">&#182;</a></h3><h5 id="Activit&#233;:">Activit&#233;:<a class="anchor-link" href="#Activit&#233;:">&#182;</a></h5><ul>
-<li>Répartir les 3 villes (source et/ou destination) dans la salle.</li>
-<li>Tous les autres élèves représentent un routeur.</li>
-<li>Réaliser la simulation: Un message part de Périgueux pour aller à Bordeaux.</li>
-<li>Réaliser la simulation: Un message part de Périgueux pour aller à Pékin.</li>
-<li>Réaliser la simulation précédente 5 fois.</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Le-protocole-IP---bilan">Le protocole IP - bilan<a class="anchor-link" href="#Le-protocole-IP---bilan">&#182;</a></h3>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>L'Internet Protocol est responsable de l'acheminement des messages: c'est un protocole de <strong>communication</strong>.</li>
-<li>Le protocole IP connait <strong>l'adresse source</strong> et <strong>l'adresse de destination</strong>.</li>
-<li>IP ne s'occupe pas du contenu du message: le message est <strong>encapsulé</strong> dans le protocole IP.</li>
-<li>Le message se déplace de proche en proche dans les routeurs qui composent la <em>toile</em> internet. Trouver un bon chemin s'appelle <strong>le routage</strong>.</li>
-<li>Il n'y pas de chemin privilégié. Si un routeur tombe en panne, le message prend un autre chemin.</li>
-</ul>
-
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.3-Garantir-l'int&#233;grit&#233;-des-donn&#233;es">2.3 Garantir l'int&#233;grit&#233; des donn&#233;es<a class="anchor-link" href="#2.3-Garantir-l'int&#233;grit&#233;-des-donn&#233;es">&#182;</a></h3>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Activit&#233;-3">Activit&#233; 3<a class="anchor-link" href="#Activit&#233;-3">&#182;</a></h4><p>Le message est maintenant plus volumineux.</p>
-<ul>
-<li>Proposer un protocole pour transporter ce message entre Périguux en Pékin, en utilisant toujours le protocole IP.</li>
-<li>Le mettre en œuvre.</li>
-</ul>
-
+<h3 id="Repr&#233;sentation-en-m&#233;moire-d'un-octet">Repr&#233;sentation en m&#233;moire d'un octet<a class="anchor-link" href="#Repr&#233;sentation-en-m&#233;moire-d'un-octet">&#182;</a></h3><div align="middle"><img src="ressources/octet.png" width=400px></div>
 </div>
 </div>
 </div><aside class="notes">
@@ -13294,7 +13224,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On parle d'abord du découpage, puis de l'accusé de réception</p>
+<p>Un ordinateur manipule des données codées sous forme de bits en mémoire.</p>
 
 </div>
 </div>
@@ -13303,11 +13233,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Comment la source peut être certaine que la destination a bien reçu la totalité du message?</p>
-<ul>
-<li>Compléter le protocole précédent et le mettre en application.</li>
-</ul>
-
+<h3 id="Portes-logiques-OR-(&#224;-partir-de-portes-NAND)">Portes logiques OR (&#224; partir de portes NAND)<a class="anchor-link" href="#Portes-logiques-OR-(&#224;-partir-de-portes-NAND)">&#182;</a></h3><div align="middle"><img src="ressources/or-from-nand.png" width=200px></div>
 </div>
 </div>
 </div><aside class="notes">
@@ -13315,11 +13241,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>L'expéditeur envoie une message avec un flag SYN</li>
-<li>L'émetteur envoie un accusé de réception avec un flag ACK</li>
-<li>Dans la pratique un peu plus compliqué: numéros de séquences, somme de contrôle... </li>
-</ul>
+<p>Des combinaisons de transistors assurent des opérations booléennes élémentaires.</p>
 
 </div>
 </div>
@@ -13328,46 +13250,25 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Le-protocole-TCP---bilan">Le protocole TCP - bilan<a class="anchor-link" href="#Le-protocole-TCP---bilan">&#182;</a></h3>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Le Transmission Control Protocol gère le contenu du message.</li>
-<li>Il est encapsulé dans le protocole IP.</li>
-<li>C'est un protocole de <strong>transmission des données</strong>.</li>
-<li>Il découpe le message en paquets.</li>
-<li>Le récepteur envoie un accusé de réception quand la destination a reçu un paquet.</li>
-<li>Si la source ne reçoit pas d'accusé de réception passé un certain délai, elle renvoie le paquet.</li>
-<li>Le protocole TCP garantit que le message sera entièrement envoyé mais il ne donne pas de délai minimal d'envoi.</li>
-</ul>
-
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Retour-historique">Retour historique<a class="anchor-link" href="#Retour-historique">&#182;</a></h2><div align="middle">
-<a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=160e4SzNZNYGAO3mu5ISgZ1b8Dr55ZO86My2F7PAXSho&font=Default&lang=fr&initial_zoom=2&height=650" target=_blank><img src="../../../retour.png"></a>
-</div>
+<h2 id="Comment-traduire-le-programme-assembleur-de-l'addition-en-circuit-&#233;lectronique?">Comment traduire le programme assembleur de l'addition en circuit &#233;lectronique?<a class="anchor-link" href="#Comment-traduire-le-programme-assembleur-de-l'addition-en-circuit-&#233;lectronique?">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.-&#192;-chaque-situation-son-protocole">3. &#192; chaque situation son protocole<a class="anchor-link" href="#3.-&#192;-chaque-situation-son-protocole">&#182;</a></h2>
+<h2 id="2.-Fonctions-logiques">2. Fonctions logiques<a class="anchor-link" href="#2.-Fonctions-logiques">&#182;</a></h2>
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ces protocoles font partie des techniques de <strong>commutation de paquets</strong> en opposition à la <strong>communication de circuits</strong> utilisée dans les communications téléphoniques.</p>
+<h3 id="2.1-Notations-bool&#233;ennes">2.1 Notations bool&#233;ennes<a class="anchor-link" href="#2.1-Notations-bool&#233;ennes">&#182;</a></h3><ul>
+<li>$\lnot(x)$ pour NOT</li>
+<li>$\land(x)$ pour AND</li>
+<li>$\lor(x)$ pour OR</li>
+</ul>
 
 </div>
 </div>
@@ -13375,18 +13276,12 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Le protocole UDP (User Datagram Protocol) peut également être encapsulé dans IP. Il est plus simple à mettre en pratique car il ne propose pas de système d'accusé de réception.</p>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Établir les avantages et les inconvénients des protocoles TCP et UDP.</li>
-<li>Citer plusieurs situations où chacun de ces protocoles sera utilisé de manière préférentielle.</li>
-</ul>
+<h3 id="2.2-Nouvelle-porte-logique">2.2 Nouvelle porte logique<a class="anchor-link" href="#2.2-Nouvelle-porte-logique">&#182;</a></h3><table>
+    <tr>
+        <td><img src="ressources/xor-us.png" width=160px></td>
+        <td><img src="ressources/xor-eu.png" width=160px></td>
+    </tr>
+</table><h4 id="Porte-XOR-ou-OU-EXCLUSIF">Porte XOR ou OU EXCLUSIF<a class="anchor-link" href="#Porte-XOR-ou-OU-EXCLUSIF">&#182;</a></h4><p>Fromage ou dessert?</p>
 
 </div>
 </div>
@@ -13394,74 +13289,404 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.-Bilan-en-vid&#233;o">4. Bilan en vid&#233;o<a class="anchor-link" href="#4.-Bilan-en-vid&#233;o">&#182;</a></h2>
+<h3 id="2.3-Op&#233;rations-bool&#233;ennes">2.3 Op&#233;rations bool&#233;ennes<a class="anchor-link" href="#2.3-Op&#233;rations-bool&#233;ennes">&#182;</a></h3>$$f(x,y,z)=(x\land y)\oplus (\lnot y \lor z)$$<div align="middle">f(x, y, z) = (x AND y) XOR (NOT y OR z)</div>
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Regarder la vidéo ci-après puis répondre aux questions à la suite du cours. Il faudra noter chaque question et effectuer une réponse rédigée.</li>
+<h3 id="Activit&#233;-1:">Activit&#233; 1:<a class="anchor-link" href="#Activit&#233;-1:">&#182;</a></h3><ul>
+<li>La fonction <em>f</em> a trois paramètres. Combien de combinaisons possibles peut-on réaliser avec ces paramètres?</li>
+<li>Établir la table de vérité des différentes expressions.</li>
+<li>En déduire la table de vérité de <em>f</em>.</li>
 </ul>
 
 </div>
 </div>
 </div></div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
-
-<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;5AVY6E-7yCc&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">450</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[3]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-
-        <iframe
-            width="800"
-            height="450"
-            src="https://www.youtube.com/embed/5AVY6E-7yCc"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
-</div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Activit&#233;-1:-correction">Activit&#233; 1: correction<a class="anchor-link" href="#Activit&#233;-1:-correction">&#182;</a></h3><p>3 entrées $\rightarrow 2^3$ sorties</p>
 
 </div>
 </div>
-
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ol>
-<li>Comment repérer un ordinateur sur le réseau internet?</li>
-<li>Un routeur connait-il toutes les adresses sur internet? Pour quelle raison?</li>
-<li>Quels paramètres gèrent les protocoles d'internet?</li>
-</ol>
+<table>
+    <tr>
+        <td>x</td>
+        <td>y</td>
+        <td>z</td>
+        <td>(x $\land$ y)</td>
+        <td>$\lnot$ y</td>
+        <td>($\lnot$ y $\lor$ z)</td>        
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>x</td>
+        <td>y</td>
+        <td>z</td>
+        <td>(x $\land$ y)</td>
+        <td>$\lnot$ y</td>
+        <td>($\lnot$ y $\lor$ z)</td>  
+        <td>(x$\land$ y)$\oplus$ ($\lnot$ y $\lor$ z)</td>        
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.-R&#233;aliser-un-additionneur">3. R&#233;aliser un additionneur<a class="anchor-link" href="#3.-R&#233;aliser-un-additionneur">&#182;</a></h2><h3 id="3.1-D&#233;composition">3.1 D&#233;composition<a class="anchor-link" href="#3.1-D&#233;composition">&#182;</a></h3>$$\begin{array}{ccccc}
+        &amp; 1 &amp; 1 &amp; &amp; retenues \\
+        &amp; 1 &amp; 0 &amp; 1 &amp; \\
+        + &amp; 1 &amp; 1 &amp; 1 &amp;\\
+        \_&amp;\_&amp;\_&amp;\_&amp;\\
+        1 &amp; 1 &amp; 0 &amp; 0 &amp;\\
+   \end{array}
+$$
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>On a:</p>
+<ul>
+<li>2 entrées $e_0$ et $e_1$</li>
+<li>2 sorties <em>somme</em> et <em>retenue</em></li>
+</ul>
 
 </div>
 </div>
-</div></section></section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.2-Demi-additioneur">3.2 Demi-additioneur<a class="anchor-link" href="#3.2-Demi-additioneur">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Additionnons 2 bits</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>e0</td>
+        <td>e1</td>
+        <td>s</td>
+        <td>c</td>      
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Activit&#233;-2:">Activit&#233; 2:<a class="anchor-link" href="#Activit&#233;-2:">&#182;</a></h3><ul>
+<li>Quelles fonctions logiques reconnaît-on en <em>s</em> et <em>c</em>?</li>
+<li>En déduire le schéma du demi-additionneur 1 bit.</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><div align="middle"><img src="ressources/demi-add.png" width=300px><div></p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.3-Additionneur-1-bit">3.3 Additionneur 1 bit<a class="anchor-link" href="#3.3-Additionneur-1-bit">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Activit&#233;-3:">Activit&#233; 3:<a class="anchor-link" href="#Activit&#233;-3:">&#182;</a></h3><ul>
+<li>Établir la table de vérité de l'additionneur 1 bit.</li>
+<li>Sur la figure placer les entrées $e_0$, $e_1$, $c_0$ et les sorties $s$ et $c$.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+    <tr>
+        <td>$e_0$</td>
+        <td>$e_1$</td>
+        <td>$c_0$</td>
+        <td>s</td>
+        <td>c</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><div align="middle"><img src="ressources/additionneur.png" width=400px><div></p>
+
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>la porte OR vérifie s'il y a une retenue</p>
+
+</div>
+</div>
+</div>
+</aside></section></section>
 </div>
 </div>
 
@@ -13474,8 +13699,8 @@ require(
       waitSeconds: 15
     },
     [
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.js"
+      "../../../reveal.js/lib/js/head.min.js",
+      "../../../reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -13490,9 +13715,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
+                { src: "../../../reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
+                { src: "../../../reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]

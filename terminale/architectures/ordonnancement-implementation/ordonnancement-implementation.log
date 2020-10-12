@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  8 OCT 2020 22:54
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 OCT 2020 22:22
  restricted system commands enabled.
-**listes-chainees-exercices.tex
-(./listes-chainees-exercices.tex
+**ordonnancement-implementation.tex
+(./ordonnancement-implementation.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.074 seconds
+luaotfload | main : initialization completed in 0.103 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1199,8 +1199,8 @@ File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
-))) (./listes-chainees-exercices.aux)
-\openout1 = listes-chainees-exercices.aux
+))) (./ordonnancement-implementation.aux)
+\openout1 = ordonnancement-implementation.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -1375,10 +1375,10 @@ LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
 
-(./listes-chainees-exercices.out) (./listes-chainees-exercices.out)
+(./ordonnancement-implementation.out) (./ordonnancement-implementation.out)
 \@outlinefile=\write5
 
-\openout5 = listes-chainees-exercices.out
+\openout5 = ordonnancement-implementation.out
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Try loading font information for U+pzd on input line 14.
@@ -1402,46 +1402,53 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=18, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=62, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 73.
+input line 77.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 106.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
 
-(./listes-chainees-exercices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
-Package rerunfilecheck Info: File `listes-chainees-exercices.out' has not change
-d.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(./ordonnancement-implementation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
+Package rerunfilecheck Info: File `ordonnancement-implementation.out' has not ch
+anged.
+(rerunfilecheck)             Checksum: D24544377654A0686C25A54A0D9AF7DF;1422.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37556 strings out of 494383
+ 37507 strings out of 494383
  100000,953878 words of node,token memory allocated
- 8901 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 13 glue, 4 kern, 1 penalty, 1093 glyph, 290 attribu
-te, 58 glue_spec, 50 attribute_list, 1 write nodes
-   avail lists: 1:6,2:4296,3:337,4:25,5:143,6:19,7:1731,8:25,9:200,10:4,11:94
- 40726 multiletter control sequences out of 65536+600000
- 50 fonts using 7526479 bytes
- 55i,15n,95p,1120b,799s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 19940 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 26 glue, 4 kern, 1 penalty, 2575 glyph, 536 attribu
+te, 58 glue_spec, 91 attribute_list, 1 write nodes
+   avail lists: 1:6,2:3078,3:336,4:43,5:185,6:40,7:1777,8:47,9:187,10:8,11:161
+ 40651 multiletter control sequences out of 65536+600000
+ 54 fonts using 8053199 bytes
+ 55i,15n,95p,1124b,812s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share
 /texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/ope
-ntype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lm
-roman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.
-otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on listes-chainees-exercices.pdf (1 page, 34534 bytes).
+ntype/public/lm/lmroman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lm
+roman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.ot
+f></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on ordonnancement-implementation.pdf (2 pages, 46084 bytes).
 
-PDF statistics: 78 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 131072)
- 66 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 139 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 131072)
+ 154 words of extra memory for PDF output out of 10000 (max. 100000000)
 

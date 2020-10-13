@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 OCT 2020 22:22
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  13 OCT 2020 08:50
  restricted system commands enabled.
 **ordonnancement-implementation.tex
 (./ordonnancement-implementation.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.103 seconds
+luaotfload | main : initialization completed in 0.091 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1406,7 +1406,7 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 77.
+input line 61.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
@@ -1431,10 +1431,10 @@ anged.
 Here is how much of LuaTeX's memory you used:
  37507 strings out of 494383
  100000,953878 words of node,token memory allocated
- 19940 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 26 glue, 4 kern, 1 penalty, 2575 glyph, 536 attribu
+ 20248 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 26 glue, 4 kern, 1 penalty, 2619 glyph, 536 attribu
 te, 58 glue_spec, 91 attribute_list, 1 write nodes
-   avail lists: 1:6,2:3078,3:336,4:43,5:185,6:40,7:1777,8:47,9:187,10:8,11:161
+   avail lists: 1:6,2:2219,3:246,4:46,5:183,6:34,7:1908,8:38,9:165,10:8,11:154
  40651 multiletter control sequences out of 65536+600000
  54 fonts using 8053199 bytes
  55i,15n,95p,1124b,812s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1445,7 +1445,7 @@ roman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.ot
 f></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on ordonnancement-implementation.pdf (2 pages, 46084 bytes).
+Output written on ordonnancement-implementation.pdf (2 pages, 46138 bytes).
 
 PDF statistics: 139 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams

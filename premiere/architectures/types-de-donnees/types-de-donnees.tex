@@ -1,0 +1,59 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Types de données}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Première - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Typage}
+Les données utilisées dans un programme peuvent être de différentes natures. Une \emph{chaîne de caractère} permettra l'affichage d'un message à l'écran alors qu'un \emph{entier} sera plutôt utilisé dans un calcul.
+\section{Typage dynamique}
+Dans un programme, une variable possède un type déterminé par son contenu. La fonction Python \emph{type()} donne le type d'une variable.
+\begin{lstlisting}
+a = 42
+type(a)
+\end{lstlisting}
+Ce code retourne \emph{int} pour \emph{integer (entier)}.\\
+De nombreux langages de programmation imposent de définir le \emph{type} de chaque variable. Les raisons sont multiples:
+\begin{itemize}
+\item allouer un espace mémoire adéquat,
+\item éviter les erreurs de programmation.
+\end{itemize}
+Ce n'est pas le cas en Python:
+\begin{lstlisting}
+a = 42
+type(a)
+a = "test"
+type(a)
+\end{lstlisting}
+Ce langage de \emph{haut-niveau} veut simplifier la tâche de l'utilisateur en \emph{typant dynamiquement} chaque variable. De prime abord, cela peut paraître appréciable, mais engendre parfois des erreurs de codage dans un programme complexe.
+\begin{lstlisting}
+a = 42
+b = 5
+a = "test"
+a+b
+\end{lstlisting}
+\section{Un code clair}
+En Python, il est possible d'indiquer le type d'une variable.
+\begin{lstlisting}
+a: int = 42
+\end{lstlisting}
+Cette information n'est qu'indicative. Python ne lèvera pas d'erreur dans le cas ci-après:
+\begin{lstlisting}
+a: str = 42
+\end{lstlisting}
+\section{Les types de base}
+\begin{itemize}
+\item \textbf{int:} \emph{integer}; nombre entier (42)
+\item \textbf{str:} \emph{string}; chaîne de caractère ("test")
+\item \textbf{bool:} \emph{boolean}; valeur booléenne (True ou False)
+\item \textbf{float:} \emph{flottant}; nombre à virgule flottante (4.2)
+\end{itemize}
+
+\end{Form}
+\end{document}

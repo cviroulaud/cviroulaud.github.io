@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 SEP 2020 22:33
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  21 OCT 2020 14:15
  restricted system commands enabled.
 **constructions-elementaires.tex
 (./constructions-elementaires.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.102 seconds
+luaotfload | main : initialization completed in 0.080 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1136,38 +1136,38 @@ input line 71.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 107.
+input line 104.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 
 [2]
-<ressources/execution.png, id=102, 70.2625pt x 78.2925pt>
+<ressources/execution.png, id=104, 70.2625pt x 78.2925pt>
 File: ressources/execution.png Graphic file (type png)
 <use ressources/execution.png>
-Package luatex.def Info: ressources/execution.png  used on input line 110.
+Package luatex.def Info: ressources/execution.png  used on input line 114.
 (luatex.def)             Requested size: 28.45274pt x 31.7047pt.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 169.
+input line 173.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [3<./ressources/execution.png>]
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 194.
+input line 198.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 228.
+input line 232.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
  (./constructions-elementaires.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `constructions-elementaires.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: 286CBC3FCFCB345DD4E4CE0BB90410CC;1554.
@@ -1178,14 +1178,14 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27591 strings out of 494383
- 195342,794899 words of node,token memory allocated
- 46806 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 38 glue, 4 kern, 1 penalty, 5657 glyph, 2768 attrib
-ute, 58 glue_spec, 463 attribute_list, 1 write nodes
-   avail lists: 1:4,2:9364,3:246,4:3294,5:2780,6:68,7:2826,8:2459,9:4519,10:18,1
+ 27594 strings out of 494383
+ 195330,794899 words of node,token memory allocated
+ 47681 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 39 glue, 4 kern, 1 penalty, 5765 glyph, 2816 attrib
+ute, 58 glue_spec, 471 attribute_list, 1 write nodes
+   avail lists: 1:5,2:9357,3:246,4:3294,5:2780,6:68,7:2826,8:2459,9:4519,10:18,1
 1:375
- 31019 multiletter control sequences out of 65536+600000
+ 31020 multiletter control sequences out of 65536+600000
  55 fonts using 8179279 bytes
  55i,15n,95p,1121b,952s stack positions out of 5000i,500n,10000p,200000b,100000s
 
@@ -1198,10 +1198,10 @@ tf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/tex
 mf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/openty
 pe/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/urw
 /zapfding/uzdr.pfb>
-Output written on constructions-elementaires.pdf (5 pages, 79972 bytes).
+Output written on constructions-elementaires.pdf (5 pages, 80661 bytes).
 
-PDF statistics: 245 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 103 named destinations out of 1000 (max. 131072)
+PDF statistics: 247 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 105 named destinations out of 1000 (max. 131072)
  131 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -22,8 +22,48 @@ Dans une version simplifiée, nous pourrions utiliser les structures proposées 
 L'historique d'un navigateur web conserve la page récemment visitée. De plus, le bouton \emph{retour arrière} permet de revenir à la page précédemment explorée.
 \begin{enumerate}
 \item Quelle structure de données permet d'implémenter le comportement de l'historique de navigation?
-\item Le fichier \emph{historique.csv} contient une liste d'adresses web récemment visitées. 
+\item Le fichier \emph{historique.csv} contient une liste d'adresses web récemment visitées. À l'aide de la bibliothèque \emph{csv} créer la classe \textbf{Historique} adaptation de la structure de données évoquée dans la première question. Créer une instance de \emph{Historique} et le remplir avec les données du fichier \emph{csv}.
+\item Écrire une méthode \textbf{retour()$\;\rightarrow\;$str} qui renvoie l'adresse du dernier site visité.
+\item Écrire une méthode \textbf{nouvelle\_adresse(lien: str)$\;\rightarrow\;$None} qui stocke l'adresse \emph{lien} dans l'historique. La bibliothèque \emph{datetime} et sa méthode \emph{now} permettra de créer la date.
 \end{enumerate}
+\end{exo}
+\begin{exo}
+Il est possible de créer une \emph{file} avec deux \emph{piles} en appliquant l'algorithme suivant:
+\begin{itemize}
+\item Enfiler un élément dans la pile gauche.
+\item Défiler un élément dans la pile droite. Si la pile est vide, dépiler la pile gauche dans la pile droite.
+\end{itemize}
+\begin{enumerate}
+\item Vérifier sur le papier le fonctionnement de la file.
+\item Implémenter cette classe \textbf{File}. Cette file contiendra des entiers.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Flavius Josèphe était un historien juif du premier siècle. Il participa aux révoltes contre les Romains et fut assiégé avec quarante de ses compatriotes dans la forteresse de Jotapata en 67. Les  extrémistes  du  groupe  persuadèrent l’ensemble de se tuer pour ne pas  tomber  aux  mains  des  Romains.  Ne partageant  pas  ce  point  de  vue  mais  n’osant  s’opposer  au groupe,  Josèphe  proposa  que  l’on  se  mette  en  cercle  et  que  chaque  troisième  personne  soit  tuée,  la  dernière devant  se  suicider.\\
+En utilisant une \emph{file} trouver la position à choisir parmi les 41 soldats pour être le dernier éliminé.
+\end{exo}
+\begin{exo}
+Un EDI se charge de vérifier si le code écrit par le programmeur est correctement parenthésée, c'est à dire si à chaque parenthèse ouvrante correspond une parenthèse fermante.
+\begin{itemize}
+\item Quelle structure de données va-t-on utiliser?
+\item Écrire la fonction \textbf{bien\_parenthesee(code: str)$\;\rightarrow\;$bool} qui renvoie \emph{True} si la ligne de code \emph{code} est correctement parenthésée.
+\end{itemize}
+\end{exo}
+\begin{exo}
+L'écriture polonaise inverse des expressions arithmétiques place l'opérateur après ses opérandes. Cette notation ne nécessite aucune parenthèse ni aucune règle de priorité. Ainsi l'expression polonaise inverse 
+\begin{center}
+1 2 3 × + 4 ×
+\end{center}
+désigne l'expression traditionnelle
+\begin{center}
+(1 + 2 × 3) × 4
+\end{center}
+En utilisant une pile pour stocker les résultats intermédiaires, il est facile de calculer l'expression:
+\begin{itemize}
+\item Si on a un nombre on le place sur la pile.
+\item Si on a un opérateur on récupère les deux nombres du sommet de la pile, on leur applique l'opérateur et on replace le résultat sur la pile.
+\end{itemize}
+Écrire la fonction \textbf{polonaise(chaine: str)$\;\rightarrow\;$int} qui calcule l'expression \emph{chaine}. Les éléments de la chaîne seront séparés par un espace. On n'utilisera que l'addition et la multiplication.
 \end{exo}
 \end{Form}
 \end{document}

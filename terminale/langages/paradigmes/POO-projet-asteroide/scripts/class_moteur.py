@@ -14,7 +14,7 @@ from class_asteroide import Asteroide
 class Moteur:
 
     def __init__(self):
-        self.fenetre =Tk()
+        self.fenetre = Tk()
         self.fenetre.title('Asteroid')
         self.canevas = Canvas(self.fenetre,width=LARGEUR,height=HAUTEUR)
         self.canevas.pack()

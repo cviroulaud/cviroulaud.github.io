@@ -48,7 +48,7 @@ Les éléments sont \emph{empilés} ou \emph{dépilés} en respectant la règle 
 Les principes utilisés pour créer une liste chaînée sont repris ici.
 \begin{activite}
 \begin{enumerate}
-\item Créer la classe \textbf{Nœud} similaire à la classe \emph{Maillon} déjà utilisée pour créer une liste chaînée. Elle possédera les attributs \emph{donnees} et \emph{precedant}.
+\item Créer la classe \textbf{Nœud} similaire à la classe \emph{Maillon} déjà utilisée pour créer une liste chaînée. Elle possédera les attributs \emph{donnees} et \emph{successeur}.
 \item Créer une classe \textbf{Pile}. Elle possédera un attribut \emph{dernier} initialisé à \emph{None}.
 \item Créer les méthodes proposées dans l'interface.
 \end{enumerate}
@@ -60,7 +60,7 @@ Les principes utilisés pour créer une liste chaînée sont repris ici.
 \end{itemize}
 \end{commentprof}
 \subsection{File}
-\subsection{Présentation}
+\subsubsection{Présentation}
 Les files (\emph{queue} en anglais) sont fondées sur le principe du \emph{premier arrivé premier sorti} (\emph{First In First Out}). L'image classique est la file d'attente.
 \begin{figure}[!h]
 \centering
@@ -87,7 +87,7 @@ Ici encore une classe \emph{Nœud} sera utilisée pour créer les éléments
 \begin{activite}
 \begin{enumerate}
 \item Récupérer la classe \textbf{Nœud}. 
-\item Créer une classe \textbf{File}. Elle possédera deux attributs: \emph{tete} et \emph{queue}.
+\item Créer une classe \textbf{File}. Elle possédera deux attributs: \emph{premier} et \emph{dernier}.
 \item Créer les méthodes proposées dans l'interface.
 \end{enumerate}
 \end{activite}

@@ -1,0 +1,25 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Ordonnancement - implémentation correction}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+L'instruction
+\begin{lstlisting}
+if __name__ == "__main__":
+\end{lstlisting}
+ne s'exécutera que si le fichier est lancé \emph{directement}. S'il est appelé comme un module dans un autre fichier, ces instructions sont omises. C'est une méthode pour développer des tests quand on crée un module.
+\begin{exo}[Activité]
+\lstinputlisting[firstline=10,lastline=47]{"scripts/pile.py"}
+\end{exo}
+\begin{exo}[Activité]
+\lstinputlisting[firstline=10,lastline=62]{"scripts/file.py"}
+\end{exo}
+\end{Form}
+\end{document}

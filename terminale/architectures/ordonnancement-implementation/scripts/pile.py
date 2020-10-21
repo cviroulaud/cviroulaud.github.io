@@ -8,9 +8,9 @@ Date de création Tue Oct 13 08:39:55 2020
 
 
 class Noeud:
-    def __init__(self,e,p):
+    def __init__(self,e,s):
         self.donnees = e
-        self.precedant = p
+        self.successeur = s
 
 
 class Pile:
@@ -26,7 +26,7 @@ class Pile:
     def depiler(self):
         if not self.est_vide():
             res = self.dernier.donnees
-            self.dernier = self.dernier.precedant
+            self.dernier = self.dernier.successeur
             return res
 
     def __str__(self):
@@ -34,7 +34,7 @@ class Pile:
         last = self.dernier
         while last is not None:
             affiche += str(last.donnees) +"\n"
-            last = last.precedant
+            last = last.successeur
         return affiche
 
 if __name__ == "__main__":

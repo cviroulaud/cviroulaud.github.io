@@ -1,0 +1,97 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Une jolie page web}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Seconde - SNT} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Problématique}
+Le langage \emph{html} s'occupe du contenu de la page web. Mais l'esthétique de la page pourrait être améliorée.
+\begin{center}
+\shadowbox{\parbox{10cm}{\centering Comment améliorer l'esthétique d'une page web?}}
+\end{center}
+\section{Un autre langage: le CSS}
+\subsection{Présentation}
+Le \emph{Cascading Style Sheets} (feuille de style en cascades) est un langage qui gère la mise en forme du contenu html.
+\begin{activite}
+\begin{enumerate}
+\item Créer un fichier \emph{custom.css} dans le même répertoire que le fichier \emph{html}. Pour créer un fichier depuis le logiciel \emph{Atom} il faut effectuer un clic-droit sur le projet et choisir \emph{New File}.
+\item Dans le fichier html, ajouter la ligne suivante entre les balises \emph{head}:
+\begin{lstlisting}[language=html]
+<link rel="stylesheet" href="css/custom.css">
+\end{lstlisting}
+Cette ligne crée le lien (\emph{link}) entre les fichiers html et css.
+\end{enumerate}
+\end{activite}
+\subsection{Cibler les balises html}
+Nous pouvons modifier la mise en forme des balises html.
+\begin{activite}
+\begin{enumerate}
+\item Dans le fichier \emph{custom.css}, ajouter le code suivant:
+\begin{center}
+\begin{lstlisting}
+h1 {
+	color: red;
+}
+\end{lstlisting}
+\captionof{code}{Modifier les titres}
+\label{h1}
+\end{center}
+\item Enregistrer le fichier et recharger la page web \textbf{dans le navigateur}.
+\item Effectuer la même tâche avec les codes suivants:
+\begin{lstlisting}
+body {
+  width: 800px;
+  margin: auto;
+  background-color: #00ff00;
+}
+\end{lstlisting}
+\begin{lstlisting}
+p {
+  text-align: justify;
+  font-family: "Gill Sans", sans-serif;
+}
+\end{lstlisting}
+\captionof{code}{Modifier divers éléments}
+\end{enumerate}
+\end{activite}
+\subsection{Cibler une classe d'éléments}
+L'inconvénient du code \ref{h1} est que tous les titres \emph{h1} seront rouges. Il est possible de ne cibler qu'un groupe d'éléments.
+\begin{activite}
+\begin{enumerate}
+\item Dans le fichier html modifier deux titres comme ci-après:
+\begin{lstlisting}
+<h1 class="titre-special">Mon texte à afficher</h1>
+\end{lstlisting}
+\captionof{code}{Ajouter un nom de classe}
+\medskip
+\item Dans le fichier css ajouter le code: ci-après. Il faut bien remarquer le point en début de ligne.
+\begin{lstlisting}
+.titre-special {
+	color: green;
+}
+\end{lstlisting}
+\captionof{code}{La nouvelle classe cible les bons éléments}
+\medskip
+\end{enumerate}
+\end{activite}
+\subsection{Pour aller plus loin}
+Le langage \emph{css} permet de réaliser des mises en forme très pointues. Le site du \emph{Mozilla Developer Center} offre des tutoriels détaillés:
+\begin{center}
+\url{https://developer.mozilla.org/fr/docs/Web/CSS}
+\end{center}
+La page ci-après référence toutes les propriétés \emph{css}:
+\begin{center}
+\url{https://developer.mozilla.org/fr/docs/Web/CSS/Reference}
+\end{center}
+\section{Mise en application}
+\begin{activite}
+Modifier le fichier \emph{custom.css} pour mettre en forme la page web et obtenir le rendu désiré.
+\end{activite}
+\end{Form}
+\end{document}

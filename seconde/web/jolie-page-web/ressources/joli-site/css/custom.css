@@ -1,0 +1,63 @@
+html{
+  background-color: #eaecfa;
+  font: 1em "Fira Sans", sans-serif;
+}
+
+body{
+  width: 800px;
+  margin: auto;
+  padding: 1em;
+  background-color: #c4c8ec;
+  border: 0.2em ridge #8d94ca;
+}
+
+h1{
+  color: #7a7aee;
+}
+
+p{
+  text-align: justify;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #1360c2;
+}
+
+a:visited {
+  color: #4673ad;
+}
+
+a:hover {
+  background: #1360c2;
+  color: #fff;
+}
+
+.titre{
+  text-align: center;
+  font-size: 2em;
+  color: #f8f8fa;
+  text-shadow: -1px -1px #fb6, 1px 1px #d60, -3px 0 4px #000;
+  background-image: url("../images/bandeau.jpg");
+  padding: 1em;
+}
+
+.titre_liste{
+  font-weight: bold;
+  color: #3838d1;
+}
+
+.list_matiere{
+  list-style: georgian inside url('../images/cursor.png');
+}
+
+.lien_img{
+  display: block;
+  margin: auto;
+  height: 200px;
+}

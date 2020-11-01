@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 OCT 2020 15:54
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  1 NOV 2020 15:41
  restricted system commands enabled.
-**type-construit-exercices.tex
-(./type-construit-exercices.tex
+**exercices-interblocage.tex
+(./exercices-interblocage.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.134 seconds
+luaotfload | main : initialization completed in 0.138 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -929,8 +929,8 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \c@compteuractivite=\count341
 \c@compteurexo=\count342
 )
-(./type-construit-exercices.aux)
-\openout1 = type-construit-exercices.aux
+(./exercices-interblocage.aux)
+\openout1 = exercices-interblocage.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -1105,26 +1105,26 @@ LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
-(./type-construit-exercices.out) (./type-construit-exercices.out)
+(./exercices-interblocage.out) (./exercices-interblocage.out)
 \@outlinefile=\write4
 
-\openout4 = type-construit-exercices.out
+\openout4 = exercices-interblocage.out
 LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
+<ressources/philo.png, id=15, 192.72pt x 199.947pt>
+File: ressources/philo.png Graphic file (type png)
+<use ressources/philo.png>
+Package luatex.def Info: ressources/philo.png  used on input line 36.
+(luatex.def)             Requested size: 170.71652pt x 177.1163pt.
+<ressources/circulation.png, id=16, 562.1pt x 461.725pt>
+File: ressources/circulation.png Graphic file (type png)
+<use ressources/circulation.png>
+Package luatex.def Info: ressources/circulation.png  used on input line 43.
+(luatex.def)             Requested size: 170.71652pt x 140.23059pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1132,44 +1132,43 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=16, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=17, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 61.
+input line 51.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-</home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
-
-(./type-construit-exercices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
-Package rerunfilecheck Info: File `type-construit-exercices.out' has not changed
-.
+<./ressources/philo.png><./ressources/circulation.png></home/tof/Documents/Cozy/
+latex-include/cc.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
+ (./exercices-interblocage.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
+Package rerunfilecheck Info: File `exercices-interblocage.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27288 strings out of 494383
+ 27240 strings out of 494383
  100000,794899 words of node,token memory allocated
- 11582 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 13 glue, 4 kern, 1 penalty, 1462 glyph, 332 attribu
-te, 58 glue_spec, 57 attribute_list, 1 write nodes
-   avail lists: 1:3,2:1244,3:156,4:42,5:141,6:33,7:2236,8:50,9:133,10:10,11:109
- 30836 multiletter control sequences out of 65536+600000
- 50 fonts using 7521999 bytes
- 55i,15n,95p,1119b,479s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
-f/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype
-/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
-10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on type-construit-exercices.pdf (1 page, 27182 bytes).
+ 9447 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 25 glue, 4 kern, 1 penalty, 1161 glyph, 284 attribu
+te, 58 glue_spec, 49 attribute_list, 1 write nodes
+   avail lists: 1:3,2:1167,3:121,4:45,5:120,6:30,7:1630,8:31,9:154,10:12,11:105
+ 30823 multiletter control sequences out of 65536+600000
+ 30 fonts using 6146855 bytes
+ 55i,15n,95p,1117b,479s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/
+fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opent
+ype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lm
+roman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.
+otf></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on exercices-interblocage.pdf (1 page, 831821 bytes).
 
-PDF statistics: 81 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 131072)
+PDF statistics: 69 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 131072)
  51 words of extra memory for PDF output out of 10000 (max. 100000000)
 

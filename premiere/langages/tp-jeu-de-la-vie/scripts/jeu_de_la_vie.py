@@ -8,10 +8,13 @@ Date de création Fri Oct 16 15:10:02 2020
 
 
 from tkinter import *
+from tkinter import ttk
+from mod_vie import *
 from random import randint
 
 TAILLE = 8
 CELLULES = 200
+STOP = ""
 
 def compter_voisins(g: list, cel: tuple)->int:
     nb = 0
@@ -24,7 +27,7 @@ def compter_voisins(g: list, cel: tuple)->int:
     return nb
 
 def cycle(f, c, g: list)->None:
-    #global fenetre, grille
+    global STOP
     nouvelle = [[False for _ in range(CELLULES)] for _ in range(CELLULES)]
 
     for i in range(CELLULES):
@@ -53,7 +56,35 @@ def cycle(f, c, g: list)->None:
                                     fill="blue")
 
     # nouveau cycle
-    fenetre.after(100, cycle, f, c, g)
+    STOP = f.after(100, cycle, f, c, g)
+
+def nouveau(event):
+    """
+    choisir un nouveau visuel
+    (que en globale...)
+    """
+    fenetre.after_cancel(STOP)
+    grille = [[False for _ in range(CELLULES)] for _ in range(CELLULES)]
+
+    choix = [aleatoire, une_ligne, escalier, vaisseau, vaisseau, canon]
+	# Obtenir l'élément sélectionné
+    select = listeCombo.current()
+    if select == 0:
+        choix[select](grille,3000)
+    elif select == 1:
+        choix[select](grille)
+    elif select == 2:
+        choix[select](grille)
+    elif select == 3:
+        choix[select](grille,0)
+    elif select == 4:
+        for i in range(20):
+            choix[select](grille, 10*i)
+    elif select == 5:
+        choix[select](grille)
+
+    cycle(fenetre, canevas, grille)
+
 
 """
 programme principal
@@ -64,78 +95,19 @@ fenetre.title("Jeu de la vie")
 canevas = Canvas(fenetre, width = CELLULES*TAILLE, height = CELLULES*TAILLE)
 canevas.pack()
 
+# choix du visuel
+depart=["Aléatoire", "Ligne simple", "Escalier", "Vaisseau","Armée","Canon"]
+listeCombo = ttk.Combobox(fenetre, font="Verdana 32", values=depart)
+listeCombo.current(0)
+listeCombo.pack()
+listeCombo.bind("<<ComboboxSelected>>", nouveau)
+
 """
 initialisation de l'état de départ
 """
 grille = [[False for _ in range(CELLULES)] for _ in range(CELLULES)]
 
-"""
-fonctions définissant différents scénarios
-"""
-def une_ligne(g: list)->None:
-    g[CELLULES//2][CELLULES//2] = True
-    g[CELLULES//2+1][CELLULES//2] = True
-    g[CELLULES//2+2][CELLULES//2] = True
-
-def aleatoire(g: list, n: int)->None:
-    for _ in range(n):
-        x,y = randint(0,199), randint(0,199)
-        g[x][y] = True
-
-def vaisseau(g: list, decalage: int)->None:
-    g[2][0+decalage] = True
-    g[0][1+decalage] = True
-    g[2][1+decalage] = True
-    g[1][2+decalage] = True
-    g[2][2+decalage] = True
-
-def canon(g: list)->None:
-    g[7][4] = True
-    g[8][4] = True
-    g[7][5] = True
-    g[8][5] = True
-    g[7][14] = True
-    g[8][14] = True
-    g[9][14] = True
-    g[6][15] = True
-    g[10][15] = True
-    g[5][16] = True
-    g[11][16] = True
-    g[5][17] = True
-    g[11][17] = True
-    g[8][18] = True
-    g[6][19] = True
-    g[10][19] = True
-    g[7][20] = True
-    g[8][20] = True
-    g[9][20] = True
-    g[8][21] = True
-    g[5][24] = True
-    g[6][24] = True
-    g[7][24] = True
-    g[5][25] = True
-    g[6][25] = True
-    g[7][25] = True
-    g[4][26] = True
-    g[8][26] = True
-    g[3][28] = True
-    g[4][28] = True
-    g[8][28] = True
-    g[9][28] = True
-    g[5][38] = True
-    g[6][38] = True
-    g[5][39] = True
-    g[6][39] = True
-
-
-#une_ligne(grille)
-#aleatoire(grille, 3000)
-#vaisseau(grille, 0)
-"""
-for i in range(20):
-    vaisseau(grille, 10*i)
-"""
-canon(grille)
+une_ligne(grille)
 
 cycle(fenetre, canevas, grille)
 

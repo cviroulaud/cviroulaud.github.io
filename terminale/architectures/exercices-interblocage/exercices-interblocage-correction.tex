@@ -1,0 +1,29 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Interblocage - correction exercices}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\noindent Dans le dîner des philosophes, les quatre conditions de Coffman sont satisfaites:
+\begin{itemize}
+\item Les ressources sont en accès exclusif: deux philosophes ne peuvent pas utiliser la même fourchette en même temps.
+\item Rétention et attente: chaque philosophe prend la fourchette de gauche et attend celle de droite;
+\item Non préemption: un philosophe ne peut pas prendre une fourchette dans les mains d'un autre;
+\item Attente cyclique: chaque philosophe attend la fourchette (occupée) à sa droite.
+\end{itemize}
+\bigskip
+Dans le problème de circulation, les quatre conditions de Coffman sont satisfaites:
+\begin{itemize}
+\item Les ressources sont en accès exclusif: deux voitures ne peuvent pas se trouver sur la même portion de route en même temps.
+\item Rétention et attente: chaque voiture détient une portion de route  et attend celle qui est devant.
+\item Non préemption: une voiture ne peut pas forcer le passage.
+\item Attente cyclique: chaque voiture attend la portion (occupée) de route devant elle.
+\end{itemize}
+\end{Form}
+\end{document}

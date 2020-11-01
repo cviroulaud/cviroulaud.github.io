@@ -1,0 +1,108 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Construction par compréhension}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Première - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Problématique}
+Construire et remplir un tableau demande plusieurs étapes.
+\begin{center}
+\begin{lstlisting}
+tab = []
+for i in range(100):
+	tab.append(i)
+
+tab2 = [0] * 100
+for i in range(len(tab2)):
+	tab2[i] = i
+\end{lstlisting}
+\captionof{code}{Construire un tableau}
+\label{construction}
+\end{center}
+
+Pourtant Python est un langage de haut niveau et devrait pouvoir faciliter ces constructions.
+\begin{center}
+\shadowbox{\parbox{16cm}{\centering Comment construire des tableaux en utilisant les propriétés d'un langage de haut niveau?}}
+\end{center}
+\section{Construction par compréhension}
+\subsection{Un tableau simple}
+La méthode ne diffère pas énormément du code \ref{construction}. La boucle est exécutée directement pendant la construction du tableau.
+\begin{code}[!h]
+\begin{lstlisting}
+tab = [i for i in range(100)]
+\end{lstlisting}
+\captionof{code}{Construction par compréhension}
+\label{comprehension}
+\end{code}
+
+Ce code exécute d'abord la boucle, garde les valeurs en mémoire à chaque tour de boucle (ici \emph{i}) puis construit le tableau avec ces valeurs. Enfin il affecte ce tableau à la variable \emph{tab}.\\
+Cet ordre à une réelle importance. Il est ainsi possible de construire un tuple par compréhension.
+\begin{code}[!h]
+\begin{lstlisting}
+t = tuple(i for i in range(100))	
+\end{lstlisting}
+\captionof{code}{Tuple par compréhension}
+\label{tuple}
+\end{code}
+\begin{commentprof}
+mettre \textbf{tuple} sinon on construit un générateur; avec une boucle on ne peut pas remplir un tuple
+\end{commentprof}
+\begin{activite}
+\begin{enumerate}
+\item Construire par compréhension le tableau des carrés des nombres de 0 à 10.
+\item Construire par compréhension le tableau des nombres impairs de 0 à 20.
+\item Construire par compréhension le tableau des multiples de 3 compris entre 0 et 50.
+\end{enumerate}
+\end{activite}
+\subsection{Tableau de tableaux}\label{tableau}
+Un tableau peut stocker tous types d'objets même d'autres tableaux. Ceci peut s'avérer très utiles pour représenter une matrice mathématique ou le plateau d'un jeu.\\
+Le jeu du \emph{puissance 4} comporte six lignes de sept colonnes. Une représentation en mémoire possible est:
+\begin{code}[!h]
+\begin{lstlisting}
+grille = [[False for col in range(7)] for ligne in range(6)]
+\end{lstlisting}
+\captionof{code}{Puissance 4}
+\label{puissance4}
+\end{code}
+\begin{activite}
+Tester le code \ref{puissance4} sur \url{http://pythontutor.com/} et visualiser la représentation en mémoire.
+\end{activite}
+\subsection{Une erreur classique}
+Il pourrait être tentant de coder la grille de cette manière.
+\begin{code}[!h]
+\begin{lstlisting}
+grille = [[False] * 7] * 6
+\end{lstlisting}
+\captionof{code}{Puissance 4}
+\label{puissance4bad}
+\end{code}
+\begin{activite}
+Tester le code \ref{puissance4bad} sur \emph{Pythontutor} et observer la représentation en mémoire.
+\end{activite}
+Il faut rappeler que la variable grille ne contient pas réellement le tableau mais uniquement l'adresse vers celui-ci. Ainsi le même tableau contenant sept valeurs \emph{False} est crée une fois puis pointé six fois. D'une manière générale nous construirons les tableaux par compréhension en utilisant la méthodologie vue en \ref{tableau}.
+\section{Slice (hors programme)}
+Les \emph{slices} (tranches) sont des expressions qui permettent d'extraire facilement des éléments d'un tableau.
+\begin{code}[!h]
+\begin{lstlisting}
+tab = [0, 1, 2, 3, 4, 5]
+tranche = tab[1:3] # La variable tranche contient [1, 2]
+\end{lstlisting}
+\captionof{code}{Extraire une tranche}
+\label{slice}
+\end{code}
+
+Le code \ref{slice} montre la syntaxe d'un \emph{slice}. La variable \emph{tranche} contient les valeurs entre l'indice 1 \emph{inclus} et 3 \emph{exclus}.\\
+Les exemples ci-après montrent la puissance d'un langage de haut-niveau comme Python.
+\begin{lstlisting}
+tab = [0, 1, 2, 3, 4, 5]
+debut = tab[:3] # [0, 1, 2]
+fin = tab[3:] # [3, 4, 5]
+\end{lstlisting}
+\end{Form}
+\end{document}

@@ -1,0 +1,24 @@
+{
+    "sommets":[
+	{"sommet":7,"adjacents":[17,19,45]},
+	{"sommet":10,"adjacents":[18,21,43]},
+	{"sommet":12,"adjacents":[26]},
+	{"sommet":14,"adjacents":[25,30,34,49]},
+	{"sommet":17,"adjacents":[7,30,34,45]},
+	{"sommet":18,"adjacents":[10,19,34]},
+	{"sommet":19,"adjacents":[7,18,43,45]},
+	{"sommet":21,"adjacents":[10,43]},
+	{"sommet":25,"adjacents":[14,45,49,75]},
+	{"sommet":26,"adjacents":[12]},
+	{"sommet":30,"adjacents":[14,17,34,49]},
+	{"sommet":32,"adjacents":[]},
+	{"sommet":34,"adjacents":[14,17,18,30]},
+	{"sommet":43,"adjacents":[10,19,21,45,75]},
+	{"sommet":45,"adjacents":[7,17,19,25,43,75]},
+	{"sommet":49,"adjacents":[14,25,30,65]},
+	{"sommet":65,"adjacents":[49,70,71,75]},
+	{"sommet":70,"adjacents":[65,71,75]},
+	{"sommet":71,"adjacents":[65,70]},
+	{"sommet":75,"adjacents":[25,43,45,65,70]}
+	]
+}

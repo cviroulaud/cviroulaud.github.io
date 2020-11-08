@@ -11,14 +11,14 @@ class Pile:
     def __init__(self):
         self.donnees = []
 
-    def estVide(self):
+    def est_vide(self):
         return self.donnees == []
 
     def empiler(self, e):
         self.donnees.append(e)
 
     def depiler(self):
-        if not self.estVide():
+        if not self.est_vide():
             return self.donnees.pop()
 
     def __str__(self):
@@ -31,7 +31,7 @@ class File:
     def __init__(self):
         self.donnees = []
 
-    def estVide(self):
+    def est_vide(self):
         return self.donnees == []
 
     def enfiler(self, e):

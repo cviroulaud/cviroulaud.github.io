@@ -48,9 +48,9 @@ class Graphe:
         return visites
 
     def DFS_rec(self, depart: str, visites: list = [])->list:
-        visites.append(depart)
-        for voisin in self.sommets[depart]:
-            if not(voisin in visites):
+        if not(depart in visites):
+            visites.append(depart)
+            for voisin in self.sommets[depart]:
                 self.DFS_rec(voisin, visites)
         return visites
 

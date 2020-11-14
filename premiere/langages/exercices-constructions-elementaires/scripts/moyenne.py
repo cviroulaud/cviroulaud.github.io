@@ -21,7 +21,7 @@ for i in range(10):
 la fonction round() permet d'arrondir
 ici à 2 chiffres après la virgule
 """
-moyenne = round(somme/2, 2)
+moyenne = round(somme/10, 2)
 if moyenne >= 15:
     print("{}/20, félicitations!".format(moyenne))
 elif moyenne >= 10:

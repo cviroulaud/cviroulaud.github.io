@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  7 NOV 2020 17:00
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  13 NOV 2020 14:19
  restricted system commands enabled.
 **co-parcours.tex
 (./co-parcours.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.090 seconds
+luaotfload | main : initialization completed in 0.095 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1433,45 +1433,51 @@ Overfull \hbox (4.62733pt too wide) in paragraph at lines 151--274
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 288.
+input line 287.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [2]
-Overfull \hbox (41.0pt too wide) in paragraph at lines 315--421
+Overfull \hbox (41.0pt too wide) in paragraph at lines 314--420
 [][] 
  []
 
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 421.
+input line 420.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [3]
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 450.
+input line 449.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
  (./co-parcours.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 450.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 450.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
 Package rerunfilecheck Info: File `co-parcours.out' has not changed.
 (rerunfilecheck)             Checksum: DDA63F7A70F26C8DA69BA328D4D68F3E;2491.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
  37784 strings out of 494383
  100000,953878 words of node,token memory allocated
- 42893 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 45 glue, 4 kern, 1 penalty, 5533 glyph, 1442 attrib
-ute, 58 glue_spec, 242 attribute_list, 1 write nodes
-   avail lists: 1:6,2:8883,3:921,4:37,5:162,6:47,7:2034,8:103,9:433,10:12,11:153
+ 41976 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 42 glue, 4 kern, 1 penalty, 5409 glyph, 1430 attrib
+ute, 58 glue_spec, 240 attribute_list, 1 write nodes
+   avail lists: 1:6,2:8883,3:911,4:35,5:162,6:46,7:2034,8:102,9:428,10:12,11:151
 
  40893 multiletter control sequences out of 65536+600000
  54 fonts using 8053199 bytes
  55i,15n,95p,1106b,856s stack positions out of 5000i,500n,10000p,200000b,100000s
+
+warning  (pdf backend): unreferenced destination with name 'Item.18'
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/p
 ublic/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lm
@@ -1479,7 +1485,7 @@ roman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.ot
 f></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on co-parcours.pdf (4 pages, 63851 bytes).
+Output written on co-parcours.pdf (4 pages, 63325 bytes).
 
 PDF statistics: 192 PDF objects out of 1000 (max. 8388607)
  159 compressed objects within 2 object streams

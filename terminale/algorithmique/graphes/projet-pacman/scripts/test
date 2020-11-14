@@ -1,0 +1,14 @@
+graph {
+	A [label=A]
+	B [label=B]
+	C [label=C]
+	D [label=D]
+	E [label=E]
+	F [label=F]
+	A -- B [label=2]
+	A -- D [label=10]
+	A -- C [label=7]
+	B -- D [label=8]
+	C -- E [label=2]
+	D -- E [label=4]
+}

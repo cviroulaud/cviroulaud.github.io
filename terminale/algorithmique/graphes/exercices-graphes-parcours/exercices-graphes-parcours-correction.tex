@@ -12,6 +12,7 @@
 \fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
 \fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
 \usepackage{tikz}
+\usetikzlibrary{arrows}
 \begin{document}
 \begin{Form}
 \begin{exo}
@@ -72,6 +73,26 @@ H &  & D,B,A,G,E,C,F \\
 \end{tabular} 
 \end{center}
 \end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{center}
+\begin{tikzpicture}
+\node[draw,circle,fill=gray!50] (A)at(0,2) {};
+\node[draw,circle,fill=gray!50] (B)at(0,0) {};
+\node[draw,circle,fill=gray!50] (C)at(0,-2) {};
+\node[draw,circle,fill=gray!50] (D)at(2,0) {};
+\draw[-,>=latex] (A) to[bend left=-45] (B);
+\draw[-,>=latex] (A) to[bend left=45] (B);
+\draw[-,>=latex] (C) to[bend left=-45] (B);
+\draw[-,>=latex] (C) to[bend left=45] (B);
+\draw[-,>=latex] (B) -- (D);
+\draw[-,>=latex] (A) -- (D);
+\draw[-,>=latex] (C) -- (D);
+\end{tikzpicture}
+\captionof{figure}{Les sept ponts de Königsberg}
+\label{graphe}
+\end{center}
+Tous les sommets sont de degrés impairs.
 \end{exo}
 \begin{exo}
 \begin{enumerate}

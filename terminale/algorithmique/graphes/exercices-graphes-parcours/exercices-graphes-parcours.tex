@@ -50,11 +50,46 @@ Pour les deux parcours il faudra détailler l'évolution de la structure utilis�
 \end{enumerate}
 \end{exo}
 \begin{exo}
+La ville de Königsberg (aujourd'hui Kaliningrad) est construite autour de deux îles situées sur le Pregel et reliées entre elles par un pont.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=5cm]{ressources/pont-konisberg.png}
+\captionof{figure}{Les sept ponts de Königsberg}
+\label{pont}
+\end{figure}
+
+Le problème, énoncé et résolu par Euler au XVIII° siècle, consiste à déterminer s'il existe une promenade permettant en partant d'un point, de revenir à ce même point en ayant traversé une et une seule fois chaque pont.
+\begin{enumerate}
+\item Modéliser la situation par un graphe.
+\item Tenter de réaliser la promenade \guill{à la main}.
+\end{enumerate}
+Ce problème est à l'origine de \emph{la théorie des graphes}. C'est donc Euler qui commença à théoriser des problèmes mathématiques par cette méthode. Un vocabulaire spécifique a été crée en hommage.
+\begin{center}
+\shadowbox{\parbox{17cm}{\textbf{Définition:}
+\begin{itemize}
+\item une chaîne eulérienne est une chaîne passant une et une seule fois par toutes les arêtes du graphe.
+\item un cycle eulérien est une chaîne eulérienne dont le sommet de départ et le sommet d'arrivée sont identiques. 
+\end{itemize} 
+\textbf{Théorème:}
+\begin{itemize}
+\item Un graphe connexe possède \textbf{une chaîne eulérienne} si et seulement si ses sommets sont tous de degré pair sauf au plus deux.
+\item Un graphe connexe possède \textbf{un cycle eulérien} si et seulement si tous ses sommets sont de degré pair. 
+\end{itemize}}}
+\end{center}
+\begin{enumerate}[resume]
+\item Vérifier si le théorème est vérifié dans le cas des pont de Königsberg.
+\item Peut-on créer une chaîne eulérienne pour le graphe \ref{graphe}? Et un cycle eulérien?
+\end{enumerate}
+\end{exo}
+\begin{exo}
 Le fonctionnement du parcours en profondeur peut être décrit de la manière suivante:
 \begin{itemize}
 \item Choisir un nœud.
-\item S'il n'est pas déjà visité, le marquer \emph{vu}.
-\item Pour chaque voisin, effectuer la même démarche.
+\item S'il n'est pas déjà visité:
+\begin{itemize}
+\item le marquer \emph{vu},
+\item pour chaque voisin, effectuer la même démarche.
+\end{itemize}
 \end{itemize}
 Nous reconnaissons ici une démarche récursive.
 \begin{enumerate}

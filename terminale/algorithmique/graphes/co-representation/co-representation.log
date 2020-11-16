@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  4 NOV 2020 17:23
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 NOV 2020 17:13
  restricted system commands enabled.
 **co-representation.tex
 (./co-representation.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.129 seconds
+luaotfload | main : initialization completed in 0.121 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1464,8 +1464,8 @@ Package rerunfilecheck Info: File `co-representation.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  37736 strings out of 494383
  100000,953878 words of node,token memory allocated
- 33863 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 27 glue, 4 kern, 1 penalty, 4401 glyph, 1022 attrib
+ 33926 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 27 glue, 4 kern, 1 penalty, 4410 glyph, 1022 attrib
 ute, 58 glue_spec, 172 attribute_list, 1 write nodes
    avail lists: 1:6,2:8225,3:836,4:48,5:206,6:33,7:3290,8:49,9:362,10:9,11:211
  40855 multiletter control sequences out of 65536+600000
@@ -1482,7 +1482,7 @@ type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on co-representation.pdf (3 pages, 538404 bytes).
+Output written on co-representation.pdf (3 pages, 538410 bytes).
 
 PDF statistics: 170 PDF objects out of 1000 (max. 8388607)
  129 compressed objects within 2 object streams

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  10 NOV 2020 08:52
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  17 NOV 2020 15:07
  restricted system commands enabled.
 **exercices-graphes-representation-correction.tex
 (./exercices-graphes-representation-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.075 seconds
+luaotfload | main : initialization completed in 0.247 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1633,14 +1633,14 @@ ut' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37991 strings out of 494383
+ 37990 strings out of 494383
  244163,953878 words of node,token memory allocated
- 17980 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 12 glue, 4 kern, 1 penalty, 1453 glyph, 3104 attrib
-ute, 58 glue_spec, 519 attribute_list, 1 write nodes
-   avail lists: 1:8,2:16570,3:470,4:5065,5:4185,6:54,7:3957,8:3725,9:6951,10:29,
+ 17889 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 12 glue, 4 kern, 1 penalty, 1446 glyph, 3086 attrib
+ute, 58 glue_spec, 516 attribute_list, 1 write nodes
+   avail lists: 1:8,2:16591,3:470,4:5065,5:4185,6:54,7:3961,8:3725,9:6951,10:29,
 11:393
- 41037 multiletter control sequences out of 65536+600000
+ 41036 multiletter control sequences out of 65536+600000
  50 fonts using 7521999 bytes
  55i,16n,95p,1138b,871s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
@@ -1651,8 +1651,8 @@ f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on exercices-graphes-representation-correction.pdf (2 pages, 579
-32 bytes).
+Output written on exercices-graphes-representation-correction.pdf (2 pages, 577
+23 bytes).
 
 PDF statistics: 147 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams

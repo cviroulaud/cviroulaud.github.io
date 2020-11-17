@@ -55,7 +55,7 @@ class Graphe:
         return chaine
 
     def nb_sommets(self)->int:
-        return len(self.sommets.keys())
+        return len(self.sommets)
 
     def degre(self, sommet: str)->int:
         return len(self.sommets[sommet])

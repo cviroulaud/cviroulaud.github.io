@@ -72,5 +72,36 @@ def remplir(g: Graphe, grille: list):
         grille[s[0]][s[1]] = restants.pop()
         print(s[0],s[1],grille[s[0]][s[1]])
 
-remplir(g_sudoku, grille)
+def remplir_rec(g: Graphe, grille: list, s: tuple = (0,0), visites: list = []):
+    if s not in visites:
+        visites.append(s)
+        # on n'utilise pas l'index 0!!!
+        disponibles = [True for i in range(TAILLE+1)]
+        for v in g.get_adjacents(s):
+
+            # récupère le contenu de la case voisine
+            case = grille[v[0]][v[1]]
+            if case > 0: # si elle est déjà remplie
+                # on élimine le chiffre disponible pour s
+                disponibles[case] = False
+            print(v[0],v[1],disponibles)
+        # chiffres encore disponibles pour s
+        restants = []
+        for i in range(1,TAILLE+1):
+            if disponibles[i]:
+                restants.append(i)
+        shuffle(restants)
+        if len(restants) > 0:
+            grille[s[0]][s[1]] = restants.pop()
+            remplir_rec(g, grille, v, visites)
+        else:
+
+def DFS_rec(self, depart: str, visites: list = [])->list:
+if not(depart in visites):
+    visites.append(depart)
+    for voisin in self.sommets[depart]:
+        self.DFS_rec(voisin, visites)
+return visites
+
+#remplir(g_sudoku, grille)
 print(grille)

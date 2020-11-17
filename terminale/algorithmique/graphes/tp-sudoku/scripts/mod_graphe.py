@@ -8,12 +8,6 @@ Date de création Wed Oct 28 14:40:05 2020
 
 from structures import Pile, File
 
-class Cellule:
-    def __init__(self, x: int, y: int):
-        self.x = x
-        self.y = y
-        self.valeur = 0
-
 class Graphe:
     """
     Crée un graphe sous forme de dictionnaire d'adjacence

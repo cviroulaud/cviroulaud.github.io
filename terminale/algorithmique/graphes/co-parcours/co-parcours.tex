@@ -1,6 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
-%\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
 \fancyhead[L]{Carte d'orientation - parcours}
 \newdate{madate}{10}{09}{2020}
 %\fancyhead[R]{\displaydate{madate}} %\today
@@ -145,6 +145,9 @@ Détaillons l'algorithme du \textbf{parcours en profondeur}. Il est judicieux d'
 \end{itemize}
 \end{enumerate}
 \end{enumerate}
+\begin{commentprof}
+Il faut remarquer que nous pourrions n'ajouter que les voisins non encore visités. Ceci ne change rien au niveau de l'efficacité car il faut tout de même vérifier à chaque fois si le sommet est dans \emph{visités}.
+\end{commentprof}
 Appliquons l'algorithme sur le graphe \ref{graphe0}.
 
 \bigskip

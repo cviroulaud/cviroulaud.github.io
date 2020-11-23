@@ -1,18 +1,18 @@
 pondération
 graphe orienté (twitter)
-chemin le plus court
+OK chemin le plus court
 somme des degrés (orienté ou non)
 cycle
 chemin le plus long
 coloration: incompatibilité (ex aquarium)
 djikstra
 A*
-labyrinthe
+OK labyrinthe
 réseau
 ospf rip
-Nim
+OK Nim
 Dames?
-graphviz
+NO graphviz
 bibliothèque queue
 
 grands électeurs: https://www.lemonde.fr/international/article/2020/11/04/elections-americaines-2020-suivez-la-carte-des-resultats-en-direct_6058394_3210.html

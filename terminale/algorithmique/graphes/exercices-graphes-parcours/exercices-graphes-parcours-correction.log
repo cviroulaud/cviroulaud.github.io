@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 NOV 2020 17:45
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  22 NOV 2020 11:03
  restricted system commands enabled.
 **exercices-graphes-parcours-correction.tex
 (./exercices-graphes-parcours-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.084 seconds
+luaotfload | main : initialization completed in 0.080 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1220,7 +1220,11 @@ File: tikzlibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
 tex
 File: pgflibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \arrowsize=\dimen313
-)) (./exercices-graphes-parcours-correction.aux)
+)) (./exercices-graphes-parcours-correction.aux
+
+LaTeX Warning: Label `graphe' multiply defined.
+
+)
 \openout1 = exercices-graphes-parcours-correction.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1239,8 +1243,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 16.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 16.
@@ -1429,31 +1432,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 92.
+(caption)                particular \caption on input line 106.
 See the caption package documentation for explanation.
 
 
-Package xcolor Warning: Incompatible color definition on input line 100.
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 126.
+See the caption package documentation for explanation.
 
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-(./scripts/dfs.py
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
@@ -1464,198 +1450,227 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 17.
+input line 126.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
+</home/tof/Documents/Cozy/latex-include/cc.png>]
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+(./scripts/dfs.py)
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+
+Package xcolor Warning: Incompatible color definition on input line 134.
+
+
+Package xcolor Warning: Incompatible color definition on input line 138.
+
+
+Package xcolor Warning: Incompatible color definition on input line 138.
+
+
+Package xcolor Warning: Incompatible color definition on input line 138.
+
+
+Package xcolor Warning: Incompatible color definition on input line 138.
+
+
+Package xcolor Warning: Incompatible color definition on input line 138.
+
+
+Package xcolor Warning: Incompatible color definition on input line 138.
+
+
+Package xcolor Warning: Incompatible color definition on input line 138.
+
+(./scripts/dfs.py)
+
+Package xcolor Warning: Incompatible color definition on input line 138.
+
+
+Package xcolor Warning: Incompatible color definition on input line 138.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+(./scripts/dfs.py)
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 142.
+
+
+Package xcolor Warning: Incompatible color definition on input line 142.
+
+
+Package xcolor Warning: Incompatible color definition on input line 142.
+
+
+Package xcolor Warning: Incompatible color definition on input line 142.
+
+
+Package xcolor Warning: Incompatible color definition on input line 142.
+
+
+Package xcolor Warning: Incompatible color definition on input line 142.
+
+
+Package xcolor Warning: Incompatible color definition on input line 142.
+
+(./scripts/dfs.py
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 42.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [2
 Missing character: There is no . (U+002E) in font nullfont!
 Missing character: There is no 0 (U+0030) in font nullfont!
 Missing character: There is no . (U+002E) in font nullfont!
 Missing character: There is no 0 (U+0030) in font nullfont!
-</home/tof/Documents/Cozy/latex-include/cc.png>])
+])
 
-Package xcolor Warning: Incompatible color definition on input line 100.
+Package xcolor Warning: Incompatible color definition on input line 142.
 
 
-Package xcolor Warning: Incompatible color definition on input line 100.
+Package xcolor Warning: Incompatible color definition on input line 142.
 
 
-Package xcolor Warning: Incompatible color definition on input line 104.
+Package xcolor Warning: Incompatible color definition on input line 148.
 
 
-Package xcolor Warning: Incompatible color definition on input line 104.
+Package xcolor Warning: Incompatible color definition on input line 148.
 
 
-Package xcolor Warning: Incompatible color definition on input line 104.
+Package xcolor Warning: Incompatible color definition on input line 148.
 
 
-Package xcolor Warning: Incompatible color definition on input line 104.
+Package xcolor Warning: Incompatible color definition on input line 148.
 
 
-Package xcolor Warning: Incompatible color definition on input line 104.
+Package xcolor Warning: Incompatible color definition on input line 148.
 
 
-Package xcolor Warning: Incompatible color definition on input line 104.
+Package xcolor Warning: Incompatible color definition on input line 148.
 
 
-Package xcolor Warning: Incompatible color definition on input line 104.
+Package xcolor Warning: Incompatible color definition on input line 148.
 
-(./scripts/dfs.py)
+(./scripts/bfs.py)
 
-Package xcolor Warning: Incompatible color definition on input line 104.
+Package xcolor Warning: Incompatible color definition on input line 148.
 
 
-Package xcolor Warning: Incompatible color definition on input line 104.
+Package xcolor Warning: Incompatible color definition on input line 148.
 
 
-Package xcolor Warning: Incompatible color definition on input line 106.
+Package xcolor Warning: Incompatible color definition on input line 150.
 
 
-Package xcolor Warning: Incompatible color definition on input line 106.
+Package xcolor Warning: Incompatible color definition on input line 150.
 
 
-Package xcolor Warning: Incompatible color definition on input line 106.
+Package xcolor Warning: Incompatible color definition on input line 150.
 
 
-Package xcolor Warning: Incompatible color definition on input line 106.
+Package xcolor Warning: Incompatible color definition on input line 150.
 
 
-Package xcolor Warning: Incompatible color definition on input line 106.
+Package xcolor Warning: Incompatible color definition on input line 150.
 
 
-Package xcolor Warning: Incompatible color definition on input line 106.
+Package xcolor Warning: Incompatible color definition on input line 150.
 
 
-Package xcolor Warning: Incompatible color definition on input line 106.
-
-(./scripts/dfs.py)
-
-Package xcolor Warning: Incompatible color definition on input line 106.
-
-
-Package xcolor Warning: Incompatible color definition on input line 106.
-
-
-Package xcolor Warning: Incompatible color definition on input line 108.
-
-
-Package xcolor Warning: Incompatible color definition on input line 108.
-
-
-Package xcolor Warning: Incompatible color definition on input line 108.
-
-
-Package xcolor Warning: Incompatible color definition on input line 108.
-
-
-Package xcolor Warning: Incompatible color definition on input line 108.
-
-
-Package xcolor Warning: Incompatible color definition on input line 108.
-
-
-Package xcolor Warning: Incompatible color definition on input line 108.
-
-(./scripts/dfs.py)
-
-Package xcolor Warning: Incompatible color definition on input line 108.
-
-
-Package xcolor Warning: Incompatible color definition on input line 108.
-
-
-Package xcolor Warning: Incompatible color definition on input line 114.
-
-
-Package xcolor Warning: Incompatible color definition on input line 114.
-
-
-Package xcolor Warning: Incompatible color definition on input line 114.
-
-
-Package xcolor Warning: Incompatible color definition on input line 114.
-
-
-Package xcolor Warning: Incompatible color definition on input line 114.
-
-
-Package xcolor Warning: Incompatible color definition on input line 114.
-
-
-Package xcolor Warning: Incompatible color definition on input line 114.
+Package xcolor Warning: Incompatible color definition on input line 150.
 
 (./scripts/bfs.py
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 16.
+input line 49.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2])
+ [3])
 
-Package xcolor Warning: Incompatible color definition on input line 114.
-
-
-Package xcolor Warning: Incompatible color definition on input line 114.
+Package xcolor Warning: Incompatible color definition on input line 150.
 
 
-Package xcolor Warning: Incompatible color definition on input line 116.
-
-
-Package xcolor Warning: Incompatible color definition on input line 116.
-
-
-Package xcolor Warning: Incompatible color definition on input line 116.
-
-
-Package xcolor Warning: Incompatible color definition on input line 116.
-
-
-Package xcolor Warning: Incompatible color definition on input line 116.
-
-
-Package xcolor Warning: Incompatible color definition on input line 116.
-
-
-Package xcolor Warning: Incompatible color definition on input line 116.
-
-(./scripts/bfs.py)
-
-Package xcolor Warning: Incompatible color definition on input line 116.
-
-
-Package xcolor Warning: Incompatible color definition on input line 116.
+Package xcolor Warning: Incompatible color definition on input line 150.
 
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 120.
+input line 154.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
  (./exercices-graphes-parcours-correction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `exercices-graphes-parcours-correction.out' ha
 s not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 38473 strings out of 494383
- 244179,953878 words of node,token memory allocated
- 30055 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 13 glue, 4 kern, 1 penalty, 2871 glyph, 4022 attrib
-ute, 58 glue_spec, 672 attribute_list, 1 write nodes
-   avail lists: 1:9,2:12470,3:224,4:5496,5:4446,6:64,7:3884,8:3978,9:7194,10:30,
-11:410
- 41438 multiletter control sequences out of 65536+600000
+ 38501 strings out of 494383
+ 244172,953878 words of node,token memory allocated
+ 33772 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 3375 glyph, 4100 attrib
+ute, 58 glue_spec, 685 attribute_list, 1 write nodes
+   avail lists: 1:7,2:12730,3:412,4:5236,5:4121,6:63,7:3763,8:3692,9:6661,10:30,
+11:366
+ 41456 multiletter control sequences out of 65536+600000
  51 fonts using 7654743 bytes
- 55i,16n,95p,1132b,1356s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 55i,16n,95p,1132b,1251s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
 /public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/
@@ -1665,11 +1680,11 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/zapfding/uzdr.pfb>
-Output written on exercices-graphes-parcours-correction.pdf (3 pages, 63093 byte
+Output written on exercices-graphes-parcours-correction.pdf (4 pages, 65685 byte
 s).
 
-PDF statistics: 202 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 101 named destinations out of 1000 (max. 131072)
+PDF statistics: 211 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 105 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

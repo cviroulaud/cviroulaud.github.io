@@ -75,6 +75,40 @@ H &  & D,B,A,G,E,C,F \\
 \end{enumerate}
 \end{exo}
 \begin{exo}
+\begin{enumerate}
+\item Cela revient à construire un graphe de 7 sommets dont chaque sommet correspond à une équipe. Comme chaque équipe doit en rencontrer 5 autres, alors chaque sommet serait de degré 5. Cependant la somme des degrés doit être pair (égale au double du nombre d'arêtes). Cette somme étant égale à 35, le tournoi n'est pas réalisable.
+\item La somme des degrés est égale à 28. Le tournoi est réalisable. Il faut alors construire le graphe.
+\begin{center}
+\begin{tikzpicture}
+\node[draw,circle,fill=gray!50] (A)at(0,0) {};
+\node[draw,circle,fill=gray!50] (B)at(2,0) {};
+\node[draw,circle,fill=gray!50] (C)at(3,2) {};
+\node[draw,circle,fill=gray!50] (D)at(2,4) {};
+\node[draw,circle,fill=gray!50] (E)at(0,4) {};
+\node[draw,circle,fill=gray!50] (F)at(-2,3) {};
+\node[draw,circle,fill=gray!50] (G)at(-2,1) {};
+
+\draw[-,>=latex] (A) -- (G);
+\draw[-,>=latex] (A) -- (F);
+\draw[-,>=latex] (A) -- (D);
+\draw[-,>=latex] (A) -- (E);
+\draw[-,>=latex] (B) -- (G);
+\draw[-,>=latex] (B) -- (F);
+\draw[-,>=latex] (B) -- (D);
+\draw[-,>=latex] (B) -- (E);
+\draw[-,>=latex] (C) -- (D);
+\draw[-,>=latex] (C) -- (E);
+\draw[-,>=latex] (C) -- (G);
+\draw[-,>=latex] (C) -- (F);
+\draw[-,>=latex] (D) -- (E);
+\draw[-,>=latex] (F) -- (G);
+\end{tikzpicture}
+\captionof{figure}{Tournoi de handball}
+\label{graphe}
+\end{center}
+\end{enumerate}
+\end{exo}
+\begin{exo}
 \begin{center}
 \begin{tikzpicture}
 \node[draw,circle,fill=gray!50] (A)at(0,2) {};

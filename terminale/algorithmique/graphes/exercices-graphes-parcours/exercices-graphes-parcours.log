@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 NOV 2020 17:50
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  22 NOV 2020 11:05
  restricted system commands enabled.
 **exercices-graphes-parcours.tex
 (./exercices-graphes-parcours.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.089 seconds
+luaotfload | main : initialization completed in 0.132 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1406,18 +1406,18 @@ See the caption package documentation for explanation.
 <ressources/pont-konisberg.png, id=21, 303.1325pt x 238.8925pt>
 File: ressources/pont-konisberg.png Graphic file (type png)
 <use ressources/pont-konisberg.png>
-Package luatex.def Info: ressources/pont-konisberg.png  used on input line 56.
+Package luatex.def Info: ressources/pont-konisberg.png  used on input line 63.
 (luatex.def)             Requested size: 142.26378pt x 112.11545pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 77.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 77.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (10.79996pt too wide) in paragraph at lines 77--78
+Overfull \hbox (10.79996pt too wide) in paragraph at lines 84--85
  [][] 
  []
 
@@ -1431,7 +1431,7 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 81.
+input line 85.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
@@ -1440,26 +1440,36 @@ input line 81.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 121.
+input line 128.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 128.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
  (./exercices-graphes-parcours.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `exercices-graphes-parcours.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 37602 strings out of 494383
+ 37611 strings out of 494383
  100000,953878 words of node,token memory allocated
- 26611 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 39 glue, 4 kern, 1 penalty, 3489 glyph, 614 attribu
-te, 58 glue_spec, 104 attribute_list, 1 write nodes
-   avail lists: 1:6,2:3420,3:356,4:53,5:177,6:39,7:2988,8:45,9:236,10:6,11:190
+ 29152 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 41 glue, 4 kern, 1 penalty, 3832 glyph, 668 attribu
+te, 58 glue_spec, 113 attribute_list, 1 write nodes
+   avail lists: 1:6,2:3426,3:390,4:65,5:211,6:47,7:3486,8:50,9:280,10:6,11:219
  40740 multiletter control sequences out of 65536+600000
  50 fonts using 7526479 bytes
  55i,15n,95p,1121b,722s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1471,10 +1481,10 @@ otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on exercices-graphes-parcours.pdf (2 pages, 90956 bytes).
+Output written on exercices-graphes-parcours.pdf (3 pages, 92494 bytes).
 
-PDF statistics: 113 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 131072)
+PDF statistics: 121 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 25 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 OCT 2020 15:54
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 NOV 2020 16:48
  restricted system commands enabled.
 **type-construit-exercices.tex
 (./type-construit-exercices.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.134 seconds
+luaotfload | main : initialization completed in 0.125 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1124,7 +1124,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1136,16 +1136,16 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 61.
+input line 64.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
 
 (./type-construit-exercices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `type-construit-exercices.out' has not changed
 .
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1154,10 +1154,10 @@ Package rerunfilecheck Info: File `type-construit-exercices.out' has not changed
 Here is how much of LuaTeX's memory you used:
  27288 strings out of 494383
  100000,794899 words of node,token memory allocated
- 11582 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 13 glue, 4 kern, 1 penalty, 1462 glyph, 332 attribu
-te, 58 glue_spec, 57 attribute_list, 1 write nodes
-   avail lists: 1:3,2:1244,3:156,4:42,5:141,6:33,7:2236,8:50,9:133,10:10,11:109
+ 13185 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 16 glue, 4 kern, 1 penalty, 1684 glyph, 344 attribu
+te, 58 glue_spec, 59 attribute_list, 1 write nodes
+   avail lists: 1:3,2:1258,3:163,4:42,5:165,6:34,7:2531,8:50,9:136,10:10,11:135
  30836 multiletter control sequences out of 65536+600000
  50 fonts using 7521999 bytes
  55i,15n,95p,1119b,479s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1166,7 +1166,7 @@ f/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype
 /public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
 10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on type-construit-exercices.pdf (1 page, 27182 bytes).
+Output written on type-construit-exercices.pdf (1 page, 27848 bytes).
 
 PDF statistics: 81 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 OCT 2020 11:15
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  25 NOV 2020 17:08
  restricted system commands enabled.
 **jolie-page-web.tex
 (./jolie-page-web.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.095 seconds
+luaotfload | main : initialization completed in 0.074 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1183,11 +1183,11 @@ Package rerunfilecheck Info: File `jolie-page-web.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  27797 strings out of 494383
  100000,953878 words of node,token memory allocated
- 17756 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 18 glue, 4 kern, 1 penalty, 2087 glyph, 1088 attrib
-ute, 58 glue_spec, 183 attribute_list, 1 write nodes
-   avail lists: 1:3,2:4878,3:208,4:1228,5:1123,6:54,7:1708,8:943,9:1792,10:21,11
-:163
+ 17686 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 17 glue, 4 kern, 1 penalty, 2082 glyph, 1076 attrib
+ute, 58 glue_spec, 181 attribute_list, 1 write nodes
+   avail lists: 1:3,2:4836,3:208,4:1204,5:1103,6:54,7:1697,8:925,9:1760,10:21,11
+:161
  31290 multiletter control sequences out of 65536+600000
  54 fonts using 8048719 bytes
  55i,15n,95p,1109b,1130s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1198,7 +1198,7 @@ f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
 r/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/f
 onts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/font
 s/type1/urw/zapfding/uzdr.pfb>
-Output written on jolie-page-web.pdf (2 pages, 42771 bytes).
+Output written on jolie-page-web.pdf (2 pages, 42750 bytes).
 
 PDF statistics: 152 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams

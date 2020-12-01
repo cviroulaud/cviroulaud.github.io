@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 NOV 2020 16:44
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  1 DEC 2020 09:27
  restricted system commands enabled.
-**exercices-graphes-parcours.tex
-(./exercices-graphes-parcours.tex
+**collection-bd.tex
+(./collection-bd.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.094 seconds
+luaotfload | main : initialization completed in 0.122 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -929,290 +929,8 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \c@compteuractivite=\count341
 \c@compteurexo=\count342
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks40
-\pgfutil@tempdima=\dimen267
-\pgfutil@tempdimb=\dimen268
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
-ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box83
-(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2019/02/02 v3.1.1 (3.1.1)
-))
-Package: pgf 2019/02/02 v3.1.1 (3.1.1)
-
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2019/02/02 v3.1.1 (3.1.1)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks41
-\pgfkeys@temptoks=\toks42
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
-ex
-\pgfkeys@tmptoks=\toks43
-))
-\pgf@x=\dimen269
-\pgf@y=\dimen270
-\pgf@xa=\dimen271
-\pgf@ya=\dimen272
-\pgf@xb=\dimen273
-\pgf@yb=\dimen274
-\pgf@xc=\dimen275
-\pgf@yc=\dimen276
-\w@pgf@writea=\write4
-\r@pgf@reada=\read4
-\c@pgf@counta=\count343
-\c@pgf@countb=\count344
-\c@pgf@countc=\count345
-\c@pgf@countd=\count346
-\t@pgf@toka=\toks44
-\t@pgf@tokb=\toks45
-\t@pgf@tokc=\toks46
-\pgf@sys@id@count=\count347
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2019/02/02 v3.1.1 (3.1.1)
-)
-Driver file for pgf: pgfsys-luatex.def
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
-File: pgfsys-luatex.def 2019/02/02 v3.1.1 (3.1.1)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
-f
-File: pgfsys-common-pdf.def 2019/02/02 v3.1.1 (3.1.1)
-)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
-tex
-File: pgfsyssoftpath.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfsyssoftpath@smallbuffer@items=\count348
-\pgfsyssoftpath@bigbuffer@items=\count349
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
-tex
-File: pgfsysprotocol.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: luatex.def on input line 225.
-LaTeX Info: Redefining \color on input line 709.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2019/02/02 v3.1.1 (3.1.1)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen277
-\pgfmath@count=\count350
-\pgfmath@box=\box84
-\pgfmath@toks=\toks47
-\pgfmath@stack@operand=\toks48
-\pgfmath@stack@operation=\toks49
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
-ric.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
-e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
-.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
-thmetics.code.tex)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count351
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
-x
-File: pgfcorepoints.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@picminx=\dimen278
-\pgf@picmaxx=\dimen279
-\pgf@picminy=\dimen280
-\pgf@picmaxy=\dimen281
-\pgf@pathminx=\dimen282
-\pgf@pathmaxx=\dimen283
-\pgf@pathminy=\dimen284
-\pgf@pathmaxy=\dimen285
-\pgf@xx=\dimen286
-\pgf@xy=\dimen287
-\pgf@yx=\dimen288
-\pgf@yy=\dimen289
-\pgf@zx=\dimen290
-\pgf@zy=\dimen291
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
-code.tex
-File: pgfcorepathconstruct.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@path@lastx=\dimen292
-\pgf@path@lasty=\dimen293
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
-.tex
-File: pgfcorepathusage.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@shorten@end@additional=\dimen294
-\pgf@shorten@start@additional=\dimen295
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
-x
-File: pgfcorescopes.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfpic=\box85
-\pgf@hbox=\box86
-\pgf@layerbox@main=\box87
-\pgf@picture@serial@count=\count352
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
-ode.tex
-File: pgfcoregraphicstate.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgflinewidth=\dimen296
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
-s.code.tex
-File: pgfcoretransformations.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@pt@x=\dimen297
-\pgf@pt@y=\dimen298
-\pgf@pt@temp=\dimen299
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
-ex
-File: pgfcoreobjects.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
-.code.tex
-File: pgfcorepathprocessing.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
-x
-File: pgfcorearrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfarrowsep=\dimen300
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@max=\dimen301
-\pgf@sys@shading@range@num=\count353
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2019/02/02 v3.1.1 (3.1.1)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
-tex
-File: pgfcoreexternal.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfexternal@startupbox=\box88
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
-x
-File: pgfcorelayers.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
-ode.tex
-File: pgfcoretransparency.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
-tex
-File: pgfcorepatterns.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfnodeparttextbox=\box89
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
-.sty
-Package: pgfcomp-version-0-65 2019/02/02 v3.1.1 (3.1.1)
-\pgf@nodesepstart=\dimen302
-\pgf@nodesepend=\dimen303
-)
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
-.sty
-Package: pgfcomp-version-1-18 2019/02/02 v3.1.1 (3.1.1)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2019/02/02 v3.1.1 (3.1.1)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen304
-\pgffor@skip=\dimen305
-\pgffor@stack=\toks50
-\pgffor@toks=\toks51
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2019/02/02 v3.1.1 (3.1.1)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
-.code.tex
-File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@plot@mark@count=\count354
-\pgfplotmarksize=\dimen306
-)
-\tikz@lastx=\dimen307
-\tikz@lasty=\dimen308
-\tikz@lastxsaved=\dimen309
-\tikz@lastysaved=\dimen310
-\tikzleveldistance=\dimen311
-\tikzsiblingdistance=\dimen312
-\tikz@figbox=\box90
-\tikz@figbox@bg=\box91
-\tikz@tempbox=\box92
-\tikz@tempbox@bg=\box93
-\tikztreelevel=\count355
-\tikznumberofchildren=\count356
-\tikznumberofcurrentchild=\count357
-\tikz@fig@count=\count358
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfmatrixcurrentrow=\count359
-\pgfmatrixcurrentcolumn=\count360
-\pgf@matrix@numberofcolumns=\count361
-)
-\tikz@expandcount=\count362
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
-))) (./exercices-graphes-parcours.aux)
-\openout1 = exercices-graphes-parcours.aux
+(./collection-bd.aux)
+\openout1 = collection-bd.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -1230,8 +948,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 15.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 15.
@@ -1340,17 +1057,17 @@ LaTeX Info: Redefining \up on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen313
-\scratchbox=\box94
-\nofMPsegments=\count364
-\nofMParguments=\count365
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen314
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count343
+\scratchdimen=\dimen267
+\scratchbox=\box83
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen268
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1368,11 +1085,11 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
-\c@lstlisting=\count369
+\c@lstlisting=\count349
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box95
+\AtBeginShipoutBox=\box84
 Package hyperref Info: Link coloring ON on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1381,110 +1098,96 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count370
+\c@section@level=\count350
 )
 LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
 
-(./exercices-graphes-parcours.out) (./exercices-graphes-parcours.out)
-\@outlinefile=\write5
+(./collection-bd.out) (./collection-bd.out)
+\@outlinefile=\write4
 
-\openout5 = exercices-graphes-parcours.out
-
-ABD: EveryShipout initializing macros
+\openout4 = collection-bd.out
 LaTeX Font Info:    Try loading font information for U+pzd on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+<ressources/biblio.jpg, id=35, 602.25pt x 803.0pt>
+File: ressources/biblio.jpg Graphic file (type jpg)
+<use ressources/biblio.jpg>
+Package luatex.def Info: ressources/biblio.jpg  used on input line 21.
+(luatex.def)             Requested size: 85.35826pt x 113.80379pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 40.
-See the caption package documentation for explanation.
-
-<ressources/pont-konisberg.png, id=21, 303.1325pt x 238.8925pt>
-File: ressources/pont-konisberg.png Graphic file (type png)
-<use ressources/pont-konisberg.png>
-Package luatex.def Info: ressources/pont-konisberg.png  used on input line 63.
-(luatex.def)             Requested size: 142.26378pt x 112.11545pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (10.79996pt too wide) in paragraph at lines 84--85
- [][] 
+Overfull \hbox (10.79996pt too wide) in paragraph at lines 27--28
+ [] 
  []
 
+<ressources/approche-1.png, id=37, 2332.715pt x 451.6875pt>
+File: ressources/approche-1.png Graphic file (type png)
+<use ressources/approche-1.png>
+Package luatex.def Info: ressources/approche-1.png  used on input line 33.
+(luatex.def)             Requested size: 426.79134pt x 82.63731pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=23, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=39, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 85.
+input line 58.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-<./ressources/pont-konisberg.png></home/tof/Documents/Cozy/latex-include/cc.png>
-]
+<./ressources/biblio.jpg><./ressources/approche-1.png></home/tof/Documents/Cozy/
+latex-include/cc.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 128.
+input line 61.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [2]
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 128.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
- (./exercices-graphes-parcours.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
-Package rerunfilecheck Info: File `exercices-graphes-parcours.out' has not chang
-ed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+ (./collection-bd.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package rerunfilecheck Info: File `collection-bd.out' has not changed.
+(rerunfilecheck)             Checksum: C4622A9D1B926A57D21E51D55564B750;693.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37611 strings out of 494383
- 100000,953878 words of node,token memory allocated
- 29138 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 41 glue, 4 kern, 1 penalty, 3830 glyph, 668 attribu
-te, 58 glue_spec, 113 attribute_list, 1 write nodes
-   avail lists: 1:6,2:3426,3:390,4:65,5:210,6:47,7:3481,8:50,9:280,10:6,11:217
- 40740 multiletter control sequences out of 65536+600000
- 50 fonts using 7526479 bytes
- 55i,15n,95p,1121b,722s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
-f/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/ope
-ntype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lm
-roman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.
-otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on exercices-graphes-parcours.pdf (3 pages, 92494 bytes).
+ 27330 strings out of 494383
+ 100000,794899 words of node,token memory allocated
+ 10959 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 12 glue, 4 kern, 1 penalty, 1386 glyph, 296 attribu
+te, 58 glue_spec, 51 attribute_list, 1 write nodes
+   avail lists: 1:3,2:1459,3:164,4:40,5:139,6:36,7:1844,8:50,9:177,10:14,11:157
+ 30863 multiletter control sequences out of 65536+600000
+ 54 fonts using 8053199 bytes
+ 55i,15n,95p,1108b,617s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/
+fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/p
+ublic/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lm
+roman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.ot
+f></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on collection-bd.pdf (2 pages, 313199 bytes).
 
-PDF statistics: 121 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 131072)
- 66 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 106 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 131072)
+ 91 words of extra memory for PDF output out of 10000 (max. 100000000)
 

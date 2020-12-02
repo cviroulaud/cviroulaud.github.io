@@ -39,21 +39,67 @@ Dans ce tableau, l'ajout d'une colonne \emph{emprunteur} permettrait de gérer l
 \begin{activite}
 Établir les limites de cette approche.
 \end{activite}
-\section{Modèle de données}
-\subsection{Modèle relationnel}
-La première étape est de définir la manière dont les données vont être représentées. Le \emph{modèle relationnel} est un des plus populaires. Dans ce modèle:
-\begin{itemize}
-\item Une \textbf{entité} (la bande dessinée) est un objet représenté par un n-uplet de valeurs scalaires.
-\item Une \textbf{relation} (la collection) est l'ensemble des entités.
-\end{itemize}
 \begin{commentprof}
-on peut s'arrêter à un csv mais:
 \begin{itemize}
 \item 2000 entrées = gérables par Python, mais si on veut étendre notre système à structure plus importante?
 \item comment gérer modifications efficacement (ex: changement titre d'une série?)
+\item Si on veut plus d'infos sur l'emprunteur (nom, date anniversaire, nb BD empruntées), les colonnes ajoutées sont-elles pertinentes dans ce tableau? Quand il rend un livre il faut vérifier/modifier beaucoup de lignes.
+\item Que se passe-t-il si on change le titre d'une BD? L'emprunteur a-t-il vraiment pris ce livre?
 \end{itemize}
-scalaire = atomique
-\subsection{Contexte historique}
+\end{commentprof}
+\section{Modèle de données}
+\subsection{Modèle relationnel}
+La première étape est de définir la manière dont les données vont être représentées. Le \emph{modèle relationnel} est un des plus populaires. Dans ce modèle théorique:
+\begin{itemize}
+\item Une \textbf{entité} est un objet représenté par un n-uplet de valeurs scalaires. Une bande dessinée est une \emph{entité}:
+\begin{center}
+(Captain Biceps, L'invincible, 1, 2723445771, Humour, Zep, Tébo, Glénat, 2004-04-01)
+\end{center}
+\item Une \textbf{relation} est l'ensemble des entités. On parle aussi de \emph{table}. La collection  de bandes dessinées est une \emph{relation}:
+\begin{center}
+(Captain Biceps, L'invincible, 1, 2723445771, Humour, Zep, Tébo, Glénat, 2004-04-01),\\
+\small{(Caravane, Mila, 1, 2756004073, Aventure, Milhiet Olivier, Milhiet Olivier, Delcourt, 2008-04-02)},\\
+(Kick-Ass, Le premier vrai super-héros, 1, 2809409994, Comics, Millar Mark, Romita Jr John, Panini Comics, 2010-03-17)
+
+\end{center}
+\item Une \emph{relation} possède des \textbf{attributs}. La relation des bandes dessinées possède les attributs:
+\begin{center}
+(serie, titre, tome, isbn, genre, scenariste, dessinateur, editeur, date\_parution)
+\end{center}
+\item Chacun de ces attributs est défini dans un domaine.
+\begin{center}
+\begin{tabular}{|cc|}
+\hline 
+\multicolumn{2}{|c|}{bandes\_dessinees} \\ 
+\hline 
+serie & String \\ 
+titre & String \\ 
+tome & Integer \\ 
+isbn & String \\ 
+genre & String \\ 
+scenariste & String \\ 
+dessinateur & String \\ 
+editeur & String \\ 
+date\_parution & Date \\ 
+\hline 
+\end{tabular} 
+\captionof{code}{\textbf{Schéma} de la relation bandes\_dessinees}
+\end{center}
+\end{itemize}
+\begin{commentprof}
+scalaire = atomique\\
+ISBN est un String car:
+\begin{itemize}
+\item certains ISBN-10 ont des lettres (cf back world)
+\item ISBN-13 de la forme 978-2723452144 (avec un tiret)
+\end{itemize}
+\end{commentprof}
+\begin{activite}
+Sur le même modèle définir la relation des emprunteurs.
+\end{activite}
+\begin{commentprof}
+la relation \emph{emprunteurs}: on pourrait encore mieux faire (le décompte des emprunts dans une autre table)
+\subsection*{Contexte historique}
 
 \end{commentprof}
 

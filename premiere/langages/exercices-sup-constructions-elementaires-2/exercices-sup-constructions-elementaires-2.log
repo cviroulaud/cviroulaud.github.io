@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  1 DEC 2020 23:42
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  1 DEC 2020 12:27
  restricted system commands enabled.
-**collection-bd.tex
-(./collection-bd.tex
+**exercices-sup-constructions-elementaires-2.tex
+(./exercices-sup-constructions-elementaires-2.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.076 seconds
+luaotfload | main : initialization completed in 0.074 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -929,8 +929,8 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \c@compteuractivite=\count341
 \c@compteurexo=\count342
 )
-(./collection-bd.aux)
-\openout1 = collection-bd.aux
+(./exercices-sup-constructions-elementaires-2.aux)
+\openout1 = exercices-sup-constructions-elementaires-2.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -948,7 +948,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 15.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 15.
@@ -1104,109 +1105,88 @@ LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
 
-(./collection-bd.out) (./collection-bd.out)
+(./exercices-sup-constructions-elementaires-2.out)
+(./exercices-sup-constructions-elementaires-2.out)
 \@outlinefile=\write4
 
-\openout4 = collection-bd.out
+\openout4 = exercices-sup-constructions-elementaires-2.out
 LaTeX Font Info:    Try loading font information for U+pzd on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-<ressources/biblio.jpg, id=35, 602.25pt x 803.0pt>
-File: ressources/biblio.jpg Graphic file (type jpg)
-<use ressources/biblio.jpg>
-Package luatex.def Info: ressources/biblio.jpg  used on input line 21.
-(luatex.def)             Requested size: 85.35826pt x 113.80379pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (10.79996pt too wide) in paragraph at lines 27--28
- [] 
- []
+<ressources/etoile.png, id=15, 170.6375pt x 168.63pt>
+File: ressources/etoile.png Graphic file (type png)
+<use ressources/etoile.png>
+Package luatex.def Info: ressources/etoile.png  used on input line 34.
+(luatex.def)             Requested size: 142.26378pt x 140.5984pt.
+Package hyperref Info: bookmark level for unknown code defaults to 0 on input li
+ne 44.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 
-<ressources/approche-1.png, id=37, 2332.715pt x 451.6875pt>
-File: ressources/approche-1.png Graphic file (type png)
-<use ressources/approche-1.png>
-Package luatex.def Info: ressources/approche-1.png  used on input line 33.
-(luatex.def)             Requested size: 426.79134pt x 82.63731pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=39, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=18, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 54.
+input line 49.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-<./ressources/biblio.jpg><./ressources/approche-1.png></home/tof/Documents/Cozy/
-latex-include/cc.png>]
+<./ressources/etoile.png></home/tof/Documents/Cozy/latex-include/cc.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 86.
-See the caption package documentation for explanation.
-
-Package hyperref Info: bookmark level for unknown code defaults to 0 on input li
-ne 86.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 106.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
- (./collection-bd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
-
-
-Package rerunfilecheck Warning: File `collection-bd.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `collection-bd.out':
-(rerunfilecheck)             Before: C4622A9D1B926A57D21E51D55564B750;693
-(rerunfilecheck)             After:  ACCF2CFE21E48FBBF3DBB2ABE8E1B2DE;538.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(./exercices-sup-constructions-elementaires-2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+Package rerunfilecheck Info: File `exercices-sup-constructions-elementaires-2.ou
+t' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27337 strings out of 494383
+ 27497 strings out of 494383
  100000,794899 words of node,token memory allocated
- 20059 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 19 glue, 4 kern, 1 penalty, 2599 glyph, 536 attribu
-te, 58 glue_spec, 91 attribute_list, 1 write nodes
-   avail lists: 1:3,2:1442,3:159,4:44,5:152,6:33,7:2097,8:60,9:174,10:16,11:163
- 30867 multiletter control sequences out of 65536+600000
- 55 fonts using 8184879 bytes
- 55i,15n,95p,1108b,652s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 4519 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 9 glue, 4 kern, 1 penalty, 487 glyph, 242 attribute
+, 58 glue_spec, 42 attribute_list, 1 write nodes
+   avail lists: 1:3,2:1419,3:84,4:124,5:163,6:24,7:764,8:111,9:261,10:8,11:36
+ 31049 multiletter control sequences out of 65536+600000
+ 51 fonts using 7652559 bytes
+ 55i,15n,95p,1137b,928s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
+f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
+/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/
+lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.o
+tf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/
+texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on exercices-sup-constructions-elementaires-2.pdf (1 page, 79240
+ bytes).
 
-warning  (pdf backend): unreferenced destination with name 'subsection.3.2'
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/
-fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/p
-ublic/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lm
-roman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.ot
-f></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on collection-bd.pdf (2 pages, 317819 bytes).
-
-PDF statistics: 108 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 131072)
- 91 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 115 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 131072)
+ 51 words of extra memory for PDF output out of 10000 (max. 100000000)
 

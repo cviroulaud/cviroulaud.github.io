@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 DEC 2020 20:57
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 DEC 2020 21:21
  restricted system commands enabled.
-**type-construit-temperature.tex
-(./type-construit-temperature.tex
+**formation-python-exercices.tex
+(./formation-python-exercices.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.073 seconds
+luaotfload | main : initialization completed in 0.069 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1315,98 +1315,98 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@zref@counter=\count369
 Package zref Info: New property: mdf@pagevalue on input line 895.
 ))
-(./type-construit-temperature.aux)
-\openout1 = type-construit-temperature.aux
+(./formation-python-exercices.aux)
+\openout1 = formation-python-exercices.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 11.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 11.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 11.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 11.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 11.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 11.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 11.
-LaTeX Font Info:    Redeclaring math accent \check on input line 11.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 11.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 11.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 11.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 11.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 11.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 15.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 15.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 15.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 15.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 15.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 15.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 15.
+LaTeX Font Info:    Redeclaring math accent \check on input line 15.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 15.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 15.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 15.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 15.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 15.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 11.
+(Font)              `operators' in the math version `normal' on input line 15.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 11.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 15.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 11.
+(Font)              `operators' in the math version `bold' on input line 15.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 11.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 15.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 11.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 11.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 11.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 11.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 11.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 15.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 11.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 11.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 11.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 11.
-LaTeX Info: Redefining \dots on input line 11.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 15.
+LaTeX Info: Redefining \dots on input line 15.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 11.
+(french.ldf)             reported on input line 15.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 11.
-LaTeX Info: Redefining \up on input line 11.
+(french.ldf)             reported on input line 15.
+LaTeX Info: Redefining \up on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1477,7 +1477,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box100
-Package hyperref Info: Link coloring ON on input line 11.
+Package hyperref Info: Link coloring ON on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1487,124 +1487,75 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count377
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
 
-(./type-construit-temperature.out) (./type-construit-temperature.out)
+(./formation-python-exercices.out) (./formation-python-exercices.out)
 \@outlinefile=\write5
 
-\openout5 = type-construit-temperature.out
+\openout5 = formation-python-exercices.out
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+pzd on input line 13.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-<ressources/extrait.png, id=62, 431.6125pt x 403.5075pt>
-File: ressources/extrait.png Graphic file (type png)
-<use ressources/extrait.png>
-Package luatex.def Info: ressources/extrait.png  used on input line 20.
-(luatex.def)             Requested size: 142.26378pt x 132.9978pt.
-Package hyperref Info: bookmark level for unknown code defaults to 0 on input li
-ne 32.
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 14.03358pt.
+Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=63, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=31, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 61.
+input line 80.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-<./ressources/extrait.png></home/tof/Documents/Cozy/latex-include/cc.png>]
-(./scripts/temperature-france.py) (./scripts/temperature-france.py)
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 104.
-See the caption package documentation for explanation.
-
+</home/tof/Documents/Cozy/latex-include/cc.png>]
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 107.
+input line 123.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[2]
-<ressources/temp.png, id=122, 433.62pt x 289.08pt>
-File: ressources/temp.png Graphic file (type png)
-<use ressources/temp.png>
-Package luatex.def Info: ressources/temp.png  used on input line 110.
-(luatex.def)             Requested size: 227.62204pt x 151.74721pt.
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 142.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [3<./ressources/temp.png>]
+ [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 143.
-See the caption package documentation for explanation.
-
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 170.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
- (./type-construit-temperature.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
-Package rerunfilecheck Info: File `type-construit-temperature.out' has not chang
+(./formation-python-exercices.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
+Package rerunfilecheck Info: File `formation-python-exercices.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 3D4A2E016B1EE44040F4952C27632852;1542.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 6FF0DF22A922CF15EAEFE028203EAF58;446.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38832 strings out of 494383
- 195338,953878 words of node,token memory allocated
- 37635 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 4545 glyph, 2162 attrib
-ute, 97 glue_spec, 362 attribute_list, 1 write nodes
-   avail lists: 1:8,2:13529,3:472,4:3670,5:3278,6:54,7:2867,8:2759,9:5139,10:23,
-11:430
- 41844 multiletter control sequences out of 65536+600000
- 55 fonts using 8179279 bytes
- 74i,16n,95p,1121b,929s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/
-fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/p
-ublic/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
-8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.o
-tf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/tex
-mf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/openty
-pe/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/urw
-/zapfding/uzdr.pfb>
-Output written on type-construit-temperature.pdf (4 pages, 82926 bytes).
+ 38564 strings out of 494383
+ 100000,953878 words of node,token memory allocated
+ 22795 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 29 glue, 4 kern, 1 penalty, 2802 glyph, 986 attribu
+te, 97 glue_spec, 166 attribute_list, 1 write nodes
+   avail lists: 1:4,2:5578,3:186,4:1491,5:1327,6:52,7:2565,8:1125,9:2115,10:9,11
+:205
+ 41690 multiletter control sequences out of 65536+600000
+ 33 fonts using 6537479 bytes
+ 74i,15n,95p,1121b,911s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
+f/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype
+/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmrom
+an10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></us
+r/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/f
+onts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/font
+s/type1/urw/zapfding/uzdr.pfb>
+Output written on formation-python-exercices.pdf (2 pages, 39137 bytes).
 
-PDF statistics: 214 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 71 named destinations out of 1000 (max. 131072)
- 154 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 140 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 131072)
+ 90 words of extra memory for PDF output out of 10000 (max. 100000000)
 

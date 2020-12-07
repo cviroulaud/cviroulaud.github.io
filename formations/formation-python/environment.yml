@@ -1,5 +1,0 @@
-name: tof-environment
-channels:
-  - conda-forge
-dependencies:
-  - matplotlib

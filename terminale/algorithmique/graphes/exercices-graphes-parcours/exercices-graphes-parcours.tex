@@ -115,12 +115,12 @@ pour les + avancés: transformer les fonctions en méthodes dans Graphe
 \begin{exo}
 Il n'est pas obligatoire d'utiliser une file pour réaliser un parcours en largeur. Nous pouvons par exemple nous servir de deux ensembles:
 \begin{itemize}
-\item \textbf{voisins:} qui contiendra les sommets voisins du sommet d'origine,
-\item \textbf{prochains:} qui contiendra les sommets à une distance $n+1$ du sommet d'origine et qui seront visités après ceux de l'ensemble \emph{voisins}.
+\item \textbf{voisins:} qui contiendra, au fur et à mesure de l'avancement, les sommets voisins du sommet d'origine,
+\item \textbf{prochains:} qui contiendra, au fur et à mesure de l'avancement, les sommets à une distance $n+1$ du sommet d'origine et qui seront visités après ceux de l'ensemble \emph{voisins}.
 \end{itemize}
 Quand l'ensemble \emph{voisins} est vide, il suffit de le remplir avec les sommets de \emph{prochains}.
 \begin{enumerate}
-\item Écrire la fonction \textbf{BFS\_dico(graphe: Graphe, origine: str)$\;\rightarrow\;$dict} qui associe chaque sommet au sommet depuis lequel on l'a atteint lors du parcours en largeur.
+\item Écrire la fonction \textbf{BFS\_dico(graphe: Graphe, sommet: str)$\;\rightarrow\;$dict} qui associe chaque sommet au sommet depuis lequel on l'a atteint lors du parcours en largeur.
 \item Écrire la fonction \textbf{chemin(graphe: Graphe, depart: str, arrivee: str)$\;\rightarrow\;$list} qui renvoie un chemin entre \emph{depart} et \emph{arrivee}. Cette fonction utilisera \emph{BFS\_dico}.
 \end{enumerate}
 \end{exo}

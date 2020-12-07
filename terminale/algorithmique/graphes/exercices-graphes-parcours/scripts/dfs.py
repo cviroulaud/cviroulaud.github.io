@@ -29,7 +29,7 @@ def DFS_rec_dico(graphe: Graphe, sommet: str, origine: str = None, visites: dict
 
 def chemin(graphe: Graphe, depart: str, arrivee: str)->list:
     # parcours en profondeur
-    parcours = DFS_rec_dico(g, "D")
+    parcours = DFS_rec_dico(graphe, depart)
 
     # si arrivee n'est pas atteignable
     if arrivee not in parcours:

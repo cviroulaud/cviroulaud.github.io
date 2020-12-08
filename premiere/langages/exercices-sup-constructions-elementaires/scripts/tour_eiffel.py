@@ -9,7 +9,7 @@ Date de création Mon Nov 23 16:31:49 2020
 
 epaisseur = 0.1
 pli = 0
-while epaisseur < 324:
+while epaisseur < 324000:
     epaisseur *= 2
     # ou bien
     # epaisseur = epaisseur * 2

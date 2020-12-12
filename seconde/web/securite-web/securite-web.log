@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  8 DEC 2020 13:31
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 DEC 2020 16:37
  restricted system commands enabled.
-**BDD-bandes-dessinees.tex
-(./BDD-bandes-dessinees.tex
+**securite-web.tex
+(./securite-web.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.150 seconds
+luaotfload | main : initialization completed in 0.077 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1337,8 +1337,8 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@zref@counter=\count372
 Package zref Info: New property: mdf@pagevalue on input line 895.
 ))
-(./BDD-bandes-dessinees.aux)
-\openout1 = BDD-bandes-dessinees.aux
+(./securite-web.aux)
+\openout1 = securite-web.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -1356,8 +1356,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 15.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 15.
@@ -1513,10 +1512,10 @@ LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
 
-(./BDD-bandes-dessinees.out) (./BDD-bandes-dessinees.out)
+(./securite-web.out) (./securite-web.out)
 \@outlinefile=\write5
 
-\openout5 = BDD-bandes-dessinees.out
+\openout5 = securite-web.out
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Try loading font information for U+pzd on input line 17.
@@ -1524,148 +1523,89 @@ LaTeX Font Info:    Try loading font information for U+pzd on input line 17.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<ressources/mysql.png, id=30, 98.3675pt x 100.375pt>
-File: ressources/mysql.png Graphic file (type png)
-<use ressources/mysql.png>
-Package luatex.def Info: ressources/mysql.png  used on input line 37.
-(luatex.def)             Requested size: 72.55157pt x 74.03127pt.
-<ressources/oracle.png, id=31, 24.09pt x 24.09pt>
-File: ressources/oracle.png Graphic file (type png)
-<use ressources/oracle.png>
-Package luatex.def Info: ressources/oracle.png  used on input line 38.
-(luatex.def)             Requested size: 72.55157pt x 72.56345pt.
-<ressources/postgresql.png, id=32, 24.09pt x 24.09pt>
-File: ressources/postgresql.png Graphic file (type png)
-<use ressources/postgresql.png>
-Package luatex.def Info: ressources/postgresql.png  used on input line 39.
-(luatex.def)             Requested size: 72.55157pt x 72.56345pt.
-<ressources/maria.png, id=33, 24.09pt x 24.09pt>
-File: ressources/maria.png Graphic file (type png)
-<use ressources/maria.png>
-Package luatex.def Info: ressources/maria.png  used on input line 41.
-(luatex.def)             Requested size: 72.55157pt x 72.56345pt.
-<ressources/sqlite.png, id=34, 24.09pt x 24.09pt>
-File: ressources/sqlite.png Graphic file (type png)
-<use ressources/sqlite.png>
-Package luatex.def Info: ressources/sqlite.png  used on input line 43.
-(luatex.def)             Requested size: 72.55157pt x 72.56345pt.
+Underfull \hbox (badness 3302) in paragraph at lines 31--32
+[]\TU/lmr/m/n/10.95 Ou-vrir une fe-nêtre de na-vi-ga-tion pri-vée dans le na-
+vi-ga-teur. La page sui-vante
+ []
 
+<ressources/post-ff.png, id=45, 624.3325pt x 54.2025pt>
+File: ressources/post-ff.png Graphic file (type png)
+<use ressources/post-ff.png>
+Package luatex.def Info: ressources/post-ff.png  used on input line 64.
+(luatex.def)             Requested size: 199.16928pt x 17.29056pt.
+<ressources/post-chrome.png, id=46, 716.6775pt x 242.9075pt>
+File: ressources/post-chrome.png Graphic file (type png)
+<use ressources/post-chrome.png>
+Package luatex.def Info: ressources/post-chrome.png  used on input line 75.
+(luatex.def)             Requested size: 184.9429pt x 62.68373pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 66.
-
-</home/tof/Documents/Cozy/latex-include/cc.png, id=35, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=48, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 66.
+input line 80.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-<./ressources/mysql.png><./ressources/oracle.png><./ressources/postgresql.png><.
-/ressources/maria.png><./ressources/sqlite.png></home/tof/Documents/Cozy/latex-i
-nclude/cc.png>]
-<ressources/modeles.png, id=53, 702.625pt x 321.2pt>
-File: ressources/modeles.png Graphic file (type png)
-<use ressources/modeles.png>
-Package luatex.def Info: ressources/modeles.png  used on input line 69.
-(luatex.def)             Requested size: 284.52756pt x 130.07059pt.
-<ressources/requete-http.png, id=54, 513.92pt x 211.79124pt>
-File: ressources/requete-http.png Graphic file (type png)
-<use ressources/requete-http.png>
-Package luatex.def Info: ressources/requete-http.png  used on input line 85.
-(luatex.def)             Requested size: 284.52756pt x 117.2579pt.
-
-
-LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 92.
-
+</home/tof/Documents/Cozy/latex-include/cc.png>]
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 92.
+input line 101.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[2<./ressources/modeles.png><./ressources/requete-http.png>]
-Missing character: There is no à (U+00E0) in font cmmi10!
-
-
-LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 150.
-
+ [2<./ressources/post-ff.png><./ressources/post-chrome.png>]
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 150.
+input line 111.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[3]
-
-LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 176.
-
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 176.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
- (./BDD-bandes-dessinees.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
-
-
-Package rerunfilecheck Warning: File `BDD-bandes-dessinees.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `BDD-bandes-dessinees.out':
-(rerunfilecheck)             Before: 6D99DD3839E412DBF32A1C7727A51A64;329
-(rerunfilecheck)             After:  E9B69F9FC271E86CE08A200BFA769906;1444.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
+ (./securite-web.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
+Package rerunfilecheck Info: File `securite-web.out' has not changed.
+(rerunfilecheck)             Checksum: 7331848D0D67CA18F55C22DB5E400E04;851.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38908 strings out of 494383
+ 38849 strings out of 494383
  100000,953878 words of node,token memory allocated
- 37292 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 49 glue, 4 kern, 1 penalty, 4873 glyph, 926 attribu
-te, 97 glue_spec, 156 attribute_list, 1 write nodes
-   avail lists: 1:4,2:2429,3:252,4:58,5:177,6:36,7:1689,8:90,9:256,10:15,11:169
- 41932 multiletter control sequences out of 65536+600000
- 56 fonts using 8223615 bytes
- 74i,15n,95p,1115b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 21339 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 31 glue, 4 kern, 1 penalty, 2682 glyph, 716 attribu
+te, 97 glue_spec, 121 attribute_list, 1 write nodes
+   avail lists: 1:4,2:3227,3:303,4:105,5:212,6:54,7:2629,8:71,9:262,10:10,11:230
+
+ 41903 multiletter control sequences out of 65536+600000
+ 55 fonts using 8092991 bytes
+ 74i,15n,95p,1107b,1062s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
-f/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/ope
-ntype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/
-lmroman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf
-></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/te
-xmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfdin
-g/uzdr.pfb>
-Output written on BDD-bandes-dessinees.pdf (4 pages, 161145 bytes).
+f/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype
+/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
+12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></u
+sr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on securite-web.pdf (3 pages, 69362 bytes).
 
 PDF statistics: 157 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 131072)
- 90 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 121 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 131072)
+ 114 words of extra memory for PDF output out of 10000 (max. 100000000)
 

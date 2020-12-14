@@ -19,7 +19,7 @@ Le Sudoku est un jeu aux règles simples mais qui offre un nombre de combinaison
 \begin{commentprof}
 et encore plus de 5 milliards si on prend en compte un certains nombres de symétries, permutations...
 \end{commentprof}
-Il existe plusieurs variantes, mais les règle de base sont:
+Il existe plusieurs variantes, mais les règles de base sont:
 \begin{itemize}
 \item chaque ligne ne contient qu'une série de chiffres de 1 à 9
 \item chaque colonne ne contient qu'une série de chiffres de 1 à 9
@@ -149,7 +149,7 @@ Formalisons cet algorithme:
 \item Remplir récursivement la case suivante et remonter \emph{True} dans la pile d'appel si le placement est correct.
 \end{itemize}
 \end{itemize}
-Tous les chiffres ont été testés et aucun ne fonctionne: 
+\item \# Tous les chiffres ont été testés et aucun ne fonctionne: 
 \item Réinitialiser la valeur de la case.
 \item Remonter \emph{False} dans la pile d'appel.
 \end{itemize}
@@ -167,11 +167,11 @@ Pire cela peut créer une situation bloquante où il devient impossible de compl
 En pratique à chaque retrait d'un chiffre, il faut vérifier que la partie est réalisable et la grille correcte.
 \subsection{Résoudre une partie}
 En modifiant légèrement la classe \emph{Sudoku}, il est possible de résoudre des parties rapidement. Il faut tout d'abord initialiser la grille avec les indices, puis modifier la fonction récursive pour qu'elle ne touche pas les cases fixées au départ.
-\begin{figure}[!h]
+\begin{center}
 \centering
-\includegraphics[width=5cm]{ressources/partie.png}
+\includegraphics[width=8cm]{ressources/partie.png}
 \captionof{figure}{À vous de jouer!}
 \label{partie}
-\end{figure}
+\end{center}
 \end{Form}
 \end{document}

@@ -13484,12 +13484,12 @@ a.anchor-link {
 <li>Sinon, pour chaque chiffre:<ul>
 <li>S'il peut être positionné:<ul>
 <li>Le placer dans la grille.</li>
-<li>Remplir récursivement la case suivante et remonter True dans la pile d'appel si le placement est correct.
-Tous les chiffres ont été testés et aucun ne fonctionne: </li>
+<li>Remplir récursivement la case suivante et remonter True dans la pile d'appel si le placement est correct.</li>
 </ul>
 </li>
 </ul>
 </li>
+<li># Tous les chiffres ont été testés et aucun ne fonctionne: </li>
 <li>Réinitialiser la valeur de la case.</li>
 <li>Remonter False dans la pile d'appel.</li>
 </ul>
@@ -13664,7 +13664,123 @@ Tous les chiffres ont été testés et aucun ne fonctionne: </li>
 </div>
 </div>
 
-</div></section></section>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.-Affichage">4. Affichage<a class="anchor-link" href="#4.-Affichage">&#182;</a></h2><h4 id="Activit&#233;-6">Activit&#233; 6<a class="anchor-link" href="#Activit&#233;-6">&#182;</a></h4><p>Écrire la méthode <strong>afficher(self)$\;\rightarrow\;$None</strong> qui utilise la bibliothèque <em>tkinter</em> pour réaliser un affichage de la grille.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">afficher</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">taille_case</span> <span class="o">=</span> <span class="mi">100</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fenetre</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fenetre</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Sudoku&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canevas</span> <span class="o">=</span> <span class="n">Canvas</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fenetre</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="n">taille_case</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">taille</span><span class="p">,</span>
+                                          <span class="n">height</span><span class="o">=</span><span class="n">taille_case</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">taille</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canevas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>    <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">taille</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">taille</span><span class="p">):</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>                <span class="c1"># ligne verticale</span>
+                <span class="k">if</span> <span class="n">c</span><span class="o">%</span><span class="k">sqrt</span>(self.taille) == 0:
+                    <span class="n">trait_vert</span> <span class="o">=</span> <span class="mi">3</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">trait_vert</span> <span class="o">=</span> <span class="mi">1</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">canevas</span><span class="o">.</span><span class="n">create_line</span><span class="p">(</span><span class="n">taille_case</span><span class="o">*</span><span class="n">c</span><span class="p">,</span>
+                                     <span class="mi">0</span><span class="p">,</span>
+                                     <span class="n">taille_case</span><span class="o">*</span><span class="n">c</span><span class="p">,</span>
+                                     <span class="n">taille_case</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">taille</span><span class="p">,</span>
+                                     <span class="n">width</span><span class="o">=</span><span class="n">trait_vert</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>                <span class="c1"># ligne horizontale</span>
+                <span class="k">if</span> <span class="n">l</span><span class="o">%</span><span class="k">sqrt</span>(self.taille) == 0:
+                    <span class="n">trait_hori</span> <span class="o">=</span> <span class="mi">3</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">trait_hori</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">canevas</span><span class="o">.</span><span class="n">create_line</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span>
+                                         <span class="n">taille_case</span><span class="o">*</span><span class="n">l</span><span class="p">,</span>
+                                         <span class="n">taille_case</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">taille</span><span class="p">,</span>
+                                         <span class="n">taille_case</span><span class="o">*</span><span class="n">l</span><span class="p">,</span>
+                                         <span class="n">width</span><span class="o">=</span><span class="n">trait_hori</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>                <span class="c1"># chiffre</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">canevas</span><span class="o">.</span><span class="n">create_text</span><span class="p">(</span><span class="n">taille_case</span><span class="o">*</span><span class="n">c</span> <span class="o">+</span> <span class="n">taille_case</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span>
+                                         <span class="n">taille_case</span><span class="o">*</span><span class="n">l</span> <span class="o">+</span> <span class="n">taille_case</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span>
+                                         <span class="n">text</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grille</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="n">c</span><span class="p">]),</span>
+                                         <span class="n">font</span><span class="o">=</span><span class="s2">&quot;Arial &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">taille_case</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>        <span class="bp">self</span><span class="o">.</span><span class="n">fenetre</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section></section>
 </div>
 </div>
 

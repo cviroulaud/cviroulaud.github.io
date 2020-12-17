@@ -84,11 +84,11 @@ class Sudoku:
             le prochain sommet.
         """
         x,y = s[0],s[1]
-        if y == (self.taille - 1): # dernière colonne
-            x += 1
-            y = 0
-        else:
+        if x == (self.taille - 1): # dernière colonne
             y += 1
+            x = 0
+        else:
+            x += 1
         return (x,y)
 
     def est_possible(self, s: tuple, choix: int)->bool:
@@ -126,7 +126,7 @@ class Sudoku:
 
         """
         # si on a tout rempli = on sort du tableau
-        if s[0] == self.taille:
+        if s[1] == self.taille:
             return True
 
         # les cases fixées ne sont pas testées
@@ -135,12 +135,13 @@ class Sudoku:
                 return True
         else:
             # test des valeurs possibles
-            choix = list(range(1,self.taille+1))
-            shuffle(choix)
-            for val in choix:
-                # regarde si choix n'est pas déjà dans les voisins
+            chiffres = list(range(1,self.taille+1))
+            shuffle(chiffres)
+            for val in chiffres:
+                # regarde si val n'est pas déjà dans les voisins
                 if self.est_possible(s, val):
                     self.grille[s[0]][s[1]][0] = val
+                    # appelle récursivement la fonction pour la case suivante
                     if self.remplir_rec(self.case_suivante(s)):
                         return True
 

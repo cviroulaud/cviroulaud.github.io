@@ -1,0 +1,114 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Correction exercices - manipulation de base de données}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+\begin{itemize}
+\item colonne, column, attribut
+\item entité, ligne, row
+\item domaine, type
+\item relation, table
+\item schéma (description d'une relation)
+\item base de données (ensemble des relations)
+\end{itemize}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item \begin{itemize}
+\item Especes(\underline{id Integer}, nom String)
+\item Animaux(\underline{id Integer}, nom String, age Integer, \dashuline{id\_espece Integer})
+\item Soins(\underline{id Integer}, \dashuline{id\_animal Integer}, soin String)
+\end{itemize}
+\item Dans un souci de lisibilité il est judicieux d'écrire un attribut par ligne.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+CREATE TABLE Especes (
+		id Integer PRIMARY KEY AUTOINCREMENT, 
+		nom String);
+
+CREATE TABLE Animaux (
+		id Integer PRIMARY KEY AUTOINCREMENT, 
+		nom String, 
+		age Integer, 
+		id_espece Integer, 
+		FOREIGN KEY (id_espece) REFERENCES Especes(id));
+
+CREATE TABLE Soins (
+	id Integer PRIMARY KEY AUTOINCREMENT, 
+	id_animal Integer, 
+	soin String,
+	FOREIGN KEY (id_animal) REFERENCES Animaux(id));
+\end{lstlisting}
+\captionof{code}{Création des trois tables}
+\label{moncode}
+\end{center}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Dans le dossier compressé.
+\item \url{https://fr.wikipedia.org/wiki/Soundex}.
+\item Les codes:
+\begin{center}
+\begin{lstlisting}[language=SQL]
+SELECT * FROM Departements WHERE departement_code = 24;
+
+SELECT * FROM Departements WHERE departement_nom_soundex = 'M200';
+
+SELECT departement_nom FROM Departements WHERE departement_code < 10;
+
+SELECT departement_code, departement_nom FROM Departements WHERE departement_code > 20 AND departement_code < 30;
+
+-- SQLite LIKE operator is case-insensitive. It means "A" LIKE "a" is true.
+-- However, for Unicode characters that are not in the ASCII ranges, the LIKE operator is case sensitive e.g., "Ä" LIKE "ä" is false
+SELECT departement_nom FROM Departements WHERE departement_nom LIKE '%haut%';
+
+SELECT departement_nom FROM Departements WHERE departement_nom NOT LIKE '%-%' AND departement_nom NOT LIKE '% %';
+\end{lstlisting}
+\captionof{code}{Sélections des départements}
+\label{moncode}
+\end{center}
+\begin{aretenir}[Remarque]
+Il est possible de comparer des \emph{String} comme des \emph{Integer}. Le SQL est très permissif: departement\_code est de type \emph{String}, pourtant il accepte la comparaison avec un \emph{Integer}.
+\end{aretenir}
+\end{enumerate}.
+\end{exo}
+\begin{exo}
+\begin{center}
+\begin{lstlisting}[language=SQL]
+SELECT * FROM employees WHERE name = 'GARFIELD';
+
+SELECT name FROM employees WHERE designation = 'MANAGER';
+
+SELECT name FROM employees WHERE name LIKE 'H%';
+
+SELECT name FROM employees WHERE hired_on > '1997-01-01';
+
+SELECT name, salary FROM employees WHERE salary > 25000 AND salary < 55000;
+
+SELECT name, salary FROM employees WHERE salary > 25000 AND salary < 55000 AND commission IS NOT NULL;
+-- ou bien; NULL est différent de 0; commission = 0 ne renverrait rien ici
+SELECT name, salary FROM employees WHERE salary > 25000 AND salary < 55000 AND commission > 0;
+
+INSERT INTO employees (name, designation, manager, hired_on, salary, dept) VALUES ('DURAN', 'TECH', 6, '1999-01-13', 35000, 4);
+
+UPDATE employees SET salary = 60000 WHERE name = 'FILLMORE';
+\end{lstlisting}
+\captionof{code}{Sélections des employés}
+\label{moncode}
+\end{center}
+\end{exo}
+\end{Form}
+\end{document}

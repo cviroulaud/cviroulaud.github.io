@@ -16,7 +16,7 @@
 \begin{Form}
 
 \section{Problématique}
-Le professeur possède une collection importante de bandes dessinées, qu'il complète régulièrement. Une fois dans sa librairie préférée, il lui arrive de ne plus se souvenir où il en est exactement dans ses séries. De plus il prête régulièrement des livres à ces amis et aimerait pouvoir maintenir à jour l'état de ses étagères.
+Le professeur possède une collection importante de bandes dessinées, qu'il complète régulièrement. Une fois dans sa librairie préférée, il lui arrive de ne plus se souvenir où il en est exactement dans ses séries. De plus il prête régulièrement des livres à ses amis et aimerait pouvoir maintenir à jour l'état de ses étagères.
 \begin{figure}[!h]
 \centering
 \includegraphics[width=3cm]{ressources/biblio.jpg}
@@ -92,7 +92,7 @@ Une autre manière de présenter le schéma:
 Bandes\_dessinees(serie \emph{String}, titre \emph{String}, tome \emph{Integer}, isbn \emph{String}, genre \emph{String}, scenariste \emph{String}, dessinateur \emph{String}, editeur \emph{String}, date\_parution \emph{Date})
 \end{itemize}
 \begin{commentprof}
-scalaire = atomique
+scalaire = atomique; définit par un type "de base"$\;\rightarrow\;$carte d'identité d'une personne n'est pas une donnée scalaire. 
 \end{commentprof}
 \begin{activite}
 \begin{enumerate}
@@ -128,7 +128,7 @@ Elle garantit que chaque entité d'une relation est \emph{unique} et l'identifie
 \begin{activite}
 Dans la relation \emph{Bandes\_dessinees}, y-a-t-il un attribut qui garantit cette contrainte?
 \begin{commentprof}
-dans une première approche isbn, même si: isbn-10 et isbn-13 et certains isbn ont des lettres. De plus le csv fournit ne contient pas tous les isbn
+dans une première approche isbn, même si: isbn-10 et isbn-13 et certains isbn ont des lettres. \sout{De plus le csv fournit ne contient pas tous les isbn}
 \end{commentprof}
 \end{activite}
 \begin{aretenir}[]
@@ -146,6 +146,7 @@ ensemble nom-prenom pas suffisant non plus: il existe plusieurs  Christophe Viro
 \end{commentprof}
 \end{activite}
 \subsubsection{Contrainte de référence}
+Elle crée des associations entre deux relations. Elle garantit qu'une entité d'une relation B mentionne une entité existante dans une relation A.
 \begin{activite}
 \begin{enumerate}
 \item Dans l'encadré ci-après, écrire à nouveau la relation \emph{Emprunts} en utilisant les clés primaires des autres relations.

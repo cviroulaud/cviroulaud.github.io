@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adresse de livraison</title>
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body>
+    <div id="conteneur">
+    <form class="form-securite">
+      <div class="form-securite">
+        <label for="nom">Nom </label>
+        <input type="text" id="nom" required>
+      </div>
+      <div class="form-securite">
+        <label for="prenom">Prénom </label>
+        <input type="text" id="prenom" required>
+      </div>
+      <div class="form-securite">
+        <label for="mail">Adresse mail </label>
+        <input type="email" id="mail" required>
+      </div>
+      <div class="form-securite">
+        <label for="phone">Téléphone </label>
+        <input type="tel" id="phone" placeholder="01 23 45 67 89" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required>
+      </div>
+      <div class="form-securite">
+        <label for="naissance">Naissance </label>
+        <input type="date" id="naissance" required>
+      </div>
+      <div class="form-securite">
+        <label for="rue">Rue </label>
+        <input type="text" id="rue" required>
+      </div>
+      <div class="form-securite">
+        <label for="cp">Code postal </label>
+        <input type="number" length="5" id="cp" required>
+      </div>
+      <div class="form-securite">
+        <label for="ville">Ville </label>
+        <input type="text" id="ville" required>
+      </div>
+
+      <div class="form-securite">
+        <input type="submit" value="Envoyer">
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

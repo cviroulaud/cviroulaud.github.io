@@ -1,0 +1,31 @@
+html{
+  background-color: #d1f593;
+  font: 1em "Fira Sans", sans-serif;
+}
+
+body{
+  background: #789e35;
+  width: 800px;
+  margin: auto;
+}
+
+div#conteneur{
+  padding: 2em;
+}
+
+form.form-securite {
+    display: table;
+}
+
+div.form-securite {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}

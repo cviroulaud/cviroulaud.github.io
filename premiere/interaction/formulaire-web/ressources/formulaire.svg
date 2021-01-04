@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="formulaire.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2489759"
+     inkscape:cx="396.85039"
+     inkscape:cy="561.25984"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="3200"
+     inkscape:window-height="1671"
+     inkscape:window-x="0"
+     inkscape:window-y="55"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g882"
+       transform="translate(0.42368046,-54.442939)"
+       inkscape:export-xdpi="82.010406"
+       inkscape:export-ydpi="82.010406">
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/ordinateur.png"
+         xlink:href="ordinateur.png"
+         y="85.460739"
+         x="14.706104"
+         id="image823"
+         preserveAspectRatio="none"
+         height="32.445141"
+         width="32.445141" />
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/fleche.png"
+         xlink:href="fleche.png"
+         y="96.141876"
+         x="51.443592"
+         id="image853"
+         preserveAspectRatio="none"
+         height="22.945919"
+         width="87.133507" />
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/serveur.png"
+         xlink:href="serveur.png"
+         y="87.72963"
+         x="135.39369"
+         id="image864"
+         preserveAspectRatio="none"
+         height="38.287537"
+         width="38.287537" />
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/fichier.png"
+         xlink:href="fichier.png"
+         y="73.112648"
+         x="72.688965"
+         id="image875"
+         preserveAspectRatio="none"
+         height="25.788965"
+         width="25.788965" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="66.571129"
+         y="73.429123"
+         id="text951"><tspan
+           sodipodi:role="line"
+           id="tspan949"
+           x="66.571129"
+           y="73.429123"
+           style="stroke-width:0.26458332">données</tspan></text>
+    </g>
+    <g
+       transform="translate(0.92259595,29.869472)"
+       id="g882-3"
+       inkscape:export-xdpi="82.010406"
+       inkscape:export-ydpi="82.010406">
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/ordinateur.png"
+         xlink:href="ordinateur.png"
+         width="32.445141"
+         height="32.445141"
+         preserveAspectRatio="none"
+         id="image823-6"
+         x="14.706104"
+         y="85.460739" />
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/serveur.png"
+         xlink:href="serveur.png"
+         width="38.287537"
+         height="38.287537"
+         preserveAspectRatio="none"
+         id="image864-5"
+         x="135.39369"
+         y="87.72963" />
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/engrenage.png"
+         xlink:href="engrenage.png"
+         width="28.119207"
+         height="28.119207"
+         preserveAspectRatio="none"
+         id="image919"
+         x="142.30916"
+         y="70.358727" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="132.12158"
+         y="68.980453"
+         id="text959"><tspan
+           sodipodi:role="line"
+           id="tspan957"
+           x="132.12158"
+           y="68.980453"
+           style="stroke-width:0.26458332">traitement</tspan></text>
+    </g>
+    <g
+       id="g882-5"
+       transform="translate(4.7357201,121.59629)"
+       inkscape:export-xdpi="82.010406"
+       inkscape:export-ydpi="82.010406">
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/ordinateur.png"
+         xlink:href="ordinateur.png"
+         width="32.445141"
+         height="32.445141"
+         preserveAspectRatio="none"
+         id="image823-62"
+         x="14.706104"
+         y="85.460739" />
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/fleche.png"
+         xlink:href="fleche.png"
+         transform="rotate(179.34074)"
+         width="87.133507"
+         height="22.945919"
+         preserveAspectRatio="none"
+         id="image853-9"
+         x="-129.06892"
+         y="-120.29063" />
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/serveur.png"
+         xlink:href="serveur.png"
+         width="38.287537"
+         height="38.287537"
+         preserveAspectRatio="none"
+         id="image864-1"
+         x="135.39369"
+         y="87.72963" />
+      <image
+         sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/interaction/formulaire-web/ressources/fichier.png"
+         xlink:href="fichier.png"
+         width="25.788965"
+         height="25.788965"
+         preserveAspectRatio="none"
+         id="image875-2"
+         x="72.688965"
+         y="73.112648" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="51.401939"
+         y="72.237511"
+         id="text955"><tspan
+           sodipodi:role="line"
+           id="tspan953"
+           x="51.401939"
+           y="72.237511"
+           style="stroke-width:0.26458332">page construite</tspan></text>
+    </g>
+  </g>
+</svg>

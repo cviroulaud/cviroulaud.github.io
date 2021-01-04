@@ -1,0 +1,94 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Portée d'une variable}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+\fancyhead[R]{Première - NSI}
+%\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Problématique}
+Le code \ref{locale} lève une erreur.
+\begin{center}
+\begin{lstlisting}[language=Python]
+def une_fonction():
+	a = 3
+
+une_fonction()
+print(a)
+\end{lstlisting}
+\captionof{code}{Variable locale}
+\label{locale}
+\end{center}
+À l'inverse le code \ref{globale} s'exécute sans erreur.
+\begin{center}
+\begin{lstlisting}[language=Python]
+a = 3
+def une_fonction():
+    print(a)
+
+une_fonction()
+\end{lstlisting}
+\captionof{code}{Variable globale}
+\label{globale}
+\end{center}
+\begin{center}
+\shadowbox{\parbox{10cm}{\centering Quelle est la portée d'une variable?}}
+\end{center}
+\section{Portée d'une variable}
+C'est le domaine d'existence d'une variable, c'est à dire la partie du programme où elle peut être utilisée.
+\subsection{Variable locale}
+\begin{aretenir}[]
+Une variable locale n'est utilisable que dans le bloc ou la fonction où elle a été définie.
+\end{aretenir}
+\begin{activite}
+\begin{enumerate}
+\item Se rendre sur le site \url{http://pythontutor.com/} .
+\item Cliquer sur \emph{Start visualizing your code now}.
+\item Écrire le code \ref{locale} puis cliquer sur \emph{Visualize Execution}.
+\item Exécuter le code en \emph{pas à pas} avec le bouton \emph{Next}.
+\item Observer la période d'existence de la variable \emph{a} et justifier alors l'erreur d'exécution de la ligne 5.
+\end{enumerate}
+\end{activite}
+\subsection{Variable globale}
+\begin{aretenir}[]
+Une variable globale est accessible depuis n'importe quel point du programme.
+\end{aretenir}
+\begin{activite}
+Dérouler le code \ref{globale} sur \emph{pythontutor} et justifier la bonne exécution.
+\end{activite}
+\section{Pièges et bonnes pratiques}
+\subsection{Effet de bord}
+Les élèves de NSI ont obtenu les notes suivantes lors du dernier devoir. Avant de les enregistrer définitivement dans Pronote, l'enseignant désire simuler des bonifications pour favoriser les élèves le plus en difficultés.
+\begin{center}
+\lstinputlisting[firstline=10,lastline=19]{"scripts/effet-de-bord.py"}
+\captionof{code}{Bonification}
+\label{bonif}
+\end{center}
+Le code \ref{bonif} effectue une bonification de deux points pour deux cas de figure:
+\begin{itemize}
+\item les élèves ont 6 ou moins,
+\item les élèves ont 8 ou moins.
+\end{itemize}
+\begin{activite}
+\begin{enumerate}
+\item Recopier le code \ref{bonif} dans un EDI et repérer l'erreur dans les calculs effectués.
+\item Copier le code dans \emph{pythontutor} et expliquer cette erreur.
+\end{enumerate}
+\end{activite}
+\begin{aretenir}[Effet de bord]
+En première approche nous pouvons retenir qu'une variable mutable est modifiée quand elle est utilisée dans une fonction. Il est souvent difficile de maîtriser les modifications ce qui peut créer des comportements non désirés du programme.
+\end{aretenir}
+\section{Bonnes pratiques}
+Il faut visualiser une fonction comme un outil autonome, réutilisable dans plusieurs programmes. Elle ne doit donc pas dépendre de variables globales.\\
+\textbf{On évitera au maximum d'utiliser une variable globale.
+}
+\end{Form}
+\end{document}

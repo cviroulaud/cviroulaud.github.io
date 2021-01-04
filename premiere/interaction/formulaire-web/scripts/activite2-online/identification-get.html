@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mon premier formulaire</title>
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body>
+    <div id="conteneur">
+      <h1>Identification</h1>
+    <form class="form-securite" action="traitement.php">
+      <div class="form-securite">
+        <label for="nom">Identifiant </label>
+        <input type="text" name="nom" id="nom" required>
+      </div>
+      <div class="form-securite">
+        <label for="motpasse">Mot de passe </label>
+        <input type="password" name="motpasse" id="motpasse" required>
+      </div>
+      <div class="form-securite">
+        <input type="submit" value="Envoyer">
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

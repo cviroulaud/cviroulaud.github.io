@@ -88,13 +88,7 @@ Une boucle peut terminer mais cependant ne pas réaliser ce à quoi elle est des
 Un \emph{invariant de boucle} est une propriété qui si elle est vraie avant l'itération, le reste après son exécution.
 \end{aretenir}
 \begin{center}
-\begin{lstlisting}[language=Python]
-def somme_des_entiers(n):
-    s = 0
-    for i in range(1, n+1):
-        s += i
-    return s
-\end{lstlisting}
+\lstinputlisting[firstline=10,lastline=14]{"scripts/somme-entiers.py"}
 \captionof{code}{Somme des premiers entiers}
 \label{somme}
 \end{center}
@@ -121,15 +115,7 @@ $a=q×b+r$
 \end{center}
 Le code \ref{division} détermine ces deux entiers.
 \begin{center}
-\begin{lstlisting}[language=Python]
-def division(a, b):
-    q = 0
-    r = a
-    while r >= b:
-        q += 1
-        r -= b
-    return (q, r)
-\end{lstlisting}
+\lstinputlisting[firstline=10,lastline=16]{"scripts/division.py"}
 \captionof{code}{Division euclidienne}
 \label{division}
 \end{center}
@@ -139,6 +125,36 @@ def division(a, b):
 \end{enumerate}
 \end{activite}
 \section{Préconditions}
-\section{Tests}
+Reprenons la fonction \textbf{somme\_des\_entiers} et passons lui le paramètre \emph{-2}.
+\begin{center}
+\begin{lstlisting}[language=Python]
+print(somme_des_entiers(-2))
+\end{lstlisting}
+\captionof{code}{Somme d'entiers négatifs?}
+\label{testneg}
+\end{center}
+Le résultat est inattendu ou plus exactement il ne correspond pas à ce que nous voudrions obtenir. La fonction telle que nous l'avons écrite n'est adaptée qu'à des valeurs de \emph{n} positives.
+\begin{aretenir}[]
+Une \textbf{assertion} permet d'effectuer un test et lève une erreur si la condition n'est pas remplie.
+\end{aretenir}
+\begin{center}
+\begin{lstlisting}[language=Python]
+def somme_des_entiers(n):
+    assert n >= 0, "n doit être positif ou nul"
+    s = 0
+    for i in range(1, n+1):
+        s += i
+    return s
+\end{lstlisting}
+\captionof{code}{Précondition}
+\label{assert}
+\end{center}
+\begin{activite}
+Compléter la fonction comme le montre le code \ref{assert} et tester à nouveau le code \ref{testneg}.
+\end{activite}
+L'erreur levée donne des informations sur le chemin qui a conduit à cette erreur.
+\begin{activite}
+Une division par zéro est une opération qui n'existe pas. Modifier alors la fonction \textbf{division} pour qu'elle définisse une précondition nécessaire à son exécution.
+\end{activite}
 \end{Form}
 \end{document}

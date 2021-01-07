@@ -1,0 +1,110 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Exercices requêtes avancées}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+La clinique vétérinaire utilise la base de données construite précédemment.
+\begin{enumerate}
+\item Ouvrir la base \emph{animaux.db} .
+\item Écrire les requêtes simples pour:
+\begin{enumerate}
+\item \begin{lstlisting}[language=SQL]
+INSERT INTO Especes(nom) VALUES ("poisson");
+\end{lstlisting}
+\item \begin{lstlisting}[language=SQL]
+INSERT INTO Soins(id_animal,soin) VALUES (3,"patte cassée");
+\end{lstlisting}
+\item \begin{lstlisting}[language=SQL]
+SELECT * FROM Animaux WHERE age >= 10 ORDER BY nom;
+\end{lstlisting}
+\item 
+\begin{lstlisting}[language=SQL]
+SELECT DISTINCT(soin) FROM Soins;
+\end{lstlisting}
+\item 
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(soin) FROM Soins;
+\end{lstlisting}
+\item 
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(DISTINCT(soin)) FROM Soins;
+\end{lstlisting}
+\item 
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(soin) FROM Soins WHERE soin = "stérilisation";
+\end{lstlisting}
+\item 
+\begin{lstlisting}[language=SQL]
+UPDATE Animaux SET nom="charlie" WHERE nom="charly";
+\end{lstlisting}
+\end{enumerate}
+\item Écrire les requêtes pour:
+\begin{enumerate}
+\item 
+\begin{lstlisting}[language=SQL]
+SELECT Especes.nom FROM Especes
+JOIN Animaux ON Especes.id = Animaux.id_espece
+WHERE Animaux.nom="zappy";
+\end{lstlisting}
+\item 
+\begin{lstlisting}[language=SQL]
+SELECT Animaux.nom FROM Animaux
+JOIN Especes ON Especes.id = Animaux.id_espece
+WHERE Especes.nom="chat"
+ORDER BY Animaux.nom;
+\end{lstlisting}
+\item 
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(Animaux.nom) FROM Animaux
+JOIN Especes ON Especes.id = Animaux.id_espece
+WHERE Especes.nom="chien";
+\end{lstlisting}
+\item 
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(Soins.soin) FROM Soins
+JOIN Animaux ON Animaux.id = Soins.id_animal
+WHERE Animaux.nom="chouchou";
+\end{lstlisting}
+\item Il faut remarquer l'utilisation du mot-clé \textbf{AS} pour définir un alias.
+\begin{lstlisting}[language=SQL]
+SELECT Animaux.nom AS n FROM Animaux
+JOIN Soins ON Animaux.id = Soins.id_animal
+JOIN Especes ON Animaux.id_espece = Especes.id
+WHERE Especes.nom="chat" AND Soins.soin="stérilisation"
+ORDER BY n;
+\end{lstlisting}
+\item
+\begin{lstlisting}[language=SQL]
+INSERT INTO Animaux(nom,age,id_espece) VALUES ("bubulle",3,(SELECT id FROM Especes WHERE nom="poisson")); 
+\end{lstlisting},
+\item
+\begin{lstlisting}[language=SQL]
+INSERT INTO Soins(id_animal, soin) VALUES ((SELECT id FROM Animaux WHERE nom="cartman"),"stérilisation");
+\end{lstlisting}
+\end{enumerate}
+\item Créer une table \emph{Types\_soins} qui référence les différentes possibilités de soins. Il faut alors remplacer l'attribut\emph{soin} de la table \emph{Soins} par une clé étrangère sur l'\emph{id} de \emph{Types\_soins}.
+\item 
+\begin{itemize}
+\item Especes(\underline{id Integer}, nom String)
+\item Animaux(\underline{id Integer}, nom String, age Integer, \dashuline{id\_espece Integer})
+\item Soins(\underline{id Integer}, \dashuline{id\_animal Integer}, \dashuline{id\_soin Integer})
+\item Types\_soins(\underline{id Integer}, soin String)
+\end{itemize}
+
+
+\end{enumerate}
+\end{exo}
+\end{Form}
+\end{document}

@@ -27,7 +27,7 @@ La \emph{base de données} étant crée, il faut maintenant pouvoir en modifier 
 La collection de bandes dessinées étant amenées à augmenter, la première opération nécessaire est de pouvoir ajouter une entité dans une table. Le code \ref{insertion} ajoute l'auteur \emph{Riad Sattouf} dans la table \emph{Auteurs}.
 \begin{center}
 \begin{lstlisting}[language=SQL]
-INSERT INTO Auteurs values (309, "Sattouf", "Riad");
+INSERT INTO Auteurs VALUES (309, "Sattouf", "Riad");
 \end{lstlisting}
 \captionof{code}{Insertion d'un auteur}
 \label{insertion}
@@ -35,7 +35,7 @@ INSERT INTO Auteurs values (309, "Sattouf", "Riad");
 La nécessité de connaître un \emph{id} non utilisé peut être contraignant. Heureusement dans le schéma de la relation, cet attribut est affublé de l'étiquette \emph{AUTOINCREMENT}. Le code \ref{insertion2} ajoute un nouvel auteur.
 \begin{center}
 \begin{lstlisting}[language=SQL]
-INSERT INTO Auteurs (nom, prenom) values ("Tardi", "Jacques");
+INSERT INTO Auteurs (nom, prenom) VALUES ("Tardi", "Jacques");
 \end{lstlisting}
 \captionof{code}{Insertion en spécifiant les attributs}
 \label{insertion2}
@@ -56,7 +56,7 @@ INSERT INTO Auteurs (nom, prenom) values ("Tardi", "Jacques");
 Les contraintes d'intégrité sont vérifiées au moment de l'insertion. Ainsi le code \ref{insertion} renvoie une erreur.
 \begin{center}
 \begin{lstlisting}[language=SQL]
-INSERT INTO Auteurs values (309, "Giraud", "Jean");
+INSERT INTO Auteurs VALUES (309, "Giraud", "Jean");
 \end{lstlisting}
 \captionof{code}{Erreur d'insertion}
 \label{insertion}
@@ -67,7 +67,7 @@ INSERT INTO Auteurs values (309, "Giraud", "Jean");
 \item La requête \ref{integriteerreur} provoquera-t-elle une erreur? Pour quelle raison?
 \begin{center}
 \begin{lstlisting}[language=SQL]
-INSERT INTO Auteurs (nom, prenom) values ("Sfar", "Joann");
+INSERT INTO Auteurs (nom, prenom) VALUES ("Sfar", "Joann");
 \end{lstlisting}
 \captionof{code}{Provoque-t-on une erreur?}
 \label{integriteerreur}

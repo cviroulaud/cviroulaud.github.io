@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 JAN 2021 17:11
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 JAN 2021 22:44
  restricted system commands enabled.
-**BDD-bandes-dessinees-utilisation.tex
-(./BDD-bandes-dessinees-utilisation.tex
+**exercices-requetes-avancees.tex
+(./exercices-requetes-avancees.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.084 seconds
+luaotfload | main : initialization completed in 0.069 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1327,12 +1327,8 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@zref@counter=\count370
 Package zref Info: New property: mdf@pagevalue on input line 895.
 ))
-(./BDD-bandes-dessinees-utilisation.aux
-
-LaTeX Warning: Label `insertion' multiply defined.
-
-)
-\openout1 = BDD-bandes-dessinees-utilisation.aux
+(./exercices-requetes-avancees.aux)
+\openout1 = exercices-requetes-avancees.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -1350,7 +1346,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 15.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 15.
@@ -1506,171 +1503,62 @@ LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
 
-(./BDD-bandes-dessinees-utilisation.out)
-(./BDD-bandes-dessinees-utilisation.out)
+(./exercices-requetes-avancees.out) (./exercices-requetes-avancees.out)
 \@outlinefile=\write5
 
-\openout5 = BDD-bandes-dessinees-utilisation.out
- ABD: EveryShipout initializing macros
+\openout5 = exercices-requetes-avancees.out
+
+ABD: EveryShipout initializing macros
 LaTeX Font Info:    Try loading font information for U+pzd on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-)
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 32.
-See the caption package documentation for explanation.
-
-Package hyperref Info: bookmark level for unknown code defaults to 0 on input li
-ne 32.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 40.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 61.
-See the caption package documentation for explanation.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=70, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=19, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 63.
+input line 47.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 72.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 84.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 92.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 101.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 109.
-See the caption package documentation for explanation.
-
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 111.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[2]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 125.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 133.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 148.
-See the caption package documentation for explanation.
-
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 155.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[3]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 159.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 169.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 181.
-See the caption package documentation for explanation.
-
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 191.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
- (./BDD-bandes-dessinees-utilisation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
-Package rerunfilecheck Info: File `BDD-bandes-dessinees-utilisation.out' has not
- changed.
-(rerunfilecheck)             Checksum: 29329AB2304393C3DAFD15EF8487FF7C;1974.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(./exercices-requetes-avancees.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package rerunfilecheck Info: File `exercices-requetes-avancees.out' has not chan
+ged.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39043 strings out of 494383
- 125007,1144653 words of node,token memory allocated
- 42542 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 22 glue, 4 kern, 1 penalty, 5270 glyph, 2066 attrib
-ute, 97 glue_spec, 346 attribute_list, 1 write nodes
-   avail lists: 1:6,2:6249,3:284,4:1671,5:1431,6:59,7:2124,8:1245,9:2323,10:27,1
-1:226
- 42073 multiletter control sequences out of 65536+600000
- 55 fonts using 8092991 bytes
- 74i,15n,95p,1127b,1072s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/
-fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/p
-ublic/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
-10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></us
-r/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/f
-onts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/font
-s/type1/urw/zapfding/uzdr.pfb>
-Output written on BDD-bandes-dessinees-utilisation.pdf (4 pages, 55223 bytes).
+ 38403 strings out of 494383
+ 100000,953878 words of node,token memory allocated
+ 9516 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 9 glue, 4 kern, 1 penalty, 1139 glyph, 344 attribut
+e, 97 glue_spec, 59 attribute_list, 1 write nodes
+   avail lists: 1:4,2:1356,3:134,4:51,5:119,6:30,7:1748,8:35,9:140,10:2,11:119
+ 41550 multiletter control sequences out of 65536+600000
+ 30 fonts using 6060567 bytes
+ 74i,15n,95p,1122b,478s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
+f/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/p
+ublic/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans
+10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
 
-PDF statistics: 227 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
- 73 named destinations out of 1000 (max. 131072)
- 162 words of extra memory for PDF output out of 10000 (max. 100000000)
+Output written on exercices-requetes-avancees.pdf (1 page, 24102 bytes).
+
+PDF statistics: 82 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 131072)
+ 66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

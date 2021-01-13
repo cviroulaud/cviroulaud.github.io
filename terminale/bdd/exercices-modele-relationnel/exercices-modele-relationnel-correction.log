@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  20 DEC 2020 23:30
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 JAN 2021 19:40
  restricted system commands enabled.
 **exercices-modele-relationnel-correction.tex
 (./exercices-modele-relationnel-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.124 seconds
+luaotfload | main : initialization completed in 0.073 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1554,10 +1554,10 @@ has not changed.
 Here is how much of LuaTeX's memory you used:
  38456 strings out of 494383
  100000,953878 words of node,token memory allocated
- 12496 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 8 glue, 4 kern, 1 penalty, 1525 glyph, 464 attribut
+ 12566 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 8 glue, 4 kern, 1 penalty, 1535 glyph, 464 attribut
 e, 98 glue_spec, 79 attribute_list, 1 write nodes
-   avail lists: 1:4,2:1650,3:137,4:51,5:196,6:31,7:2251,8:75,9:171,10:5,11:140
+   avail lists: 1:4,2:1650,3:137,4:51,5:196,6:31,7:2264,8:75,9:171,10:5,11:142
  41577 multiletter control sequences out of 65536+600000
  50 fonts using 7440191 bytes
  74i,15n,95p,1134b,478s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1568,7 +1568,7 @@ ublic/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans
 i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on exercices-modele-relationnel-correction.pdf (1 page, 53833 byt
+Output written on exercices-modele-relationnel-correction.pdf (1 page, 53832 byt
 es).
 
 PDF statistics: 86 PDF objects out of 1000 (max. 8388607)

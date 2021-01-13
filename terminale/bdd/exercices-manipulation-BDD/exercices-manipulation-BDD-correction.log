@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 DEC 2020 18:14
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 JAN 2021 19:37
  restricted system commands enabled.
 **exercices-manipulation-BDD-correction.tex
 (./exercices-manipulation-BDD-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.075 seconds
+luaotfload | main : initialization completed in 0.130 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1588,11 +1588,11 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  39025 strings out of 494383
- 305242,1144653 words of node,token memory allocated
- 25950 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 11 glue, 4 kern, 1 penalty, 2626 glyph, 2918 attrib
+ 305232,1144653 words of node,token memory allocated
+ 25929 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 11 glue, 4 kern, 1 penalty, 2623 glyph, 2918 attrib
 ute, 98 glue_spec, 488 attribute_list, 1 write nodes
-   avail lists: 1:6,2:15337,3:262,4:6048,5:4796,6:58,7:4840,8:4268,9:7682,10:32,
+   avail lists: 1:6,2:15337,3:262,4:6047,5:4796,6:58,7:4837,8:4268,9:7682,10:32,
 11:483
  42059 multiletter control sequences out of 65536+600000
  52 fonts using 7705439 bytes
@@ -1604,7 +1604,7 @@ ublic/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
 r/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/f
 onts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/font
 s/type1/urw/zapfding/uzdr.pfb>
-Output written on exercices-manipulation-BDD-correction.pdf (2 pages, 41979 byte
+Output written on exercices-manipulation-BDD-correction.pdf (2 pages, 41964 byte
 s).
 
 PDF statistics: 150 PDF objects out of 1000 (max. 8388607)

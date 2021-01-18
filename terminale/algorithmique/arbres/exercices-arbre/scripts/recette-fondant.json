@@ -1,0 +1,23 @@
+{
+"recette": "Fondant au chocolat",
+"difficulté": "Facile",
+"temps": {
+	"preparation":{"unite": "min", "valeur": 15},
+	"cuisson": {"unite": "min", "valeur": 17, "temperature": 180}
+	},
+"ingredients": [
+	{"nom": "chocolat noir", "unite": "g", "quantite": 200},
+	{"nom": "beurre", "unite": "g", "quantite": 100},
+	{"nom": "sucre", "unite": "g", "quantite": 100},
+	{"nom": "oeufs", "unite": "", "quantite": 5},
+	{"nom": "farine", "unite": "g", "quantite": 20}
+	],
+"étapes": [
+	"Faire fondre le chocolat et le beurre au micro-onde",
+	"Ajouter les jaunes d'oeufs et battre le tout",
+	"Ajouter le sucre et la farine",
+	"Incorporer les oeufs battus en neige ferme",
+	"Faire cuire au four à 180°C pendant 17 minutes"
+	]
+}
+

@@ -30,4 +30,7 @@ print(parcours_noir.BFS(75))
 print(parcours_noir.plus_court_chemin(75,34))
 print(parcours_noir.plus_court_chemin_detail(75,34))
 print(parcours_noir.plus_court_chemin_detail(75,26))
+print(parcours_noir.DFS_rec(75))
+print(parcours_noir.DFS_rec(75))
+
 

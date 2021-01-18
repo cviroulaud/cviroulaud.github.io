@@ -48,6 +48,8 @@ class Graphe:
         return visites
 
     def DFS_rec(self, depart: str, visites: list = [])->list:
+        # !!!attention effet de bord avec 'visites'
+        # faire une fonction interne et un appel principal
         if not(depart in visites):
             visites.append(depart)
             for voisin in self.sommets[depart]:

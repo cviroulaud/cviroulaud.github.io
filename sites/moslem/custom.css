@@ -1,0 +1,14 @@
+h1{
+  color: red;
+}
+body {
+  width:800px;
+  margin: auto;
+   background-color: #e5e7e9   ;
+p{
+  text-algin: justify
+  font-family: "Gill sans", sans-serif;
+}
+.titre-special{
+  color: green;
+}

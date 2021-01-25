@@ -1,0 +1,19 @@
+
+h1 {
+     color: red;
+}
+body {
+  width: 800px;
+  margin: auto;
+  background-color: #2f4f4f;
+}
+p {
+  text-align: justify;
+  font-family: "gill sans", sans-serif;
+}
+.titre-special {
+  color: grey
+}
+a {
+  color: grey
+}

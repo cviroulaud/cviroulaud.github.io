@@ -1,0 +1,30 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{TITRE}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+Les élections présidentielles américaines sont complexes: chaque citoyen vote pour élire un \emph{grand électeur} de son État. Quand un parti (Républicain, Démocrate) remporte un État, il récupère tous les grands électeurs de cet État. Chaque État possède un nombre différents de grands électeurs en fonction de sa population. Il y en a 538 en tout.\\
+L'objectif de l'exercice est de déterminer s'il est possible d'obtenir une égalité entre les deux candidats. Expliquons le principe avec un exemple restreint de trois états:
+\begin{itemize}
+\item état 1: 5 grands électeurs,
+\item état 2: 4 grands électeurs,
+\item état 3: 3 grands électeurs
+\end{itemize}
+\begin{enumerate}
+\item Le fichier \emph{grands-electeurs.csv} contient la liste des États avec le nombre de grands électeurs correspondants. Grâce à la bibliothèque \emph{csv}, importer le fichier dans un programme Python.
+\end{enumerate}
+\end{exo}
+\end{Form}
+\end{document}

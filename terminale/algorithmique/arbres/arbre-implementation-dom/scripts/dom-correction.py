@@ -41,7 +41,6 @@ def taille(dom: Noeud)->int:
 
 print("nombre d'éléments: ", taille(dom))
 
-
 def get_elements_by_tagname(tag: str, arbre: Noeud, res: list)->list:
     """
     récupère la liste des noeuds de 'e' dans 'arbre'

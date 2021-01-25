@@ -1,0 +1,24 @@
+h1 {
+  color: 	chocolate;
+}
+h2 {
+  color: chocolate;
+}
+h3{
+  color:  chocolate;
+}
+body{
+  width: 800px;
+  margin: auto;
+  background-color:  tan;
+}
+p {
+  text-align: justify;
+  font-family: "Gill Sans", sans-serif;
+}
+.titre-special {
+  color: olive
+}
+img {
+  width: 400px;
+}

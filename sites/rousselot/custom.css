@@ -1,0 +1,15 @@
+h1{
+  color: black;
+}
+body{
+  width: 800px;
+  margin: auto;
+  background-color: #666666;
+}
+p{
+  text-align: justify;
+  font-family: "gill sans", sans-serif;
+}
+img{
+  width:400px;
+}

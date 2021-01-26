@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  24 JAN 2021 21:38
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  25 JAN 2021 16:22
  restricted system commands enabled.
 **exercices-arbre-correction.tex
 (./exercices-arbre-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.073 seconds
+luaotfload | main : initialization completed in 0.084 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1519,16 +1519,16 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 203.
+(caption)                particular \caption on input line 205.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 269.
+(caption)                particular \caption on input line 271.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (2.82236pt too wide) in paragraph at lines 268--269
+Overfull \hbox (2.82236pt too wide) in paragraph at lines 270--271
  [] 
  []
 
@@ -1542,7 +1542,7 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 269.
+input line 271.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
@@ -1551,32 +1551,28 @@ input line 269.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 282.
+input line 284.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
 
 (./exercices-arbre-correction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 282.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 282.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
 Package rerunfilecheck Info: File `exercices-arbre-correction.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 )
 
 Here is how much of LuaTeX's memory you used:
  39628 strings out of 494383
- 195332,953878 words of node,token memory allocated
- 17643 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 18 glue, 4 kern, 1 penalty, 1571 glyph, 2504 attrib
+ 195326,953878 words of node,token memory allocated
+ 17818 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 18 glue, 4 kern, 1 penalty, 1596 glyph, 2504 attrib
 ute, 97 glue_spec, 419 attribute_list, 1 write nodes
-   avail lists: 1:10,2:25381,3:1572,4:2626,5:2147,6:38,7:3473,8:1906,9:3652,10:3
-3,11:208
+   avail lists: 1:9,2:25507,3:1578,4:2626,5:2147,6:38,7:3517,8:1906,9:3652,10:33
+,11:208
  42674 multiletter control sequences out of 65536+600000
  33 fonts using 6463615 bytes
  74i,16n,95p,1121b,897s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1587,7 +1583,7 @@ lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.o
 tf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/
 texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-di
 st/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on exercices-arbre-correction.pdf (2 pages, 43338 bytes).
+Output written on exercices-arbre-correction.pdf (2 pages, 43398 bytes).
 
 PDF statistics: 124 PDF objects out of 1000 (max. 8388607)
  92 compressed objects within 1 object stream

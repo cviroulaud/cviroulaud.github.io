@@ -17,7 +17,7 @@
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="plaquette.svg"
-   inkscape:export-filename="/home/tof/Documents/Cozy/cviroulaud.github.io/divers/plaquette/plaquette.png"
+   inkscape:export-filename="/home/tof/Documents/Cozy/cviroulaud.github.io/divers/plaquette/plaquette-90.png"
    inkscape:export-xdpi="95.431427"
    inkscape:export-ydpi="95.431427">
   <defs
@@ -44,10 +44,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.88320437"
-     inkscape:cx="870.15257"
+     inkscape:cx="401.40489"
      inkscape:cy="357.51081"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="3200"
      inkscape:window-height="1671"
@@ -70,17 +70,17 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="lycee"
-     style="display:inline;opacity:0.5"
-     sodipodi:insensitive="true">
+     style="display:inline;opacity:0.7">
     <image
        sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/divers/plaquette/fond.png"
        xlink:href="fond.png"
-       width="497.0936"
-       height="324.37463"
-       preserveAspectRatio="none"
-       id="image1019"
+       style=""
+       y="-13.631317"
        x="-6.3428016"
-       y="-13.631317" />
+       id="image1019"
+       preserveAspectRatio="none"
+       height="324.37463"
+       width="497.0936" />
   </g>
   <g
      style="display:inline"
@@ -258,7 +258,7 @@
          id="tspan5006"
          x="116.8331"
          y="103.51555"
-         style="stroke-width:0.26458332"></tspan></text>
+         style="stroke-width:0.26458332" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"

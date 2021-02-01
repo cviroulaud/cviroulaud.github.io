@@ -7,7 +7,7 @@ Date de création Fri Jan  1 16:12:10 2021
 """
 
 
-def nb_voyelles(mot):
+def nb_voyelles(mot: str)->int:
     """
     renvoie le nombre de voyelles dans mot
     """

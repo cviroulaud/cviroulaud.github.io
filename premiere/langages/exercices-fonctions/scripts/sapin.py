@@ -9,7 +9,7 @@ Date de création Fri Jan  1 16:21:51 2021
 
 import turtle as t
 
-def triangle(c):
+def triangle(c: int)->None:
     t.begin_fill()
     for _ in range(3):
         t.forward(c)

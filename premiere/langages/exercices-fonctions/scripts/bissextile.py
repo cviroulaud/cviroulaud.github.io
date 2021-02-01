@@ -7,14 +7,14 @@ Date de création Fri Jan  1 15:44:52 2021
 """
 
 
-def bissextile(annee):
+def bissextile(annee: int)->bool:
     """
     vérifie si l'année est bissextile
     """
     # le and est évalué avant le or
     return annee%4 == 0 and not annee%100 == 0 or annee%400 == 0
 
-def nb_jours(annee):
+def nb_jours(annee: int)->int:
     """
     renvoie le nombre de jours dans annee
     """
@@ -23,7 +23,7 @@ def nb_jours(annee):
     else:
         return 365
 
-def nb_jours_mois(annee, mois):
+def nb_jours_mois(annee: int, mois: int)->int:
     """
     renvoie le nombre de jours dans mois
     (en fonction de l'année)

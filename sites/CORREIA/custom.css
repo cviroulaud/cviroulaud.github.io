@@ -1,0 +1,35 @@
+h1 {
+        color: yellow;
+}
+body {
+ width: 800px;
+  margin: auto;
+  background-color: black
+}
+ p{
+   text-align: justify;
+   font-family: "Times New Roman", Times-New-Roman;
+ }
+ h2{
+   text-align: justify;
+   font-family: "Cooper Black", Cooper-Black;
+ }
+.titre-special {
+       color: yellow;
+}
+li{
+  text-align: justify;
+  font-family: "Cooper Black", Cooper-Black;
+}
+li{
+  color: purple;
+}
+h2{
+  color: white;
+}
+p{
+  color: yellow
+}
+a{
+  color: white
+}

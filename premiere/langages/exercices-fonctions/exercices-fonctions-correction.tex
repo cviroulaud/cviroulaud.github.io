@@ -14,14 +14,17 @@
 
 \begin{document}
 \begin{Form}
-\begin{aretenir}[Commentaire]
+\begin{aretenir}[Commentaires]
 Chaque fonction est accompagnée d'un commentaire appelé \textbf{docstring}. Sa syntaxe varie selon les programmeurs mais une bonne pratique consiste à:
 \begin{itemize}
 \item donner une brève description,
 \item préciser le type et le rôle des paramètres,
 \item préciser ce que renvoie la fonction.
 \end{itemize}
-Cette \emph{docstring} est accessible depuis la console en écrivant \textbf{help(nom\_fonction)}.
+Cette \emph{docstring} est accessible depuis la console en écrivant \textbf{help(nom\_fonction)}.\\
+De plus une autre bonne pratique consiste à préciser le \emph{type} des arguments de la fonction. La syntaxe
+\lstinputlisting[firstline=10,lastline=10]{"scripts/est_pair.py"}
+précise que le paramètre \emph{x} est un entier et que la fonction renvoie un \emph{booléen}.
 \end{aretenir}
 \begin{exo}
 \lstinputlisting[firstline=10,lastline=22]{"scripts/est_pair.py"}

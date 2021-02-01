@@ -7,7 +7,7 @@ Date de création Fri Jan  1 15:38:12 2021
 """
 
 
-def puissance(x, n):
+def puissance(x: int, n: int)->int:
     """
     élève x à la puissance n
 

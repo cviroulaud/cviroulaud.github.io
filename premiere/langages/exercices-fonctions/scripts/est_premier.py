@@ -7,7 +7,7 @@ Date de création Fri Jan  1 16:07:12 2021
 """
 
 
-def est_premier(x):
+def est_premier(x: int)->bool:
     """
     renvoie True si x est un nombre premier
     """

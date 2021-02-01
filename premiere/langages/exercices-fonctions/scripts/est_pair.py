@@ -7,7 +7,7 @@ Date de création Fri Jan  1 15:10:20 2021
 """
 
 
-def est_pair(x):
+def est_pair(x: int)->bool:
     """
     vérifie la parité
 

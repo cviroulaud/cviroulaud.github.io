@@ -27,7 +27,7 @@ class Labyrinthe:
     def creer_sommets(self)->None:
         pass
 
-    def get_voisins(self, en_cours: object)->list:
+    def get_voisins(self, en_cours: tuple)->list:
         """
         renvoie les voisins de en_cours
 

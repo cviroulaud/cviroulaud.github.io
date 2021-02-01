@@ -7,7 +7,7 @@ Date de création Fri Jan  1 15:06:24 2021
 """
 
 
-def valeur_absolue(x):
+def valeur_absolue(x: int)->int:
     """
     renvoie la valeur absolue de x
     """

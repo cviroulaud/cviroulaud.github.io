@@ -1,0 +1,41 @@
+h1
+{
+  color: rgb(9,207,234);
+  font: small-caps bold 38px/1 sans-serif;
+}
+li
+{
+  color: rgb(245,152,18);
+    text-align: left;
+     font: 20px sans-serif;
+}
+body
+{
+   font: italic 1.2em "Fira Sans", serif;
+  background: rgb(245,245,195);
+  color: rgb(0,0,0);
+}
+#carre
+{
+  width: 900px;
+  margin: 0 auto;
+  background: rgb(238,238,238);
+  text-align: center;
+  align-content: center;
+
+}
+li
+{
+  list-style-image: url('fleche-droite.png')
+}
+h2
+{
+color:rgb(9,207,234);
+font: small-caps bold 38px/1 sans-serif;
+}
+#forme
+{
+  width: 910px;
+margin: auto;
+background: rgb(9,207,234);
+}

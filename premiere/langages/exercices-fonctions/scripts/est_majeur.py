@@ -7,7 +7,7 @@ Date de création Fri Jan  1 15:36:07 2021
 """
 
 
-def est_majeur(age):
+def est_majeur(age: int)->bool:
     """
     vérifie si la personne est majeur
 

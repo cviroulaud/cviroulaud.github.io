@@ -1,0 +1,68 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Exercices arbre binaire}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+\usepackage{tikz}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+\begin{enumerate}
+\item \begin{itemize}
+\item préfixe: × - 12 8 + 7 9
+\item infixe: 12 - 8 × 7 + 9
+\item postfixe: 12 8 - 7 9 + ×
+\end{itemize}
+\item 64
+\item Parcours infixe
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item 
+\begin{itemize}
+\item en largeur: 1 2 3 4 5 6 7 8 9 10 11 12 13
+\item préfixe: 1 2 4 8 5 3 6 9 10 12 13 7 11
+\item infixe: 4 8 2 5 1 9 6 12 10 13 3 11 7
+\item postfixe: 8 4 5 2 9 12 13 10 6 11 7 3 1
+\end{itemize}
+\item La hauteur est 4.
+\item Cet arbre est équilibré car la hauteur de chaque sous-arbre gauche diffère au plus de 1 de chaque sous-arbre droit.
+\item Cet arbre n'est pas complet car tous les niveaux ne sont pas remplis.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Le numéro 17 est une femme (indice impair). Son père a pour indice 34 et sa mère 35. Son enfant a pour indice 8.
+\item Quatrième génération: $2^4 = 16$ personnes (la numérotation commence à 1).
+\item Chaque niveau \emph{i} contient $2^{i-1}$ ascendants (la numérotation commence à 1). La somme de tous les niveaux correspond à la somme de termes d'une suite géométrique de raison 2 et de premier terme 1. $$2^0+2^1+2^2+2^3+2^4=\sum_{k=0}^{4}{2^k}=\dfrac{1-2^{4+1}}{1-2}=31$$
+\item Représenter l'arbre généalogique sous forme d'un arbre binaire.
+\item Ouvrir le fichier \emph{arbre-genealogique.py}.
+\item 
+\begin{center}
+\lstinputlisting[firstline=10,lastline=15,xleftmargin=2em, xrightmargin=2em]{"scripts/arbre-genealogique.py"}
+\captionof{code}{Représentation en mémoire d'un arbre généalogique}
+\label{manu}
+\end{center}
+Écrire la fonction \textbf{get\_parents(tab: list, id\_enfant: int)$\;\rightarrow\;$tuple} qui renvoie le nom des parents de \emph{id\_enfant} sous forme de tuple. La fonction devra gérer les identifiants trop grands à l'aide d'une assertion.
+\item Écrire la fonction \textbf{ascendant\_homme(tab: list, hommes: list)$\;\rightarrow\;$list} qui renvoie la liste des hommes de la personne dont on a réalisé l'arbre généalogique. La fonction devra parcourir l'arbre en profondeur. De plus une simple liste Python fera office de pile.
+\item Écrire une version récursive de la fonction précédente.
+\end{enumerate}
+\end{exo}
+nombre de feuilles (récursif)\\
+parcours profondeur de listes\\
+insertion, suppression\\
+binarytree\\
+tri par tas\\
+numérotation de Sosa-Stradonitz
+\end{Form}
+\end{document}

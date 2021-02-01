@@ -7,7 +7,7 @@ Date de création Fri Jan  1 15:15:27 2021
 """
 
 
-def pythagore(a, b, c):
+def pythagore(a: int, b: int, c: int)->bool:
     """
     vérifie si le triangle a, b, c est rectangle
 

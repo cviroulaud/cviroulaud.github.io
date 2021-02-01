@@ -1,0 +1,14 @@
+h1 {
+  color : red;
+}
+
+body {
+  width: 800px;
+  margin: auto;
+  background-color:     #def1ff;
+}
+
+p{
+  text-align: justify;
+  font-family: "Gill Sans", sans-serif;
+}

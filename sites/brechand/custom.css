@@ -1,0 +1,14 @@
+h1{
+  color: purple;
+}
+body{
+  width: 800px;
+  margin: auto;
+  background-color: #faedfd;
+}
+p {
+  text-align: justify;
+  font-family: Georgia, serif;
+}
+.image-special {
+  width: 800px;}

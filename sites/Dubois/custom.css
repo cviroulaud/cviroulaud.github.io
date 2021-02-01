@@ -1,0 +1,52 @@
+
+h1 {
+       color:#063F49;
+       text-align: center;
+       text-decoration: underline;
+
+}
+p{
+ text-align: center;
+ font-family: sans-serif;
+ color: #08262B;
+
+}
+body{
+  width: 800px;
+  margin:auto;
+  padding: 1em;
+  background-color: #0FD698;
+  border: 0.2em ridge #0F8863;
+}
+a{
+  outline: none
+  text-decoration:none;
+  padding:2px 1px 0;
+}
+html{
+  margin:auto;
+  background-color: #A1C2C8;
+}
+img{
+
+  margin:auto;
+  display: block;
+  height: 300px;
+}
+a:link{
+  color: #124F5A;
+}
+
+
+
+
+a:hover{
+  color: white
+}
+
+li{
+  text-align:left;
+  text-decoration: underline;
+  font-weight:bold;
+  color:#354D51
+}

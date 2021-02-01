@@ -7,7 +7,7 @@ Date de création Fri Jan  1 16:00:08 2021
 """
 
 
-def nombres_pairs(x):
+def nombres_pairs(x: int)->list:
     """
     renvoie la liste des nombres pairs < x
     """

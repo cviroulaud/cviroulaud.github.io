@@ -7,7 +7,7 @@ Date de création Fri Jan  1 15:11:39 2021
 """
 
 
-def surface(r):
+def surface(r: int)->float:
     """
     renvoie la surface du disque de rayon r
     """

@@ -29,7 +29,7 @@ class Labyrinthe:
             for x in range(self.dimension):
                 self.graphe.ajouter_sommet((x,y))
 
-    def get_voisins(self, en_cours: object)->list:
+    def get_voisins(self, en_cours: tuple)->list:
         """
         renvoie les voisins de en_cours
 

@@ -43,11 +43,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.88320437"
-     inkscape:cx="401.40489"
-     inkscape:cy="357.51081"
+     inkscape:zoom="1.7664087"
+     inkscape:cx="608.48232"
+     inkscape:cy="396.85039"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer5"
      showgrid="false"
      inkscape:window-width="3200"
      inkscape:window-height="1671"
@@ -70,17 +70,17 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="lycee"
-     style="display:inline;opacity:0.7">
+     style="display:inline;opacity:0.9"
+     sodipodi:insensitive="true">
     <image
        sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/divers/plaquette/fond.png"
        xlink:href="fond.png"
-       style=""
-       y="-13.631317"
-       x="-6.3428016"
-       id="image1019"
-       preserveAspectRatio="none"
+       width="497.0936"
        height="324.37463"
-       width="497.0936" />
+       preserveAspectRatio="none"
+       id="image1019"
+       x="-6.3428016"
+       y="-13.631317" />
   </g>
   <g
      style="display:inline"
@@ -135,83 +135,105 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="adresse"
-     sodipodi:insensitive="true">
+     id="layer7"
+     inkscape:label="adresse "
+     style="display:inline">
     <g
-       id="g1092"
-       transform="translate(88.972896,46.883024)">
+       id="g1092-3"
+       transform="translate(89.39149,47.15111)">
       <text
-         id="text1045"
+         id="text1045-9"
          y="110.09274"
          x="185.34776"
          style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#33738f;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
+           id="tspan1047-0"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:end;text-anchor:end;fill:#33738f;fill-opacity:1;stroke-width:0.26458332"
-           y="110.09274"
+           y="119.45651"
            x="185.34776"
-           id="tspan1043"
-           sodipodi:role="line"><tspan
-   id="tspan1049"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold'">L</tspan>ycée</tspan><tspan
-           id="tspan1047"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:end;text-anchor:end;fill:#33738f;fill-opacity:1;stroke-width:0.26458332"
-           y="123.36723"
-           x="185.34776"
-           sodipodi:role="line"><tspan
-   id="tspan1051"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold'">J</tspan>ay de <tspan
-   id="tspan1053"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold'">B</tspan>eaufort</tspan></text>
-      <text
-         id="text1057"
-         y="131.69011"
-         x="125.87077"
-         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           id="tspan1059"
-           style="font-size:4.58611107px;line-height:0.25;stroke-width:0.26458332"
-           y="131.69011"
-           x="125.87077"
-           sodipodi:role="line">9, rue Turenne - BP 10159</tspan><tspan
-           id="tspan1063"
-           style="font-size:4.58611107px;line-height:0.25;stroke-width:0.26458332"
-           y="144.91928"
-           x="125.87077"
            sodipodi:role="line" /></text>
       <text
-         id="text1067"
-         y="137.84085"
-         x="146.52171"
+         id="text1057-7"
+         y="133.03819"
+         x="52.11063"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan1059-2"
+           style="font-size:4.58611107px;line-height:0.25;stroke-width:0.26458332"
+           y="133.03819"
+           x="52.11063"
+           sodipodi:role="line">9, rue Turenne - BP 10159</tspan><tspan
+           id="tspan1063-7"
+           style="font-size:4.58611107px;line-height:0.25;stroke-width:0.26458332"
+           y="146.26736"
+           x="52.11063"
+           sodipodi:role="line" /></text>
+      <text
+         id="text1067-2"
+         y="140.08765"
+         x="62.412586"
          style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="font-size:4.58611107px;stroke-width:0.26458332"
-           y="137.84085"
-           x="146.52171"
-           id="tspan1065"
+           y="140.08765"
+           x="62.412586"
+           id="tspan1065-9"
            sodipodi:role="line">24007 Périgueux</tspan></text>
       <text
-         id="text1071"
-         y="145.30157"
-         x="141.42952"
+         id="text1071-0"
+         y="146.94922"
+         x="60.041153"
          style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="stroke-width:0.26458332"
-           y="145.30157"
-           x="141.42952"
-           id="tspan1069"
+           y="146.94922"
+           x="60.041153"
+           id="tspan1069-5"
            sodipodi:role="line">Tél: 05 53 02 75 00</tspan></text>
       <text
-         id="text1075"
-         y="150.9843"
-         x="119.62086"
+         id="text1075-0"
+         y="153.83023"
+         x="48.921848"
          style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          xml:space="preserve"><tspan
            style="stroke-width:0.26458332"
-           y="150.9843"
-           x="119.62086"
-           id="tspan1073"
+           y="153.83023"
+           x="48.921848"
+           id="tspan1073-4"
            sodipodi:role="line">https://lyceejaydebeaufort.fr</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="72.445465"
+         y="-40.891582"
+         id="text884-2"><tspan
+           sodipodi:role="line"
+           x="72.445465"
+           y="-36.83395"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;fill:#2b6883;fill-opacity:1;stroke-width:0.26458332"
+           id="tspan886-6" /><tspan
+           sodipodi:role="line"
+           x="72.445465"
+           y="-10.229184"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.16666603px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;fill:#2b6883;fill-opacity:1;stroke-width:0.26458332"
+           id="tspan1499-5"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28.22222328px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold';fill:#2b6883;fill-opacity:1"
+   id="tspan1503-6">Jay</tspan> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.11111069px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold';fill:#2b6883;fill-opacity:1"
+   id="tspan1501-6">de</tspan> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28.22222328px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold';fill:#2b6883;fill-opacity:1"
+   id="tspan1505-3">Beaufort</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="51.107384"
+         y="-34.161373"
+         id="text1630"><tspan
+           sodipodi:role="line"
+           id="tspan1628"
+           x="51.107384"
+           y="-34.161373"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.63888931px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';fill:#2b6883;fill-opacity:1;stroke-width:0.26458332">Lycée</tspan></text>
     </g>
   </g>
   <g
@@ -222,30 +244,30 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="54.522106"
-       y="69.201141"
+       x="59.465046"
+       y="78.487877"
        id="text1265"><tspan
          sodipodi:role="line"
          id="tspan1263"
-         x="54.522106"
-         y="69.201141"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.63888931px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332">Soirée Portes ouvertes</tspan></text>
+         x="59.465046"
+         y="78.487877"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24.69444656px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332">Portes ouvertes</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="149.33716"
-       y="99.15834"
+       x="172.55399"
+       y="112.18972"
        id="text5002"><tspan
          sodipodi:role="line"
          id="tspan5000"
-         x="149.33716"
-         y="99.15834"
-         style="font-size:14.11111259px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Jeudi <tspan
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
-   id="tspan5014">11 mars</tspan> 2020</tspan><tspan
+         x="172.55399"
+         y="112.18972"
+         style="font-size:15.87500191px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Jeudi <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.87500191px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan5014">11 mars</tspan> 2021</tspan><tspan
          sodipodi:role="line"
-         x="149.33716"
-         y="116.79723"
+         x="172.55399"
+         y="130.47284"
          style="font-size:14.11111259px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
          id="tspan5004">de 16h à 20h</tspan></text>
     <text
@@ -262,47 +284,16 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="63.819553"
-       y="130.01427"
+       x="73.555656"
+       y="159.22255"
        id="text5012"><tspan
          sodipodi:role="line"
          id="tspan5010"
-         x="63.819553"
-         y="130.01427"
-         style="font-size:8.81944466px;stroke-width:0.26458332">Inscription depuis le site web du lycée</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="56.01997"
-       y="166.56204"
-       id="text5018"><tspan
-         sodipodi:role="line"
-         id="tspan5016"
-         x="56.01997"
-         y="166.56204"
-         style="font-size:7.05555582px;stroke-width:0.26458332">Enseignements de seconde</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="66.28067"
-       y="175.69826"
-       id="text5018-9"><tspan
-         sodipodi:role="line"
-         id="tspan5016-8"
-         x="66.28067"
-         y="175.69826"
-         style="font-size:7.05555582px;stroke-width:0.26458332">Enseignements de spécialités</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="75.567406"
-       y="185.28456"
-       id="text5018-3"><tspan
-         sodipodi:role="line"
-         id="tspan5016-7"
-         x="75.567406"
-         y="185.28456"
-         style="font-size:7.05555582px;stroke-width:0.26458332">Séries technologiques</tspan></text>
+         x="73.555656"
+         y="159.22255"
+         style="font-size:10.58333492px;stroke-width:0.26458332">Inscription sur <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic'"
+   id="tspan868">lyceejaydebeaufort.fr</tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="plaquette-vierge.svg"
+   inkscape:export-filename="/home/tof/Documents/Cozy/cviroulaud.github.io/divers/plaquette/plaquette-vierge.png"
+   inkscape:export-xdpi="95.431427"
+   inkscape:export-ydpi="95.431427">
+  <defs
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter898"
+       x="-0.78812845"
+       width="2.5762569"
+       y="-0.53309866"
+       height="2.0661973">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="260.86078"
+         id="feGaussianBlur900" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.7664087"
+     inkscape:cx="769.36309"
+     inkscape:cy="396.8504"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="3200"
+     inkscape:window-height="1671"
+     inkscape:window-x="0"
+     inkscape:window-y="55"
+     inkscape:window-maximized="1"
+     showguides="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="lycee"
+     style="display:inline;opacity:0.6">
+    <image
+       sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/divers/plaquette/fond.png"
+       xlink:href="fond.png"
+       style=""
+       y="-13.631317"
+       x="-6.3428016"
+       id="image1019"
+       preserveAspectRatio="none"
+       height="324.37463"
+       width="497.0936" />
+  </g>
+  <g
+     style="display:inline"
+     transform="translate(0,-87)"
+     id="g1239"
+     inkscape:groupmode="layer"
+     inkscape:label="cercle blanc"
+     sodipodi:insensitive="true">
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 320.5,-191.05859 a 587.90872,587.90872 0 0 0 -17.54297,0.8789 c 24.36156,0.56174 48.81824,2.62663 73.24609,6.25391 30.98426,4.60083 66.51063,13.2862 99.80079,24.39844 l 20,6.67578 -11.91797,4.77539 c -55.85022,22.3828 -108.8943,54.35933 -158.39063,95.480467 C 309.417,-39.071831 271.59283,-1.3805361 257.3418,15.517578 174.52846,113.71322 126.58073,232.08149 118.0293,359.4375 c -1.51753,22.60051 -0.66357,74.00497 1.57031,94.48633 8.19058,75.09526 27.21087,140.24303 60.20117,206.19922 28.35179,56.6826 64.08607,105.95913 111.64844,153.96093 52.59454,53.08044 120.07998,97.66717 192.38672,127.10938 l 13.27929,5.4082 -21.56445,7.16992 c -50.91855,16.93178 -98.39151,26.14428 -151.875,29.47071 -6.12522,0.38096 -15.4527,0.62244 -25.38281,0.73047 A 587.90872,587.90872 0 0 0 320.5,984.75977 587.90872,587.90872 0 0 0 528.75781,946.39062 587.90872,587.90872 0 0 1 147.76367,396.84961 587.90872,587.90872 0 0 1 527.41406,-152.69141 587.90872,587.90872 0 0 0 320.5,-191.05859 Z"
+       transform="matrix(0.26458333,0,0,0.26458333,0,87)"
+       id="path1231"
+       inkscape:connector-curvature="0" />
+    <path
+       transform="matrix(0.26458333,0,0,0.26458333,0,87)"
+       inkscape:connector-curvature="0"
+       id="path1233"
+       d="M 259.53053,983.54881 C 202.45945,980.79968 137.86927,967.30829 83.701607,946.8224 -107.42515,874.53941 -246.13918,711.35024 -286.32848,511.50301 c -7.86383,-39.1041 -10.99141,-71.49022 -10.92582,-113.13708 0.0581,-36.91822 1.00411,-53.12446 4.56967,-78.28682 16.2633,-114.77104 59.74444,-213.49539 132.58055,-301.025464 13.23421,-15.904084 50.92922,-53.912023 67.596444,-68.157619 C 37.273107,-160.02843 207.46207,-208.98238 376.20315,-183.92614 c 30.98426,4.60083 66.51145,13.28611 99.80161,24.39835 l 19.99957,6.67585 -11.91835,4.77646 c -55.85022,22.3828 -108.89413,54.358192 -158.39046,95.479329 -16.27831,13.523872 -54.10358,51.2161486 -68.35461,68.114263 -82.81334,98.195648 -130.76073,216.563098 -139.31216,343.919108 -1.51753,22.60051 -0.66278,74.00574 1.5711,94.4871 8.19058,75.09526 27.2105,140.2417 60.2008,206.19789 28.35179,56.6826 64.08625,105.95984 111.64862,153.96164 52.59454,53.08044 120.07998,97.66827 192.38672,127.11048 l 13.27905,5.40704 -21.56507,7.17087 c -50.91855,16.93178 -98.39127,26.14336 -151.87476,29.46979 -14.79776,0.92035 -48.1013,1.07965 -64.14468,0.30678 z"
+       style="opacity:1;fill:#005073;fill-opacity:0;stroke:none;stroke-width:1.01174331;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter898)" />
+  </g>
+  <g
+     inkscape:label="cercle bleu"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-87)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       style="opacity:1;fill:#005073;fill-opacity:0.66666667;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 81.799152,36.449082 A 155.55085,155.55085 0 0 0 -73.751557,191.99979 155.55085,155.55085 0 0 0 81.799152,347.55102 155.55085,155.55085 0 0 0 136.9007,337.39918 155.55085,155.55085 0 0 1 36.095999,191.99979 155.55085,155.55085 0 0 1 136.54516,46.600398 155.55085,155.55085 0 0 0 81.799152,36.449082 Z"
+       id="path815"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:#005073;fill-opacity:0;stroke:none;stroke-width:1.01174331;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter898)"
+       d="M 259.53053,983.54881 C 202.45945,980.79968 137.86927,967.30829 83.701607,946.8224 -107.42515,874.53941 -246.13918,711.35024 -286.32848,511.50301 c -7.86383,-39.1041 -10.99141,-71.49022 -10.92582,-113.13708 0.0581,-36.91822 1.00411,-53.12446 4.56967,-78.28682 16.2633,-114.77104 59.74444,-213.49539 132.58055,-301.025464 13.23421,-15.904084 50.92922,-53.912023 67.596444,-68.157619 C 37.273107,-160.02843 207.46207,-208.98238 376.20315,-183.92614 c 30.98426,4.60083 66.51145,13.28611 99.80161,24.39835 l 19.99957,6.67585 -11.91835,4.77646 c -55.85022,22.3828 -108.89413,54.358192 -158.39046,95.479329 -16.27831,13.523872 -54.10358,51.2161486 -68.35461,68.114263 -82.81334,98.195648 -130.76073,216.563098 -139.31216,343.919108 -1.51753,22.60051 -0.66278,74.00574 1.5711,94.4871 8.19058,75.09526 27.2105,140.2417 60.2008,206.19789 28.35179,56.6826 64.08625,105.95984 111.64862,153.96164 52.59454,53.08044 120.07998,97.66827 192.38672,127.11048 l 13.27905,5.40704 -21.56507,7.17087 c -50.91855,16.93178 -98.39127,26.14336 -151.87476,29.46979 -14.79776,0.92035 -48.1013,1.07965 -64.14468,0.30678 z"
+       id="path892"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.26458333,0,0,0.26458333,0,87)" />
+    <path
+       style="opacity:1;fill:#005073;fill-opacity:0;stroke:none;stroke-width:1.01174331;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 259.53053,983.54881 C 202.45945,980.79968 137.86927,967.30829 83.701607,946.8224 -107.42515,874.53941 -246.13918,711.35024 -286.32848,511.50301 c -7.86383,-39.1041 -10.99141,-71.49022 -10.92582,-113.13708 0.0581,-36.91822 1.00411,-53.12446 4.56967,-78.28682 16.2633,-114.77104 59.74444,-213.49539 132.58055,-301.025464 13.23421,-15.904084 50.92922,-53.912023 67.596444,-68.157619 C 37.273107,-160.02843 207.46207,-208.98238 376.20315,-183.92614 c 30.98426,4.60083 66.51145,13.28611 99.80161,24.39835 l 19.99957,6.67585 -11.91835,4.77646 c -55.85022,22.3828 -108.89413,54.358192 -158.39046,95.479329 -16.27831,13.523872 -54.10358,51.2161486 -68.35461,68.114263 -82.81334,98.195648 -130.76073,216.563098 -139.31216,343.919108 -1.51753,22.60051 -0.66278,74.00574 1.5711,94.4871 8.19058,75.09526 27.2105,140.2417 60.2008,206.19789 28.35179,56.6826 64.08625,105.95984 111.64862,153.96164 52.59454,53.08044 120.07998,97.66827 192.38672,127.11048 l 13.27905,5.40704 -21.56507,7.17087 c -50.91855,16.93178 -98.39127,26.14336 -151.87476,29.46979 -14.79776,0.92035 -48.1013,1.07965 -64.14468,0.30678 z"
+       id="path902"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.26458333,0,0,0.26458333,0,87)" />
+    <path
+       style="opacity:1;fill:#005073;fill-opacity:0;stroke:none;stroke-width:1.01174331;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 259.53053,983.54881 C 202.45945,980.79968 137.86927,967.30829 83.701607,946.8224 -107.42515,874.53941 -246.13918,711.35024 -286.32848,511.50301 c -7.86383,-39.1041 -10.99141,-71.49022 -10.92582,-113.13708 0.0581,-36.91822 1.00411,-53.12446 4.56967,-78.28682 16.2633,-114.77104 59.74444,-213.49539 132.58055,-301.025464 13.23421,-15.904084 50.92922,-53.912023 67.596444,-68.157619 C 37.273107,-160.02843 207.46207,-208.98238 376.20315,-183.92614 c 30.98426,4.60083 66.51145,13.28611 99.80161,24.39835 l 19.99957,6.67585 -11.91835,4.77646 c -55.85022,22.3828 -108.89413,54.358192 -158.39046,95.479329 -16.27831,13.523872 -54.10358,51.2161486 -68.35461,68.114263 -82.81334,98.195648 -130.76073,216.563098 -139.31216,343.919108 -1.51753,22.60051 -0.66278,74.00574 1.5711,94.4871 8.19058,75.09526 27.2105,140.2417 60.2008,206.19789 28.35179,56.6826 64.08625,105.95984 111.64862,153.96164 52.59454,53.08044 120.07998,97.66827 192.38672,127.11048 l 13.27905,5.40704 -21.56507,7.17087 c -50.91855,16.93178 -98.39127,26.14336 -151.87476,29.46979 -14.79776,0.92035 -48.1013,1.07965 -64.14468,0.30678 z"
+       id="path904"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.26458333,0,0,0.26458333,0,87)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="adresse 1"
+     style="display:none">
+    <g
+       id="g1092-3"
+       transform="translate(89.391905,47.342543)">
+      <text
+         id="text1045-9"
+         y="110.09274"
+         x="185.34776"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#33738f;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan1047-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:end;text-anchor:end;fill:#33738f;fill-opacity:1;stroke-width:0.26458332"
+           y="119.45651"
+           x="185.34776"
+           sodipodi:role="line" /></text>
+      <text
+         id="text1057-7"
+         y="136.48326"
+         x="139.35152"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan1059-2"
+           style="font-size:4.58611107px;line-height:0.25;stroke-width:0.26458332"
+           y="136.48326"
+           x="139.35152"
+           sodipodi:role="line">9, rue Turenne - BP 10159</tspan><tspan
+           id="tspan1063-7"
+           style="font-size:4.58611107px;line-height:0.25;stroke-width:0.26458332"
+           y="149.71243"
+           x="139.35152"
+           sodipodi:role="line" /></text>
+      <text
+         id="text1067-2"
+         y="142.634"
+         x="160.00246"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-size:4.58611107px;stroke-width:0.26458332"
+           y="142.634"
+           x="160.00246"
+           id="tspan1065-9"
+           sodipodi:role="line">24007 Périgueux</tspan></text>
+      <text
+         id="text1071-0"
+         y="150.09473"
+         x="154.91026"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="150.09473"
+           x="154.91026"
+           id="tspan1069-5"
+           sodipodi:role="line">Tél: 05 53 02 75 00</tspan></text>
+      <text
+         id="text1075-0"
+         y="155.77745"
+         x="133.10159"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="155.77745"
+           x="133.10159"
+           id="tspan1073-4"
+           sodipodi:role="line">https://lyceejaydebeaufort.fr</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="72.445465"
+         y="-40.891582"
+         id="text884"><tspan
+           sodipodi:role="line"
+           x="72.445465"
+           y="-36.83395"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;fill:#2b6883;fill-opacity:1;stroke-width:0.26458332"
+           id="tspan886" /><tspan
+           sodipodi:role="line"
+           x="72.445465"
+           y="-10.229184"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.16666603px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;fill:#2b6883;fill-opacity:1;stroke-width:0.26458332"
+           id="tspan1499"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28.22222328px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold';fill:#2b6883;fill-opacity:1"
+   id="tspan1503">Jay</tspan> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.11111069px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold';fill:#2b6883;fill-opacity:1"
+   id="tspan1501">de</tspan> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28.22222328px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold';fill:#2b6883;fill-opacity:1"
+   id="tspan1505">Beaufort</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="51.107384"
+         y="-34.161373"
+         id="text1630"><tspan
+           sodipodi:role="line"
+           id="tspan1628"
+           x="51.107384"
+           y="-34.161373"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.63888931px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';fill:#2b6883;fill-opacity:1;stroke-width:0.26458332">Lycée</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="adresse 2">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="292.95758"
+       y="164.6586"
+       id="text884-3"><tspan
+         sodipodi:role="line"
+         x="292.95758"
+         y="168.71625"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;fill:#2b6883;fill-opacity:1;stroke-width:0.26458332"
+         id="tspan886-6" /><tspan
+         sodipodi:role="line"
+         x="292.95758"
+         y="182.91656"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111259px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:end;text-anchor:end;fill:#2b6883;fill-opacity:1;stroke-width:0.26458332"
+         id="tspan1499-7">Lycée</tspan><tspan
+         sodipodi:role="line"
+         x="292.95758"
+         y="203.68678"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.63888931px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:end;text-anchor:end;fill:#2b6883;fill-opacity:1;stroke-width:0.26458332"
+         id="tspan1511"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.63888931px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold';text-align:end;text-anchor:end;fill:#2b6883;fill-opacity:1;stroke-width:0.26458332"
+   id="tspan1513">J</tspan>ay <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111259px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:end;text-anchor:end;fill:#2b6883;fill-opacity:1;stroke-width:0.26458332"
+   id="tspan1501-3">de</tspan> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold'"
+   id="tspan1525">B</tspan>eaufort</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="texte"
+     style="display:none">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="72.060867"
+       y="65.007133"
+       id="text1265"><tspan
+         sodipodi:role="line"
+         id="tspan1263"
+         x="72.060867"
+         y="65.007133"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.16666794px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332">Portes ouvertes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="169.28777"
+       y="132.7104"
+       id="text5002"><tspan
+         sodipodi:role="line"
+         id="tspan5000"
+         x="169.28777"
+         y="132.7104"
+         style="font-size:14.11111259px;text-align:center;text-anchor:middle;stroke-width:0.26458332">Vendredi <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan982">5 février</tspan> 2021</tspan><tspan
+         sodipodi:role="line"
+         x="169.28777"
+         y="150.34929"
+         style="font-size:14.11111259px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan5004">de 14h à 18h</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="116.8331"
+       y="99.457916"
+       id="text5008"><tspan
+         sodipodi:role="line"
+         id="tspan5006"
+         x="116.8331"
+         y="103.51555"
+         style="stroke-width:0.26458332" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="83.29174"
+       y="162.96719"
+       id="text5012"><tspan
+         sodipodi:role="line"
+         id="tspan5010"
+         x="83.29174"
+         y="162.96719"
+         style="font-size:8.81944466px;stroke-width:0.26458332">Inscription depuis le site web du lycée</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="61.711838"
+       y="179.74321"
+       id="text5018"><tspan
+         sodipodi:role="line"
+         id="tspan5016"
+         x="61.711838"
+         y="179.74321"
+         style="font-size:5.9972229px;stroke-width:0.26458332">Recrutement et organisation de la formation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="71.972542"
+       y="188.87943"
+       id="text5018-9"><tspan
+         sodipodi:role="line"
+         id="tspan5016-8"
+         x="71.972542"
+         y="188.87943"
+         style="font-size:5.99722242px;stroke-width:0.26458332">Les formateurs et le monde professionnel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="81.259277"
+       y="198.46573"
+       id="text5018-3"><tspan
+         sodipodi:role="line"
+         id="tspan5016-7"
+         x="81.259277"
+         y="198.46573"
+         style="font-size:5.99722242px;stroke-width:0.26458332">Rencontres avec les étudiants</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#004477;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="98.714981"
+       y="91.369469"
+       id="text872"
+       inkscape:export-xdpi="95"
+       inkscape:export-ydpi="95"><tspan
+         sodipodi:role="line"
+         id="tspan870"
+         x="98.714981"
+         y="91.369469"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.63889122px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#004477;fill-opacity:1;stroke-width:0.26458332">DTS IMRT</tspan><tspan
+         sodipodi:role="line"
+         x="98.714981"
+         y="105.61494"
+         style="font-size:8.81944561px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.26458332"
+         id="tspan1608">(Imagerie Médicale)</tspan><tspan
+         sodipodi:role="line"
+         x="98.714981"
+         y="112.89374"
+         style="font-size:6.35000086px;text-align:center;text-anchor:middle;fill:#004477;fill-opacity:1;stroke-width:0.26458332"
+         id="tspan1612" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="229.70752"
+       y="91.369469"
+       id="text1620"><tspan
+         sodipodi:role="line"
+         id="tspan1618"
+         x="229.70752"
+         y="91.369469"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.63888931px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#004477;fill-opacity:1;stroke-width:0.26458332">BTS SP3S</tspan><tspan
+         sodipodi:role="line"
+         x="230.83061"
+         y="104.05431"
+         style="font-size:7.05555582px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1622">(Services et Prestations des </tspan><tspan
+         sodipodi:role="line"
+         x="229.70752"
+         y="112.87376"
+         style="font-size:7.05555582px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan1624">Secteurs Sanitaire et Social)</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="bandeau"
+     style="display:none;opacity:1">
+    <g
+       id="g1295"
+       transform="rotate(45,306.18206,-77.999147)">
+      <rect
+         y="14.964746"
+         x="285.76501"
+         height="26.631142"
+         width="153.49222"
+         id="rect1272"
+         style="opacity:1;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:0.4283233;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         transform="matrix(0.99972336,-0.02352048,-0.02352048,0.99972336,0,0)" />
+      <text
+         id="text1270"
+         y="23.174875"
+         x="328.07999"
+         style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333397px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.26458332"
+           y="23.174875"
+           x="328.07999"
+           id="tspan1268"
+           sodipodi:role="line">EN VISIO</tspan></text>
+    </g>
+  </g>
+</svg>

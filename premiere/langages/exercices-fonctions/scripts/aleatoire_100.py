@@ -9,13 +9,13 @@ Date de création Fri Jan  1 16:09:54 2021
 
 from random import randint
 
-def aleatoire_100(n):
+def aleatoire_100(n: int)->list:
     """
     renvoie une liste de n éléments compris entre 0 et 100
     """
     return [randint(0, 100) for _ in range(n)]
 
-def position(tableau, element):
+def position(tableau: list, element: int)->int:
     """
     renvoie l'indice de la première position de element
 

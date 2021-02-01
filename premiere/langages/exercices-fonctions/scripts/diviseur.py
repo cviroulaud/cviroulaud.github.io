@@ -7,7 +7,7 @@ Date de création Fri Jan  1 16:04:01 2021
 """
 
 
-def diviseur(a):
+def diviseur(a: int)->list:
     """
     renvoie la liste des diviseurs de a
     """

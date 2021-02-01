@@ -5,7 +5,8 @@
 \newdate{madate}{10}{09}{2020}
 \fancyhead[R]{Première - NSI} %\today
 \fancyfoot[L]{~\\Christophe Viroulaud}
-\fancyfoot[C]{\textbf{Page \thepage}}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
 \fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
 \usepackage{tikz}
 \begin{document}

@@ -1,0 +1,19 @@
+
+h1{
+      color: blue;
+}
+html{
+  background-color: white;
+}
+
+body {
+   width: 800px;
+ margin: 200px auto;
+ background-color: crimson;
+ p {
+ text-align: justify;
+  font-family: "Gill Sans", sans-serif;
+  }
+  .titre-special {
+   color: blue;
+   }

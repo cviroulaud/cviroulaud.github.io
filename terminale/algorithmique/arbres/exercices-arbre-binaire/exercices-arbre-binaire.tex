@@ -113,14 +113,55 @@ L'arbre des ascendants d'Emmanuel Macron est représenté dans un liste Python (
 \item Représenter l'arbre généalogique sous forme d'un arbre binaire.
 \item Ouvrir le fichier \emph{arbre-genealogique.py}.
 \item Écrire la fonction \textbf{get\_parents(tab: list, id\_enfant: int)$\;\rightarrow\;$tuple} qui renvoie le nom des parents de \emph{id\_enfant} sous forme de tuple. La fonction devra gérer les identifiants trop grands à l'aide d'une assertion.
-\item Écrire la fonction \textbf{ascendant\_homme(tab: list, hommes: list)$\;\rightarrow\;$list} qui renvoie la liste des hommes de la personne dont on a réalisé l'arbre généalogique. La fonction devra parcourir l'arbre en profondeur. De plus une simple liste Python fera office de pile.
+\item Écrire la fonction \textbf{ascendant\_homme(tab: list, hommes: list)$\;\rightarrow\;$list} qui renvoie la liste des ascendants masculins de la personne dont on a réalisé l'arbre généalogique. La fonction devra parcourir l'arbre en profondeur. De plus une simple liste Python fera office de pile.
 \item Écrire une version récursive de la fonction précédente.
 \end{enumerate}
 \end{exo}
-nombre de feuilles (récursif)\\
-insertion, suppression\\
-binarytree\\
-tri par tas\\
-numérotation de Sosa-Stradonitz
+\begin{exo}
+\begin{center}
+\begin{tikzpicture}
+\node[draw] (r) at (0,0) {r};
+\node[draw] (a) at (-3,-1) {a};
+\node[draw] (b) at (3,-1) {b};
+\node[draw] (c) at (-4,-2) {c};
+\node[draw] (d) at (-2,-2) {d};
+\node[draw] (e) at (2,-2) {e};
+\node[draw] (f) at (4,-2) {f};
+\node[draw] (g) at (-4.5,-3) {g};
+\node[draw] (h) at (-3.5,-3) {h};
+\node[draw] (i) at (-2.5,-3) {i};
+\node[draw] (j) at (-1.5,-3) {j};
+\node[draw] (k) at (1.5,-3) {k};
+\node[draw] (l) at (-2,-4) {l};
+
+\draw (r) -- (a);
+\draw (r) -- (b);
+\draw (a) -- (c);
+\draw (a) -- (d);
+\draw (b) -- (e);
+\draw (b) -- (f);
+\draw (c) -- (g);
+\draw (c) -- (h);
+\draw (d) -- (i);
+\draw (d) -- (j);
+\draw (e) -- (k);
+\draw (j) -- (l);
+\end{tikzpicture}
+\captionof{figure}{Un arbre de chaîne de caractère}
+\label{exo4}
+\end{center}
+L'objectif est de créer une classe permettant de construire un arbre binaire (figure \ref{exo4}).
+\begin{enumerate}
+\item Créer une classe \emph{Arbre\_binaire}. On passera un paramètre \emph{h} à son constructeur qui correspondra à la hauteur de l'arbre binaire parfait voulu. De plus, le constructeur:
+\begin{itemize}
+\item initialisera un tableau \emph{arbre} à la bonne taille, représentatif de l'arbre binaire. Chaque élément du tableau sera initialisé à \emph{None}.
+\item initialisera la racine avec la chaîne de caractère \emph{"r"}. 
+\item Construire l'objet \emph{arbre\_car}, instance de la classe \emph{Arbre\_binaire} puis les nœuds de la figure \ref{exo4}.
+\end{itemize}
+\item Écrire la méthode \textbf{inserer(self, pere: str, fils\_g: str, fils\_d: str)$\;\rightarrow\;$None} qui insère les fils gauche et droit de \emph{pere}. La méthode lèvera une erreur d'assertion si le nœud \emph{pere} n'a pas de fils (sort du tableau).
+\item Écrire la méthode \textbf{def prefixe(self, parcours: list, i: int = 0)$\;\rightarrow\;$list:} qui renvoie la liste des nœuds traversé avec un parcours préfixe.
+\item Écrire de même les méthodes \emph{infixe} et \emph{postfixe}.
+\end{enumerate}
+\end{exo}
 \end{Form}
 \end{document}

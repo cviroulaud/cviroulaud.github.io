@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  1 FEB 2021 11:42
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 FEB 2021 08:23
  restricted system commands enabled.
 **exercices-arbre-binaire-correction.tex
 (./exercices-arbre-binaire-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.072 seconds
+luaotfload | main : initialization completed in 0.076 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1528,14 +1528,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./scripts/arbre-genealogique.py)
+Overfull \hbox (6.62334pt too wide) in paragraph at lines 48--81
+[] 
+ []
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 53.
-See the caption package documentation for explanation.
-
-Package hyperref Info: bookmark level for unknown code defaults to 0 on input li
-ne 53.
+(./scripts/arbre-genealogique.py) (./scripts/arbre-genealogique.py
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
@@ -1546,39 +1543,39 @@ This may cause the page layout to be inconsistent, however.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 68.
+input line 27.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
-</home/tof/Documents/Cozy/latex-include/cc.png>]
+</home/tof/Documents/Cozy/latex-include/cc.png>])
+(./scripts/arbre-genealogique.py)
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 68.
+input line 97.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
-
-(./exercices-arbre-binaire-correction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
+ (./exercices-arbre-binaire-correction.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `exercices-arbre-binaire-correction.out' has n
 ot changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38907 strings out of 494383
- 125005,953878 words of node,token memory allocated
- 17398 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 20 glue, 4 kern, 1 penalty, 1968 glyph, 1202 attrib
-ute, 97 glue_spec, 202 attribute_list, 1 write nodes
-   avail lists: 1:6,2:6375,3:205,4:2238,5:1885,6:43,7:3825,8:1613,9:3013,10:34,1
-1:284
- 41990 multiletter control sequences out of 65536+600000
+ 39098 strings out of 494383
+ 156261,953878 words of node,token memory allocated
+ 19232 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 16 glue, 4 kern, 1 penalty, 2016 glyph, 1856 attrib
+ute, 97 glue_spec, 311 attribute_list, 1 write nodes
+   avail lists: 1:5,2:8086,3:408,4:2776,5:2282,6:52,7:2760,8:2029,9:3688,10:27,1
+1:217
+ 42136 multiletter control sequences out of 65536+600000
  51 fonts using 7566271 bytes
- 74i,15n,95p,1129b,1002s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 74i,16n,95p,1129b,1254s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
 /public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmrom
@@ -1591,11 +1588,11 @@ e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb
 >
-Output written on exercices-arbre-binaire-correction.pdf (2 pages, 81790 bytes).
+Output written on exercices-arbre-binaire-correction.pdf (2 pages, 83837 bytes).
 
 
-PDF statistics: 129 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 26 named destinations out of 1000 (max. 131072)
+PDF statistics: 153 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

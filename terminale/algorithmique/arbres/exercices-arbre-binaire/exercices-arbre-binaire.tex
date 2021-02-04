@@ -97,9 +97,9 @@ L'arbre figure \ref{arbre} représente une opération arithmétique.
 \end{enumerate}
 \end{exo}
 \begin{exo}
-En généalogie le principe de la numérotation de Sosa-Stradonitz attribue le numéro 1 à l’individu racine (le sujet sur lequel on établit l’ascendance) puis le numéro 2 à son père et 3 à sa mère. Ainsi, chaque homme a un numéro double de celui de son enfant et donc pair et chaque femme un numéro double de celui de son enfant plus un, soit un numéro impair.
+En généalogie le principe de la numérotation de Sosa-Stradonitz attribue le numéro 1 à l’individu racine (le sujet sur lequel on établit l’ascendance) puis le numéro 2 à son père et 3 à sa mère. Ainsi, chaque homme a un numéro double de celui de son enfant et est donc pair et chaque femme un numéro double de celui de son enfant plus un, soit un numéro impair.
 \begin{enumerate}
-\item Le numéro 17 est-il une femme ou un homme? Quel est les numéros de son père et sa mère? Quel est le numéro de son enfant?
+\item Le numéro 17 est-il une femme ou un homme? Quels sont les numéros de son père et sa mère? Quel est le numéro de son enfant?
 \item Combien de trisaïeuls (ancêtres de quatrième degré) possède un individu?
 \item Un généalogiste propose d'imprimer l'arbre généalogique d'un individu avec quatre degrés d'ascendance. Combien de personnes seront affichées dans cet arbre?
 \end{enumerate}
@@ -156,11 +156,12 @@ L'objectif est de créer une classe permettant de construire un arbre binaire (f
 \begin{itemize}
 \item initialisera un tableau \emph{arbre} à la bonne taille, représentatif de l'arbre binaire. Chaque élément du tableau sera initialisé à \emph{None}.
 \item initialisera la racine avec la chaîne de caractère \emph{"r"}. 
-\item Construire l'objet \emph{arbre\_car}, instance de la classe \emph{Arbre\_binaire} puis les nœuds de la figure \ref{exo4}.
 \end{itemize}
 \item Écrire la méthode \textbf{inserer(self, pere: str, fils\_g: str, fils\_d: str)$\;\rightarrow\;$None} qui insère les fils gauche et droit de \emph{pere}. La méthode lèvera une erreur d'assertion si le nœud \emph{pere} n'a pas de fils (sort du tableau).
+\item Construire l'objet \emph{arbre\_car}, instance de la classe \emph{Arbre\_binaire} puis les nœuds de la figure \ref{exo4}.
 \item Écrire la méthode \textbf{def prefixe(self, parcours: list, i: int = 0)$\;\rightarrow\;$list:} qui renvoie la liste des nœuds traversé avec un parcours préfixe.
 \item Écrire de même les méthodes \emph{infixe} et \emph{postfixe}.
+\item \emph{Pour les plus avancés:} transformer les méthodes de parcours précédentes pour qu'elles construisent le tableau au fur et à mesure. La signature de la méthode doit être \textbf{def prefixe(self, i: int = 0)$\;\rightarrow\;$list:}
 \end{enumerate}
 \end{exo}
 \end{Form}

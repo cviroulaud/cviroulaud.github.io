@@ -13317,8 +13317,7 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Activit&#233;-1">Activit&#233; 1<a class="anchor-link" href="#Activit&#233;-1">&#182;</a></h4><ul>
-<li>Se rendre sur le site <a href="http://pythontutor.com/">http://pythontutor.com/</a> .</li>
-<li>Cliquer sur <em>Start visualizing your code now</em>.</li>
+<li>Se rendre sur le site <a href="http://pythontutor.com/">http://pythontutor.com/</a> et cliquer sur <em>Start visualizing your code now</em>.</li>
 <li>Écrire le code puis cliquer sur <em>Visualize Execution</em>.</li>
 <li>Exécuter le code en <em>pas à pas</em> avec le bouton <em>Next</em>.</li>
 <li>Observer la période d'existence de la variable <em>a</em> et justifier alors l'erreur d'exécution de la ligne 5.</li>
@@ -13361,7 +13360,502 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.-Pi&#232;ges-et-bonnes-pratiques">3. Pi&#232;ges et bonnes pratiques<a class="anchor-link" href="#3.-Pi&#232;ges-et-bonnes-pratiques">&#182;</a></h2><h3 id="3.1-Effet-de-bord">3.1 Effet de bord<a class="anchor-link" href="#3.1-Effet-de-bord">&#182;</a></h3><p>Les élèves de NSI ont obtenu les notes suivantes lors du dernier devoir. Avant de les enregistrer définitivement dans Pronote, l'enseignant désire simuler des bonifications pour favoriser les élèves le plus en difficultés. Le code effectue une bonification de deux points pour deux cas de figure:</p>
+<h2 id="3.-Param&#232;tres-et-variables-d'une-fonction">3. Param&#232;tres et variables d'une fonction<a class="anchor-link" href="#3.-Param&#232;tres-et-variables-d'une-fonction">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cube</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="c1"># x est un paramètre de la fonction</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">x</span>
+    <span class="k">return</span> <span class="n">resultat</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cube</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># 4 est l&#39;argument passé à la fonction</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># resultat est une variable locale de la fonction cube</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">resultat</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-3-6723a7a0b25f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span>resultat<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;resultat&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cube</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># la fonction renvoie une valeur</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># on utilise le renvoi de la fonction dans le programme principal</span>
+<span class="n">somme</span> <span class="o">=</span> <span class="n">cube</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">cube</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">cube</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="n">cube</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">somme</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>100</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Activit&#233;-3">Activit&#233; 3<a class="anchor-link" href="#Activit&#233;-3">&#182;</a></h4><p>Une boutique de vêtements effectue des soldes sur ses invendus. Elle définit les remises:</p>
+<ul>
+<li>30% sur les étiquettes rouges,</li>
+<li>40% sur es étiquettes vertes,</li>
+<li>50% sur les étiquettes bleues.
+Écrire une fonction <strong>remise</strong> qui calcule la valeur en € de la remise effectuée en fonction du prix du vêtement et de la couleur de l'étiquette.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calcul_remise</span><span class="p">(</span><span class="n">prix</span><span class="p">,</span> <span class="n">remise</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;rouge&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.30</span>
+    <span class="k">elif</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;verte&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.40</span>
+    <span class="k">elif</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;bleue&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.50</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># pas de remise</span>
+        <span class="k">return</span> <span class="mi">0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">calcul_remise</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="s2">&quot;verte&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>60.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.-Pi&#232;ges-et-bonnes-pratiques">4. Pi&#232;ges et bonnes pratiques<a class="anchor-link" href="#4.-Pi&#232;ges-et-bonnes-pratiques">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.1-Documenter-une-fonction">4.1 Documenter une fonction<a class="anchor-link" href="#4.1-Documenter-une-fonction">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La <strong>docstring</strong> détaille la manière d'utiliser une fonction. C'est un commentaire spécifique placé sous la signature de la fonction. On accède à cette documentation via la commande <strong>help</strong>.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calcul_remise</span><span class="p">(</span><span class="n">prix</span><span class="p">,</span> <span class="n">remise</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    calcule la valeur de la remise en euro</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    prix : int</span>
+<span class="sd">        prix non soldé.</span>
+<span class="sd">    remise : str</span>
+<span class="sd">        nom de l&#39;étiquette.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    valeur de la remise.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;rouge&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.30</span>
+    <span class="k">elif</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;verte&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.40</span>
+    <span class="k">elif</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;bleue&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.50</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># pas de remise</span>
+        <span class="k">return</span> <span class="mi">0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">calcul_remise</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Help on function calcul_remise in module __main__:
+
+calcul_remise(prix, remise)
+    calcule la valeur de la remise en euro
+    
+    Parameters
+    ----------
+    prix : int
+        prix non soldé.
+    remise : str
+        nom de l&#39;étiquette.
+    
+    Returns
+    -------
+    valeur de la remise.
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">print</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Help on built-in function print in module builtins:
+
+print(...)
+    print(value, ..., sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)
+    
+    Prints the values to a stream, or to sys.stdout by default.
+    Optional keyword arguments:
+    file:  a file-like object (stream); defaults to the current sys.stdout.
+    sep:   string inserted between values, default a space.
+    end:   string appended after the last value, default a newline.
+    flush: whether to forcibly flush the stream.
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.2-Typer-les-param&#232;tres-d'une-fonction">4.2 Typer les param&#232;tres d'une fonction<a class="anchor-link" href="#4.2-Typer-les-param&#232;tres-d'une-fonction">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calcul_remise</span><span class="p">(</span><span class="n">prix</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">remise</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">float</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;rouge&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.30</span>
+    <span class="k">elif</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;verte&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.40</span>
+    <span class="k">elif</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;bleue&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.50</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># pas de remise</span>
+        <span class="k">return</span> <span class="mi">0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calcul_remise</span><span class="p">(</span><span class="n">prix</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">remise</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    calcule la valeur de la remise en euro</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    prix : int</span>
+<span class="sd">        prix non soldé.</span>
+<span class="sd">    remise : str</span>
+<span class="sd">        nom de l&#39;étiquette.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    valeur de la remise.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;rouge&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.30</span>
+    <span class="k">elif</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;verte&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.40</span>
+    <span class="k">elif</span> <span class="n">remise</span> <span class="o">==</span> <span class="s2">&quot;bleue&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prix</span><span class="o">*</span><span class="mf">0.50</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># pas de remise</span>
+        <span class="k">return</span> <span class="mi">0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">calcul_remise</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="s2">&quot;bleue&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>75.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Le typage est indicatif; il ne lève pas d&#39;erreur en Python</span>
+<span class="n">calcul_remise</span><span class="p">(</span><span class="mf">155.50</span><span class="p">,</span> <span class="s2">&quot;bleue&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>77.75</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.3-Effet-de-bord">4.3 Effet de bord<a class="anchor-link" href="#4.3-Effet-de-bord">&#182;</a></h3><p>Les élèves de NSI ont obtenu les notes suivantes lors du dernier devoir. Avant de les enregistrer définitivement dans Pronote, l'enseignant désire simuler des bonifications pour favoriser les élèves le plus en difficultés. Le code effectue une bonification de deux points pour deux cas de figure:</p>
 <ul>
 <li>les élèves ont 6 ou moins,</li>
 <li>les élèves ont 8 ou moins.</li>
@@ -13395,7 +13889,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Activit&#233;-3">Activit&#233; 3<a class="anchor-link" href="#Activit&#233;-3">&#182;</a></h4><ul>
+<h4 id="Activit&#233;-4">Activit&#233; 4<a class="anchor-link" href="#Activit&#233;-4">&#182;</a></h4><ul>
 <li>Recopier le code dans un EDI et repérer l'erreur dans les calculs effectués.</li>
 <li>Copier le code dans <em>pythontutor</em> et expliquer cette erreur.</li>
 </ul>
@@ -13497,7 +13991,22 @@ bonus limite 8 [9, 12, 10, 9, 19, 10, 9, 10, 5, 15, 13, 10]
 <div align="middle"><h3>Une variable mutable est modifiée quand elle est utilisée dans une fonction.</h3></div>
 </div>
 </div>
-</div></div><div class="fragment">
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.4-Bonnes-pratiques">4.4 Bonnes pratiques<a class="anchor-link" href="#4.4-Bonnes-pratiques">&#182;</a></h3><div align="middle"><h3>On évitera au maximum d'utiliser une variable globale.</h3></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Activit&#233;-4">Activit&#233; 4<a class="anchor-link" href="#Activit&#233;-4">&#182;</a></h4><p>Modifier la fonction <strong>simulation_bonification</strong> pour qu'elle crée une copie du tableau de notes et effectue les modifications sur cette copie.</p>
+
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13505,13 +14014,6 @@ bonus limite 8 [9, 12, 10, 9, 19, 10, 9, 10, 5, 15, 13, 10]
 </div>
 </div>
 </div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.2-Bonnes-pratiques">3.2 Bonnes pratiques<a class="anchor-link" href="#3.2-Bonnes-pratiques">&#182;</a></h3><div align="middle"><h3>On évitera au maximum d'utiliser une variable globale.</h3></div>
-</div>
-</div>
-</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">

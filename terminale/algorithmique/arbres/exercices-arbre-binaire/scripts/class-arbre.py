@@ -24,7 +24,7 @@ class Arbre_binaire:
         """
         i_pere = self.arbre.index(pere)
         #vérification de sortie de l'arbre
-        assert 2*i_pere < len(self.arbre), "Ce nœud n'a pas de fils"
+        assert 2*i_pere < len(self.arbre), "Ce noeud n'a pas de fils"
         self.arbre[2*i_pere + 1] = fils_g
         self.arbre[2*i_pere + 2] = fils_d
 

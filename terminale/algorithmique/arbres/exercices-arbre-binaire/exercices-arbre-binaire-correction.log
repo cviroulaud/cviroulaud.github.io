@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 FEB 2021 08:23
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  3 FEB 2021 11:04
  restricted system commands enabled.
 **exercices-arbre-binaire-correction.tex
 (./exercices-arbre-binaire-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.076 seconds
+luaotfload | main : initialization completed in 0.070 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1548,33 +1548,46 @@ input line 27.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>])
-(./scripts/arbre-genealogique.py)
+(./scripts/arbre-genealogique.py) (./scripts/class-arbre.py)
+(./scripts/class-arbre.py)
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 97.
+input line 95.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
+ [2] (./scripts/class-arbre.py)
+(./scripts/class-arbre.py) (./scripts/class-arbre.py) (./scripts/class-arbre.py
+) (./scripts/class-arbre.py)
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 108.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (./exercices-arbre-binaire-correction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `exercices-arbre-binaire-correction.out' has n
 ot changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 39098 strings out of 494383
- 156261,953878 words of node,token memory allocated
- 19232 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 16 glue, 4 kern, 1 penalty, 2016 glyph, 1856 attrib
-ute, 97 glue_spec, 311 attribute_list, 1 write nodes
-   avail lists: 1:5,2:8086,3:408,4:2776,5:2282,6:52,7:2760,8:2029,9:3688,10:27,1
-1:217
- 42136 multiletter control sequences out of 65536+600000
- 51 fonts using 7566271 bytes
+ 39287 strings out of 494383
+ 305222,953878 words of node,token memory allocated
+ 38930 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 17 glue, 4 kern, 1 penalty, 3579 glyph, 5606 attrib
+ute, 97 glue_spec, 936 attribute_list, 1 write nodes
+   avail lists: 1:5,2:16639,3:409,4:6810,5:5562,6:63,7:4965,8:4999,9:9016,10:30,
+11:513
+ 42157 multiletter control sequences out of 65536+600000
+ 51 fonts using 7568455 bytes
  74i,16n,95p,1129b,1254s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
@@ -1588,11 +1601,11 @@ e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb
 >
-Output written on exercices-arbre-binaire-correction.pdf (2 pages, 83837 bytes).
+Output written on exercices-arbre-binaire-correction.pdf (3 pages, 91290 bytes).
 
 
-PDF statistics: 153 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 131072)
+PDF statistics: 231 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
+ 118 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

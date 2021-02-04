@@ -4,3 +4,12 @@ trop dur pour commencer??
 	commencer par un cours plus 'général'? <-- pas forcément
 	afficher (donner) tout le programme des 4 tableaux de couleurs avant de passer à la construction de la fonction
 	mettre ratio de couleurs dès la construction intiale des 4 images (et pas seulement dans la fonction)
+
+vérifier si inversion ligne/colonne
+
+difficultés des élèves:
+	variable locale, utilisation de quelles variables
+	définition de la fonction / appel de la fonction
+	"variable" retournée n'est pas "utilisable == la fonction renvoie une valeur (un objet) pas une variable
+	ligne et colonne sont des variables globales ici... pas terrible --> calculer la taille dans la fonction!
+	trouver une autre idée  simple/générique pour commencer --> fonction mathématiques: calculer les images d'une fonction "compliquée" + fusionner avec le cours "variable et fonction"

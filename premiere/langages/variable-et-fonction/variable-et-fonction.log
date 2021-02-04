@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  3 JAN 2021 18:03
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  4 FEB 2021 17:35
  restricted system commands enabled.
 **variable-et-fonction.tex
 (./variable-et-fonction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.079 seconds
+luaotfload | main : initialization completed in 0.071 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -339,6 +339,9 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
@@ -930,14 +933,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip73
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 105.
+Package hyperref Info: Option `colorlinks' set `true' on input line 107.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 105.
+(hyperref)                setting the option has no effect on input line 107.
 
-Package hyperref Info: Option `frenchlinks' set `true' on input line 105.
-Package hyperref Info: Option `unicode' set `true' on input line 105.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 107.
+Package hyperref Info: Option `unicode' set `true' on input line 107.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 )
@@ -1535,7 +1538,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package mdframed Info: Not enough space on this page on input line 63.
+Package mdframed Info: Not enough space on this page on input line 62.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1543,48 +1546,86 @@ Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=51, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=63, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 63.
+input line 62.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package mdframed Info: Not enough space on this page on input line 63.
- (./scripts/effet-de-bord.py)
+Package mdframed Info: Not enough space on this page on input line 62.
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 72.
+(caption)                particular \caption on input line 75.
 See the caption package documentation for explanation.
 
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 94.
+input line 100.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 105.
+See the caption package documentation for explanation.
+
+(./scripts/effet-de-bord.py)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 115.
+See the caption package documentation for explanation.
+
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 131.
+
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
+(mdframed)              on input line 131.
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 131.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+[3]
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last split box is empty
+(mdframed)                You have to change the settings on input line 131.
+
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
+input line 141.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (./variable-et-fonction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `variable-et-fonction.out' has not changed.
-(rerunfilecheck)             Checksum: 7C5314C230339BE27CF532512C9F0FD9;982.
+(rerunfilecheck)             Checksum: D8E8630D1884718D9158EF30A076CD56;1670.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38910 strings out of 494383
- 100000,953878 words of node,token memory allocated
- 18616 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 10 glue, 4 kern, 1 penalty, 2216 glyph, 1010 attrib
-ute, 97 glue_spec, 170 attribute_list, 1 write nodes
-   avail lists: 1:4,2:6055,3:398,4:945,5:842,6:56,7:2630,8:690,9:1355,10:14,11:1
-95
- 41979 multiletter control sequences out of 65536+600000
+ 39186 strings out of 494383
+ 125007,953878 words of node,token memory allocated
+ 33258 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 15 glue, 4 kern, 1 penalty, 4112 glyph, 1580 attrib
+ute, 98 glue_spec, 265 attribute_list, 1 write nodes
+   avail lists: 1:6,2:7925,3:508,4:1673,5:1426,6:56,7:2989,8:1193,9:2279,10:30,1
+1:279
+ 42221 multiletter control sequences out of 65536+600000
  55 fonts using 8092991 bytes
- 74i,15n,95p,1115b,1066s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 74i,15n,95p,1115b,1100s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/p
 ublic/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
@@ -1592,10 +1633,10 @@ ublic/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman
 r/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/f
 onts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/font
 s/type1/urw/zapfding/uzdr.pfb>
-Output written on variable-et-fonction.pdf (2 pages, 44584 bytes).
+Output written on variable-et-fonction.pdf (4 pages, 53382 bytes).
 
-PDF statistics: 161 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 131072)
- 122 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 196 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 131072)
+ 146 words of extra memory for PDF output out of 10000 (max. 100000000)
 

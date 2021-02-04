@@ -46,12 +46,11 @@ une_fonction()
 C'est le domaine d'existence d'une variable, c'est à dire la partie du programme où elle peut être utilisée.
 \subsection{Variable locale}
 \begin{aretenir}[]
-Une variable locale n'est utilisable que dans le bloc ou la fonction où elle a été définie.
+Une variable locale n'est utilisable que dans le bloc où elle a été définie.
 \end{aretenir}
 \begin{activite}
 \begin{enumerate}
-\item Se rendre sur le site \url{http://pythontutor.com/} .
-\item Cliquer sur \emph{Start visualizing your code now}.
+\item Se rendre sur \url{http://pythontutor.com/} et cliquer sur \emph{Start visualizing your code now}.
 \item Écrire le code \ref{locale} puis cliquer sur \emph{Visualize Execution}.
 \item Exécuter le code en \emph{pas à pas} avec le bouton \emph{Next}.
 \item Observer la période d'existence de la variable \emph{a} et justifier alors l'erreur d'exécution de la ligne 5.
@@ -64,9 +63,53 @@ Une variable globale est accessible depuis n'importe quel point du programme.
 \begin{activite}
 Dérouler le code \ref{globale} sur \emph{pythontutor} et justifier la bonne exécution.
 \end{activite}
+\section{Paramètres et variables d'une fonction}
+\begin{center}
+\begin{lstlisting}[language=Python]
+def cube(x):
+	resultat = x*x*x
+	return resultat
+
+cube(4)
+\end{lstlisting}
+\captionof{code}{Fonction qui calcule le cube d'un nombre}
+\label{cube}
+\end{center}
+Dans le code \ref{cube}, \emph{x} est un \emph{paramètre} de la fonction \emph{cube}. Cela signifie que lors de l'appel de la fonction dans le programme principal (ligne 5), il faut lui passer un \emph{argument} qui remplacera \emph{x} dans l'exécution du code de la fonction; ici on passe l'argument \emph{4}.\\
+La variable \emph{resultat} est une variable \emph{locale} à la fonction. Il n'est pas possible d'accéder à cette variable en-dehors de la fonction \emph{cube}.
+\begin{aretenir}[]
+La fonction \emph{cube} ne renvoie pas la variable \emph{resultat} mais le contenu de cette variable. 
+\end{aretenir}
+\begin{activite}
+Une boutique de vêtements effectue des soldes sur ses invendus. Elle définit les remises:
+\begin{itemize}
+\item 30\% sur les étiquettes rouges,
+\item 40\% sur es étiquettes vertes,
+\item 50\% sur les étiquettes bleues.
+\end{itemize}
+Écrire une fonction \textbf{remise} qui calcule la valeur en € de la remise effectuée en fonction du prix du vêtement et de la couleur de l'étiquette.
+\end{activite}
 \section{Pièges et bonnes pratiques}
+\subsection{Documenter une fonction}
+Une fonction est un code autonome qui réalise une action. L'utilisateur de la fonction ne veut pas connaître l'implémentation du corps de la fonction mais seulement pouvoir l'utiliser correctement.
+\begin{aretenir}[]
+La \textbf{docstring} détaille la manière d'utiliser une fonction. C'est un commentaire spécifique placé sous la signature de la fonction. On accède à cette documentation via la commande \textbf{help}.
+\end{aretenir}
+\subsection{Typer les paramètres d'une fonction}
+Une fonction attend des paramètres d'un type précis. Il est possible de préciser le type attendu.
+\begin{center}
+\begin{lstlisting}[language=Python]
+# La fonction attend un entier et une chaîne de caractère et renvoie un flottant
+def calcul_remise(prix: int, remise: str)->float:
+\end{lstlisting}
+\captionof{code}{Typer les paramètres d'une fonction}
+\label{moncode}
+\end{center}
+\begin{aretenir}[]
+Typer les variables d'un programme ou les paramètres d'une fonction permet d'obtenir un code plus clair. Ce typage n'est qu'indicatif.
+\end{aretenir}
 \subsection{Effet de bord}
-Les élèves de NSI ont obtenu les notes suivantes lors du dernier devoir. Avant de les enregistrer définitivement dans Pronote, l'enseignant désire simuler des bonifications pour favoriser les élèves le plus en difficultés.
+Les élèves de NSI ont obtenu les notes suivantes lors du dernier devoir. Avant de les enregistrer définitivement dans Pronote, l'enseignant désire simuler des bonifications pour favoriser les élèves les plus en difficultés.
 \begin{center}
 \lstinputlisting[firstline=10,lastline=19]{"scripts/effet-de-bord.py"}
 \captionof{code}{Bonification}
@@ -86,9 +129,13 @@ Le code \ref{bonif} effectue une bonification de deux points pour deux cas de fi
 \begin{aretenir}[Effet de bord]
 En première approche nous pouvons retenir qu'une variable mutable est modifiée quand elle est utilisée dans une fonction. Il est souvent difficile de maîtriser les modifications ce qui peut créer des comportements non désirés du programme.
 \end{aretenir}
-\section{Bonnes pratiques}
-Il faut visualiser une fonction comme un outil autonome, réutilisable dans plusieurs programmes. Elle ne doit donc pas dépendre de variables globales.\\
-\textbf{On évitera au maximum d'utiliser une variable globale.
-}
+\subsection{Bonnes pratiques}
+Il faut visualiser une fonction comme un outil autonome, réutilisable dans plusieurs programmes. Elle ne doit donc pas dépendre de variables globales.
+\begin{aretenir}[]
+On évitera au maximum d'utiliser une variable globale.
+\end{aretenir}
+\begin{activite}
+Modifier la fonction \textbf{simulation\_bonification} pour qu'elle crée une copie du tableau de notes et effectue les modifications sur cette copie.
+\end{activite}
 \end{Form}
 \end{document}

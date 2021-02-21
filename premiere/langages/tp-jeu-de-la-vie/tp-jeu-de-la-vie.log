@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 JAN 2021 13:49
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  21 FEB 2021 16:11
  restricted system commands enabled.
 **tp-jeu-de-la-vie.tex
 (./tp-jeu-de-la-vie.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.093 seconds
+luaotfload | main : initialization completed in 0.130 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1570,40 +1570,37 @@ Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on
 input line 123.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [2]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 205.
+input line 169.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
-[3]
+ [3]
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
-input line 211.
+input line 186.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
  (./tp-jeu-de-la-vie.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 211.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 Package rerunfilecheck Info: File `tp-jeu-de-la-vie.out' has not changed.
 (rerunfilecheck)             Checksum: 063429EEE7F7DA574D59D63D5EFF3D44;1422.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39141 strings out of 494383
- 244175,953878 words of node,token memory allocated
- 40715 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 34 glue, 4 kern, 1 penalty, 4811 glyph, 2624 attrib
-ute, 97 glue_spec, 439 attribute_list, 1 write nodes
-   avail lists: 1:7,2:12052,3:362,4:4088,5:3227,6:79,7:4768,8:2820,9:5171,10:26,
-11:401
- 42165 multiletter control sequences out of 65536+600000
- 56 fonts using 8225175 bytes
+ 39097 strings out of 494383
+ 100000,953878 words of node,token memory allocated
+ 34267 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 34 glue, 4 kern, 1 penalty, 4283 glyph, 1442 attrib
+ute, 97 glue_spec, 242 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:4,2:4620,3:360,4:935,5:835,6:38,7:1501,8:689,9:1303,10:27,11:1
+52
+ 42152 multiletter control sequences out of 65536+600000
+ 56 fonts using 8223927 bytes
  74i,15n,95p,1111b,952s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype
@@ -1614,10 +1611,10 @@ mf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/openty
 pe/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfdi
 ng/uzdr.pfb>
-Output written on tp-jeu-de-la-vie.pdf (4 pages, 65814 bytes).
+Output written on tp-jeu-de-la-vie.pdf (4 pages, 61311 bytes).
 
-PDF statistics: 223 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 75 named destinations out of 1000 (max. 131072)
+PDF statistics: 195 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
+ 48 named destinations out of 1000 (max. 131072)
  146 words of extra memory for PDF output out of 10000 (max. 100000000)
 

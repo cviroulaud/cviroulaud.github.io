@@ -12,10 +12,10 @@ def nb_voyelles(mot: str)->int:
     renvoie le nombre de voyelles dans mot
     """
     voyelles = ["a","e","i","o","u","y"]
-    nb_voyelles = 0
+    nb = 0
     for c in mot:
         if c in voyelles:
-            nb_voyelles += 1
-    return nb_voyelles
+            nb += 1
+    return nb
 
 print(nb_voyelles("eeerru"))

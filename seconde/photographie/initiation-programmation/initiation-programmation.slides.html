@@ -9,14 +9,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>tp-jeu-de-la-vie slides</title>
+<title>initiation-programmation slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="../../../reveal.js/css/reveal.css">
-<link rel="stylesheet" href="../../../reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = '../../../reveal.js/css/print/pdf.css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="../../../reveal.js/lib/js/html5shiv.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -13202,318 +13202,475 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jeu-de-la-vie">Jeu de la vie<a class="anchor-link" href="#Jeu-de-la-vie">&#182;</a></h1>
+<h1 id="Initiation-&#224;-la-programmation">Initiation &#224; la programmation<a class="anchor-link" href="#Initiation-&#224;-la-programmation">&#182;</a></h1>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Probl&#233;matique">1. Probl&#233;matique<a class="anchor-link" href="#1.-Probl&#233;matique">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table><tr>
+    <td><img src="ressources/maisons-colorees.png" width="250px"></td>
+    <td><img src="ressources/maisons-colorees-NB.png" width="250px"></td>
+    </tr></table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pour modifier une image, on utilise un programme informatique.</p>
+
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.-Pr&#233;sentation">1. Pr&#233;sentation<a class="anchor-link" href="#1.-Pr&#233;sentation">&#182;</a></h2><ul>
-<li>une cellule morte possédant exactement trois voisines vivantes devient vivante (elle naît),</li>
-<li>une cellule vivante possédant deux ou trois voisines vivantes le reste, sinon elle meurt.</li>
+<div align="middle"><h3>Quels éléments de programmation permettent de construire un programme informatique?</h3></div>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.-Variable">2. Variable<a class="anchor-link" href="#2.-Variable">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">12</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Le-signe-=-affecte-la-valeur-12-&#224;-la-variable-a.">Le signe = affecte la valeur 12 &#224; la variable <em>a</em>.<a class="anchor-link" href="#Le-signe-=-affecte-la-valeur-12-&#224;-la-variable-a.">&#182;</a></h3>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Ceci est un commentaire.</span>
+<span class="mi">12</span> <span class="o">=</span> <span class="n">a</span> <span class="c1"># Ce code est incorrect!</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Activit&#233;-1">Activit&#233; 1<a class="anchor-link" href="#Activit&#233;-1">&#182;</a></h4><ul>
+<li>Créer un dossier <em>photographie</em> dans l'espace personnel.</li>
+<li>Ouvrir le logiciel <em>Spyder</em> (dossier <em>Maths</em> du bureau).</li>
+<li>Dans la partie gauche, écrire le code</li>
 </ul>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="c1"># affiche le contenu de la variable c</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Enregistrer le programme dans le dossier <em>photographie</em> sous le nom <em>variable.py</em></li>
+<li>Exécuter le programme en cliquant sur la flèche verte ou en appuyant sur la touche <em>F5</em>. Le code est exécuté dans la console en bas à droite.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="c1"># affiche le contenu de la variable c</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>20
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.-Structure-conditionelle">3. Structure conditionelle<a class="anchor-link" href="#3.-Structure-conditionelle">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes mineur.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes majeur.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Vous êtes mineur.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Le-d&#233;calage-(indentation)-des-lignes-3-et-5-est-indispensable.-On-le-r&#233;alise-avec-4-espaces-ou-la-touche-de-tabulation">Le d&#233;calage (<em>indentation</em>) des lignes 3 et 5 est indispensable. On le r&#233;alise avec <em>4 espaces</em> ou la touche de <em>tabulation</em><a class="anchor-link" href="#Le-d&#233;calage-(indentation)-des-lignes-3-et-5-est-indispensable.-On-le-r&#233;alise-avec-4-espaces-ou-la-touche-de-tabulation">&#182;</a></h3>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes mineur.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes majeur.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Vous êtes majeur.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div align="middle"><img src="ressources/fig1.png"></div>
+<h4 id="Activit&#233;-2">Activit&#233; 2<a class="anchor-link" href="#Activit&#233;-2">&#182;</a></h4><ul>
+<li>Dans un nouveau programme écrire le code</li>
+</ul>
+
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temperature</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">temperature</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;L&#39;eau commence à geler&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Modifier le code pour que le message s'affiche.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temperature</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">temperature</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;L&#39;eau commence à geler&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temperature</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">if</span> <span class="n">temperature</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;L&#39;eau commence à geler&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>L&#39;eau commence à geler
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.-Boucle">4. Boucle<a class="anchor-link" href="#4.-Boucle">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">compteur</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">compteur</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;BOUM&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+BOUM
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">compteur</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">compteur</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;BOUM&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+BOUM
+1
+BOUM
+2
+BOUM
+3
+BOUM
+4
+BOUM
+5
+BOUM
+6
+BOUM
+7
+BOUM
+8
+BOUM
+9
+BOUM
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div align="middle"><img src="ressources/fig2.png"></div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div align="middle"><img src="ressources/fig3.png"></div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-Outils-graphiques">2. Outils graphiques<a class="anchor-link" href="#2.-Outils-graphiques">&#182;</a></h2><h4 id="Activit&#233;-1">Activit&#233; 1<a class="anchor-link" href="#Activit&#233;-1">&#182;</a></h4>
+<h4 id="Activit&#233;-3">Activit&#233; 3<a class="anchor-link" href="#Activit&#233;-3">&#182;</a></h4><p>Écrire un programme qui affiche les carrés des nombres de 0 à 10.</p>
+
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">TAILLE</span> <span class="o">=</span> <span class="mi">8</span> <span class="c1">#dimension d&#39;une cellule,</span>
-<span class="n">CELLULES</span> <span class="o">=</span> <span class="mi">200</span> <span class="c1">#nombre de cellules en largeur et en hauteur.</span>
-
-<span class="n">fenetre</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
-<span class="n">fenetre</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Jeu de la vie&quot;</span><span class="p">)</span>
-<span class="n">canevas</span> <span class="o">=</span> <span class="n">Canvas</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
-<span class="n">canevas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-
-<span class="c1"># ligne à placer en fin de programme</span>
-<span class="n">fenetre</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.-Pr&#233;paration">3. Pr&#233;paration<a class="anchor-link" href="#3.-Pr&#233;paration">&#182;</a></h2><h3 id="3.1-Cr&#233;er-la-grille">3.1 Cr&#233;er la grille<a class="anchor-link" href="#3.1-Cr&#233;er-la-grille">&#182;</a></h3><h4 id="Activit&#233;-2">Activit&#233; 2<a class="anchor-link" href="#Activit&#233;-2">&#182;</a></h4>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">grille</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">)]</span>
-</pre></div>
+<div class="output_wrapper">
+<div class="output">
 
-    </div>
-</div>
-</div>
 
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.2-Initialiser-la-grille">3.2 Initialiser la grille<a class="anchor-link" href="#3.2-Initialiser-la-grille">&#182;</a></h3><h4 id="Activit&#233;-3">Activit&#233; 3<a class="anchor-link" href="#Activit&#233;-3">&#182;</a></h4>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">aleatoire</span><span class="p">(</span><span class="n">g</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span><span class="o">-&gt;</span><span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    place n cellules au hasard</span>
+<div class="output_area">
 
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    g : list</span>
-<span class="sd">        la grille.</span>
-<span class="sd">    n : int</span>
-<span class="sd">        le nombre de cellules à placer.</span>
+    <div class="prompt"></div>
 
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    None</span>
 
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-        <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">199</span><span class="p">),</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">199</span><span class="p">)</span>
-        <span class="n">g</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-</pre></div>
-
-    </div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+4
+9
+16
+25
+36
+49
+64
+81
+100
+</pre>
 </div>
 </div>
 
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.3-Compter-les-voisins">3.3 Compter les voisins<a class="anchor-link" href="#3.3-Compter-les-voisins">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div align="middle"><img src="ressources/coord.png" width=400px></div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Activit&#233;-4">Activit&#233; 4<a class="anchor-link" href="#Activit&#233;-4">&#182;</a></h4>
-</div>
-</div>
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">compter_voisins</span><span class="p">(</span><span class="n">g</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">cel</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">)</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Compte les voisines vivantes de la cellule centrale</span>
-<span class="sd">    </span>
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    g : list</span>
-<span class="sd">        la grille.</span>
-<span class="sd">    cel : tuple</span>
-<span class="sd">        les coordonnées (x,y) de la cellule à tester</span>
-
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    int</span>
-<span class="sd">        le nombre de cellules voisines vivantes</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">nb</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">delta</span> <span class="o">=</span> <span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">decalage</span> <span class="ow">in</span> <span class="n">delta</span><span class="p">:</span>
-        <span class="n">ligne</span><span class="p">,</span> <span class="n">colonne</span> <span class="o">=</span> <span class="n">cel</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">decalage</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">decalage</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">ligne</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">ligne</span> <span class="o">&lt;</span> <span class="n">CELLULES</span> <span class="ow">and</span> <span class="n">colonne</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">colonne</span> <span class="o">&lt;</span> <span class="n">CELLULES</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">g</span><span class="p">[</span><span class="n">ligne</span><span class="p">][</span><span class="n">colonne</span><span class="p">]:</span>
-                <span class="n">nb</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">return</span> <span class="n">nb</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.-Cr&#233;er-le-jeu">4. Cr&#233;er le jeu<a class="anchor-link" href="#4.-Cr&#233;er-le-jeu">&#182;</a></h2><h3 id="4.1-Le-cycle">4.1 Le cycle<a class="anchor-link" href="#4.1-Le-cycle">&#182;</a></h3><h4 id="Activit&#233;-5">Activit&#233; 5<a class="anchor-link" href="#Activit&#233;-5">&#182;</a></h4>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cycle</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">g</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span><span class="o">-&gt;</span><span class="kc">None</span><span class="p">:</span>
-    <span class="c1"># création d&#39;une nouvelle grille vide</span>
-    <span class="n">nouvelle</span> <span class="o">=</span> 
-
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    À RÉALISER</span>
-<span class="sd">    parcourir la grille g pour faire naître ou mourir les cellules.</span>
-<span class="sd">    La nouvelle configuration est enregistrée dans la grille &#39;nouvelle&#39;</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="c1"># la grille est actualisée</span>
-    <span class="n">g</span> <span class="o">=</span> <span class="n">nouvelle</span>
-
-    <span class="c1"># affichage de la grille</span>
-    <span class="n">c</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]:</span>
-            	<span class="c1"># création d&#39;un cercle bleu</span>
-                <span class="n">c</span><span class="o">.</span><span class="n">create_oval</span><span class="p">(</span><span class="n">TAILLE</span><span class="o">*</span><span class="p">(</span><span class="n">j</span><span class="p">),</span>
-                                    <span class="n">TAILLE</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="p">),</span>
-                                    <span class="n">TAILLE</span><span class="o">*</span><span class="p">(</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span>
-                                    <span class="n">TAILLE</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span>
-                                    <span class="n">fill</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
-    <span class="sd">&quot;&quot;&quot;    </span>
-<span class="sd">    nouveau cycle: la méthode after rappelle la fonction</span>
-<span class="sd">    cycle toutes les 100ms</span>
-<span class="sd">    &quot;&quot;&quot;</span>    
-    <span class="n">f</span><span class="o">.</span><span class="n">after</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">cycle</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cycle</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">g</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span><span class="o">-&gt;</span><span class="kc">None</span><span class="p">:</span>
-    <span class="n">nouvelle</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">)]</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">):</span>
-            <span class="n">nb_voisins</span> <span class="o">=</span> <span class="n">compter_voisins</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">))</span>
-
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]:</span> <span class="c1"># une cellule morte</span>
-                <span class="k">if</span> <span class="n">nb_voisins</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span> <span class="c1"># devient vivante</span>
-                    <span class="n">nouvelle</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-            <span class="k">else</span><span class="p">:</span> <span class="c1"># une cellule vivante</span>
-                <span class="k">if</span> <span class="n">nb_voisins</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">nb_voisins</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span> <span class="c1"># le reste</span>
-                    <span class="n">nouvelle</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-
-    <span class="c1"># la grille est actualisée</span>
-    <span class="n">g</span> <span class="o">=</span> <span class="n">nouvelle</span>
-
-    <span class="c1"># affichage de la grille</span>
-    <span class="n">c</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]:</span>
-                <span class="n">c</span><span class="o">.</span><span class="n">create_oval</span><span class="p">(</span><span class="n">TAILLE</span><span class="o">*</span><span class="p">(</span><span class="n">j</span><span class="p">),</span>
-                                    <span class="n">TAILLE</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="p">),</span>
-                                    <span class="n">TAILLE</span><span class="o">*</span><span class="p">(</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span>
-                                    <span class="n">TAILLE</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span>
-                                    <span class="n">fill</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
-
-    <span class="c1"># nouveau cycle</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">after</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">cycle</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.2-Jouer">4.2 Jouer<a class="anchor-link" href="#4.2-Jouer">&#182;</a></h3><h4 id="Activit&#233;-6">Activit&#233; 6<a class="anchor-link" href="#Activit&#233;-6">&#182;</a></h4>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">fenetre</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
-<span class="n">fenetre</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Jeu de la vie&quot;</span><span class="p">)</span>
-<span class="n">canevas</span> <span class="o">=</span> <span class="n">Canvas</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">CELLULES</span><span class="o">*</span><span class="n">TAILLE</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">CELLULES</span><span class="o">*</span><span class="n">TAILLE</span><span class="p">)</span>
-<span class="n">canevas</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
-
-<span class="n">grille</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">CELLULES</span><span class="p">)]</span>
-
-<span class="n">aleatoire</span><span class="p">(</span><span class="n">grille</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
-
-<span class="n">cycle</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">canevas</span><span class="p">,</span> <span class="n">grille</span><span class="p">)</span>
-
-<span class="n">fenetre</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.3-Structures-pr&#233;d&#233;finies">4.3 Structures pr&#233;d&#233;finies<a class="anchor-link" href="#4.3-Structures-pr&#233;d&#233;finies">&#182;</a></h3><h4 id="Activit&#233;-7">Activit&#233; 7<a class="anchor-link" href="#Activit&#233;-7">&#182;</a></h4>
-</div>
-</div>
-</div></section></section>
+</div></div></section></section>
 </div>
 </div>
 
@@ -13526,8 +13683,8 @@ require(
       waitSeconds: 15
     },
     [
-      "../../../reveal.js/lib/js/head.min.js",
-      "../../../reveal.js/js/reveal.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -13542,9 +13699,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "../../../reveal.js/lib/js/classList.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "../../../reveal.js/plugin/notes/notes.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]

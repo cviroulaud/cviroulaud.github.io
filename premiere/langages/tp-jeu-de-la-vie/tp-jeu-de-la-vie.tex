@@ -12,7 +12,7 @@
 \begin{document}
 \begin{Form}
 \begin{commentprof}
-Mettre \textbf{mod\_vie.zip} sur le site
+Mettre \textbf{jeu-de-la-vie.zip} sur le site
 \end{commentprof}
 \section{Présentation du jeu}
 Le jeu de la vie est un automate cellulaire imaginé par John Horton Conway en 1970. C'est un \guill{jeu à zéro joueur}, puisqu'il ne nécessite pas d'intervention. Il se déroule sur une grille à deux dimensions. Les cellules peuvent prendre deux états: \emph{vivantes} ou \emph{mortes}.\\
@@ -123,7 +123,7 @@ Pour que le jeu démarre il faut rendre certaines cellules vivantes. Il est poss
 Écrire la fonction \textbf{compter\_voisins(g: list, cel: tuple)$\;\rightarrow\;$int} qui compte et renvoie le nombre de cellules vivantes de la cellule de coordonnées \emph{cel}. Il peut être nécessaire de:
 \begin{itemize}
 \item utiliser la variable locale \emph{delta},
-\begin{lstlisting}[xleftmargin=2em,xrightmargin=1.5em]
+\begin{lstlisting}[xleftmargin=1.3em,xrightmargin=1.3em]
 delta = ((-1,-1), (-1,0), (-1,1), (0,-1), (0,1), (1,-1), (1,0), (1,1))
 \end{lstlisting}
 \item penser à gérer les \guill{bords} de la grille.
@@ -133,53 +133,29 @@ delta = ((-1,-1), (-1,0), (-1,1), (0,-1), (0,1), (1,-1), (1,0), (1,1))
 \subsection{Réaliser un cycle}
 Lors d'un cycle, le jeu regarde chaque cellule de la grille et la fait naître ou mourir en fonction de ses voisines.
 \begin{activite}
-Compléter la fonction \textbf{cycle (f, c, g: list)$\;\rightarrow\;$None} du code \ref{cycle}. Les paramètres \emph{f, c, g} représentent respectivement la fenêtre tkinter, le canevas et la grille du jeu.
+\begin{enumerate}
+\item Télécharger le dossier compressé jeu-de-la-vie.zip sur le site \url{https://cviroulaud.github.io} et le décompresser.
+\item Ouvrir le fichier \emph{jeu-de-la-vie-eleve.py}.
+\item Compléter la fonction \textbf{cycle (f, c, g: list)$\;\rightarrow\;$None} qui réalise un cycle des cellules.
+\end{enumerate}
+\begin{commentprof}
+le fichier donne les corrections des fonctions précédentes.
+\end{commentprof}
 \end{activite}
-\begin{code}[!h]
-\begin{lstlisting}[xrightmargin=2.5em]
-def cycle(f, c, g: list)->None:
-    # création d'une nouvelle grille vide
-    nouvelle = 
 
-    """
-    À RÉALISER
-    parcourir la grille g pour faire naître ou mourir les cellules.
-    La nouvelle configuration est enregistrée dans la grille 'nouvelle'
-    """
-
-    # la grille est actualisée
-    g = nouvelle
-
-    # affichage de la grille
-    c.delete("all")
-    for i in range(CELLULES):
-        for j in range(CELLULES):
-            if g[i][j]:
-            	# création d'un cercle bleu
-                c.create_oval(TAILLE*(j),
-                                    TAILLE*(i),
-                                    TAILLE*(j+1),
-                                    TAILLE*(i+1),
-                                    fill="blue")
-    """    
-    nouveau cycle: la méthode after rappelle la fonction
-    cycle toutes les 100ms
-    """    
-    f.after(100, cycle, f, c, g)
-\end{lstlisting}
-\captionof{code}{La fonction principale du jeu}
-\label{cycle}
-\end{code}
 \subsection{Jouer}
 Toutes les fonctions sont maintenant disponibles. Pour jouer, il faut:
 \begin{itemize}
-\item créer une grille vide,
 \item créer une surface tkinter,
+\item créer une grille vide,
 \item remplir la grille aléatoirement,
 \item lancer le cycle.
 \end{itemize}
 \begin{activite}
-Tester le jeu avec différentes valeurs de cellules initiales.
+\begin{enumerate}
+\item Observer le programme principal en fin de fichier qui respecte l'algorithme précédant.
+\item Tester le jeu avec différentes valeurs de cellules initiales.
+\end{enumerate}
 \end{activite}
 \subsection{Des structures prédéfinies}
 La bibliothèque \emph{mod\_vie} contient les structures:
@@ -191,7 +167,6 @@ La bibliothèque \emph{mod\_vie} contient les structures:
 \end{itemize}
 \begin{activite}
 \begin{enumerate}
-\item Télécharger le module sur le site \url{https://cviroulaud.github.io} et le décompresser dans le même dossier que le programme.
 \item Importer toutes les fonctions du modules dans le programme.
 \item Lancer une fois le programme avec ces nouveaux imports.
 \item Dans la console, taper:

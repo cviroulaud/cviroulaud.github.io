@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 JAN 2021 14:02
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 FEB 2021 10:46
  restricted system commands enabled.
 **exercices-fonctions-correction.tex
 (./exercices-fonctions-correction.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.084 seconds
+luaotfload | main : initialization completed in 0.098 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1575,14 +1575,14 @@ hanged.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39419 strings out of 494383
+ 39420 strings out of 494383
  244165,953878 words of node,token memory allocated
- 42801 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 19 glue, 4 kern, 1 penalty, 3800 glyph, 6596 attrib
+ 42612 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 19 glue, 4 kern, 1 penalty, 3773 glyph, 6596 attrib
 ute, 97 glue_spec, 1101 attribute_list, 1 write nodes
-   avail lists: 1:8,2:12589,3:288,4:5447,5:4151,6:64,7:3454,8:3718,9:6706,10:29,
+   avail lists: 1:8,2:12589,3:288,4:5447,5:4151,6:64,7:3481,8:3718,9:6706,10:29,
 11:365
- 42165 multiletter control sequences out of 65536+600000
+ 42166 multiletter control sequences out of 65536+600000
  33 fonts using 6452567 bytes
  74i,16n,95p,1125b,1148s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
@@ -1592,7 +1592,7 @@ an10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></us
 r/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/f
 onts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/font
 s/type1/urw/zapfding/uzdr.pfb>
-Output written on exercices-fonctions-correction.pdf (5 pages, 57116 bytes).
+Output written on exercices-fonctions-correction.pdf (5 pages, 57117 bytes).
 
 PDF statistics: 323 PDF objects out of 1000 (max. 8388607)
  286 compressed objects within 3 object streams

@@ -1,0 +1,111 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Concessionnaire - dictionnaire}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+\fancyhead[R]{Première - NSI}
+%\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Problématique}
+Un concessionnaire désire concevoir une application qui permet de stocker les informations de ses véhicules (marque, modèle, kilométrage, date de première immatriculation...).
+\begin{center}
+\shadowbox{\parbox{10cm}{\centering Comment structurer des données hétérogènes?}}
+\end{center}
+\section{Premières approches}
+L'utilisation de tableaux est possible mais peu adapté.
+\begin{center}
+\begin{lstlisting}[language=Python]
+marques = ["Renault", "Renault", "Mercedes", "Peugeot"]
+modeles = ["Twingo", "Trafic", "Classe A", "1007"]
+kilometrages = [23410, 100230, 45000, 34001]
+immatriculation = ["AA-123-AA", "AZ-34-DE", "AA-145-JU", "BB-156-TR"]
+premiere_immat = ["2010-10", "2007-05", "2019-06", "2018-01"]
+dates_vidanges = ["2020-01", "2019-12", "2019-06", "2020-10"]
+\end{lstlisting}
+\captionof{code}{Première approche}
+\label{moncode}
+\end{center}
+\begin{center}
+\begin{lstlisting}[language=Python]
+vehicule1 = ["Renault", "Twingo", 23410, "AA-123-AA", "2010-10", "2020-01"]
+vehicule3 = ["Mercedes", "Classe A", 45000, "AA-145-JU", "2019-06", "2019-06"]
+\end{lstlisting}
+\captionof{code}{Seconde approche}
+\label{moncode}
+\end{center}
+\begin{activite}
+Déterminer les défauts des approches présentées.
+\end{activite}
+\section{Le dictionnaire}
+\subsection{Une nouvelle structure}
+Python offre une structure mieux adaptée pour organiser les données: \textbf{les n-uplets nommés ou dictionnaires}.
+\begin{aretenir}[]
+Un dictionnaire associe chaque \textbf{valeur} à une \textbf{clé}. Chaque clé peut être un \emph{string}, un \emph{entier} voire un \emph{tuple}, c'est à dire un type \emph{non-mutable}.
+\end{aretenir}
+\begin{center}
+\begin{lstlisting}[language=Python]
+# On crée un dictionnaire avec des accolades ou le mot-clé dict()
+vehicule1 = {"marque": "Renault", 
+		"modele": "Twingo", 
+		"kilometrage": 23410, 
+		"immatriculation": "AA-123-AA", 
+		"premiere_imat": "2010-10", 
+		"date_vidange": "2020-01"}
+\end{lstlisting}
+\captionof{code}{Créer un dictionnaire}
+\label{dico}
+\end{center}
+\subsection{Modifier un dictionnaire}
+Il est possible de construire un dictionnaire vide que l'on remplit au fur et à mesure.
+\begin{center}
+\begin{lstlisting}[language=Python]
+vehicule2 = {}
+vehicule3 = dict()
+\end{lstlisting}
+\captionof{code}{Créer un dictionnaire vide}
+\label{moncode}
+\end{center}
+On crée alors les clés \emph{à la volée} en utilisant la notation des crochets.
+\begin{center}
+\begin{lstlisting}[language=Python]
+vehicule2["marque"] = "Renault"
+\end{lstlisting}
+\captionof{code}{Créer un couple clé/valeur}
+\label{moncode}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Créer le dictionnaire \emph{vehicule2} en prenant modèle sur le code \ref{dico}.
+\item Afficher l'immatriculation du \emph{vehicule2} dans la sortie console.
+\item Créer le dictionnaire vide \emph{vehicule3}.
+\item Ajouter les uns après les autres les couples clé/valeur dans le dictionnaire \emph{vehicule3}.
+\item Modifier le kilométrage du \emph{vehicule3}.
+\end{enumerate}
+\end{activite}
+\subsection{Itérer sur un dictionnaire}
+Comme un tableau, un dictionnaire est une structure \emph{itérable}.
+\begin{center}
+\lstinputlisting[firstline=17,lastline=18]{"scripts/concessionnaire.py"}
+\captionof{code}{Itérer sur les clés}
+\label{moncode}
+\end{center}
+\begin{center}
+\lstinputlisting[firstline=20,lastline=21]{"scripts/concessionnaire.py"}
+\captionof{code}{Itérer sur les valeurs}
+\label{moncode}
+\end{center}
+\begin{center}
+\lstinputlisting[firstline=23,lastline=24]{"scripts/concessionnaire.py"}
+\captionof{code}{Itérer sur les couples clé/valeur}
+\label{moncode}
+\end{center}
+\end{Form}
+\end{document}

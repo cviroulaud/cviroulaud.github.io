@@ -71,6 +71,49 @@ On suppose que chaque valeur n'apparaît qu'une seule fois dans l'arbre.
 \end{enumerate}
 \end{activite}
 \subsection{Propriété}
+Soit \emph{n} la taille de l'arbre et \emph{h} sa hauteur. Ces grandeurs sont liées par la relation:
+$$h+1 \leq n \leq 2^{h+1}-1$$
+Cette propriété peut s'écrire:
+$$ \lfloor \log_2 n  \rfloor \leq h$$
+Considérons le tableau \ref{tab} et la construction de l'arbre binaire de recherche qui en découle (figure \ref{arbre}).
+\begin{center}
+\begin{lstlisting}[language=Python]
+tab = [33, 25, 56, 20, 28, 40, 60, 8, 21, 26, 35, 58, 65]
+\end{lstlisting}
+\captionof{code}{Tableau de données}
+\label{tab}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Quelle la complexité temporelle dans le pire des cas de la recherche d'un élément dans le tableau?
+\item Que devient cette complexité pour l'ABR?
+\end{enumerate}
+\end{activite}
+\begin{aretenir}[Remarque]
+Pour que la recherche dans l'arbre soit efficace il faut qu'il soit \emph{équilibré}.
+\end{aretenir}
 \section{Implémentation}
+La programmation objet peut nous permettre d'implémenter un ABR facilement.
+\begin{activite}
+\begin{enumerate}
+\item Créer la classe \emph{Noeud} qui possède trois attributs:
+\begin{itemize}
+\item \emph{valeur} un entier,
+\item \emph{gauche} un Noeud,
+\item \emph{droit} un Noeud.
+\end{itemize}
+Le constructeur acceptera trois paramètres \emph{(v: int, g = None, d = None)}. 
+\item Écrire la méthode \textbf{inserer(self, v: int)$\;\rightarrow\;$None} qui crée récursivement le nœud contenant la valeur \emph{v} dans le sous-arbre gauche ou droit du nœud.
+\item Écrire la méthode \textbf{rechercher(self, v: int)$\;\rightarrow\;$bool} qui renvoie \emph{True} si la valeur \emph{v} est dans le nœud ou dans un de ses sous-arbres.
+\item Créer la classe ABR et son constructeur qui possédera un attribut \emph{racine} initialisé à \emph{None}.
+\item Écrire la méthode \textbf{est\_vide(self)$\;\rightarrow\;$bool} qui renvoie \emph{True} si l'arbre est vide.
+\item Écrire la méthode \textbf{inserer(self, v: int)$\;\rightarrow\;$None} qui:
+\begin{itemize}
+\item crée un nœud contenant \emph{v} si l'arbre est vide,
+\item appelle la méthode \emph{inserer} du nœud racine sinon.
+\end{itemize}
+\item Écrire la méthode \textbf{rechercher(self, v: int)$\;\rightarrow\;$None} qui renvoie \emph{True} si \emph{v} est présent dans l'arbre.
+\end{enumerate}
+\end{activite}
 \end{Form}
 \end{document}

@@ -15,7 +15,7 @@ class Arbre_binaire:
         Le premier noeud est 'r'
         """
         self.hauteur = h
-        self.arbre= [None for _ in range(2**h - 1)]
+        self.arbre= [None for _ in range(2**(h+1) - 1)]
         self.arbre[0] = "r"
 
     def inserer(self, pere: str, fils_g: str, fils_d: str)->None:
@@ -77,7 +77,7 @@ class Arbre_binaire:
             return self.postfixe2(2*i+1) + self.postfixe2(2*i+2) + [self.arbre[i]]
 
 
-arbre_car = Arbre_binaire(5)
+arbre_car = Arbre_binaire(4)
 arbre_car.inserer("r", "a", "b")
 arbre_car.inserer("a", "c", "d")
 arbre_car.inserer("c", "g", "h")

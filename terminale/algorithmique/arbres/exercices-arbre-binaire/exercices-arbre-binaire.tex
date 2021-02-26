@@ -15,154 +15,154 @@
 
 \begin{document}
 \begin{Form}
-\begin{commentprof}
-exercices-arbre-binaire.zip sur site
-\end{commentprof}
-\begin{center}
-\shadowbox{\parbox{16cm}{\centering Télécharger exercices-arbre-binaire.zip sur le site \url{https://cviroulaud.github.io}}}
-\end{center}
-\begin{exo}
-L'arbre figure \ref{arbre} représente une opération arithmétique.
-\begin{center}
-\begin{tikzpicture}
-\node[draw] (1) at (0,0) {×};
-\node[draw] (2) at (-2,-1) {-};
-\node[draw] (3) at (2,-1) {+};
-\node[draw] (4) at (-3,-2) {12};
-\node[draw] (5) at (-1,-2) {8};
-\node[draw] (6) at (1,-2) {7};
-\node[draw] (7) at (3,-2) {9};
+    \begin{commentprof}
+        exercices-arbre-binaire.zip sur site
+    \end{commentprof}
+    \begin{center}
+        \shadowbox{\parbox{16cm}{\centering Télécharger exercices-arbre-binaire.zip sur le site \url{https://cviroulaud.github.io}}}
+    \end{center}
+    \begin{exo}
+        L'arbre figure \ref{arbre} représente une opération arithmétique.
+        \begin{center}
+            \begin{tikzpicture}
+                \node[draw] (1) at (0,0) {×};
+                \node[draw] (2) at (-2,-1) {-};
+                \node[draw] (3) at (2,-1) {+};
+                \node[draw] (4) at (-3,-2) {12};
+                \node[draw] (5) at (-1,-2) {8};
+                \node[draw] (6) at (1,-2) {7};
+                \node[draw] (7) at (3,-2) {9};
 
-\draw (1) -- (2);
-\draw (1) -- (3);
-\draw (2) -- (4);
-\draw (2) -- (5);
-\draw (3) -- (6);
-\draw (3) -- (7);
+                \draw (1) -- (2);
+                \draw (1) -- (3);
+                \draw (2) -- (4);
+                \draw (2) -- (5);
+                \draw (3) -- (6);
+                \draw (3) -- (7);
 
-\end{tikzpicture}
-\captionof{figure}{Calcul arithmétique}
-\label{arbre}
-\end{center}
-\begin{enumerate}
-\item Parcourir cet arbre en profondeur (préfixe, infixe et postfixe).
-\item Donner le résultat du calcul.
-\item Pour quel parcours est-il indispensable de rajouter des parenthèses?
-\end{enumerate}
-\end{exo}
-\begin{exo}
-\begin{center}
-\begin{tikzpicture}
-\node[draw] (1) at (0,0) {1};
-\node[draw] (2) at (-3,-1) {2};
-\node[draw] (3) at (3,-1) {3};
-\node[draw] (4) at (-4,-2) {4};
-\node[draw] (5) at (-2,-2) {5};
-\node[draw] (6) at (2,-2) {6};
-\node[draw] (7) at (4,-2) {7};
-\node[draw] (8) at (-3.5,-3) {8};
-\node[draw] (9) at (1.5,-3) {9};
-\node[draw] (10) at (2.5,-3) {10};
-\node[draw] (11) at (3.5,-3) {11};
-\node[draw] (12) at (1.5,-4) {12};
-\node[draw] (13) at (3.5,-4) {13};
+            \end{tikzpicture}
+            \captionof{figure}{Calcul arithmétique}
+            \label{arbre}
+        \end{center}
+        \begin{enumerate}
+            \item Parcourir cet arbre en profondeur (préfixe, infixe et postfixe).
+            \item Donner le résultat du calcul.
+            \item Pour quel parcours est-il indispensable de rajouter des parenthèses?
+        \end{enumerate}
+    \end{exo}
+    \begin{exo}
+        \begin{center}
+            \begin{tikzpicture}
+                \node[draw] (1) at (0,0) {1};
+                \node[draw] (2) at (-3,-1) {2};
+                \node[draw] (3) at (3,-1) {3};
+                \node[draw] (4) at (-4,-2) {4};
+                \node[draw] (5) at (-2,-2) {5};
+                \node[draw] (6) at (2,-2) {6};
+                \node[draw] (7) at (4,-2) {7};
+                \node[draw] (8) at (-3.5,-3) {8};
+                \node[draw] (9) at (1.5,-3) {9};
+                \node[draw] (10) at (2.5,-3) {10};
+                \node[draw] (11) at (3.5,-3) {11};
+                \node[draw] (12) at (1.5,-4) {12};
+                \node[draw] (13) at (3.5,-4) {13};
 
-\draw (1) -- (2);
-\draw (1) -- (3);
-\draw (2) -- (4);
-\draw (2) -- (5);
-\draw (3) -- (6);
-\draw (3) -- (7);
-\draw (4) -- (8);
-\draw (6) -- (9);
-\draw (6) -- (10);
-\draw (7) -- (11);
-\draw (10) -- (12);
-\draw (10) -- (13);
-\end{tikzpicture}
-\captionof{figure}{Arbre binaire}
-\label{arbre2}
-\end{center}
-\begin{enumerate}
-\item Effectuer les parcours suivants dans l'arbre figure \ref{arbre2}:
-\begin{itemize}
-\item en largeur,
-\item préfixe,
-\item infixe,
-\item postfixe.
-\end{itemize}
-\item Quelle est la hauteur de cet arbre. On considère qu'un arbre vide à une hauteur de -1.
-\item Cet arbre est-il équilibré?
-\item Cet arbre est-il complet?
-\end{enumerate}
-\end{exo}
-\begin{exo}
-En généalogie le principe de la numérotation de Sosa-Stradonitz attribue le numéro 1 à l’individu racine (le sujet sur lequel on établit l’ascendance) puis le numéro 2 à son père et 3 à sa mère. Ainsi, chaque homme a un numéro double de celui de son enfant et est donc pair et chaque femme un numéro double de celui de son enfant plus un, soit un numéro impair.
-\begin{enumerate}
-\item Le numéro 17 est-il une femme ou un homme? Quels sont les numéros de son père et sa mère? Quel est le numéro de son enfant?
-\item Combien de trisaïeuls (ancêtres de quatrième degré) possède un individu?
-\item Un généalogiste propose d'imprimer l'arbre généalogique d'un individu avec quatre degrés d'ascendance. Combien de personnes seront affichées dans cet arbre?
-\end{enumerate}
-L'arbre des ascendants d'Emmanuel Macron est représenté dans un liste Python (code \ref{manu}).
-\begin{center}
-\lstinputlisting[firstline=10,lastline=15,xleftmargin=2em, xrightmargin=2em]{"scripts/arbre-genealogique.py"}
-\captionof{code}{Représentation en mémoire d'un arbre généalogique}
-\label{manu}
-\end{center}
-\begin{enumerate}[resume]
-\item Représenter l'arbre généalogique sous forme d'un arbre binaire.
-\item Ouvrir le fichier \emph{arbre-genealogique.py}.
-\item Écrire la fonction \textbf{get\_parents(tab: list, id\_enfant: int)$\;\rightarrow\;$tuple} qui renvoie le nom des parents de \emph{id\_enfant} sous forme de tuple. La fonction devra gérer les identifiants trop grands à l'aide d'une assertion.
-\item Écrire la fonction \textbf{ascendant\_homme(tab: list, hommes: list)$\;\rightarrow\;$list} qui renvoie la liste des ascendants masculins de la personne dont on a réalisé l'arbre généalogique. La fonction devra parcourir l'arbre en profondeur. De plus une simple liste Python fera office de pile.
-\item Écrire une version récursive de la fonction précédente.
-\end{enumerate}
-\end{exo}
-\begin{exo}
-\begin{center}
-\begin{tikzpicture}
-\node[draw] (r) at (0,0) {r};
-\node[draw] (a) at (-3,-1) {a};
-\node[draw] (b) at (3,-1) {b};
-\node[draw] (c) at (-4,-2) {c};
-\node[draw] (d) at (-2,-2) {d};
-\node[draw] (e) at (2,-2) {e};
-\node[draw] (f) at (4,-2) {f};
-\node[draw] (g) at (-4.5,-3) {g};
-\node[draw] (h) at (-3.5,-3) {h};
-\node[draw] (i) at (-2.5,-3) {i};
-\node[draw] (j) at (-1.5,-3) {j};
-\node[draw] (k) at (1.5,-3) {k};
-\node[draw] (l) at (-2,-4) {l};
+                \draw (1) -- (2);
+                \draw (1) -- (3);
+                \draw (2) -- (4);
+                \draw (2) -- (5);
+                \draw (3) -- (6);
+                \draw (3) -- (7);
+                \draw (4) -- (8);
+                \draw (6) -- (9);
+                \draw (6) -- (10);
+                \draw (7) -- (11);
+                \draw (10) -- (12);
+                \draw (10) -- (13);
+            \end{tikzpicture}
+            \captionof{figure}{Arbre binaire}
+            \label{arbre2}
+        \end{center}
+        \begin{enumerate}
+            \item Effectuer les parcours suivants dans l'arbre figure \ref{arbre2}:
+                  \begin{itemize}
+                      \item en largeur,
+                      \item préfixe,
+                      \item infixe,
+                      \item postfixe.
+                  \end{itemize}
+            \item Quelle est la hauteur de cet arbre. On considère qu'un arbre vide à une hauteur de -1.
+            \item Cet arbre est-il équilibré?
+            \item Cet arbre est-il complet?
+        \end{enumerate}
+    \end{exo}
+    \begin{exo}
+        En généalogie le principe de la numérotation de Sosa-Stradonitz attribue le numéro 1 à l’individu racine (le sujet sur lequel on établit l’ascendance) puis le numéro 2 à son père et 3 à sa mère. Ainsi, chaque homme a un numéro double de celui de son enfant et est donc pair et chaque femme un numéro double de celui de son enfant plus un, soit un numéro impair.
+        \begin{enumerate}
+            \item Le numéro 17 est-il une femme ou un homme? Quels sont les numéros de son père et sa mère? Quel est le numéro de son enfant?
+            \item Combien de trisaïeuls (ancêtres de quatrième degré) possède un individu?
+            \item Un généalogiste propose d'imprimer l'arbre généalogique d'un individu avec quatre degrés d'ascendance. Combien de personnes seront affichées dans cet arbre?
+        \end{enumerate}
+        L'arbre des ascendants d'Emmanuel Macron est représenté dans un liste Python (code \ref{manu}).
+        \begin{center}
+            \lstinputlisting[firstline=10,lastline=15,xleftmargin=2em, xrightmargin=2em]{"scripts/arbre-genealogique.py"}
+            \captionof{code}{Représentation en mémoire d'un arbre généalogique}
+            \label{manu}
+        \end{center}
+        \begin{enumerate}[resume]
+            \item Représenter l'arbre généalogique sous forme d'un arbre binaire.
+            \item Ouvrir le fichier \emph{arbre-genealogique.py}.
+            \item Écrire la fonction \textbf{get\_parents(tab: list, id\_enfant: int)$\;\rightarrow\;$tuple} qui renvoie le nom des parents de \emph{id\_enfant} sous forme de tuple. La fonction devra gérer les identifiants trop grands à l'aide d'une assertion.
+            \item Écrire la fonction \textbf{ascendant\_homme(tab: list, hommes: list)$\;\rightarrow\;$list} qui renvoie la liste des ascendants masculins de la personne dont on a réalisé l'arbre généalogique. La fonction devra parcourir l'arbre en profondeur. De plus une simple liste Python fera office de pile.
+            \item Écrire une version récursive de la fonction précédente.
+        \end{enumerate}
+    \end{exo}
+    \begin{exo}
+        \begin{center}
+            \begin{tikzpicture}
+                \node[draw] (r) at (0,0) {r};
+                \node[draw] (a) at (-3,-1) {a};
+                \node[draw] (b) at (3,-1) {b};
+                \node[draw] (c) at (-4,-2) {c};
+                \node[draw] (d) at (-2,-2) {d};
+                \node[draw] (e) at (2,-2) {e};
+                \node[draw] (f) at (4,-2) {f};
+                \node[draw] (g) at (-4.5,-3) {g};
+                \node[draw] (h) at (-3.5,-3) {h};
+                \node[draw] (i) at (-2.5,-3) {i};
+                \node[draw] (j) at (-1.5,-3) {j};
+                \node[draw] (k) at (1.5,-3) {k};
+                \node[draw] (l) at (-2,-4) {l};
 
-\draw (r) -- (a);
-\draw (r) -- (b);
-\draw (a) -- (c);
-\draw (a) -- (d);
-\draw (b) -- (e);
-\draw (b) -- (f);
-\draw (c) -- (g);
-\draw (c) -- (h);
-\draw (d) -- (i);
-\draw (d) -- (j);
-\draw (e) -- (k);
-\draw (j) -- (l);
-\end{tikzpicture}
-\captionof{figure}{Un arbre de chaîne de caractère}
-\label{exo4}
-\end{center}
-L'objectif est de créer une classe permettant de construire un arbre binaire (figure \ref{exo4}).
-\begin{enumerate}
-\item Créer une classe \emph{Arbre\_binaire}. On passera un paramètre \emph{h} à son constructeur qui correspondra à la hauteur de l'arbre binaire parfait voulu. De plus, le constructeur:
-\begin{itemize}
-\item initialisera un tableau \emph{arbre} à la bonne taille, représentatif de l'arbre binaire. Chaque élément du tableau sera initialisé à \emph{None}.
-\item initialisera la racine avec la chaîne de caractère \emph{"r"}. 
-\end{itemize}
-\item Écrire la méthode \textbf{inserer(self, pere: str, fils\_g: str, fils\_d: str)$\;\rightarrow\;$None} qui insère les fils gauche et droit de \emph{pere}. La méthode lèvera une erreur d'assertion si le nœud \emph{pere} n'a pas de fils (sort du tableau).
-\item Construire l'objet \emph{arbre\_car}, instance de la classe \emph{Arbre\_binaire} puis les nœuds de la figure \ref{exo4}.
-\item Écrire la méthode \textbf{def prefixe(self, parcours: list, i: int = 0)$\;\rightarrow\;$list:} qui renvoie la liste des nœuds traversé avec un parcours préfixe.
-\item Écrire de même les méthodes \emph{infixe} et \emph{postfixe}.
-\item \emph{Pour les plus avancés:} transformer les méthodes de parcours précédentes pour qu'elles construisent le tableau au fur et à mesure. La signature de la méthode doit être \textbf{def prefixe(self, i: int = 0)$\;\rightarrow\;$list:}
-\end{enumerate}
-\end{exo}
+                \draw (r) -- (a);
+                \draw (r) -- (b);
+                \draw (a) -- (c);
+                \draw (a) -- (d);
+                \draw (b) -- (e);
+                \draw (b) -- (f);
+                \draw (c) -- (g);
+                \draw (c) -- (h);
+                \draw (d) -- (i);
+                \draw (d) -- (j);
+                \draw (e) -- (k);
+                \draw (j) -- (l);
+            \end{tikzpicture}
+            \captionof{figure}{Un arbre de chaîne de caractère}
+            \label{exo4}
+        \end{center}
+        L'objectif est de créer une classe permettant de construire un arbre binaire (figure \ref{exo4}).
+        \begin{enumerate}
+            \item Créer une classe \emph{Arbre\_binaire}. On passera un paramètre \emph{h} à son constructeur qui correspondra à la hauteur de l'arbre binaire parfait voulu. De plus, le constructeur:
+                  \begin{itemize}
+                      \item initialisera un tableau \emph{arbre} à la bonne taille, représentatif de l'arbre binaire. Chaque élément du tableau sera initialisé à \emph{None}.
+                      \item initialisera la racine avec la chaîne de caractère \emph{"r"}.
+                  \end{itemize}
+            \item Écrire la méthode \textbf{inserer(self, pere: str, fils\_g: str, fils\_d: str)$\;\rightarrow\;$None} qui insère les fils gauche et droit de \emph{pere}. La méthode lèvera une erreur d'assertion si le nœud \emph{pere} n'a pas de fils (sort du tableau).
+            \item Construire l'objet \emph{arbre\_car}, instance de la classe \emph{Arbre\_binaire} puis les nœuds de la figure \ref{exo4}.
+            \item Écrire la méthode \textbf{prefixe(self, parcours: list, i: int = 0)$\;\rightarrow\;$list:} qui renvoie la liste des nœuds traversé avec un parcours préfixe.
+            \item Écrire de même les méthodes \emph{infixe} et \emph{postfixe}.
+            \item \emph{Pour les plus avancés:} transformer les méthodes de parcours précédentes pour qu'elles construisent le tableau au fur et à mesure. La signature de la méthode doit être \textbf{def prefixe(self, i: int = 0)$\;\rightarrow\;$list:}
+        \end{enumerate}
+    \end{exo}
 \end{Form}
 \end{document}

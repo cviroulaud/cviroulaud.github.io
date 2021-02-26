@@ -49,8 +49,8 @@ class Noeud:
 
 class ABR:
 
-    def __init__(self, r = None):
-        self.racine = r
+    def __init__(self):
+        self.racine = None
 
     def est_vide(self)->bool:
         return self.racine is None
@@ -60,7 +60,7 @@ class ABR:
         insère v dans l'ABR
         en appelant la méthode inserer de Noeud
         """
-        if self.racine is None:
+        if self.est_vide():
             # création de la racine
             self.racine = Noeud(v)
         else:
@@ -72,7 +72,7 @@ class ABR:
         recherche v dans l'ABR
         en appelant la méthode rechercher de Noeud
         """
-        if self.racine is None:
+        if self.est_vide():
             return False
         else:
             return self.racine.rechercher(v)

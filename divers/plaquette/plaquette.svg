@@ -70,8 +70,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="lycee"
-     style="display:inline;opacity:0.9"
-     sodipodi:insensitive="true">
+     style="display:inline;opacity:0.9">
     <image
        sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/divers/plaquette/fond.png"
        xlink:href="fond.png"
@@ -269,7 +268,7 @@
          x="172.55399"
          y="130.47284"
          style="font-size:14.11111259px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-         id="tspan5004">de 16h à 20h</tspan></text>
+         id="tspan5004">de 17h à 19h30</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -284,14 +283,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.58611107px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="73.555656"
-       y="159.22255"
+       x="55.426369"
+       y="157.87448"
        id="text5012"><tspan
          sodipodi:role="line"
          id="tspan5010"
-         x="73.555656"
-         y="159.22255"
-         style="font-size:10.58333492px;stroke-width:0.26458332">Inscription sur <tspan
+         x="55.426369"
+         y="157.87448"
+         style="font-size:10.58333492px;stroke-width:0.26458332">renseignements sur <tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic'"
    id="tspan868">lyceejaydebeaufort.fr</tspan></tspan></text>
   </g>

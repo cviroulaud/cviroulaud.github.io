@@ -9,12 +9,12 @@ Date de création Mon Feb 22 10:28:12 2021
 
 class Noeud:
 
-    def __init__(self, v, g = None, d = None):
+    def __init__(self, v, g=None, d=None):
         self.valeur = v
         self.gauche = g
         self.droite = d
 
-    def inserer(self, v: int)->None:
+    def inserer(self, v: int) -> None:
         """
         crée un Noeud dans le sous-arbre gauche ou droit
         """
@@ -23,13 +23,13 @@ class Noeud:
                 self.gauche = Noeud(v)
             else:
                 self.gauche.inserer(v)
-        elif v > self.valeur: # permet de ne pas ajouter une valeur déjà présente
+        elif v > self.valeur:  # permet de ne pas ajouter une valeur déjà présente
             if self.droite is None:
                 self.droite = Noeud(v)
             else:
                 self.droite.inserer(v)
 
-    def rechercher(self, v: int)->bool:
+    def rechercher(self, v: int) -> bool:
         """
         recherche v dans les sous-arbre gauche ou droit
         """
@@ -52,10 +52,10 @@ class ABR:
     def __init__(self):
         self.racine = None
 
-    def est_vide(self)->bool:
+    def est_vide(self) -> bool:
         return self.racine is None
 
-    def inserer(self, v: int)->None:
+    def inserer(self, v: int) -> None:
         """
         insère v dans l'ABR
         en appelant la méthode inserer de Noeud
@@ -67,7 +67,7 @@ class ABR:
             # appel de la méthode inserer de Noeud
             self.racine.inserer(v)
 
-    def rechercher(self, v: int)->bool:
+    def rechercher(self, v: int) -> bool:
         """
         recherche v dans l'ABR
         en appelant la méthode rechercher de Noeud
@@ -77,7 +77,7 @@ class ABR:
         else:
             return self.racine.rechercher(v)
 
-    def infixe_rec(self, n: Noeud, parcours: list)->list:
+    def infixe_rec(self, n: Noeud, parcours: list) -> list:
         """
         méthode interne du parcours infixe
         """
@@ -88,13 +88,15 @@ class ABR:
         self.infixe_rec(n.droite, parcours)
         return parcours
 
-    def infixe(self)->list:
+    def infixe(self) -> list:
         return self.infixe_rec(self.racine, [])
 
-tab = [33, 25, 56, 20, 28, 40, 60, 8, 21, 26, 35, 58, 65]
-arbre = ABR()
-for e in tab:
-    arbre.inserer(e)
-print(arbre.infixe())
-print(arbre.rechercher(21))
-print(arbre.rechercher(61))
+
+if __name__ == "__main__":
+    tab = [33, 25, 56, 20, 28, 40, 60, 8, 21, 26, 35, 58, 65]
+    arbre = ABR()
+    for e in tab:
+        arbre.inserer(e)
+    print(arbre.infixe())
+    print(arbre.rechercher(21))
+    print(arbre.rechercher(61))

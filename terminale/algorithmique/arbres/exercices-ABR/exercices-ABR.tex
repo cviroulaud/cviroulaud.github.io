@@ -1,0 +1,72 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Exercices ABR}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+Donner tous les ABR formés de trois nœuds contenant les entiers 1, 2, 3.
+\end{exo}
+\begin{exo}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw] (A) at (1,0) {20};
+            \node[draw] (B) at (-3,-1) {12};
+            \node[draw] (C) at (-5,-2) {5};
+            \node[draw] (D) at (-1,-2) {17};
+            \node[draw] (F) at (-4,-3) {10};
+            \node[draw] (H) at (0,-3) {19};
+            \node[draw] (I) at (4,-1) {24};
+            \node[draw] (J) at (2,-2) {22};
+    
+            \draw (A) -- (B);
+            \draw (C) -- (B);
+            \draw (C) -- (F);
+            \draw (D) -- (B);
+            \draw (D) -- (H);
+            \draw (A) -- (I);
+            \draw (J) -- (I);
+            \draw [white] (0,-3) -- (0,-4.5);
+        \end{tikzpicture}
+        \captionof{figure}{Un Arbre Binaire de Recherche (\emph{ABR})}
+        \label{arbre}
+    \end{center}
+    \begin{enumerate}
+        \item Compléter cet ABR en insérant dans l'ordre les valeurs 2, 15, 29, 28.
+        \item Donner le résultat d'un parcours infixe de cet ABR.
+    \end{enumerate}
+\end{exo}
+\begin{exo} Ajout de méthodes
+\begin{enumerate}
+    \item Dans la classe ABR construite en cours, ajouter la méthode \textbf{minimum(self) $\;\rightarrow\;$int} qui renvoie le minimum de l'ABR.
+    \item Écrire une méthode \emph{récursive} \textbf{maximum\_rec(self, n: Noeud) $\;\rightarrow\;$int} qui renvoie le maximum de l'ABR.
+    \item Écrire la méthode \textbf{maximum(self) $\;\rightarrow\;$int} qui utilise la méthode précédente pour renvoyer le maximum de l'ABR.
+    \item Écrire la méthode \textbf{infixe\_rec(self, n: Noeud, parcours: list) $\;\rightarrow\;$ list
+    } qui renvoie \emph{parcours}, le parcours infixe de l'arbre.
+    
+    \item Écrire la méthode \textbf{infixe(self) $\;\rightarrow\;$ list} qui appelle la méthode \emph{infixe\_rec} et renvoie le parcours infixe de l'arbre.
+    \item \textbf{Pour les plus avancés:} Réécrire la méthode \emph{infixe} avec une \textbf{fonction}  infixe\_rec interne à la méthode \emph{infixe}.
+\end{enumerate}
+\end{exo}
+\begin{exo} Comparaison de tris
+\begin{enumerate}
+    \item Écrire la fonction \textbf{tri\_selection(tab: list) $\;\rightarrow\;$ list} qui renvoie le tableau trié.
+    \item Écrire la fonction \textbf{tri\_rapide(tab: list) $\;\rightarrow\;$ list} qui renvoie le tableau trié.
+    \item Écrire la fonction \textbf{tri\_ABR(tab: list) $\;\rightarrow\;$ list} qui construit l'ABR à partir du tableau puis effectue un parcours infixe et renvoie le parcours.
+    \item Construire par compréhension un tableau de 5000 entiers aléatoires compris entre 0 et 1000.
+    \item Écrire la fonction \textbf{duree\_tri(fonction, tab: list) $\;\rightarrow\;$float} qui renvoie la durée d'exécution du tri de \emph{tab} par \emph{fonction}.
+    \item Mesurer la durée d'exécution des trois tris.
+    \item Quelle est la complexité de la fonction \emph{tri\_ABR} si l'arbre est équilibré?
+    \item Que devient cette complexité si le tableau de départ est déjà trié?
+\end{enumerate}
+\end{exo}
+\end{document}

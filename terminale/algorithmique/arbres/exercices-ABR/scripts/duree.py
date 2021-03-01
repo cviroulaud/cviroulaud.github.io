@@ -40,7 +40,7 @@ def tri_ABR(tab):
     arbre = ABR()
     for e in big_tab:
         arbre.inserer(e)
-    arbre.infixe()
+    tab = arbre.infixe()
     return tab
 
 big_tab = [randint(0, 1000) for _ in range(5000)]
@@ -48,3 +48,4 @@ big_tab = [randint(0, 1000) for _ in range(5000)]
 print(duree_tri(tri_selection, big_tab.copy()))
 print(duree_tri(tri_rapide, big_tab.copy()))
 print(duree_tri(tri_ABR, big_tab.copy()))
+

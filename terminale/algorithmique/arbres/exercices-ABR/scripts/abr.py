@@ -76,6 +76,69 @@ class ABR:
             return False
         else:
             return self.racine.rechercher(v)
+    
+    def minimum(self)->int:
+        """
+        Returns:
+            int: la valeur minimum de l'ABR
+        """
+        if self.est_vide():
+            return None
+        else:
+            en_cours = self.racine
+            while en_cours.gauche is not None:
+                en_cours = en_cours.gauche
+            return en_cours.valeur
+    
+    def maximum_rec(self, n: Noeud)->int:
+        """
+        méthode interne récursive de recherche du max
+        """
+        if n is None:
+            return None
+        else:
+            if n.droite is None:
+                return n.valeur
+            else:
+                return self.maximum_rec(n.droite)
+    
+    def maximum(self)->int:
+        """
+        Returns:
+            int: la valeur maximum de l'ABR
+        """
+        return self.maximum_rec(self.racine)
+
+    def infixe_rec(self, n: Noeud, parcours: list) -> list:
+        """
+        méthode interne du parcours infixe
+        """
+        if n is None:
+            return
+        self.infixe_rec(n.gauche, parcours)
+        parcours.append(n.valeur)
+        self.infixe_rec(n.droite, parcours)
+        return parcours
+
+    def infixe(self) -> list:
+        return self.infixe_rec(self.racine, [])
+
+    def infixe2(self) -> list:
+        """
+        avec une fonction interne
+        """
+        def infixe_rec(n: Noeud, parcours: list) -> list:
+            """
+            méthode interne du parcours infixe
+            """
+            if n is None:
+                return
+            infixe_rec(n.gauche, parcours)
+            parcours.append(n.valeur)
+            infixe_rec(n.droite, parcours)
+            return parcours
+
+        return infixe_rec(self.racine, [])
 
 
 if __name__ == "__main__":
@@ -83,5 +146,6 @@ if __name__ == "__main__":
     arbre = ABR()
     for e in tab:
         arbre.inserer(e)
-    print(arbre.rechercher(21))
-    print(arbre.rechercher(61))
+    print(arbre.infixe())
+    print(arbre.minimum())
+    print(arbre.maximum())

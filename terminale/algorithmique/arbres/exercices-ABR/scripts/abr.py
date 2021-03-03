@@ -67,6 +67,8 @@ class ABR:
             # appel de la méthode inserer de Noeud
             self.racine.inserer(v)
 
+    #DODO ABR faire méthode supprimer en s'aidant de ABRpourNSI.py
+    
     def rechercher(self, v: int) -> bool:
         """
         recherche v dans l'ABR

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  1 MAR 2021 10:20
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  3 MAR 2021 10:17
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-ABR/exercices-ABR-correction
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-ABR/exercices-ABR-correction.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.153 seconds
+luaotfload | main : initialization completed in 0.147 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -836,14 +836,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip73
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 112.
+Package hyperref Info: Option `colorlinks' set `true' on input line 111.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 112.
+(hyperref)                setting the option has no effect on input line 111.
 
-Package hyperref Info: Option `frenchlinks' set `true' on input line 112.
-Package hyperref Info: Option `unicode' set `true' on input line 112.
+Package hyperref Info: Option `frenchlinks' set `true' on input line 111.
+Package hyperref Info: Option `unicode' set `true' on input line 111.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 )
@@ -1442,14 +1442,14 @@ Package rerunfilecheck Info: File `exercices-ABR-correction.out' has not changed
 Here is how much of LuaTeX's memory you used:
  41198 strings out of 494383
  125095,1144653 words of node,token memory allocated
- 7416 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 10 glue, 4 kern, 1 penalty, 830 glyph, 368 attribute, 97 glue_spec, 63 attribute_list, 1 write nodes
-   avail lists: 1:4,2:7625,3:543,4:29,5:96,6:25,7:1726,8:43,9:342,10:8,11:48
+ 7360 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 10 glue, 4 kern, 1 penalty, 822 glyph, 368 attribute, 97 glue_spec, 63 attribute_list, 1 write nodes
+   avail lists: 1:4,2:7611,3:543,4:29,5:91,6:25,7:1709,8:38,9:340,10:8,11:48
  44237 multiletter control sequences out of 65536+600000
  50 fonts using 7493487 bytes
  84i,15n,95p,1206b,643s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on exercices-ABR-correction.pdf (1 page, 45723 bytes).
+Output written on exercices-ABR-correction.pdf (1 page, 45812 bytes).
 
 PDF statistics: 71 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream

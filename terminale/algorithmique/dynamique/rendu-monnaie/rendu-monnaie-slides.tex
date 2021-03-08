@@ -70,13 +70,13 @@ nb_pieces_glouton(somme, systeme)
 
     \begin{center}
         \begin{lstlisting}[language=Python]
-systeme = [10, 4, 3, 1]
+systeme = [30, 24, 12, 6, 3, 1]
         \end{lstlisting}
-        \captionof{code}{Système monétaire fictif}
+        \captionof{code}{Système monétaire impérial britannique}
         \label{systeme}
     \end{center}
     \begin{activite}
-        Dérouler à la main l'exécution de la fonction \emph{nb\_pieces\_glouton} pour 6€ avec le système (simplifié) de monnaie européenne puis le système fictif.
+        Dérouler à la main l'exécution de la fonction \emph{nb\_pieces\_glouton} pour 48€ avec le système (simplifié) de monnaie européenne puis le système impérial.
     \end{activite}
 \end{frame}
 
@@ -86,9 +86,9 @@ systeme = [10, 4, 3, 1]
 
     \begin{center}
         \begin{tikzpicture}
-            \node[draw] (A) at (0,0) {6};
-            \node[draw] (B) at (0,-1) {2};
-            \node[draw] (C) at (0,-2) {1};
+            \node[draw] (A) at (0,0) {48};
+            \node[draw] (B) at (0,-1) {18};
+            \node[draw] (C) at (0,-2) {6};
             \node[draw] (D) at (0,-3) {0};
 
             \draw (A) -- (B);
@@ -104,8 +104,8 @@ systeme = [10, 4, 3, 1]
 
     \begin{center}
         \begin{tikzpicture}
-            \node[draw] (A) at (0,0) {3};
-            \node[draw] (B) at (0,-1) {3};
+            \node[draw] (A) at (0,0) {24};
+            \node[draw] (B) at (0,-1) {24};
             \node[draw] (C) at (0,-2) {0};
 
             \draw (A) -- (B);
@@ -184,7 +184,7 @@ On teste récursivement toutes les solutions pour chaque pièce du système (lig
 
     \begin{activite}
         \begin{enumerate}
-            \item Écrire la fonction \textbf{nb\_pieces\_TD(somme: int, systeme: list, tracl: list) $\;\rightarrow\;$int} qui reprend l'algorithme naïf et utilise le tableau \emph{track} de stockage intermédiaire.
+            \item Écrire la fonction \textbf{nb\_pieces\_TD(somme: int, systeme: list, track: list) $\;\rightarrow\;$int} qui reprend l'algorithme naïf et utilise le tableau \emph{track} de stockage intermédiaire.
             \item Tester la fonction pour les deux systèmes monétaires.
         \end{enumerate}
         \end{activite}

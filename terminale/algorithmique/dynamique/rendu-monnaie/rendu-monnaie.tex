@@ -38,14 +38,14 @@ Un algorithme glouton fait un choix sur lequel il ne revient pas.
 Choisissons un autre système de monnaie (code \ref{systeme}).
 \begin{center}
     \begin{lstlisting}[language=Python]
-    systeme = [10, 4, 3, 1]
+    systeme = [30, 24, 12, 6, 3, 1]
     \end{lstlisting}
-    \captionof{code}{Système monétaire fictif}
+    \captionof{code}{Système monétaire impérial britannique}
     \label{systeme}
 \end{center}
 L'approche gloutonne ne donne pas la solution optimale.
 \begin{activite}
-    Dérouler à la main l'exécution de la fonction \emph{nb\_pieces\_glouton} pour 6€ avec le système (simplifié) de monnaie européenne puis le système fictif.
+    Dérouler à la main l'exécution de la fonction \emph{nb\_pieces\_glouton} pour 48€ avec le système (simplifié) de monnaie européenne puis le système impérial.
 \end{activite}
 \begin{aretenir}[Remarque]
     Le système monétaire européen est dit \emph{canonique}.
@@ -81,7 +81,7 @@ En s'aidant de l'arbre, dérouler l'exécution de la fonction (pour les premiers
 L'approche naïve montre une redondance dans les calculs. L'utilisation d'un tableau \emph{track} pour stocker les résultats intermédiaires permet d'éviter ce problème.
 \begin{activite}
 \begin{enumerate}
-    \item Écrire la fonction \textbf{nb\_pieces\_TD(somme: int, systeme: list, tracl: list) $\;\rightarrow\;$int} qui reprend l'algorithme naïf et utilise le tableau \emph{track} de stockage intermédiaire.
+    \item Écrire la fonction \textbf{nb\_pieces\_TD(somme: int, systeme: list, track: list) $\;\rightarrow\;$int} qui reprend l'algorithme naïf et utilise le tableau \emph{track} de stockage intermédiaire.
     \item Tester la fonction pour les deux systèmes monétaires.
 \end{enumerate}
 \end{activite}

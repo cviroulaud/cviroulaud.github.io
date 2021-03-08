@@ -49,17 +49,18 @@ Pour connaître le réseau on convertit les adresses en binaire et on applique u
     \end{center}
     Les 24 premiers bits correspondent au réseau.
     \begin{commentprof}
-        Il y a donc $2^{32-24}$ adresses disponibles dans le réseau (- adresse de réseau et adresse de broadcast). adresse du réseau: 192.168.10.0
+        Il y a donc $2^{32-24}$ adresses disponibles dans le réseau (- adresse de réseau et adresse de broadcast). adresse du réseau: 192.168.10.0; possibilité de créer des sous-réseaux en "augmentant" le masque
     \end{commentprof}
 \end{aretenir}
 
 \begin{activite}
     \begin{enumerate}
-        \item Donner le réseau auquel appartient l'adresse 10.2.10.103/12
+        \item Donner le réseau auquel appartient l'adresse 10.103.10.2/12
         \item Combien d'adresses peut-on créer dans ce réseau?
         \item Ouvrir un terminal et taper la commande (code \ref{ip}).
         \begin{center}
             \begin{lstlisting}[language=bash]
+# a pour adresse, 4 pour n'avoir que les IPv4
 ip -4 a
             \end{lstlisting}
             \captionof{code}{Adresse IPv4}
@@ -70,5 +71,47 @@ ip -4 a
         \item Quelle est l'adresse du réseau?
     \end{enumerate}
 \end{activite}
+\begin{commentprof}
+adresse de broadcast; adresse 169.254... = quand machine n'obtient pas adresse via DHCP, elle s'en crée une
+\end{commentprof}
 \section{Structure maillée}
+Connaître l'adresse IP du destinataire est une première étape, mais il faut maintenant pouvoir le repérer dans le réseau. Il est illusoire de penser que chaque machine connaisse la totalité de la structure du réseau.
+
+Un réseau est structuré autour des \textbf{routeurs}. Ces machines relaient les paquets de données jusqu'au destinataire. On distingue deux catégories:
+\begin{itemize}
+    \item Les routeurs d'accès permettent d'accéder à un réseau ou assure la connexion entre deux réseaux. La box d'une maison est un routeur d'accès.
+    \item Les routeurs internes forment la topologie du réseau. Les prestataires (Orange, Free \dots) créent un réseau accessible via la box. 
+\end{itemize}
+\begin{center}
+    \centering
+    \includegraphics[width=15cm]{ressources/reseau.png}
+    \captionof{figure}{Topologie d'un réseau}
+    \label{reseau}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+    \item Sur la figure \ref{reseau}, repérer les routeurs d'accès, les routeurs internes.
+    \item Installer le paquet \emph{traceroute}
+    \begin{center}
+        \begin{lstlisting}[language=bash]
+sudo apt install traceroute
+        \end{lstlisting}
+        \captionof{code}{Installation d'un paquet}
+        \label{ip}
+    \end{center}
+    \item Taper la commande (code \ref{trace}).
+    \begin{center}
+        \begin{lstlisting}[language=bash]
+traceroute fr.wikipedia.org
+        \end{lstlisting}
+        \captionof{code}{Tracer le chemin suivi vers une destination}
+        \label{trace}
+    \end{center}
+\end{enumerate}
+\end{activite}
+\begin{commentprof}
+Le serveur destinataire rejette les paquets UDP (User Datagram Protocol) (n'accepte que les TCP - Transmission Control Protocol).
+
+L'option -I de traceroute permet d'envoyer des paquets avec le protcole ICMP (Internet Control Message Protocol) = ping
+\end{commentprof}
 \end{document}

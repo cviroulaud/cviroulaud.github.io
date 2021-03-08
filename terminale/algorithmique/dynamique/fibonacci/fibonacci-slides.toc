@@ -3,4 +3,4 @@
 \beamer@sectionintoc {2}{Mise en évidence du problème}{3}{0}{2}
 \beamer@sectionintoc {3}{Programmation dynamique}{8}{0}{3}
 \beamer@subsectionintoc {3}{1}{Approche top-down}{8}{0}{3}
-\beamer@subsectionintoc {3}{2}{Bottom-up}{14}{0}{3}
+\beamer@subsectionintoc {3}{2}{Bottom-up}{15}{0}{3}

@@ -30,7 +30,7 @@ def aleatoire(g: list, n: int)->None:
 
     """
     for _ in range(n):
-        x,y = randint(0,199), randint(0,199)
+        x,y = randint(0,CELLULES-1), randint(0,CELLULES-1)
         g[x][y] = True
 
 def compter_voisins(g: list, cel: tuple)->int:

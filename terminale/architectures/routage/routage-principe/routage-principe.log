@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  8 MAR 2021 11:27
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  12 MAR 2021 11:12
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/routage-principe/routage-principe
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/routage-principe/routage-principe.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.127 seconds
+luaotfload | main : initialization completed in 0.137 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1414,7 +1414,7 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
-Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 66.
+Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 63.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1422,7 +1422,7 @@ Make it at least 20.3728pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=21, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=33, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 73.
@@ -1430,28 +1430,34 @@ Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-<ressources/reseau.png, id=47, 1220.56pt x 435.6275pt>
+<ressources/reseau.png, id=58, 1220.56pt x 435.6275pt>
 File: ressources/reseau.png Graphic file (type png)
 <use ressources/reseau.png>
-Package luatex.def Info: ressources/reseau.png  used on input line 87.
+Package luatex.def Info: ressources/reseau.png  used on input line 81.
 (luatex.def)             Requested size: 426.79134pt x 152.32567pt.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 111.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 110.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [2<./ressources/reseau.png>]
+Package mdframed Info: Not enough space on this page on input line 110.
+<ressources/routeur-adresses.png, id=78, 144.54pt x 120.2091pt>
+File: ressources/routeur-adresses.png Graphic file (type png)
+<use ressources/routeur-adresses.png>
+Package luatex.def Info: ressources/routeur-adresses.png  used on input line 113.
+(luatex.def)             Requested size: 227.62204pt x 189.31564pt.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 117.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 122.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+ [3<./ressources/routeur-adresses.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
  (./routage-principe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 Package rerunfilecheck Info: File `routage-principe.out' has not changed.
-(rerunfilecheck)             Checksum: 2B25D3C53F0E326B24F1124EDBDE85C4;341.
+(rerunfilecheck)             Checksum: 0A638F06BD9F3705A809269C434C07AB;803.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1459,19 +1465,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41475 strings out of 494383
+ 41503 strings out of 494383
  125095,1144653 words of node,token memory allocated
- 22660 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 16 glue, 4 kern, 1 penalty, 2851 glyph, 818 attribute, 98 glue_spec, 138 attribute_list, 1 write nodes
-   avail lists: 1:4,2:3978,3:269,4:471,5:464,6:40,7:1570,8:331,9:732,10:22,11:136
- 44443 multiletter control sequences out of 65536+600000
- 53 fonts using 7888839 bytes
+ 24123 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 3046 glyph, 866 attribute, 98 glue_spec, 146 attribute_list, 1 write nodes
+   avail lists: 1:3,2:3859,3:263,4:465,5:459,6:42,7:1374,8:329,9:726,10:22,11:135
+ 44460 multiletter control sequences out of 65536+600000
+ 54 fonts using 8020519 bytes
  84i,17n,99p,1205b,1022s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on routage-principe.pdf (3 pages, 122803 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on routage-principe.pdf (3 pages, 468172 bytes).
 
-PDF statistics: 137 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 26 named destinations out of 1000 (max. 131072)
- 40 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 142 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 131072)
+ 64 words of extra memory for PDF output out of 10000 (max. 100000000)
 

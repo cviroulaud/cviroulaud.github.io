@@ -131,3 +131,5 @@ systeme = [10, 4, 3, 1]
 somme = 6
 nb_pieces_BU_sol(somme, systeme)
 detail_pieces_glouton(somme, systeme)
+
+#DODO pour top-down cas = 0 inutile -> mettre track = [0, 0,...] (comme dans TD2)

@@ -2,6 +2,8 @@
 \setbeamercolor{structure}{fg=SlateGray}
 \usetheme{Goettingen}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Principe du routage}
 \date{}
@@ -77,6 +79,9 @@
         \item Il y a donc $2^{32-24}$ adresses disponibles dans le réseau.
         \item On peut créer des sous-réseaux dans ce réseau.
     \end{itemize}
+    \note[item]{Il y a donc $2^{32-24}$ adresses disponibles dans le réseau (- adresse de réseau et adresse de broadcast).}
+    \note[item]{adresse du réseau: 192.168.10.0} 
+    \note[item]{possibilité de créer des sous-réseaux en "augmentant" le masque}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -131,9 +136,11 @@ ip -4 a
         \captionof{figure}{Adresse de la machine}
         \label{IMG}
     \end{center}
-
+\note[item]{adresse de broadcast; adresse 169.254... = quand machine n'obtient pas adresse via DHCP, elle s'en crée une}
+\note[item]{adresse 169.254... = quand machine n'obtient pas adresse via DHCP, elle s'en crée une}
 \end{frame}
 \section{Structure maillée}
+\subsection{Les routeurs}
 \begin{frame}
     \frametitle{Repérer une machine sur le réseau}
 
@@ -200,6 +207,9 @@ traceroute fr.wikipedia.org
         \item La commande limite le TTL à 30
         \item les serveurs rejettent les paquets UDP
     \end{itemize} 
+    \note[item]{Le serveur destinataire rejette les paquets UDP (User Datagram Protocol) (n'accepte que les TCP - Transmission Control Protocol).}
+
+    \note[item]{L'option -I de traceroute permet d'envoyer des paquets avec le protcole ICMP (Internet Control Message Protocol) = ping}
 \end{itemize}
 \end{frame}
 \begin{frame}[fragile]
@@ -213,5 +223,68 @@ sudo traceroute -I fr.wikipedia.org
         \label{moncode}
     \end{center}
 
+\end{frame}
+\subsection{Adresse IP d'un routeur}
+\begin{frame}
+    \frametitle{Un routeur est une \textbf{passerelle} entre plusieurs réseaux.}
+    
+    \begin{aretenir}[]
+        Un routeur possède autant d'\textbf{interfaces} que de réseaux associés.
+    \end{aretenir}
+\note{interface = carte réseau (filaire, wifi)}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \centering
+        \includegraphics[width=5cm]{ressources/routeur-adresses.png}
+        \captionof{figure}{Un routeur lié à quatre réseaux}
+        \label{routeur}
+    \end{center}
+    \begin{activite}
+    Le routeur en figure \ref{routeur} est associé au quatre réseaux indiqués. Donner la plus grande adresse possible à chacune des \emph{interfaces} du routeur.
+    \end{activite}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \centering
+        \includegraphics[width=5cm]{ressources/routeur-adresses.png}
+        \captionof{figure}{Un routeur lié à quatre réseaux}
+        \label{routeur}
+    \end{center}
+    L'adresse de broadcast (diffusion) à tous ses bits à 1. On prend alors l'avant-dernière pour le réseau.
+    \begin{itemize}
+        \item réseau 10.1.1.0/30 $\;\rightarrow\;$ interface 10.1.1.2
+        \item réseau 192.168.0.0/30 $\;\rightarrow\;$ interface 192.168.0.2
+        \item réseau 10.1.2.0/28 $\;\rightarrow\;$ interface 10.1.2.14
+        \item réseau 172.16.10.0/24 $\;\rightarrow\;$ interface 172.16.10.254
+    \end{itemize}
+\note{$2^{32-n}$ adresses possibles et la plus grande: $2^n -1$}
+\end{frame}
+\subsection{La table de routage}
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item<1->Un paquet circule de \textbf{proche en proche}.
+        \item <2->La table de routage indique le prochain \emph{routeur voisin}.
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        Il n'y a pas de route définie entre l'émetteur et le destinataire. On parle de \textbf{commutation par paquets}.
+    \end{center}
+\note[item]{Deux paquets qui partent de l'émetteur ne vont pas suivre le même chemin.}
+\note[item]{Commutation de circuits = liaison physique entre émetteur et destinaire $\;\rightarrow\;$ téléphone}
 \end{frame}
 \end{document}

@@ -48,9 +48,6 @@ Pour connaître le réseau on convertit les adresses en binaire et on applique u
         192.168.10.3/24
     \end{center}
     Les 24 premiers bits correspondent au réseau.
-    \begin{commentprof}
-        Il y a donc $2^{32-24}$ adresses disponibles dans le réseau (- adresse de réseau et adresse de broadcast). adresse du réseau: 192.168.10.0; possibilité de créer des sous-réseaux en "augmentant" le masque
-    \end{commentprof}
 \end{aretenir}
 
 \begin{activite}
@@ -71,12 +68,9 @@ ip -4 a
         \item Quelle est l'adresse du réseau?
     \end{enumerate}
 \end{activite}
-\begin{commentprof}
-adresse de broadcast; adresse 169.254... = quand machine n'obtient pas adresse via DHCP, elle s'en crée une
-\end{commentprof}
 \section{Structure maillée}
-Connaître l'adresse IP du destinataire est une première étape, mais il faut maintenant pouvoir le repérer dans le réseau. Il est illusoire de penser que chaque machine connaisse la totalité de la structure du réseau.
-
+Connaître l'adresse IP du destinataire est une première étape, mais il faut maintenant pouvoir le repérer dans le réseau.
+\subsection{Les routeurs}
 Un réseau est structuré autour des \textbf{routeurs}. Ces machines relaient les paquets de données jusqu'au destinataire. On distingue deux catégories:
 \begin{itemize}
     \item Les routeurs d'accès permettent d'accéder à un réseau ou assure la connexion entre deux réseaux. La box d'une maison est un routeur d'accès.
@@ -109,9 +103,20 @@ traceroute fr.wikipedia.org
     \end{center}
 \end{enumerate}
 \end{activite}
-\begin{commentprof}
-Le serveur destinataire rejette les paquets UDP (User Datagram Protocol) (n'accepte que les TCP - Transmission Control Protocol).
-
-L'option -I de traceroute permet d'envoyer des paquets avec le protcole ICMP (Internet Control Message Protocol) = ping
-\end{commentprof}
+\subsection{Adresse IP d'un routeur}
+Un routeur est une \textbf{passerelle} entre plusieurs réseaux. Pour pouvoir communiquer dans chacun des réseaux auquel il est associé il doit posséder une adresse dans chaque réseau. 
+\begin{aretenir}[]
+    Un routeur possède autant d'\textbf{interfaces} (les cartes réseaux) que de réseaux associés.
+\end{aretenir}
+\begin{center}
+    \centering
+    \includegraphics[width=8cm]{ressources/routeur-adresses.png}
+    \captionof{figure}{Un routeur lié à quatre réseaux}
+    \label{routeur}
+\end{center}
+\begin{activite}
+Le routeur en figure \ref{routeur} est associé au quatre réseaux indiqués. Donner la plus grande adresse possible à chacune des \emph{interfaces} du routeur.
+\end{activite}
+\subsection{La table de routage}
+Lorsqu'il reçoit un paquet un routeur lit son adresse de destination. En fonction de cette adresse il choisit le \emph{routeur voisin} à qui transmettre le paquet. On dit que ce dernier circule \emph{de proche en proche} jusqu'à sa destination. C'est la \textbf{table de routage} qui indique le routeur voisin à choisir.
 \end{document}

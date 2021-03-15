@@ -93,4 +93,3 @@ print(arbre_car.infixe([]))
 print(arbre_car.infixe2())
 print(arbre_car.postfixe([]))
 print(arbre_car.postfixe2())
-

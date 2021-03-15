@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  12 MAR 2021 08:59
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 MAR 2021 15:13
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/dynamique/decoupe-barre/decoupe-barre-correction
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/dynamique/decoupe-barre/decoupe-barre-correction.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.138 seconds
+luaotfload | main : initialization completed in 0.301 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1423,15 +1423,15 @@ Package rerunfilecheck Info: File `decoupe-barre-correction.out' has not changed
 
 Here is how much of LuaTeX's memory you used:
  41296 strings out of 494383
- 244355,1144653 words of node,token memory allocated
- 13604 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 penalty, 1157 glyph, 2054 attribute, 97 glue_spec, 344 attribute_list, 1 write nodes
-   avail lists: 1:5,2:14977,3:166,4:6007,5:4855,6:58,7:4495,8:4341,9:7832,10:35,11:455
+ 244353,1144653 words of node,token memory allocated
+ 13506 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 penalty, 1143 glyph, 2054 attribute, 97 glue_spec, 344 attribute_list, 1 write nodes
+   avail lists: 1:5,2:14977,3:166,4:6007,5:4855,6:58,7:4481,8:4341,9:7832,10:35,11:455
  44268 multiletter control sequences out of 65536+600000
  32 fonts using 6378407 bytes
  84i,17n,95p,1212b,745s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on decoupe-barre-correction.pdf (1 page, 26869 bytes).
+Output written on decoupe-barre-correction.pdf (1 page, 26872 bytes).
 
 PDF statistics: 101 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream

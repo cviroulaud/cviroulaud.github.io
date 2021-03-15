@@ -48,9 +48,9 @@ print(decoupe_TD(longueur, prix, track))
 
 
 def decoupe_BU(l: int, prix: dict) -> int:
-    track = [0 for _ in range(longueur+1)]
+    track = [0 for _ in range(l+1)]
     # calcule le prix pour chaque longueur en partant des petites valeurs
-    for i in range(1, longueur+1):
+    for i in range(1, l+1):
         val_max = 0
         for taille, valeur in prix.items():
             if i >= taille:

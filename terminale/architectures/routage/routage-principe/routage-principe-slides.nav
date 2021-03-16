@@ -53,8 +53,12 @@
 \headcommand {\beamer@framepages {20}{21}}
 \headcommand {\slideentry {3}{3}{2}{22/22}{La table de routage}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@partpages {1}{22}}
-\headcommand {\beamer@subsectionpages {20}{22}}
-\headcommand {\beamer@sectionpages {11}{22}}
-\headcommand {\beamer@documentpages {22}}
-\headcommand {\gdef \inserttotalframenumber {20}}
+\headcommand {\slideentry {3}{3}{3}{23/23}{La table de routage}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{3}{4}{24/24}{La table de routage}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@partpages {1}{24}}
+\headcommand {\beamer@subsectionpages {20}{24}}
+\headcommand {\beamer@sectionpages {11}{24}}
+\headcommand {\beamer@documentpages {24}}
+\headcommand {\gdef \inserttotalframenumber {22}}

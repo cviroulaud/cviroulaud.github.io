@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  13 MAR 2021 00:02
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 MAR 2021 15:48
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/rip/rip-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/rip/rip-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.161 seconds
+luaotfload | main : initialization completed in 0.188 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1579,107 +1579,107 @@ Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 17.
 \c@listing=\count439
 Package newfloat Info: float type `listing'=16 on input line 17.
-(./rip-slides.nav)
-Overfull \hbox (1.43356pt too wide) in paragraph at lines 27--27
+(./rip-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+Overfull \hbox (1.43356pt too wide) in paragraph at lines 30--30
  [] 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[2
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 40.
+(mdframed)              on input line 43.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 40.
+(mdframed)              on input line 43.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 40.
- [2
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 51.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 51.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 51.
+ mdframed uses option nobreak mdframed on input line 43.
  [3
 
-] [4
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 54.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 54.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 54.
+ [4
+
+] [5
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 72.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 75.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 72.
- [5
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 75.
+ [6
 
 ]
-<ressources/reseau.png, id=113, 1999.47pt x 1092.08pt>
+<ressources/reseau.png, id=126, 1999.47pt x 1092.08pt>
 File: ressources/reseau.png Graphic file (type png)
 <use ressources/reseau.png>
-Package luatex.def Info: ressources/reseau.png  used on input line 84.
+Package luatex.def Info: ressources/reseau.png  used on input line 87.
 (luatex.def)             Requested size: 284.52756pt x 155.40639pt.
 
-Overfull \hbox (5.69043pt too wide) in paragraph at lines 84--84
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 87--87
  [] 
  []
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 84.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 87.
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 84.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 87.
 
-[6
+[7
 
 <./ressources/reseau.png>]
 File: ressources/reseau.png Graphic file (type png)
 <use ressources/reseau.png>
-Package luatex.def Info: ressources/reseau.png  used on input line 108.
+Package luatex.def Info: ressources/reseau.png  used on input line 111.
 (luatex.def)             Requested size: 256.0748pt x 139.85909pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'reseau'
 
-Overfull \vbox (2.99866pt too high) detected at line 108
+Overfull \vbox (2.99866pt too high) detected at line 111
  []
 
-[7
+[8
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 117.
+(mdframed)              on input line 120.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 117.
+(mdframed)              on input line 120.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 117.
- [8
+ mdframed uses option nobreak mdframed on input line 120.
+ [9
 
 ]
 File: ressources/reseau.png Graphic file (type png)
 <use ressources/reseau.png>
-Package luatex.def Info: ressources/reseau.png  used on input line 131.
+Package luatex.def Info: ressources/reseau.png  used on input line 134.
 (luatex.def)             Requested size: 256.0748pt x 139.85909pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'reseau'
-[9
-
-] [10
+[10
 
 ] [11
 
@@ -1689,18 +1689,18 @@ warning  (pdf backend): ignoring duplicate destination with the name 'reseau'
 
 ] [14
 
+] [15
+
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 176.
+(mdframed)              on input line 179.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 176.
+(mdframed)              on input line 179.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 176.
- [15
-
-] [16
+ mdframed uses option nobreak mdframed on input line 179.
+ [16
 
 ] [17
 
@@ -1712,27 +1712,20 @@ Package mdframed Info: mdframed inside a box
 
 ] [21
 
+] [22
+
 ]
-<ressources/split.png, id=328, 505.89pt x 262.9825pt>
+<ressources/split.png, id=341, 505.89pt x 262.9825pt>
 File: ressources/split.png Graphic file (type png)
 <use ressources/split.png>
-Package luatex.def Info: ressources/split.png  used on input line 317.
+Package luatex.def Info: ressources/split.png  used on input line 320.
 (luatex.def)             Requested size: 227.62204pt x 118.32898pt.
- [22
+ [23
 
 <./ressources/split.png>]
 File: ressources/split.png Graphic file (type png)
 <use ressources/split.png>
-Package luatex.def Info: ressources/split.png  used on input line 329.
-(luatex.def)             Requested size: 170.71652pt x 88.74673pt.
-
-warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
-[23
-
-]
-File: ressources/split.png Graphic file (type png)
-<use ressources/split.png>
-Package luatex.def Info: ressources/split.png  used on input line 341.
+Package luatex.def Info: ressources/split.png  used on input line 332.
 (luatex.def)             Requested size: 170.71652pt x 88.74673pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
@@ -1741,24 +1734,33 @@ warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 ]
 File: ressources/split.png Graphic file (type png)
 <use ressources/split.png>
-Package luatex.def Info: ressources/split.png  used on input line 355.
+Package luatex.def Info: ressources/split.png  used on input line 344.
 (luatex.def)             Requested size: 170.71652pt x 88.74673pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 [25
 
-] [26
+]
+File: ressources/split.png Graphic file (type png)
+<use ressources/split.png>
+Package luatex.def Info: ressources/split.png  used on input line 358.
+(luatex.def)             Requested size: 170.71652pt x 88.74673pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[26
+
+] [27
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 372.
+(mdframed)              on input line 375.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 372.
+(mdframed)              on input line 375.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 372.
- [27
+ mdframed uses option nobreak mdframed on input line 375.
+ [28
 
 ]
 \tf@nav=\write8
@@ -1770,13 +1772,13 @@ Package mdframed Info: mdframed inside a box
 \tf@snm=\write10
 
 \openout10 = rip-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
  (./rip-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
 Package rerunfilecheck Info: File `rip-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 21821FB9B35136C8F12BDCC98CFDB67E;917.
+(rerunfilecheck)             Checksum: 5AD09CF71C14E07673A30EBF6D11EF24;917.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1784,19 +1786,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44120 strings out of 494383
+ 44175 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 71027 words of node memory still in use:
-   50 hlist, 8 vlist, 8 rule, 8 disc, 4 local_par, 128 glue, 9 kern, 21 penalty, 8385 glyph, 4131 attribute, 105 glue_spec, 691 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
+ 72553 words of node memory still in use:
+   50 hlist, 8 vlist, 8 rule, 8 disc, 4 local_par, 128 glue, 9 kern, 21 penalty, 8581 glyph, 4197 attribute, 105 glue_spec, 702 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
    avail lists: 1:3,2:1013,3:265,4:135,5:82,6:34,7:557,8:170,9:204,10:12,11:73,12:1
- 46722 multiletter control sequences out of 65536+600000
+ 46775 multiletter control sequences out of 65536+600000
  61 fonts using 8946327 bytes
  70i,15n,95p,1186b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on rip-slides.pdf (27 pages, 956648 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on rip-slides.pdf (28 pages, 958129 bytes).
 
-PDF statistics: 460 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
- 63 named destinations out of 1000 (max. 131072)
+PDF statistics: 475 PDF objects out of 1000 (max. 8388607)
+ 409 compressed objects within 5 object streams
+ 65 named destinations out of 1000 (max. 131072)
  74 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,10 +1,6 @@
-\frametitle{Envoi de paquet ICMP}
-
-    \begin{center}
+\begin{activite}
+        Afficher la table de routage de la machine.
         \begin{lstlisting}[language=bash]
-sudo traceroute -I fr.wikipedia.org
-        \end{lstlisting}
-        \captionof{code}{Option de traceroute}
-        \label{moncode}
-    \end{center}
-
+ip route
+                \end{lstlisting}
+        \end{activite}

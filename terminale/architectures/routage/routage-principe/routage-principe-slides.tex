@@ -107,6 +107,7 @@ ip -4 a
     \end{activite}
 
 \end{frame}
+
 \begin{frame}
     \frametitle{Correction}
 
@@ -286,5 +287,25 @@ sudo traceroute -I fr.wikipedia.org
     \end{center}
 \note[item]{Deux paquets qui partent de l'émetteur ne vont pas suivre le même chemin.}
 \note[item]{Commutation de circuits = liaison physique entre émetteur et destinaire $\;\rightarrow\;$ téléphone}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{activite}
+        Afficher la table de routage de la machine.
+        \begin{lstlisting}[language=bash]
+ip route
+                \end{lstlisting}
+        \end{activite}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+    \centering
+    \includegraphics[width=10cm]{ressources/route.png}
+    \captionof{figure}{Table de routage d'un ordinateur personnel}
+    \label{IMG}
+    \end{center}
+
 \end{frame}
 \end{document}

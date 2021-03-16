@@ -31,9 +31,13 @@ Dans le cadre de l'établissement certaines restrictions sont posées sur le sys
               \end{itemize}
         \item Modifier le mot de passe.
         \item Sur le serveur (bandeau gauche), sélectionner la machine virtuelle avec son nom.
-        \item Démarrer la machine (clic-droit ou bouton \emph{démarrer}) et se rendre sur la console.
+        \item Démarrer la machine (clic-droit ou bouton \emph{démarrer}).
+        \item En haut à droite, cliquer sur \emph{Console} puis choisir \emph{SPICE}.
     \end{enumerate}
 \end{activite}
+\begin{commentprof}
+NoVNC ou SPICE\\ possibilité de modifier la résolution plus tard.\\ spice plus immersif (capture raccourci)
+\end{commentprof}
 \section{Découvrir Debian}
 Le système d'exploitation \emph{Debian (version 10)} est installée sur la machine virtuelle. Debian est une distribution faite de logiciels libres et au code source ouvert.
 
@@ -42,10 +46,13 @@ Pour l'instant le système ne possède qu'un compte utilisateur \textbf{nsi} et 
     \begin{enumerate}
         \item Que signifie un \emph{code source ouvert}?
         \item Ouvrir le système avec le compte \emph{nsi}.
-        \item Cliquer sur \emph{Activités} en haut à gauche pour découvrir les applications installées.
+        \item Cliquer sur \emph{Activités} en haut à gauche pour découvrir les applications installées. La touche \emph{Super (Windows sur les claviers)} est un raccourci vers ce menu.
         \item Ouvrir l'application \emph{Terminal}.
     \end{enumerate}
 \end{activite}
+\begin{commentprof}
+créer raccourci vers gnome-terminal
+\end{commentprof}
 \section{Comptes}
 L'invite de commande du Terminal indique l'utilisateur en cours. Les utilisateurs sont répartis dans des groupes qui possèdent certains privilèges. Un utilisateur peut appartenir à plusieurs groupes.
 \begin{aretenir}[]
@@ -53,7 +60,7 @@ L'invite de commande du Terminal indique l'utilisateur en cours. Les utilisateur
 \end{aretenir}
 \begin{activite}
     \begin{enumerate}
-        \item Dans le Terminal taper la commande :
+        \item Dans le Terminal taper la commande. La liste des groupes auxquels appartient l'utilisateur apparaît.
               \begin{lstlisting}[language=bash]
 groups
     \end{lstlisting}
@@ -68,16 +75,22 @@ passwd
         \begin{center}
             \framebox{\textbf{Ai-je précisé qu'il fallait impérativement ne pas oublier ce mot de passe?}}
         \end{center}
-        \item Créer un compte personnel. \textbf{Bien retenir le mot de passe!} Le questionnaire qui est posé ensuite est facultatif.
+        \begin{commentprof}
+        même mot de passe que la session peut être pertinent ici (et encore dans alcasar)
+        \end{commentprof}
+        \item Créer un compte personnel. Il faut remplacer \emph{mon\_identifiant}. \textbf{Bien retenir le mot de passe!} Le questionnaire qui est posé ensuite est facultatif.
         \begin{lstlisting}[language=bash]
 # remplacer mon_identifiant par un identifiant personnel
 adduser mon_identifiant
             \end{lstlisting}
         \item Ajouter le nouveau compte au groupe \emph{sudo}.
         \begin{lstlisting}[language=bash]
-usermod -a -G sudo mon_identifiant
+usermod -aG sudo mon_identifiant
             \end{lstlisting}
         \item Vérifier les groupes auxquels appartient le nouveau compte.
+        \begin{lstlisting}[language=bash]
+groups mon_identifiant
+        \end{lstlisting}
         \item Sortir du mode super-utilisateur.
         \begin{lstlisting}[language=bash]
 exit
@@ -90,12 +103,35 @@ exit
 sudo deluser --remove-home nsi
 # On utilise ici le mot de passe du compte personnel
             \end{lstlisting}
+        \item Remplacer le nom de la machine (\emph{hostname}):
+        \begin{itemize}
+            \item Ouvrir le fichier hostname
+            \begin{lstlisting}[language=bash]
+sudo nano /etc/hostname
+            \end{lstlisting}
+            \item Remplacer le nom de la machine.
+            \item Enregistrer avec le raccourci \emph{Ctrl+O}.
+            \item Sortir de l'éditeur \emph{nano}: \emph{Ctrl+X}.
+        \end{itemize}
         
     \end{enumerate}
 \end{activite}
 \section{Mise à jour et installation d'applications}
+\subsection{Connexion au web}
+Les machines virtuelles NSI sont dans une \emph{bulle} à l'intérieur du réseau pédagogique. Pour se connecter au web, il faut établir un tunnel vers l'extérieur. On utilise l'application \emph{alcasar}.
+\begin{activite}
+\begin{enumerate}
+    \item Ouvrir Firefox.
+    \item Ouvrir la page \url{http://alcasar.localdomain}
+    \item Entrer les identifiants. Il s'agit des mêmes que le serveur \emph{Proxmox} \textbf{lors de la première connexion}. Il faut donc utiliser la date de naissance pour mot de passe.
+    \item Modifier le mot de passe. 
+    \begin{center}
+        \framebox{\textbf{Je ne me rappelle plus si je vous ai déjà dit de ne pas oublier ce mot de passe.}}
+    \end{center}
+\end{enumerate}
+\end{activite}
 \subsection{Aptitude}
-Nous allons réaliser les manipulations avec le Terminal (\emph{mode console}). Sur Debian (et bien d'autres) les logiciels sont installables via un dépôt officiel. Ce principe est similaire aux boutiques d'application pour smartphone (Play store\dots). Cette méthode permet de limiter la circulation de virus, malwares\dots L'application \emph{apt} permet de gérer les paquets installés.
+Il existe un mode graphique qui permet d'installer des applications. Cependant nous allons réaliser les manipulations avec le Terminal. Sur Debian les logiciels sont installés via un dépôt officiel. Ce principe est similaire aux boutiques d'application (Play store\dots). Cette méthode permet de limiter la circulation de virus, malwares\dots L'application \emph{apt} permet de gérer les paquets installés.
 \begin{activite}
 \begin{enumerate}
     \item Mettre à jour la liste des paquets. Cette étape n'installe rien mais compare seulement les versions des applications de la machine à celles du dépôt.
@@ -108,12 +144,12 @@ sudo apt upgrade
             \end{lstlisting}
     \item Vérifier la présence d'une application.
     \begin{lstlisting}[language=bash]
-# vérifie si le logiciel rsync est installé
+# vérifie si le logiciel wget est installé
 apt policy rsync
             \end{lstlisting}
-    \item Installer une application. Nous installons \emph{rsync} qui nous sera utile plus tard dans l'année.
+    \item Installer une application. Nous installons \emph{wget} qui nous sera utile ensuite.
     \begin{lstlisting}[language=bash]
-sudo apt install rsync
+sudo apt install wget
             \end{lstlisting}
             \begin{commentprof}
             tabulation pour l'auto-complétion
@@ -132,6 +168,7 @@ Certaines applications ne sont pas présentes dans les dépôts officiels. Même
         \item Installer le logiciel.
     \end{itemize}
     \item Installer alors \emph{Vscodium}
+    \item \emph{Pour les plus avancés:} Découvrir \emph{Vscodium} et installer des extensions en s'aidant du guide sur le lien suivant: \url{https://tinyurl.com/vscodium}
 \end{enumerate}
 \end{activite}
 \begin{commentprof}

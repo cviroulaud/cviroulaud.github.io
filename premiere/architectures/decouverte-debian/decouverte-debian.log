@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 MAR 2021 13:03
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 MAR 2021 15:29
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/architectures/decouverte-debian/decouverte-debian
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/architectures/decouverte-debian/decouverte-debian.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.161 seconds
+luaotfload | main : initialization completed in 0.129 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1405,10 +1405,6 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 24.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1416,47 +1412,64 @@ Make it at least 17.93123pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=33, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=37, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 95.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 58.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-</home/tof/Documents/Cozy/latex-include/cc.png>]
+</home/tof/Documents/Cozy/latex-include/cc.png>] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 122.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 118.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [2]
+Overfull \hbox (9.08412pt too wide) in paragraph at lines 129--130
+ [] 
+ []
+
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 140.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 158.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+[3]
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 177.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
  (./decouverte-debian.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `decouverte-debian.out' has not changed.
-(rerunfilecheck)             Checksum: A876AB43B1BD2C0C9E097547D58BFB1A;862.
+(rerunfilecheck)             Checksum: B72B07600F2B659A765201FDBBA68C5B;1005.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 41506 strings out of 494383
- 156377,1144653 words of node,token memory allocated
- 29695 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 22 glue, 4 kern, 1 penalty, 3704 glyph, 1256 attribute, 98 glue_spec, 211 attribute_list, 1 write nodes
-   avail lists: 1:5,2:10719,3:423,4:2170,5:1760,6:71,7:3112,8:1550,9:2941,10:26,11:328
- 44444 multiletter control sequences out of 65536+600000
+ 41529 strings out of 494383
+ 156375,1144653 words of node,token memory allocated
+ 38900 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 25 glue, 4 kern, 1 penalty, 4934 glyph, 1502 attribute, 98 glue_spec, 252 attribute_list, 1 write nodes
+   avail lists: 1:4,2:9669,3:343,4:1700,5:1399,6:64,7:2795,8:1202,9:2342,10:26,11:265
+ 44448 multiletter control sequences out of 65536+600000
  53 fonts using 7889959 bytes
  84i,17n,99p,1198b,1001s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on decouverte-debian.pdf (3 pages, 44020 bytes).
+Output written on decouverte-debian.pdf (4 pages, 49754 bytes).
 
-PDF statistics: 155 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 62 named destinations out of 1000 (max. 131072)
- 64 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 179 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 75 named destinations out of 1000 (max. 131072)
+ 72 words of extra memory for PDF output out of 10000 (max. 100000000)
 

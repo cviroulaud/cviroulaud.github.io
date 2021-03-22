@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 MAR 2021 15:29
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  22 MAR 2021 16:31
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/architectures/decouverte-debian/decouverte-debian
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/architectures/decouverte-debian/decouverte-debian.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.129 seconds
+luaotfload | main : initialization completed in 0.146 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1450,23 +1450,19 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `decouverte-debian.out' has not changed.
 (rerunfilecheck)             Checksum: B72B07600F2B659A765201FDBBA68C5B;1005.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 )
 
 Here is how much of LuaTeX's memory you used:
- 41529 strings out of 494383
+ 41528 strings out of 494383
  156375,1144653 words of node,token memory allocated
- 38900 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 25 glue, 4 kern, 1 penalty, 4934 glyph, 1502 attribute, 98 glue_spec, 252 attribute_list, 1 write nodes
-   avail lists: 1:4,2:9669,3:343,4:1700,5:1399,6:64,7:2795,8:1202,9:2342,10:26,11:265
- 44448 multiletter control sequences out of 65536+600000
+ 38893 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 25 glue, 4 kern, 1 penalty, 4933 glyph, 1502 attribute, 98 glue_spec, 252 attribute_list, 1 write nodes
+   avail lists: 1:4,2:9671,3:343,4:1700,5:1398,6:63,7:2794,8:1202,9:2342,10:26,11:265
+ 44447 multiletter control sequences out of 65536+600000
  53 fonts using 7889959 bytes
  84i,17n,99p,1198b,1001s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on decouverte-debian.pdf (4 pages, 49754 bytes).
+Output written on decouverte-debian.pdf (4 pages, 49747 bytes).
 
 PDF statistics: 179 PDF objects out of 1000 (max. 8388607)
  151 compressed objects within 2 object streams

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 MAR 2021 15:48
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  17 MAR 2021 14:39
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/rip/rip-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/rip/rip-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.188 seconds
+luaotfload | main : initialization completed in 0.160 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1718,14 +1718,14 @@ Package mdframed Info: mdframed inside a box
 <ressources/split.png, id=341, 505.89pt x 262.9825pt>
 File: ressources/split.png Graphic file (type png)
 <use ressources/split.png>
-Package luatex.def Info: ressources/split.png  used on input line 320.
+Package luatex.def Info: ressources/split.png  used on input line 321.
 (luatex.def)             Requested size: 227.62204pt x 118.32898pt.
  [23
 
 <./ressources/split.png>]
 File: ressources/split.png Graphic file (type png)
 <use ressources/split.png>
-Package luatex.def Info: ressources/split.png  used on input line 332.
+Package luatex.def Info: ressources/split.png  used on input line 333.
 (luatex.def)             Requested size: 170.71652pt x 88.74673pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
@@ -1734,7 +1734,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 ]
 File: ressources/split.png Graphic file (type png)
 <use ressources/split.png>
-Package luatex.def Info: ressources/split.png  used on input line 344.
+Package luatex.def Info: ressources/split.png  used on input line 345.
 (luatex.def)             Requested size: 170.71652pt x 88.74673pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
@@ -1743,7 +1743,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 ]
 File: ressources/split.png Graphic file (type png)
 <use ressources/split.png>
-Package luatex.def Info: ressources/split.png  used on input line 358.
+Package luatex.def Info: ressources/split.png  used on input line 359.
 (luatex.def)             Requested size: 170.71652pt x 88.74673pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
@@ -1754,12 +1754,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 375.
+(mdframed)              on input line 376.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 375.
+(mdframed)              on input line 376.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 375.
+ mdframed uses option nobreak mdframed on input line 376.
  [28
 
 ]
@@ -1772,11 +1772,11 @@ Package mdframed Info: mdframed inside a box
 \tf@snm=\write10
 
 \openout10 = rip-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
  (./rip-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 377.
 Package rerunfilecheck Info: File `rip-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 5AD09CF71C14E07673A30EBF6D11EF24;917.
 
@@ -1786,12 +1786,12 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44175 strings out of 494383
+ 44181 strings out of 494383
  100000,1144653 words of node,token memory allocated
  72553 words of node memory still in use:
    50 hlist, 8 vlist, 8 rule, 8 disc, 4 local_par, 128 glue, 9 kern, 21 penalty, 8581 glyph, 4197 attribute, 105 glue_spec, 702 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
    avail lists: 1:3,2:1013,3:265,4:135,5:82,6:34,7:557,8:170,9:204,10:12,11:73,12:1
- 46775 multiletter control sequences out of 65536+600000
+ 46781 multiletter control sequences out of 65536+600000
  61 fonts using 8946327 bytes
  70i,15n,95p,1186b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>

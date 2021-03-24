@@ -19,6 +19,9 @@
 \begin{document}
 %DODO pour contrôle voir Q13 P17 du cours sur le routage de Lore Petit
 \begin{exo}
+    \begin{aretenir}[Remarque]
+        Selon la littérature les notations des interfaces et passerelles sont variables. \textbf{Pour chaque interface le routeur possède une adresse IP appartenant au réseau auquel il est connecté.}
+    \end{aretenir}
     \begin{enumerate}
         \item \begin{itemize}
             \item 18.13.0.0/16
@@ -33,15 +36,18 @@
                 \hline
                 192.168.0.0/16 & & 192.168.0.1 & 1\\
                 \hline
-                18.13.0.0/16 & 192.168.0.254 & 192.168.0.1 & 2\\
+                18.13.0.0/16 & 192.168.0.254 (R2) & 192.168.0.1 & 2\\
                 \hline
-                19.20.1.0/24 & 192.168.0.254 & 192.168.0.1 & 2\\
+                19.20.1.0/24 & 192.168.0.254 (R2) & 192.168.0.1 & 2\\
                 \hline
             \end{tabular}
         \end{center}
     \end{enumerate}
 \end{exo}
 \begin{exo}
+    \begin{aretenir}[Remarque]
+    Dans cet exercice, la destination à atteindre n'est pas un réseau mais un routeur.
+    \end{aretenir}
 \begin{enumerate}
     \item Pour atteindre G on lit les tables de routage:
     \begin{itemize}

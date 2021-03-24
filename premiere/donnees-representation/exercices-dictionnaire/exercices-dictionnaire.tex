@@ -1,0 +1,69 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Dico 02}}}}
+\fancyhead[C]{\textbf{Exercices dictionnaire}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+\fancyhead[R]{Première - NSI}
+%\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}Un livre peut être caractérisé par son titre, son auteur, son éditeur, son prix.
+\begin{enumerate}
+    \item Construire un dictionnaire qui contient les informations du livre: \emph{Il était deux fois} de Franck Thilliez aux éditions \emph{Poche} à 8,70€.
+    \item Construire un dictionnaire pour \emph{Fahrenheit 451} de Ray Bradbury aux éditions \emph{Folio} à 6,30€.
+    \item Construire un tableau contenant les deux dictionnaires. Ajouter au moins un autre livre.
+    \item Écrire une boucle qui parcourt le tableau et affiche l'auteur de chaque livre.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Le groupe d'élèves de NSI est composé de:
+\begin{itemize}
+    \item Alice Durant,
+    \item Bob Bois,
+    \item John Doe,
+    \item Jules Dupont,
+    \item Alan Turing.
+\end{itemize}
+Au cours du semestre les notes obtenues sont:
+\begin{center}
+    \begin{tabular}{|c|*{4}{c}|}
+        \hline
+        Alice & 12 & 8 & 10 & 9.5 \\
+        \hline
+        Bob & 15 & 17 & 18 & 14  \\
+        \hline
+        John & 10.5 & 8 & 16 & 13.5  \\
+        \hline
+        Jules & 12 & 9 & 17.5 & 10  \\
+        \hline
+        Alan & 14 & 18 & 16 & 19  \\
+        \hline
+    \end{tabular}
+\end{center}
+\begin{enumerate}
+    \item Organiser ces données dans un tableau et en créant un dictionnaire pour chaque élève.
+    \item Écrire la fonction \textbf{moyenne(eleve: dict) $\rightarrow$ float} qui renvoie la moyenne de l'élève.
+    \item Calculer la moyenne générale du groupe.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Écrire la fonction \textbf{lettres(mot: str) $\rightarrow$ dict} qui renvoie un dictionnaire le nombre d'occurrences de chaque lettre de \emph{mot}. Par exemple:
+\begin{center}
+\begin{lstlisting}[language=Python]
+>>>lettres("bonjour")
+>>>{"b": 1, "o": 2, "n": 1, "j": 1, "u": 1, "r": 1}
+\end{lstlisting}
+\captionof{code}{Renvoi de l'appel de la fonction}
+\label{ip}
+\end{center}
+\end{exo}
+\end{document}

@@ -76,14 +76,6 @@ Le protocole OSPF peut être utilisé pour de grands réseaux. Pour diminuer la 
         \draw (R5) -- (R6) node[sloped, midway,text width=1.8cm, text centered]{10.2.3.0/28 100Mbit/s};
         \draw (R7) -- (R6) node[midway,text width=1.8cm, text centered]{10.2.2.0/28 10Mbit/s};
         \draw (R5) -- (R7) node[sloped, midway,text width=1.8cm, text centered]{10.2.1.0/28 100Mbit/s};
-        \draw (R1) -- (R2);
-        \draw (R2) -- (R3);
-        \draw (R4) -- (R3);
-        \draw (R4) -- (R6);
-        \draw (R4) -- (R5);
-        \draw (R6) -- (R7);
-        \draw (R5) -- (R7);
-        \draw (R5) -- (R6);
 
         \draw[dashed] (0,3) circle (2) ;
         \draw[dashed] (-4.5,2) circle (2.6) ;
@@ -150,23 +142,70 @@ Connaissant la topologie de sa zone, chaque routeur exécute un algorithme de ca
 \end{aretenir}
 \begin{center}
     \begin{tikzpicture}
-        \node[draw, fill=gray!40] (R4) at (2,3) {R4};
-        \node[draw] (R5) at (6,3) {R5};
-        \node[draw] (R6) at (4,0) {R6};
-        \node[draw] (R7) at (8,0) {R7};
+        \node[draw] (R1) at (-6,3) {R1};
+        \node[draw] (R2) at (-4,0) {R2};
+        \node[draw, fill=gray!40] (R3) at (-2,3) {R3};
         
-        \draw (R4) -- (R5) node[midway, scale=1.5]{10};
-        \draw (R4) -- (R6) node[midway, scale=1.5]{1};
-        \draw (R5) -- (R6) node[midway, scale=1.5]{1};
-        \draw (R7) -- (R6) node[midway, scale=1.5]{10};
-        \draw (R5) -- (R7) node[midway, scale=1.5]{1};
-        \draw (R4) -- (R6);
-        \draw (R4) -- (R5);
-        \draw (R6) -- (R7);
-        \draw (R5) -- (R7);
-        \draw (R5) -- (R6);
+        \draw (R1) -- (R3) node[midway, scale=1.5]{10};
+        \draw (R1) -- (R2) node[midway, scale=1.5]{1};
+        \draw (R3) -- (R2) node[midway, scale=1.5]{1};
+
+
+        \node[draw] (R1b) at (-12,3) {R1};
+        \node[draw] (R2b) at (-10,0) {R2};
+        \node[draw, fill=gray!40] (R3b) at (-8,3) {R3};
+        \draw (R1b) -- (R3b) node[midway,text width=1.8cm, text centered]{10.1.1.0/30 10Mbit/s};
+        \draw (R1b) -- (R2b) node[sloped, midway,text width=1.8cm, text centered]{10.1.2.0/30 100Mbit/s};
+        \draw (R3b) -- (R2b) node[sloped, midway,text width=1.8cm, text centered]{10.1.3.0/30 100Mbit/s};
     \end{tikzpicture}
-    \captionof{figure}{Graphe pondéré de la zone 2}
-    \label{zone2}
+    \captionof{figure}{Graphe pondéré de la zone 1}
+    \label{zone1}
 \end{center}
+Le routeur R1 calcule le chemin le plus court pour atteindre chaque réseau de la zone 1.
+\begin{center}
+    \begin{tabular}{|*{4}{c|}}
+        \hline
+        Destination & Passerelle & Interface & Coût \\
+        \hline
+        10.1.2.0/30 &  & 10.1.2.1 & 1 \\
+        \hline
+        10.1.3.0/30 & 10.1.2.2 (R2) & 10.1.2.1 & 2 \\
+        \hline
+        10.1.1.0/30 &  & 10.1.1.1 & 10 \\
+        \hline
+    \end{tabular}
+    \captionof{table}{Table de routage de R1}
+\end{center}
+\begin{aretenir}[Remarque]
+Les adresses 10.1.2.1 et 10.1.2.2 correspondent aux interfaces (de respectivement R1 et R2) sur le réseau 10.1.2.0/30.\\
+L'adresse 10.1.1.1 correspond à l'interface de R1 sur le réseau 10.1.1.0/30.
+\end{aretenir}
+Le routeur \emph{de bordure} R3 communique les plus courts chemins (passant par lui) vers la zone 2. Le routeur R1 complète alors sa table de routage.
+\begin{center}
+    \begin{tabular}{|*{4}{c|}}
+        \hline
+        Destination & Passerelle & Interface & Coût \\
+        \hline
+        10.1.2.0/30 &  & 10.1.2.1 & 1 \\
+        \hline
+        10.1.3.0/30 & 10.1.2.2 (R2) & 10.1.2.1 & 2 \\
+        \hline
+        10.1.1.0/30 &  & 10.1.1.1 & 10 \\
+        \hline
+        10.3.1.0/30 & 10.1.2.2 (R2) & 10.1.2.1 & 3 \\
+        \hline
+        10.2.5.0/28 & 10.1.2.2 (R2) & 10.1.2.1 & 13 \\
+        \hline
+        10.2.4.0/28 & 10.1.2.2 (R2) & 10.1.2.1 & 4 \\
+        \hline
+        10.2.3.0/28 & 10.1.2.2 (R2) & 10.1.2.1 & 5 \\
+        \hline
+        10.2.1.0/28 & 10.1.2.2 (R2) & 10.1.2.1 & 6 \\
+        \hline
+    \end{tabular}
+    \captionof{table}{Table de routage complète de R1}
+\end{center}
+\begin{activite}
+Établir la table de routage de R5.
+\end{activite}
 \end{document}

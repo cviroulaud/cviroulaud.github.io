@@ -86,7 +86,7 @@ Le protocole OSPF peut être utilisé pour de grands réseaux. Pour diminuer la 
 \end{center}
 \subsection{Découverte du réseau}
 \subsubsection{Identificateur}
-Chaque routeur choisit un \emph{identifiant unique}. Une stratégie courante est de prendre la plus grande adresse IP parmi celles de ses sous-réseaux.
+Chaque routeur choisit un \emph{identifiant unique}. Une stratégie courante est de prendre la plus grande adresse IP parmi celles des interfaces réseaux du routeur.
 \begin{activite}
 Déterminer un identificateur possible pour chacun des routeurs.
 \end{activite}
@@ -108,16 +108,17 @@ Chaque routeur envoie ensuite des paquets de type \emph{HELLO} à travers toutes
         R1 - R3 & 10.1.1.0/30 & 10 & 1 \\
         \hline
     \end{tabular}
-    \captionof{table}{Relation de voisinage pour R1}
+    \captionof{table}{Relations de voisinage immédiates pour R1}
 \end{center}
+\begin{aretenir}[Remarque]
+    C'est également lors de cette étape que les routeurs \emph{ABR} annoncent leur rôle aux autres.
+    \end{aretenir}
 \begin{activite}
 Établir le tableau des relations de voisinage pour R5.
 \end{activite}
-\begin{aretenir}[Remarque]
-C'est également lors de cette étape que les routeurs \emph{ABR} annoncent leur rôle aux autres.
-\end{aretenir}
-\subsubsection{Message LSA}
-Les routeurs s'échangent ensuite des paquets \textbf{LSA (Link State Advertisement)} qui contiennent les informations dont ils disposent sur la topologie du réseau. Ces échanges sont \emph{limités à la zone à laquelle appartient le routeur}. Plusieurs échanges de messages LSA sont nécessaires pour synchroniser les connaissances de tous les routeurs.
+
+\subsubsection{LSA}
+Les messages qui contiennent les \emph{informations sur la topologie du réseau} sont appelés \textbf{LSA (Link State Advertisement)}. Ces échanges sont \emph{limités à la zone à laquelle appartient le routeur}. Plusieurs échanges de messages LSA sont nécessaires pour synchroniser les connaissances de tous les routeurs.
 \begin{center}
     \begin{tabular}{|*{4}{c|}}
         \hline

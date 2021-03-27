@@ -2,8 +2,8 @@
 \setbeamercolor{structure}{fg=SlateGray}
 \usetheme{Goettingen}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
-\usepackage{pgfpages}
-\setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Routage OSPF}
 \date{}
@@ -18,7 +18,7 @@
 \begin{document}
 \begin{frame}
     \titlepage
-    \end{frame}
+\end{frame}
 
 \section{Problématique}
 \begin{frame}
@@ -37,7 +37,7 @@
 
     \begin{aretenir}[]
         La \emph{bande passante} est la quantité d'information qui peut être transmise par unité de temps. Elle se mesure en \emph{bits par seconde (bit/s)}.
-        \end{aretenir}
+    \end{aretenir}
 
 \end{frame}
 
@@ -48,8 +48,8 @@
         Le coût d'une liaison est calculé par la relation :
         $$\dfrac{10^8}{\mbox{bande passante}}$$
         Dans le cas d'une connexion asymétrique on utilise le débit descendant.
-        \end{aretenir}
-\note{La valeur $10^8$ a été choisie pour donner un coût de 1 à une liaison FastEthernet de 100Mbit/s.}
+    \end{aretenir}
+    \note{La valeur $10^8$ a été choisie pour donner un coût de 1 à une liaison FastEthernet de 100Mbit/s.}
 \end{frame}
 
 
@@ -65,7 +65,7 @@
             \item fibre optique 1Gbit/s,
             \item ADSL 13Mbit/s (descendant), 1Mbit/s (montant).
         \end{itemize}
-        \end{activite}
+    \end{activite}
 
 \end{frame}
 
@@ -79,8 +79,8 @@
         \item fibre optique 1Gbit/s: $\dfrac{10^8}{10^9}=0,1$,
         \item ADSL 13Mbit/s (descendant), 1Mbit/s (montant): $\dfrac{10^8}{1,3×10^7}=7,7$.
     \end{itemize}
-\note[item]{câble éthernet:10Mbit/s, 100Mbit/s, 1Gbit/s}
-\note[item]{jusqu'à 10Gbit/s}
+    \note[item]{câble éthernet:10Mbit/s, 100Mbit/s, 1Gbit/s}
+    \note[item]{jusqu'à 10Gbit/s}
 \end{frame}
 \section{Open Shortest Path First}
 \begin{frame}
@@ -88,6 +88,7 @@
 
     Le protocole OSPF a été développé dans les années 90 pour pallier les difficultés du protocole RIP.
 
+    \note{rappel: RIP : routage à vecteur de distance}
 \end{frame}
 
 \begin{frame}
@@ -105,7 +106,7 @@
             \node (Z1) at (-4.5,4.2) {\Large{zone 1}};
             \node (Z0) at (0,4.2) {\Large{zone 0}};
             \node (Z2) at (5.5,4.2) {\Large{zone 2}};
-            
+
             \draw (R1) -- (R3) node[midway,text width=1.8cm, text centered]{10.1.1.0/30 10Mbit/s};
             \draw (R1) -- (R2) node[sloped, midway,text width=1.8cm, text centered]{10.1.2.0/30 100Mbit/s};
             \draw (R3) -- (R2) node[sloped, midway,text width=1.8cm, text centered]{10.1.3.0/30 100Mbit/s};
@@ -115,7 +116,7 @@
             \draw (R5) -- (R6) node[sloped, midway,text width=1.8cm, text centered]{10.2.3.0/28 100Mbit/s};
             \draw (R7) -- (R6) node[midway,text width=1.8cm, text centered]{10.2.2.0/28 10Mbit/s};
             \draw (R5) -- (R7) node[sloped, midway,text width=1.8cm, text centered]{10.2.1.0/28 100Mbit/s};
-    
+
             \draw[dashed] (0,3) circle (2) ;
             \draw[dashed] (-4.5,2) circle (2.6) ;
             \draw[dashed,rotate=-20] (4.7,3.5) ellipse (3.7 and 3) ;
@@ -123,9 +124,9 @@
         \captionof{figure}{Découpage en zones}
         \label{zone}
     \end{center}
-\note{\begin{aretenir}[]
-    Chaque zone a un numéro unique. La zone 0, obligatoire pour le protocole OSPF, est appelée \textbf{Backbone} est la zone centrale à laquelle toutes les autres zones sont connectées à l'aide d’un routeur particulier appelé \textbf{ABR (Area Border Router)}.
-\end{aretenir}}
+    \note{\begin{aretenir}[]
+            Chaque zone a un numéro unique. La zone 0, obligatoire pour le protocole OSPF, est appelée \textbf{Backbone} est la zone centrale à laquelle toutes les autres zones sont connectées à l'aide d’un routeur particulier appelé \textbf{ABR (Area Border Router)}.
+        \end{aretenir}}
 \end{frame}
 
 
@@ -134,32 +135,80 @@
 \begin{frame}
     \frametitle{identifiant unique}
 
-    Une stratégie courante est de prendre la plus grande adresse IP parmi celles de ses sous-réseaux.
-\begin{activite}
-Déterminer un identificateur possible pour chacun des routeurs.
-\end{activite}
+    Une stratégie courante est de prendre la plus grande adresse IP parmi celles des interfaces réseaux du routeur.
 
-\note[item]{Des identificateurs peuvent apparaître en double. Des mécanismes permettent d'identifier et corriger ces erreurs.}
-\note[item]{Afin de simplifier les écritures nous conserveront les notations R1\dots 7 pour repérer les routeurs.}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw] (R1) at (0,0) {R1};
+            \node at(1,0.2) {10.1.1.2};
+            \node at(-0.4,-0.5) {10.1.2.2};
+            \draw (R1) -- (6,0) node[near end,text width=1.8cm, text centered]{10.1.1.0/30 10Mbit/s};
+
+            \draw (R1) -- (3,-4) node[sloped, near end,text width=1.8cm, text centered]{10.1.2.0/30 100Mbit/s};
+
+        \end{tikzpicture}
+        \captionof{figure}{Interfaces de R1}
+        \label{zone}
+    \end{center}
+
+    \note[item]{exemple: R1 possède 2 interfaces}
 \end{frame}
 
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        Déterminer un identificateur possible pour chacun des routeurs.
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{tabular}{|*{2}{c|}}
+            \hline
+            routeurs & identifiants \\
+            \hline
+            R1       & 10.1.2.1     \\
+            R2       & 10.1.2.2     \\
+            R3       & 10.3.1.2     \\
+            R4       & 10.3.1.1     \\
+            R5       & 10.2.5.2     \\
+            R6       & 10.2.4.2     \\
+            R7       & 10.2.2.1     \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \note[item]{\textbf{il ne s'agit pas ici d'une adresse IP mais juste d'une étiquette unique. Pour rappel le routeur possède une adresse IP pour chacune de ses interfaces.}}
+    \note[item]{Pourquoi l'interface de R1 a l'adresse 10.1.2.2? Premier arrivé premier servi}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Afin de simplifier les écritures nous conserveront les notations R1\dots 7 pour repérer les routeurs.
+
+\end{frame}
 \subsubsection{Message HELLO}
 \begin{frame}
     \frametitle{HELLO}
+    Début d'échanges d'informations avec les voisins.
 
     \begin{center}
         \begin{tabular}{|*{4}{c|}}
             \hline
-            Lien & Sous-réseau & Coût & Zone \\
+            Lien    & Sous-réseau & Coût & Zone \\
             \hline
-            R1 - R2 & 10.1.2.0/30 & 1 & 1 \\
+            R1 - R2 & 10.1.2.0/30 & 1    & 1    \\
             \hline
-            R1 - R3 & 10.1.1.0/30 & 10 & 1 \\
+            R1 - R3 & 10.1.1.0/30 & 10   & 1    \\
             \hline
         \end{tabular}
-        \captionof{table}{Relation de voisinage pour R1}
+        \captionof{table}{Relations de voisinage immédiates pour R1}
     \end{center}
-
+    \note[item]{découverte voisinage immédiat}
+    \note[item]{C'est également lors de cette étape que les routeurs \emph{ABR} annoncent leur rôle aux autres.}
+    \note[item]{un message HELLO toutes les 10s}
 \end{frame}
 
 \begin{frame}
@@ -167,15 +216,51 @@ Déterminer un identificateur possible pour chacun des routeurs.
 
     \begin{activite}
         Établir le tableau des relations de voisinage pour R5.
-        \end{activite}
+    \end{activite}
 
-        \note{C'est également lors de cette étape que les routeurs \emph{ABR} annoncent leur rôle aux autres.}
+
 \end{frame}
 
-\subsubsection{Message LSA}
 \begin{frame}
-    \frametitle{LSA}
-    Les routeurs s'échangent ensuite des paquets \textbf{LSA (Link State Advertisement)}.
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{tabular}{|*{4}{c|}}
+            \hline
+            Lien    & Sous-réseau & Coût & Zone \\
+            \hline
+            R5 - R4 & 10.2.5.0/28 & 10   & 2    \\
+            \hline
+            R5 - R6 & 10.2.3.0/28 & 1    & 2    \\
+            \hline
+            R5 - R7 & 10.2.1.0/28 & 1    & 2    \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Relations de voisinage pour R5}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Réponse à HELLO}
+
+    Quand un routeur de la zone reçoit un paquet HELLO de R:
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8]
+            \node[draw, text width=3cm, text centered] (1) at (0,0) {Il vérifie s'il connait déjà cet identifiant};
+            \node[draw, text width=3cm, text centered] (2) at (-4,-4) {{\LARGE NON}\\ Il renvoie ses informations sur la topologie du réseau.};
+            \node[draw, text width=3cm, text centered] (3) at (4,-4) {{\LARGE OUI}\\ Il renvoie un simple accusé de réception pour signifier qu'il est toujours actif.};
+
+            \draw[->,>=latex] (1) -- (2);
+            \draw[->,>=latex] (1) -- (3);
+        \end{tikzpicture}
+    \end{center}
+
+\end{frame}
+\subsubsection{LSA}
+\begin{frame}
+    \frametitle{État de lien de communication}
+    Les messages qui contiennent les \emph{informations sur la topologie du réseau} sont appelés \textbf{LSA (Link State Advertisement)}.
     Ces échanges sont \emph{limités à la zone à laquelle appartient le routeur}.
 
 \end{frame}
@@ -186,18 +271,18 @@ Déterminer un identificateur possible pour chacun des routeurs.
     \begin{center}
         \begin{tabular}{|*{4}{c|}}
             \hline
-            Lien & Sous-réseau & Coût & Zone \\
+            Lien    & Sous-réseau & Coût & Zone \\
             \hline
-            R1 - R2 & 10.1.2.0/30 & 1 & 1 \\
+            R1 - R2 & 10.1.2.0/30 & 1    & 1    \\
             \hline
-            R1 - R3 & 10.1.1.0/30 & 10 & 1 \\
+            R1 - R3 & 10.1.1.0/30 & 10   & 1    \\
             \hline
-            R2 - R3 & 10.1.3.0/30 & 1 & 1 \\
+            R2 - R3 & 10.1.3.0/30 & 1    & 1    \\
             \hline
         \end{tabular}
         \captionof{table}{Topologie pour R1}
     \end{center}
-
+    \note{Il faut plusieurs échanges HELLO (donc plusieurs messages LSA) pour obtenir une vision globale \textbf{de la zone}.}
 \end{frame}
 
 \begin{frame}
@@ -205,7 +290,31 @@ Déterminer un identificateur possible pour chacun des routeurs.
 
     \begin{activite}
         Établir la vision de la topologie du réseau pour R5.
-        \end{activite}
+    \end{activite}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{tabular}{|*{4}{c|}}
+            \hline
+            Lien    & Sous-réseau & Coût & Zone \\
+            \hline
+            R5 - R4 & 10.2.5.0/28 & 10   & 2    \\
+            \hline
+            R5 - R6 & 10.2.3.0/28 & 1    & 2    \\
+            \hline
+            R5 - R7 & 10.2.1.0/28 & 1    & 2    \\
+            \hline
+            R4 - R6 & 10.2.4.0/28 & 1    & 2    \\
+            \hline
+            R6 - R7 & 10.2.2.0/28 & 10    & 2    \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Topologie pour R5}
+    \end{center}
 
 \end{frame}
 
@@ -216,23 +325,23 @@ Déterminer un identificateur possible pour chacun des routeurs.
 
     \begin{aretenir}[]
         \textbf{L'algorithme de Dijkstra} -établi en 1959- permet de trouver le plus court chemin entre deux sommets d'un graphe pondéré.
-        \end{aretenir}
-
+    \end{aretenir}
+\note{Nous verrons le fonctionnement plus tard.}
 \end{frame}
 
 \begin{frame}
     \frametitle{Dans la zone}
     \begin{center}
-        \begin{tikzpicture}
+        \begin{tikzpicture}[scale=0.9, transform shape]
             \node[draw] (R1) at (-6,3) {R1};
             \node[draw] (R2) at (-4,0) {R2};
             \node[draw, fill=gray!40] (R3) at (-2,3) {R3};
-            
+
             \draw (R1) -- (R3) node[midway, scale=1.5]{10};
             \draw (R1) -- (R2) node[midway, scale=1.5]{1};
             \draw (R3) -- (R2) node[midway, scale=1.5]{1};
-    
-    
+
+
             \node[draw] (R1b) at (-12,3) {R1};
             \node[draw] (R2b) at (-10,0) {R2};
             \node[draw, fill=gray!40] (R3b) at (-8,3) {R3};
@@ -249,16 +358,16 @@ Déterminer un identificateur possible pour chacun des routeurs.
 \begin{frame}
     \frametitle{Dans la zone}
     \begin{center}
-        \begin{tikzpicture}
+        \begin{tikzpicture}[scale=0.7, transform shape]
             \node[draw] (R1) at (-6,3) {R1};
             \node[draw] (R2) at (-4,0) {R2};
             \node[draw, fill=gray!40] (R3) at (-2,3) {R3};
-            
+
             \draw (R1) -- (R3) node[midway, scale=1.5]{10};
             \draw (R1) -- (R2) node[midway, scale=1.5]{1};
             \draw (R3) -- (R2) node[midway, scale=1.5]{1};
-    
-    
+
+
             \node[draw] (R1b) at (-12,3) {R1};
             \node[draw] (R2b) at (-10,0) {R2};
             \node[draw, fill=gray!40] (R3b) at (-8,3) {R3};
@@ -273,20 +382,21 @@ Déterminer un identificateur possible pour chacun des routeurs.
     \begin{center}
         \begin{tabular}{|*{4}{c|}}
             \hline
-            Destination & Passerelle & Interface & Coût \\
+            Destination & Passerelle    & Interface & Coût \\
             \hline
-            10.1.2.0/30 &  & 10.1.2.1 & 1 \\
+            10.1.2.0/30 &               & 10.1.2.1  & 1    \\
             \hline
-            10.1.3.0/30 & 10.1.2.2 (R2) & 10.1.2.1 & 2 \\
+            10.1.3.0/30 & 10.1.2.2 (R2) & 10.1.2.1  & 2    \\
             \hline
-            10.1.1.0/30 &  & 10.1.1.1 & 10 \\
+            10.1.1.0/30 &               & 10.1.1.1  & 10   \\
             \hline
         \end{tabular}
         \captionof{table}{Table de routage de R1}
     \end{center}
-    
-\note{Les adresses 10.1.2.1 et 10.1.2.2 correspondent aux interfaces (de respectivement R1 et R2) sur le réseau 10.1.2.0/30.\\
-L'adresse 10.1.1.1 correspond à l'interface de R1 sur le réseau 10.1.1.0/30.}
+
+    \note[item]{Les adresses 10.1.2.1 et 10.1.2.2 correspondent aux interfaces (de respectivement R1 et R2) sur le réseau 10.1.2.0/30 (vue quand on a donné des identifiants).\\
+        L'adresse 10.1.1.1 correspond à l'interface de R1 sur le réseau 10.1.1.0/30.}
+    \note[item]{Dans la littérature, les écritures peuvent varier: ainsi la destination peut être un routeur et non un réseau (voir sujet zéro 2021) $\rightarrow$ exemples dans les exercices Nous gardons ici la même écriture que pour RIP.}
 \end{frame}
 
 \begin{frame}
@@ -295,28 +405,28 @@ L'adresse 10.1.1.1 correspond à l'interface de R1 sur le réseau 10.1.1.0/30.}
     \begin{center}
         \begin{tabular}{|*{4}{c|}}
             \hline
-            Destination & Passerelle & Interface & Coût \\
+            Destination & Passerelle    & Interface & Coût \\
             \hline
-            10.1.2.0/30 &  & 10.1.2.1 & 1 \\
+            10.1.2.0/30 &               & 10.1.2.1  & 1    \\
             \hline
-            10.1.3.0/30 & 10.1.2.2 (R2) & 10.1.2.1 & 2 \\
+            10.1.3.0/30 & 10.1.2.2 (R2) & 10.1.2.1  & 2    \\
             \hline
-            10.1.1.0/30 &  & 10.1.1.1 & 10 \\
+            10.1.1.0/30 &               & 10.1.1.1  & 10   \\
             \hline
-            10.3.1.0/30 & 10.1.2.2 (R2) & 10.1.2.1 & 3 \\
+            10.3.1.0/30 & 10.1.2.2 (R2) & 10.1.2.1  & 3    \\
             \hline
-            10.2.5.0/28 & 10.1.2.2 (R2) & 10.1.2.1 & 13 \\
+            10.2.5.0/28 & 10.1.2.2 (R2) & 10.1.2.1  & 13   \\
             \hline
-            10.2.4.0/28 & 10.1.2.2 (R2) & 10.1.2.1 & 4 \\
+            10.2.4.0/28 & 10.1.2.2 (R2) & 10.1.2.1  & 4    \\
             \hline
-            10.2.3.0/28 & 10.1.2.2 (R2) & 10.1.2.1 & 5 \\
+            10.2.3.0/28 & 10.1.2.2 (R2) & 10.1.2.1  & 5    \\
             \hline
-            10.2.1.0/28 & 10.1.2.2 (R2) & 10.1.2.1 & 6 \\
+            10.2.1.0/28 & 10.1.2.2 (R2) & 10.1.2.1  & 6    \\
             \hline
         \end{tabular}
         \captionof{table}{Table de routage complète de R1}
     \end{center}
-    
+
 
 \end{frame}
 
@@ -324,31 +434,93 @@ L'adresse 10.1.1.1 correspond à l'interface de R1 sur le réseau 10.1.1.0/30.}
     \frametitle{}
     \begin{activite}
         Établir la table de routage de R5.
-        \end{activite}
-    
+    \end{activite}
+
 
 \end{frame}
 
 \begin{frame}
-    \frametitle{}
-
+    \frametitle{Correction}
+Première étape: dans la zone
     \begin{center}
-        \begin{tikzpicture}
+        \begin{tikzpicture}[scale=0.7, transform shape]
             \node[draw, fill=gray!40] (R4) at (2,3) {R4};
             \node[draw] (R5) at (6,3) {R5};
             \node[draw] (R6) at (4,0) {R6};
             \node[draw] (R7) at (8,0) {R7};
-            
-            \draw (R4) -- (R5) node[midway, scale=1.5]{10};
-            \draw (R4) -- (R6) node[midway, scale=1.5]{1};
-            \draw (R5) -- (R6) node[midway, scale=1.5]{1};
-            \draw (R7) -- (R6) node[midway, scale=1.5]{10};
-            \draw (R5) -- (R7) node[midway, scale=1.5]{1};
+
+            \draw (R4) -- (R5) node[midway,text width=1.8cm, text centered]{10.2.5.0/28 10Mbit/s};
+            \draw (R4) -- (R6) node[sloped, midway,text width=1.8cm, text centered]{10.2.4.0/28 100Mbit/s};
+            \draw (R5) -- (R6) node[sloped, midway,text width=1.8cm, text centered]{10.2.3.0/28 100Mbit/s};
+            \draw (R7) -- (R6) node[midway,text width=1.8cm, text centered]{10.2.2.0/28 10Mbit/s};
+            \draw (R5) -- (R7) node[sloped, midway,text width=1.8cm, text centered]{10.2.1.0/28 100Mbit/s};
+
+            \node[draw, fill=gray!40] (R4b) at (10,3) {R4};
+            \node[draw] (R5b) at (14,3) {R5};
+            \node[draw] (R6b) at (12,0) {R6};
+            \node[draw] (R7b) at (16,0) {R7};
+
+            \draw (R4b) -- (R5b) node[midway, scale=1.5]{10};
+            \draw (R4b) -- (R6b) node[midway, scale=1.5]{1};
+            \draw (R5b) -- (R6b) node[midway, scale=1.5]{1};
+            \draw (R7b) -- (R6b) node[midway, scale=1.5]{10};
+            \draw (R5b) -- (R7b) node[midway, scale=1.5]{1};
         \end{tikzpicture}
         \captionof{figure}{Graphe pondéré de la zone 2}
         \label{zone2}
     \end{center}
 
+    \begin{center}
+        \begin{tabular}{|*{4}{c|}}
+            \hline
+            Destination & Passerelle    & Interface & Coût \\
+            \hline
+            10.2.1.0/28 &               & 10.2.1.1  & 1    \\
+            \hline
+            10.2.2.0/28 & 10.2.1.2 (R7) & 10.2.1.1  & 11    \\
+            \hline
+            10.2.3.0/28 &               & 10.2.3.1  & 1   \\
+            \hline
+            10.2.4.0/28 & 10.2.3.2 (R6) & 10.2.3.1  & 2    \\
+            \hline
+            10.2.5.0/28 & 10.2.1.2 (R7) & 10.2.5.1  & 10    \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Table de routage de R5}
+    \end{center}
+    \note[item]{Pour atteindre 10.2.2.0, on pouvait également passer par R6.}
+    \note[item]{Les interfaces 100Mbit/s $\rightarrow$ FastEthernet}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Correction}
+    Seconde étape: informations des autres zones
+    \begin{center}
+        \begin{tabular}{|*{4}{c|}}
+            \hline
+            Destination & Passerelle    & Interface & Coût \\
+            \hline
+            10.2.1.0/28 &               & 10.2.1.1  & 1    \\
+            \hline
+            10.2.2.0/28 & 10.2.1.2 (R7) & 10.2.1.1  & 11    \\
+            \hline
+            10.2.3.0/28 &               & 10.2.3.1  & 1   \\
+            \hline
+            10.2.4.0/28 & 10.2.3.2 (R6) & 10.2.3.1  & 2    \\
+            \hline
+            10.2.5.0/28 & 10.2.1.2 (R7) & 10.2.5.1  & 10    \\
+            \hline
+            10.3.1.0/30 & 10.2.3.2 (R6) & 10.2.3.1  & 3    \\
+            \hline
+            10.1.1.0/30 & 10.2.3.2 (R6) & 10.2.3.1  & 13    \\
+            \hline
+            10.1.3.0/30 & 10.2.3.2 (R6) & 10.2.3.1  & 4    \\
+            \hline
+            10.1.2.0/30 & 10.2.3.2 (R6) & 10.2.3.1  & 5    \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Table de routage de R5}
+    \end{center}
+
+\end{frame}
 \end{document}

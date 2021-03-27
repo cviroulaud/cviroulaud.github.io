@@ -28,34 +28,48 @@
 \headcommand {\beamer@subsubsectionentry {0}{3}{1}{1}{9}{Identificateur}}
 \headcommand {\slideentry {3}{1}{1}{9/9}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{1}{2}{10}{Message HELLO}}
 \headcommand {\slideentry {3}{1}{2}{10/10}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {3}{1}{3}{11/11}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{1}{3}{12}{Message LSA}}
 \headcommand {\slideentry {3}{1}{4}{12/12}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{2}{13}{Message HELLO}}
 \headcommand {\slideentry {3}{1}{5}{13/13}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {13}{13}}
 \headcommand {\slideentry {3}{1}{6}{14/14}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionpages {9}{14}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{15}{Calculs des meilleurs routes}}
-\headcommand {\slideentry {3}{2}{1}{15/15}{Calculs des meilleurs routes}{0}}
+\headcommand {\slideentry {3}{1}{7}{15/15}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {3}{2}{2}{16/16}{Calculs des meilleurs routes}{0}}
+\headcommand {\slideentry {3}{1}{8}{16/16}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{2}{3}{17/17}{Calculs des meilleurs routes}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{3}{17}{LSA}}
+\headcommand {\slideentry {3}{1}{9}{17/17}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{2}{4}{18/18}{Calculs des meilleurs routes}{0}}
+\headcommand {\slideentry {3}{1}{10}{18/18}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {3}{2}{5}{19/19}{Calculs des meilleurs routes}{0}}
+\headcommand {\slideentry {3}{1}{11}{19/19}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@partpages {1}{20}}
-\headcommand {\beamer@subsectionpages {15}{20}}
-\headcommand {\beamer@sectionpages {7}{20}}
-\headcommand {\beamer@documentpages {20}}
-\headcommand {\gdef \inserttotalframenumber {20}}
-\headcommand {\slideentry {3}{2}{6}{20/20}{Calculs des meilleurs routes}{0}}
+\headcommand {\slideentry {3}{1}{12}{20/20}{Découverte du réseau}{0}}
 \headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@subsectionpages {9}{20}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{21}{Calculs des meilleurs routes}}
+\headcommand {\slideentry {3}{2}{1}{21/21}{Calculs des meilleurs routes}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {3}{2}{2}{22/22}{Calculs des meilleurs routes}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{2}{3}{23/23}{Calculs des meilleurs routes}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{2}{4}{24/24}{Calculs des meilleurs routes}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {3}{2}{5}{25/25}{Calculs des meilleurs routes}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {3}{2}{6}{26/26}{Calculs des meilleurs routes}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {3}{2}{7}{27/27}{Calculs des meilleurs routes}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@partpages {1}{27}}
+\headcommand {\beamer@subsectionpages {21}{27}}
+\headcommand {\beamer@sectionpages {7}{27}}
+\headcommand {\beamer@documentpages {27}}
+\headcommand {\gdef \inserttotalframenumber {27}}

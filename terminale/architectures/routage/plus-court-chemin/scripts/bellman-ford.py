@@ -19,6 +19,8 @@ def mat_to_dict(matrice: list) -> dict:
     """
     transforme la matrice
     en dictionnaire de prédécesseurs
+    chaque prédécesseur est représenté par un tuple
+    (noeud, distance)
     """
     dico = {lettre(i): set() for i in range(len(matrice))}
     for i in range(len(matrice)):

@@ -123,13 +123,14 @@ Dans le graphe figure \ref{rip} les pondérations représentent un nombre de rou
 \end{aretenir}
 \subsection{Mise en application}
 Chaque routeur exécute l'algorithme pour calculer les plus courts chemins vers chaque autre routeur du réseau. L'algorithme détaillé pour le routeur A est le suivant:
+% ligne 2 de l'algo: en effet distance de A à A = 0
 \begin{center}
 \begin{lstlisting}[language=Bash]
 Créer un tableau des distances entre A et les routeurs (A inclus), initialisées à l'infini.
 Dans le tableau modifier la distance vers A à 0.
 
-Tant que le tableau est modifié
-    Pour chaque arc
+Pour chaque sommet
+    Pour chaque arc du graphe
         Si (la distance du routeur) > (la distance de son prédécesseur + poids entre les deux routeurs)
             La distance du routeur est remplacée par cette nouvelle valeur
 \end{lstlisting}
@@ -146,7 +147,7 @@ Pour le graphe figure \ref{rip}, le tableau est initialisé comme suit:
         \hline
     \end{tabular}
 \end{center}
-Le tableau a été modifié (A), on effectue une première itération sur les arcs.\\
+0n effectue une première itération sur les arcs.\\
 La distance calculée pour atteindre B correspond à la distance (du tableau) de son prédécesseur (A) augmentée du poids de l'arc A-B:
 $$0+2 = 2 < \infty$$
 Le tableau devient:
@@ -162,7 +163,16 @@ Le tableau devient:
 \begin{activite}
 Continuer de dérouler l'algorithme sur le graphe figure \ref{rip}.
 \end{activite}
+\subsection{Complexité}
+La complexité de l'algorithme (code \ref{bf}) dépend:
+\begin{itemize}
+    \item du nombre de sommets (notée S): on visite chaque sommet (ligne 4);
+    \item du nombre d'arcs (notée A): pour chaque sommet on regarde tous les arcs du graphe (ligne 5).
+\end{itemize}% extrait de l'algo; ligne 4 = on peut faire une amélioration (normalement on fait pour chaque noeud)
+$$O(S.A)$$
 \section{OSPF: algorithme de Dijkstra}
 \subsection{Principe}
+Il a été publié en 1959 par le néerlandais Edsger Dijkstra.
 \subsection{Mise en application}
+\subsection{Complexité}
 \end{document}

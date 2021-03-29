@@ -523,4 +523,16 @@ Première étape: dans la zone
     \end{center}
 
 \end{frame}
+
+\begin{frame}
+    \frametitle{Pour aller plus loin}
+
+    \begin{itemize}
+        \item<1-> OSPF est un protocole IGP (Interior Gateway Protocol), c'est-à-dire qu'il agit au sein d'un système autonome. Un fournisseur d'accès internet est un système autonome.
+        \note[item]{un fournisseur peut donc \emph{en théorie} filtrer le contenu vers le client (c'est le cas pour les sites de dwl)}
+        \item<2-> Pour assurer le routage entre les systèmes autonomes, un protocole de type EGP (Exterior Gateway Protocol) doit être mis en œuvre. Dans le cas de l'Internet, c'est généralement BGP (Border Gateway Protocol) qui assume cette mission.
+        \note[item]{hors programme} 
+    \end{itemize}
+
+\end{frame}
 \end{document}

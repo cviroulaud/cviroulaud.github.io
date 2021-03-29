@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  26 MAR 2021 09:12
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  27 MAR 2021 17:15
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/ospf/ospf-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/ospf/ospf-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.152 seconds
+luaotfload | main : initialization completed in 0.142 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1806,6 +1806,10 @@ Overfull \vbox (14.38548pt too high) detected at line 493
 
 ] [27
 
+] [28
+
+] [29
+
 ]
 \tf@nav=\write8
 
@@ -1816,11 +1820,11 @@ Overfull \vbox (14.38548pt too high) detected at line 493
 \tf@snm=\write10
 
 \openout10 = ospf-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 526.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 526.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 538.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 538.
  (./ospf-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 526.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 526.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 538.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 538.
 Package rerunfilecheck Info: File `ospf-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 5F6E18C1EE71082816C31A73B88E4458;775.
 
@@ -1830,19 +1834,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44295 strings out of 494383
+ 44302 strings out of 494383
  125007,1144653 words of node,token memory allocated
- 77948 words of node memory still in use:
-   77 hlist, 11 vlist, 77 rule, 15 disc, 6 local_par, 2 math, 343 glue, 10 kern, 20 penalty, 8928 glyph, 4557 attribute, 105 glue_spec, 762 attribute_list, 3 write, 20 pdf_colorstack nodes
-   avail lists: 1:3,2:4541,3:688,4:145,5:78,6:46,7:1521,8:126,9:486,10:14,11:57,12:1
- 46933 multiletter control sequences out of 65536+600000
+ 82848 words of node memory still in use:
+   34 hlist, 9 vlist, 3 rule, 49 disc, 4 local_par, 4 math, 136 glue, 26 kern, 21 penalty, 9929 glyph, 4485 attribute, 105 glue_spec, 750 attribute_list, 3 write, 16 pdf_literal, 20 pdf_colorstack nodes
+   avail lists: 1:3,2:4625,3:671,4:145,5:71,6:48,7:912,8:200,9:531,10:14,11:98,12:1
+ 46936 multiletter control sequences out of 65536+600000
  63 fonts using 9209999 bytes
  70i,15n,95p,1188b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ospf-slides.pdf (27 pages, 105677 bytes).
+Output written on ospf-slides.pdf (29 pages, 109156 bytes).
 
-PDF statistics: 541 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 66 named destinations out of 1000 (max. 131072)
+PDF statistics: 571 PDF objects out of 1000 (max. 8388607)
+ 497 compressed objects within 5 object streams
+ 70 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

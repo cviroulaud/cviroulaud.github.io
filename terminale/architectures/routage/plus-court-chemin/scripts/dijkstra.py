@@ -32,6 +32,8 @@ def get_mini(distances: dict, visites: set)->str:
     """
     renvoie le noeud non encore visité
     avec la distance la plus petite
+    
+    cette fonction joue un rôle central dans la complexité de l'algo
     """
     mini = float("inf")
     noeud_mini = ""

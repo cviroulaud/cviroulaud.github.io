@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 MAR 2021 13:04
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 MAR 2021 15:41
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/plus-court-chemin/plus-court-chemin-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/plus-court-chemin/plus-court-chemin-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.230 seconds
+luaotfload | main : initialization completed in 0.138 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1001,4 +1001,1056 @@ Package: datetime-defaults 2013/09/10
 \c@MINUTE=\count365
 \c@TOHOUR=\count366
 \c@TOMINUTE=\count367
-\c@SECOND=
+\c@SECOND=\count368
+\currenthour=\count369
+\currentminute=\count370
+\currentsecond=\count371
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count372
+\dayofyear=\count373
+\dayofweek=\count374
+LaTeX Info: Redefining \today on input line 736.
+ (/usr/share/texlive/texmf-dist/tex/latex/datetime/dt-french.def
+File: dt-french.def 2013/09/10
+LaTeX Info: Redefining \datefrench on input line 91.
+)
+\dt@a=\toks56
+\dt@b=\toks57
+) (/usr/share/texlive/texmf-dist/tex/latex/graphbox/graphbox.sty
+Package: graphbox 2018/01/17 v1.1 extension for graphicx to adjust containing box
+\Gin@box@box=\box105
+\Gin@box@width=\skip66
+\Gin@box@height=\skip67
+\Gin@box@raise=\skip68
+\Gin@box@hspace=\skip69
+\Gin@box@bwidth=\skip70
+\Gin@box@bheight=\skip71
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen305
+\captionmargin@=\dimen306
+\captionwidth=\dimen307
+\caption@tempdima=\dimen308
+\caption@indent=\dimen309
+\caption@parindent=\dimen310
+\caption@hangindent=\dimen311
+)
+\c@caption@flags=\count375
+\c@ContinuedFloat=\count376
+Package caption Info: beamer document class.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+Package caption Info: listings package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen312
+\ar@mcellbox=\box106
+\extrarowheight=\dimen313
+\NC@list=\toks58
+\extratabsurround=\skip72
+\backup@length=\skip73
+\ar@cellbox=\box107
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen314
+\lightrulewidth=\dimen315
+\cmidrulewidth=\dimen316
+\belowrulesep=\dimen317
+\belowbottomsep=\dimen318
+\aboverulesep=\dimen319
+\abovetopsep=\dimen320
+\cmidrulesep=\dimen321
+\cmidrulekern=\dimen322
+\defaultaddspace=\dimen323
+\@cmidla=\count377
+\@cmidlb=\count378
+\@aboverulesep=\dimen324
+\@belowrulesep=\dimen325
+\@thisruleclass=\count379
+\@lastruleclass=\count380
+\@thisrulewidth=\dimen326
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 104.
+
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 104.
+
+Package hyperref Info: Option `frenchlinks' set `true' on input line 104.
+Package hyperref Info: Option `unicode' set `true' on input line 104.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+)
+\c@compteur=\count381
+ (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip74
+\fb@frw=\dimen327
+\fb@frh=\dimen328
+\FrameRule=\dimen329
+\FrameSep=\dimen330
+) (/usr/share/texlive/texmf-dist/tex/latex/pythontex/pythontex.sty
+Package: pythontex 2017/07/20 v0.16 execute and typeset Python code and other languages
+ (/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+ (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2019/01/15
+ Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
+\FV@CodeLineNo=\count382
+\FV@InFile=\read4
+\FV@TabBox=\box108
+\c@FancyVerbLine=\count383
+\FV@StepNumber=\count384
+\FV@OutFile=\write5
+) (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count385
+\output=\toks59
+\linenoprevgraf=\count386
+\linenumbersep=\dimen331
+\linenumberwidth=\dimen332
+\c@linenumber=\count387
+\c@pagewiselinenumber=\count388
+\c@LN@truepage=\count389
+\c@internallinenumber=\count390
+\c@internallinenumbers=\count391
+\quotelinenumbersep=\dimen333
+\bframerule=\dimen334
+\bframesep=\dimen335
+\bframebox=\box109
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count392
+\c@FV@TrueTabCounter=\count393
+\FV@TabBox@Group=\box110
+\FV@TmpLength=\skip75
+\c@FV@HighlightLinesStart=\count394
+\c@FV@HighlightLinesStop=\count395
+\FV@LoopCount=\count396
+\FV@NCharsBox=\box111
+\FV@BreakIndent=\dimen336
+\FV@BreakIndentNChars=\count397
+\FV@BreakSymbolSepLeft=\dimen337
+\FV@BreakSymbolSepLeftNChars=\count398
+\FV@BreakSymbolSepRight=\dimen338
+\FV@BreakSymbolSepRightNChars=\count399
+\FV@BreakSymbolIndentLeft=\dimen339
+\FV@BreakSymbolIndentLeftNChars=\count400
+\FV@BreakSymbolIndentRight=\dimen340
+\FV@BreakSymbolIndentRightNChars=\count401
+\c@FancyVerbLineBreakLast=\count402
+\FV@LineBox=\box112
+\FV@LineIndentBox=\box113
+\FV@LineWidth=\dimen341
+) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count403
+\decimalpart=\count404
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+\pgfopts@list@add@a@toks=\toks60
+\pgfopts@list@add@b@toks=\toks61
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/newfloat.sty
+Package: newfloat 2018/03/04 v1.1a Defining new floating environments (AR)
+) (/usr/share/texlive/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2015/04/23 v0.7c Provides the file path elements of the current input file
+ (/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
+)
+\c@currfiledepth=\count405
+)
+\pytx@codefile=\write6
+
+\openout6 = plus-court-chemin-slides.pytxcode
+\c@pytx@FancyVerbLineTemp=\count406
+\c@pytx@py@default@default=\count407
+\c@pytx@pycon@default@default=\count408
+\c@pytx@sympy@default@default=\count409
+\c@pytx@sympycon@default@default=\count410
+\c@pytx@pylab@default@default=\count411
+\c@pytx@pylabcon@default@default=\count412
+)
+\c@compteuractivite=\count413
+\c@compteurexo=\count414
+ (/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2018/11/21 v2.27 Module abspage for zref (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2018/11/21 v2.27 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count415
+Package zref Info: New property: abspage on input line 62.
+) (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip76
+\c@mdf@globalstyle@cnt=\count416
+\mdf@skipabove@length=\skip77
+\mdf@skipbelow@length=\skip78
+\mdf@leftmargin@length=\skip79
+\mdf@rightmargin@length=\skip80
+\mdf@innerleftmargin@length=\skip81
+\mdf@innerrightmargin@length=\skip82
+\mdf@innertopmargin@length=\skip83
+\mdf@innerbottommargin@length=\skip84
+\mdf@splittopskip@length=\skip85
+\mdf@splitbottomskip@length=\skip86
+\mdf@outermargin@length=\skip87
+\mdf@innermargin@length=\skip88
+\mdf@linewidth@length=\skip89
+\mdf@innerlinewidth@length=\skip90
+\mdf@middlelinewidth@length=\skip91
+\mdf@outerlinewidth@length=\skip92
+\mdf@roundcorner@length=\skip93
+\mdf@footenotedistance@length=\skip94
+\mdf@userdefinedwidth@length=\skip95
+\mdf@needspace@length=\skip96
+\mdf@frametitleaboveskip@length=\skip97
+\mdf@frametitlebelowskip@length=\skip98
+\mdf@frametitlerulewidth@length=\skip99
+\mdf@frametitleleftmargin@length=\skip100
+\mdf@frametitlerightmargin@length=\skip101
+\mdf@shadowsize@length=\skip102
+\mdf@extratopheight@length=\skip103
+\mdf@subtitleabovelinewidth@length=\skip104
+\mdf@subtitlebelowlinewidth@length=\skip105
+\mdf@subtitleaboveskip@length=\skip106
+\mdf@subtitlebelowskip@length=\skip107
+\mdf@subtitleinneraboveskip@length=\skip108
+\mdf@subtitleinnerbelowskip@length=\skip109
+\mdf@subsubtitleabovelinewidth@length=\skip110
+\mdf@subsubtitlebelowlinewidth@length=\skip111
+\mdf@subsubtitleaboveskip@length=\skip112
+\mdf@subsubtitlebelowskip@length=\skip113
+\mdf@subsubtitleinneraboveskip@length=\skip114
+\mdf@subsubtitleinnerbelowskip@length=\skip115
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2019/02/02 v3.1.1 (3.1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfnodeparttextbox=\box114
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2019/02/02 v3.1.1 (3.1.1)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2019/02/02 v3.1.1 (3.1.1)
+\pgf@nodesepstart=\dimen342
+\pgf@nodesepend=\dimen343
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2019/02/02 v3.1.1 (3.1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2019/02/02 v3.1.1 (3.1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen344
+\pgffor@skip=\dimen345
+\pgffor@stack=\toks62
+\pgffor@toks=\toks63
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2019/02/02 v3.1.1 (3.1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgf@plot@mark@count=\count417
+\pgfplotmarksize=\dimen346
+)
+\tikz@lastx=\dimen347
+\tikz@lasty=\dimen348
+\tikz@lastxsaved=\dimen349
+\tikz@lastysaved=\dimen350
+\tikzleveldistance=\dimen351
+\tikzsiblingdistance=\dimen352
+\tikz@figbox=\box115
+\tikz@figbox@bg=\box116
+\tikz@tempbox=\box117
+\tikz@tempbox@bg=\box118
+\tikztreelevel=\count418
+\tikznumberofchildren=\count419
+\tikznumberofcurrentchild=\count420
+\tikz@fig@count=\count421
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfmatrixcurrentrow=\count422
+\pgfmatrixcurrentcolumn=\count423
+\pgf@matrix@numberofcolumns=\count424
+)
+\tikz@expandcount=\count425
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
+))) (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box119
+\mdf@footnotebox=\box120
+\mdf@splitbox@one=\box121
+\mdf@splitbox@two=\box122
+\mdf@splitbox@save=\box123
+\mdfsplitboxwidth=\skip116
+\mdfsplitboxtotalwidth=\skip117
+\mdfsplitboxheight=\skip118
+\mdfsplitboxdepth=\skip119
+\mdfsplitboxtotalheight=\skip120
+\mdfframetitleboxwidth=\skip121
+\mdfframetitleboxtotalwidth=\skip122
+\mdfframetitleboxheight=\skip123
+\mdfframetitleboxdepth=\skip124
+\mdfframetitleboxtotalheight=\skip125
+\mdffootnoteboxwidth=\skip126
+\mdffootnoteboxtotalwidth=\skip127
+\mdffootnoteboxheight=\skip128
+\mdffootnoteboxdepth=\skip129
+\mdffootnoteboxtotalheight=\skip130
+\mdftotallinewidth=\skip131
+\mdfboundingboxwidth=\skip132
+\mdfboundingboxtotalwidth=\skip133
+\mdfboundingboxheight=\skip134
+\mdfboundingboxdepth=\skip135
+\mdfboundingboxtotalheight=\skip136
+\mdf@freevspace@length=\skip137
+\mdf@horizontalwidthofbox@length=\skip138
+\mdf@verticalmarginwhole@length=\skip139
+\mdf@horizontalspaceofbox=\skip140
+\mdfsubtitleheight=\skip141
+\mdfsubsubtitleheight=\skip142
+\c@mdfcountframes=\count426
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- failed******
+
+\mdf@envdepth=\count427
+\c@mdf@env@i=\count428
+\c@mdf@env@ii=\count429
+\c@mdf@zref@counter=\count430
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2011/01/05 ver 0.02
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count431
+\calc@Bcount=\count432
+\calc@Adimen=\dimen353
+\calc@Bdimen=\dimen354
+\calc@Askip=\skip143
+\calc@Bskip=\skip144
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count433
+\calc@Cskip=\skip145
+)
+\pgf@logicalpages=\count434
+\pgf@firstshipout=\count435
+\pgf@lastshipout=\count436
+\pgf@currentshipout=\count437
+\pgf@cpn=\count438
+\pgf@shipoutnextto=\count439
+\pgfphysicalheight=\dimen355
+\pgfphysicalwidth=\dimen356
+\pgfpages@shipoutbox=\box124
+)
+\pgfpages@box@1=\box125
+\pgfpages@box@2=\box126
+ (./plus-court-chemin-slides.aux
+
+LaTeX Warning: Label `oriente' multiply defined.
+
+)
+\openout1 = plus-court-chemin-slides.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(14.22636pt, 278.83713pt, 71.13187pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=278.83713pt
+* \textheight=244.6939pt
+* \oddsidemargin=-58.04362pt
+* \evensidemargin=-58.04362pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count440
+\scratchdimen=\dimen357
+\scratchbox=\box127
+\nofMPsegments=\count441
+\nofMParguments=\count442
+\everyMPshowfont=\toks64
+\MPscratchCnt=\count443
+\MPscratchDim=\dimen358
+\MPnumerator=\count444
+\makeMPintoPDFobject=\count445
+\everyMPtoPDFconversion=\toks65
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box128
+Package hyperref Info: Link coloring ON on input line 18.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count446
+)
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
+ (./plus-court-chemin-slides.out) (./plus-court-chemin-slides.out)
+\@outlinefile=\write7
+
+\openout7 = plus-court-chemin-slides.out
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 18.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 18.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 18.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 18.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 18.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 18.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 18.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmr/bx/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 18.
+ (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 18.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 18.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 18.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 18.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 18.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 18.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 18.
+LaTeX Font Info:    Redeclaring math accent \check on input line 18.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 18.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 18.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 18.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 18.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 18.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmr/m/n on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 18.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  TU/lmss/m/it --> TU/lmr/m/it on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  TU/lmss/bx/n --> TU/lmr/bx/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 18.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  TU/lmss/bx/it --> TU/lmr/bx/it on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 18.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  TU/lmtt/bx/n --> TU/lmtt/bx/n on input line 18.
+LaTeX Info: Redefining \dots on input line 18.
+LaTeX Info: Redefining \up on input line 18.
+\c@lstlisting=\count447
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+No file pythontex-files-plus-court-chemin-slides/plus-court-chemin-slides.pytxmcr.
+Run PythonTeX to create it.
+Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 18.
+\c@listing=\count448
+Package newfloat Info: float type `listing'=16 on input line 18.
+(./plus-court-chemin-slides.nav)
+Overfull \hbox (10.64252pt too wide) in paragraph at lines 31--31
+ [] 
+ []
+
+[2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+
+]
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 58.
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 58.
+
+[3
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation2'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 89.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 89.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 89.
+ [4
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 89.
+ [5
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'oriente'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+
+]
+\openout4 = plus-court-chemin-slides.vrb
+ (./plus-court-chemin-slides.vrb) [6
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+
+]
+\openout4 = plus-court-chemin-slides.vrb
+ (./plus-court-chemin-slides.vrb) [7
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation6'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+
+]
+\openout4 = plus-court-chemin-slides.vrb
+ (./plus-court-chemin-slides.vrb
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <17.28> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 21.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 21.
+) [8
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation7'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+
+] [9
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation8'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
+
+] [10
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation9'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
+
+]
+\openout4 = plus-court-chemin-slides.vrb
+ (./plus-court-chemin-slides.vrb) [11
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
+
+]
+\openout4 = plus-court-chemin-slides.vrb
+ (./plus-court-chemin-slides.vrb) [12
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation11'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
+
+] [13
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation12'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
+
+] [14
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation13'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 345.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 345.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 345.
+ [15
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation14'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
+
+]
+\openout4 = plus-court-chemin-slides.vrb
+ (./plus-court-chemin-slides.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)) [16
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation15'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
+
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 375.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 375.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 410.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 410.
+ [17
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation16'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
+
+] [18
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation17'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
+
+] [19
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation18'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
+
+] [20
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation19'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
+
+] [21
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation20'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
+
+] [22
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation21'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
+
+] [23
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation22'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
+
+] [24
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation23'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
+
+] [25
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation24'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.24'
+
+] [26
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation25'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
+
+] [27
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation26'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
+
+] [28
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation27'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
+
+] [29
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation28'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
+
+] [30
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation29'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.29'
+
+] [31
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation30'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.30'
+
+] [32
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation31'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.31'
+
+] [33
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation32'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.32'
+
+] [34
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation33'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.33'
+
+]
+\openout4 = plus-court-chemin-slides.vrb
+ (./plus-court-chemin-slides.vrb) [35
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation34'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.34'
+
+] (./plus-court-chemin-slides.vrb) [36
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation35'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.35'
+
+] [37
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation36'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.36'
+
+] [38
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation37'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.37'
+
+] [39
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation38'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.38'
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1108.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1108.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1108.
+
+\openout4 = plus-court-chemin-slides.vrb
+ (./plus-court-chemin-slides.vrb) [40
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation39'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.39'
+
+] [41
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation40'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.40'
+
+] [42
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation41'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.41'
+
+] [43
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation42'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.42'
+
+] [44
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation43'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.43'
+
+]
+\openout4 = plus-court-chemin-slides.vrb
+ (./plus-court-chemin-slides.vrb) [45
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation44'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.44'
+
+] (./plus-court-chemin-slides.vrb) [46
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation45'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.45'
+
+] [47
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation46'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.46'
+
+]
+\tf@nav=\write8
+
+\openout8 = plus-court-chemin-slides.nav
+\tf@toc=\write9
+
+\openout9 = plus-court-chemin-slides.toc
+\tf@snm=\write10
+
+\openout10 = plus-court-chemin-slides.snm
+ [48
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation47'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.47'
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1295.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1295.
+ (./plus-court-chemin-slides.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1295.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1295.
+Package rerunfilecheck Info: File `plus-court-chemin-slides.out' has not changed.
+(rerunfilecheck)             Checksum: 744EC11C3116EB8302A765550613DD41;1710.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+)
+
+Here is how much of LuaTeX's memory you used:
+ 45135 strings out of 494383
+ 596345,1373583 words of node,token memory allocated
+ 199930 words of node memory still in use:
+   79 hlist, 29 vlist, 12 rule, 19 disc, 14 local_par, 366 glue, 22 kern, 36 penalty, 22687 glyph, 15441 attribute, 108 glue_spec, 2576 attribute_list, 5 write, 30 pdf_literal, 3 pdf_start_link, 3 pdf_end_link, 2 pdf_dest, 3 pdf_action, 42 pdf_colorstack nodes
+   avail lists: 1:6,2:12658,3:2504,4:10564,5:9487,6:160,7:7085,8:7661,9:15288,10:28,11:1032,12:1
+ 47543 multiletter control sequences out of 65536+600000
+ 111 fonts using 13437703 bytes
+ 70i,15n,107p,1214b,1387s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans17-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on plus-court-chemin-slides.pdf (47 pages, 255539 bytes).
+
+PDF statistics: 1335 PDF objects out of 1440 (max. 8388607)
+ 1136 compressed objects within 12 object streams
+ 113 named destinations out of 1000 (max. 131072)
+ 122 words of extra memory for PDF output out of 10000 (max. 100000000)
+

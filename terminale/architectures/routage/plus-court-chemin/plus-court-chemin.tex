@@ -34,7 +34,7 @@ Un graphe \textbf{orienté} possède les mêmes caractéristiques que celles dé
         \node[draw] (D) at (1,2) {D};
         \node[draw] (E) at (-3,1) {E};
 
-        \draw[->,>=latex] (A)--(B);
+        \draw[->,>=latex] (B)--(A);
         \draw[->,>=latex] (A)--(E);
         \draw[->,>=latex] (D)--(E);
         \draw[->,>=latex] (A)--(D);
@@ -105,7 +105,7 @@ La démarche est récursive: on applique le même principe au prédécesseur. En
         \node[draw] (F) at (6,2) {F};
 
         \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-        \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
+        %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
         \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
         \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
         \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
@@ -157,7 +157,7 @@ Le tableau devient:
         \hline
         A & B & C      & D      & E      & F      \\
         \hline
-        0 & 2 & \infty & \infty & \infty & \infty \\
+        0 & \textbf{2 (A)} & \infty & \infty & \infty & \infty \\
         \hline
     \end{tabular}
 \end{center}

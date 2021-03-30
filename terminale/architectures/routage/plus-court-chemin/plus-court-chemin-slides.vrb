@@ -1,0 +1,12 @@
+\frametitle{}
+
+    \begin{itemize}
+        \item<1->La complexité dépend du nombre de sommets S et du nombre d'arcs A.
+        \item<2->Le point clé de l'algorithme tient dans la recherche de la distance minimale.
+        \begin{center}
+        \begin{lstlisting}[language=bash]
+Parmi les routeurs non-sélectionnés, \underline{choisir le routeur} (noté S) ayant la plus petite distance.
+        \end{lstlisting}
+        \end{center}
+    \end{itemize}
+

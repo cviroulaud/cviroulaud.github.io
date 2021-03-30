@@ -1,0 +1,83 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{Problématique}{2}{Problématique}{0}}
+\headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {2}{2}}
+\headcommand {\beamer@subsectionpages {2}{2}}
+\headcommand {\sectionentry {2}{Retour des graphes}{3}{Retour des graphes}{0}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{3}{Graphe orienté}}
+\headcommand {\slideentry {2}{1}{1}{3/3}{Graphe orienté}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {2}{1}{2}{4/4}{Graphe orienté}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {2}{1}{3}{5/5}{Graphe orienté}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {2}{1}{4}{6/6}{Graphe orienté}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionpages {3}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{7}{Graphe pondéré}}
+\headcommand {\slideentry {2}{2}{1}{7/7}{Graphe pondéré}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{2}{2}{8/8}{Graphe pondéré}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {3}{8}}
+\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\sectionentry {3}{Protocole RIP: algorithme de Bellman-Ford}{9}{Protocole RIP: algorithme de Bellman-Ford}{0}}
+\headcommand {\beamer@subsectionpages {9}{8}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{9}{Principe}}
+\headcommand {\slideentry {3}{1}{1}{9/9}{Principe}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {3}{1}{2}{10/10}{Principe}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {3}{1}{3}{11/11}{Principe}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@subsectionpages {9}{11}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{12}{Mise en application}}
+\headcommand {\slideentry {3}{2}{1}{12/12}{Mise en application}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {3}{2}{2}{13/13}{Mise en application}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {3}{2}{3}{14/14}{Mise en application}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{2}{4}{15/15}{Mise en application}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@subsectionpages {12}{15}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{16}{Complexité}}
+\headcommand {\slideentry {3}{3}{1}{16/17}{Complexité}{0}}
+\headcommand {\beamer@framepages {16}{17}}
+\headcommand {\slideentry {3}{3}{2}{18/18}{Complexité}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@sectionpages {9}{18}}
+\headcommand {\beamer@subsectionpages {16}{18}}
+\headcommand {\sectionentry {4}{OSPF: algorithme de Dijkstra}{19}{OSPF: algorithme de Dijkstra}{0}}
+\headcommand {\beamer@subsectionpages {19}{18}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{19}{Principe}}
+\headcommand {\slideentry {4}{1}{1}{19/19}{Principe}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {4}{1}{2}{20/20}{Principe}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@subsectionpages {19}{20}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{21}{Mise en application}}
+\headcommand {\slideentry {4}{2}{1}{21/21}{Mise en application}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {4}{2}{2}{22/22}{Mise en application}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {4}{2}{3}{23/23}{Mise en application}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {4}{2}{4}{24/24}{Mise en application}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@subsectionpages {21}{24}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{25}{Complexité}}
+\headcommand {\slideentry {4}{3}{1}{25/26}{Complexité}{0}}
+\headcommand {\beamer@framepages {25}{26}}
+\headcommand {\beamer@partpages {1}{27}}
+\headcommand {\beamer@subsectionpages {25}{27}}
+\headcommand {\beamer@sectionpages {19}{27}}
+\headcommand {\beamer@documentpages {27}}
+\headcommand {\gdef \inserttotalframenumber {25}}
+\headcommand {\slideentry {4}{3}{2}{27/27}{Complexité}{0}}
+\headcommand {\beamer@framepages {27}{27}}

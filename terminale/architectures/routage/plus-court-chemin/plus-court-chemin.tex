@@ -89,12 +89,12 @@ Les arcs d'un graphe \textbf{pondéré} possèdent une \emph{valeur ou poids}. C
 \end{activite}
 \section{Protocole RIP: algorithme de Bellman-Ford}
 \subsection{Principe}
-Publié entre 1956 et 1958, cet algorithme calcule les plus courts chemins entre un \emph{nœud source} et tous les autres nœuds d'un graphe orienté et pondéré. Le principe est le suivant: 
+Publié entre 1956 et 1958, cet algorithme calcule les plus courts chemins entre un \emph{nœud source} et tous les autres nœuds d'un graphe orienté et pondéré. Le principe est le suivant:
 \begin{center}
     \emph{La distance pour atteindre chaque nœud correspond à la distance pour atteindre son prédécesseur à laquelle on ajoute le poids de l'arête les séparant.}
 \end{center}
 La démarche est récursive: on applique le même principe au prédécesseur. Enfin un nœud pouvant avoir plusieurs prédécesseurs, on gardera le chemin le plus court.
-%approche dynamique bottom-up en pratique
+%approche dynamique bottom-up en pratique (Bellman père de la dynamique)
 \begin{center}
     \begin{tikzpicture}
         \node[draw] (A) at (0,0) {A};
@@ -119,49 +119,50 @@ La démarche est récursive: on applique le même principe au prédécesseur. En
     \label{rip}
 \end{center}
 \begin{aretenir}[Remarque]
-Dans le graphe figure \ref{rip} les pondérations représentent un nombre de routeurs traversés pour atteindre le nœud (routeur) suivant.
+    Dans le graphe figure \ref{rip} les pondérations représentent un nombre de routeurs traversés pour atteindre le nœud (routeur) suivant.
 \end{aretenir}
+On obtient un tableau contenant la distance minimale entre le routeur de départ et chaque autre routeur.
 \subsection{Mise en application}
 Chaque routeur exécute l'algorithme pour calculer les plus courts chemins vers chaque autre routeur du réseau. L'algorithme détaillé pour le routeur A est le suivant:
 % ligne 2 de l'algo: en effet distance de A à A = 0
 \begin{center}
-\begin{lstlisting}[language=Bash]
+    \begin{lstlisting}[language=Bash]
 Créer un tableau des distances entre A et les routeurs (A inclus), initialisées à l'infini.
 Dans le tableau modifier la distance vers A à 0.
 
-Pour chaque sommet
+Tant que (le nombre d'itérations) < (nombre de routeurs)
     Pour chaque arc du graphe
-        Si (la distance du routeur) > (la distance de son prédécesseur + poids entre les deux routeurs)
+        Si (la distance du routeur) > (la distance de son prédécesseur + poids de l'arc entre les deux routeurs)
             La distance du routeur est remplacée par cette nouvelle valeur
 \end{lstlisting}
-\captionof{code}{Algorithme de Bellman Ford}
-\label{bf}
+    \captionof{code}{Algorithme de Bellman Ford}
+    \label{bf}
 \end{center}
 Pour le graphe figure \ref{rip}, le tableau est initialisé comme suit:
 \begin{center}
     \begin{tabular}{|*{6}{c|}}
         \hline
-        A & B & C & D & E & F \\
+        A & B      & C      & D      & E      & F      \\
         \hline
         0 & \infty & \infty & \infty & \infty & \infty \\
         \hline
     \end{tabular}
 \end{center}
-0n effectue une première itération sur les arcs.\\
+On effectue une première itération sur les arcs.\\
 La distance calculée pour atteindre B correspond à la distance (du tableau) de son prédécesseur (A) augmentée du poids de l'arc A-B:
 $$0+2 = 2 < \infty$$
 Le tableau devient:
 \begin{center}
     \begin{tabular}{|*{6}{c|}}
         \hline
-        A & B & C & D & E & F \\
+        A & B & C      & D      & E      & F      \\
         \hline
         0 & 2 & \infty & \infty & \infty & \infty \\
         \hline
     \end{tabular}
 \end{center}
 \begin{activite}
-Continuer de dérouler l'algorithme sur le graphe figure \ref{rip}.
+    Continuer de dérouler l'algorithme sur le graphe figure \ref{rip}.
 \end{activite}
 \subsection{Complexité}
 La complexité de l'algorithme (code \ref{bf}) dépend:
@@ -172,7 +173,86 @@ La complexité de l'algorithme (code \ref{bf}) dépend:
 $$O(S.A)$$
 \section{OSPF: algorithme de Dijkstra}
 \subsection{Principe}
-Il a été publié en 1959 par le néerlandais Edsger Dijkstra.
+Il a été publié en 1959 par le néerlandais Edsger Dijkstra. Le principe est de construire un sous-graphe en ajoutant à chaque itération un sommet de distance minimale.\\
+Là encore on obtient un tableau contenant la distance minimale entre le routeur de départ et chaque autre routeur.
+%peut se contenter de renvoyer la distance départ/arrivée (et le chemin)
+%graphe non orienté possible
+\begin{center}
+    \begin{tikzpicture}
+        \node[draw] (A) at (0,0) {A};
+        \node[draw] (B) at (2,2) {B};
+        \node[draw] (C) at (2,-2) {C};
+        \node[draw] (D) at (4,2) {D};
+        \node[draw] (E) at (6,-2) {E};
+        \node[draw] (F) at (8,0) {F};
+
+        \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
+        \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
+        \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
+        \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
+        \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
+        \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
+        \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
+        \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
+        \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+        \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+
+    \end{tikzpicture}
+    \captionof{figure}{graphe orienté et pondéré}
+    \label{ospf}
+\end{center}
+\begin{aretenir}[Remarque]
+    Les poids de chaque arc représentent le coût de chaque connexion.
+\end{aretenir}
 \subsection{Mise en application}
+L'algorithme maintient également un tableau des distances du routeur de départ, vers tous les autres.
+\begin{center}
+    \begin{lstlisting}[language=bash]
+Créer un tableau des distances entre A et les routeurs (A inclus), initialisées à l'infini.
+Dans le tableau modifier la distance vers A à 0.
+
+Tant qu'il reste des routeurs non sélectionnés
+    Parmi les routeurs non-sélectionnés, choisir le routeur (noté S) ayant la plus petite distance.
+    Pour chaque routeur adjacent à S (noté V) et non déjà sélectionné:
+        Si (la distance de V) > (la distance de S + poids S-V)
+            La distance de V est remplacée par cette nouvelle valeur
+\end{lstlisting}
+    \captionof{code}{Algorithme de Dijkstra}
+    \label{dj}
+\end{center}
+%S = suivant; V = voisin
+Pour le graphe figure \ref{ospf}, le tableau est initialisé comme suit:
+\begin{center}
+    \begin{tabular}{|*{6}{c|}}
+        \hline
+        A & B      & C      & D      & E      & F      \\
+        \hline
+        0 & \infty & \infty & \infty & \infty & \infty \\
+        \hline
+    \end{tabular}
+\end{center}
+Le routeur A possède la plus petite distance: il est sélectionné. La distance à ses voisins est mise à jour.
+\begin{center}
+    \begin{tabular}{|*{6}{c|}}
+        \hline
+        A & B & C & D      & E      & F      \\
+        \hline
+        0 & 3 & 2 & \infty & \infty & \infty \\
+        \hline
+    \end{tabular}
+    \hspace{2cm}
+    \begin{tabular}{|c|}
+        \hline
+        nœuds visités \\
+        \hline
+        A             \\
+        \hline
+    \end{tabular}
+\end{center}
+\begin{activite}
+Continuer de dérouler l'algorithme sur le graphe figure \ref{ospf}.
+\end{activite}
 \subsection{Complexité}
+Encore une fois la complexité dépend du nombre de sommets S et du nombre d'arcs A. Cependant le point clé de l'algorithme tient dans la recherche de la distance minimale (ligne 5).
+$$O((A+S)×\log{S})$$
 \end{document}

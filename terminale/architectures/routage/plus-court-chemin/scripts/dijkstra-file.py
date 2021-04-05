@@ -6,6 +6,8 @@
 @Time:   2021/03/29 10:40:26
 """
 
+from collections import deque
+
 
 def lettre(i: int) -> str:
     """
@@ -30,23 +32,6 @@ def mat_to_dict(matrice: list) -> dict:
     return dico
 
 
-def get_mini(distances: dict, visites: set) -> str:
-    """
-    renvoie le noeud non encore visité
-    avec la distance la plus petite
-
-    cette fonction joue un rôle central dans la complexité de l'algo
-    """
-    mini = float("inf")
-    noeud_mini = ""
-    for noeud, info in distances.items():
-        if noeud not in visites:
-            if info["distance"] < mini:
-                mini = info["distance"]
-                noeud_mini = noeud
-    return noeud_mini
-
-
 def dijkstra(dico: dict, depart: str, arrivee: str) -> list:
     """
     renvoie le plus court chemin entre départ et arrivée
@@ -57,11 +42,17 @@ def dijkstra(dico: dict, depart: str, arrivee: str) -> list:
                          "distance": float("inf")} for noeud in dico.keys()}
     visites = set()
     distances[depart]["distance"] = 0
+    """
+    file pour donner prochain noeud
+    elle contiendra les noeuds non visités dans l'ordre de distance
+    """
+    f = deque()
+    f.appendleft(depart)
 
-    # tant qu'on n'a pas visité tous les noeuds
-    while len(visites) < len(dico.keys()):
+    # tant que la file n'est pas vide
+    while f:
         # récupère le noeud (non visité) avec la plus courte distance
-        en_cours = get_mini(distances, visites)
+        en_cours = f.pop()
         visites.add(en_cours)
         for voisin in dico[en_cours]:
             """
@@ -74,6 +65,23 @@ def dijkstra(dico: dict, depart: str, arrivee: str) -> list:
             if dist_calc < distances[voisin[0]]["distance"]:
                 distances[voisin[0]]["distance"] = dist_calc
                 distances[voisin[0]]["precedant"] = en_cours
+                """
+                maj de la file
+                on place le noeud 'voisin' au bon endroit
+                dans la file (en fonction distance mini)
+                """
+                if voisin[0] not in visites:
+                    indice = 0
+                    insertion = False
+                    for noeud in f:
+                        if distances[noeud]["distance"] < dist_calc:
+                            f.insert(indice, voisin[0])
+                            insertion = True
+                            break
+                        indice += 1
+                    # insertion en première place si pas déjà inséré
+                    if not insertion:
+                        f.append(voisin[0])
 
     # reconstruction du chemin
     chemin = []

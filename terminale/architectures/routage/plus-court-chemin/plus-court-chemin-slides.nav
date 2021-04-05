@@ -110,14 +110,24 @@
 \headcommand {\beamer@framepages {43}{43}}
 \headcommand {\slideentry {4}{2}{5}{44/44}{Mise en application}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@subsectionpages {40}{44}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{45}{Complexité}}
-\headcommand {\slideentry {4}{3}{1}{45/46}{Complexité}{0}}
-\headcommand {\beamer@framepages {45}{46}}
-\headcommand {\beamer@partpages {1}{47}}
-\headcommand {\beamer@subsectionpages {45}{47}}
-\headcommand {\beamer@sectionpages {38}{47}}
-\headcommand {\beamer@documentpages {47}}
-\headcommand {\gdef \inserttotalframenumber {45}}
-\headcommand {\slideentry {4}{3}{2}{47/47}{Complexité}{0}}
+\headcommand {\slideentry {4}{2}{6}{45/45}{Mise en application}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {4}{2}{7}{46/46}{Mise en application}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\slideentry {4}{2}{8}{47/47}{Mise en application}{0}}
 \headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {4}{2}{9}{48/48}{Mise en application}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {4}{2}{10}{49/49}{Mise en application}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\beamer@subsectionpages {40}{49}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{50}{Complexité}}
+\headcommand {\slideentry {4}{3}{1}{50/51}{Complexité}{0}}
+\headcommand {\beamer@framepages {50}{51}}
+\headcommand {\slideentry {4}{3}{2}{52/52}{Complexité}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\beamer@partpages {1}{52}}
+\headcommand {\beamer@subsectionpages {50}{52}}
+\headcommand {\beamer@sectionpages {38}{52}}
+\headcommand {\beamer@documentpages {52}}
+\headcommand {\gdef \inserttotalframenumber {50}}

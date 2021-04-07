@@ -1,0 +1,59 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{TypeBAC}}}}
+\fancyhead[C]{\textbf{Sujet bac 07}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+    On s’intéresse à la suite d’entiers définie par
+    $U_ 1 = 1$, $U_2 = 1$ et, pour tout entier naturel n, par $U_{n+2} = U_{n+1} + U_n$ .
+
+    Elle s’appelle la suite de Fibonnaci.
+    Écrire la fonction fibonacci qui prend un entier n > 0 et qui renvoie l’élément d’indice n de cette suite.
+
+    On utilisera une programmation dynamique (pas de récursivité).
+
+    \begin{center}
+    \begin{lstlisting}[language=Python]
+>>> fibonacci(1)
+1
+>>> fibonacci(2)
+1
+>>> fibonacci(25)
+75025
+>>> fibonacci(45)
+1134903170   
+    \end{lstlisting}
+    \captionof{code}{Exemples}
+    \label{CODE}
+    \end{center}
+    
+\end{exo}
+\begin{exo}
+    Les variables \emph{liste\_eleves} et \emph{liste\_notes} ayant été préalablement définies et étant
+    de même longueur, la fonction \emph{meilleures\_notes} renvoie la note maximale qui a été
+    attribuée, le nombre d’élèves ayant obtenu cette note et la liste des noms de ces élèves.
+    Compléter le code Python de la fonction \emph{meilleures\_notes} ci-dessous.
+\lstinputlisting[firstline=1 ,lastline=19 ]{"scripts/exo-07.py"}
+\begin{center}
+\begin{lstlisting}[language=Python]
+>>> meilleures_notes()
+(80, 3, ['c', 'f', 'h'])
+\end{lstlisting}
+\captionof{code}{Une fois complété, le code donne}
+\label{CODE}
+\end{center}
+\end{exo}
+\end{document}

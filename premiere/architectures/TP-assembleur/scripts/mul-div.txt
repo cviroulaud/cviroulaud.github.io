@@ -1,0 +1,5 @@
+      LDR R1,.InputNum
+//divise par 2 (3 fois)
+      LSR R0,R1,#3
+//multiplie par 2 (3 fois)
+      LSL R0,R1,#3

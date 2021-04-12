@@ -1,0 +1,53 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Exercices requêtes avancées}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{commentprof}
+animaux-requetes-avancees.zip sur site
+\end{commentprof}
+\begin{exo}
+La clinique vétérinaire utilise la base de données construite précédemment.
+\begin{enumerate}
+\item Ouvrir la base \emph{animaux-requetes-avancees.db} .
+\item Écrire les requêtes simples pour:
+\begin{enumerate}
+\item insérer l'espèce \emph{poisson} dans la table \emph{Especes},
+\item insérer le soin \emph{patte cassée} à l'animal d'identifiant 3 dans la table \emph{Soins},
+\item sélectionner les animaux de 10 ans et plus, ordonnés par nom.
+\item sélectionner tous les soins distincts réalisés,
+\item compter tous les soins réalisés,
+\item compter tous les soins distincts réalisés,
+\item compter le nombre de stérilisations réalisé,
+\item renommer l'animal \emph{charly} en \emph{charlie}.
+\end{enumerate}
+\item Écrire les requêtes pour:
+\begin{enumerate}
+\item trouver l'espèce de \emph{zappy},
+\item donner les noms des chats dans l'ordre alphabétique,
+\item compter le nombre de chiens,
+\item compter le nombre de soins pour \emph{chouchou},
+\item donner le nom (par ordre alphabétique) de tous les chats qui ont subi une \emph{stérilisation},
+\item insérer le poisson \emph{bubulle}, âgé de 8 ans, dans la table \emph{Animaux},
+\item insérer le soin \emph{stérilisation} pour \emph{cartman}.
+\end{enumerate}
+\item Les soins prodigués par le vétérinaire sont souvent les mêmes. Quelle modification pourrait-on mettre en place pour améliorer le schéma de la base?
+\item Écrire le modèle relationnel avec la modification apportée puis écrire les requêtes permettant de reconstruire la base.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Se rendre sur la page \url{https://tinyurl.com/y5dvjce6} et s'entraîner en fonction du niveau et des besoins.
+\end{exo}
+\end{Form}
+\end{document}

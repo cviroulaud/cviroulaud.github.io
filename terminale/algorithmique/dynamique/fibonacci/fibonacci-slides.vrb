@@ -1,0 +1,9 @@
+\frametitle{}
+
+    %\begin{activite}
+        \begin{enumerate}
+            \item Tester la fonction \emph{fibo} pour $n=8$, $n=10$.
+            \item À l'aide d'une variable globale (c'est mal) \emph{compteur}, observer le nombre d'appels réalisés en fonction de \emph{n}.
+        \end{enumerate}
+        %\end{activite}
+

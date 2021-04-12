@@ -1,0 +1,3 @@
+minecraft
+
+pour effet de bord, s'appuyer sur DFS_rec dans mod_graphe ou arbre_implementation_dom (si on appelle plusieurs fois la fonction get_elements_by_tagname)

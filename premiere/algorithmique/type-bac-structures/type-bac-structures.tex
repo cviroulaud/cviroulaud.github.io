@@ -1,0 +1,72 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Structures}}}}
+\fancyhead[C]{\textbf{Exercices type bac}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+\fancyhead[R]{Première - NSI}
+%\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+    Soit le couple (note,coefficient):
+    \begin{itemize}
+        \item note est un nombre de type flottant (float) compris entre 0 et 20 ;
+        \item coefficient est un nombre entier positif.
+    \end{itemize}
+    Les résultats aux évaluations d'un élève sont regroupés dans une liste composée de couples (note,coefficient).
+    Écrire une fonction \textbf{moyenne} qui renvoie la moyenne pondérée de cette liste donnée en
+    paramètre.
+
+    Par exemple, l’expression moyenne([(15,2),(9,1),(12,3)]) devra renvoyer le
+    résultat du calcul suivant :
+    $$\dfrac{2 × 15 + 1 × 9 + 3 × 12}{2+1+3} = 11,83$$
+\end{exo}
+\begin{exo}
+    Écrire une fonction \textbf{RechercheMinMax} qui prend en paramètre un tableau de nombres
+    non triés tab, et qui renvoie la plus petite et la plus grande valeur du tableau sous la
+    forme d’un dictionnaire à deux clés ‘min’ et ‘max’. Les tableaux seront représentés sous
+    forme de liste Python.
+
+    \begin{center}
+        \begin{lstlisting}[language=Python]
+>>> tableau = [0, 1, 4, 2, -2, 9, 3, 1, 7, 1]
+>>> resultat = rechercheMinMax(tableau)
+>>> resultat
+{'min': -2, 'max': 9}
+>>> tableau = []
+>>> resultat = rechercheMinMax(tableau)
+>>> resultat
+{'min': None, 'max': None}
+    \end{lstlisting}
+        \captionof{code}{Exemples}
+        \label{CODE}
+    \end{center}
+
+\end{exo}
+\begin{exo}
+    Un professeur de NSI décide de gérer les résultats de sa classe sous la forme d’un
+    dictionnaire :
+    \begin{itemize}
+        \item les clefs sont les noms des élèves ;
+        \item les valeurs sont des dictionnaires dont les clefs sont les types d’épreuves et les
+        valeurs sont les notes obtenues associées à leurs coefficients.
+    \end{itemize}
+    Avec :
+\lstinputlisting[firstline=1 ,lastline=12 ]{"scripts/exo-dico.py"}
+
+L’élève dont le nom est Durand a ainsi obtenu au DS2 la note de 8 avec un coefficient 4.
+
+Le professeur crée une fonction \textbf{moyenne} qui prend en paramètre le nom d’un de ces élèves et lui renvoie sa moyenne arrondie au dixième.
+Compléter le code du professeur ci-dessous :
+\lstinputlisting[firstline=15 ,lastline=26 ]{"scripts/exo-dico.py"}
+\end{exo}
+\end{document}

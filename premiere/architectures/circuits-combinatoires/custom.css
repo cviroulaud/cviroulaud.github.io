@@ -1,0 +1,10 @@
+td{
+    border: 1px solid black !important;
+    text-align: center !important;
+    font-size: xx-large !important;
+}
+table{
+    margin: 0 10% 0 0;/*auto !important;*/
+    float: left;
+}
+

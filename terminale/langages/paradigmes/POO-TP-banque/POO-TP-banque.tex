@@ -1,0 +1,120 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{TP La banque périgourdine}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{commentprof}
+Créer un dossier avec le fichier mod\_temperature.py.
+\end{commentprof}
+\section{Problématique}
+La \emph{Banque des Périgourdins (BdP)} est une institution nouvellement implantée en Dordogne. Outre un compte courant classique, elle propose également des comptes rémunérés à différents taux. À une date fixée, la banque calcule les intérêts et crédite les comptes rémunérés des clients. Elle vous demande de créer un logiciel pour administrer correctement sa clientèle.
+\paragraph{Réflexion en commun:} En utilisant les principes de la programmation orientée objet (POO), quels objets pouvons-nous créer pour modéliser le problème?
+\section{Modularité}
+\begin{commentprof}
+Un jeu comme Fortnite est composé de centaines d'objets et emploie des centaines d'intervenants. Un programmeur n'a pas besoin de connaître l'implémentation de chaque objet. Ce dernier lui fournit par contre une interface qui définit ce que peut faire l'objet. La classe garantit ce que va faire l'objet (mais pas comment le programmeur va s'en servir).
+\end{commentprof}
+Un intérêt important de programmer en POO est de rendre les structures indépendantes et réutilisables. Le programmeur peut importer une classe sans connaître son implémentation. Il n'a affaire qu'à son \emph{interface}: elle peut être définie comme un contrat entre la classe et le programmeur: La classe garantit ce que vont faire les méthodes.
+Ainsi l'utilisateur peut se référer à la documentation de la classe grâce à l'instruction suivante:
+\begin{lstlisting}
+help(nom_de_la_classe)
+\end{lstlisting}
+Il faut bien entendu au préalable importer la classe dans le programme.
+\begin{activite}
+\begin{enumerate}
+\item Depuis l'EDI créer un fichier \emph{modularite\_poo.py} dans le même dossier que \emph{mod\_temperature.py}.
+\item Importer la classe Temperature située dans le fichier mod\_temperature.py.
+\item Afficher la documentation de la classe. Quel est le rôle de la méthode \emph{convertir}? Doit-on lui transmettre des paramètres?
+\item Créer une instance de la classe Temperature (un objet).
+\item Définir la température à 11.9°C.
+\item Afficher le renvoi de la méthode \emph{convertir} sur cet objet.
+\item Afficher la température en degré Fahrenheit.
+\end{enumerate}
+\begin{commentprof}
+environnement de développement « intégré » (abrégé EDI en français ou IDE en anglais, pour integrated development environment)\\réponse: 285.05K / 53.42°F
+\end{commentprof}
+\end{activite}
+
+\section{Définir les classes}
+Notre banque est définie par 3 classes: \emph{Banque, Client, Compte}. Dans un premier temps chaque groupe devra implémenter une des classes au choix, en respectant la documentation ci-après. Chaque classe sera construite dans un fichier indépendant avec les noms \emph{mod\_banque.py, mod\_client.py, mod\_compte.py}. Ensuite, il devra récupérer les deux autres classes créées par les autres groupes et construire le programme de gestion de la banque.
+\paragraph{NB:}Les attributs précédés d'un \_ sont considérés privés. Lors de la création de l'objet, ils sont crées avec une valeur par défaut indépendamment des variables fournies par l'utilisateur. 
+\begin{commentprof}
+déclaration fonction avec type:
+def maf(d:int, t:str) -> bool:
+\\Il est possible de créer d'autres méthodes dites \emph{internes}.\\
+comment gérer le pb des erreurs qui s'affichent tant qu'on n'a pas récupéré le module de l'autre? créer classe "vide" avec \textbf{pass}
+\end{commentprof}
+\subsection{Module banque}
+La banque possède les attributs suivants:
+\begin{itemize}
+\item \emph{nom}: str; le nom de la banque,
+\item \emph{taux}: float; le taux de rémunération des comptes,
+\item \emph{\_clients}: list; liste des clients de la banque.
+\item \emph{\_id\_libre}: int; prochain identifiant unique donné au nouveau compte, initialisé à 1.
+\end{itemize}
+Les méthodes fournies à l'utilisateur sont:
+\begin{itemize}
+\item\emph{cree\_client(nom: str) $\rightarrow$ None}: crée un nouveau client, lui crée un compte courant et un compte rémunéré par défaut,
+\item \emph{trouve\_client(nom: str) $\rightarrow$ Client}: renvoie le client avec le \emph{nom} spécifié s'il existe False sinon,
+\item \emph{remunere() $\rightarrow$ None}: applique le taux de rémunération à tous les comptes rémunérés des clients.
+\end{itemize}
+\subsection{Module client}
+Le client possède les attributs suivants:
+\begin{itemize}
+\item \emph{nom}: str; le nom du client,
+\item \emph{\_comptes}: dict; regroupe les comptes du client; l'identifiant du compte est la clé.
+\end{itemize}
+Les méthodes fournies à l'utilisateur sont:
+\begin{itemize}
+\item \emph{ouvre\_compte(remunere: bool, i: int)\;\rightarrow\;None}: crée un nouveau compte dans \emph{\_comptes} avec \emph{i} pour clé,
+\item \emph{ferme\_compte(i: int)\;\rightarrow\;str}: clôture le compte ayant \emph{i} pour clé et renvoie "Le compte est supprimé"; sinon renvoie "Ce compte n'existe pas.",
+\item \emph{get\_comptes() $\rightarrow $ dict}: renvoie le dictionnaire des comptes.
+%\item \emph{credite\_compte(s:float,i:integer) -> None}: crédite le compte de rang \emph{i} dans la liste \emph{\_comptes} de la somme \emph{s},
+%\item \emph{debite\_compte(s:float,i:integer) -> string}: débite le compte de rang \emph{i} dans la liste \emph{\_comptes} seulement si le crédit restant est supérieur à \emph{s}; renvoie le message "opération effectuée" ou "le compte n'est pas suffisamment approvisionné" sinon. 
+\end{itemize}
+\subsection{Module compte}
+Le compte possède les attributs suivants:
+\begin{itemize}
+\item \emph{\_credit}: float; argent restant sur le compte, initialisée à 0,
+\item \emph{est\_remunere}: bool; si vrai le compte est rémunéré,
+\end{itemize}
+Les méthodes fournies à l'utilisateur sont:
+\begin{itemize}
+\item \emph{credite(s: float) $\rightarrow$ None}: crédite le compte de la somme \emph{s},
+\item \emph{debite(s: float) $\rightarrow$ str}: débite le compte de la somme \emph{s} seulement si le crédit restant est supérieur ou égal à \emph{s}; renvoie le message "Opération effectuée" ou "Crédit insuffisant" sinon,
+%\item \emph{est\_solvable() -> boolean}: renvoie True si le crédit est strictement positif,
+\item \emph{get\_credit() $\rightarrow$ float}: renvoie la somme sur le compte.
+\end{itemize}
+\section{Créer la banque}
+\begin{commentprof}
+Il faut utiliser les méthodes telles que définies même si elle ne semble pas les plus adaptées.
+\end{commentprof}
+Après avoir récupéré les trois classes, il faut créer un programme \emph{banque\_des\_perigourdins.py} qui simulera l'activité bancaire. Réaliser le déroulement suivant:
+\begin{itemize}
+\item Créer la banque \emph{Banque des Périgourdins} avec le taux de rémunération 1,01.
+\item Créer les clients \emph{Jay, Laure, Bertran}.
+\item Créditer les comptes de Jay:
+\begin{itemize}
+\item 1000 s'il s'agit d'un compte courant,
+\item 200 s'il s'agit d'un compte rémunéré.
+\end{itemize}
+\item Afficher les sommes sur les comptes de Jay en précisant s'il s'agit d'un compté rémunéré ou non.
+\item Rémunérer les comptes.
+\item Afficher les sommes sur les comptes de Jay en précisant s'il s'agit d'un compté rémunéré ou non.
+\end{itemize}
+\begin{commentprof}
+pour aller + loin:
+\begin{itemize}
+\item créer un nouveau compte
+\item get\_info\_client() donne nom et numéro des comptes
+\item ferme\_compte() ne pas supprimer compte courant; reverser argent du compte sur compte courant
+\end{itemize}
+\end{commentprof}
+\end{Form}
+\end{document}

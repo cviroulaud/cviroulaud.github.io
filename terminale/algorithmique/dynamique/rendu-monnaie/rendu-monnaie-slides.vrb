@@ -1,0 +1,20 @@
+\frametitle{Le tableau se remplit d'abord par les petites valeurs}
+
+    \begin{itemize}
+        \item<1-> \begin{lstlisting}[language=Python]
+track = [0, 0, 0, 0, 0, 0, 0, 0]
+        \end{lstlisting}
+        \item<2-> \begin{lstlisting}[language=Python]
+track = [0, 1, 0, 0, 0, 0, 0, 0]
+        \end{lstlisting}
+        \item<3-> \begin{lstlisting}[language=Python]
+track = [0, 1, 1, 0, 0, 0, 0, 0]
+        \end{lstlisting}
+        \item<4-> \begin{lstlisting}[language=Python]
+track = [0, 1, 1, 2, 0, 0, 0, 0]
+        \end{lstlisting}
+        \item<5-> \begin{lstlisting}[language=Python]
+track = [0, 1, 1, 2, 2, 0, 0, 0]
+        \end{lstlisting}
+    \end{itemize}
+

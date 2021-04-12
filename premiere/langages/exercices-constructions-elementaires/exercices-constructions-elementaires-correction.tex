@@ -1,0 +1,62 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Exercices constructions élémentaires - correction}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Première - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+Répondre aux questions sans ordinateur.
+\begin{enumerate}
+\item 6
+\item 64
+\item La première instruction affiche \emph{i+} la seconde affiche un message d'erreur.
+\item La séquence inverse les valeurs de a et b. En Python il est possible de faire cela sans valeur intermédiaire:
+\begin{lstlisting}
+a,b = b,a
+\end{lstlisting}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=10,lastline=12]{"scripts/rectangle.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=10,lastline=18]{"scripts/age.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=10,lastline=22]{"scripts/cinema.py"}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Différentes divisions sont possibles:
+\begin{itemize}
+\item 20/3 renvoie le résultat de la division. Nous reviendrons plus tard sur le \emph{type} de ce résultat.
+\item 20//3 renvoie la partie entière de la division. C'est un \emph{entier}.
+\item 20\%3 renvoie le reste de la division. C'est un \emph{entier}. On appelle cette opération le \emph{modulo}.
+\end{itemize}
+\item Le programme répond directement à la question 3
+\lstinputlisting[firstline=10,lastline=26]{"scripts/seconde.py"}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=10,lastline=18]{"scripts/multiplication.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=10,lastline=14]{"scripts/rebours.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=10,lastline=15]{"scripts/pair.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=10,lastline=31]{"scripts/moyenne.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=9,lastline=31]{"scripts/devinette.py"}
+\end{exo}
+\end{Form}
+\end{document}

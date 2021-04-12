@@ -1,0 +1,191 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Utilisation de la BDD des bandes dessinées}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{commentprof}
+mettre bd-avec-emprunts.zip
+\end{commentprof}
+\section{Problématique}
+La \emph{base de données} étant crée, il faut maintenant pouvoir en modifier son contenu en fonction des demandes de l'utilisateur.
+\begin{center}
+\shadowbox{\parbox{15cm}{\centering Quelles sont les instructions permettant de manipuler les données d'une base?}}
+\end{center}
+\section{Insérer des données}
+\subsection{Syntaxe}
+La collection de bandes dessinées étant amenées à augmenter, la première opération nécessaire est de pouvoir ajouter une entité dans une table. Le code \ref{insertion} ajoute l'auteur \emph{Riad Sattouf} dans la table \emph{Auteurs}.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+INSERT INTO Auteurs VALUES (309, "Sattouf", "Riad");
+\end{lstlisting}
+\captionof{code}{Insertion d'un auteur}
+\label{insertion}
+\end{center}
+La nécessité de connaître un \emph{id} non utilisé peut être contraignant. Heureusement dans le schéma de la relation, cet attribut est affublé de l'étiquette \emph{AUTOINCREMENT}. Le code \ref{insertion2} ajoute un nouvel auteur.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+INSERT INTO Auteurs (nom, prenom) VALUES ("Tardi", "Jacques");
+\end{lstlisting}
+\captionof{code}{Insertion en spécifiant les attributs}
+\label{insertion2}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Télécharger et utiliser la base \emph{bd-avec-emprunts.db}.
+\item Ajouter les deux auteurs.
+\item Ajouter trois emprunteurs:
+\begin{itemize}
+\item Alice Knuth né le 19 avril 2002, 
+\item Bob Nelson né le 24 juillet 1990,
+\item Christophe Viroulaud né le 08 décembre 1987.
+\end{itemize}
+\end{enumerate}
+\end{activite}
+\subsection{Respect des contraintes d'intégrité}
+Les contraintes d'intégrité sont vérifiées au moment de l'insertion. Ainsi le code \ref{insertion} renvoie une erreur.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+INSERT INTO Auteurs VALUES (309, "Giraud", "Jean");
+\end{lstlisting}
+\captionof{code}{Erreur d'insertion}
+\label{insertion}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Quelle contrainte d'intégrité n'est pas respectée lors de cette tentative d'insertion?
+\item La requête \ref{integriteerreur} provoquera-t-elle une erreur? Pour quelle raison?
+\begin{center}
+\begin{lstlisting}[language=SQL]
+INSERT INTO Auteurs (nom, prenom) VALUES ("Sfar", "Joann");
+\end{lstlisting}
+\captionof{code}{Provoque-t-on une erreur?}
+\label{integriteerreur}
+\end{center}
+\end{enumerate}
+\end{activite}
+\section{Sélectionner des données}
+\subsection{Syntaxe}
+Récupérer des données de la base est une autre manipulation indispensable afin de les utiliser ensuite dans une application. Le code \ref{select1} renvoie les informations des tous les auteurs.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+SELECT id, nom, prenom FROM Auteurs;
+\end{lstlisting}
+\captionof{code}{Sélectionner des données}
+\label{select1}
+\end{center}
+Si on sait que l'on doit récupérer toutes les colonnes, on peut utiliser le symbole *.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+SELECT * FROM Auteurs;
+\end{lstlisting}
+\captionof{code}{Sélectionner toutes les données}
+\label{select2}
+\end{center}
+\subsection{Contrainte sur la sélection}
+Les codes \ref{select1} ou \ref{select2} renvoient toutes les entités de la table \emph{Auteurs} ce qui ne représente que peu d'intérêt. Le code \ref{where} renvoie tous les auteurs qui ont \emph{Christophe} pour prénom.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+SELECT nom FROM Auteurs WHERE prenom = "Christophe";
+\end{lstlisting}
+\captionof{code}{Clause WHERE}
+\label{where}
+\end{center}
+La clause \emph{WHERE} évalue une expression booléenne. Les opérateurs de comparaison classiques peuvent être utilisés, ainsi que les opérateurs logiques (AND, OR, NOT).
+\begin{center}
+\begin{lstlisting}[language=SQL]
+SELECT nom FROM Auteurs WHERE prenom = "Christophe" AND NOT nom = "Arleston";
+\end{lstlisting}
+\captionof{code}{Expression booléenne}
+\label{where2}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Tester les requêtes précédentes.
+\item Sélectionner les bandes dessinées dont l'\emph{id du genre} est supérieur à 10.
+\item Sélectionner les bandes dessinées dont le premier tome est sorti en 2010 ou après.
+\end{enumerate}
+\end{activite}
+\subsection{Sélectionner une chaîne de caractère approchante}
+Il peut être fastidieux d'effectuer une recherche exacte sur une chaîne de caractère. Le code \ref{like} renvoie toutes les bandes dessinées qui contiennent \emph{Astérix} dans leur titre.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+SELECT * FROM Bandes_dessinees WHERE titre LIKE "%Astérix%";
+\end{lstlisting}
+\captionof{code}{Recherche de chaîne de caractère}
+\label{like}
+\end{center}
+La chaîne \%Astérix\% est un motif où le \% est un \emph{joker}. Il signifie que SQL peut le remplacer par n'importe quelle chaîne. Si on sait qu'il n'y aura qu'un seul caractère on peut utiliser le \emph{joker} \_. Ainsi le code \ref{like2} renvoie toutes les lignes qui contiennent \emph{Astérix, Asterix...}.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+SELECT * FROM Bandes_dessinees WHERE titre LIKE "%Ast_rix%";
+\end{lstlisting}
+\captionof{code}{Joker}
+\label{like2}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Tester les requêtes précédentes.
+\item Sélectionner les auteurs dont le nom commence par un \emph{T}.
+\end{enumerate}
+\end{activite}
+\section{Modifier des données}
+Il peut être nécessaire de modifier le contenu de certaines entités. Ainsi l'emprunteur \emph{Christophe Viroulaud} n'est pas né en 1987 mais en 1977.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+UPDATE Emprunteurs SET naissance = "1977-12-08" WHERE nom = "Viroulaud";
+\end{lstlisting}
+\captionof{code}{Modification d'une date de naissance}
+\label{update}
+\end{center}
+La clause \emph{WHERE} se construit sur les mêmes principes que précédemment. L'exécution de la requête renvoie le nombre d'entités (enregistrements) affectées. Il peut être nul.
+\section{Supprimer des données}
+\subsection{Syntaxe}
+Enfin la syntaxe suivante permet de supprimer une ligne d'une table.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+DELETE FROM Emprunteurs WHERE nom = "Viroulaud";
+\end{lstlisting}
+\captionof{code}{Modification d'une date de naissance}
+\label{delete}
+\end{center}
+Il est possible de supprimer plusieurs lignes en une seule requête.
+\subsection{Respect des contraintes}
+Le code \ref{reference} renvoie une erreur: il n'est pas possible de supprimer un emprunteurs s'il a encore des bandes dessinées en sa possession. Ainsi dans la table \emph{Emprunts} l'attribut \emph{id\_emprunteurs} est référencé comme une clé étrangère de l'attribut \emph{id} de la table \emph{Emprunteurs}.
+\begin{center}
+\begin{lstlisting}[language=SQL]
+DELETE FROM Emprunteurs WHERE id = 1;
+\end{lstlisting}
+\captionof{code}{Contrainte de référence}
+\label{reference}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Que doit réaliser la requête \ref{delete}?
+\item Tester les requêtes \ref{update}, \ref{delete} et \ref{reference}.
+\item Pour quelle raison la requête \ref{referenceisbn} renverra une erreur?
+\begin{center}
+\begin{lstlisting}[language=SQL]
+DELETE FROM Bandes_dessinees WHERE isbn = 2205050699;
+\end{lstlisting}
+\captionof{code}{Cette requête renvoie une erreur}
+\label{referenceisbn}
+\end{center}
+\item Quelle requête doit-on réaliser préalablement avant d'effectuer la requête \ref{referenceisbn}? Que signifie-t-elle dans la vie réelle?
+\end{enumerate}
+\end{activite}
+\begin{aretenir}[]
+Toute exécution de requête est \textbf{définitive}. Il peut être pertinent d'effectuer une copie de sauvegarde avant d'effectuer d'importantes manipulations.
+\end{aretenir}
+\end{Form}
+\end{document}

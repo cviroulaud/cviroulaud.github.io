@@ -1,0 +1,67 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Exercices - manipulation de base de données}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{commentprof}
+Déposer \emph{bdd-exo.zip} sur site
+\end{commentprof}
+
+\begin{exo}
+Regrouper les termes synonymes: colonne, entité, table, domaine, attribut, ligne, schéma, type, base de données, column, row, relation.
+\end{exo}
+\begin{exo}
+Un cabinet de vétérinaire a besoin d'une application pour recenser les animaux soignés. Les informations utiles sont le nom, l'espèce (chat, chien...) et l'âge de chaque animal. Puis il faudra pouvoir répertorier tous les soins effectués pour chaque animal.
+\begin{enumerate}
+\item Établir un modèle relationnel répondant à la demande.
+\item Créer une base de données \emph{veterinaire.db}.
+\item Créer les tables correspondant au modèle.
+\end{enumerate}
+\end{exo}
+\begin{center}
+\shadowbox{\parbox{15cm}{\centering Télécharger le dossier compressé \emph{bdd\_exo.zip} sur le site \url{https://cviroulaud.github.io}, puis extraire les bases de données utiles pour les exercices.
+}}
+\end{center}
+\begin{exo}
+\begin{enumerate}
+\item Ouvrir la base \emph{departements.db}
+\item À l'aide d'une recherche web, trouver l'utilité du code \emph{soundex}.
+\item Écrire les requêtes pour sélectionner:
+\begin{enumerate}
+\item les informations du département 24,
+\item le nom des départements avec le soundex \emph{M200},
+\item le nom des départements dont le code (numéro) est strictement inférieur à 10,
+\item le code et le nom des départements dont le code est compris entre 20 et 30 strictement,
+\item le nom des départements qui contiennent \emph{haut},
+\item le nom des départements qui ne sont pas des noms composés.
+\end{enumerate} 
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Ouvrir la base \emph{employes.db}
+\item Écrire les requêtes pour sélectionner:
+\begin{enumerate}
+\item les informations de \emph{GARFIELD},
+\item le nom des employés qui ont pour désignation \emph{TECH},
+\item le nom des employés qui commencent par un \emph{H},
+\item le nom des employés embauchés (\emph{hired on}) après le 1° janvier 1997,
+\item le nom et le salaire des employés qui sont payés entre 25000 et 55000 strictement et qui touchent une commission.
+\item Ajouter l'employé \emph{DURAN}, embauché le 13 janvier 1999 en tant que \emph{TECH}. Son manager sera GARFIELD (id 6), son département le 4. Il gagnera 35000.
+\item Modifier le salaire de \emph{FILLMORE} à 60000.
+\end{enumerate} 
+\end{enumerate}
+\end{exo}
+\end{Form}
+\end{document}

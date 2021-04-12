@@ -1,0 +1,14 @@
+tr{
+    background: #ffffff !important;
+}
+td{
+        vertical-align: bottom !important;
+}
+table .pile{
+    border: 1px solid black !important;
+    text-align: center !important;
+    font-size: xx-large !important;
+}
+table .pile{
+    margin-left: 100px !important;
+}

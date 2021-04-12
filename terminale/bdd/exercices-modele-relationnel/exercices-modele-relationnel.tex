@@ -1,0 +1,53 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Exercices modèle relationnel}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+On souhaite modéliser un annuaire téléphonique simple dans lequel chaque personne, identifiée par son nom et son prénom, est associée à son numéro de téléphone.
+\begin{enumerate}
+\item Proposer un modèle relationnel de cet annuaire.
+\item Dire si chacun des ensembles suivants est une relation valide pour le schéma \emph{Annuaire}:
+\begin{enumerate}
+\item $\{\}$
+\item $\{("Dupont","Jean","012345678")\}$
+\item $\{("Dupont","Jean","012345678"), ("Durant","Jacques","012345678")\}$
+\item $\{("Dupont","Jean","012345678"), ("Dupont","Jean","896789")\}$
+\item $\{("Dupont","Jean","012345678"), ("Durant","Jacques")\}$
+\item $\{("Dupont","Jean",896789)\}$
+\end{enumerate}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+On se propose de décrire le schéma d'un bulletin scolaire d'élève par le modèle relationnel suivant:
+\begin{itemize}
+\item Eleves(\underline{nom \emph{String}, prenom \emph{String}})
+\item Matieres(intitule \emph{String}, \underline{id \emph{Integer}})
+\item Notes(\underline{\dashuline{nom\_eleve} \emph{String}, \dashuline{id\_matiere} \emph{Integer}}, notes \emph{Integer})
+\end{itemize}
+\begin{enumerate}
+\item Relever et corriger les erreurs de ce schéma.
+\item Remplir chaque relation avec au moins deux entités.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Métro parisien
+\begin{enumerate}
+\item Construire un modèle relationnel du métro parisien. Ce-dernier est composé de \emph{stations} qui forment une \emph{ligne}. Il peut circuler plusieurs lignes dans une même station.
+\item Ajouter une relation qui contiendra les horaires de passage de chaque ligne, pour chaque station.
+\end{enumerate}
+
+\end{exo}
+\end{Form}
+\end{document}

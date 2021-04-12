@@ -1,0 +1,23 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python, basicstyle=\small, xrightmargin=1em]
+for i in range(len(tab)):
+    en_cours = tab[i]
+    pos = i
+    while pos > 0 and en_cours < tab[pos-1]:
+\end{lstlisting}
+\end{center}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,-2) grid (5,-1);
+            \node at(0.5,-1.5) {8};
+            \node at(1.5,-1.5) {7};
+            \node at(2.5,-1.5) {5};
+            \node at(3.5,-1.5) {4};
+            \node at(4.5,-1.5) {1};
+        \end{tikzpicture}
+        \captionof{code}{Le tableau est inversé. La boucle interne effectue \emph{i} itérations.}
+        \label{CODE}
+        \end{center}
+

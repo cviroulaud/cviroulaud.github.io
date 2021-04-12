@@ -1,0 +1,173 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Arbre binaire - notation polonaise}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Problématique}
+En 1920 le mathématicien Jan Łukasiewicz présente la \emph{notation polonaise} qui permet d'exprimer des expressions mathématiques sans utiliser de parenthèse, mais traitant néanmoins toute formule sans ambiguïté.\\
+L'expression arithmétique 
+$$2~×~(3+4)$$
+devient en notation polonaise
+$$×~2+3~4$$
+Dans les années 50, Charles L. Hamblin s'intéresse à variante \emph{inversée} de cette notation. Elle est en effet particulièrement bien adaptée à la manière dont les processeurs traitent leurs opérandes.
+En notation polonaise inversée, l'expression précédente s'écrit
+$$2~3~4~+~×$$
+En 1972 Hewlett-Packard sort une calculatrice financière en notation polonaise inversée. 
+\begin{commentprof}
+évite erreurs avec oubli de parenthèses; après un temps d'adaptation, gain de temps (moins de touches à utiliser)
+\end{commentprof}
+\begin{center}
+\shadowbox{\parbox{16cm}{\centering Quelle représentation en mémoire permet de réaliser un calcul en notation polonaise inversée?}}
+\end{center}
+\section{Arbre binaire}
+\subsection{Définition}
+Un \emph{arbre binaire} est un cas particulier des structures arborescentes.
+\begin{aretenir}[]
+Un \textbf{arbre binaire} est une structure arborescente où chaque nœud possède \textbf{au plus} deux fils. L'ordre des nœuds-fils est pris en compte: on parle alors de fils \emph{gauche} et fils \emph{droit}.
+\end{aretenir}
+\begin{commentprof}
+Le vocabulaire défini précédemment s'applique donc pour ce cas de figure.\\
+sous-arbre gauche et droit\\
+nœud interne = qui a au moins 1 enfant (pas les feuilles donc)
+\end{commentprof}
+La représentation d'un nœud n'est pas généralisée dans la littérature (figure \ref{noeud}).
+\begin{center}
+\begin{tikzpicture}
+\node[draw] (A) at (0,0) {A};
+\node[draw] (B) at (2,0) {A};
+
+\draw (B.south west) -- (1.5,-0.7);
+\draw (B.south east) -- (2.5,-0.7);
+\end{tikzpicture}
+\captionof{figure}{Représentations d'un nœud}
+\label{noeud}
+\end{center}
+\begin{center}
+\begin{tikzpicture}
+\node[draw] (A) at (-3,0) {A};
+\node[draw] (B) at (-5,-1) {B};
+\node[draw] (C) at (-1,-1) {C};
+\node[draw] (D) at (-6,-2) {D};
+\node[draw] (E) at (-4,-2) {E};
+\node[draw] (F) at (-2,-2) {F};
+
+\draw (A) -- (B);
+\draw (A) -- (C);
+\draw (B) -- (D);
+\draw (B) -- (E);
+\draw (C) -- (F);
+
+\node[draw] (A1) at (5,0) {A};
+\node[draw] (B1) at (3,-1) {B};
+\node[draw] (C1) at (7,-1) {C};
+\node[draw] (D1) at (2,-2) {D};
+\node[draw] (E1) at (4,-2) {E};
+\node[draw] (F1) at (6,-2) {F};
+
+\draw (A1) -- (B1);
+\draw (A1) -- (C1);
+\draw (B1) -- (D1);
+\draw (B1) -- (E1);
+\draw (C1) -- (F1);
+\draw (D1.south west) -- (1.5,-2.7);
+\draw (D1.south east) -- (2.5,-2.7);
+\draw (E1.south west) -- (3.5,-2.7);
+\draw (E1.south east) -- (4.5,-2.7);
+\draw (F1.south west) -- (5.5,-2.7);
+\draw (F1.south east) -- (6.5,-2.7);
+\end{tikzpicture}
+\captionof{figure}{Représentations d'un arbre binaire}
+\label{arbre}
+\end{center}
+Un arbre binaire est:
+\begin{itemize}
+\item \textbf{équilibré} si pour chaque nœud interne, les \emph{sous-arbres gauche et droite} ont une hauteur qui diffère au plus de 1,
+\item \textbf{complet} si tous les niveaux sont remplis sauf éventuellement le dernier; les feuilles sont alors \emph{tassées à gauche},
+\item \textbf{parfait} si tous les niveaux sont remplis.
+\end{itemize}
+\subsection{Hauteur}
+La \textbf{taille} représente le nombre de nœuds qui composent l'arbre. La \textbf{hauteur (ou profondeur)} est la longueur du plus grand chemin entre la racine et une feuille.
+\begin{aretenir}[]
+Dans un arbre binaire, la taille \emph{N} et la hauteur \emph{h} sont liées par les inégalités:
+\begin{center}
+$h+1 \leqslant N \leqslant 2^{h+1}-1$
+\end{center}
+\end{aretenir}
+\begin{commentprof}
+hauteur arbre vide = -1
+\end{commentprof}
+\begin{aretenir}[Remarque]
+Si la définition de la hauteur est définie comme le nombre maximum de nœuds entre la racine et une feuille, cette propriété s'écrit:
+\begin{center}
+$h \leqslant N \leqslant 2^{h}-1$
+\end{center}
+\end{aretenir}
+
+\section{Représentation d'une expression mathématique}
+Une expression mathématique applique une \emph{opération} sur deux \emph{opérandes}. Un arbre binaire permet donc de représenter n'importe quelle opération.
+\begin{center}
+\centering
+\includegraphics[width=4cm]{ressources/npi.png}
+\captionof{figure}{Expression mathématique}
+\label{maths}
+\end{center}
+\section{Représentation d'un arbre binaire en Python}
+\subsection{Structure}
+Nous modifions légèrement le nœud utilisé dans les structures arborescentes. Un arbre vide est représenté par \emph{None}.
+\begin{center}
+\lstinputlisting[firstline=10,lastline=15]{"scripts/arbre-binaire.py"}
+\captionof{code}{Nœud d'un arbre binaire}
+\label{noeud}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Construire la variable \emph{arbre} qui représente l'expression mathématique (figure \ref{maths}).
+\item Écrire la fonction \emph{récursive} \textbf{taille(a: Noeud)$\;\rightarrow\;$int} qui renvoie le nombre de nœuds de l'arbre.
+\item Écrire la fonction \emph{récursive} \textbf{hauteur(a: Noeud)$\;\rightarrow\;$int} qui renvoie la hauteur de l'arbre.
+\end{enumerate}
+\end{activite}
+\subsection{Parcours en profondeur d'un arbre binaire}
+La notion n'est pas nouvelle, cependant le positionnement étant fixé dans un arbre binaire, on commencera par parcourir le sous-arbre gauche avant celui de droite. Ensuite des variations existent selon le moment où on \emph{affiche} la valeur du nœud traversé:
+\begin{itemize}
+\item \textbf{Parcours préfixe:}
+\begin{lstlisting}
+parcours préfixe(arbre)
+	affiche(valeur)
+	parcours préfixe(sous-arbre gauche)
+	parcours préfixe(sous-arbre droit)
+\end{lstlisting}
+\item \textbf{Parcours infixe:}
+\begin{lstlisting}
+parcours infixe(arbre)
+	parcours infixe(sous-arbre gauche)
+	affiche(valeur)
+	parcours infixe(sous-arbre droit)
+\end{lstlisting}
+\item \textbf{Parcours préfixe:}
+\begin{lstlisting}
+parcours postfixe(arbre)
+	parcours postfixe(sous-arbre gauche)
+	parcours postfixe(sous-arbre droit)
+	affiche(valeur)
+\end{lstlisting}
+\end{itemize}
+\begin{activite}
+\begin{enumerate}
+\item Écrire les trois fonctions \emph{récursives} de parcours qui affichent (\emph{print)} directement la valeur du nœud traversé.
+\item Adapter ces fonctions pour renvoyer un tableau ordonné des nœuds traversés.
+\item Quel parcours implémente la notation polonaise inverse?
+\end{enumerate}
+\end{activite}
+\end{Form}
+\end{document}

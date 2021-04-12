@@ -1,0 +1,96 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Encodage 01}}}}
+\fancyhead[C]{\textbf{Encodage caractère}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+\fancyhead[R]{Première - NSI}
+%\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Problématique}
+En première approche il semble simple de représenter une chaîne de caractère en mémoire: il suffit d'associer un numéro à chaque lettre. En pratique plusieurs contraintes apparaissent. Il faut par exemple que chaque système respecte le même encodage. De plus tous les caractères doivent être représentés.
+\begin{center}
+\shadowbox{\parbox{10cm}{\centering Comment encoder les caractères en mémoire?}}
+\end{center}
+\section{Première tentative de normalisation: ASCII}
+Dans les années 50, lors de l'apparition des premiers ordinateurs, chaque matériel utilisait son propre codage.\\L’American National Standards Institute (ANSI) propose, au début des années 60, une première tentative de normalisation: l'\textbf{ASCII}.
+\begin{activite}
+Répondre aux questions suivantes en effectuant des recherches sur le web.
+\begin{enumerate}
+\item Que signifie le sigle ASCII?
+\item Combien de bits sont utilisés dans le codage ASCII?
+\item À l'aide d'une table ASCII, encoder la phrase suivante en hexadécimal:
+\begin{center}
+\emph{La NSI est 1 super discipline!}
+\end{center}
+\item Quelles sont les limitations de l'encodage ASCII?
+\end{enumerate}
+\end{activite}
+\section{Prise en compte des différentes langues: ISO 8859}
+La norme ASCII est suffisante pour écrire l'anglais. Cependant de nombreuses langues utilisent des caractères additionnels non présents dans cette norme.\\
+L'International Organization for Standardization (ISO) a alors proposé une extension de l'encodage ASCII: \textbf{ISO 8859}. Il utilise 8 bits et assure une compatibilité avec l'ASCII: les 128 premiers caractères de la norme ISO 8859 sont ceux de la norme ASCII.
+\begin{activite}
+Répondre aux questions suivantes en effectuant des recherches sur le web.
+\begin{enumerate}
+\item Combien de caractères peut-on encoder dans une table ISO 8859?
+\item Combien de tables ISO 8859 existe-t-il?
+\item Quelle est la table utilisée pour le français?
+\item Encoder la phrase française suivante en utilisant la norme ISO 8859:
+\begin{center}
+À quelle âge apprendre la NSI? 
+\end{center}
+\end{enumerate}
+\end{activite}
+\section{Encodage universel}
+\subsection{Nouvelle norme}
+Bien que l'ISO 8859 permette de représenter un très grand nombre de caractère, il n'est par exemple pas possible d'encoder un texte qui contient des caractères de plusieurs tables. L'ISO a donc défini un jeu universel de caractère (norme ISO-10646). Chaque caractère, signe, idéogramme est associé à un numéro unique appelé \textbf{point de code}. La capacité maximale a été fixée à 32 bits.
+\begin{activite}
+\begin{enumerate}
+\item Combien de caractères peut-on représenter avec la norme ISO-10646?
+\item Combien d'octets représentent 32 bits?
+\item Trouver le point de code en hexadécimal de la lettre é. La convertir en binaire.
+\end{enumerate}
+\end{activite}
+\subsection{Représentation en mémoire}
+Une représentation naïve utiliserait quatre octets pour chaque caractère, ce qui peut s'avérer très coûteux. La norme \textbf{Unicode} définit plusieurs techniques pour économiser de l'espace. Nous étudierons particulièrement l'\textbf{UTF-8} (Universal Transformation Format), très utilisé sous Linux, les sites web...\\
+Le principe est le suivant:
+\begin{itemize}
+\item Si le \emph{bit de poids fort} (le plus à gauche) est 0, il s'agit d'un caractère ASCII codé sur les 7 bits suivants.
+\item Sinon les premiers bits de poids fort de l'octet indiquent le nombre d'octets utilisés à l'aide de 1 et se terminant par 0.
+\end{itemize}
+Le tableau ci-après montre le nombre d'octets utilisés pour encoder les caractères en UTF-8.
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+Suite d'octets (en binaire) & Bits codant \\ 
+\hline 
+0xxxxxxx & 7 bits \\ 
+\hline 
+110xxxxx 10xxxxxx & 11 bits \\ 
+\hline 
+1110xxxx 10xxxxxx 10xxxxxx & 16 bits \\ 
+\hline 
+11110xxx 10xxxxxx 10xxxxxx 10xxxxxx & 21 bits \\ 
+\hline 
+\end{tabular}
+\end{center}
+\begin{activite}
+\begin{enumerate}
+\item Combien d'octets sont nécessaires pour encoder la lettre é?
+\item Donner la représentation binaire en UTF-8 de la lettre é.
+\item Trouver le rôle des fonctions natives Python \textbf{ord} et \textbf{hex}.
+\item Écrire la fonction \textbf{utf8(car: str)$\;\rightarrow\;$str} qui renvoie le point de code hexadécimal du caractère \emph{car}.
+\end{enumerate}
+\end{activite}
+\end{Form}
+\end{document}

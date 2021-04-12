@@ -1,0 +1,7 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Problématique}{2}{0}{1}
+\beamer@sectionintoc {2}{Adresse IP}{3}{0}{2}
+\beamer@sectionintoc {3}{Structure maillée}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{Les routeurs}{11}{0}{3}
+\beamer@subsectionintoc {3}{2}{Adresse IP d'un routeur}{17}{0}{3}
+\beamer@subsectionintoc {3}{3}{La table de routage}{20}{0}{3}

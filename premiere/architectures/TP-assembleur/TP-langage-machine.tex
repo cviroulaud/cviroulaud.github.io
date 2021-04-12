@@ -1,0 +1,106 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{TP langage machine}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Première - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\section{Problématique}
+Les ordinateurs sont structurés selon l'architecture de von Neumann. L'idée novatrice est de stocker les instructions de programme dans la mémoire, au même titre que les données. Le microprocesseur peut effectuer des calculs. L'étape suivante est de pouvoir communiquer nos instructions à l'ordinateur.
+\begin{center}
+\shadowbox{\parbox{14cm}{\centering Comment demander à la machine d'exécuter une série d'instructions?}}
+\end{center}
+\section{Un premier simulateur}
+\label{simulmanuel}
+On se propose de modéliser l'architecture de von Neumann "à la main". Par groupe de trois personnes se répartir les rôles:
+\begin{itemize}
+\item \textbf{Mémoire}: elle dispose de vingt cellules numérotées. Chaque cellule peut contenir une donnée ou une instruction. La première cellule contient la première instruction du programme.
+\item \textbf{Unité arithmétique et logique}: elle réalise les instructions qui lui sont demandées. Elle dispose de dix cellules numérotées (\emph{les registres)} qui peuvent contenir des données. L'UAL ne peut effectuer d'opérations que sur les données de ses registres.
+\item \textbf{Unité de contrôle}: elle  joue le rôle de métronome. Elle ordonne quelle étape est en cours de réalisation.
+\end{itemize}
+\medskip
+L'UAL peut réaliser les instructions suivantes:
+\begin{itemize}
+\item \emph{Copier} dans le registre \emph{n} une valeur, 
+\item \emph{Charger} dans le registre \emph{n} la valeur de la cellule \emph{m} de la mémoire,
+\item \emph{Stocker} la valeur du registre \emph{n} dans la cellule de mémoire \emph{m},
+\item \emph{Additionner} le registre \emph{n} avec une valeur (ou un registre).
+\end{itemize}
+\begin{activite}
+La cellule 16 de la mémoire contient déjà le nombre 230. Votre programme doit additionner le contenu de la cellule 16 avec le nombre 49, puis stocker le résultat dans la cellule 20 de la mémoire.
+\end{activite}
+\section{Découverte du simulateur}
+\subsection{Premier programme}
+Chaque microprocesseur possède des caractéristiques propres (nombre de registres, instructions...). Cependant nous pouvons noter de nombreuses similarités. En effet, l'architecture de von Neumann reste la norme et les principes de communication avec la mémoire sont respectées.\\
+\begin{commentprof}
+en fonction marque, époque, évolution; noms et nombres des registres sont différents: sur x86: registres EAX, EBX, ECX.
+\end{commentprof}
+Le programme sur la page web ci-après simule une architecture de von Neumann:
+\begin{center}
+\url{https://www.peterhigginson.co.uk/ARMlite/}
+\end{center}
+\begin{commentprof}
+\noindent 1MB=1MiB=1mébiBytes (méga binaire) = $2^{20}$ Bytes = 1048576 Bytes (octets)\\ PC = Program Counter = va de 4 en 4 car les adresses de cellules mémoire vont de 4 en 4\\LR = Link Register = holds the address to return to when a function call completes.\\SP = Stack Pointer = pointeur de pile = garde une trace de la pile d'appel.\\1 mot mémoire = 32 bits = 8 chiffres hex\\Il y a 1048756 octets = 1048756*8 bits\\Un mot mémoire = 4 octets = 32 bits\\1048756÷4 = nombre de mot mémoire = 262144; ils ne sont pas tous affichés à l'écran
+\end{commentprof}
+\begin{activite} Recherche dans la documentation
+\begin{enumerate}
+\item De combien de registres dispose l'UAL?
+\item Que représente le registre \emph{PC}?
+%\item Combien y-a-t-il de cellules dans la mémoire?
+\item Quelle est la taille d'une cellule (ou \emph{mot mémoire}) en bits?
+\end{enumerate}
+\end{activite}
+La documentation (en anglais) est située sur cette page:
+\begin{center}
+\url{https://peterhigginson.co.uk/ARMlite/Programming%20reference%20manual.pdf}
+\end{center}
+\begin{activite} Utilisation du simulateur
+\begin{enumerate}
+\item Repérer visuellement les principaux éléments de l'architecture de von Neumann.
+\item En bas à droite du simulteur, placer le menu déroulant sur \emph{Decimal (signed)}.
+\item Retrouver et noter la syntaxe des instructions de l'activité 1.
+\item Quelle instruction permet de terminer un programme?
+\item Traduire alors le programme de l'activité 1 sur le simulateur.
+\item Lancer le programme en mode pas à pas avec le bouton \ref{pasapas}
+\end{enumerate}
+\end{activite}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1cm]{ressources/pasapas.png}
+\captionof{figure}{Pas à pas}
+\label{pasapas}
+\end{figure}
+\subsection{Instructions supplémentaires}
+Charger des données en mémoire est une première étape mais il semble limité de s'arrêter là. Les instructions \emph{.InputNum} et \emph{.WriteString} utilisées dans le code \ref{mystere} ci-après permettent de travailler avec les entrées/sorties dans la console.\\Également comparer deux valeurs est une manipulation importante dans un programme.
+\begin{commentprof}
+Observer les \emph{status bits}.
+\end{commentprof}
+\begin{activite}
+Comparaisons de valeur
+\begin{enumerate}
+\item Dans la documentation trouver la signification et la syntaxe des instructions \emph{CMP, BEQ, BNE}.
+\item Charger le code \ref{mystere} dans le simulateur:
+\lstinputlisting[caption=Programme mystère,label=mystere,basicstyle=\tiny]{scripts/mystere.txt}
+\item Que fait ce programme?
+\item Que se passe-t-il si on retire la ligne 7? Donner la signification de cette instruction.
+\end{enumerate}
+\end{activite}
+\section{Création d'un programme: calcul de moyenne}
+Afin d'alléger sa charge de travail, le professeur principal de la classe demande aux élèves de NSI de produire un programme pour calculer les moyennes trimestrielles des élèves. Nous considérons que les élèves ont huit notes pour le trimestre.
+\begin{activite}
+\begin{enumerate}
+\item Décrire sur papier, l'algorithme à réaliser.
+\item Traduire cet algorithme en code dans le simulateur.
+\item L'exécuter.
+\end{enumerate}
+\end{activite}
+\begin{commentprof}
+\noindent créer une boucle\\LSR pour diviser; S'aider de la documentation et éventuellement du net pour voir la syntaxe de LSR (LSR R0,R1,\#3) = divise R1 par $2^3$\\enregistrer les notes en mémoire?
+\end{commentprof}
+\end{Form}
+\end{document}

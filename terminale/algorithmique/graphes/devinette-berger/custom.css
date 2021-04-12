@@ -1,0 +1,14 @@
+tr{
+    background: #ffffff !important;
+}
+table .tab td{
+    border: 1px solid black !important;
+    text-align: center !important;
+    font-size: 2em !important;
+}
+table .tabd{
+    margin-left: 100px !important;
+}
+tr .bad{
+background:red !important;
+}

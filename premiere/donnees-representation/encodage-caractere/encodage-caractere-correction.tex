@@ -1,0 +1,63 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Encodage 01}}}}
+\fancyhead[C]{\textbf{Encodage des caractères - correction}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+\fancyhead[R]{Première - NSI}
+%\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+
+\begin{document}
+\begin{Form}
+\begin{activite}
+\begin{enumerate}
+\item ASCII: American Standard Code for Information Interchange (Code américain normalisé pour l'échange d'information)
+\item ASCII utilise 7 bits. En pratique 1 octet est utilisé; le bit de poids fort (bit de gauche) sert de somme de contrôle.
+\item 4C 61 20 4E 53 49 20 65 73 74 20 31 20 73 75 70 65 72 20 64 69 73 63 69 70 6C 69 6E 65 21
+\item L'ASCII ne permet pas de représenter les caractères accentués, les idéogrammes...
+\end{enumerate}
+\end{activite}
+
+\begin{activite}
+\begin{enumerate}
+\item $2^8 = 256$ caractères en ISO 8859.
+\item Il y a 16 tables ISO 8859.
+\item La table ISO 8859-1 (Latin-1) est utilisé pour le français. On peut également se servir de sa révision ISO 8859-15 qui ajoute notamment le signe €.
+\item C1 20 71 75 65 6C 6C 65 20 E2 67 65 20 61 70 70 72 65 6E 64 72 65 20 6C 61 20 4E 53 49 3F
+\end{enumerate}
+\end{activite}
+
+\begin{activite}
+\begin{enumerate}
+\item Avec la norme ISO-10646 on a $2^{32}=4294967296$ caractères possibles.
+\item 32 bits représentent 4 octets.
+\item point de code de é: 00E9. On représente les points de code avec le préfixe U+: U+00E9. En binaire $E9 = 11101001$
+\end{enumerate}
+\end{activite}
+\begin{commentprof}
+é $\;\rightarrow\;$233$\;\rightarrow\;$E9
+\end{commentprof}
+\begin{activite}
+\begin{enumerate}
+\item Il faut 2 octets pour encoder la lettre é.
+\item On utilise deux octets: 110xxxxx 10xxxxxx. On place la représentation binaire de la lettre é et on complète avec des zéros: 110\textbf{00011} 10\textbf{101001}
+\item
+\begin{itemize}
+\item \textbf{ord:} Renvoie le nombre entier représentant le code Unicode du caractère représenté par la chaîne donnée. 
+\item \textbf{hex:} Convertit un entier en chaîne hexadécimale préfixée de 0x.
+\end{itemize}
+\item Retrouver le point de code
+\lstinputlisting[firstline=10,lastline=11]{"scripts/unicode.py"}
+\end{enumerate}
+\end{activite}
+\end{Form}
+\end{document}

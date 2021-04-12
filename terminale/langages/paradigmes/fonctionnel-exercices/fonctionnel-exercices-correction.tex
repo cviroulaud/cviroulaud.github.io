@@ -1,0 +1,41 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Paradigme fonctionnel - correction exercices}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+\lstinputlisting[firstline=9,lastline=19]{"scripts/applique.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=9,lastline=25]{"scripts/repeter_delai.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=9,lastline=47]{"scripts/trouve.py"}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Un invariant de boucle est une propriété qui est vraie avant chaque itération de la boucle et qui reste vraie après. Il permet de prouver la correction de l'algorithme.
+\item Avant la première itération, \emph{i} vaut 1. Le tableau [O:1] ne contient qu'une valeur, il est donc trié.
+\item Raisonnement par récurrence:
+\begin{itemize}
+\item \textbf{initialisation:} La propriété est vraie avant la première itération (question précédente.
+\item \textbf{hérédité:} Considérons la propriété vraie au rang \emph{k}. Le tableau [0:k] est trié.
+\item \textbf{conclusion:} À l'itération \emph{n-1} (dernière itération) la boucle \emph{while} insère à la bonne place le \emph{n-ème} élément dans le tableau [0:n-1] déjà trié. Le tableau [0:n] est donc trié.
+\end{itemize}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=10,lastline=16]{"scripts/compose.py"}
+\end{exo}
+\begin{exo}
+\lstinputlisting[firstline=9,lastline=25]{"scripts/calcul.py"}
+\end{exo}
+\end{Form}
+\end{document}

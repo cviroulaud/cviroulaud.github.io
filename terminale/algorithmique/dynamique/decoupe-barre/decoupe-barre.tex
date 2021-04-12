@@ -1,0 +1,54 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{ProgDyn 04}}}}
+\fancyhead[C]{\textbf{Découpe d'une barre métallique}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\section{Problématique}
+Un ferrailleur découpe des barres métalliques pour la revente. Les barres, plus petites, obtenues sont utilisées dans diverses constructions (garde-corps, châssis, fenêtre\dots). Le prix de revente des barres n'est donc pas proportionnel à leur dimension.
+\begin{center}
+    \begin{tabular}{|*{9}{c|}}
+        \hline
+        Longueur & 1 & 2 & 3 & 4 & 5 & 6 & 8 & 10 \\
+        \hline
+        Prix & 2 & 5 & 8 & 10 & 11 & 14 & 17 & 20 \\
+        \hline
+    \end{tabular}
+\end{center}
+\begin{center}
+    \framebox{Comment maximiser le prix de vente d'une barre?}
+    
+\end{center}
+\section{Approche naïve}
+Une formalisation mathématique du débitage d'une barre de longueur \emph{longueur} permet d'écrire pour une première découpe de taille \emph{taille}:
+$$prix\_max(longueur) = prix(taille) + prix\_max(longueur-taille)$$
+Si on effectue une première découpe \emph{taille}, il reste une barre \emph{longueur-taille}. L'objectif est de trouver le prix pour chaque découpe possible et ne garder que le prix maximum.
+\begin{activite}
+\begin{enumerate}
+    \item Déterminer \emph{à la main} le prix maximal pour une barre de longueur 10.
+    \item Construire \underline{le début} de l'arbre des possibilités de découpe permettant de calculer les prix de vente.
+    \item Construire un dictionnaire associant la longueur de barre à son prix.
+    \item Déterminer une fonction \emph{récursive} permettant de calculer le prix maximal obtenu pour la découpe d'une barre.   
+\end{enumerate}
+\end{activite}
+\section{Approche dynamique}
+En calculant une fois pour toute, le prix maximum pour chaque longueur de barre on économise des calculs.
+\begin{activite}
+\begin{enumerate}
+    \item Modifier la fonction précédente pour qu'elle évite de calculer plusieurs fois le même prix (approche top-down).
+    \item Reprendre le problème avec une approche bottom-up.
+\end{enumerate}
+\end{activite}
+\end{document}

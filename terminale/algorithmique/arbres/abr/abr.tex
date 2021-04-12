@@ -1,0 +1,118 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Arbre binaire de recherche}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+\usepackage{tikz}
+
+\begin{document}
+\section{Problématique}
+Les arbres binaires, les tas imposent des contraintes aux structures arborescentes. Il en résulte des objets avec des propriétés très utiles. Par exemple, la complexité du tri par tas est $O(n) = n.log(n)$.
+\begin{center}
+    \shadowbox{\parbox{12cm}{\centering Comment obtenir une méthode de recherche efficace avec les arbres?}}
+\end{center}
+\section{Arbre binaire de recherche}
+\subsection{Définition}
+Imposons une contrainte à chaque nœud d'un arbre binaire:
+\begin{itemize}
+    \item les valeurs du sous-arbre gauche sont plus petites que celle du nœud,
+    \item les valeurs du sous-arbre droit sont plus grandes que celle du nœud.
+\end{itemize}
+\begin{center}
+    \begin{tikzpicture}
+        \node[draw] (A) at (1,0) {33};
+        \node[draw] (B) at (-3,-1) {25};
+        \node[draw] (C) at (-5,-2) {20};
+        \node[draw] (D) at (-1,-2) {28};
+        \node[draw] (E) at (-6,-3) {8};
+        \node[draw] (F) at (-4,-3) {21};
+        \node[draw] (H) at (-2,-3) {26};
+        \node[draw] (I) at (4,-1) {56};
+        \node[draw] (J) at (2,-2) {40};
+        \node[draw] (K) at (6,-2) {60};
+        \node[draw] (M) at (1,-3) {35};
+        \node[draw] (O) at (5,-3) {58};
+        \node[draw] (P) at (7,-3) {65};
+
+        \draw (A) -- (B);
+        \draw (C) -- (B);
+        \draw (C) -- (E);
+        \draw (C) -- (F);
+        \draw (D) -- (B);
+        \draw (D) -- (H);
+        \draw (A) -- (I);
+        \draw (J) -- (I);
+        \draw (I) -- (K);
+        \draw (J) -- (M);
+        \draw (K) -- (O);
+        \draw (K) -- (P);
+        \draw [white] (0,-3) -- (0,-4.5);
+    \end{tikzpicture}
+    \captionof{figure}{Un Arbre Binaire de Recherche (\emph{ABR})}
+    \label{arbre}
+\end{center}
+\begin{aretenir}[Remarque]
+    On suppose que chaque valeur n'apparaît qu'une seule fois dans l'arbre.
+\end{aretenir}
+\begin{activite}
+    \begin{enumerate}
+        \item Placer les valeurs 23, 27, 54, 55 dans l'ABR.
+        \item Où se trouve la plus grande valeur ? La plus petite?
+        \item Effectuer un parcours infixe de l'arbre. Que remarque-t-on ?
+    \end{enumerate}
+\end{activite}
+\subsection{Propriété}
+Soit \emph{n} la taille de l'arbre et \emph{h} sa hauteur. Ces grandeurs sont liées par la relation :
+$$h+1 \leq n \leq 2^{h+1}-1$$
+Cette propriété peut s'écrire:
+$$ \lfloor \log_2 n  \rfloor \leq h$$
+Considérons le tableau \ref{tab} et la construction de l'arbre binaire de recherche qui en découle (figure \ref{arbre}).
+\begin{center}
+    \begin{lstlisting}[language=Python]
+tab = [33, 25, 56, 20, 28, 40, 60, 8, 21, 26, 35, 58, 65]
+\end{lstlisting}
+    \captionof{code}{Tableau de données}
+    \label{tab}
+\end{center}
+%DODO ABR mettre en avant sur un exemple la rapidité de la recherche en faisant un test
+\begin{activite}
+    \begin{enumerate}
+        \item Quelle la complexité temporelle dans le pire des cas de la recherche d'un élément dans le tableau?
+        \item Que devient cette complexité pour l'ABR?
+    \end{enumerate}
+\end{activite}
+\begin{aretenir}[Remarque]
+    Pour que la recherche dans l'arbre soit efficace il faut qu'il soit \emph{équilibré}.
+\end{aretenir}
+\section{Implémentation}
+La programmation objet peut nous permettre d'implémenter un ABR facilement.
+\begin{activite}
+    \begin{enumerate}
+        \item Créer la classe \emph{Noeud} qui possède trois attributs:
+              \begin{itemize}
+                  \item \emph{valeur} un entier,
+                  \item \emph{gauche} un Noeud,
+                  \item \emph{droit} un Noeud.
+              \end{itemize}
+              Le constructeur acceptera trois paramètres \emph{(v: int, g = None, d = None)}.
+        \item Écrire la méthode \textbf{inserer(self, v: int)$\;\rightarrow\;$None} qui crée récursivement le nœud contenant la valeur \emph{v} dans le sous-arbre gauche ou droit du nœud.
+        \item Écrire la méthode \textbf{rechercher(self, v: int)$\;\rightarrow\;$bool} qui renvoie \emph{True} si la valeur \emph{v} est dans le nœud ou dans un de ses sous-arbres.
+        \item Créer la classe ABR et son constructeur qui possédera un attribut \emph{racine} initialisé à \emph{None}.
+        \item Écrire la méthode \textbf{est\_vide(self)$\;\rightarrow\;$bool} qui renvoie \emph{True} si l'arbre est vide.
+        \item Écrire la méthode \textbf{inserer(self, v: int)$\;\rightarrow\;$None} qui:
+              \begin{itemize}
+                  \item crée un nœud contenant \emph{v} si l'arbre est vide,
+                  \item appelle la méthode \emph{inserer} du nœud racine sinon.
+              \end{itemize}
+        \item Écrire la méthode \textbf{rechercher(self, v: int)$\;\rightarrow\;$None} qui renvoie \emph{True} si \emph{v} est présent dans l'arbre.
+    \end{enumerate}
+\end{activite}
+\end{document}

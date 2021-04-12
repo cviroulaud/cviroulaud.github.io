@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="303"
+   width="208"
+   viewBox="0 0 167.08643 242.66748"
+   version="1.1"
+   id="svg2828"
+   sodipodi:docname="10_of_hearts_-_David_Bellot.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata2834">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2832" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3200"
+     inkscape:window-height="1671"
+     id="namedview2830"
+     showgrid="false"
+     inkscape:zoom="0.77887789"
+     inkscape:cx="-427.5339"
+     inkscape:cy="151.5"
+     inkscape:window-x="0"
+     inkscape:window-y="55"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2828" />
+  <path
+     d="m 160.36762,-107.92483 c 0,-5.63348 -2.96903,-10.23809 -6.60106,-10.23809 l -146.8665427,6e-5 c -3.6355834,0 -6.59501392,4.60461 -6.59501392,10.23809 l 2.883e-5,340.41276 c 0,5.63095 2.95943049,10.23675 6.59145869,10.23675 H 153.76303 c 3.63203,0 6.60107,-4.6058 6.60107,-10.23675 v -340.41276 0.0101 z"
+     id="path2811"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.59740674" />
+  <g
+     id="e"
+     transform="matrix(0.96085405,0,0,1.4857401,0.05873648,-117.97348)"
+     style="fill:#e61408">
+    <g
+       id="a">
+      <path
+         id="b"
+         d="m 39.868,13.33 c -4.308,0.009 -7.811,3.691 -7.782,8.208 0.06,9.58 12.092,16.508 15.639,24.074 3.547,-7.566 15.604,-14.494 15.664,-24.074 0.029,-4.517 -3.474,-8.199 -7.782,-8.208 -4.307,-0.009 -7.869,3.657 -7.882,8.183 -0.013,-4.526 -3.55,-8.192 -7.857,-8.183 z"
+         inkscape:connector-curvature="0"
+         style="fill:#e61408" />
+      <use
+         xlink:href="#b"
+         transform="translate(0,61.236)"
+         id="use2814"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </g>
+    <use
+       xlink:href="#a"
+       transform="matrix(-1,0,0,1,167.09,0)"
+       id="use2817"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+    <text
+       transform="scale(0.67172,1.4887)"
+       style="font-weight:bold;font-size:16.68199921px;font-family:'DejaVu Serif';letter-spacing:-0.82323998px"
+       font-size="16.682px"
+       y="17.374985"
+       x="12.317241"
+       font-weight="bold"
+       id="text2819">10</text>
+    <use
+       xlink:href="#b"
+       transform="matrix(0.29991,0,0,0.30069,2.0553,25.429)"
+       id="use2821"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+    <use
+       xlink:href="#b"
+       transform="translate(35.806,30.617)"
+       id="use2823"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+  </g>
+  <use
+     xlink:href="#e"
+     transform="rotate(180,80.333288,62.291353)"
+     id="use2826"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%" />
+</svg>

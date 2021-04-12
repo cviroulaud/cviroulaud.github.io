@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+
+<!-- This set of SVG files is a complete cards game with figures, numbers	-->
+
+<!--    and backs of cards completely designed in SVG.				-->
+
+<!--    									-->
+
+<!--    Copyright (C) 2004 David Bellot						-->
+
+<!--										-->
+
+<!--    This library is free software; you can redistribute it and/or		-->
+
+<!--    modify it under the terms of the GNU Lesser General Public		-->
+
+<!--    License as published by the Free Software Foundation; either		-->
+
+<!--    version 2 of the License, or (at your option) any later version		-->
+
+<!--										-->
+
+<!--    This library is distributed in the hope that it will be useful,		-->
+
+<!--    but WITHOUT ANY WARRANTY; without even the implied warranty of		-->
+
+<!--    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU	-->
+
+<!--    Lesser General Public License for more details.				-->
+
+<!--										-->
+
+<!--    You should have received a copy of the GNU Lesser General Public	-->
+
+<!--    License along with this library; if not, write to the Free Software	-->
+
+<!--    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA-->
+
+<!--										-->
+
+<!--    Contact the author David Bellot at bellot@stat.berkeley.edu or 		-->
+
+<!--    david.bellot@free.fr or yimyom@users.sourceforge.net			-->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="208"
+   height="303"
+   viewBox="0 0 167.08643 242.66748"
+   xml:space="preserve"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="04_of_hearts.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"><metadata
+   id="metadata90"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs88" /><sodipodi:namedview
+   inkscape:window-height="1671"
+   inkscape:window-width="3200"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   inkscape:zoom="1.242853"
+   inkscape:cx="-133.49111"
+   inkscape:cy="85.923716"
+   inkscape:window-x="0"
+   inkscape:window-y="55"
+   inkscape:current-layer="svg2"
+   inkscape:showpageshadow="false"
+   width="208px"
+   height="303px"
+   showgrid="false"
+   inkscape:window-maximized="1" />
+	<path
+   id="path5"
+   d="m 160.36133,232.49688 c 0,5.63351 -2.96509,10.23813 -6.60107,10.23813 H 6.8913283 c -3.6275397,0 -6.59262675,-4.60462 -6.59262675,-10.23813 v -340.41141 c 0,-5.62551 2.96508705,-10.23812 6.59262675,-10.23812 H 153.76026 c 3.63598,0 6.60107,4.61261 6.60107,10.23812 z"
+   style="fill:#ffffff;fill-rule:nonzero;stroke:#000000;stroke-width:0.59740311;stroke-miterlimit:4"
+   inkscape:connector-curvature="0" /><g
+   style="fill:#e61408;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-miterlimit:4"
+   id="g3075"
+   transform="matrix(0.96083833,0,0,1.4857462,1.3574799,-117.91394)">
+			<path
+   style="fill:#e61408;fill-opacity:1;stroke:none"
+   d="m 18.223633,25.998535 h -4.40625 v -1.46875 h 1.1875 v -3.28125 h -3.375 V 19.858399 L 15.004395,7.6235352 h 2.031738 V 19.686035 h 1.375 v 1.5625 h -1.375 v 3.28125 h 1.1875 z m -3.21875,-6.3125 V 10.92334 l -2.409668,8.762695 z"
+   id="path3077"
+   inkscape:connector-curvature="0" />
+		</g><g
+   style="fill:#e61408;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-miterlimit:4"
+   id="g3079"
+   transform="matrix(0.96083833,0,0,1.4857462,-0.88909149,-117.91249)">
+			<path
+   style="fill:#e61408;fill-opacity:1;stroke:none"
+   d="m 148.49707,216.5791 h 4.40625 v 1.46875 h -1.1875 v 3.28125 h 3.375 v 1.39063 l -3.375,12.23437 h -2.03125 v -12.0625 h -1.375 v -1.5625 h 1.375 v -3.28125 h -1.1875 z m 3.21875,6.3125 v 8.76367 l 2.40918,-8.76367 z"
+   id="path3081"
+   inkscape:connector-curvature="0" />
+		</g>
+<path
+   style="fill:#e61408;fill-rule:nonzero;stroke:none;stroke-width:1.19480622;stroke-miterlimit:4"
+   d="m 38.365015,-98.175339 c -4.138917,0.01382 -7.50458,5.484111 -7.477215,12.196074 0.05803,14.232854 11.61882,24.525969 15.026794,35.767705 3.407974,-11.241736 14.992885,-21.534851 15.05091,-35.767705 0.02736,-6.711963 -3.338293,-12.182302 -7.477215,-12.196074 -4.138923,-0.01307 -7.5615,5.433745 -7.573695,12.158781 -0.01219,-6.725036 -3.410652,-12.171857 -7.549579,-12.158781 z"
+   id="path2170"
+   inkscape:connector-curvature="0" /><path
+   id="path2225"
+   d="m 13.516084,-74.24356 c -1.244506,0.0042 -2.256509,1.648988 -2.248274,3.66717 0.01744,4.279602 3.493598,7.374582 4.518322,10.754799 1.024725,-3.380217 4.508129,-6.475197 4.525578,-10.754799 0.0082,-2.018182 -1.003779,-3.663029 -2.248285,-3.66717 -1.244516,-0.0039 -2.273631,1.633843 -2.277293,3.655957 -0.0037,-2.022114 -1.025531,-3.659888 -2.270048,-3.655957 z"
+   style="fill:#e61408;fill-rule:nonzero;stroke:none;stroke-width:1.19480622;stroke-miterlimit:4"
+   inkscape:connector-curvature="0" /><use
+   x="0"
+   y="0"
+   xlink:href="#path2225"
+   id="use2231"
+   transform="matrix(1,0,0,-1,129.08051,124.12858)"
+   width="167.08643"
+   height="242.66748" /><use
+   x="0"
+   y="0"
+   xlink:href="#path2170"
+   id="use2195"
+   transform="translate(67.902832)"
+   width="167.08643"
+   height="242.66748" /><use
+   x="0"
+   y="0"
+   xlink:href="#path2170"
+   id="use2197"
+   transform="matrix(1,0,0,-1,-1.1688906e-8,124.54936)"
+   width="167.08643"
+   height="242.66748" /><use
+   x="0"
+   y="0"
+   xlink:href="#path2170"
+   id="use2199"
+   transform="matrix(1,0,0,-1,67.902832,124.54936)"
+   width="167.08643"
+   height="242.66748" /></svg>

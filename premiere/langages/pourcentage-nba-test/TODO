@@ -1,0 +1,9 @@
+assertion
+doctest?
+fonction nb_premier: 
+	vérifier si paramètre est bien un entier
+	vérifier si renvoie bonnes valeurs
+
+fonction puissance:
+	n >=0
+

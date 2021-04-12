@@ -1,0 +1,7 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Problématique}{2}{0}{1}
+\beamer@sectionintoc {2}{Protocole de routage}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Protocole RIP - Routing Information Protocol}{4}{0}{2}
+\beamer@sectionintoc {3}{Table de routage}{6}{0}{3}
+\beamer@sectionintoc {4}{Gestion des pannes}{22}{0}{4}

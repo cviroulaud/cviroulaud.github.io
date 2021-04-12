@@ -1,0 +1,377 @@
+\documentclass[svgnames,11pt]{beamer}
+\setbeamercolor{structure}{fg=SlateGray}
+\usetheme{Goettingen}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Routing Information Protocol}
+\date{}
+%\logo{}
+%\institute{Seconde SNT}
+%\institute{Première NSI}
+\institute{Terminale NSI}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\begin{document}
+\begin{frame}
+    \titlepage
+    \end{frame}
+
+\section{Problématique}
+\begin{frame}
+    \frametitle{}
+    Construire les tables de routage manuellement est difficile.
+    \begin{center}
+        \framebox{Comment construire les tables de routage dynamiquement?}
+    \end{center}
+
+\end{frame}
+
+\section{Protocole de routage}
+\subsection{Principe}
+
+\begin{frame}
+    \frametitle{}
+
+    En plus des paquets, les routeurs s'échangent des informations sur la topologie du réseau.
+    \begin{aretenir}[]
+        Chaque routeur applique les mêmes règles de communication et de description: c'est le \textbf{protocole de routage}.
+    \end{aretenir}
+
+\end{frame}
+
+\subsection{Protocole RIP - Routing Information Protocol}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[]
+        Le protocole RIP échange des \textbf{vecteurs de distance} (couple adresse/distance) avec ses routeurs voisins.
+    \end{aretenir}
+    \note[item]{Protocole à vecteur de distance}
+    \note[item]{échange des tables de routage à intervalle régulier (30 secondes configurables).}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Objectif}
+
+    Minimiser le nombre de sauts pour atteindre la destination.
+    \note{unité de mesure = saut entre routeur}
+
+\end{frame}
+
+\section{Table de routage}
+\begin{frame}
+    \frametitle{Quatre informations}
+
+    \begin{itemize}
+        \item la \emph{destination} sous la forme adresse de sous-réseau/masque,
+        \item la \emph{passerelle} est l'adresse IP du prochain routeur à traverser,
+        \item l'\emph{interface} réseau à utiliser pour rejoindre la passerelle,
+        \item la \emph{distance} vers la destination.
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \centering
+        \includegraphics[width=10cm]{ressources/reseau.png}
+        \captionof{figure}{Topologie du réseau}
+        \label{reseau}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Phase d'initialisation}
+    \begin{center}
+        \centering
+        \includegraphics[width=9cm]{ressources/reseau.png}
+        \captionof{figure}{Topologie du réseau}
+        \label{reseau}
+    \end{center}
+    \note{Le routeur récupère les informations de ses voisins immédiats.}
+\begin{center}
+    \begin{tabular}{|*{4}{c|}}
+        \hline
+        destination    & passerelle & interface & distance \\
+        \hline
+        10.1.1.0/30    &            & eth0      & 1        \\
+        \hline
+        192.168.1.0/24 &            & wlan0     & 1        \\
+        \hline
+    \end{tabular}
+    \captionof{table}{Table de routage de R1}
+\end{center}
+\note{interface wlan0}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[Remarque]
+        La passerelle est vide quand l'adresse de destination est celle du routeur voisin.
+    \end{aretenir}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{center}
+        \centering
+        \includegraphics[width=9cm]{ressources/reseau.png}
+        \captionof{figure}{Topologie du réseau}
+        \label{reseau}
+    \end{center}
+    \begin{activite}
+        Construire la table de routage du routeur R3 lors de la phase d'initialisation.
+    \end{activite}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{tabular}{|*{4}{c|}}
+            \hline
+            destination    & passerelle & interface & distance \\
+            \hline
+            10.1.1.0/30    &            & eth1      & 1        \\
+            \hline
+            10.1.2.0/30    &            & eth3      & 1        \\
+            \hline
+            10.1.3.0/30    &            & eth2      & 1        \\
+            \hline
+            10.1.4.0/30    &            & eth0      & 1        \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Table de routage de R3}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Demande RIP}
+    Lorsqu'un routeur reçoit une demande il accuse réception en renvoyant sa table de routage.
+    \begin{itemize}
+        \item<1-> Il découvre une nouvelle route
+        \note[item]{vers un sous-réseau qui lui était jusque-là inconnu : il l’inscrit dans sa table.}
+        \item<2-> Il découvre une route plus courte
+        \note[item]{vers un sous-réseau connu mais passant par un autre routeur : il efface l’ancienne route de sa table et inscrit la nouvelle.}
+        \item<3-> Il reçoit une nouvelle route plus longue \note[item]{il l’ignore.}
+        \item<4-> Il reçoit une route existante, mais plus longue, vers un routeur passant par le même voisin. \note[item]{Cela veut dire qu’un problème est apparu sur son ancienne route. Il met donc à jour sa table avec cette nouvelle route. Pas représentatif sur cet exemple}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[Remarque]
+        Lorsqu’un routeur reçoit une route, il augmente la distance associée à cette route de 1 pour prendre en compte que les paquets devront passer par
+        lui.
+    \end{aretenir}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tabular}{|*{4}{c|}}
+            \hline
+            destination    & passerelle & interface & distance \\
+            \hline
+            10.1.1.0/30    &            & eth0      & 1        \\
+            \hline
+            192.168.1.0/24 &            & wlan0     & 1        \\
+            \hline
+            10.1.2.0/30    & R3         & eth0      & 2        \\
+            \hline
+            10.1.3.0/30    & R3         & eth0      & 2        \\
+            \hline
+            10.1.4.0/30    & R3         & eth0      & 2        \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Table de routage de R1 après son échange avec R3}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Construire la table de routage de R3 après son échange avec R1.
+            \item Construire la table de routage de R5 lors de la phase d'initialisation.
+            \item Construire ensuite la table de routage de R3 après son échange avec R5.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{tabular}{|*{4}{c|}}
+            \hline
+            destination    & passerelle & interface & distance \\
+            \hline
+            10.1.1.0/30    &            & eth1      & 1        \\
+            \hline
+            10.1.2.0/30    &            & eth3      & 1        \\
+            \hline
+            10.1.3.0/30    &            & eth2      & 1        \\
+            \hline
+            10.1.4.0/30    &            & eth0      & 1        \\
+            \hline
+            192.168.1.0/24    &     R1       & eth1      & 2        \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Table de routage de R3}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{tabular}{|*{4}{c|}}
+            \hline
+            destination    & passerelle & interface & distance \\
+            \hline
+            10.1.7.0/30    &            & eth0      & 1        \\
+            \hline
+            10.1.6.0/30    &            & eth3      & 1        \\
+            \hline
+            10.1.5.0/30    &            & eth2      & 1        \\
+            \hline
+            10.1.4.0/30    &            & eth1      & 1        \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Initialisation de R5}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{tabular}{|*{4}{c|}}
+            \hline
+            destination    & passerelle & interface & distance \\
+            \hline
+            10.1.7.0/30    &            & eth0      & 1        \\
+            \hline
+            10.1.6.0/30    &            & eth3      & 1        \\
+            \hline
+            10.1.5.0/30    &            & eth2      & 1        \\
+            \hline
+            10.1.4.0/30    &            & eth1      & 1        \\
+            \hline
+            10.1.1.0/30    &      R3      & eth1      & 2        \\
+            \hline
+            10.1.2.0/30    &     R3       & eth1      & 2        \\
+            \hline
+            10.1.3.0/30    &       R3     & eth1      & 2        \\
+            \hline
+            192.168.1.0/24    &     R3       & eth1      & 3        \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Table de routage de R5 après son échange avec R3}
+    \end{center}
+\note[item]{les échanges ne sont pas forcément synchrones: si R5 a échangé avec R2 avant, le chemin vers 10.1.2.0 serait différent}
+\note[item]{au bout de quelques échanges les tables sont stabilisées; les routeurs connaissent toutes les routes.}
+\end{frame}
+\section{Gestion des pannes}
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item\textbf{15 sauts maximum:} au-delà la route est oubliée.
+        \note[item]{également si un routeur ne reçoit pas d'information de la part d'un de ses voisins au
+        bout d'un certain laps de temps (par défaut, 3 minutes (configurable)), il va considérer que ce
+        lien est mort et en informer ses voisins en indiquant un nombre de sauts égal à 16.}
+        \note[item]{délai de convergence = temps pour que tous les routeurs aient la même vue de la topologie $\rightarrow$ 15 sauts permet de réduire ce délai}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item\textbf{split horizon:} un routeur ne renvoie pas une information à un autre routeur s’il a appris cette information par ce même routeur.
+    \end{itemize}
+\begin{center}
+\centering
+\includegraphics[width=8cm]{ressources/split.png}
+\captionof{figure}{Boucle de routage}
+\label{IMG}
+\end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Split horizon}
+
+    \begin{center}
+        \centering
+        \includegraphics[width=6cm]{ressources/split.png}
+        \captionof{figure}{Boucle de routage}
+        \label{IMG}
+        \end{center}
+Supposons une défaillance qui rend le réseau du portable inaccessible: R1 note une métrique infinie (16) vers ce réseau.
+\end{frame}
+\begin{frame}
+    \frametitle{Split horizon}
+
+    \begin{center}
+        \centering
+        \includegraphics[width=6cm]{ressources/split.png}
+        \captionof{figure}{Boucle de routage}
+        \label{IMG}
+        \end{center}
+R1 envoie cette information à R2\dots mais en même temps R2 envoie une route vers le réseau du portable avec une métrique de 3.
+\note{les envois ne sont pas forcément synchrones.}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Split horizon}
+
+    \begin{center}
+        \centering
+        \includegraphics[width=6cm]{ressources/split.png}
+        \captionof{figure}{Boucle de routage}
+        \label{IMG}
+        \end{center}
+À la mise à jour suivante, R2 communiquera une métrique infinie mais R1 renverra une métrique de 4 $\rightarrow$ boucle de réseau.
+\note[item]{R1 à incrémenter de 1}
+\note[item]{C'est cette étape qui est bloquée par le split horizon: R1 ne renvoie pas à R2}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item\textbf{hold down:} lorsqu'un routeur prend connaissance de l'indisponibilité d'une route vers un sous-réseau, il doit ignorer toute information concernant un chemin vers ce sous réseau pendant une durée égale au \emph{temporisateur (hold down)}.
+    \end{itemize}
+\note{Avec cette fonction, le temps est laissé à l'information d'indisponibilité de la route à se communiquer à tous les routeurs.}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[Remarque]
+        La limite de 15 sauts ne permet pas d'utiliser ce protocole pour de grands réseaux.
+    \end{aretenir}
+
+\end{frame}
+\end{document}

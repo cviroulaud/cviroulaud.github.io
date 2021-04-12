@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Problématique}{2}{0}{1}
+\beamer@sectionintoc {2}{Approche gloutonne}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Algorithme}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Un exemple non optimal}{5}{0}{2}
+\beamer@sectionintoc {3}{Approche dynamique}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Algorithme naïf}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Top-down}{12}{0}{3}
+\beamer@subsectionintoc {3}{3}{Bottom-up}{19}{0}{3}

@@ -1,0 +1,64 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Type construit - exercices}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Première - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+Écrire un programme qui crée un tableau contenant les carrés des nombres de 0 à 100.
+\end{exo}
+\begin{exo}
+Écrire un programme qui crée un tableau contenant tous les nombres impairs entre 0 et 100.
+\end{exo}
+\begin{exo}
+Écrire un programme qui construit un tableau  de vingt entiers choisis aléatoirement entre entre 0 et 100. Il peut être nécessaire d'utiliser la bibliothèque \emph{random}.
+\begin{center}
+\url{https://docs.python.org/fr/3/library/random.html}
+\end{center}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Écrire un programme qui construit un tableau de dix entiers. Chaque entier sera compris entre 0 et 20.
+\item Calculer ensuite la somme des entiers du tableau.
+\item Calculer enfin la moyenne des entiers de ce tableau.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Écrire un programme qui construit un tableau \emph{nombres} comprenant un nombre aléatoire d'entiers (entre 10 et 1000). Chaque entier sera compris entre 0 et 20.
+\item Écrire le code qui compte le nombre d'occurrences de la valeur 10.
+\item Modifier le code pour qu'il complète un tableau \emph{occurrences} de vingt éléments. Ce tableau contiendra le nombre d'occurrences de chaque valeur entre 0 et 20.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Construire un tableau de 8 mots.
+\item Demander deux indices i et j à l'utilisateur.
+\item Échanger les mots aux indices i et j.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Construire un tableau de taille aléatoire comprise entre 10 et 100.
+\item Remplir ce tableau par des entiers aléatoires entre 0 et 100.
+\item Sans utiliser la méthode \emph{copy} créer une copie de ce tableau.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+\item Construire deux tableaux \emph{tab1} et \emph{tab2} de dix entiers.
+\item Construire le tableau \emph{tab} qui contient tous les éléments de \emph{tab1} puis tous ceux de \emph{tab2} en utilisant une méthode native fournie par Python.
+\item Effectuer la même opération sans cette méthode.
+\end{enumerate} 
+\end{exo}
+\begin{exo}
+Écrire un programme qui permet de compter le nombre de voyelles dans une chaîne donnée. Exemple pour la chaîne s=‘anticonstitutionnellement’ le programme doit renvoyer le message suivant : La chaîne anticonstitutionnellement possède 10 voyelles.
+\end{exo}
+\end{Form}
+\end{document}

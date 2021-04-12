@@ -1,0 +1,58 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Diviser pour régner - exercices}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}Dichotomie
+\begin{enumerate}
+\item Rappeler le programme impératif de la recherche dichotomique.
+\item Écrire une version récursive de cet algorithme. Il sera peut-être nécessaire d'ajouter des arguments.
+\item Créer une liste \emph{l} de cinquante éléments triés.
+\item Tester les deux fonctions sur la liste \emph{l}.
+\item Rappeler la complexité de l'algorithme de recherche dichotomique.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Le tri rapide est un autre exemple d'algorithme utilisant la méthode \emph{diviser pour régner}. C'est un algorithme naturellement récursif que nous pouvons décrire ainsi:
+\begin{itemize}
+\item Choisir un élément pivot.
+\item Sélectionner tous les éléments inférieurs au pivot.
+\item Sélectionner tous les éléments supérieurs ou égaux au pivot.
+\item Placer récursivement à gauche du pivot les éléments inférieurs à ce-dernier et à droite les éléments supérieurs.
+\end{itemize}
+\begin{commentprof}
+\begin{itemize}
+\item ÷: partionner en 3 (gauche, pivot, droite)
+\item régner: les 2 sous-tableaux sont traités récursivement
+\item combiner: pas de recombinaison: les tableaux ont été triés en place
+\end{itemize}
+\end{commentprof}
+\begin{enumerate}
+\item Écrire une fonction \textbf{tri\_rapide(tab: list)\;\rightarrow\;list} qui implémente l'algorithme du tri rapide. Nous choisirons le premier élément du tableau comme pivot.
+\item Construire en compréhension une liste \emph{l} de vingt éléments compris entre 0 et 100.
+\item Tester la fonction de tri sur la liste \emph{l}.
+\end{enumerate}
+\textbf{Remarque:} Le tri rapide a une complexité en $O(n×log_2(n))$.
+\end{exo}
+\begin{exo}
+La fonction \emph{mystere} implémente un algorithme du type \emph{diviser pour régner}.
+\lstinputlisting[firstline=18,lastline=31]{"scripts/maxi.py"}
+Soit la liste:
+\begin{lstlisting}
+tab = [5, 71, 23, 45, 28, 89, 63, 39]
+\end{lstlisting}
+\begin{enumerate}
+\item Dessiner l'arbre des séparations engendré par la fonction sur la liste \emph{tab}.
+\item Dessiner l'arbre des recombinaisons. Quelle valeur renvoie l'appel \textbf{mystere(tab)}?
+\item Que fait cette fonction?
+\end{enumerate}
+\end{exo}
+\end{Form}
+\end{document}

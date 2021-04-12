@@ -1,0 +1,129 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Représentation des entiers relatifs}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Première - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{commentprof}
+Classe inversée? Lire et faire activités à la maison. \\
+Vérification Zéro et addition en classe puis exercices
+\end{commentprof}
+\section{Problématique}
+Un système \emph{64 bits} peut représenter $2^{64}$ entiers. Pourtant le code ci-après donne la valeur maximale de l'entier représentable:
+\begin{lstlisting}
+import sys
+sys.maxsize
+\end{lstlisting}
+Cette valeur correspond à $2^{63}-1$. Un des 64 bits ne semble pas utilisé.
+\begin{center}
+\shadowbox{\parbox{10cm}{\centering Comment sont représentés les entiers négatifs en mémoire?}}
+\end{center}
+\section{Rappel sur les additions}
+Considérons une machine \emph{8 bits}. Elle peut stocker des nombres allant jusqu'à $$2^7-1 = 127_{10} = 01111111_2$$. Dans ces conditions le nombre 25 serait représenté en mémoire comme ci-après:
+$$25_{10} = 00011001_2$$
+\begin{activite}
+\begin{enumerate}
+\item Additionner $25+12$.
+\item Encoder ces deux nombres en base 2.
+\item Effectuer l'addition binaire de ces nombres.
+\item Convertir le résultat en base 10. Le résultat correspond-il à la première question?
+\end{enumerate}
+\end{activite}
+\begin{commentprof}
+$$00011001 + 00001100 = 00100101$$
+\end{commentprof}
+\section{Une représentation naïve des entiers négatifs}
+\subsection{Bit de poids fort}
+Le bit le plus à gauche de la représentation n'est pour l'instant pas utilisé. C'est le \textbf{bit de poids fort}. Une première idée serait d'utiliser ce bit comme marqueur de signe:
+\begin{itemize}
+\item 0 pour un entier positif,
+\item 1 pour un entier négatif.
+\end{itemize}
+Ainsi l'entier $-25$ serait encodé:
+$$-25_{10} = 10011001_2$$
+\subsection{Inconvénients de la représentation}
+\subsubsection{Le zéro}
+Dans un système \emph{8 bits} le zéro est représenté par $00000000_2$. Cependant $10000000_2$ se traduit par~$-0$. Il y a donc deux représentations pour zéro.
+\subsubsection{Erreur d'addition}
+\begin{activite}
+\begin{enumerate}
+\item Effectuer les mêmes étapes de l'activité 1, pour l'addition $-25 + 12$
+\item L'addition est-elle correcte?
+\end{enumerate}
+\end{activite}
+\begin{commentprof}
+$$10011001 + 00001100 = 10011101_2 = 157_{10}$$
+\end{commentprof}
+\section{Le complément à 2 puissance \emph{n}}
+\subsection{Définition}
+Cette représentation ne change rien pour les entiers positifs. Ainsi sur 8 bits:
+\begin{center}
+\begin{tabular}{|cccccccccc|}
+\hline
+0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & =& 127 \\ 
+\hline
+0 & ... &  &  &  &  &  &  & =& ... \\ 
+\hline
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & =& 2 \\
+\hline 
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & =& 1 \\ 
+\hline
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & =& 0 \\
+\hline
+\end{tabular}
+\end{center}
+\medskip
+Par contre la valeur $2^n - \vert x\vert$ représente l'entier négatif \emph{x}. Ainsi sur 8 bits, $-1$ s'écrit $$2^8-1 = 256 - 1 = 255_{10} = 11111111_2$$
+\begin{center}
+\begin{tabular}{|cccccccccc|c|}
+\hline
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & =& $-1$ & $2^8 - \vert -1\vert = 255$ \\
+\hline
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 0 & = &$-2$& $2^8 - \vert -2\vert = 254$ \\
+\hline
+1 & ... &  &  &  &  &  &  & = &... &\\ 
+\hline
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & =& $-127$&$2^8 - \vert -127\vert = 129$ \\
+\hline
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & = &$-128$&$2^8 - \vert -128\vert=128$ \\
+\hline
+0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & =& 127& \\ 
+\hline
+0 & ... &  &  &  &  &  &  & =& ...& \\ 
+\hline
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & = &2 &\\
+\hline 
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & = &1& \\ 
+\hline
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & =& 0& \\
+\hline
+\end{tabular}
+\end{center}
+\subsection{Calculer le complément à 2}
+Voici le protocole pour une première méthode. Pour coder (−20):
+\begin{itemize}
+\item Prendre le nombre positif 20 : 00010100
+\item Inverser les bits : 11101011
+\item Ajouter 1 : 11101100
+\item −20 : 11101100
+\end{itemize} 
+\medskip
+Un deuxième protocole de garder tous les chiffres depuis la droite jusqu'au premier 1 (compris) puis d'inverser tous les suivants.
+\begin{itemize}
+\item Prendre le nombre positif 20 : 00010100
+\item Garder la partie à droite telle quelle : 00010\underline{100}
+\item Inverser la partie de gauche après le premier un : \underline{11101}100
+\item −20 : 11101100
+\end{itemize}
+\begin{commentprof}
+Vérification que 1 seul zéro: 00000000 \rightarrow 11111111 + 1 = 00000000\\
+Vérification addition $-25+12= 11100111+00001100 = 11110011 = 243$ et $243-2^8=243-256=-13$
+\end{commentprof}
+\end{Form}
+\end{document}

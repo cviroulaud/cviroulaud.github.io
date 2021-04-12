@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  12 APR 2021 10:00
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  12 APR 2021 13:27
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/trier-cartes/trier-cartes-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/trier-cartes/trier-cartes-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.223 seconds
+luaotfload | main : initialization completed in 0.185 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1341,7 +1341,34 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 \everycr=\toks64
 \minrowclearance=\skip143
-) (./trier-cartes-slides.aux
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2011/01/05 ver 0.02
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count431
+\calc@Bcount=\count432
+\calc@Adimen=\dimen353
+\calc@Bdimen=\dimen354
+\calc@Askip=\skip144
+\calc@Bskip=\skip145
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count433
+\calc@Cskip=\skip146
+)
+\pgf@logicalpages=\count434
+\pgf@firstshipout=\count435
+\pgf@lastshipout=\count436
+\pgf@currentshipout=\count437
+\pgf@cpn=\count438
+\pgf@shipoutnextto=\count439
+\pgfphysicalheight=\dimen355
+\pgfphysicalwidth=\dimen356
+\pgfpages@shipoutbox=\box124
+)
+\pgfpages@box@1=\box125
+\pgfpages@box@2=\box126
+ (./trier-cartes-slides.aux
 
 LaTeX Warning: Label `pique' multiply defined.
 
@@ -1526,16 +1553,16 @@ LaTeX Font Info:    ... okay on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count431
-\scratchdimen=\dimen353
-\scratchbox=\box124
-\nofMPsegments=\count432
-\nofMParguments=\count433
+\scratchcounter=\count440
+\scratchdimen=\dimen357
+\scratchbox=\box127
+\nofMPsegments=\count441
+\nofMParguments=\count442
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count434
-\MPscratchDim=\dimen354
-\MPnumerator=\count435
-\makeMPintoPDFobject=\count436
+\MPscratchCnt=\count443
+\MPscratchDim=\dimen358
+\MPnumerator=\count444
+\makeMPintoPDFobject=\count445
 \everyMPtoPDFconversion=\toks66
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1549,14 +1576,14 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box125
+\AtBeginShipoutBox=\box128
 Package hyperref Info: Link coloring ON on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count437
+\c@section@level=\count446
 )
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
@@ -1679,16 +1706,19 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  TU/lmtt/bx/n --> TU/lmtt/bx/n on input line 18.
 LaTeX Info: Redefining \dots on input line 18.
 LaTeX Info: Redefining \up on input line 18.
-\c@lstlisting=\count438
+\c@lstlisting=\count447
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./pythontex-files-trier-cartes-slides/trier-cartes-slides.pytxmcr)
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 18.
-\c@listing=\count439
+\c@listing=\count448
 Package newfloat Info: float type `listing'=16 on input line 18.
- (./pythontex-files-trier-cartes-slides/trier-cartes-slides.pytxpyg) (./trier-cartes-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ (./pythontex-files-trier-cartes-slides/trier-cartes-slides.pytxpyg) (./trier-cartes-slides.nav) [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 ]
 <ressources/jeu-coeur-melange.png, id=90, 760.73685pt x 192.46642pt>
@@ -1711,9 +1741,19 @@ LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
 
 [3
 
-<./ressources/jeu-coeur-melange.png>] [4
 
-]
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation2'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+
+] [4
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+
+<./ressources/jeu-coeur-melange.png>]
 LaTeX Font Info:    Try loading font information for U+msa on input line 69.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1728,6 +1768,11 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 69.
  [5
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+
 ]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1736,8 +1781,15 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )) [6
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'menu'
 ]
-<ressources/selection-1.png, id=187, 760.73685pt x 265.49716pt>
+<ressources/selection-1.png, id=201, 760.73685pt x 265.49716pt>
 File: ressources/selection-1.png Graphic file (type png)
 <use ressources/selection-1.png>
 Package luatex.def Info: ressources/selection-1.png  used on input line 95.
@@ -1751,8 +1803,15 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 95--95
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [7
 
-<./ressources/selection-1.png>]
-<ressources/selection-1-2.png, id=210, 760.73685pt x 265.49716pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation6'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'selection1'
+]
+<ressources/selection-1-2.png, id=228, 760.73685pt x 265.49716pt>
 File: ressources/selection-1-2.png Graphic file (type png)
 <use ressources/selection-1-2.png>
 Package luatex.def Info: ressources/selection-1-2.png  used on input line 108.
@@ -1766,8 +1825,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 108--108
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [8
 
-<./ressources/selection-1-2.png>]
-<ressources/selection-1-3.png, id=233, 760.73685pt x 265.49716pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation7'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+
+<./ressources/selection-1.png>]
+<ressources/selection-1-3.png, id=255, 760.73685pt x 265.49716pt>
 File: ressources/selection-1-3.png Graphic file (type png)
 <use ressources/selection-1-3.png>
 Package luatex.def Info: ressources/selection-1-3.png  used on input line 121.
@@ -1781,8 +1845,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 121--121
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [9
 
-<./ressources/selection-1-3.png>]
-<ressources/selection-1-4.png, id=256, 760.73685pt x 192.46642pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation8'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
+
+<./ressources/selection-1-2.png>]
+<ressources/selection-1-4.png, id=282, 760.73685pt x 192.46642pt>
 File: ressources/selection-1-4.png Graphic file (type png)
 <use ressources/selection-1-4.png>
 Package luatex.def Info: ressources/selection-1-4.png  used on input line 134.
@@ -1796,8 +1865,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 134--134
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [10
 
-<./ressources/selection-1-4.png>]
-<ressources/selection-2.png, id=280, 760.73685pt x 265.49716pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation9'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
+
+<./ressources/selection-1-3.png>]
+<ressources/selection-2.png, id=310, 760.73685pt x 265.49716pt>
 File: ressources/selection-2.png Graphic file (type png)
 <use ressources/selection-2.png>
 Package luatex.def Info: ressources/selection-2.png  used on input line 147.
@@ -1811,8 +1885,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 147--147
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [11
 
-<./ressources/selection-2.png>]
-<ressources/selection-2-2.png, id=304, 760.73685pt x 265.49716pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
+
+<./ressources/selection-1-4.png>]
+<ressources/selection-2-2.png, id=337, 760.73685pt x 265.49716pt>
 File: ressources/selection-2-2.png Graphic file (type png)
 <use ressources/selection-2-2.png>
 Package luatex.def Info: ressources/selection-2-2.png  used on input line 160.
@@ -1826,8 +1905,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 160--160
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [12
 
-<./ressources/selection-2-2.png>]
-<ressources/selection-2-3.png, id=327, 760.73685pt x 265.49716pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation11'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
+
+<./ressources/selection-2.png>]
+<ressources/selection-2-3.png, id=365, 760.73685pt x 265.49716pt>
 File: ressources/selection-2-3.png Graphic file (type png)
 <use ressources/selection-2-3.png>
 Package luatex.def Info: ressources/selection-2-3.png  used on input line 173.
@@ -1841,8 +1925,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 173--173
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [13
 
-<./ressources/selection-2-3.png>]
-<ressources/selection-2-4.png, id=350, 760.73685pt x 192.46642pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation12'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
+
+<./ressources/selection-2-2.png>]
+<ressources/selection-2-4.png, id=392, 760.73685pt x 192.46642pt>
 File: ressources/selection-2-4.png Graphic file (type png)
 <use ressources/selection-2-4.png>
 Package luatex.def Info: ressources/selection-2-4.png  used on input line 186.
@@ -1856,14 +1945,24 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 186--186
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [14
 
-<./ressources/selection-2-4.png>]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation13'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
+
+<./ressources/selection-2-3.png>]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [15
 
-]
-<ressources/selection2-1.png, id=395, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation14'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
+
+<./ressources/selection-2-4.png>]
+<ressources/selection2-1.png, id=446, 760.73685pt x 389.49727pt>
 File: ressources/selection2-1.png Graphic file (type png)
 <use ressources/selection2-1.png>
 Package luatex.def Info: ressources/selection2-1.png  used on input line 214.
@@ -1877,8 +1976,15 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 214--214
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [16
 
-<./ressources/selection2-1.png>]
-<ressources/selection2-2.png, id=418, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation15'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'selection2'
+]
+<ressources/selection2-2.png, id=472, 760.73685pt x 389.49727pt>
 File: ressources/selection2-2.png Graphic file (type png)
 <use ressources/selection2-2.png>
 Package luatex.def Info: ressources/selection2-2.png  used on input line 227.
@@ -1892,8 +1998,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 227--227
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [17
 
-<./ressources/selection2-2.png>]
-<ressources/selection2-3.png, id=441, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation16'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
+
+<./ressources/selection2-1.png>]
+<ressources/selection2-3.png, id=499, 760.73685pt x 389.49727pt>
 File: ressources/selection2-3.png Graphic file (type png)
 <use ressources/selection2-3.png>
 Package luatex.def Info: ressources/selection2-3.png  used on input line 240.
@@ -1907,8 +2018,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 240--240
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [18
 
-<./ressources/selection2-3.png>]
-<ressources/selection2-4.png, id=464, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation17'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
+
+<./ressources/selection2-2.png>]
+<ressources/selection2-4.png, id=527, 760.73685pt x 389.49727pt>
 File: ressources/selection2-4.png Graphic file (type png)
 <use ressources/selection2-4.png>
 Package luatex.def Info: ressources/selection2-4.png  used on input line 253.
@@ -1922,14 +2038,24 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 253--253
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [19
 
-<./ressources/selection2-4.png>]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation18'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
+
+<./ressources/selection2-3.png>]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [20
 
-]
-<ressources/insertion-1.png, id=509, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation19'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
+
+<./ressources/selection2-4.png>]
+<ressources/insertion-1.png, id=580, 760.73685pt x 389.49727pt>
 File: ressources/insertion-1.png Graphic file (type png)
 <use ressources/insertion-1.png>
 Package luatex.def Info: ressources/insertion-1.png  used on input line 284.
@@ -1943,7 +2069,14 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 284--284
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [21
 
-<./ressources/insertion-1.png>]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation20'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'insertion1'
+]
 File: ressources/insertion-1.png Graphic file (type png)
 <use ressources/insertion-1.png>
 Package luatex.def Info: ressources/insertion-1.png  used on input line 298.
@@ -1957,8 +2090,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 298--298
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [22
 
-]
-<ressources/insertion-2.png, id=554, 760.73685pt x 192.46642pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation21'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
+
+<./ressources/insertion-1.png>]
+<ressources/insertion-2.png, id=634, 760.73685pt x 192.46642pt>
 File: ressources/insertion-2.png Graphic file (type png)
 <use ressources/insertion-2.png>
 Package luatex.def Info: ressources/insertion-2.png  used on input line 312.
@@ -1972,8 +2110,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 312--312
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [23
 
-<./ressources/insertion-2.png>]
-<ressources/insertion-3.png, id=577, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation22'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
+
+]
+<ressources/insertion-3.png, id=660, 760.73685pt x 389.49727pt>
 File: ressources/insertion-3.png Graphic file (type png)
 <use ressources/insertion-3.png>
 Package luatex.def Info: ressources/insertion-3.png  used on input line 326.
@@ -1987,8 +2130,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 326--326
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [24
 
-<./ressources/insertion-3.png>]
-<ressources/insertion-4.png, id=600, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation23'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
+
+<./ressources/insertion-2.png>]
+<ressources/insertion-4.png, id=687, 760.73685pt x 389.49727pt>
 File: ressources/insertion-4.png Graphic file (type png)
 <use ressources/insertion-4.png>
 Package luatex.def Info: ressources/insertion-4.png  used on input line 340.
@@ -2002,8 +2150,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 340--340
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [25
 
-<./ressources/insertion-4.png>]
-<ressources/insertion-5.png, id=624, 760.73685pt x 192.46642pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation24'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.24'
+
+<./ressources/insertion-3.png>]
+<ressources/insertion-5.png, id=714, 760.73685pt x 192.46642pt>
 File: ressources/insertion-5.png Graphic file (type png)
 <use ressources/insertion-5.png>
 Package luatex.def Info: ressources/insertion-5.png  used on input line 354.
@@ -2017,8 +2170,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 354--354
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [26
 
-<./ressources/insertion-5.png>]
-<ressources/insertion-5-5.png, id=647, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation25'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
+
+<./ressources/insertion-4.png>]
+<ressources/insertion-5-5.png, id=741, 760.73685pt x 389.49727pt>
 File: ressources/insertion-5-5.png Graphic file (type png)
 <use ressources/insertion-5-5.png>
 Package luatex.def Info: ressources/insertion-5-5.png  used on input line 367.
@@ -2032,8 +2190,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 367--367
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [27
 
-<./ressources/insertion-5-5.png>]
-<ressources/insertion-6.png, id=670, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation26'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
+
+<./ressources/insertion-5.png>]
+<ressources/insertion-6.png, id=769, 760.73685pt x 389.49727pt>
 File: ressources/insertion-6.png Graphic file (type png)
 <use ressources/insertion-6.png>
 Package luatex.def Info: ressources/insertion-6.png  used on input line 381.
@@ -2047,8 +2210,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 381--381
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [28
 
-<./ressources/insertion-6.png>]
-<ressources/insertion-7.png, id=693, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation27'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
+
+<./ressources/insertion-5-5.png>]
+<ressources/insertion-7.png, id=796, 760.73685pt x 389.49727pt>
 File: ressources/insertion-7.png Graphic file (type png)
 <use ressources/insertion-7.png>
 Package luatex.def Info: ressources/insertion-7.png  used on input line 395.
@@ -2062,8 +2230,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 395--395
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [29
 
-<./ressources/insertion-7.png>]
-<ressources/insertion-8.png, id=716, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation28'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
+
+<./ressources/insertion-6.png>]
+<ressources/insertion-8.png, id=823, 760.73685pt x 389.49727pt>
 File: ressources/insertion-8.png Graphic file (type png)
 <use ressources/insertion-8.png>
 Package luatex.def Info: ressources/insertion-8.png  used on input line 409.
@@ -2077,14 +2250,24 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 409--409
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [30
 
-<./ressources/insertion-8.png>]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation29'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.29'
+
+<./ressources/insertion-7.png>]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [31
 
-]
-<ressources/insertion2-1.png, id=762, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation30'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.30'
+
+<./ressources/insertion-8.png>]
+<ressources/insertion2-1.png, id=877, 760.73685pt x 389.49727pt>
 File: ressources/insertion2-1.png Graphic file (type png)
 <use ressources/insertion2-1.png>
 Package luatex.def Info: ressources/insertion2-1.png  used on input line 437.
@@ -2098,7 +2281,14 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 437--437
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [32
 
-<./ressources/insertion2-1.png>]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation31'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.31'
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'insertion2'
+]
 File: ressources/insertion2-1.png Graphic file (type png)
 <use ressources/insertion2-1.png>
 Package luatex.def Info: ressources/insertion2-1.png  used on input line 450.
@@ -2112,8 +2302,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 450--450
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [33
 
-]
-<ressources/insertion2-2.png, id=806, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation32'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.32'
+
+<./ressources/insertion2-1.png>]
+<ressources/insertion2-2.png, id=930, 760.73685pt x 389.49727pt>
 File: ressources/insertion2-2.png Graphic file (type png)
 <use ressources/insertion2-2.png>
 Package luatex.def Info: ressources/insertion2-2.png  used on input line 463.
@@ -2127,8 +2322,13 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 463--463
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [34
 
-<./ressources/insertion2-2.png>]
-<ressources/insertion2-3.png, id=830, 760.73685pt x 499.04337pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation33'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.33'
+
+]
+<ressources/insertion2-3.png, id=956, 760.73685pt x 499.04337pt>
 File: ressources/insertion2-3.png Graphic file (type png)
 <use ressources/insertion2-3.png>
 Package luatex.def Info: ressources/insertion2-3.png  used on input line 477.
@@ -2146,8 +2346,13 @@ Overfull \vbox (10.71355pt too high) detected at line 477
 
 [35
 
-<./ressources/insertion2-3.png>]
-<ressources/insertion2-4.png, id=853, 760.73685pt x 540.8839pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation34'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.34'
+
+<./ressources/insertion2-2.png>]
+<ressources/insertion2-4.png, id=984, 760.73685pt x 540.8839pt>
 File: ressources/insertion2-4.png Graphic file (type png)
 <use ressources/insertion2-4.png>
 Package luatex.def Info: ressources/insertion2-4.png  used on input line 490.
@@ -2165,8 +2370,13 @@ Overfull \vbox (26.36284pt too high) detected at line 490
 
 [36
 
-<./ressources/insertion2-4.png>]
-<ressources/insertion2-5.png, id=876, 760.73685pt x 389.49727pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation35'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.35'
+
+<./ressources/insertion2-3.png>]
+<ressources/insertion2-5.png, id=1011, 760.73685pt x 389.49727pt>
 File: ressources/insertion2-5.png Graphic file (type png)
 <use ressources/insertion2-5.png>
 Package luatex.def Info: ressources/insertion2-5.png  used on input line 503.
@@ -2180,10 +2390,15 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 503--503
 warning  (pdf backend): ignoring duplicate destination with the name 'pique'
 [37
 
-<./ressources/insertion2-5.png>]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation36'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.36'
+
+<./ressources/insertion2-4.png>]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb
-<ressources/tutor-mutable.png, id=899, 720.6925pt x 407.5225pt>
+<ressources/tutor-mutable.png, id=1038, 720.6925pt x 407.5225pt>
 File: ressources/tutor-mutable.png Graphic file (type png)
 <use ressources/tutor-mutable.png>
 Package luatex.def Info: ressources/tutor-mutable.png  used on input line 13.
@@ -2194,9 +2409,19 @@ Overfull \vbox (15.07268pt too high) detected at line 525
 
 [38
 
-<./ressources/tutor-mutable.png>] [39
 
-]
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation37'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.37'
+
+<./ressources/insertion2-5.png>] [39
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation38'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.38'
+
+<./ressources/tutor-mutable.png>]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
@@ -2207,35 +2432,95 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 5.
 ) [40
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation39'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.39'
+
 ] [41
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation40'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.40'
 
 ] (./scripts/tri-selection.py) [42
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation41'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.41'
+
 ] (./scripts/tri-selection.py) [43
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation42'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.42'
 
 ] (./scripts/tri-selection.py) [44
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation43'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.43'
+
 ] [45
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation44'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.44'
 
 ] (./scripts/tri-selection.py) [46
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation45'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.45'
+
 ] [47
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation46'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.46'
 
 ]
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 [48
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation47'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.47'
+
 ]
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 [49
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation48'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.48'
 
 ]
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 [50
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation49'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.49'
+
 ]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb) [51
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation50'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.50'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -2248,8 +2533,13 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 707.
  [52
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation51'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.51'
+
 ]
-<ressources/complexite-selection.png, id=1215, 462.528pt x 346.896pt>
+<ressources/complexite-selection.png, id=1423, 462.528pt x 346.896pt>
 File: ressources/complexite-selection.png Graphic file (type png)
 <use ressources/complexite-selection.png>
 Package luatex.def Info: ressources/complexite-selection.png  used on input line 717.
@@ -2261,39 +2551,104 @@ Overfull \hbox (5.69043pt too wide) in paragraph at lines 717--717
 
 [53
 
-<./ressources/complexite-selection.png>] [54
 
-]
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation52'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.52'
+
+] [54
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation53'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.53'
+
+<./ressources/complexite-selection.png>]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [55
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation54'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.54'
+
 ] (./scripts/tri-insertion.py) [56
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation55'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.55'
 
 ] (./scripts/tri-insertion.py) [57
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation56'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.56'
+
 ] (./scripts/tri-insertion.py) [58
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation57'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.57'
 
 ] (./scripts/tri-insertion.py) [59
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation58'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.58'
+
 ] (./scripts/tri-insertion.py) [60
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation59'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.59'
 
 ] (./scripts/tri-insertion.py) [61
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation60'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.60'
+
 ] [62
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation61'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.61'
 
 ]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb) [63
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation62'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.62'
+
 ]
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 [64
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation63'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.63'
+
 ]
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 [65
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation64'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.64'
 
 ]
 \openout4 = trier-cartes-slides.vrb
@@ -2301,7 +2656,17 @@ warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [66
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation65'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.65'
+
 ] [67
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation66'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.66'
 
 ]
 \openout4 = trier-cartes-slides.vrb
@@ -2309,11 +2674,21 @@ warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [68
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation67'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.67'
+
 ]
 \openout4 = trier-cartes-slides.vrb
  (./trier-cartes-slides.vrb
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [69
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation68'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.68'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -2326,6 +2701,11 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 972.
  [70
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation69'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.69'
+
 ]
 \tf@nav=\write8
 
@@ -2336,6 +2716,14 @@ Package mdframed Info: mdframed inside a box
 \tf@snm=\write10
 
 \openout10 = trier-cartes-slides.snm
+ [71
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation70'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.70'
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 973.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 973.
  (./trier-cartes-slides.aux)
@@ -2350,19 +2738,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45565 strings out of 494383
- 381600,1373583 words of node,token memory allocated
- 218825 words of node memory still in use:
-   51 hlist, 8 vlist, 8 rule, 9 disc, 4 local_par, 2 math, 180 glue, 11 kern, 21 penalty, 25812 glyph, 15015 attribute, 106 glue_spec, 2505 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
-   avail lists: 1:4,2:3991,3:452,4:3593,5:2955,6:66,7:1329,8:2424,9:4559,10:26,11:276,12:1
- 47621 multiletter control sequences out of 65536+600000
- 90 fonts using 11508343 bytes
- 70i,15n,107p,1200b,1074s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on trier-cartes-slides.pdf (70 pages, 4096578 bytes).
+ 45845 strings out of 494383
+ 596235,1373583 words of node,token memory allocated
+ 295798 words of node memory still in use:
+   135 hlist, 26 vlist, 20 rule, 28 disc, 14 local_par, 4 math, 407 glue, 33 kern, 49 penalty, 35117 glyph, 18489 attribute, 109 glue_spec, 3084 attribute_list, 7 write, 2 save_pos, 246 pdf_literal, 3 pdf_start_link, 3 pdf_end_link, 2 pdf_dest, 3 pdf_action, 50 pdf_colorstack nodes
+   avail lists: 1:3,2:7051,3:1126,4:8392,5:6617,6:170,7:4025,8:5278,9:10563,10:26,11:671,12:1
+ 47886 multiletter control sequences out of 65536+600000
+ 91 fonts using 11640023 bytes
+ 70i,15n,107p,1200b,1084s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on trier-cartes-slides.pdf (70 pages, 4153774 bytes).
 
-PDF statistics: 1662 PDF objects out of 1728 (max. 8388607)
- 1479 compressed objects within 15 object streams
+PDF statistics: 1979 PDF objects out of 2073 (max. 8388607)
+ 1690 compressed objects within 17 object streams
  162 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

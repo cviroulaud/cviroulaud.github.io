@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  12 APR 2021 13:39
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  12 APR 2021 14:00
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/type-bac-structures/type-bac-structures
-(/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/type-bac-structures/type-bac-structures.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/type-bac-structures/type-bac-structures-correction
+(/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/type-bac-structures/type-bac-structures-correction.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.158 seconds
+luaotfload | main : initialization completed in 0.140 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -937,7 +937,7 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
 \pytx@codefile=\write5
 
-\openout5 = type-bac-structures.pytxcode
+\openout5 = type-bac-structures-correction.pytxcode
 \c@pytx@FancyVerbLineTemp=\count366
 \c@pytx@py@default@default=\count367
 \c@pytx@pycon@default@default=\count368
@@ -1224,8 +1224,8 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 \everycr=\toks57
 \minrowclearance=\skip143
-) (./type-bac-structures.aux)
-\openout1 = type-bac-structures.aux
+) (./type-bac-structures-correction.aux)
+\openout1 = type-bac-structures-correction.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -1391,27 +1391,17 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
- (./type-bac-structures.out) (./type-bac-structures.out)
+ (./type-bac-structures-correction.out) (./type-bac-structures-correction.out)
 \@outlinefile=\write7
 
-\openout7 = type-bac-structures.out
+\openout7 = type-bac-structures-correction.out
 
-No file pythontex-files-type-bac-structures/type-bac-structures.pytxmcr.
+No file pythontex-files-type-bac-structures-correction/type-bac-structures-correction.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 18.
 \c@listing=\count410
 Package newfloat Info: float type `listing'=16 on input line 18.
-ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 31.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 31.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 50.
- (./scripts/exo-dico.py) (./scripts/exo-dico.py
+ABD: EveryShipout initializing macros (./scripts/moyenne-ponderee.py) (./scripts/minmax.py) (./scripts/exo-dico-correction.py)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 17.93123pt.
@@ -1421,40 +1411,34 @@ This may cause the page layout to be inconsistent, however.
 </home/tof/Documents/Cozy/latex-include/cc.png, id=8, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 17.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 29.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-Missing character: There is no  (U+F0B7) in font [lmroman10-regular]:+tlig;!
-</home/tof/Documents/Cozy/latex-include/cc.png>])
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 72.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
- (./type-bac-structures.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
-Package rerunfilecheck Info: File `type-bac-structures.out' has not changed.
+</home/tof/Documents/Cozy/latex-include/cc.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
+ (./type-bac-structures-correction.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
+Package rerunfilecheck Info: File `type-bac-structures-correction.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41430 strings out of 494383
- 156375,1144653 words of node,token memory allocated
- 18376 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 21 glue, 4 kern, 1 penalty, 1956 glyph, 1652 attribute, 98 glue_spec, 277 attribute_list, 1 write nodes
-   avail lists: 1:3,2:7854,3:158,4:3059,5:2743,6:52,7:3679,8:2299,9:4200,10:25,11:328
- 44351 multiletter control sequences out of 65536+600000
- 51 fonts using 7637519 bytes
- 84i,18n,95p,1202b,1084s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on type-bac-structures.pdf (2 pages, 47364 bytes).
+ 41348 strings out of 494383
+ 244350,1144653 words of node,token memory allocated
+ 12650 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 8 glue, 4 kern, 1 penalty, 1068 glyph, 1898 attribute, 98 glue_spec, 318 attribute_list, 2 write, 1 pdf_colorstack nodes
+   avail lists: 1:7,2:13311,3:178,4:5274,5:4218,6:62,7:3990,8:3791,9:6848,10:25,11:380
+ 44320 multiletter control sequences out of 65536+600000
+ 32 fonts using 6378719 bytes
+ 84i,17n,95p,1213b,830s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on type-bac-structures-correction.pdf (1 page, 25741 bytes).
 
-PDF statistics: 107 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 39 named destinations out of 1000 (max. 131072)
+PDF statistics: 105 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 50 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

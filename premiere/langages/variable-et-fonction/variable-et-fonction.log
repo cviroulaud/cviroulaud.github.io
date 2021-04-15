@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 MAR 2021 12:02
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 APR 2021 09:46
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/variable-et-fonction/variable-et-fonction
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/variable-et-fonction/variable-et-fonction.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.155 seconds
+luaotfload | main : initialization completed in 0.122 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1465,31 +1465,31 @@ Package mdframed Warning: You got a bad break
 (mdframed)                because the last box will be empty
 (mdframed)                you have to change it manually
 (mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 132.
+(mdframed)                or something else on input line 133.
 
 Package mdframed Info: You first box width is to small
  mdframed fixed it
-(mdframed)              on input line 132.
+(mdframed)              on input line 133.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 132.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 133.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [3]
 
 Package mdframed Warning: You got a bad break
 (mdframed)                because the last split box is empty
-(mdframed)                You have to change the settings on input line 132.
+(mdframed)                You have to change the settings on input line 133.
 
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 143.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 144.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (./variable-et-fonction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `variable-et-fonction.out' has not changed.
 (rerunfilecheck)             Checksum: D8E8630D1884718D9158EF30A076CD56;1670.
 )

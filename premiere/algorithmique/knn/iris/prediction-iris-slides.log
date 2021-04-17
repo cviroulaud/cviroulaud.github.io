@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 APR 2021 15:10
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 APR 2021 22:55
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/knn/iris/prediction-iris-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/knn/iris/prediction-iris-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.126 seconds
+luaotfload | main : initialization completed in 0.144 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1341,7 +1341,34 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 \everycr=\toks64
 \minrowclearance=\skip143
-) (./prediction-iris-slides.aux
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2011/01/05 ver 0.02
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count431
+\calc@Bcount=\count432
+\calc@Adimen=\dimen353
+\calc@Bdimen=\dimen354
+\calc@Askip=\skip144
+\calc@Bskip=\skip145
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count433
+\calc@Cskip=\skip146
+)
+\pgf@logicalpages=\count434
+\pgf@firstshipout=\count435
+\pgf@lastshipout=\count436
+\pgf@currentshipout=\count437
+\pgf@cpn=\count438
+\pgf@shipoutnextto=\count439
+\pgfphysicalheight=\dimen355
+\pgfphysicalwidth=\dimen356
+\pgfpages@shipoutbox=\box124
+)
+\pgfpages@box@1=\box125
+\pgfpages@box@2=\box126
+ (./prediction-iris-slides.aux
 
 LaTeX Warning: Label `IMG' multiply defined.
 
@@ -1415,16 +1442,16 @@ LaTeX Font Info:    ... okay on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count431
-\scratchdimen=\dimen353
-\scratchbox=\box124
-\nofMPsegments=\count432
-\nofMParguments=\count433
+\scratchcounter=\count440
+\scratchdimen=\dimen357
+\scratchbox=\box127
+\nofMPsegments=\count441
+\nofMParguments=\count442
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count434
-\MPscratchDim=\dimen354
-\MPnumerator=\count435
-\makeMPintoPDFobject=\count436
+\MPscratchCnt=\count443
+\MPscratchDim=\dimen358
+\MPnumerator=\count444
+\makeMPintoPDFobject=\count445
 \everyMPtoPDFconversion=\toks66
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1438,14 +1465,14 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box125
+\AtBeginShipoutBox=\box128
 Package hyperref Info: Link coloring ON on input line 17.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count437
+\c@section@level=\count446
 )
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
@@ -1568,190 +1595,314 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  TU/lmtt/bx/n --> TU/lmtt/bx/n on input line 17.
 LaTeX Info: Redefining \dots on input line 17.
 LaTeX Info: Redefining \up on input line 17.
-\c@lstlisting=\count438
+\c@lstlisting=\count447
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 No file pythontex-files-prediction-iris-slides/prediction-iris-slides.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 17.
-\c@listing=\count439
+\c@listing=\count448
 Package newfloat Info: float type `listing'=16 on input line 17.
-(./prediction-iris-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+(./prediction-iris-slides.nav)
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 40.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 38.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 40.
-<ressources/iris-setosa.jpg, id=73, 361.35pt x 481.8pt>
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 38.
+<ressources/iris-setosa.jpg, id=57, 361.35pt x 481.8pt>
 File: ressources/iris-setosa.jpg Graphic file (type jpg)
 <use ressources/iris-setosa.jpg>
-Package luatex.def Info: ressources/iris-setosa.jpg  used on input line 40.
+Package luatex.def Info: ressources/iris-setosa.jpg  used on input line 38.
 (luatex.def)             Requested size: 53.34552pt x 71.13188pt.
-<ressources/iris-versicolor.jpg, id=74, 321.2pt x 240.9pt>
+<ressources/iris-versicolor.jpg, id=58, 321.2pt x 240.9pt>
 File: ressources/iris-versicolor.jpg Graphic file (type jpg)
 <use ressources/iris-versicolor.jpg>
-Package luatex.def Info: ressources/iris-versicolor.jpg  used on input line 40.
+Package luatex.def Info: ressources/iris-versicolor.jpg  used on input line 38.
 (luatex.def)             Requested size: 94.8414pt x 71.13188pt.
-<ressources/iris-virginica.jpg, id=75, 142.131pt x 115.632pt>
+<ressources/iris-virginica.jpg, id=59, 142.131pt x 115.632pt>
 File: ressources/iris-virginica.jpg Graphic file (type jpg)
 <use ressources/iris-virginica.jpg>
-Package luatex.def Info: ressources/iris-virginica.jpg  used on input line 40.
+Package luatex.def Info: ressources/iris-virginica.jpg  used on input line 38.
 (luatex.def)             Requested size: 87.43713pt x 71.13188pt.
- [2
+ [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-<./ressources/iris-setosa.jpg><./ressources/iris-versicolor.jpg><./ressources/iris-virginica.jpg>]
-Overfull \hbox (24.58786pt too wide) in paragraph at lines 49--49
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 38.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 38.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 38.
+
+Overfull \hbox (24.58786pt too wide) in paragraph at lines 47--47
  [] 
  []
 
 [3
 
-]
-<ressources/iris-graphe.png, id=106, 462.528pt x 346.896pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation2'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+
+<./ressources/iris-setosa.jpg><./ressources/iris-versicolor.jpg><./ressources/iris-virginica.jpg>]
+<ressources/iris-graphe.png, id=110, 462.528pt x 346.896pt>
 File: ressources/iris-graphe.png Graphic file (type png)
 <use ressources/iris-graphe.png>
-Package luatex.def Info: ressources/iris-graphe.png  used on input line 65.
+Package luatex.def Info: ressources/iris-graphe.png  used on input line 63.
 (luatex.def)             Requested size: 284.52756pt x 213.40593pt.
 
-Overfull \hbox (5.69043pt too wide) in paragraph at lines 65--65
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 63--63
  [] 
  []
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 65.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 63.
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 65.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 63.
 
 
-Overfull \vbox (0.85931pt too high) detected at line 65
+Overfull \vbox (0.85931pt too high) detected at line 63
  []
 
 [4
 
-<./ressources/iris-graphe.png>] [5
 
-] [6
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+
+] [5
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+
+<./ressources/iris-graphe.png>] [6
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
 
 ]
-<ressources/zoom-k3-slides.png, id=155, 218.8175pt x 203.76125pt>
+<ressources/zoom-k3-slides.png, id=176, 218.8175pt x 203.76125pt>
 File: ressources/zoom-k3-slides.png Graphic file (type png)
 <use ressources/zoom-k3-slides.png>
-Package luatex.def Info: ressources/zoom-k3-slides.png  used on input line 116.
+Package luatex.def Info: ressources/zoom-k3-slides.png  used on input line 114.
 (luatex.def)             Requested size: 113.81102pt x 105.98132pt.
  [7
 
-<./ressources/zoom-k3-slides.png>]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation6'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+
+]
 File: ressources/zoom-k3-slides.png Graphic file (type png)
 <use ressources/zoom-k3-slides.png>
-Package luatex.def Info: ressources/zoom-k3-slides.png  used on input line 116.
+Package luatex.def Info: ressources/zoom-k3-slides.png  used on input line 114.
 (luatex.def)             Requested size: 113.81102pt x 105.98132pt.
  [8
 
-]
-<ressources/zoom-k3.png, id=187, 534.798pt x 499.80411pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation7'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+
+<./ressources/zoom-k3-slides.png>]
+<ressources/zoom-k3.png, id=219, 534.798pt x 499.80411pt>
 File: ressources/zoom-k3.png Graphic file (type png)
 <use ressources/zoom-k3.png>
-Package luatex.def Info: ressources/zoom-k3.png  used on input line 127.
+Package luatex.def Info: ressources/zoom-k3.png  used on input line 125.
 (luatex.def)             Requested size: 227.62204pt x 212.73042pt.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 127.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 127.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 127.
 
-Overfull \vbox (9.47005pt too high) detected at line 127
+Overfull \vbox (9.47005pt too high) detected at line 125
  []
 
 [9
 
-<./ressources/zoom-k3.png>]
-<ressources/zoom-k7.png, id=206, 534.798pt x 499.80411pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation8'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
+
+]
+<ressources/zoom-k7.png, id=240, 534.798pt x 499.80411pt>
 File: ressources/zoom-k7.png Graphic file (type png)
 <use ressources/zoom-k7.png>
-Package luatex.def Info: ressources/zoom-k7.png  used on input line 139.
+Package luatex.def Info: ressources/zoom-k7.png  used on input line 137.
 (luatex.def)             Requested size: 227.62204pt x 212.73042pt.
 
-warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
-
-Overfull \vbox (9.47005pt too high) detected at line 139
+Overfull \vbox (9.47005pt too high) detected at line 137
  []
 
 [10
 
-<./ressources/zoom-k7.png>]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation9'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
+
+<./ressources/zoom-k3.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 149.
+(mdframed)              on input line 147.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 149.
+(mdframed)              on input line 147.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 149.
+ mdframed uses option nobreak mdframed on input line 147.
  [11
 
-]
-<ressources/euclidienne.png, id=239, 163.55843pt x 152.14737pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
+
+<./ressources/zoom-k7.png>]
+<ressources/euclidienne.png, id=285, 163.55843pt x 152.14737pt>
 File: ressources/euclidienne.png Graphic file (type png)
 <use ressources/euclidienne.png>
-Package luatex.def Info: ressources/euclidienne.png  used on input line 162.
+Package luatex.def Info: ressources/euclidienne.png  used on input line 160.
 (luatex.def)             Requested size: 113.81102pt x 105.87094pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 [12
 
-<./ressources/euclidienne.png>]
-<ressources/manhattan.png, id=259, 163.55843pt x 152.14737pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation11'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
+
+]
+<ressources/manhattan.png, id=307, 163.55843pt x 152.14737pt>
 File: ressources/manhattan.png Graphic file (type png)
 <use ressources/manhattan.png>
-Package luatex.def Info: ressources/manhattan.png  used on input line 174.
+Package luatex.def Info: ressources/manhattan.png  used on input line 172.
 (luatex.def)             Requested size: 113.81102pt x 105.87094pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 [13
 
-<./ressources/manhattan.png>] [14
 
-] [15
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation12'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
+
+<./ressources/euclidienne.png>] [14
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation13'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
+
+<./ressources/manhattan.png>] [15
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation14'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
 
 ] [16
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation15'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
+
 ] [17
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation16'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
 
 ] [18
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation17'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
+
 ] [19
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation18'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
 
 ] (./scripts/iris-correction.py) [20
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation19'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
+
 ] (./scripts/iris-correction.py) [21
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation20'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
 
 ] (./scripts/iris-correction.py) [22
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation21'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
+
 ] (./scripts/iris-correction.py)
-Overfull \vbox (5.53961pt too high) detected at line 279
+Overfull \vbox (5.53961pt too high) detected at line 277
  []
 
 [23
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation22'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
+
 ] [24
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation23'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
 
 ] (./scripts/iris-correction.py) [25
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation24'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.24'
+
 ] (./scripts/iris-correction.py) [26
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation25'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
 
 ]
 \tf@nav=\write8
@@ -1763,33 +1914,57 @@ Overfull \vbox (5.53961pt too high) detected at line 279
 \tf@snm=\write10
 
 \openout10 = prediction-iris-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
- (./prediction-iris-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
-Package rerunfilecheck Info: File `prediction-iris-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 3E4DD2C78336BED1CE043A1B9079BCC5;1260.
+ [27
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation26'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+ (./prediction-iris-slides.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+
+
+Package rerunfilecheck Warning: File `prediction-iris-slides.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `prediction-iris-slides.out':
+(rerunfilecheck)             Before: 7BA3F337C6EE5638C300B34FB9EE7990;1260
+(rerunfilecheck)             After:  3E4DD2C78336BED1CE043A1B9079BCC5;1260.
 
 LaTeX Warning: There were multiply-defined labels.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 44624 strings out of 494383
- 305227,1144653 words of node,token memory allocated
- 150002 words of node memory still in use:
-   2433 hlist, 9 vlist, 1259 rule, 150 disc, 16 local_par, 2 math, 996 glue, 1591 kern, 27 penalty, 9950 glyph, 10125 attribute, 106 glue_spec, 1690 attribute_list, 4 write, 1824 pdf_colorstack nodes
-   avail lists: 1:5,2:3970,3:270,4:4420,5:3534,6:52,7:1977,8:2973,9:5594,10:24,11:341,12:1
- 47098 multiletter control sequences out of 65536+600000
- 90 fonts using 11506159 bytes
- 70i,15n,95p,1194b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on prediction-iris-slides.pdf (26 pages, 392598 bytes).
+ 44913 strings out of 494383
+ 596202,1144653 words of node,token memory allocated
+ 238834 words of node memory still in use:
+   4901 hlist, 29 vlist, 2524 rule, 312 disc, 38 local_par, 4 math, 2036 glue, 3187 kern, 61 penalty, 13839 glyph, 11943 attribute, 109 glue_spec, 1993 attribute_list, 7 write, 30 pdf_literal, 3 pdf_start_link, 3 pdf_end_link, 2 pdf_dest, 3 pdf_action, 3670 pdf_colorstack nodes
+   avail lists: 1:2,2:6323,3:703,4:7360,5:5785,6:136,7:5160,8:4811,9:9470,10:24,11:660,12:1
+ 47365 multiletter control sequences out of 65536+600000
+ 93 fonts using 11901199 bytes
+ 70i,15n,95p,1194b,1074s stack positions out of 5000i,500n,10000p,200000b,100000s
 
-PDF statistics: 546 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 63 named destinations out of 1000 (max. 131072)
+warning  (pdf backend): unreferenced destination with name 'Outline0.3.3.15'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.3.2.11'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.3.1.6'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.2.2.4'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.2.1.3'
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on prediction-iris-slides.pdf (26 pages, 420714 bytes).
+
+PDF statistics: 690 PDF objects out of 1000 (max. 8388607)
+ 551 compressed objects within 6 object streams
+ 68 named destinations out of 1000 (max. 131072)
  90 words of extra memory for PDF output out of 10000 (max. 100000000)
 

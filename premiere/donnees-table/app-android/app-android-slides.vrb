@@ -1,0 +1,14 @@
+\frametitle{Correction}
+
+\lstinputlisting[firstline=76 ,lastline=80, basicstyle=\small, xleftmargin=1em, xrightmargin=1em ]{"scripts/appgoogle.py"}
+\begin{center}
+    \begin{lstlisting}[language=bash]
+Top 1: FG Autumn Photo Puzzle
+Top 2: Blender BG - Photo Blend With Background
+Top 3: Simple Photo BG Changer
+Top 4: Best CG Photography
+Top 5: Life Made WI-Fi Touchscreen Photo Frame
+    \end{lstlisting}
+    \end{center}
+
+

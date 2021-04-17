@@ -1,0 +1,68 @@
+=>PYTHONTEX#py#default#default#0#code#####3#
+import csv
+fichier = open("scripts/notes.csv")
+
+lecteur1 = csv.reader(fichier)
+for ligne in lecteur1:
+    print(ligne)
+    print()
+
+fichier.close()
+=>PYTHONTEX#py#default#default#1#code#####3#
+import csv
+fichier = open("scripts/notes.csv")
+
+lecteur1 = csv.DictReader(fichier)
+for ligne in lecteur1:
+    print(ligne)
+    print()
+
+fichier.close()
+=>PYTHONTEX#py#default#default#2#code#####6#
+import csv
+
+f = open("scripts/notes.csv")
+data = csv.DictReader(f)
+eleves = []
+for e in data:
+    dico = {"nom": e["nom"], "prenom": e["prenom"],
+            "moyennes": float(e["moyennes"])}
+    eleves.append(dico)
+f.close()
+
+
+def parametres_tri(eleve: dict) -> float:
+    """
+    renvoie le paramètre utilisé pour le tri
+    """
+    return eleve["moyennes"]
+
+eleves.sort(key=parametres_tri)
+for e in eleves:
+    print(e)
+    print()
+=>PYTHONTEX:SETTINGS#
+version=0.16
+outputdir=pythontex-files-app-android-slides
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python|
+pygfamily=pylabcon|pycon|

@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  19 APR 2021 01:01
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  19 APR 2021 13:51
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/exercices-tris/exercices-tris
-(/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/exercices-tris/exercices-tris.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/exercices-tris/exercices-tris-correction
+(/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/exercices-tris/exercices-tris-correction.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.186 seconds
+luaotfload | main : initialization completed in 0.221 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -937,7 +937,7 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
 \pytx@codefile=\write5
 
-\openout5 = exercices-tris.pytxcode
+\openout5 = exercices-tris-correction.pytxcode
 \c@pytx@FancyVerbLineTemp=\count366
 \c@pytx@py@default@default=\count367
 \c@pytx@pycon@default@default=\count368
@@ -1224,8 +1224,15 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 \everycr=\toks57
 \minrowclearance=\skip143
-) (./exercices-tris.aux)
-\openout1 = exercices-tris.aux
+) (./exercices-tris-correction.aux
+
+LaTeX Warning: Label `bulle' multiply defined.
+
+
+LaTeX Warning: Label `bulle' multiply defined.
+
+)
+\openout1 = exercices-tris-correction.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -1391,12 +1398,12 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 19.
 LaTeX Info: Redefining \pageref on input line 19.
 LaTeX Info: Redefining \nameref on input line 19.
- (./exercices-tris.out) (./exercices-tris.out)
+ (./exercices-tris-correction.out) (./exercices-tris-correction.out)
 \@outlinefile=\write7
 
-\openout7 = exercices-tris.out
+\openout7 = exercices-tris-correction.out
 
-No file pythontex-files-exercices-tris/exercices-tris.pytxmcr.
+No file pythontex-files-exercices-tris-correction/exercices-tris-correction.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 19.
 \c@listing=\count410
@@ -1410,56 +1417,63 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 21.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 66.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 38.
-Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 116.
-
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 183.
+ (./scripts/comparer.py) (./scripts/tri-insertion.py
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 17.67203pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=9, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=8, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 116.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 18.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-</home/tof/Documents/Cozy/latex-include/cc.png>]
+</home/tof/Documents/Cozy/latex-include/cc.png>]) (./scripts/tri-stable.py) (./scripts/compter.py
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 127.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 44.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
- (./exercices-tris.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
-Package rerunfilecheck Info: File `exercices-tris.out' has not changed.
+ [2]) (./scripts/tri-bulles.py)
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 199.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
+ (./exercices-tris-correction.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
+Package rerunfilecheck Info: File `exercices-tris-correction.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 41501 strings out of 494383
- 125095,1144653 words of node,token memory allocated
- 21302 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 18 glue, 4 kern, 1 penalty, 2653 glyph, 824 attribute, 98 glue_spec, 139 attribute_list, 1 write nodes
-   avail lists: 1:3,2:8790,3:533,4:859,5:855,6:40,7:3539,8:626,9:1404,10:51,11:237
- 44495 multiletter control sequences out of 65536+600000
- 52 fonts using 7752679 bytes
- 84i,18n,95p,1197b,898s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on exercices-tris.pdf (2 pages, 55519 bytes).
+ 41661 strings out of 494383
+ 244353,1144653 words of node,token memory allocated
+ 25103 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 12 glue, 4 kern, 1 penalty, 2058 glyph, 4256 attribute, 98 glue_spec, 711 attribute_list, 1 write nodes
+   avail lists: 1:4,2:21099,3:1459,4:5158,5:4125,6:62,7:3609,8:3695,9:6668,10:26,11:373
+ 44514 multiletter control sequences out of 65536+600000
+ 52 fonts using 7753303 bytes
+ 84i,18n,95p,1208b,1093s stack positions out of 5000i,500n,10000p,200000b,100000s
 
-PDF statistics: 109 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 131072)
+warning  (pdf backend): unreferenced destination with name 'Item.11'
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on exercices-tris-correction.pdf (3 pages, 63697 bytes).
+
+PDF statistics: 184 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 97 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

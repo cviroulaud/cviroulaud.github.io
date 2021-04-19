@@ -18,7 +18,7 @@ def echanger(tab: list, i: int, j: int) -> None:
     tab[j] = temp
 
 
-def tri_bulle(tab: list) -> None:
+def tri_bulles(tab: list) -> None:
     for i in range(len(tab)):
         for j in range(1, len(tab)-i):
             if tab[j-1] > tab[j]:
@@ -27,5 +27,5 @@ def tri_bulle(tab: list) -> None:
 
 t = [randint(0,1000) for _ in range(20)]
 print(t)
-tri_bulle(t)
+tri_bulles(t)
 print(t)

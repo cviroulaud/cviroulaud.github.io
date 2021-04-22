@@ -1,0 +1,44 @@
+=>PYTHONTEX#py#default#default#0#code#####4#
+def chiffrement(message: str, cle: int) -> str:
+    sortie = ""
+    for lettre in message:
+        sortie += chr(ord(lettre)+cle)
+    return sortie
+
+
+def dechiffrement(message: str, cle: int) -> str:
+    sortie = ""
+    for lettre in message:
+        sortie += chr(ord(lettre)-cle)
+    return sortie
+
+
+k = 3
+entree = "LANSIESTFANTASTIQUE"
+m_chiffre = chiffrement(entree, k)
+print(m_chiffre)
+=>PYTHONTEX:SETTINGS#
+version=0.16
+outputdir=pythontex-files-chiffrement-symetrique-slides
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python|
+pygfamily=pylabcon|pycon|

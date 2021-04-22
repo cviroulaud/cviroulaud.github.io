@@ -1,0 +1,94 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Secu 01}}}}
+\fancyhead[C]{\textbf{Chiffrement symétrique}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\section{Problématique}
+% rappel des couches
+Les paquets IP transitent sur le réseau internet en circulant de routeurs en routeurs. En théorie, rien n'interdit à un routeur d'inspecter un paquet et donc d'en connaître son contenu. Cette situation est problématique dans de nombreuses situations (transactions bancaires, documents personnels\dots).
+\begin{center}
+    \framebox{Comment chiffrer le contenu des communications?}
+\end{center}
+\section{Chiffrement symétrique}
+\subsection{Principe: le code de César}
+La sécurisation d'une communication se déroule en deux étapes:
+\begin{itemize}
+    \item La source utilise une \emph{fonction de chiffrement} pour coder un message \emph{m} avec une clé de chiffrement \emph{k}. La fonction produit en sortie un message chiffré \emph{s}.
+    \begin{center}
+        \textbf{\texttt{chiffrement(m, k) $\rightarrow$ s}}
+    \end{center}
+    \item Le destinataire utilise une \emph{fonction de déchiffrement} pour décoder le message \emph{s} avec la clé de chiffrement \emph{k}. La fonction produit en sortie le message clair \emph{m}.
+    \begin{center}
+        \textbf{\texttt{déchiffrement(s, k) $\rightarrow$ m}}
+    \end{center}
+\end{itemize}
+\begin{aretenir}[]
+Dans un chiffrement symétrique on utilise la même clé pour chiffrer et déchiffrer le message.
+\end{aretenir}
+\begin{activite}
+    %ROT13; substitution monoalphabétique
+Le chiffrement de César utilise un décalage alphabétique comme clé de chiffrement.
+\begin{enumerate}
+    \item Écrire la fonction \textbf{\texttt{chiffrement(message: str, cle: int) $\rightarrow$ str}} qui code le \emph{message}. On n'utilisera que des caractères majuscules ASCII dans le message et on supprimera les espaces.
+    \item Écrire la fonction \textbf{\texttt{dechiffrement(message: str, cle: int) $\rightarrow$ str}} qui déchiffre le \emph{message}.
+    \item Tester la méthode avec une clé $k=+3$ sur le message: \emph{LANSIESTFANTASTIQUE}
+    \item Quelles sont les faiblesses de cette méthode?
+    %26 possibilités (25) facile à tester tous les cas
+\end{enumerate}
+\end{activite}
+\subsection{Chiffrement polyalphabétique}
+\subsubsection{Principe}
+Plutôt que d'opérer un simple décalage, on recopie la clé de chiffrement de façon à obtenir une chaîne de la longueur du message. Utilisons la clé \emph{NSI}.
+\begin{center}
+    \begin{tabular}{*{5}{c}}
+        B&R&A&V&O\\
+        N&S&I&N&S\\
+    \end{tabular}
+\end{center}
+Une même lettre ne sera plus forcément codée par le même symbole.
+\begin{activite}
+\begin{enumerate}
+    \item Remplacer chaque lettre en son équivalent ASCII.
+    \item Écrire la fonction \textbf{\texttt{int\_en\_bin(nb: int) $\rightarrow$ str}} qui renvoie la représentation binaire de l'entier \emph{nb}.
+    % on cache un peu sous le tapis: on est toujours sur 7 bits
+    \item Convertir chaque entier en binaire.
+\end{enumerate}
+\end{activite}
+\subsubsection{Chiffrement par \emph{ou exclusif}}
+On applique la porte logique \emph{xor} entre chaque bit du message et de la clé. Une propriété intéressante de cette porte est qu'elle est réversible:
+$$\mbox{Si }A\oplus B = C \mbox{ alors } A\oplus C=B \mbox{ et }B\oplus C=A$$
+%vigenere, enigma = substitution polyalphabétique
+%clé trop courte attention; clé taille du message = très sûr (shannon)https://fr.wikipedia.org/wiki/Cryptographie_sym%C3%A9trique
+\begin{activite}
+\begin{enumerate}
+    \item Appliquer le ou exclusif pour chaque bit du message.
+    \item Écrire la fonction \textbf{\texttt{bin\_en\_int(paquet: str) $\rightarrow$ int}} qui renvoie l'entier correspondant au paquet de bits.
+    \item Utiliser la fonction pour trouver l'entier correspondant à chaque paquet de sept bits.
+    \item Donner alors le message chiffré.
+    %vérifier qu'on retrouve le message d'origine
+\end{enumerate}
+\end{activite}
+\section{Avantages du chiffrement symétrique}
+Les algorithmes de chiffrement symétriques utilisés dans les communications appliquent des principes similaires au chiffrement par \emph{ou exclusif}. Ils sont très sûrs: la taille minimale des clés est actuellement de 80 bits soit $2^{80}$ possibilités. Ils sont également très rapides et permettent ainsi de chiffrer, en temps réel, les données stockées sur un disque dur.
+% xor est une fonction implémentée dans les processeurs
+
+On peut citer:
+\begin{itemize}
+    \item \emph{AES pour Advanced Encryption Standard:} choisi par l'institut de standardisation américain NIST (National Institute of Standards and Technology) en décembre 2001.
+    \item \emph{Chacha20:} date de 2008 et améliore les performances d'un autre algorithme (Salsa20)
+    % 20 = étapes de mélange
+\end{itemize}
+\end{document}

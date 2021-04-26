@@ -2,8 +2,8 @@
 \setbeamercolor{structure}{fg=SlateGray}
 \usetheme{Goettingen}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
-%\usepackage{pgfpages}
-%\setbeameroption{show notes on second screen=left}
+\usepackage{pgfpages}
+\setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Routage OSPF}
 \date{}
@@ -141,7 +141,7 @@
         \begin{tikzpicture}
             \node[draw] (R1) at (0,0) {R1};
             \node at(1,0.2) {10.1.1.2};
-            \node at(-0.4,-0.5) {10.1.2.2};
+            \node at(-0.4,-0.5) {10.1.2.1};
             \draw (R1) -- (6,0) node[near end,text width=1.8cm, text centered]{10.1.1.0/30 10Mbit/s};
 
             \draw (R1) -- (3,-4) node[sloped, near end,text width=1.8cm, text centered]{10.1.2.0/30 100Mbit/s};
@@ -483,7 +483,7 @@ Première étape: dans la zone
             \hline
             10.2.4.0/28 & 10.2.3.2 (R6) & 10.2.3.1  & 2    \\
             \hline
-            10.2.5.0/28 & 10.2.1.2 (R7) & 10.2.5.1  & 10    \\
+            10.2.5.0/28 &  & 10.2.5.1  & 10    \\
             \hline
         \end{tabular}
         \captionof{table}{Table de routage de R5}
@@ -508,7 +508,7 @@ Première étape: dans la zone
             \hline
             10.2.4.0/28 & 10.2.3.2 (R6) & 10.2.3.1  & 2    \\
             \hline
-            10.2.5.0/28 & 10.2.1.2 (R7) & 10.2.5.1  & 10    \\
+            10.2.5.0/28 &  & 10.2.5.1  & 10    \\
             \hline
             10.3.1.0/30 & 10.2.3.2 (R6) & 10.2.3.1  & 3    \\
             \hline

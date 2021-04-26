@@ -1114,14 +1114,14 @@ Pour chaque arc du graphe
 
     \begin{center}
         \begin{lstlisting}[language=bash, basicstyle=\small, xrightmargin=0.5em, xleftmargin=0.5em]
-    Créer un tableau des distances entre A et les routeurs (A inclus), initialisées à l'infini.
-    Dans le tableau modifier la distance vers A à 0.
-    
-    Tant qu'il reste des routeurs non sélectionnés
-        Parmi les routeurs non-sélectionnés, choisir le routeur (noté S) ayant la plus petite distance.
-        Pour chaque routeur adjacent à S (noté V) et non déjà sélectionné:
-            Si (la distance de V) > (la distance de S + poids S-V)
-                La distance de V est remplacée par cette nouvelle valeur
+Créer un tableau des distances entre A et les routeurs (A inclus), initialisées à l'infini.
+Dans le tableau modifier la distance vers A à 0.
+
+Tant qu'il reste des routeurs non sélectionnés
+    Parmi les routeurs non-sélectionnés, choisir le routeur (noté S) ayant la plus petite distance.
+    Pour chaque routeur adjacent à S (noté V) et non déjà sélectionné:
+        Si (la distance de V) > (la distance de S + poids S-V)
+            La distance de V est remplacée par cette nouvelle valeur
     \end{lstlisting}
         \captionof{code}{Algorithme de Dijkstra}
         \label{dj}

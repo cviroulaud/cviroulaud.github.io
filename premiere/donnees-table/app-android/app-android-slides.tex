@@ -167,7 +167,7 @@ fichier.close()
 
     \begin{activite}
         \begin{enumerate}
-            \item Tester le code \ref{iterer}.
+            \item Tester le code \ref{iterer} dans un fichier \emph{notes.py}.
             \item Remplacer la méthode \textbf{\texttt{reader}} par \textbf{\texttt{DictReader}}.
             \item Quel itérateur semble le plus adapté?
             \item Créer un programme \emph{appgoogle.py}.
@@ -225,7 +225,7 @@ fichier.close()
         Une variable de type \emph{OrderedDict} sera vue comme un simple dictionnaire.
     \end{aretenir}
     \begin{center}
-        \begin{lstlisting}[language=Python, basicstyle=\small]
+        \begin{lstlisting}[language=Python, xleftmargin=0.3em,xrightmargin=0.5em,basicstyle=\small]
 {"nom": "Turing", "prenom": "Alan", "moyennes": "19"}
 {"nom": "Von Neuman", "prenom": "John", "moyennes": "18"}
 {"nom": "Dijkstra", "prenom": "Edsger", "moyennes": "17.5"}
@@ -292,6 +292,47 @@ fichier.close()
         \begin{lstlisting}[language=Python, basicstyle=\small]
 import csv
 # charge le fichier dans le programme
+fichier = open("notes.csv")
+# crée un itérateur sur les données
+lecteur_donnees = csv.DictReader(fichier)
+
+table = []
+# Pour chaque ligne
+for ligne in lecteur_donnees:
+    dico = {}
+    # Pour chaque couple de la ligne
+    for cle, val in ligne.items():
+        dico[cle] = val
+    table.append(dico)
+# libère le fichier externe
+fichier.close()
+\end{lstlisting}
+        \captionof{code}{liste de dictionnaires}
+        \label{CODE}
+    \end{center}
+\note{Ce programme détaillé va être utile pour après.}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+On obtient le même résultat
+\begin{center}
+    \begin{lstlisting}[language=Python, xleftmargin=0.3em,xrightmargin=0.5em,basicstyle=\small]
+{"nom": "Turing", "prenom": "Alan", "moyennes": "19"}
+{"nom": "Von Neuman", "prenom": "John", "moyennes": "18"}
+{"nom": "Dijkstra", "prenom": "Edsger", "moyennes": "17.5"}
+{"nom": "Church", "prenom": "Alonso", "moyennes": "19"}
+
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python, basicstyle=\small]
+import csv
+# charge le fichier dans le programme
 fichier = open("googleplaystore.csv")
 # crée un itérateur sur les données
 lecteur_donnees = csv.DictReader(fichier)
@@ -301,32 +342,56 @@ table = []
 for ligne in lecteur_donnees:
     dico = {}
     # Pour chaque couple de la ligne
-    for nom, val in ligne.items():
-        dico[nom] = val
+    for cle, val in ligne.items():
+        dico[cle] = val
     table.append(dico)
 # libère le fichier externe
 fichier.close()
 \end{lstlisting}
-        \captionof{code}{liste de dictionnaires}
+        \captionof{code}{Même programme pour googleplaystore.csv}
         \label{CODE}
     \end{center}
-
+\note{Ce programme détaillé va être utile pour après.}
 \end{frame}
 
 \section{Manipuler les données}
 \subsection{Valider les données}
 \begin{frame}
-    \frametitle{}
+    \frametitle{Valider les données}
     Par défaut les données chargées dans un programme par la bibliothèque \textbf{\texttt{csv}} sont des chaînes de caractère.
     \begin{activite}
-        Modifier le programme précédent pour typer correctement les informations récoltées.
+        \begin{enumerate}
+            \item Modifier le programme \emph{notes.py}, pour que la moyenne soit stockée comme un flottant.
+            \item  Modifier le programme \emph{appgoogle.py} pour typer correctement les informations récoltées.
+        \end{enumerate}
     \end{activite}
     \note{note $\rightarrow$ flottants, Installs et Reviews $\rightarrow$entiers
 
         booléan possible aussi (payante/gratuite)
     }
 \end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
 
+    \begin{center}
+    \begin{lstlisting}[language=Python, basicstyle=\small]
+table = []
+# Pour chaque ligne
+for ligne in lecteur_donnees:
+    dico = {}
+    # Pour chaque couple de la ligne
+    for cle, val in ligne.items():
+        # type correctement la moyenne
+        if cle == "moyennes":
+            val = float(val)
+        dico[cle] = val
+    table.append(dico)
+    \end{lstlisting}
+    \captionof{code}{Typage des données}
+    \label{CODE}
+    \end{center}
+\note{il faut faire la même chose avec googleplaystore}
+\end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
 
@@ -335,14 +400,14 @@ fichier.close()
 table = []
 for ligne in lecteur_donnees:
     dico = {}
-    for nom, val in ligne.items():
+    for cle, val in ligne.items():
         # validation des données
-        if nom == "Rating":
+        if cle == "Rating":
             val = float(val)
-        if nom == "Installs" or nom == "Reviews":
+        if cle == "Installs" or cle == "Reviews":
             val = int(val)
 
-        dico[nom] = val
+        dico[cle] = val
     table.append(dico)
 \end{lstlisting}
         \captionof{code}{Tentative de conversion des données}
@@ -351,6 +416,7 @@ for ligne in lecteur_donnees:
 
     \colorbox{LightCoral}{ValueError: invalid literal for int() with base 10: 'NaN'
     }
+    \note{notre validation ne marche pas toujours; voir slide suivant: certaines lignes du fichier posent pb.}
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
@@ -375,18 +441,18 @@ for ligne in lecteur_donnees:
 table = []
 for ligne in lecteur_donnees:
     dico = {}
-    for nom, val in ligne.items():
-        if nom == "Rating":
+    for cle, val in ligne.items():
+        if cle == "Rating":
             if val == "NaN":
                 val = -1.0
             else:
                 val = float(val)
-        if nom == "Installs":
+        if cle == "Installs":
             if val == "NaN":
                 val = 0
             else:
                 val = int(val)
-        dico[nom] = val
+        dico[cle] = val
     table.append(dico)
 \end{lstlisting}
         \captionof{code}{Conversion des données}

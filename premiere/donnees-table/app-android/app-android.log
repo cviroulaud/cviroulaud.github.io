@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  27 APR 2021 11:44
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 APR 2021 10:57
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-table/app-android/app-android
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-table/app-android/app-android.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.154 seconds
+luaotfload | main : initialization completed in 0.104 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1420,18 +1420,18 @@ ABD: EveryShipout initializing macros
 <ressources/playstore.png, id=55, 2848.6425pt x 792.9625pt>
 File: ressources/playstore.png Graphic file (type png)
 <use ressources/playstore.png>
-Package luatex.def Info: ressources/playstore.png  used on input line 24.
+Package luatex.def Info: ressources/playstore.png  used on input line 25.
 (luatex.def)             Requested size: 227.62204pt x 63.35359pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 70.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 71.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1442,7 +1442,7 @@ This may cause the page layout to be inconsistent, however.
 </home/tof/Documents/Cozy/latex-include/cc.png, id=59, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 72.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 73.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1450,10 +1450,10 @@ Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 84.
+Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 85.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 119.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 120.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [2]
 
@@ -1464,7 +1464,7 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 162.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 163.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [3]
 
@@ -1473,20 +1473,16 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 (./scripts/tri-cle.py)
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 177.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 178.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
  [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
  (./app-android.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
 Package rerunfilecheck Info: File `app-android.out' has not changed.
 (rerunfilecheck)             Checksum: 6053E753B5456E7C86E246E4D017B18C;1648.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -1499,7 +1495,7 @@ Here is how much of LuaTeX's memory you used:
  56 fonts using 8278343 bytes
  84i,17n,95p,1186b,1004s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on app-android.pdf (4 pages, 1269400 bytes).
+Output written on app-android.pdf (4 pages, 1269392 bytes).
 
 PDF statistics: 217 PDF objects out of 1000 (max. 8388607)
  177 compressed objects within 2 object streams

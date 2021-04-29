@@ -111,7 +111,7 @@ for ligne in lecteur_donnees:
                 val = -1.0
             else:
                 val = float(val)
-        if nom == "Installs":
+        if nom == "Installs" or nom == "Reviews":
             if val == "NaN":
                 val = 0
             else:

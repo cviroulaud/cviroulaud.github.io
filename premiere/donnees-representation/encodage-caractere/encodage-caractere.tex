@@ -52,6 +52,7 @@ Répondre aux questions suivantes en effectuant des recherches sur le web.
 \end{enumerate}
 \end{activite}
 \section{Encodage universel}
+%DODO cheminement point unicode:  point unicode = un nombre en base 10 (ex: é $\rightarrow$ 233); $2^{32}$ caractères possibles $\rightarrow$ on représente le point de code en hexa (ex: é $\rightarrow$ U+00E9); enfin pour le représenter en mémoire on l'encode, mais un encodage naïf utiliserait 4 octets (32 bits) alors que la majorité des caractères sont sur 2 octets $\rightarrow$ UTF-8 (encode sur 1, 2, 3, ou 4 octets)
 \subsection{Nouvelle norme}
 Bien que l'ISO 8859 permette de représenter un très grand nombre de caractère, il n'est par exemple pas possible d'encoder un texte qui contient des caractères de plusieurs tables. L'ISO a donc défini un jeu universel de caractère (norme ISO-10646). Chaque caractère, signe, idéogramme est associé à un numéro unique appelé \textbf{point de code}. La capacité maximale a été fixée à 32 bits.
 \begin{activite}

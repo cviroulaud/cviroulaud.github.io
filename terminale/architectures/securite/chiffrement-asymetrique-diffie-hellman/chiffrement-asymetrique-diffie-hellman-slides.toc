@@ -1,0 +1,6 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Problématique}{2}{0}{1}
+\beamer@sectionintoc {2}{S'aider des mathématiques}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Analogie des couleurs}{9}{0}{2}
+\beamer@sectionintoc {3}{Faiblesse du protocole}{13}{0}{3}

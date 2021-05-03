@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Loc 02}}}}
+\fancyhead[C]{\textbf{Géoportail}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+%\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+% géoportail - annexe sur site
+\section{Problématique}
+L'\emph{Institut Géographique National (IGN)} est un établissement public à caractère administratif ayant pour mission d'assurer la production, l'entretien et la diffusion de l'information géographique de référence en France. Il fournit un site web: \emph{Géoportail} qui propose de nombreuses informations, fonds de cartes dessinés par des cartographes.
+\begin{center}
+    \framebox{Comment utiliser les informations fournies par l'IGN?}
+\end{center}
+\section{Découverte de Géoportail}
+\begin{activite}
+\begin{enumerate}
+    \item Se rendre sur le site \url{https://www.geoportail.gouv.fr}
+    \item Cliquer sur l'icône \emph{Cartes} (figure \ref{gauche})
+    \begin{center}
+    \centering
+    \includegraphics[width=1cm]{ressources/gauche.png}
+    \captionof{figure}{Cartes}
+    \label{gauche}
+    \end{center}
+    \item Choisir le fond \emph{Plan IGN}.
+    \item Quelles informations sont disponibles?
+    \item Ajouter le fond \emph{Parcelles cadastrales}.
+    \item Dispose-t-on des mêmes informations?
+\end{enumerate}
+\end{activite}
+\begin{aretenir}[]
+Chaque fond de carte apporte une couche supplémentaire d'informations. 
+\end{aretenir}
+\begin{activite}
+\begin{enumerate}
+    \item Dans le menu \emph{Données thématiques} trouver le fond permettant de faire apparaître les collèges et lycées.
+    \item Noter le numéro cadastral de la parcelle du lycée Jay de Beaufort.
+    \item À l'aide du menu de droite (figure \ref{droite}) trouver les coordonnées GPS du bâtiment de l'internat du lycée.
+    \begin{center}
+    \centering
+    \includegraphics[height=2cm]{ressources/droite.png}
+    \captionof{figure}{Outils}
+    \label{droite}
+    \end{center}
+    \item Mesurer la surface de la parcelle du lycée.
+\end{enumerate}
+\end{activite}
+\begin{aretenir}[]
+En croisant les données fournies par un service de géolocalisation il est possible de créer de nouvelles données (calcul de surface, itinéraire\dots).
+\end{aretenir}
+\section{Importer des données}
+Le professeur a effectué une sortie VTT. Avec sa nouvelle montre il a enregistré sa trace GPS. Il souhaiterait visualiser ses données sur une carte IGN.
+\begin{activite}
+\begin{enumerate}
+    \item Télécharger et décompresser le fichier \emph{Géoportail - annexe} sur le site \url{https://cviroulaud.github.io}
+    \item À l'aide du menu de droite de Géoportail, importer le fichier \emph{trace\_vtt.kml} sur la carte.
+    \item Si nécessaire, réorganiser les couches (figure \ref{couche}) pour voir apparaître la trace.
+    \begin{center}
+    \centering
+    \includegraphics[width=1cm]{ressources/droite-2.png}
+    \captionof{figure}{Couches}
+    \label{couche}
+    \end{center}
+    \item Ajouter le fond de carte \emph{Carte topographique IGN}.
+    \item Les traits orange représentent les courbes de niveaux: tous les points sur un même trait sont à la même altitude. Que se passe-t-il quand les traits sont très rapprochés?
+    \item Le professeur a-t-il effectué un parcours très accidenté?
+    \item Choisir le fond de carte qui permet de visualiser les limites administratives entre les communes.
+    \item Sur quelles communes le professeur a-t-il effectué son parcours?
+\end{enumerate}
+\end{activite}
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Secu 03}}}}
+\fancyhead[C]{\textbf{Exercices sécurité}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+%\fancyhead[R]{Seconde - SNT}
+%\fancyhead[R]{Première - NSI}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+Le chiffre par \emph{ou exclusif} est réversible: on utilise la même fonction pour chiffrer et déchiffrer le message. Pour pouvoir chiffrer le message bit à bit, il est plus aisé de manipuler des chaînes d'octets (\textbf{\texttt{bytes}}). Chaque caractère est converti en une suite d'octets (voir le cours de première sur l'Unicode). On transforme une chaîne de caractères en chaîne d'octets avec la méthode \textbf{\texttt{encode}}. On utilise la méthode \textbf{\texttt{decode}} pour l'opération inverse.
+\begin{commentprof}
+Également si on n'utilise pas des chaînes d'octets, le chiffrage peut créer des caractères non imprimables.
+
+UTF-8 utilise 2 octets pour coder le ë; \textbackslash x $\rightarrow$ les 2 prochains caractères sont hexa.
+\begin{itemize}
+    \item ë $\rightarrow$ \textbackslash xc3\textbackslash xab
+    \item c3ab $\rightarrow$ 1100 0011 1010 1011
+    \item 1100 0011 1010 1011 $\rightarrow$ 000 1110 1011
+    \item 1110 1011 $\rightarrow$ eb
+    \item ë $\rightarrow$ U+00eb
+\end{itemize}
+\end{commentprof}
+\begin{enumerate}
+    \item Encoder la chaîne de caractères, \emph{noël}, en chaîne d'octets. Remarquer que la chaîne d'octets est enveloppée dans: \emph{b' '}.
+    \item Décoder la chaîne obtenue pour retrouver le message d'origine.
+\end{enumerate}
+En Python il est possible d'effectuer des opérations directement sur les bits. L'opérateur \wedge permet d'effectuer un \emph{ou exclusif} entre deux bits.
+\begin{enumerate}[resume]
+    \item Dans la console tester l'opérateur et retrouver la table de vérité du \emph{ou exclusif}.
+\end{enumerate}
+Alice a envoyé à Bob le message chiffré suivant:
+\begin{center}
+    b'\textbackslash x06Sb\textbackslash x04a\textbackslash x0bjQe/A6j\_\textbackslash x81\textbackslash xe8\textbackslash xf1\textbackslash xe0-[3?Wc'
+\end{center}
+La clé est:
+\begin{center}
+    J2B
+\end{center}
+\begin{enumerate}[resume]
+    \item Écrire la fonction \textbf{\texttt{chiffrer\_xor(message: bytes, cle: bytes) $\rightarrow$ bytes}} qui permet de coder et décoder un message par la méthode du \emph{ou exclusif}. \underline{Indication:} Une utilisation judicieuse du modulo permettra d'étendre la clé sous le message.
+    \item Retrouver le message envoyé par Alice.
+\end{enumerate} 
+\end{exo}
+\end{document}

@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  5 MAY 2021 08:17
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 MAY 2021 15:54
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/exercices-plus-court-chemin/exercices-plus-court-chemin
-(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/routage/exercices-plus-court-chemin/exercices-plus-court-chemin.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/rsa/rsa
+(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/rsa/rsa.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.092 seconds
+luaotfload | main : initialization completed in 0.127 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -951,7 +951,7 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
 \pytx@codefile=\write5
 
-\openout5 = exercices-plus-court-chemin.pytxcode
+\openout5 = rsa.pytxcode
 \c@pytx@FancyVerbLineTemp=\count366
 \c@pytx@py@default@default=\count367
 \c@pytx@pycon@default@default=\count368
@@ -1238,8 +1238,8 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 \everycr=\toks57
 \minrowclearance=\skip143
-) (./exercices-plus-court-chemin.aux)
-\openout1 = exercices-plus-court-chemin.aux
+) (./rsa.aux)
+\openout1 = rsa.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -1406,54 +1406,88 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 19.
 LaTeX Info: Redefining \pageref on input line 19.
 LaTeX Info: Redefining \nameref on input line 19.
- (./exercices-plus-court-chemin.out) (./exercices-plus-court-chemin.out)
+ (./rsa.out) (./rsa.out)
 \@outlinefile=\write7
 
-\openout7 = exercices-plus-court-chemin.out
+\openout7 = rsa.out
 
-No file pythontex-files-exercices-plus-court-chemin/exercices-plus-court-chemin.pytxmcr.
+No file pythontex-files-rsa/rsa.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 19.
 \c@listing=\count410
 Package newfloat Info: float type `listing'=16 on input line 19.
 ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 20.3728pt.
+Make it at least 17.93123pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=8, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=44, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 51.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 81.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
+Missing character: There is no ; (U+003B) in font nullfont!
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
- (./exercices-plus-court-chemin.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
-Package rerunfilecheck Info: File `exercices-plus-court-chemin.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 88.
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 145.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [2]
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 193.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+ (./rsa.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
+Package rerunfilecheck Info: File `rsa.out' has not changed.
+(rerunfilecheck)             Checksum: A64A63BF47D3A86918A21930B625B8AF;1498.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 41366 strings out of 494383
+ 41715 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 2710 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 6 glue, 4 kern, 1 penalty, 205 glyph, 236 attribute, 98 glue_spec, 41 attribute_list, 1 write nodes
-   avail lists: 1:2,2:5702,3:461,4:17,5:79,6:12,7:665,8:22,9:227,10:4,11:19
- 44374 multiletter control sequences out of 65536+600000
- 30 fonts using 6120583 bytes
- 84i,17n,95p,1227b,761s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on exercices-plus-court-chemin.pdf (1 page, 17534 bytes).
+ 25297 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 11 glue, 4 kern, 1 penalty, 3232 glyph, 818 attribute, 99 glue_spec, 138 attribute_list, 1 write nodes
+   avail lists: 1:4,2:6681,3:559,4:38,5:225,6:31,7:1942,8:44,9:336,10:6,11:141
+ 44634 multiletter control sequences out of 65536+600000
+ 75 fonts using 9526223 bytes
+ 84i,17n,95p,1180b,1001s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on rsa.pdf (3 pages, 104195 bytes).
 
-PDF statistics: 43 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 131072)
- 16 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 156 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 131072)
+ 88 words of extra memory for PDF output out of 10000 (max. 100000000)
 

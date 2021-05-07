@@ -2,12 +2,12 @@
 \beamer@sectionintoc {1}{Problématique}{2}{0}{1}
 \beamer@sectionintoc {2}{Retour des graphes}{3}{0}{2}
 \beamer@subsectionintoc {2}{1}{Graphe orienté}{3}{0}{2}
-\beamer@subsectionintoc {2}{2}{Graphe pondéré}{9}{0}{2}
-\beamer@sectionintoc {3}{Protocole RIP: algorithme de Bellman-Ford}{13}{0}{3}
-\beamer@subsectionintoc {3}{1}{Principe}{13}{0}{3}
-\beamer@subsectionintoc {3}{2}{Mise en application}{16}{0}{3}
-\beamer@subsectionintoc {3}{3}{Complexité}{35}{0}{3}
-\beamer@sectionintoc {4}{OSPF: algorithme de Dijkstra}{38}{0}{4}
-\beamer@subsectionintoc {4}{1}{Principe}{38}{0}{4}
-\beamer@subsectionintoc {4}{2}{Mise en application}{40}{0}{4}
-\beamer@subsectionintoc {4}{3}{Complexité}{50}{0}{4}
+\beamer@subsectionintoc {2}{2}{Graphe pondéré}{11}{0}{2}
+\beamer@sectionintoc {3}{Protocole RIP: algorithme de Bellman-Ford}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{Principe}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{Mise en application}{18}{0}{3}
+\beamer@subsectionintoc {3}{3}{Complexité}{37}{0}{3}
+\beamer@sectionintoc {4}{OSPF: algorithme de Dijkstra}{40}{0}{4}
+\beamer@subsectionintoc {4}{1}{Principe}{40}{0}{4}
+\beamer@subsectionintoc {4}{2}{Mise en application}{42}{0}{4}
+\beamer@subsectionintoc {4}{3}{Complexité}{52}{0}{4}

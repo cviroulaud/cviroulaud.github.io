@@ -2,8 +2,8 @@
 \setbeamercolor{structure}{fg=SlateGray}
 \usetheme{Goettingen}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
-\usepackage{pgfpages}
-\setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Plus court chemin}
 \date{}
@@ -42,6 +42,7 @@
             \node[draw] (C) at (3,1.5) {C};
             \node[draw] (D) at (1,2) {D};
             \node[draw] (E) at (-3,1) {E};
+            \node[draw] (F) at (-4,0) {F};
     
             \draw[->,>=latex] (B)--(A);
             \draw[->,>=latex] (A)--(E);
@@ -49,6 +50,7 @@
             \draw[->,>=latex] (A)--(D);
             \draw[->,>=latex] (D)--(C);
             \draw[->,>=latex] (C)--(B);
+            \draw[->,>=latex] (F)--(E);
     
         \end{tikzpicture}
         \captionof{figure}{graphe orienté}
@@ -66,6 +68,7 @@
             \node[draw] (C) at (3,1.5) {C};
             \node[draw] (D) at (1,2) {D};
             \node[draw] (E) at (-3,1) {E};
+            \node[draw] (F) at (-4,0) {F};
     
             \draw[->,>=latex] (B)--(A);
             \draw[->,>=latex] (A)--(E);
@@ -73,6 +76,7 @@
             \draw[->,>=latex] (A)--(D);
             \draw[->,>=latex] (D)--(C);
             \draw[->,>=latex] (C)--(B);
+            \draw[->,>=latex] (F)--(E);
     
         \end{tikzpicture}
         \captionof{figure}{graphe orienté}
@@ -81,7 +85,7 @@
     \begin{aretenir}[]
         Pour chaque nœud on peut définir ses \textbf{prédécesseurs} et ses \textbf{successeurs}.
 
-            
+            \note[item]{Le nœud F ne possède pas de \emph{prédécesseur}.}
             \note[item]{Le nœud E ne possède pas de \emph{successeur}.}
 
     \end{aretenir}
@@ -111,6 +115,7 @@
             \node[draw] (C) at (3,1.5) {C};
             \node[draw] (D) at (1,2) {D};
             \node[draw] (E) at (-3,1) {E};
+            \node[draw] (F) at (-4,0) {F};
     
             \draw[->,>=latex] (B)--(A);
             \draw[->,>=latex] (A)--(E);
@@ -118,20 +123,96 @@
             \draw[->,>=latex] (A)--(D);
             \draw[->,>=latex] (D)--(C);
             \draw[->,>=latex] (C)--(B);
+            \draw[->,>=latex] (F)--(E);
     
         \end{tikzpicture}
     \end{center}
     \begin{center}
     \begin{lstlisting}[language=Python]
-matrice = [[0, 0, 0, 1, 1],
-             [1, 0, 0, 0, 0],
-             [0, 1, 0, 0, 0],
-             [0, 0, 1, 0, 1],
-             [0, 0, 0, 0, 0]]
-    \end{lstlisting}
-    \captionof{code}{Matrice d'adjacence}
+matrice = [ [0, 0, 0, 1, 1, 0],
+            [1, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0],
+            [0, 0, 1, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0]]
+\end{lstlisting}
+    \captionof{code}{Matrice d'adjacence des successeurs}
     \end{center}
     \note{La matrice n'est plus symétrique}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (2,0) {B};
+            \node[draw] (C) at (3,1.5) {C};
+            \node[draw] (D) at (1,2) {D};
+            \node[draw] (E) at (-3,1) {E};
+            \node[draw] (F) at (-4,0) {F};
+    
+            \draw[->,>=latex] (B)--(A);
+            \draw[->,>=latex] (A)--(E);
+            \draw[->,>=latex] (D)--(E);
+            \draw[->,>=latex] (A)--(D);
+            \draw[->,>=latex] (D)--(C);
+            \draw[->,>=latex] (C)--(B);
+            \draw[->,>=latex] (F)--(E);
+    
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+    \begin{lstlisting}[language=Python]
+matrice = [ [0, 1, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0],
+            [1, 0, 0, 0, 0, 0],
+            [1, 0, 0, 1, 0, 1],
+            [0, 0, 0, 0, 0, 0]]
+\end{lstlisting}
+    \captionof{code}{Matrice d'adjacence des \textbf{prédécesseurs}}
+    \end{center}
+    \note{La matrice n'est plus symétrique}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (2,0) {B};
+            \node[draw] (C) at (3,1.5) {C};
+            \node[draw] (D) at (1,2) {D};
+            \node[draw] (E) at (-3,1) {E};
+            \node[draw] (F) at (-4,0) {F};
+    
+            \draw[->,>=latex] (B)--(A);
+            \draw[->,>=latex] (A)--(E);
+            \draw[->,>=latex] (D)--(E);
+            \draw[->,>=latex] (A)--(D);
+            \draw[->,>=latex] (D)--(C);
+            \draw[->,>=latex] (C)--(B);
+            \draw[->,>=latex] (F)--(E);
+    
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+    \begin{lstlisting}[language=Python]
+dico = {"A": {"D", "E"},
+        "B": {"A"},
+        "C": {"B"},
+        "D": {"C", "E"},
+        "E": set(),
+        "F": {"E"} }
+\end{lstlisting}
+    \captionof{code}{Dictionnaire d'adjacence des successeurs}
+    \end{center}
+    \note{On peut utiliser des tableaux en place des ensembles.}
 
 \end{frame}
 
@@ -145,6 +226,7 @@ matrice = [[0, 0, 0, 1, 1],
             \node[draw] (C) at (3,1.5) {C};
             \node[draw] (D) at (1,2) {D};
             \node[draw] (E) at (-3,1) {E};
+            \node[draw] (F) at (-4,0) {F};
     
             \draw[->,>=latex] (B)--(A);
             \draw[->,>=latex] (A)--(E);
@@ -152,18 +234,20 @@ matrice = [[0, 0, 0, 1, 1],
             \draw[->,>=latex] (A)--(D);
             \draw[->,>=latex] (D)--(C);
             \draw[->,>=latex] (C)--(B);
+            \draw[->,>=latex] (F)--(E);
     
         \end{tikzpicture}
     \end{center}
     \begin{center}
     \begin{lstlisting}[language=Python]
-dico = {"A": {"D", "E"},
-          "B": {"A"},
-          "C": {"B"},
-          "D": {"C", "E"},
-          "E": set()}
-    \end{lstlisting}
-    \captionof{code}{Dictionnaire d'adjacence}
+dico = {"A": {"B"},
+        "B": {"C"},
+        "C": {"D"},
+        "D": {"A"},
+        "E": {"A", "D", "F"},
+        "F": set() }
+\end{lstlisting}
+    \captionof{code}{Dictionnaire d'adjacence des \textbf{prédécesseurs}}
     \end{center}
     \note{On peut utiliser des tableaux en place des ensembles.}
 
@@ -189,6 +273,7 @@ dico = {"A": {"D", "E"},
     
         \end{tikzpicture}
     \end{center}
+    Un cycle
     \begin{center}
     {\LARGE A $\rightarrow$ D $\rightarrow$ C $\rightarrow$ B $\rightarrow$ A}
     \end{center}
@@ -254,12 +339,12 @@ dico = {"A": {"D", "E"},
     \end{center}
     \begin{center}
     \begin{lstlisting}[language=Python]
-matrice = [[0, 3, 0, -2, 10],
-             [3, 0, 4, 0, 0],
-             [0, 4, 0, 8, 0],
-             [-2, 0, 8, 0, 1],
-             [10, 0, 0, 1, 0]]
-    \end{lstlisting}
+matrice = [ [0, 3, 0, -2, 10],
+            [3, 0, 4, 0, 0],
+            [0, 4, 0, 8, 0],
+            [-2, 0, 8, 0, 1],
+            [10, 0, 0, 1, 0]]
+\end{lstlisting}
     \captionof{code}{Matrice d'adjacence}
     \end{center}
     \note{La matrice est symétrique}
@@ -286,13 +371,13 @@ matrice = [[0, 3, 0, -2, 10],
         \end{tikzpicture}
     \end{center}
     \begin{center}
-    \begin{lstlisting}[language=Python]
-        dico = {"A": {"B": 3, "D": -2, "E": 10},
-        "B": {"A": 3, "C": 4},
-        "C": {"B": 4, "D": 8},
-        "D": {"A": -2, "C": 8, "E": 1},
-        "E": {"D": 1, "E": 10}}
-    \end{lstlisting}
+    \begin{lstlisting}[language=Python, basicstyle=\small]
+dico = {"A": {"B": 3, "D": -2, "E": 10},
+            "B": {"A": 3, "C": 4},
+            "C": {"B": 4, "D": 8},
+            "D": {"A": -2, "C": 8, "E": 1},
+            "E": {"D": 1, "E": 10}}
+\end{lstlisting}
     \captionof{code}{Dictionnaire d'adjacence}
     \end{center}
     \note{Dictionnaire de dictionnaires}
@@ -1042,14 +1127,14 @@ Tant que (le nombre d'itérations) < (nombre de routeurs)
 
     \begin{itemize}
         \item<1-> du nombre de sommets (notée S): on visite chaque sommet (ligne 4);
-        \begin{lstlisting}[language=bash]
+        \begin{lstlisting}[language=bash,basicstyle=\small]
 Tant que (le nombre d'itérations) < (nombre de routeurs)
-        \end{lstlisting}
+\end{lstlisting}
         \note{ligne 4 = on peut faire une amélioration: si pas de modification pendant l'itération, on peut s'arrêter }
         \item<2-> du nombre d'arcs (notée A): pour chaque sommet on regarde tous les arcs du graphe (ligne 5).
-        \begin{lstlisting}[language=bash]
+        \begin{lstlisting}[language=bash,basicstyle=\small]
 Pour chaque arc du graphe
-        \end{lstlisting}
+\end{lstlisting}
     \end{itemize}
 
 \end{frame}
@@ -1122,7 +1207,7 @@ Tant qu'il reste des routeurs non sélectionnés
     Pour chaque routeur adjacent à S (noté V) et non déjà sélectionné:
         Si (la distance de V) > (la distance de S + poids S-V)
             La distance de V est remplacée par cette nouvelle valeur
-    \end{lstlisting}
+\end{lstlisting}
         \captionof{code}{Algorithme de Dijkstra}
         \label{dj}
     \end{center}
@@ -1550,7 +1635,7 @@ pour F: F $\rightarrow$ E $\rightarrow$ B $\rightarrow$ A}
         \begin{center}
         \begin{lstlisting}[language=bash, basicstyle=\small, xleftmargin=0.5em, xrightmargin=0.5em]
 Parmi les routeurs non-sélectionnés, choisir le routeur (noté S) ayant la plus petite distance.        
-        \end{lstlisting}
+\end{lstlisting}
         \end{center}
     \end{itemize}
 \note[item]{hors programme}

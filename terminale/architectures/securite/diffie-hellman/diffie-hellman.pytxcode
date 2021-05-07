@@ -1,6 +1,6 @@
 =>PYTHONTEX:SETTINGS#
 version=0.16
-outputdir=pythontex-files-chiffrement-asymetrique-diffie-hellman-slides
+outputdir=pythontex-files-diffie-hellman
 workingdir=.
 workingdirset=false
 gobble=none

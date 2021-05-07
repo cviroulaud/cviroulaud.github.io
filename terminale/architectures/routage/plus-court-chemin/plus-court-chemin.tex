@@ -33,6 +33,7 @@ Un graphe \textbf{orienté} possède les mêmes caractéristiques que celles dé
         \node[draw] (C) at (3,1.5) {C};
         \node[draw] (D) at (1,2) {D};
         \node[draw] (E) at (-3,1) {E};
+        \node[draw] (F) at (-4,0) {F};
 
         \draw[->,>=latex] (B)--(A);
         \draw[->,>=latex] (A)--(E);
@@ -40,6 +41,8 @@ Un graphe \textbf{orienté} possède les mêmes caractéristiques que celles dé
         \draw[->,>=latex] (A)--(D);
         \draw[->,>=latex] (D)--(C);
         \draw[->,>=latex] (C)--(B);
+        \draw[->,>=latex] (F)--(E);
+
 
     \end{tikzpicture}
     \captionof{figure}{graphe orienté}
@@ -48,7 +51,7 @@ Un graphe \textbf{orienté} possède les mêmes caractéristiques que celles dé
 \begin{aretenir}[]
     Pour chaque nœud on peut définir ses \textbf{prédécesseurs} et ses \textbf{successeurs}.
     \begin{itemize}
-        \item Le nœud A ne possède pas de \emph{prédécesseur}.
+        \item Le nœud F ne possède pas de \emph{prédécesseur}.
         \item Le nœud E ne possède pas de \emph{successeur}.
     \end{itemize}
 \end{aretenir}

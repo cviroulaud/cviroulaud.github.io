@@ -8,8 +8,7 @@
 
 
 def chiffrer_xor(message: bytes, cle: bytes) -> bytes:
-    res = [message[i] ^ cle[i % len(cle)] 
-                for i in range(len(message))]
+    res = [message[i] ^ cle[i % len(cle)] for i in range(len(message))]
     return bytes(res)
 
 m = "La NSI c'est mââgique!"
@@ -20,3 +19,9 @@ print(m_chiffre)
 m_dechiffre = chiffrer_xor(m_chiffre, cle.encode())
 print(m_dechiffre)
 print(m_dechiffre.decode())
+
+print(chiffrer_xor("Les élèves de terminale sont trop balèzes! Tof!".encode(),
+                   "raz".encode()))
+
+print(chiffrer_xor("Les élèves de terminale sont trop balèzes! Tof!".encode(),
+                   "term".encode()))

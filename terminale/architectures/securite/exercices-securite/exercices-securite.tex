@@ -1,7 +1,7 @@
 \documentclass[a4paper,11pt]{article}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
-\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+%\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
 \setlength{\fboxrule}{0.8pt}
 \fancyhead[L]{\fbox{\Large{\textbf{Secu 04}}}}
 \fancyhead[C]{\textbf{Exercices sécurité}}
@@ -34,7 +34,7 @@ UTF-8 utilise 2 octets pour coder le ë; \textbackslash x $\rightarrow$ les 2 pr
     \item Encoder la chaîne de caractères, \emph{noël}, en chaîne d'octets. Remarquer que la chaîne d'octets est enveloppée dans: \emph{b' '}.
     \item Décoder la chaîne obtenue pour retrouver le message d'origine.
 \end{enumerate}
-En Python il est possible d'effectuer des opérations directement sur les bits. L'opérateur \wedge permet d'effectuer un \emph{ou exclusif} entre deux bits.
+En Python il est possible d'effectuer des opérations directement sur les bits. L'opérateur $\wedge$ permet d'effectuer un \emph{ou exclusif} entre deux bits.
 \begin{enumerate}[resume]
     \item Dans la console tester l'opérateur et retrouver la table de vérité du \emph{ou exclusif}.
 \end{enumerate}
@@ -50,5 +50,25 @@ La clé est:
     \item Écrire la fonction \textbf{\texttt{chiffrer\_xor(message: bytes, cle: bytes) $\rightarrow$ bytes}} qui permet de coder et décoder un message par la méthode du \emph{ou exclusif}. \underline{Indication:} Une utilisation judicieuse du modulo permettra d'étendre la clé sous le message.
     \item Retrouver le message envoyé par Alice.
 \end{enumerate} 
+\end{exo}
+\begin{exo}
+Le chiffrement par \emph{ou exclusif} n'est pas très sécurisé. Si la clé est trop courte et en connaissant quelques informations, il est possible de casser le code par \emph{brute force}.\\Le message suivant a été intercepté.
+\begin{commentprof}
+Attention aux guillemets lors d'un copier-coller!
+\end{commentprof}
+\begin{center}
+    b'>\textbackslash x04\textbackslash tR\textbackslash xa2\textbackslash xd3\textbackslash x1e\textbackslash xa2\textbackslash xd2\textbackslash x04\textbackslash x04\textbackslash tR\textbackslash x05\textbackslash x1fR\textbackslash x15\textbackslash x1f\textbackslash x00\textbackslash x0c\textbackslash x13\textbackslash x1c\textbackslash x00\textbackslash x16\textbackslash x17A\\
+    \textbackslash t\textbackslash x1d\textbackslash x0f\textbackslash x0eR\textbackslash x15\textbackslash x08\textbackslash x1d\textbackslash x11Z\textbackslash x10\textbackslash x00\textbackslash x16\textbackslash xb1\textbackslash xc9\textbackslash x00\textbackslash x17\textbackslash x12[R5\textbackslash x15\textbackslash x14@'
+\end{center}
+On sait que:
+\begin{itemize}
+    \item les quatre dernières lettres du message en clair sont \emph{Tof!}
+    \item la clé est une combinaison de trois lettres minuscules.
+\end{itemize}
+\begin{enumerate}
+    \item Écrire la fonction \textbf{\texttt{compare\_fin(message: bytes, fin: bytes) $\rightarrow$ bool}} qui renvoie \emph{True} si la fin de \emph{message} et \emph{fin} sont des chaînes d'octets identiques. Les chaînes d'octets peuvent être considérés comme des tableaux.
+    \item Écrire la fonction \textbf{\texttt{bruteforce(secret: bytes) $\rightarrow$ tuple}} qui teste pour clé toutes les combinaisons de trois lettres minuscules. Chaque combinaison est utilisée pour déchiffrer le message puis la fin du message est comparée à \emph{Tof}. La fonction renvoie le tuple (message décrypté, clé).
+    \item Tester la fonction et mesurer sa durée d'exécution.
+\end{enumerate}
 \end{exo}
 \end{document}

@@ -1,0 +1,183 @@
+\documentclass[svgnames,11pt]{beamer}
+\setbeamercolor{structure}{fg=SlateGray}
+\usetheme{Goettingen}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Découvrir le robot Thymio}
+\date{}
+%\logo{}
+\institute{Seconde SNT}
+%\institute{Première NSI}
+%\institute{Terminale NSI}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Problématique}
+\begin{frame}
+    \frametitle{Problématique}
+
+    La voiture autonome utilise des capteurs pour obtenir des informations de son environnement.  C'est le programmeur qui paramètre les attitudes de la voiture.
+    \begin{center}
+    \centering
+    \includegraphics[width=5cm]{ressources/voiture.jpg}
+    \end{center}
+\begin{center}
+    \framebox{Comment programmer un robot?}
+\end{center}
+\note{Ces capteurs sont nombreux (lumière, son, vitesse, présence\dots) et la quantité de données est importante. Il faut ensuite que ces données soient utilisées pour modifier le comportement de la voiture.}
+\end{frame}
+
+\section{Utiliser le robot Thymio}
+\begin{frame}
+    \frametitle{Utiliser le robot}
+
+    Le robot Thymio (figure \ref{thymio}) peut être comparé à une voiture autonome. C'est un robot mobile qui utilise ses capteurs pour découvrir son environment.
+\begin{center}
+\centering
+\includegraphics[width=5cm]{ressources/robot-thymio.jpg}
+\captionof{figure}{Robot Thymio}
+\label{thymio}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+
+\begin{activite}
+\begin{enumerate}
+    \item Repérer et compter les capteurs sur le robot.
+    \item Quels sont les actionneurs?
+    \item Allumer le robot en appuyant 3 secondes sur le bouton central.
+    \item Appuyer sur n'importe quelle flèche pour changer de couleur. Il y a six couleurs correspondant chacune à un comportement. Une fois la couleur choisie, un appui bref sur le bouton central lance le programme. Un autre appui bref stoppe l'exécution.
+    \item Décrire le comportement du robot pour chaque couleur. Certaines couleurs (bleu et cyan) sont difficiles à comprendre dès maintenant. Il faut se concentrer sur les autres.
+    \item Pour éteindre le robot, le prendre dans la main et appuyer longuement sur le bouton central.
+\end{enumerate}
+\end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    Il y a:
+    \begin{itemize}
+        \item 5 capteurs à l'avant,
+        \item 2 capteurs à l'arrière,
+        \item 2 capteurs en dessous.
+        \item 1 micro sur le dessus.
+    \end{itemize}
+Les moteurs, les LED, le haut-parleur sont des actionneurs.
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{itemize}
+        \item \textbf{vert:} suit l'obstacle devant lui; si l'obstacle est trop près il recule.
+        \item \textbf{rouge:} fuit l'obstacle placé devant lui.
+        \item \textbf{mauve:} avance ou tourne quand on utilise les flèches. Il accélère si on appuie plusieurs sur la flèche.
+        \item \textbf{jaune:} avance seul et esquive les obstacles.
+        \item \textbf{bleu:} sensible au son
+        \item \textbf{cyan:} on verra plus tard.
+    \end{itemize}
+    
+\note{\textbf{cyan:} suit une piste (trait noir); tourne en rond pour trouver une piste.}
+\end{frame}
+\section{Programmer le robot Thymio}
+\begin{frame}
+    \frametitle{Programmer le robot}
+
+    Un langage, proche de \emph{scratch}, permet de communiquer avec Thymio. Une fois un programme réalisé, il faut le transmettre au robot. La clé USB est un émetteur lié au robot.
+
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+    \begin{activite} \textbf{Associer le robot à l'ordinateur}
+        \begin{enumerate}    
+            \item Allumer le robot.
+            \item Brancher la clé USB à l'ordinateur.
+            \item Depuis le bureau, ouvrir le dossier NSI/thymio (ou ISN/thymio).
+            \item Démarrer \emph{thymio web bridge blockly et scracth web}. Le robot devrait être repéré.
+            \item Démarrer le logiciel \emph{thymio blockly}. Par défaut il s'ouvre avec le navigateur Internet Explorer. Ce logiciel est obsolète.
+            \item Copier le lien dans barre adresse de Internet Explorer.
+            \item Ouvrir Firefox et coller le lien dans la barre d'adresse.
+        \end{enumerate}
+        \end{activite}
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[Remarque]
+        Il est possible que le fait de brancher plusieurs robots en même temps dans la salle, crée des perturbations. Il faudra alors remplacer la clé USB par un câble USB.
+        \end{aretenir}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Le langage \emph{Blockly} permet de réaliser une \textbf{programmation événementielle:} le robot agit en fonction d'événements extérieurs. De plus il peut réagir à plusieurs événements simultanément. On parle alors de \textbf{programmation parallèle}.
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}\textbf{Programmer le robot}
+        \begin{enumerate}
+            \item Créer une instruction qui demande au robot de commencer à avancer quand on appuie sur la flèche avant.
+            \item Appuyer sur le bouton d'exécution (figure \ref{execution}). Le bouton \emph{stop} arrête immédiatement l'exécution du programme.
+        \begin{center}
+        \centering
+        \includegraphics[width=2cm]{ressources/execution.png}
+        \captionof{figure}{Exécuter le programme}
+        \label{execution}
+        \end{center}
+            \item Ajouter un second événement: le robot doit s'arrêter quand le capteur avant détecte quelque chose. De plus la LED rouge doit s'allumer.
+            \item Compléter le programme pour que le robot:
+            \begin{itemize}
+                \item tourne dans la direction de la flèche pressée,
+                \item s'arrête quand on appuie sur le bouton central.
+            \end{itemize}
+        \end{enumerate}
+        \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+    \centering
+    \includegraphics[width=10cm]{ressources/cor1.png}
+    \captionof{figure}{Avancer}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+    \centering
+    \includegraphics[width=10cm]{ressources/cor2.png}
+    \captionof{figure}{Obstacle}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+    \centering
+    \includegraphics[width=10cm]{ressources/cor3.png}
+    \captionof{figure}{Boutons}
+    \end{center}
+
+\end{frame}
+\end{document}

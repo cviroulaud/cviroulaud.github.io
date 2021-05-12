@@ -35,7 +35,7 @@
 \begin{frame}
     \frametitle{Chiffrement RSA}
 \begin{itemize}
-    \item 1997: Ron Rivest, Adi Shamir et Len Adleman. 
+    \item 1977: Ron Rivest, Adi Shamir et Len Adleman. 
     \item breveté en 1983; expiration du brevet en 2000.
     \item \emph{fonctions à sens unique} (comme Diffie-Hellman)
     \item une paire de clés publique et privée.
@@ -213,13 +213,39 @@
             \item Découvrir l'algorithme \emph{kidrsa} sur la page \url{https://tinyurl.com/rsakid}
             \item Écrire la fonction \textbf{\texttt{creer\_nombre(a: int, b: int, a1: int, b1: int) $\rightarrow$ dict}} qui renvoie un dictionnaire contenant les clés privée et publique. Chaque clé sera un tuple.
             \item Écrire la fonction \textbf{\texttt{chiffrer(message: int, publique: tuple) $\rightarrow$ int}} qui encode \emph{message} avec la clé publique (\emph{e, n}).
-            \item Écrire la fonction \textbf{\texttt{dechiffrer(message\_chiffre: int, privee: int) $\rightarrow$ int}} qui déchiffre \emph{message\_chiffre} avec la clé privée \emph{(d, n)}.
+            \item Écrire la fonction \textbf{\texttt{dechiffrer(message\_chiffre: int, privee: tuple) $\rightarrow$ int}} qui déchiffre \emph{message\_chiffre} avec la clé privée \emph{(d, n)}.
             \item Tester l'algorithme de chiffrage avec un entier (inférieur à n).
         \end{enumerate}
         \end{activite}
 
 \end{frame}
+\begin{frame}
+    \frametitle{Correction}
 
+    \begin{center}
+        \lstinputlisting[firstline=10 ,lastline=20,basicstyle=\small,xleftmargin=2em,xrightmargin=2em ]{"scripts/kidrsa.py"}
+    \captionof{code}{Alice crée ses clés}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+        \lstinputlisting[firstline=23 ,lastline=32,basicstyle=\small,xleftmargin=2em,xrightmargin=2em  ]{"scripts/kidrsa.py"}
+    \captionof{code}{Bob chiffre son message avec la clé publiqe d'Alice}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{center}
+        \lstinputlisting[firstline=35 ,lastline=44,basicstyle=\small,xleftmargin=2em,xrightmargin=2em  ]{"scripts/kidrsa.py"}
+    \captionof{code}{Alice déchiffre le message de Bob avec sa clé privée}
+    \end{center}
+
+\end{frame}
 \begin{frame}
     \frametitle{}
 

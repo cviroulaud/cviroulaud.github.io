@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  10 MAY 2021 12:45
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 MAY 2021 15:18
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/recherche-textuelle/recherche-textuelle
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/recherche-textuelle/recherche-textuelle.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.140 seconds
+luaotfload | main : initialization completed in 0.187 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1433,7 +1433,7 @@ Make it at least 17.75844pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=32, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=44, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 115.
@@ -1443,42 +1443,54 @@ Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 121.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 207.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
+ [2] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 227.
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 249.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+[3]
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 259.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+ [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
  (./recherche-textuelle.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
+Package rerunfilecheck Info: File `recherche-textuelle.out' has not changed.
+(rerunfilecheck)             Checksum: 1537F22C301465D59E1D6B780148AC89;1564.
 
-
-Package rerunfilecheck Warning: File `recherche-textuelle.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `recherche-textuelle.out':
-(rerunfilecheck)             Before: A97EF3CC55E734ECBBB6947F5E3A058D;929
-(rerunfilecheck)             After:  0BDFEB77B33924FEAED11470608A4C72;1090.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 41406 strings out of 494383
- 100000,1144653 words of node,token memory allocated
- 15406 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 18 glue, 4 kern, 1 penalty, 1728 glyph, 1070 attribute, 99 glue_spec, 180 attribute_list, 1 write nodes
-   avail lists: 1:4,2:19542,3:1325,4:54,5:177,6:34,7:3120,8:48,9:1012,10:6,11:123
- 44357 multiletter control sequences out of 65536+600000
- 54 fonts using 8020519 bytes
- 84i,18n,95p,1215b,709s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on recherche-textuelle.pdf (2 pages, 40871 bytes).
+ 41810 strings out of 494383
+ 195334,1373583 words of node,token memory allocated
+ 38268 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 22 glue, 4 kern, 1 penalty, 4414 glyph, 2798 attribute, 99 glue_spec, 468 attribute_list, 1 write nodes
+   avail lists: 1:4,2:24266,3:1720,4:1640,5:1498,6:39,7:2898,8:1270,9:2336,10:21,11:235
+ 44705 multiletter control sequences out of 65536+600000
+ 55 fonts using 8147599 bytes
+ 84i,18n,99p,1215b,1007s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on recherche-textuelle.pdf (4 pages, 75373 bytes).
 
-PDF statistics: 104 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 131072)
- 64 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 174 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 131072)
+ 88 words of extra memory for PDF output out of 10000 (max. 100000000)
 

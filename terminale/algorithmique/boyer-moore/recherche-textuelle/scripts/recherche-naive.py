@@ -21,6 +21,6 @@ def recherche_naive(texte: str, motif: str) -> int:
     return -1
 
 
-t = "adracadabra"
-m = "dab"
+t = "atgatccatga"
+m = "cat"
 print(recherche_naive(t, m))

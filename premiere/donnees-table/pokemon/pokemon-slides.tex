@@ -162,7 +162,7 @@ fenetre.mainloop()
 
 \end{frame}
 \begin{frame}[fragile]
-    \frametitle{}
+    \frametitle{Exemple}
 
     \begin{center}
         \begin{lstlisting}[language=Python,basicstyle=\small]
@@ -288,22 +288,22 @@ label_taille["text"] = "0.71m"
 
     \begin{center}
         \begin{lstlisting}[language=Python, basicstyle=\small]
-        # création d'un bloc
-        bloc_carte = tkinter.Frame(fenetre)
-        
-        # on plaque les composants dans le bloc
-        label_nom = tkinter.Label(bloc_carte)
-        label_nom.grid(column=1, row=0)
-        
-        label_poids = tkinter.Label(bloc_carte)
-        label_poids.grid(column=0, row=1)
-        
-        label_taille = tkinter.Label(bloc_carte)
-        label_taille.grid(column=1, row=1)
-        
-        # On plaque le bloc dans la fenêtre
-        bloc_carte.pack()
-        \end{lstlisting}
+# création d'un bloc
+bloc_carte = tkinter.Frame(fenetre)
+
+# on plaque les composants dans le bloc
+label_nom = tkinter.Label(bloc_carte)
+label_nom.grid(column=1, row=0)
+
+label_poids = tkinter.Label(bloc_carte)
+label_poids.grid(column=0, row=1)
+
+label_taille = tkinter.Label(bloc_carte)
+label_taille.grid(column=1, row=1)
+
+# On plaque le bloc dans la fenêtre
+bloc_carte.pack()
+\end{lstlisting}
         \captionof{code}{Création d'un bloc}
         \label{bloc}
     \end{center}
@@ -326,7 +326,7 @@ label_taille["text"] = "0.71m"
     \begin{activite}
         Écrire la fonction \textbf{\texttt{remplir\_carte(num\_pok: int) $\rightarrow$ None}} qui remplit les trois labels créés en fonction du numéro de Pokémon choisi dans le Pokédex.
     \end{activite}
-
+\note{Le tableau \textbf{\texttt{pokedex}} est utilisé ici comme une variable globale $\rightarrow$ pour faciliter l'usage du callback plus tard.}
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
@@ -427,7 +427,7 @@ Construire par compréhension le tableau \textbf{\texttt{noms\_affiches}} des no
 
 \begin{center}
 \begin{lstlisting}[language=Python,basicstyle=\small,xleftmargin=0em,xrightmargin=0em,numbers=none]
-noms_affiches = [pokedex[i]["name"] for i in range(len(pokedex))]
+noms_affiches = [pokemon["name"] for pokemon in pokedex]
 \end{lstlisting}
 \captionof{code}{Tableau des noms}
 \label{CODE}

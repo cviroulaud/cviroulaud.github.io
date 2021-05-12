@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 MAY 2021 17:02
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  10 MAY 2021 15:05
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/rsa/rsa-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/rsa/rsa-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.102 seconds
+luaotfload | main : initialization completed in 0.219 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1678,90 +1678,111 @@ Overfull \vbox (5.03117pt too high) detected at line 221
 
 [12
 
-] [13
+]
 
-] [14
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-] [15
+(./scripts/kidrsa.py
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 10.
+) [13
+
+]
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(./scripts/kidrsa.py) [14
+
+]
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+(./scripts/kidrsa.py) [15
 
 ] [16
 
 ] [17
 
-]
-Overfull \hbox (38.39702pt too wide) in paragraph at lines 348--348
- [] 
- []
-
-[18
+] [18
 
 ] [19
 
+] [20
+
+]
+Overfull \hbox (38.39702pt too wide) in paragraph at lines 374--374
+ [] 
+ []
+
+[21
+
+] [22
+
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 371.
+(mdframed)              on input line 397.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 371.
+(mdframed)              on input line 397.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 371.
- [20
-
-] [21
-
-]
-<ressources/certificats.png, id=410, 1680.2775pt x 999.735pt>
-File: ressources/certificats.png Graphic file (type png)
-<use ressources/certificats.png>
-Package luatex.def Info: ressources/certificats.png  used on input line 399.
-(luatex.def)             Requested size: 256.0748pt x 152.34877pt.
-
-
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 399.
-
-
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 399.
-
-[22
-
-<./ressources/certificats.png>] [23
+ mdframed uses option nobreak mdframed on input line 397.
+ [23
 
 ] [24
 
 ]
-Overfull \hbox (13.84697pt too wide) in paragraph at lines 442--442
- [] 
- []
+<ressources/certificats.png, id=458, 1680.2775pt x 999.735pt>
+File: ressources/certificats.png Graphic file (type png)
+<use ressources/certificats.png>
+Package luatex.def Info: ressources/certificats.png  used on input line 425.
+(luatex.def)             Requested size: 256.0748pt x 152.34877pt.
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 425.
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 425.
 
 [25
 
+<./ressources/certificats.png>] [26
+
+] [27
+
 ]
-<ressources/cadenas.png, id=478, 913.4125pt x 415.5525pt>
+Overfull \hbox (13.84697pt too wide) in paragraph at lines 468--468
+ [] 
+ []
+
+[28
+
+]
+<ressources/cadenas.png, id=526, 913.4125pt x 415.5525pt>
 File: ressources/cadenas.png Graphic file (type png)
 <use ressources/cadenas.png>
-Package luatex.def Info: ressources/cadenas.png  used on input line 453.
+Package luatex.def Info: ressources/cadenas.png  used on input line 479.
 (luatex.def)             Requested size: 227.62204pt x 103.5518pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
-[26
+[29
 
 <./ressources/cadenas.png>]
-<ressources/chiffrement.png, id=496, 1292.83pt x 142.5325pt>
+<ressources/chiffrement.png, id=544, 1292.83pt x 142.5325pt>
 File: ressources/chiffrement.png Graphic file (type png)
 <use ressources/chiffrement.png>
-Package luatex.def Info: ressources/chiffrement.png  used on input line 471.
+Package luatex.def Info: ressources/chiffrement.png  used on input line 497.
 (luatex.def)             Requested size: 298.75394pt x 32.93619pt.
 
-Overfull \hbox (19.91681pt too wide) in paragraph at lines 471--471
+Overfull \hbox (19.91681pt too wide) in paragraph at lines 497--497
  [] 
  []
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
-[27
+[30
 
 <./ressources/chiffrement.png>]
 \tf@nav=\write8
@@ -1773,13 +1794,13 @@ warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 \tf@snm=\write10
 
 \openout10 = rsa-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 498.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 498.
  (./rsa-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 472.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 472.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 498.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 498.
 Package rerunfilecheck Info: File `rsa-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 4C7BB401E5311F3BF64E1762FBB53149;1502.
+(rerunfilecheck)             Checksum: 21A6A9B3DDF4709F7D9A238758C51C82;1502.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1787,19 +1808,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44568 strings out of 494383
- 100000,1144653 words of node,token memory allocated
- 77510 words of node memory still in use:
-   55 hlist, 9 vlist, 8 rule, 27 disc, 8 local_par, 8 math, 152 glue, 21 kern, 36 penalty, 9504 glyph, 3387 attribute, 106 glue_spec, 567 attribute_list, 5 write, 34 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:4,2:2822,3:612,4:142,5:124,6:34,7:853,8:28,9:373,10:14,11:91,12:1
- 47140 multiletter control sequences out of 65536+600000
- 89 fonts using 11369191 bytes
+ 44847 strings out of 494383
+ 305292,1144653 words of node,token memory allocated
+ 92182 words of node memory still in use:
+   55 hlist, 9 vlist, 8 rule, 27 disc, 8 local_par, 8 math, 180 glue, 21 kern, 36 penalty, 11002 glyph, 5097 attribute, 106 glue_spec, 852 attribute_list, 5 write, 34 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:6,2:7065,3:613,4:5713,5:4339,6:52,7:853,8:3918,9:6995,10:32,11:411,12:1
+ 47367 multiletter control sequences out of 65536+600000
+ 98 fonts using 12136631 bytes
  70i,15n,95p,1187b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on rsa-slides.pdf (27 pages, 271050 bytes).
+Output written on rsa-slides.pdf (30 pages, 279216 bytes).
 
-PDF statistics: 598 PDF objects out of 1000 (max. 8388607)
- 515 compressed objects within 6 object streams
- 65 named destinations out of 1000 (max. 131072)
+PDF statistics: 646 PDF objects out of 1000 (max. 8388607)
+ 560 compressed objects within 6 object streams
+ 71 named destinations out of 1000 (max. 131072)
  98 words of extra memory for PDF output out of 10000 (max. 100000000)
 

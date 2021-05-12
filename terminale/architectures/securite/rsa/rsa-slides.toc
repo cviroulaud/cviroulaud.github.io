@@ -3,8 +3,8 @@
 \beamer@sectionintoc {2}{Chiffrement RSA}{3}{0}{2}
 \beamer@subsectionintoc {2}{1}{Principe}{3}{0}{2}
 \beamer@subsectionintoc {2}{2}{kid RSA: formalisme mathématique}{11}{0}{2}
-\beamer@sectionintoc {3}{Authentification des participants}{14}{0}{3}
-\beamer@sectionintoc {4}{Sécuriser l'accès à un site web}{19}{0}{4}
-\beamer@subsectionintoc {4}{1}{Associer les protocoles}{19}{0}{4}
-\beamer@subsectionintoc {4}{2}{Autorité de certification}{21}{0}{4}
-\beamer@subsectionintoc {4}{3}{Protocole https}{24}{0}{4}
+\beamer@sectionintoc {3}{Authentification des participants}{17}{0}{3}
+\beamer@sectionintoc {4}{Sécuriser l'accès à un site web}{22}{0}{4}
+\beamer@subsectionintoc {4}{1}{Associer les protocoles}{22}{0}{4}
+\beamer@subsectionintoc {4}{2}{Autorité de certification}{24}{0}{4}
+\beamer@subsectionintoc {4}{3}{Protocole https}{27}{0}{4}

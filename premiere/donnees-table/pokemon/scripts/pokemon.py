@@ -61,7 +61,7 @@ fenetre.title("Pokemon Go")
 """
 boite de sélection
 """
-noms_affiches = [pokedex[i]["name"] for i in range(len(pokedex))]
+noms_affiches = [pokemon["name"] for pokemon in pokedex]
 combo_pok = ttk.Combobox(fenetre, values=noms_affiches)
 combo_pok.current(0)
 combo_pok.pack()

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 APR 2021 16:03
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 MAY 2021 13:21
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-table/pokemon/pokemon-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-table/pokemon/pokemon-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.143 seconds
+luaotfload | main : initialization completed in 0.161 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1905,16 +1905,16 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44898 strings out of 494383
- 381602,1144653 words of node,token memory allocated
- 135218 words of node memory still in use:
-   22 hlist, 9 vlist, 3 rule, 7 disc, 4 local_par, 148 glue, 8 kern, 16 penalty, 15988 glyph, 9039 attribute, 106 glue_spec, 1509 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 14 pdf_colorstack nodes
-   avail lists: 1:7,2:5514,3:338,4:5818,5:4634,6:69,7:2117,8:4119,9:7459,10:28,11:491,12:1
- 47292 multiletter control sequences out of 65536+600000
+ 44889 strings out of 494383
+ 305276,1144653 words of node,token memory allocated
+ 135078 words of node memory still in use:
+   22 hlist, 9 vlist, 3 rule, 7 disc, 4 local_par, 148 glue, 8 kern, 16 penalty, 15984 glyph, 8991 attribute, 106 glue_spec, 1501 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 14 pdf_colorstack nodes
+   avail lists: 1:7,2:5570,3:335,4:4858,5:3880,6:68,7:2117,8:3467,9:6280,10:28,11:435,12:1
+ 47283 multiletter control sequences out of 65536+600000
  98 fonts using 12533847 bytes
  70i,15n,95p,1185b,1098s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on pokemon-slides.pdf (33 pages, 148053 bytes).
+Output written on pokemon-slides.pdf (33 pages, 148101 bytes).
 
 PDF statistics: 757 PDF objects out of 1000 (max. 8388607)
  674 compressed objects within 7 object streams

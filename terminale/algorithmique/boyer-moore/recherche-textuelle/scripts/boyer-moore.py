@@ -76,9 +76,6 @@ def compare(texte: str, position: int, motif: str) -> bool:
 
 def boyer_moore(texte: str, motif: str) -> int:
     """
-    utilise la version simplifiée de l'algorithme
-    de Boyer-Moore pour trouver motif dans texte.
-
     Returns:
         int: la position du motif dans le texte, -1 sinon.
     """

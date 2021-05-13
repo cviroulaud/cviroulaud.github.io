@@ -1,10 +1,9 @@
 \frametitle{Algorithme de Boyer-Moore}
 
-    %Horspool
 
     L'algorithme de Boyer-Moore s'écrit alors:
 \begin{center}
-\begin{lstlisting}[language=Bash, xleftmargin=2em, xrightmargin=2em]
+\begin{lstlisting}[language=Bash, basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
 Créer le tableau des décalages
 Tant qu'on n'est pas à la fin du texte
     Comparer le motif à la position du texte
@@ -17,3 +16,4 @@ Renvoyer -1 si le motif n'est pas présent
 \captionof{code}{Algorithme de Boyer-Moore (version Horspool)}
 \label{algo}
 \end{center}
+\note{Horspool: en 1980, version simplifiée de Boyer-Moore; il existe plusieurs versions.}

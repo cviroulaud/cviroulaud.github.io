@@ -1,10 +1,11 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Problématique}{2}{0}{1}
-\beamer@sectionintoc {2}{Approche naïve}{3}{0}{2}
-\beamer@subsectionintoc {2}{1}{Implémentation}{7}{0}{2}
-\beamer@sectionintoc {3}{Approche plus efficace: Boyer-Moore}{8}{0}{3}
-\beamer@subsectionintoc {3}{1}{Recherche à l'envers}{9}{0}{3}
-\beamer@subsectionintoc {3}{2}{Décalages par sauts}{11}{0}{3}
-\beamer@subsectionintoc {3}{3}{Prétraitement du motif}{18}{0}{3}
-\beamer@subsectionintoc {3}{4}{Algorithme de Boyer-Moore (simplifié - version Horspool)}{21}{0}{3}
-\beamer@subsectionintoc {3}{5}{Complexité}{23}{0}{3}
+\beamer@sectionintoc {2}{Approche naïve}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Implémentation}{11}{0}{2}
+\beamer@sectionintoc {3}{Approche plus efficace: Boyer-Moore}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{Recherche à l'envers}{19}{0}{3}
+\beamer@subsectionintoc {3}{2}{Décalages par sauts}{21}{0}{3}
+\beamer@subsectionintoc {3}{3}{Prétraitement du motif}{29}{0}{3}
+\beamer@subsectionintoc {3}{4}{Algorithme de Boyer-Moore (simplifié - version Horspool)}{35}{0}{3}
+\beamer@subsectionintoc {3}{5}{Complexité}{42}{0}{3}

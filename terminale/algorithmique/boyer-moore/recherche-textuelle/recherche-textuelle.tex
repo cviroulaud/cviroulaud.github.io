@@ -24,6 +24,7 @@ Rechercher les occurrences d'un mot dans un texte est une fonctionnalité intég
     \framebox{Comment effectuer une recherche textuelle efficace?}
 \end{center}
 \section{Approche naïve}
+\subsection{Principe}
 La première méthode à laquelle nous pouvons penser consiste à:
 \begin{itemize}
     \item observer une \textbf{fenêtre} du texte,
@@ -36,11 +37,11 @@ La première méthode à laquelle nous pouvons penser consiste à:
         \foreach \a/\b in {2.1/0,2.8/1,3.5/2,4.2/3,4.9/4,5.6/5,6.3/6,7/7,7.7/8,8.5/9,9.2/10}
             {\node[anchor=south] at (\a,0.5) {\b};}
         \node[anchor=south] at(1.3,0){texte};
-        \foreach \a/\b in {2.1/a,2.8/d,3.5/r,4.2/a,4.9/c,5.6/a,6.3/d,7/a,7.7/b,8.5/r,9.2/a}
+        \foreach \a/\b in {2.1/a,2.8/c,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
             {\node[anchor=south] at (\a,0) {\b};}
 
         \node[anchor=south] at(1.3,-0.7){motif};
-        \foreach \a/\b in {2.1/d,2.8/a,3.5/b}
+        \foreach \a/\b in {2.1/c,2.8/a,3.5/t}
             {\node[anchor=south] at (\a,-0.7) {\b};}
         \foreach \a/\b in {2.1/0,2.8/1,3.5/2}
             {\node[anchor=south] at (\a,-1.2) {\b};}
@@ -54,11 +55,11 @@ La première méthode à laquelle nous pouvons penser consiste à:
         \foreach \a/\b in {2.1/0,2.8/1,3.5/2,4.2/3,4.9/4,5.6/5,6.3/6,7/7,7.7/8,8.5/9,9.2/10}
             {\node[anchor=south] at (\a,0.5) {\b};}
         \node[anchor=south] at(1.3,0){texte};
-        \foreach \a/\b in {2.1/a,2.8/d,3.5/r,4.2/a,4.9/c,5.6/a,6.3/d,7/a,7.7/b,8.5/r,9.2/a}
+        \foreach \a/\b in {2.1/a,2.8/c,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
             {\node[anchor=south] at (\a,0) {\b};}
 
         \node[anchor=south] at(1.3,-0.7){motif};
-        \foreach \a/\b in {2.8/d,3.5/a,4.2/b}
+        \foreach \a/\b in {2.8/c,3.5/a,4.2/t}
             {\node[anchor=south] at (\a,-0.7) {\b};}
         \foreach \a/\b in {2.8/0,3.5/1,4.2/2}
             {\node[anchor=south] at (\a,-1.2) {\b};}
@@ -72,11 +73,11 @@ La première méthode à laquelle nous pouvons penser consiste à:
         \foreach \a/\b in {2.1/0,2.8/1,3.5/2,4.2/3,4.9/4,5.6/5,6.3/6,7/7,7.7/8,8.5/9,9.2/10}
             {\node[anchor=south] at (\a,0.5) {\b};}
         \node[anchor=south] at(1.3,0){texte};
-        \foreach \a/\b in {2.1/a,2.8/d,3.5/r,4.2/a,4.9/c,5.6/a,6.3/d,7/a,7.7/b,8.5/r,9.2/a}
+        \foreach \a/\b in {2.1/a,2.8/c,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
             {\node[anchor=south] at (\a,0) {\b};}
 
         \node[anchor=south] at(1.3,-0.7){motif};
-        \foreach \a/\b in {2.8/d,3.5/a,4.2/b}
+        \foreach \a/\b in {2.8/c,3.5/a,4.2/t}
             {\node[anchor=south] at (\a,-0.7) {\b};}
         \foreach \a/\b in {2.8/0,3.5/1,4.2/2}
             {\node[anchor=south] at (\a,-1.2) {\b};}
@@ -102,7 +103,7 @@ La première idée de cet algorithme est de commencer la recherche \textbf{en pa
         \foreach \a/\b in {2.1/0,2.8/1,3.5/2,4.2/3,4.9/4,5.6/5,6.3/6,7/7,7.7/8,8.5/9,9.2/10}
             {\node[anchor=south] at (\a,0.5) {\b};}
         \node[anchor=south] at(1.3,0){texte};
-        \foreach \a/\b in {2.1/a,2.8/t,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
+        \foreach \a/\b in {2.1/a,2.8/c,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
             {\node[anchor=south] at (\a,0) {\b};}
 
         \node[anchor=south] at(1.3,-0.7){motif};
@@ -124,7 +125,7 @@ Si on s'intéresse au motif, on peut remarquer qu'il ne contient pas la lettre \
         \foreach \a/\b in {2.1/0,2.8/1,3.5/2,4.2/3,4.9/4,5.6/5,6.3/6,7/7,7.7/8,8.5/9,9.2/10}
             {\node[anchor=south] at (\a,0.5) {\b};}
         \node[anchor=south] at(1.3,0){texte};
-        \foreach \a/\b in {2.1/a,2.8/t,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
+        \foreach \a/\b in {2.1/a,2.8/c,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
             {\node[anchor=south] at (\a,0) {\b};}
 
         \node[anchor=south] at(1.3,-0.7){motif};
@@ -143,7 +144,7 @@ Si on s'intéresse au motif, on peut remarquer qu'il ne contient pas la lettre \
         \foreach \a/\b in {2.1/0,2.8/1,3.5/2,4.2/3,4.9/4,5.6/5,6.3/6,7/7,7.7/8,8.5/9,9.2/10}
             {\node[anchor=south] at (\a,0.5) {\b};}
         \node[anchor=south] at(1.3,0){texte};
-        \foreach \a/\b in {2.1/a,2.8/t,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
+        \foreach \a/\b in {2.1/a,2.8/c,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
             {\node[anchor=south] at (\a,0) {\b};}
 
         \node[anchor=south] at(1.3,-0.7){motif};
@@ -163,7 +164,7 @@ On peut donc directement décaler le motif à l'indice 3 du texte (figure \ref{s
         \foreach \a/\b in {2.1/0,2.8/1,3.5/2,4.2/3,4.9/4,5.6/5,6.3/6,7/7,7.7/8,8.5/9,9.2/10}
             {\node[anchor=south] at (\a,0.5) {\b};}
         \node[anchor=south] at(1.3,0){texte};
-        \foreach \a/\b in {2.1/a,2.8/t,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
+        \foreach \a/\b in {2.1/a,2.8/c,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
             {\node[anchor=south] at (\a,0) {\b};}
 
         \node[anchor=south] at(1.3,-0.7){motif};
@@ -183,7 +184,7 @@ On n'observe pas de correspondance par contre la lettre \textbf{c} existe dans l
         \foreach \a/\b in {2.1/0,2.8/1,3.5/2,4.2/3,4.9/4,5.6/5,6.3/6,7/7,7.7/8,8.5/9,9.2/10}
             {\node[anchor=south] at (\a,0.5) {\b};}
         \node[anchor=south] at(1.3,0){texte};
-        \foreach \a/\b in {2.1/a,2.8/t,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
+        \foreach \a/\b in {2.1/a,2.8/c,3.5/g,4.2/a,4.9/t,5.6/c,6.3/c,7/a,7.7/t,8.5/g,9.2/a}
             {\node[anchor=south] at (\a,0) {\b};}
 
         \node[anchor=south] at(1.3,-0.7){motif};

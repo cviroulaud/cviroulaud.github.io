@@ -1,5 +1,5 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Problématique}{2}{0}{1}
-\beamer@sectionintoc {2}{Architecture d'un ordinateur embarqué}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{Principe général d'un ordinateur}{8}{0}{2}
-\beamer@subsectionintoc {2}{2}{Interagir avec le monde extérieur}{14}{0}{2}
+\beamer@sectionintoc {2}{Architecture d'un ordinateur embarqué}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe général d'un ordinateur}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Interagir avec le monde extérieur}{16}{0}{2}

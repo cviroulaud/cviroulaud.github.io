@@ -12,11 +12,12 @@ def recherche_naive(texte: str, motif: str) -> int:
     renvoie la position du motif dans le texte
     -1 s'il n'est pas présent
     """
+    # dernière position = taille(texte) - taille(motif)
     for i in range(len(texte)-len(motif)+1):
         j = 0
         while (j < len(motif)) and (motif[j] == texte[i+j]):
             j += 1
-        if j == len(motif):
+        if j == len(motif): # correspondance sur toute la fenêtre
             return i
     return -1
 

@@ -117,10 +117,10 @@
 \headcommand {\beamer@framepages {49}{49}}
 \headcommand {\slideentry {3}{5}{9}{50/50}{Complexité}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\slideentry {3}{5}{10}{51/51}{Complexité}{0}}
-\headcommand {\beamer@framepages {51}{51}}
 \headcommand {\beamer@partpages {1}{51}}
 \headcommand {\beamer@subsectionpages {42}{51}}
 \headcommand {\beamer@sectionpages {15}{51}}
 \headcommand {\beamer@documentpages {51}}
 \headcommand {\gdef \inserttotalframenumber {49}}
+\headcommand {\slideentry {3}{5}{10}{51/51}{Complexité}{0}}
+\headcommand {\beamer@framepages {51}{51}}

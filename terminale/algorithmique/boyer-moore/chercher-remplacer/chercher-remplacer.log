@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 MAY 2021 14:25
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  18 MAY 2021 14:32
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/chercher-remplacer/chercher-remplacer
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/chercher-remplacer/chercher-remplacer.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.201 seconds
+luaotfload | main : initialization completed in 0.172 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1344,7 +1344,34 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./chercher-remplacer.aux
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2011/01/05 ver 0.02
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count431
+\calc@Bcount=\count432
+\calc@Adimen=\dimen353
+\calc@Bdimen=\dimen354
+\calc@Askip=\skip144
+\calc@Bskip=\skip145
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count433
+\calc@Cskip=\skip146
+)
+\pgf@logicalpages=\count434
+\pgf@firstshipout=\count435
+\pgf@lastshipout=\count436
+\pgf@currentshipout=\count437
+\pgf@cpn=\count438
+\pgf@shipoutnextto=\count439
+\pgfphysicalheight=\dimen355
+\pgfphysicalwidth=\dimen356
+\pgfpages@shipoutbox=\box124
+)
+\pgfpages@box@1=\box125
+\pgfpages@box@2=\box126
+ (./chercher-remplacer.aux
 
 LaTeX Warning: Label `CODE' multiply defined.
 
@@ -1415,16 +1442,16 @@ LaTeX Font Info:    ... okay on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count431
-\scratchdimen=\dimen353
-\scratchbox=\box124
-\nofMPsegments=\count432
-\nofMParguments=\count433
+\scratchcounter=\count440
+\scratchdimen=\dimen357
+\scratchbox=\box127
+\nofMPsegments=\count441
+\nofMParguments=\count442
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count434
-\MPscratchDim=\dimen354
-\MPnumerator=\count435
-\makeMPintoPDFobject=\count436
+\MPscratchCnt=\count443
+\MPscratchDim=\dimen358
+\MPnumerator=\count444
+\makeMPintoPDFobject=\count445
 \everyMPtoPDFconversion=\toks66
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1438,14 +1465,14 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box125
+\AtBeginShipoutBox=\box128
 Package hyperref Info: Link coloring ON on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count437
+\c@section@level=\count446
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
@@ -1571,33 +1598,53 @@ LaTeX Info: Redefining \up on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count438
+\c@lstlisting=\count447
 
 No file pythontex-files-chercher-remplacer/chercher-remplacer.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
-\c@listing=\count439
+\c@listing=\count448
 Package newfloat Info: float type `listing'=16 on input line 11.
 (./chercher-remplacer.nav)
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 15.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 15.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 15.
+ (./chercher-remplacer.toc) [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./chercher-remplacer.toc) [2
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 ] [3
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation2'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+
 ] (./chercher-remplacer.toc) [4
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 41.
  [5
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+
 ]
-</home/tof/Documents/Cozy/latex-include/stop.png, id=146, 240.9pt x 240.9pt>
+</home/tof/Documents/Cozy/latex-include/stop.png, id=160, 240.9pt x 240.9pt>
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/stop.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 55.
@@ -1610,13 +1657,16 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 55.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 55.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 55.
  [6
 
-</home/tof/Documents/Cozy/latex-include/stop.png>]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+
+]
 \openout4 = chercher-remplacer.vrb
  (./chercher-remplacer.vrb
 
@@ -1629,9 +1679,24 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [7
 
-] (./chercher-remplacer.toc) [8
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation6'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+
+</home/tof/Documents/Cozy/latex-include/stop.png>] (./chercher-remplacer.toc) [8
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation7'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
 
 ] [9
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation8'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
 
 ]
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
@@ -1639,6 +1704,11 @@ File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 108.
 (luatex.def)             Requested size: 85.35826pt x 85.3565pt.
  [10
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation9'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
 
 ]
 \openout4 = chercher-remplacer.vrb
@@ -1651,12 +1721,27 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [11
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
+
 ] (./chercher-remplacer.toc) [12
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation11'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 146.
  [13
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation12'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
 
 ]
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
@@ -1665,6 +1750,11 @@ Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used o
 (luatex.def)             Requested size: 85.35826pt x 85.3565pt.
  [14
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation13'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
+
 ]
 \openout4 = chercher-remplacer.vrb
  (./chercher-remplacer.vrb
@@ -1672,6 +1762,11 @@ Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used o
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [15
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation14'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
 
 ]
 \openout4 = chercher-remplacer.vrb
@@ -1683,11 +1778,31 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 19.
 ) [16
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation15'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
+
 ] (./chercher-remplacer.toc) [17
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation16'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
 
 ] [18
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation17'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
+
 ] [19
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation18'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
 
 ]
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
@@ -1695,6 +1810,11 @@ File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 234.
 (luatex.def)             Requested size: 85.35826pt x 85.3565pt.
  [20
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation19'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
 
 ]
 \openout4 = chercher-remplacer.vrb
@@ -1708,6 +1828,11 @@ Overfull \vbox (17.13962pt too high) detected at line 260
 
 [21
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation20'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
+
 ]
 \openout4 = chercher-remplacer.vrb
  (./chercher-remplacer.vrb
@@ -1717,11 +1842,21 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [22
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation21'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
+
 ] (./chercher-remplacer.toc) [23
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation22'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
 
 ]
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
@@ -1733,13 +1868,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24
 
-] [25]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation23'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
+
+] [25
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation23'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
+
+]
 \openout4 = chercher-remplacer.vrb
  (./chercher-remplacer.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [26
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation25'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
 
 ]
 \openout4 = chercher-remplacer.vrb
@@ -1749,6 +1899,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [27
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation26'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
+
 ]
 \openout4 = chercher-remplacer.vrb
  (./chercher-remplacer.vrb
@@ -1756,6 +1911,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [28
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation27'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
 
 ]
 \openout4 = chercher-remplacer.vrb
@@ -1769,6 +1929,11 @@ Overfull \vbox (15.13962pt too high) detected at line 384
 
 [29
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation28'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
+
 ]
 \openout4 = chercher-remplacer.vrb
  (./chercher-remplacer.vrb
@@ -1781,9 +1946,24 @@ Overfull \vbox (10.13962pt too high) detected at line 407
 
 [30
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation29'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.29'
+
 ] (./chercher-remplacer.toc) [31
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation30'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.30'
+
 ] [32
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation31'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.31'
 
 ]
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
@@ -1791,6 +1971,11 @@ File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 435.
 (luatex.def)             Requested size: 85.35826pt x 85.3565pt.
  [33
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation32'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.32'
 
 ]
 \openout4 = chercher-remplacer.vrb
@@ -1804,6 +1989,11 @@ Overfull \vbox (3.13962pt too high) detected at line 459
 
 [34
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation33'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.33'
+
 ]
 \openout4 = chercher-remplacer.vrb
  (./chercher-remplacer.vrb
@@ -1814,7 +2004,17 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [35
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation34'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.34'
+
 ] [36
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation35'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.35'
 
 ]
 \tf@nav=\write8
@@ -1826,6 +2026,14 @@ warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 \tf@snm=\write10
 
 \openout10 = chercher-remplacer.snm
+ [37
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation36'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.36'
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
  (./chercher-remplacer.aux)
@@ -1840,19 +2048,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44794 strings out of 494383
- 596197,1144653 words of node,token memory allocated
- 126369 words of node memory still in use:
-   19 hlist, 9 vlist, 3 rule, 4 disc, 3 local_par, 109 glue, 6 kern, 11 penalty, 13939 glyph, 11553 attribute, 106 glue_spec, 1928 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 12 pdf_colorstack nodes
-   avail lists: 1:6,2:16801,3:113,4:12380,5:9912,6:66,7:5778,8:8908,9:15900,10:48,11:1018,12:1
- 47134 multiletter control sequences out of 65536+600000
- 97 fonts using 12006143 bytes
- 70i,15n,95p,1213b,967s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chercher-remplacer.pdf (36 pages, 121605 bytes).
+ 45097 strings out of 494383
+ 1164487,1144653 words of node,token memory allocated
+ 159724 words of node memory still in use:
+   69 hlist, 28 vlist, 10 rule, 17 disc, 11 local_par, 214 glue, 17 kern, 28 penalty, 17717 glyph, 13653 attribute, 109 glue_spec, 2278 attribute_list, 5 write, 30 pdf_literal, 4 pdf_start_link, 4 pdf_end_link, 2 pdf_dest, 3 pdf_action, 44 pdf_colorstack nodes
+   avail lists: 1:8,2:19105,3:379,4:26494,5:20997,6:194,7:16039,8:18850,9:33979,10:48,11:2251,12:1
+ 47422 multiletter control sequences out of 65536+600000
+ 98 fonts using 12137823 bytes
+ 70i,15n,95p,1213b,970s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on chercher-remplacer.pdf (36 pages, 163342 bytes).
 
-PDF statistics: 720 PDF objects out of 1000 (max. 8388607)
- 640 compressed objects within 7 object streams
+PDF statistics: 929 PDF objects out of 1000 (max. 8388607)
+ 790 compressed objects within 8 object streams
  84 named destinations out of 1000 (max. 131072)
  90 words of extra memory for PDF output out of 10000 (max. 100000000)
 

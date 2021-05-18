@@ -1,4 +1,0 @@
-\babel@toc {french}{}
-\beamer@sectionintoc {1}{Problématique}{2}{0}{1}
-\beamer@sectionintoc {2}{Réfléchir à l'algorithme}{4}{0}{2}
-\beamer@sectionintoc {3}{Implémenter l'algorithme}{17}{0}{3}

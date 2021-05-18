@@ -1,0 +1,481 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Fonction \emph{chercher et remplacer}}
+\date{}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\note{\fcolorbox{black}{red}{chercher-remplacer.zip sur site (livre la guerre des mondes)}}
+\end{frame}
+
+\section{Problématique}
+\begin{frame}
+    \frametitle{Problématique}
+
+    La fonction \emph{chercher et remplacer} est implémentée dans de nombreux logiciels: éditeurs de texte, IDE (Environment de Développement Intégré)\dots Il est ainsi possible de remplacer, en une fois, le nom d'une variable dans un programme ou le nom d'un personnage dans un livre.
+
+    \begin{center}
+        \framebox{Comment implémenter une fonction de recherche efficace?}
+    \end{center}
+
+\end{frame}
+
+\section{Importer un texte}
+\begin{frame}
+    \frametitle{Importer un texte}
+
+    \begin{activite}
+    \begin{enumerate}
+        \item Télécharger et extraire le dossier compressé \emph{chercher-remplacer.zip}
+        \item Dans un programme Python, importer le contenu du fichier \emph{la-guerre-des-mondes-wells.txt} dans une variable \textbf{\texttt{livre}}.
+        \item Trouver le nombre de caractères du livre.
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+f = open("la-guerre-des-mondes-wells.txt")
+livre = f.read()
+f.close()
+print(len(livre))
+\end{lstlisting}
+    \captionof*{code}{Importer un fichier texte}
+    \label{importer}
+    \end{center}
+
+ \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+with open("la-guerre-des-mondes-wells.txt") as f:
+    livre = f.read()
+print(len(livre))
+\end{lstlisting}
+    \captionof*{code}{Importer un fichier texte - méthode 2}
+    \label{importer2}
+    \end{center}
+\end{frame}
+\section{Rechercher}
+\subsection{Recherche naïve}
+\begin{frame}
+    \frametitle{Recherche naïve}
+
+    Afin d'observer l'efficacité de l'algorithme de Boyer-Moore, il est intéressant de tester une recherche naïve.
+    \begin{activite}
+    \begin{enumerate}
+        \item Adapter la fonction \textbf{\texttt{recherche\_naive}} vue en cours pour qu'elle renvoie la liste des positions du motif dans le texte.
+        \item Tester la fonction sur \emph{la guerre des mondes} avec le motif \emph{guerre}.
+        \item À l'aide d'un éditeur de texte ou d'un bloc-notes, compter le nombre d'occurrences du motif \emph{guerre}. Comparer au résultat obtenu avec la fonction Python.
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=1em, xrightmargin=1em]
+def recherche_naive(texte: str, motif: str) -> list:
+    res = []
+    # dernière position = taille(texte) - taille(motif)
+    for i in range(len(texte)-len(motif)+1):
+        j = 0
+        while (j < len(motif)) and (motif[j] == texte[i+j]):
+            j += 1     
+        if j == len(motif):  # correspondance sur toute la fenêtre
+            res.append(i)
+    return res
+\end{lstlisting}
+    \end{center}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+print(recherche_naive(livre,"guerre"))
+\end{lstlisting}
+    \end{center}
+On compte 21 occurrences pour 28 avec un éditeur de texte.
+\end{frame}
+\subsection{Gestion de la casse}
+\begin{frame}
+    \frametitle{Gestion de la casse}
+
+    L'éditeur de texte peut repérer les mots \emph{Guerre, GUERRE ou guerre} indifféremment.
+    \begin{activite}
+    \begin{enumerate}
+        \item Écrire la fonction \textbf{\texttt{en\_minuscule(lettre: str) $\rightarrow$ str}} qui renvoie la version minuscule de la \emph{lettre} s'il s'agit d'une lettre majuscule et le caractère inchangé sinon. La fonction \textbf{ne devra pas} utiliser la méthode native \textbf{\texttt{lower}}.
+        \item Adapter la fonction \textbf{\texttt{recherche\_naive}} pour qu'elle compte les mots sans prendre en compte la casse.
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=1em, xrightmargin=1em]
+def en_minuscule(lettre: str) -> str:
+    """
+    renvoie la minuscule de lettre
+    ou le caractère inchangé si ce n'est pas une lettre
+    """
+    dec = 32  # ord("a") - ord("A")
+    if ord(lettre) >= ord("A") and ord(lettre) <= ord("Z"):
+        return chr(ord(lettre)+dec)
+    else:
+        return lettre
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+def recherche_naive(texte: str, motif: str) -> list:
+    """
+    renvoie les positions du motif dans le texte
+    """
+    res = []
+    # dernière position = taille(texte) - taille(motif)
+    for i in range(len(texte)-len(motif)+1):
+        j = 0
+        while (j < len(motif)) and (en_minuscule(motif[j]) == en_minuscule(texte[i+j])):
+            j += 1       
+        if j == len(motif):  # correspondance sur toute la fenêtre
+            res.append(i)
+    return res
+\end{lstlisting}
+\captionof*{code}{Utilisation de la fonction \textbf{\texttt{en\_minuscule}}}
+\end{center}
+
+\end{frame}
+\subsection{Évaluer l'efficacité}
+\begin{frame}
+    \frametitle{Évaluer l'efficacité}
+Pour mesurer l'efficacité de l'algorithme, nous pouvons chronométrer la durée d'exécution de la fonction. Cependant, il semble plus pertinent de compter le nombre de comparaisons effectuées. En effet, cette approche est indépendante du matériel et permettra de comparer l'efficacité relative de deux algorithmes.
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+    \begin{enumerate}
+        \item Dans le programme principal, ajouter la variable \textbf{\texttt{NB\_COMPARAISONS}} initialisée à 0.
+        \item Modifier la fonction \textbf{\texttt{recherche\_naive}} pour compter le nombre de comparaisons effectuées. La variable \textbf{\texttt{NB\_COMPARAISONS}} sera utilisée comme \emph{variable globale}.
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=0.2em, xrightmargin=0.2em]
+def recherche_naive(texte: str, motif: str) -> list:
+    global NB_COMPARAISONS
+    res = []
+    # dernière position = taille(texte) - taille(motif)
+    for i in range(len(texte)-len(motif)+1):
+        j = 0
+        # comparaison de la première lettre
+        NB_COMPARAISONS += 1
+        while (j < len(motif)) and (en_minuscule(motif[j]) == en_minuscule(texte[i+j])):
+            j += 1
+            # comparaisons dans la fenêtre
+            NB_COMPARAISONS += 1        
+        if j == len(motif):  # correspondance sur toute la fenêtre
+            res.append(i)
+    return res
+\end{lstlisting}
+    \captionof{code}{Compter les comparaisons}
+    \label{CODE}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+NB_COMPARAISONS = 0
+print("nombre de caractères: ", len(livre))
+print(recherche_naive(livre,"guerre"))
+print("comparaisons: ",NB_COMPARAISONS)
+\end{lstlisting}
+    \end{center}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+nombre de caractères: 433983
+[35, 340, 577, 859, 958, 1954, 7343, 7517, 8099, 67998, 110280, 146464, 229890, 241073, 264650, 272295, 326198, 333691, 333738, 333770, 334412, 372834, 376022, 392191, 393202, 401899, 415041, 415120]
+comparaisons: 438048
+\end{lstlisting}
+\captionof*{code}{On a plus de comparaisons que de nombre de caractères.}
+\label{CODE}
+\end{center}
+\end{frame}
+\subsection{Algorithme de Boyer-Moore}
+\begin{activite}
+\begin{enumerate}
+    \item Reprendre les fonctions de l'algorithme de Boyer-Moore vu en classe.
+    \item Adapter la fonction \textbf{\texttt{pretraitement\_decalages}} pour qu'elle gère la casse.
+    \item Adapter la fonction \textbf{\texttt{decalage\_fenetre}} pour qu'elle gère la casse.
+    \item Adapter la fonction \textbf{\texttt{compare}} pour qu'elle gère la casse.
+    \item Modifier la fonction \textbf{\texttt{boyer\_moore}} pour qu'elle renvoie la liste des positions du motif dans le texte.
+    \item Modifier une des fonctions pour compter le nombre de comparaisons effectuées.
+\end{enumerate}
+\end{activite}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+def pretraitement_decalages(motif: str) -> dict:
+    decalages = dict()
+    # on s'arrête à l'avant dernière lettre du motif
+    for i in range(len(motif)-1):
+        # len(motif)-1 est la position de la dernière lettre
+        decalages[en_minuscule(motif[i])] = len(motif)-1-i
+    return decalages    
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+def decalage_fenetre(decalages: dict, taille: int, lettre: str) -> int:
+    lettre = en_minuscule(lettre)
+    for cle, val in decalages.items():
+        if cle == lettre:
+            return val
+    # si la lettre n'est pas dans le dico (= le motif)
+    return taille  
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+def compare(texte: str, position: int, motif: str) -> bool:
+    # position de la dernière lettre de la fenêtre
+    en_cours = position+len(motif)-1
+    # parcours de la fenêtre à l'envers
+    for i in range(len(motif)-1, -1, -1):
+        if not(en_minuscule(texte[en_cours]) == en_minuscule(motif[i])):
+            return False
+        else:
+            en_cours -= 1
+    return True
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+def boyer_moore(texte: str, motif: str) -> list:
+    res = []
+    decalages = pretraitement_decalages(motif)
+    i = 0
+    while i <= len(texte)-len(motif):
+        # si on trouve le motif
+        if compare(texte, i, motif):
+            res.append(i)
+            # on recommence à la fin du motif trouvé
+            i += len(motif)
+        else:
+            # sinon on décale
+            decale = decalage_fenetre(decalages,
+                                        len(motif),
+                                        texte[i+len(motif)-1])
+            i += decale
+    # si on sort de la boucle, on n'a rien trouvé
+    return res
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+def compare(texte: str, position: int, motif: str) -> bool:
+    global NB_COMPARAISONS
+    # position de la dernière lettre de la fenêtre
+    en_cours = position+len(motif)-1
+    # parcours de la fenêtre à l'envers
+    for i in range(len(motif)-1, -1, -1):
+        # compare au moins la dernère lettre de la fenêtre
+        NB_COMPARAISONS += 1
+        if not(en_minuscule(texte[en_cours]) == en_minuscule(motif[i])):
+            return False
+        else:
+            en_cours -= 1
+    return True
+\end{lstlisting}
+\captionof*{code}{On peut compter les comparaisons dans la fonction \textbf{\texttt{compare}}.}
+    \end{center}
+
+\end{frame}
+\section{Remplacer}
+\begin{frame}
+    \frametitle{Remplacer}
+
+    Il est maintenant possible de remplacer toutes les occurrences du motif dans le texte.
+\begin{activite}
+\begin{enumerate}
+    \item Écrire la fonction \textbf{\texttt{remplacer(livre: str, motif: str, remplacement: str)} $\rightarrow$ str} qui remplace le \emph{motif} dans le \emph{livre} par \emph{remplacement}. La fonction renvoie le texte modifié.
+    \item Remplacer le mot \emph{guerre} par \emph{paix}.
+    \item Créer alors un fichier \emph{la-paix-des-mondes.txt} du livre modifié.
+\end{enumerate}
+\end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+def remplacer(livre: str, motif: str, remplacement: str) -> str:
+    """
+    remplace 'motif' par 'remplacement' dans 'livre'
+
+    Returns:
+        str: livre modifié
+    """
+    positions = boyer_moore(livre, motif)
+    livre_modifie = ""
+    debut = 0
+    for fin in positions:
+        livre_modifie += livre[debut: fin] + remplacement
+        # recommence à la fin du motif dans livre
+        debut = fin + len(motif)
+    return livre_modifie
+\end{lstlisting}
+\end{center}  
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+modifie = remplacer(livre, "guerre", "paix")
+fichier = open("la-paix-des-mondes.txt", "w")
+fichier.write(modifie)
+fichier.close()
+\end{lstlisting}
+\captionof*{code}{Création du livre}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Code complet}
+
+    Le code complet est accessible \href{./scripts/chercher-remplacer.zip}{ici}.
+
+\end{frame}
+\end{document}

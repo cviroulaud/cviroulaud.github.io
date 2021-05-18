@@ -1,24 +1,18 @@
 \documentclass[svgnames,11pt]{beamer}
-\setbeamercolor{structure}{fg=SlateGray}
-\usetheme{Goettingen}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
-\usepackage{pgfpages}
-\setbeameroption{show notes on second screen=left}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Trier des cartes}
 \date{}
 %\logo{}
-%\institute{Seconde SNT}
-\institute{Première NSI}
-%\institute{Terminale NSI}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
-\usepackage{tikz}
+\institute{Première - NSI}
 
 \begin{document}
 \begin{frame}
-    \titlepage
+\titlepage
 \end{frame}
+
 
 \section{Problématique}
 \begin{frame}
@@ -56,7 +50,7 @@
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[label=menu]
     \frametitle{\hypertarget{menu}{Différentes méthodes}}
 
     \begin{itemize}
@@ -526,6 +520,18 @@ ma_fonction(tab)
 
 \subsection{Tri par sélection}
 \subsubsection{Implémentation}
+\begin{frame}[fragile]
+    \frametitle{Rappel de l'algorithme}
+    \begin{center}
+        \begin{lstlisting}[language=bash, basicstyle=\small,xleftmargin=2em,xrightmargin=2em]
+Pour chaque carte du tas
+    Trouver la plus petite carte dans la partie non triée.
+    Échanger cette carte avec la première de la partie non triée.
+\end{lstlisting}
+        \captionof{code}{Tri par sélection (en place)}
+        \label{CODE}
+    \end{center}
+\end{frame}
 \begin{frame}
     \frametitle{Tri par sélection - question préparatoire}
 
@@ -551,7 +557,7 @@ def trouver_mini(tab: list)->int:
         if tab[j] < tab[i_mini]:
             i_mini = j
     return i_mini
-    \end{lstlisting}
+\end{lstlisting}
     \end{center}
 
 \end{frame}
@@ -743,7 +749,7 @@ Pour chaque carte du tas
     Mémoriser la carte en cours
     Décaler vers la droite toutes les cartes précédentes, supérieures à la carte en cours.
     Insérer la carte en cours dans l'espace vide.
-        \end{lstlisting}
+\end{lstlisting}
         \captionof{code}{Tri par insertion (en place)}
         \label{CODE}
     \end{center}

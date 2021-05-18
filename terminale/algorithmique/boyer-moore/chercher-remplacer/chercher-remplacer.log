@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  17 MAY 2021 11:50
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 MAY 2021 14:25
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/recherche-textuelle/recherche-textuelle-slides
-(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/recherche-textuelle/recherche-textuelle-slides.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/chercher-remplacer/chercher-remplacer
+(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/chercher-remplacer/chercher-remplacer.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.200 seconds
+luaotfload | main : initialization completed in 0.201 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1174,7 +1174,7 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
 \pytx@codefile=\write6
 
-\openout6 = recherche-textuelle-slides.pytxcode
+\openout6 = chercher-remplacer.pytxcode
 \c@pytx@FancyVerbLineTemp=\count406
 \c@pytx@py@default@default=\count407
 \c@pytx@pycon@default@default=\count408
@@ -1344,8 +1344,15 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./recherche-textuelle-slides.aux)
-\openout1 = recherche-textuelle-slides.aux
+))) (./chercher-remplacer.aux
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+)
+\openout1 = chercher-remplacer.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -1443,10 +1450,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
- (./recherche-textuelle-slides.out) (./recherche-textuelle-slides.out)
+ (./chercher-remplacer.out) (./chercher-remplacer.out)
 \@outlinefile=\write7
 
-\openout7 = recherche-textuelle-slides.out
+\openout7 = chercher-remplacer.out
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1566,248 +1573,286 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count438
 
-No file pythontex-files-recherche-textuelle-slides/recherche-textuelle-slides.pytxmcr.
+No file pythontex-files-chercher-remplacer/chercher-remplacer.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
 \c@listing=\count439
 Package newfloat Info: float type `listing'=16 on input line 11.
-(./recherche-textuelle-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./chercher-remplacer.nav)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 15.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 15.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./recherche-textuelle-slides.toc) [2
+] (./chercher-remplacer.toc) [2
 
 ] [3
 
-]
-<ressources/adn.png, id=123, 371.3875pt x 224.84pt>
-File: ressources/adn.png Graphic file (type png)
-<use ressources/adn.png>
-Package luatex.def Info: ressources/adn.png  used on input line 36.
-(luatex.def)             Requested size: 227.62204pt x 137.80746pt.
-
-
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 36.
-
-
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 36.
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 36.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 36.
- [4
-
-<./ressources/adn.png>] [5
-
-] (./recherche-textuelle-slides.toc) [6
-
-] [7
-
-] [8
-
-] [9
-
-] [10
-
-] (./recherche-textuelle-slides.toc) [11
+] (./chercher-remplacer.toc) [4
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 159.
- [12
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 41.
+ [5
 
 ]
+</home/tof/Documents/Cozy/latex-include/stop.png, id=146, 240.9pt x 240.9pt>
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 55.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 55.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 55.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 55.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 55.
+ [6
+
+</home/tof/Documents/Cozy/latex-include/stop.png>]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(./scripts/recherche-naive.py
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 10.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 10.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 10.
-) [13
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 5.
 
-] [14
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-] (./recherche-textuelle-slides.toc) [15
+) [7
 
-] [16
+] (./chercher-remplacer.toc) [8
 
-] [17
+] [9
+
+]
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 108.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+ [10
+
+]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [11
+
+] (./chercher-remplacer.toc) [12
+
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 146.
+ [13
+
+]
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 160.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+ [14
+
+]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [15
+
+]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 19.
+) [16
+
+] (./chercher-remplacer.toc) [17
 
 ] [18
 
 ] [19
 
-] [20
-
-] (./recherche-textuelle-slides.toc) [21
-
-] [22
-
-] [23
-
-] [24
-
-] [25
-
-] [26
-
-] [27
+]
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 234.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+ [20
 
 ]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 403.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 403.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 403.
- [28
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
 
-] (./recherche-textuelle-slides.toc) [29
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-] [30
+)
+Overfull \vbox (17.13962pt too high) detected at line 260
+ []
+
+[21
 
 ]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 453.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 453.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 453.
- [31
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [22
+
+] (./chercher-remplacer.toc) [23
+
+]
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 306.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24
+
+] [25]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [26
+
+]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [27
+
+]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [28
+
+]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+Overfull \vbox (15.13962pt too high) detected at line 384
+ []
+
+[29
+
+]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+Overfull \vbox (10.13962pt too high) detected at line 407
+ []
+
+[30
+
+] (./chercher-remplacer.toc) [31
 
 ] [32
 
-] [33
+]
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 435.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+ [33
 
 ]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(./scripts/boyer-moore.py) [34
-
-] (./recherche-textuelle-slides.toc) [35
-
-]
-\openout4 = recherche-textuelle-slides.vrb
- (./recherche-textuelle-slides.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
+Overfull \vbox (3.13962pt too high) detected at line 459
+ []
+
+[34
+
+]
+\openout4 = chercher-remplacer.vrb
+ (./chercher-remplacer.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) [36
 
-] [37
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [35
 
-]
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/boyer-moore.py) [38
-
-]
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/boyer-moore.py) [39
-
-]
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/boyer-moore.py) [40
-
-]
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/boyer-moore.py) [41
-
-] (./recherche-textuelle-slides.toc) [42
-
-] [43
-
-] [44
-
-] [45
-
-] [46
-
-] [47
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 627.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 627.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 627.
- [48
-
-] [49
-
-] [50
-
-] [51
+] [36
 
 ]
 \tf@nav=\write8
 
-\openout8 = recherche-textuelle-slides.nav
+\openout8 = chercher-remplacer.nav
 \tf@toc=\write9
 
-\openout9 = recherche-textuelle-slides.toc
+\openout9 = chercher-remplacer.toc
 \tf@snm=\write10
 
-\openout10 = recherche-textuelle-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 673.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 673.
- (./recherche-textuelle-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 673.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 673.
-Package rerunfilecheck Info: File `recherche-textuelle-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 21A200B936E90A814F55E57C7397FA7B;1668.
+\openout10 = chercher-remplacer.snm
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
+ (./chercher-remplacer.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 481.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 481.
+Package rerunfilecheck Info: File `chercher-remplacer.out' has not changed.
+(rerunfilecheck)             Checksum: 060041E4270544E374B7DC946F597143;1082.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 45104 strings out of 494383
- 745421,1373583 words of node,token memory allocated
- 179811 words of node memory still in use:
-   19 hlist, 9 vlist, 3 rule, 5 disc, 3 local_par, 174 glue, 7 kern, 11 penalty, 20510 glyph, 14529 attribute, 106 glue_spec, 2424 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 6 pdf_action, 12 pdf_colorstack nodes
-   avail lists: 1:9,2:13378,3:957,4:12368,5:9759,6:67,7:4163,8:8770,9:15627,10:48,11:998,12:1
- 47454 multiletter control sequences out of 65536+600000
- 90 fonts using 11509903 bytes
- 70i,15n,107p,1222b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on recherche-textuelle-slides.pdf (51 pages, 186391 bytes).
+ 44794 strings out of 494383
+ 596197,1144653 words of node,token memory allocated
+ 126369 words of node memory still in use:
+   19 hlist, 9 vlist, 3 rule, 4 disc, 3 local_par, 109 glue, 6 kern, 11 penalty, 13939 glyph, 11553 attribute, 106 glue_spec, 1928 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 12 pdf_colorstack nodes
+   avail lists: 1:6,2:16801,3:113,4:12380,5:9912,6:66,7:5778,8:8908,9:15900,10:48,11:1018,12:1
+ 47134 multiletter control sequences out of 65536+600000
+ 97 fonts using 12006143 bytes
+ 70i,15n,95p,1213b,967s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on chercher-remplacer.pdf (36 pages, 121605 bytes).
 
-PDF statistics: 1080 PDF objects out of 1200 (max. 8388607)
- 984 compressed objects within 10 object streams
- 123 named destinations out of 1000 (max. 131072)
- 106 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 720 PDF objects out of 1000 (max. 8388607)
+ 640 compressed objects within 7 object streams
+ 84 named destinations out of 1000 (max. 131072)
+ 90 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Trier des cartes}
 \date{}
@@ -686,28 +686,49 @@ def trouver_mini(tab: list)->int:
 \subsubsection{Complexité}
 \begin{frame}[fragile]
     \frametitle{Efficacité du tri}
-
+    \begin{center}
+        La boucle externe effectue \textbf{n itérations}.
+    \end{center}
     \begin{itemize}
         \item à la première itération de \emph{i}, la boucle de la fonction \emph{trouver\_mini} effectue \emph{n-1} itérations.
+        \begin{center}
+            \begin{tikzpicture}[scale=0.7]        
+                \fill[gray] (0,0) -- (1,0) -- (1,1) -- (0,1)-- cycle;
+                \draw (0,0) grid (5,1);
+                \node at(0.5,0.5) {1};
+                \node at(1.5,0.5) {3};
+                \node at(2.5,0.5) {7};
+                \node at(3.5,0.5) {8};
+                \node at(4.5,0.5) {5};
+        
+            \end{tikzpicture}
+            \end{center}
         \item à la deuxième itération de \emph{i}, la boucle de la fonction \emph{trouver\_mini} effectue \emph{n-2} itérations.
+        \begin{center}
+            \begin{tikzpicture}[scale=0.7]        
+                \fill[gray] (0,0) -- (2,0) -- (2,1) -- (0,1)-- cycle;
+                \draw (0,0) grid (5,1);
+                \node at(0.5,0.5) {1};
+                \node at(1.5,0.5) {3};
+                \node at(2.5,0.5) {7};
+                \node at(3.5,0.5) {8};
+                \node at(4.5,0.5) {5};
+        
+            \end{tikzpicture}
+            \end{center}
         \item \dots
     \end{itemize}
-\begin{center}
-\begin{lstlisting}[language=Python]
-for j in range(i_depart+1, len(tab)):
-    if tab[j] < tab[i_mini]:
-        i_mini = j
-\end{lstlisting}
-\end{center}
     
 \end{frame}
 
 \begin{frame}
     \frametitle{}
-    $$\sum_{k=1}^{n-1}{k}=1+2+\dots+n-1=\dfrac{n.(n-1)}{2}$$
+    $$\sum_{k=1}^{n-1}{k}=(n-1)+(n-2)+\dots+2+1=\dfrac{n.(n-1)}{2}$$
     \note{démo 2 colonnes inversées de 1+2+...+n-1}
     \begin{aretenir}[]
-        Le tri par sélection effectue $\dfrac{n.(n-1)}{2}$ opérations pour ordonner le tableau. Le nombre d'opérations dépend de $n^2$.
+        Le tri par sélection effectue $\dfrac{n.(n-1)}{2}$ opérations pour ordonner le tableau. 
+        
+        \centering Le nombre d'opérations dépend de $n^2$.
     \end{aretenir}
 
 \end{frame}
@@ -755,7 +776,55 @@ Pour chaque carte du tas
     \end{center}
 
 \end{frame}
+\begin{frame}
+    \frametitle{Subtilité sur le tableau Python}
 
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[gray!30] (0,0) -- (3,0) -- (3,1) -- (0,1)-- cycle;
+            \draw (0,0) grid (5,1);
+            \node at(0.5,0.5) {3};
+            \node at(1.5,0.5) {6};
+            \node at(2.5,0.5) {8};
+            \node at(3.5,0.5) {4};
+            \node at(4.5,0.5) {5};
+            \node at(7, 0.5) {en\_cours = 4};
+    
+            \fill[gray!30] (0,-2) -- (4,-2) -- (4,-1) -- (0,-1)-- cycle;
+            \draw (0,-2) grid (5,-1);
+            \node at(0.5,-1.5) {3};
+            \node at(1.5,-1.5) {6};
+            \node at(2.5,-1.5) {8};
+            \node at(3.5,-1.5) {8};
+            \node at(4.5,-1.5) {5};
+            \node at(7, -1.5) {en\_cours = 4};
+            \draw[->,>=latex] (2.5,-1) to[bend left=90] (3.5,-1);
+
+            \fill[gray!30] (0,-4) -- (4,-4) -- (4,-3) -- (0,-3)-- cycle;
+            \draw (0,-4) grid (5,-3);
+            \node at(0.5,-3.5) {3};
+            \node at(1.5,-3.5) {6};
+            \node at(2.5,-3.5) {6};
+            \node at(3.5,-3.5) {8};
+            \node at(4.5,-3.5) {5};
+            \node at(7, -3.5) {en\_cours = 4};
+            \draw[->,>=latex] (1.5,-3) to[bend left=90] (2.5,-3);
+
+            \fill[gray!30] (0,-6) -- (4,-6) -- (4,-5) -- (0,-5)-- cycle;
+            \draw (0,-6) grid (5,-5);
+            \node at(0.5,-5.5) {3};
+            \node at(1.5,-5.5) {4};
+            \node at(2.5,-5.5) {6};
+            \node at(3.5,-5.5) {8};
+            \node at(4.5,-5.5) {5};
+            \node at(7, -5.5) {en\_cours = 4};
+            \draw[->,>=latex] (7,-5.2) to[bend left=-20] (1.5,-5);
+        \end{tikzpicture}
+        \captionof{code}{Ce qu'il se passe réellement dans le tableau Python}
+        \label{CODE}
+        \end{center}
+
+\end{frame}
 \begin{frame}
     \frametitle{Correction: boucle principale}
 
@@ -796,7 +865,7 @@ Pour chaque carte du tas
 \end{frame}
 \subsubsection{Preuve de terminaison}
 \begin{frame}
-    \frametitle{}
+    \frametitle{Preuve de terminaison}
 
     Il faut se focaliser sur la boucle interne, non bornée.
     \begin{activite}
@@ -822,7 +891,7 @@ while pos > 0 and en_cours < tab[pos-1]:
 
 \subsubsection{Preuve de correction}
 \begin{frame}
-    \frametitle{}
+    \frametitle{Preuve de correction}
 
     Comme pour le tri sélection, avant chaque itération de la boucle externe, la partie gauche du tableau est triée.
 
@@ -926,7 +995,7 @@ while pos > 0 and en_cours < tab[pos-1]:
     \begin{center}
         \begin{lstlisting}[language=Python, basicstyle=\small, xrightmargin=1em]
 while pos > 0 and en_cours < tab[pos-1]:
-        \end{lstlisting}
+\end{lstlisting}
         \end{center}
     \begin{center}
         \begin{tikzpicture}  

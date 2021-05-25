@@ -138,7 +138,7 @@ def remplacer(livre: str, motif: str, remplacement: str) -> str:
     return livre_modifie
 
 
-with open("la-guerre-des-mondes-wells.txt") as f:
+with open("la-guerre-des-mondes-wells.txt", encoding="utf8") as f:
     livre = f.read()
 print(len(livre))
 
@@ -151,6 +151,6 @@ print(boyer_moore(livre, "guerre"))
 print(NB_COMPARAISONS)
 
 modifie = remplacer(livre, "guerre", "paix")
-fichier = open("la-paix-des-mondes.txt", "w")
+fichier = open("la-paix-des-mondes.txt", "w", encoding="utf8")
 fichier.write(modifie)
 fichier.close()

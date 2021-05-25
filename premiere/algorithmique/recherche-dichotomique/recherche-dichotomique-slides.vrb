@@ -1,0 +1,11 @@
+\frametitle{Correction}
+
+    \lstinputlisting[firstline=47 ,lastline=50 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
+\begin{center}
+\begin{lstlisting}[language=Bash , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+False
+0.0009853839874267578
+\end{lstlisting}
+\captionof*{code}{Exemple de résultat}
+\end{center}
+\note{facteur 10}

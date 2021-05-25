@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Fonction \emph{chercher et remplacer}}
 \date{}
@@ -58,7 +58,8 @@
 
     \begin{center}
     \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
-f = open("la-guerre-des-mondes-wells.txt")
+f = open("la-guerre-des-mondes-wells.txt", 
+        encoding="utf8")
 livre = f.read()
 f.close()
 print(len(livre))
@@ -69,7 +70,7 @@ print(len(livre))
 
  \begin{center}
     \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
-with open("la-guerre-des-mondes-wells.txt") as f:
+with open("la-guerre-des-mondes-wells.txt", encoding="utf8") as f:
     livre = f.read()
 print(len(livre))
 \end{lstlisting}
@@ -463,7 +464,7 @@ def remplacer(livre: str, motif: str, remplacement: str) -> str:
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
 modifie = remplacer(livre, "guerre", "paix")
-fichier = open("la-paix-des-mondes.txt", "w")
+fichier = open("la-paix-des-mondes.txt", "w", encoding="utf8")
 fichier.write(modifie)
 fichier.close()
 \end{lstlisting}

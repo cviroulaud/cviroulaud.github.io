@@ -1,18 +1,12 @@
 \documentclass[svgnames,11pt]{beamer}
-\setbeamercolor{structure}{fg=SlateGray}
-\usetheme{Goettingen}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
-\usepackage{pgfpages}
-\setbeameroption{show notes on second screen=left}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Prédire la variété d'un iris}
 \date{}
 %\logo{}
-%\institute{Seconde SNT}
-\institute{Première NSI}
-%\institute{Terminale NSI}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
+\institute{Première - NSI}
 
 \begin{document}
 \begin{frame}
@@ -49,7 +43,7 @@
 \section{Utiliser les données}
 \subsection{Présentation graphique des informations}
 \begin{frame}
-    \frametitle{}
+    \frametitle{Présentation graphique des informations}
 
     \note[item]{Une représentation graphique des informations apporte une compréhension plus éclairante.}
     \note[item]{Il apparaît que les mesures d'un iris peuvent permettre de déterminer leur variété.}
@@ -64,7 +58,7 @@
 
 \subsection{Prédire la variété}
 \begin{frame}
-    \frametitle{Utiliser les données pour prédire}
+    \frametitle{Prédire la variété}
 
 \begin{activite}
 \begin{enumerate}
@@ -81,7 +75,20 @@
 \end{activite}
 
 \end{frame}
-
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
 \begin{frame}
     \frametitle{Correction}
     \begin{tabular}{|*{5}{c|}}
@@ -181,7 +188,20 @@ $$d=\lvert x_A-x_B\rvert+\lvert y_A-y_B\rvert$$
         \end{activite}
 
 \end{frame}
-
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
 \begin{frame}
     \frametitle{Correction}
 \begin{itemize}
@@ -217,6 +237,20 @@ Pour charger les données on utilisera la bibliothèque \emph{csv}.
 
 \end{frame}
 \begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}
     \frametitle{Correction}
 
     \begin{center}
@@ -250,6 +284,20 @@ Pour charger les données on utilisera la bibliothèque \emph{csv}.
         \end{enumerate}
     \end{activite}
 
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
@@ -291,6 +339,20 @@ Pour charger les données on utilisera la bibliothèque \emph{csv}.
 
 \end{frame}
 \begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}
     \frametitle{Correction}
 
     \lstinputlisting[firstline=65 ,lastline=72, basicstyle=\small, xrightmargin=1em, xleftmargin=1em ]{"scripts/iris-correction.py"}
@@ -300,6 +362,12 @@ Pour charger les données on utilisera la bibliothèque \emph{csv}.
     \frametitle{Correction}
 
     \lstinputlisting[firstline=77 ,lastline=88, basicstyle=\small, xrightmargin=1em, xleftmargin=1em ]{"scripts/iris-correction.py"}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Code complet}
+
+    Le code complet est accessible \href{https://cviroulaud.github.io/premiere/algorithmique/knn/iris/scripts/iris-correction.zip}{ici}.
 
 \end{frame}
 \end{document}

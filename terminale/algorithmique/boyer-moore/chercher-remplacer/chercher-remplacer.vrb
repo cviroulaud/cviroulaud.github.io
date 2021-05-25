@@ -3,7 +3,7 @@
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
 modifie = remplacer(livre, "guerre", "paix")
-fichier = open("la-paix-des-mondes.txt", "w")
+fichier = open("la-paix-des-mondes.txt", "w", encoding="utf8")
 fichier.write(modifie)
 fichier.close()
 \end{lstlisting}

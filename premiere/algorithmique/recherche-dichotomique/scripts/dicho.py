@@ -6,7 +6,6 @@
 @Time:   2021/05/20 16:56:52
 """
 
-from time import time
 from random import randint
 
 
@@ -38,13 +37,8 @@ def recherche_dicho(tab: list, cherche: int) -> bool:
 
 entiers = [randint(0, 1000000) for _ in range(100000)]
 
-deb = time()
+
 print(recherche_classique(entiers, 575000))
-fin = time()
-print(fin-deb)
 
 entiers.sort()
-deb = time()
 print(recherche_dicho(entiers, 575000))
-fin = time()
-print(fin-deb)

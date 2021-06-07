@@ -17,8 +17,8 @@
 \begin{frame}
     \frametitle{Problématique}
     Rechercher un élément dans un tableau est une opération courante. Cette tâche a un coût qui dépend de la taille du tableau.
-    % faire cas élément en début en fin au milieu
-    Cependant, si le tableau est déjà trié il est possible d'accélérer grandement la recherche.
+% faire cas élément en début en fin au milieu
+Cependant, si le tableau est déjà trié est-il possible d'accélérer la recherche?
     \begin{center}
         \framebox{Comment implémenter une recherche efficace dans un tableau trié?}
     \end{center}
@@ -30,11 +30,24 @@
 \subsection{Génération des données}
 \begin{frame}
     \frametitle{Génération des données}
+    Imaginons un supermarché qui référence chaque article par un entier. Les références, au nombre de cent mille, sont contenues dans un tableau.
 
-    On demande à dix mille personnes de penser à un nombre entre 0 et 1000000 et on stocke les résultats dans un tableau au fur et à mesure des réponses.
-\begin{activite}
-    Construire par compréhension un tableau de dix mille entiers compris entre 0 et 1000000.
-\end{activite}
+\begin{center}
+    \begin{tabular}{*{4}{c}}
+        \includegraphics[width=2cm]{ressources/pomme.jpg}&
+        \includegraphics[width=2cm]{ressources/pull.jpg}&
+        \includegraphics[width=2cm]{ressources/pain.jpg}&
+        \includegraphics[width=2cm]{ressources/aspirateur.jpg}\\
+        12&6780&376&134900\\
+    \end{tabular}
+\end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        Construire par compréhension un tableau de cent mille entiers compris entre 0 et 1000000.
+    \end{activite}
 
 \end{frame}
 \begin{frame}[fragile]
@@ -72,28 +85,42 @@ entiers = [randint(0, 1000000) for _ in range(100000)]
 \end{center}
 
 \end{frame}
+\begin{frame}
+    \frametitle{Dans le pire des cas}
 
+    \begin{center}
+        \begin{tabular}{|c|c|}
+            \hline
+            nombre d'éléments&nombre de comparaisons\\
+            \hline
+            100&100\\
+            10000&10000\\
+            1000000&1000000\\
+            \hline
+        \end{tabular}
+    \end{center}
+
+\end{frame}
 \begin{frame}
     \frametitle{}
 
     \begin{aretenir}[]
-        Dans le pire des cas la complexité temporelle de la recherche dépend du nombre d'éléments.
-        $$O(n)$$
+        Dans le pire des cas le nombre d'opérations de la recherche dépend du nombre d'éléments.\\
+        \centering La complexité est \textbf{linéaire}.
         \end{aretenir}
 \note{cas où l'élément n'est pas présent}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]
     \frametitle{}
 
     \begin{activite}
         \begin{enumerate}
             \item Écrire la fonction \textbf{\texttt{recherche\_classique(tab: list, cherche: int) $\rightarrow$ bool}} qui renvoie \textbf{\texttt{True}} si l'entier \textbf{\texttt{cherche}} est présent dans le tableau.
             \item Tester la fonction: vérifier si le nombre 575000 a été choisi par une personne.
-            \item À l'aide de la méthode \textbf{\texttt{time}} de la bibliothèque \textbf{\texttt{time}} mesurer la durée d'exécution de la fonction.
         \end{enumerate}
     \end{activite} 
-
+\note{variable globale = variable de test/débogage}
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
@@ -102,36 +129,73 @@ entiers = [randint(0, 1000000) for _ in range(100000)]
 
 \end{frame}
 \begin{frame}[fragile]
+    \frametitle{}
+    \setcounter{compteuractivite}{1}
+
+    \begin{activite}
+    \begin{enumerate}
+        \setcounter{enumi}{2}
+
+        \item Dans le programme principal, créer une variable \textbf{\texttt{COMPTEUR}} initialisée à 0. Cette variable de test sera utilisée \emph{dans la fonction} pour compter le nombre d'itérations de la boucle de recherche. On parle alors de \textbf{variable globale} car elle n'est pas propre à la fonction. Il faudra ajouter le code \ref{global} au début de la fonction.
+        \begin{center}
+        \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+global COMPTEUR
+\end{lstlisting}
+        \captionof{code}{Déclaration d'une variable globale}
+        \label{global}
+        \end{center}
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
     \frametitle{Correction}
 
-    \lstinputlisting[firstline=41 ,lastline=44 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 \begin{center}
-\begin{lstlisting}[language=Bash , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
-False
-0.0066792964935302734
+\begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+COMPTEUR = 0
+
+def recherche_classique(tab: list, cherche: int) -> bool:
+    """
+    Renvoie True si 'cherche' est dans 'tab'
+    """
+    global COMPTEUR
+    for element in tab:
+        COMPTEUR += 1
+        if element == cherche:
+            return True
+    # à la fin de la boucle on n'a pas trouvé 'cherche'
+    return False
 \end{lstlisting}
-\captionof*{code}{Exemple de résultat}
 \end{center}
 \end{frame}
 \section{Recherche dans un tableau trié}
 \subsection{Des données ordonnées}
 \begin{frame}
     \frametitle{Des données ordonnées}
-
-    Imaginons maintenant la même expérience mais prenons la peine de trier les éléments au fur et à mesure de leur ajout dans le tableau de données.
+    Considérons maintenant que les références sont triées par ordre croissant au fur et à mesure de leur ajout dans le tableau de données.
 \begin{center}
-    \begin{tikzpicture}
+    \begin{tikzpicture}[scale=0.9, transform shape]
         \draw (0,0)grid(4,1);
-        \draw[dashed] (4,0)grid(6,1);
-        \draw (6,0)grid(8,1);
+        \draw[dashed] (4,0)grid(5,1);
+        \draw (5,0)grid(8,1);
+        \draw[dashed] (8,0)grid(9,1);
+        \draw (9,0)grid(11,1);
         \node at(0.5,0.5){3};
         \node at(1.5,0.5){8};
         \node at(2.5,0.5){56};
         \node at(3.5,0.5){180};
-        \node at(6.5,0.5){1007};
-        \node at(7.5,0.5){2178};
+        \node at(5.5,0.5){1007};
+        \node at(6.5,0.5){2178};
+        \node at(7.5,0.5){8000};
+        \node at(9.5,0.5){11600};
+        \node at(10.5,0.5){12130};
+        \node at(2,1.2){alimentaire};
+        \node at(6.5,1.2){vêtement};
+        \node at(10,1.2){électro-ménager};
+
     \end{tikzpicture}
-    \captionof{figure}{Tableau trié}
+    \captionof{figure}{Références triées}
 \end{center}
 
 \end{frame}
@@ -141,7 +205,7 @@ False
     \begin{activite}
         Pour simplifier nous allons utiliser la méthode \textbf{\texttt{sort}} pour trier les données.
         \begin{enumerate}
-            \item Construire par compréhension un tableau de dix mille entiers compris entre 0 et 1000000.
+            \item Construire par compréhension un tableau de cent mille entiers compris entre 0 et 1000000.
             \item Trier le tableau.
         \end{enumerate}
         \end{activite}
@@ -175,7 +239,7 @@ entiers.sort()
 \begin{frame}
     \frametitle{}
 
-    Cherchons 765 dans le tableau suivant:
+    Cherchons 302 dans le tableau suivant:
 \begin{center}
     \begin{tikzpicture}
         \draw (0,0)grid(9,1);
@@ -211,7 +275,7 @@ entiers.sort()
             \node at(7.5,0.5){1007};
             \node at(8.5,0.5){2178};
         \end{tikzpicture}
-        \captionof{figure}{256 n'est pas le nombre recherché et il est inférieur à 765}
+        \captionof{figure}{256 n'est pas le nombre recherché et il est inférieur à 302}
     \end{center} 
 
 \end{frame}
@@ -255,7 +319,7 @@ entiers.sort()
             \node at(7.5,0.5){1007};
             \node at(8.5,0.5){2178};
         \end{tikzpicture}
-        \captionof{figure}{Nous pouvons éliminer la partie supérieure à 765}
+        \captionof{figure}{Nous pouvons éliminer la partie supérieure.}
     \end{center}
 
 \end{frame}
@@ -287,8 +351,8 @@ entiers.sort()
 
     \begin{center}
         \begin{tikzpicture}
-            \fill[gray] (0,0) -- (6,0) -- (6,1) -- (0,1)-- cycle;
-            \fill[gray] (7,0) -- (9,0) -- (9,1) -- (7,1)-- cycle;
+            \fill[gray] (0,0) -- (5,0) -- (5,1) -- (0,1)-- cycle;
+            \fill[gray] (6,0) -- (9,0) -- (9,1) -- (6,1)-- cycle;
             \draw (0,0)grid(9,1);
             \node at(0.5,0.5){3};
             \node at(1.5,0.5){8};
@@ -300,13 +364,12 @@ entiers.sort()
             \node at(7.5,0.5){1007};
             \node at(8.5,0.5){2178};
         \end{tikzpicture}
-        \captionof{figure}{765 a été trouvée en trois itérations}
+        \captionof{figure}{302 a été trouvée en trois itérations}
     \end{center}
 
 \end{frame}
-\begin{frame}
+\begin{frame}[fragile]
     \frametitle{En pratique, on utilise les indices pour trouver le milieu.}
-
     \begin{center}
         \begin{tikzpicture}
             \draw (0,0)grid(9,1);
@@ -317,11 +380,49 @@ entiers.sort()
         \end{tikzpicture}
         \captionof{figure}{$\dfrac{8+0}{2}=4$ l'indice médian est 4}
     \end{center}
-\begin{itemize}
-    \item 256 n'est pas le nombre recherché,
-    \item il est inférieur au nombre recherché.
-\end{itemize}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+i_debut = 0
+i_fin = 8
+\end{lstlisting}
+\end{center}
 \end{frame}
+\begin{frame}
+    
+
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[gray] (4,0) -- (5,0) -- (5,1) -- (4,1)-- cycle;
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+            \draw[dashed] (4.5,1.5)--(4.5,-0.5);
+        \end{tikzpicture}
+        \captionof{figure}{256 n'est pas le nombre recherché}
+    \end{center}
+\end{frame}
+\begin{frame}[fragile]
+
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[gray] (0,0) -- (5,0) -- (5,1) -- (0,1)-- cycle;
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+            \draw[dashed] (4.5,1.5)--(4.5,-0.5);
+        \end{tikzpicture}
+        \captionof{figure}{256 est inférieur au nombre recherché.}
+    \end{center}
+    \begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+i_debut = 5
+i_fin = 8
+\end{lstlisting}
+        \end{center}
+\end{frame}
+
 \begin{frame}
     \frametitle{}
 
@@ -336,11 +437,79 @@ entiers.sort()
         \end{tikzpicture}
         \captionof{figure}{$\dfrac{8+5}{2}=6$ l'indice médian est 6}
     \end{center}
-\begin{itemize}
-    \item 765 est le nombre recherché,
-    \item la recherche s'arrête.
-\end{itemize}
 \note[item]{l'indice est un entier}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[gray] (0,0) -- (5,0) -- (5,1) -- (0,1)-- cycle;
+            \fill[gray] (6,0) -- (7,0) -- (7,1) -- (6,1)-- cycle;
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+            \draw[dashed] (6.5,1.5)--(6.5,-0.5);
+        \end{tikzpicture}
+        \captionof{figure}{765 n'est pas le nombre recherché.}
+    \end{center}
+\note[item]{l'indice est un entier}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[gray] (0,0) -- (5,0) -- (5,1) -- (0,1)-- cycle;
+            \fill[gray] (6,0) -- (9,0) -- (9,1) -- (6,1)-- cycle;
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+            \draw[dashed] (6.5,1.5)--(6.5,-0.5);
+        \end{tikzpicture}
+        \captionof{figure}{765 est supérieur au nombre recherché.}
+    \end{center}
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+i_debut = 5
+i_fin = 5
+\end{lstlisting}
+                \end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[gray] (0,0) -- (5,0) -- (5,1) -- (0,1)-- cycle;
+            \fill[gray] (6,0) -- (9,0) -- (9,1) -- (6,1)-- cycle;
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+            \draw[dashed] (5.5,1.5)--(5.5,-0.5);
+        \end{tikzpicture}
+        \captionof{figure}{$\dfrac{5+5}{2}=5$ l'indice médian est 5.}
+    \end{center}
+\note{cette dernière itération est nécessaire: on ne sait pas si le dernier élément est bien celui recherché.}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[gray] (0,0) -- (5,0) -- (5,1) -- (0,1)-- cycle;
+            \fill[gray] (6,0) -- (9,0) -- (9,1) -- (6,1)-- cycle;
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+            \draw[dashed] (5.5,1.5)--(5.5,-0.5);
+        \end{tikzpicture}
+        \captionof{figure}{On a trouvé l'élément.}
+    \end{center}
 \end{frame}
 \begin{frame}
     \frametitle{}
@@ -352,25 +521,58 @@ entiers.sort()
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
-
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+        \end{tikzpicture}
+    \end{center}
     \lstinputlisting[firstline=24 ,lastline=26 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
-
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+            \draw[dashed] (4.5,1.5)--(4.5,-0.5);
+        \end{tikzpicture}
+    \end{center}
     \lstinputlisting[firstline=27 ,lastline=28 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
-
+\note{si on ne trouve pas l'élément \textbf{\texttt{i\_fin < i\_debut}}}
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
-
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[gray] (4,0) -- (5,0) -- (5,1) -- (4,1)-- cycle;
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+            \draw[dashed] (4.5,1.5)--(4.5,-0.5);
+        \end{tikzpicture}
+    \end{center}
     \lstinputlisting[firstline=29 ,lastline=30 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
-
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[gray] (0,0) -- (5,0) -- (5,1) -- (0,1)-- cycle;
+            \draw (0,0)grid(9,1);
+            \foreach \a/\b in {0/3, 1/8, 2/56, 3/180, 4/256, 5/302, 6/765, 7/1007, 8/2178}
+            {\node at (\a+0.5,0.5) {\b};
+            \node[red] at (\a+0.5,1.2) {\a};}
+            \draw[dashed] (4.5,1.5)--(4.5,-0.5);
+        \end{tikzpicture}
+    \end{center}
     \lstinputlisting[firstline=31 ,lastline=34 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 
 \end{frame}
@@ -383,6 +585,43 @@ entiers.sort()
 \subsection{Efficacité}
 \begin{frame}
     \frametitle{Efficacité}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item En utilisant une variable \textbf{\texttt{COMPTEUR}}, compter le nombre d'itérations de la boucle de recherche dichotomique.
+            \item Tester pour différentes tailles de tableau.
+        \end{enumerate}
+        \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+COMPTEUR = 0
+
+def recherche_dicho(tab: list, cherche: int) -> bool:
+    global COMPTEUR
+    i_debut = 0
+    i_fin = len(tab)-1
+    while i_fin >= i_debut:
+        COMPTEUR += 1
+        i_milieu = (i_debut+i_fin) // 2
+        if cherche == tab[i_milieu]:
+            return True
+        elif cherche < tab[i_milieu]:
+            i_fin = i_milieu-1
+        else:  # cherche > tab[i_milieu]
+            i_debut = i_milieu+1
+    # à la fin de la boucle on n'a pas trouvé 'cherche'
+    return False
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
     À chaque itération la quantité de données (notée \textbf{n}) à étudier est divisée par deux. Dans le pire des cas, on divise jusqu'à ce que la taille de la partie restante soit inférieure ou égale à 1.
 \note{0 = pas trouvé}
     {\Large$$\dfrac{n}{2^x}=1$$
@@ -396,7 +635,7 @@ entiers.sort()
     \begin{activite}
         \begin{enumerate}
             \item Encadrer la valeur de \emph{x} entre deux entiers, si le tableau contient $n=10000$ éléments.
-            \item Mesurer la durée d'exécution de la fonction et la comparer à celle de la recherche classique.
+            \item Effectuer le même encadrement pour cent mille, un million d'éléments.
         \end{enumerate}
         \end{activite}
 
@@ -407,25 +646,30 @@ entiers.sort()
     {\Large $$2^{13}=8192 < x < 2^{14}=16384$$}
 
 \end{frame}
+\begin{frame}
+    \frametitle{Dans le pire des cas}
 
-\begin{frame}[fragile]
-    \frametitle{Correction}
+    \begin{center}
+        \begin{tabular}{|c|c|}
+            \hline
+            nombre d'éléments&nombre de comparaisons\\
+            \hline
+            10&3-4\\
+            100&6-7\\
+            1000&9-10\\
+            10000&13-14\\
+            100000&16-17\\
+            1000000&19-20\\
+            \hline
+        \end{tabular}
+    \end{center}
 
-    \lstinputlisting[firstline=47 ,lastline=50 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
-\begin{center}
-\begin{lstlisting}[language=Bash , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
-False
-0.0009853839874267578
-\end{lstlisting}
-\captionof*{code}{Exemple de résultat}
-\end{center}
-\note{facteur 10}
 \end{frame}
 \begin{frame}
     \frametitle{}
 
     \begin{aretenir}[]
-        La complexité temporelle de la recherche dichotomique est:
+        La complexité temporelle de la recherche dichotomique est \textbf{logarithmique}:
         {\Large$$ \log_2{n} =x$$}
         \end{aretenir}
 \note{$\log_2 n = \dfrac{\ln n}{\ln 2}$}

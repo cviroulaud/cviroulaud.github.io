@@ -1,0 +1,13 @@
+\frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+= SOMME(B2:B324)/323
+\end{lstlisting}
+        \captionof{code}{Calcul pour la classe 1}
+        \end{center}
+\begin{itemize}
+    \item classe 1: 0,62
+    \item classe 2: 0,43
+    \item classe 3: 0,26
+\end{itemize}

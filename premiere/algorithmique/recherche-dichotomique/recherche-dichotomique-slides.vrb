@@ -1,11 +1,24 @@
 \frametitle{Correction}
 
-    \lstinputlisting[firstline=47 ,lastline=50 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 \begin{center}
-\begin{lstlisting}[language=Bash , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
-False
-0.0009853839874267578
+\begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+COMPTEUR = 0
+
+def recherche_dicho(tab: list, cherche: int) -> bool:
+    global COMPTEUR
+    i_debut = 0
+    i_fin = len(tab)-1
+    while i_fin >= i_debut:
+        COMPTEUR += 1
+        i_milieu = (i_debut+i_fin) // 2
+        if cherche == tab[i_milieu]:
+            return True
+        elif cherche < tab[i_milieu]:
+            i_fin = i_milieu-1
+        else:  # cherche > tab[i_milieu]
+            i_debut = i_milieu+1
+    # à la fin de la boucle on n'a pas trouvé 'cherche'
+    return False
 \end{lstlisting}
-\captionof*{code}{Exemple de résultat}
 \end{center}
-\note{facteur 10}
+

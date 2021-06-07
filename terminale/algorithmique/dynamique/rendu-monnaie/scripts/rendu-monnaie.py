@@ -6,7 +6,7 @@
 @Time:   2021/03/04 22:18:50
 """
 
-
+#DODO faire avec une seule boucle!! voir: /home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/glouton/scripts/rendu_monnaie.py
 def nb_pieces_glouton(somme: int, systeme: list) -> int:
     nb_piece = 0
     while not somme == 0:

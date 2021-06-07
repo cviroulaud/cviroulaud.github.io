@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  25 MAY 2021 14:07
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  27 MAY 2021 09:39
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/trier-cartes/trier-cartes-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/trier-cartes/trier-cartes-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.147 seconds
+luaotfload | main : initialization completed in 0.174 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -2877,11 +2877,11 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.76'
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1048.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1048.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1049.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1049.
  (./trier-cartes-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1048.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1048.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1049.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1049.
 Package rerunfilecheck Info: File `trier-cartes-slides.out' has not changed.
 (rerunfilecheck)             Checksum: C296B3A20E19BAF7CCD1B327926A3460;807.
 
@@ -2900,7 +2900,7 @@ Here is how much of LuaTeX's memory you used:
  91 fonts using 11640023 bytes
  70i,15n,107p,1200b,1085s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on trier-cartes-slides.pdf (76 pages, 4181090 bytes).
+Output written on trier-cartes-slides.pdf (76 pages, 4181154 bytes).
 
 PDF statistics: 2224 PDF objects out of 2487 (max. 8388607)
  1917 compressed objects within 20 object streams

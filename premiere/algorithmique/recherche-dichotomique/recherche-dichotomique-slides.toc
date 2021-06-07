@@ -2,8 +2,8 @@
 \beamer@sectionintoc {1}{Problématique}{2}{0}{1}
 \beamer@sectionintoc {2}{Recherche classique dans un tableau}{4}{0}{2}
 \beamer@subsectionintoc {2}{1}{Génération des données}{5}{0}{2}
-\beamer@subsectionintoc {2}{2}{Recherche dans les données}{7}{0}{2}
-\beamer@sectionintoc {3}{Recherche dans un tableau trié}{13}{0}{3}
-\beamer@subsectionintoc {3}{1}{Des données ordonnées}{14}{0}{3}
-\beamer@subsectionintoc {3}{2}{Recherche dichotomique}{17}{0}{3}
-\beamer@subsectionintoc {3}{3}{Efficacité}{33}{0}{3}
+\beamer@subsectionintoc {2}{2}{Recherche dans les données}{8}{0}{2}
+\beamer@sectionintoc {3}{Recherche dans un tableau trié}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{Des données ordonnées}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{Recherche dichotomique}{20}{0}{3}
+\beamer@subsectionintoc {3}{3}{Efficacité}{42}{0}{3}

@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Recherche dichotomique}
 \date{}
@@ -125,7 +125,7 @@ entiers = [randint(0, 1000000) for _ in range(100000)]
 \begin{frame}
     \frametitle{Correction}
 
-    \lstinputlisting[firstline=13 ,lastline=21, basicstyle=\small , xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
+    \lstinputlisting[firstline=12 ,lastline=21, basicstyle=\small , xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 
 \end{frame}
 \begin{frame}[fragile]
@@ -529,7 +529,7 @@ i_fin = 5
             \node[red] at (\a+0.5,1.2) {\a};}
         \end{tikzpicture}
     \end{center}
-    \lstinputlisting[firstline=24 ,lastline=26 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
+    \lstinputlisting[firstline=23 ,lastline=25 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 
 \end{frame}
 \begin{frame}
@@ -543,7 +543,7 @@ i_fin = 5
             \draw[dashed] (4.5,1.5)--(4.5,-0.5);
         \end{tikzpicture}
     \end{center}
-    \lstinputlisting[firstline=27 ,lastline=28 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
+    \lstinputlisting[firstline=26 ,lastline=27 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 \note{si on ne trouve pas l'élément \textbf{\texttt{i\_fin < i\_debut}}}
 \end{frame}
 \begin{frame}
@@ -558,7 +558,7 @@ i_fin = 5
             \draw[dashed] (4.5,1.5)--(4.5,-0.5);
         \end{tikzpicture}
     \end{center}
-    \lstinputlisting[firstline=29 ,lastline=30 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
+    \lstinputlisting[firstline=28 ,lastline=29 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 
 \end{frame}
 \begin{frame}
@@ -573,13 +573,13 @@ i_fin = 5
             \draw[dashed] (4.5,1.5)--(4.5,-0.5);
         \end{tikzpicture}
     \end{center}
-    \lstinputlisting[firstline=31 ,lastline=34 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
+    \lstinputlisting[firstline=30 ,lastline=31 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
 
-    \lstinputlisting[firstline=24 ,lastline=36 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
+    \lstinputlisting[firstline=23 ,lastline=36 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/dicho.py"}
 
 \end{frame}
 \subsection{Efficacité}

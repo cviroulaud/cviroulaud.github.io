@@ -1,0 +1,14 @@
+\frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=1.8em, xrightmargin=2em]
+for i in range(5):
+    outils_poses[moteur.donner_coordonnees()] = Pioche("wood_pickaxe")
+    outils_poses[moteur.donner_coordonnees()] = Pioche("diamond_pickaxe")
+    outils_poses[moteur.donner_coordonnees()] = Pelle()
+
+\end{lstlisting}
+    \captionof{code}{Placer les outils}
+    \label{CODE}
+    \end{center}
+

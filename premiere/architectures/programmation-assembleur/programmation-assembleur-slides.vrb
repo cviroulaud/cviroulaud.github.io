@@ -1,0 +1,21 @@
+\frametitle{Correction}
+\begin{center}
+\begin{lstlisting}[language=C , basicstyle=\small, xleftmargin=1em, xrightmargin=1em]
+    LDR R0,.InputNum    // Copie d'une entrée clavier dans R0
+    MOV R1,#10          // Charge 10 dans R1
+    CMP R0,R1           // Compare RO et R1
+    BNE NOTEGAL         // S'il n'y a pas égalité, aller au label NOTEGAL
+    MOV R2,#GAGNE       // Copie du texte GAGNE dans R2
+    STR R2,.WriteString // Affiche R2 dans la sortie
+    B SUITE             // Aller au label SUITE
+NOTEGAL:
+    MOV R2,#PERDU
+    STR R2,.WriteString
+SUITE:
+    HALT
+GAGNE:.ASCIZ "Bien joué!"
+PERDU: .ASCIZ "Perdu!"
+\end{lstlisting}
+\end{center}
+\note{on peut gérer le \textbf{\texttt{HALT}} différemment: dépend des habitudes du programmeur}
+

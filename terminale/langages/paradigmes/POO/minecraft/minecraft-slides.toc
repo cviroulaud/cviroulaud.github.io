@@ -1,12 +1,11 @@
 \babel@toc {french}{}
-\beamer@sectionintoc {1}{Situation: Minecraft}{2}{0}{1}
-\beamer@sectionintoc {2}{Principes du jeu}{5}{0}{2}
-\beamer@sectionintoc {3}{Programmation orientée objet}{11}{0}{3}
-\beamer@subsectionintoc {3}{1}{Définition}{12}{0}{3}
-\beamer@subsectionintoc {3}{2}{Modélisation}{15}{0}{3}
-\beamer@subsectionintoc {3}{3}{Instances d'un objet}{20}{0}{3}
-\beamer@sectionintoc {4}{Implémentation}{24}{0}{4}
-\beamer@subsectionintoc {4}{1}{Créer un objet}{25}{0}{4}
-\beamer@subsectionintoc {4}{2}{Initialiser les attributs}{26}{0}{4}
-\beamer@subsectionintoc {4}{3}{Définir les méthodes}{32}{0}{4}
-\beamer@subsectionintoc {4}{4}{Instancier une classe}{47}{0}{4}
+\beamer@sectionintoc {1}{Principes du jeu}{4}{0}{1}
+\beamer@sectionintoc {2}{Programmation orientée objet}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Définition}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Modélisation}{14}{0}{2}
+\beamer@subsectionintoc {2}{3}{Instances d'un objet}{19}{0}{2}
+\beamer@sectionintoc {3}{Implémentation}{23}{0}{3}
+\beamer@subsectionintoc {3}{1}{Créer un objet}{24}{0}{3}
+\beamer@subsectionintoc {3}{2}{Initialiser les attributs}{25}{0}{3}
+\beamer@subsectionintoc {3}{3}{Définir les méthodes}{31}{0}{3}
+\beamer@subsectionintoc {3}{4}{Instancier une classe}{46}{0}{3}

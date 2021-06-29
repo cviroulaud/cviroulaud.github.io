@@ -1,0 +1,11 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Langage machine}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Langage binaire}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Langage de bas niveau}{9}{0}{1}
+\beamer@sectionintoc {2}{Langage assembleur}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Un langage intermédiaire}{15}{0}{2}
+\beamer@subsectionintoc {2}{2}{Découverte d'un simulateur}{17}{0}{2}
+\beamer@subsectionintoc {2}{3}{Opérations arithmétiques}{22}{0}{2}
+\beamer@subsectionintoc {2}{4}{Transfert de données}{28}{0}{2}
+\beamer@subsectionintoc {2}{5}{Rupture de séquence}{36}{0}{2}
+\beamer@subsectionintoc {2}{6}{Entrées / Sorties}{41}{0}{2}

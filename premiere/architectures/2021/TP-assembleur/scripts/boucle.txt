@@ -1,0 +1,12 @@
+      LDR R1,.InputNum
+      CMP R1,#10
+      BNE loop
+      B SUITE
+loop:
+      ADD R1,R1,#1
+      CMP R1,#10
+      BNE loop
+SUITE:
+      HALT
+
+//Compare l'input à 10 et fait autant de tours de boucles pour arriver jusqu'à 10

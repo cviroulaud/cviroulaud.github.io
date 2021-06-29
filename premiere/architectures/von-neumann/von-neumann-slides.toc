@@ -1,0 +1,11 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Première approche: à chaque composant son rôle}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{CPU}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Mémoires}{6}{0}{1}
+\beamer@subsectionintoc {1}{3}{Entrées - sorties}{11}{0}{1}
+\beamer@sectionintoc {2}{Le modèle de von Neumann}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Approche détaillée}{15}{0}{2}
+\beamer@sectionintoc {3}{Un modèle hérité}{19}{0}{3}
+\beamer@subsectionintoc {3}{1}{Automatisation}{21}{0}{3}
+\beamer@subsectionintoc {3}{2}{Modèle universel}{29}{0}{3}
+\beamer@subsectionintoc {3}{3}{Évolutions du modèle}{32}{0}{3}

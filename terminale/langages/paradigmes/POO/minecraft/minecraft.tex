@@ -16,6 +16,16 @@
 \usetikzlibrary{shapes.multipart}
 
 \begin{document}
+\begin{center}
+    \framebox{Quel paradigme mettre en place pour programmer Minecraft?}
+\end{center}
+\section{Principes du jeu}
+\begin{center}
+    \centering
+    \includegraphics[width=5cm]{ressources/jeu.png}
+    \captionof{figure}{Une version simplifiée}
+    \label{jeu}
+\end{center}
 \section{Programmation orienté objet}
 \subsection{Définition}
 Le \textbf{paradigme objet} consiste à construire des \emph{objets} et les faire interagir entre eux. Un objet représente une entité physique, un concept\dots 
@@ -28,7 +38,7 @@ Le \textbf{paradigme objet} consiste à construire des \emph{objets} et les fair
 \end{aretenir}
 \subsection{Modélisation}
 \begin{center}
-    \begin{tikzpicture}[every text node part/.style={align=center},scale=0.7, transform shape]
+    \begin{tikzpicture}[every text node part/.style={align=center},scale=0.55, transform shape]
         \node[draw,fill=gray!50,minimum width=2.5cm, minimum height=0.5cm] (terre) at (0,1.2) {Terre};
         \node[draw,minimum width=2.5cm] at (0,0) {nom \\ dureté \\ couleur \\ est labourée};
 
@@ -63,14 +73,14 @@ Le \textbf{paradigme objet} consiste à construire des \emph{objets} et les fair
 \begin{itemize}
     \item Chaque objet est un modèle qui peut être vu comme un squelette.
     \begin{center}
-        \begin{tikzpicture}[every text node part/.style={align=center},scale=0.7, transform shape]
+        \begin{tikzpicture}[every text node part/.style={align=center},scale=0.6, transform shape]
             \node[draw,fill=gray!50,minimum width=2.5cm, minimum height=0.5cm] (terre) at (0,1.2) {Terre};
             \node[draw,minimum width=2.5cm] at (0,0) {nom \\ dureté\\ couleur\\ est labourée};
         \end{tikzpicture}
     \end{center}
     \item On crée une \textbf{instance} de l'objet. C'est cette instance qui interagit dans le programme.
           \begin{center}
-              \begin{tikzpicture}[every text node part/.style={align=center},scale=0.7, transform shape]
+              \begin{tikzpicture}[every text node part/.style={align=center},scale=0.6, transform shape]
                   \node[draw,fill=gray!50,minimum width=3.5cm, minimum height=0.5cm] (terre) at (0,1.2) {Terre};
                   \node[draw,minimum width=3.5cm] at (0,0) {nom = terre \\ dureté = 10\\ couleur = marron\\ est labourée = faux};
                   \node[draw,fill=gray!50,minimum width=3.5cm, minimum height=0.5cm] (terre) at (4.5,1.2) {Terre};
@@ -123,7 +133,5 @@ def piocher(self, bloc: object) -> bool:
         return False
     return True
 \end{lstlisting}
-    \captionof{code}{Méthode de la classe \textbf{\texttt{Pioche}}}
-    \label{CODE}
     \end{center}
 \end{document}

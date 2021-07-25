@@ -1,0 +1,6 @@
+      LDR R1, val1
+      LDR R2, val2
+      STR R1, val2
+      STR R2, val1
+val1: 10
+val2: 12

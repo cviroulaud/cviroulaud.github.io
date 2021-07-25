@@ -1,0 +1,30 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{ArchMat 03}}}}
+\fancyhead[C]{\textbf{Exercices assembleur - correction}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+\lstinputlisting[xleftmargin=2em, xrightmargin=2em]{"scripts/swap.txt"}
+\end{exo}
+\begin{exo}
+    \lstinputlisting[xleftmargin=2em, xrightmargin=2em]{"scripts/exo2.txt"}
+\end{exo}
+\begin{exo}\lstinputlisting[xleftmargin=2em, xrightmargin=2em]{"scripts/maxi.txt"}
+\end{exo}
+\begin{exo}
+    Le programme fait la somme des entiers de 1 à 10.
+    \lstinputlisting[xleftmargin=2em, xrightmargin=2em]{"scripts/somme-entier-x86.txt"}
+\end{exo}
+
+\end{document}

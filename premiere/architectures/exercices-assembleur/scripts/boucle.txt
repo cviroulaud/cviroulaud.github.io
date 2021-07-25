@@ -1,0 +1,22 @@
+      MOV R0, #tab      //charge l'adresse du début du tableau
+      LDR R1, longueur  //charge la longueur du tableau
+      MOV R2, #0        //prépare un compteur
+boucle:
+      LDR R3, [R0]      //charge la valeur à l'adresse [R0] de la mémoire
+      STR R3, .WriteUnsignedNum //affiche la valeur
+      ADD R0, R0, #4    //passe à l'adresse suivante
+      ADD R2, R2, #1    //augmente le compteur de 1
+      CMP R2, R1        // vérifie si on est en fin de tableau
+      BLT boucle
+      HALT
+longueur:10
+tab:  13
+      9
+      10
+      12
+      51
+      8
+      71
+      19
+      3
+      11

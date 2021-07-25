@@ -37,6 +37,15 @@ int main(int argc, char *argv[]) {
 
   free(tableau);
 
+  printf("Tri à bulles\n");
+  tableau = creer_tableau();
+  affichage(tableau);
+
+  tri_bulles(tableau);
+  affichage(tableau);
+
+  free(tableau);
+
   printf("Tri fusion\n");
   tableau = creer_tableau();
   affichage(tableau);

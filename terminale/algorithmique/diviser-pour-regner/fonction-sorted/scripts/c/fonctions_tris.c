@@ -1,5 +1,7 @@
 #include "fonctions_tris.h"
 
+void permuter(int *tab, int pos1, int pos2);
+
 void tri_selection(int *tab) {
   for (int i = 0; i < taille; i++) {
     int i_maxi = 0;
@@ -24,6 +26,16 @@ void tri_insertion(int *tab) {
       j--;
     }
     tab[j] = en_cours;
+  }
+}
+
+void tri_bulles(int *tab) {
+  for (int i = 0; i < taille; i++) {
+    for (int j = 0; j < (taille - i - 1); j++) {
+      if (tab[j] > tab[j + 1]) {
+        permuter(tab, j, j + 1);
+      }
+    }
   }
 }
 

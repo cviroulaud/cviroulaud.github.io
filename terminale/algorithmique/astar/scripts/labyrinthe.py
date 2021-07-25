@@ -25,7 +25,7 @@ labyrinthe = Labyrinthe(fenetre)
 depart = (6, 10)
 arrivee = (20, 17)
 # récupère chemin optimal et ordre de parcours des noeuds par Dijkstra
-chemin_inverse, ordre = a_star(labyrinthe.laby, depart, arrivee)
+chemin_inverse, ordre = dijkstra(labyrinthe.laby, depart, arrivee)
 chemin_affiche = []
 
 pygame.key.set_repeat(400, 30)

@@ -1,0 +1,112 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{POO 02}}}}
+\fancyhead[C]{\textbf{Exercices POO}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+    \begin{enumerate}
+        \item Définir une classe \textbf{\texttt{Livre}} avec les attributs suivants : \textbf{\texttt{titre, auteur (Nom complet), prix}}.
+        \item Définir les accesseurs. Un \emph{accesseur} est une méthode qui renvoie la valeur d'un attribut. Par exemple, la méthode \textbf{\texttt{get\_titre}} renvoie le titre du livre.
+        \item Définir un constructeur (\textbf{\texttt{\_\_init\_\_}}) permettant d’initialiser les attributs de la méthode par des valeurs saisies par l’utilisateur.
+        \item Définir la méthode \textbf{\texttt{afficher}} créant une chaîne de caractère à partir des informations du livre en cours.
+        \item Écrire un programme qui:
+              \begin{itemize}
+                  \item instancie la classe \textbf{\texttt{Livre}} avec les informations d'un livre quelconque,
+                  \item affiche le titre,
+                  \item affiche les informations du livre.
+              \end{itemize}
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    \begin{enumerate}
+        \item Définir une classe \texttt{\textbf{Rectangle}} avec les attributs \texttt{\textbf{longueur et largeur}}.
+        \item Définir les accesseurs.
+        \item Définir les \emph{mutateurs}. Un mutateur est une méthode qui modifie la valeur d'un attribut. Par exemple, la méthode \textbf{\texttt{set\_longueur}} modifie la valeur de l'attribut \textbf{\texttt{longueur}}.
+        \item Ajouter les méthodes suivantes:
+              \begin{itemize}
+                  \item \textbf{\texttt{perimetre}}: renvoie le périmètre du rectangle (nombre flottant).
+                  \item \textbf{\texttt{aire}} renvoie l'aire du rectangle (nombre flottant).
+                  \item \textbf{\texttt{est\_carre}} : renvoie \textbf{\texttt{True}} si le rectangle est un carré, \textbf{\texttt{False}} sinon.
+              \end{itemize}
+        \item Écrire un programme qui:
+              \begin{itemize}
+                  \item crée un rectangle de dimensions 5.3 et 2.8,
+                  \item affiche le périmètre et l'aire de ce rectangle,
+                  \item vérifie si c'est un carré,
+                  \item modifie la largeur.
+              \end{itemize}
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    En mathématiques un nombre complexe est défini par:
+    \begin{itemize}
+        \item sa partie réelle \emph{a},
+        \item sa partie imaginaire \emph{b}
+    \end{itemize}
+    et tel que:
+    \begin{center}
+        $z= a + b × i$ où $i^2=-1$\\
+        \emph{a} et \emph{b} sont des nombres réels.
+    \end{center}
+    Par exemple, le nombre complexe $z=2.5+3.1i$ a pour partie réelle $2.5$ et pour partie imaginaire $3.1$.\\
+    L'addition de deux complexes $z_1$ et $z_2$ s'effectue tel que:
+    \begin{center}
+        $z_1+z_2=(a_1+a_2)+(b_1+b_2)×i$
+    \end{center}
+
+    \begin{enumerate}
+        \item Écrire une classe \texttt{\textbf{Complexe}} permettant de définir un nombre complexe.
+        \item Écrire la méthode \textbf{\texttt{afficher}} qui renvoie une chaîne de caractère de la forme $a+b*i$.
+        \item Écrire la méthode \textbf{\texttt{addition}} qui ajoute (sans le modifier) au nombre en cours, un nombre complexe passé en argument et retourne le nombre complexe obtenu sous forme d'un tuple \textbf{\texttt{réel, imaginaire}}.
+        \item Écrire la méthode \textbf{\texttt{soustraction}} qui soustraie (sans le modifier) au nombre en cours un nombre complexe passé en argument et retourne le nombre complexe obtenu sous forme d'un tuple \textbf{\texttt{réel, imaginaire}}.
+
+        \item Écrire un programme permettant de tester la classe \texttt{\textbf{Complexe}}.
+    \end{enumerate}
+\end{exo}
+
+\begin{exo}
+    On définit une classe \textbf{\texttt{Date}} pour représenter une date avec trois nombres entiers pour attributs: \textbf{\texttt{jour, mois, annee}}.
+    \begin{enumerate}
+        \item Écrire son constructeur.
+        \item Écrire la méthode \textbf{\texttt{afficher}} qui renvoie une chaîne de la forme \emph{8 mai 1945}.
+        \item Écrire la méthode \textbf{\texttt{est\_avant}} qui prend une \textbf{\texttt{Date}} pour paramètre et renvoie \textbf{\texttt{True}} si la date en cours est plus ancienne que celle passée en paramètre.
+        \item Écrire un programme qui teste cette classe.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    Le \emph{loto} est un jeu de hasard. Chaque tirage est composé de 6 entiers distincts compris entre 1 et 49 et d'un entier complémentaire (également distinct) compris entre 1 et 49.
+    \begin{enumerate}
+        \item Définir une classe \textbf{\texttt{Loto}}. Cette classe possède un attribut \textbf{\texttt{numeros}} de type \textbf{\texttt{list}} et un attribut \textbf{\texttt{complementaire}}.
+        \item Écrire la méthode \textbf{\texttt{afficher}} qui renverra une chaîne de caractères des numéros du loto de la forme: \emph{1 - 2 - 3 - 4 - 5 - 6 / 7}.
+        \item Écrire la méthode \textbf{\texttt{est\_present}} qui vérifiera si le numéro donné en argument est présente dans les 6 numéros du loto.
+        \item Écrire la méthode \textbf{\texttt{est\_gagnant}} qui possède deux paramètres : une liste d'entiers et un entier. Elle renverra \texttt{\textbf{True}} si le tirage correspond exactement à la proposition.
+        \item Écrire une \emph{fonction} \textbf{\texttt{creer\_tirage}} qui renvoie un objet \textbf{\texttt{Loto}} avec des entiers tirés au hasard.
+    \end{enumerate}
+\begin{aretenir}[Information]
+La méthode \textbf{\texttt{seed}} de la bibliothèque \textbf{\texttt{random}} initialise le générateur de nombres aléatoires. En phase de test le code \ref{seed} permet de fixer les entiers tirés au sort.
+\begin{center}
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+from random import seed
+seed(1)
+\end{lstlisting}
+\captionof{code}{initialise le générateur}
+\label{seed}
+\end{center}
+\end{aretenir}
+\begin{enumerate}[resume]
+    \item Placer le code \ref{seed} en début de programme puis tester la fonction \textbf{\texttt{creer\_tirage}}. Observer les tirages obtenus.
+    \item Tester alors la méthode \textbf{\texttt{est\_gagnant}}.
+\end{enumerate}
+\end{exo}
+\end{document}

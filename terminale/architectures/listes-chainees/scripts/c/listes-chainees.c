@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 Liste *initialisation() {
-  Liste *liste = malloc(sizeof(*liste));
+  Liste *liste = malloc(sizeof(Liste));
 
   if (liste == NULL) {
     exit(EXIT_FAILURE);
@@ -13,7 +13,7 @@ Liste *initialisation() {
 }
 
 void insertion(Liste *l, int nb) {
-  Element *element = malloc(sizeof(*element));
+  Element *element = malloc(sizeof(Element));
 
   if (element == NULL) {
     exit(EXIT_FAILURE);

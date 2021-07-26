@@ -1,0 +1,17 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+f = Fraction()
+f.set_numerateur(2)
+f.set_denominateur(3)
+
+f2 = Fraction()
+f2.set_numerateur(12)
+f2.set_denominateur(7)
+print(f + f2)
+\end{lstlisting}
+\captionof{code}{Addition de deux fractions}
+\label{CODE}
+\end{center}
+

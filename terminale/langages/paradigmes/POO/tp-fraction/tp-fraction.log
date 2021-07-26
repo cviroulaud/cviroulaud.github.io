@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  20 JUL 2021 07:40
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  26 JUL 2021 00:38
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/paradigmes/POO/tp-fraction/tp-fraction
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/paradigmes/POO/tp-fraction/tp-fraction.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.098 seconds
+luaotfload | main : initialization completed in 0.121 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1344,10 +1344,19 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-)))
-No file tp-fraction.aux.
+))) (./tp-fraction.aux
 
+LaTeX Warning: Label `CODE' multiply defined.
+
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+)
 \openout1 = tp-fraction.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -1366,7 +1375,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 11.
@@ -1444,6 +1453,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
+ (./tp-fraction.out) (./tp-fraction.out)
 \@outlinefile=\write7
 
 \openout7 = tp-fraction.out
@@ -1571,10 +1581,208 @@ Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
 \c@listing=\count439
 Package newfloat Info: float type `listing'=16 on input line 11.
-No file tp-fraction.nav.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./tp-fraction.nav)
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <6> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <4> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 14.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 19.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 19.
+ [2
+
+]
+Overfull \hbox (3.0323pt too wide) in paragraph at lines 25--25
+[][]  
+ []
+
+[3
+
+] (./tp-fraction.toc
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 3.
+) [4
+
+]
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <14.4> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 39.
+ [5
+
+]
+</home/tof/Documents/Cozy/latex-include/stop.png, id=135, 240.9pt x 240.9pt>
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 53.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 53.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 53.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 53.
+ [6
+
+</home/tof/Documents/Cozy/latex-include/stop.png>]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [7
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [8
+
+] (./tp-fraction.toc) [9
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [10
+
+] [11
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [12
+
+]
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 149.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+ [13
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [14
+
+] (./tp-fraction.toc) [15
+
+] [16
+
+] [17
+
+] (./tp-fraction.toc) [18
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [19
+
+] [20
+
+] (./tp-fraction.toc) [21
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+Overfull \vbox (15.6936pt too high) detected at line 238
+ []
+
+[22
+
+]
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 252.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+ [23
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [24
+
+] [25
+
+]
+File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/stop.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 294.
+(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+ [26
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [27
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [28
+
+]
+\openout4 = tp-fraction.vrb
+ (./tp-fraction.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [29
+
+] [30
 
 ]
 \tf@nav=\write8
@@ -1586,36 +1794,33 @@ No file tp-fraction.nav.
 \tf@snm=\write10
 
 \openout10 = tp-fraction.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 353.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 353.
  (./tp-fraction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 353.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 353.
+Package rerunfilecheck Info: File `tp-fraction.out' has not changed.
+(rerunfilecheck)             Checksum: 40CB12865B8B303C3749FFD6669DD8A6;1161.
 
 
-Package rerunfilecheck Warning: File `tp-fraction.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `tp-fraction.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43825 strings out of 494383
- 100000,1144653 words of node,token memory allocated
- 1896 words of node memory still in use:
-   11 hlist, 6 vlist, 2 rule, 9 glue, 4 kern, 8 penalty, 85 glyph, 171 attribute, 106 glue_spec, 31 attribute_list, 3 write, 4 pdf_colorstack nodes
-   avail lists: 1:3,2:786,3:29,4:79,5:43,6:16,7:268,8:7,9:97,10:2,11:14,12:1
- 46561 multiletter control sequences out of 65536+600000
- 33 fonts using 6515999 bytes
- 70i,12n,95p,1197b,537s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on tp-fraction.pdf (2 pages, 9916 bytes).
+ 44725 strings out of 494383
+ 244183,1144653 words of node,token memory allocated
+ 84725 words of node memory still in use:
+   19 hlist, 9 vlist, 3 rule, 4 disc, 3 local_par, 49 glue, 6 kern, 11 penalty, 10053 glyph, 5541 attribute, 106 glue_spec, 926 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 2 pdf_action, 12 pdf_colorstack nodes
+   avail lists: 1:3,2:4383,3:126,4:4278,5:3479,6:51,7:1499,8:3139,9:5643,10:25,11:329,12:1
+ 47132 multiletter control sequences out of 65536+600000
+ 94 fonts using 12020687 bytes
+ 70i,15n,95p,1197b,1049s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-boldoblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on tp-fraction.pdf (30 pages, 116502 bytes).
 
-PDF statistics: 55 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 131072)
- 26 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 606 PDF objects out of 1000 (max. 8388607)
+ 523 compressed objects within 6 object streams
+ 73 named destinations out of 1000 (max. 131072)
+ 82 words of extra memory for PDF output out of 10000 (max. 100000000)
 

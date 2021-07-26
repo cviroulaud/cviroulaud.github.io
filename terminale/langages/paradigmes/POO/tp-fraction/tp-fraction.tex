@@ -13,29 +13,341 @@
     \titlepage
 \end{frame}
 \begin{frame}
+    \frametitle{Fraction}
+
+    En mathématiques une fraction est un moyen d'écrire un nombre rationnel sous la forme d'un quotient de deux entiers. La fraction $\frac{a}{b}$ désigne le quotient de a par b ($b\neq0$). Dans cette fraction, a est appelé le \emph{numérateur} et b le \emph{dénominateur}\footnote{source: wikipedia}.
+\end{frame}
+\begin{frame}
     \frametitle{}
 
-    En Python, la méthode \texttt{\textbf{\_\_init\_\_ }}est nommée \emph{constructeur}. Elle est appelée automatiquement lors de l'instanciation de l'objet.
-    Il existe un certain nombre d'autres méthodes particulières, chacune avec un nom prédéfini et entourée d'une paire de \_.
-    Tous les opérateurs classiques de Python peuvent être ainsi redéfinis pour un objet:
+    \framebox{Peut-on effectuer les opérations classiques sur les fractions?}
+
+\end{frame}
+\section{Classe \textbf{\texttt{Object}}}
+\subsection{La classe \textbf{\emph{Fraction}}}
+\begin{frame}
+    \frametitle{La classe \textbf{\emph{Fraction}}}
+
+    \begin{activite}
+\begin{enumerate}
+    \item Créer le fichier \textbf{\texttt{mod\_fraction.py}}
+    \item Construire la classe \textbf{\texttt{Fraction}} et son constructeur. Cette classe possédera les attributs \textbf{\texttt{numerateur}} et \textbf{\texttt{denominateur}}, deux entiers initialisés à 1.
+    \item Écrire les \emph{accesseurs} et les \emph{mutateurs}. On utilisera une assertion pour le cas de l'affectation du dénominateur nul.
+\end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
     \begin{itemize}
-        \item \emph{\_\_eq\_\_} définit l'opérateur \emph{==}
-        \item \emph{\_\_lt\_\_} définit l'opérateur \emph{<}
-        \item \emph{\_\_contains\_\_} définit l'opérateur \emph{in}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
     \end{itemize}
-    On peut retrouver une liste exhaustive sur \url{https://docs.python.org/fr/3/library/operator.html}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+class Fraction:
+    def __init__(self):
+        self.numerateur: int = 1
+        self.denominateur: int = 1
+
+    def get_numerateur(self) -> int:
+        return self.numerateur
+
+    def get_denominateur(self) -> int:
+        return self.denominateur
+\end{lstlisting}
+\captionof{code}{La classe et les accesseurs}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+    def set_numerateur(self, n: int) -> None:
+        self.numerateur = n
+
+    def set_denominateur(self, d: int) -> None:
+        assert d != 0, "Le dénominateur ne peut pas être nul."
+        self.denominateur = d
+\end{lstlisting}
+\captionof{code}{Les mutateurs}
+\end{center}
+
+\end{frame}
+\subsection{Héritage (notion hors programme)}
+\begin{frame}[fragile]
+    \frametitle{Héritage (notion hors programme)}
+Python possède une classe native \textbf{\texttt{Object}} qui possède ses propres méthodes. Par exemple la méthode \textbf{\texttt{\_\_str\_\_}} renvoie une chaîne de caractère représentant l'objet. Ainsi le code \ref{str} renvoie le résultat \ref{resstr}.
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+print(f)
+\end{lstlisting}
+\captionof{code}{La méthode est appelée automatiquement.}
+\label{str}
+\end{center}
+\begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+<__main__.Fraction object at 0x7f976febc0f0>
+\end{lstlisting}
+\captionof{code}{La méthode renvoie des informations sur l'objet (adresse mémoire\dots)}
+    \label{resstr}
+    \end{center}  
 
 \end{frame}
 \begin{frame}
     \frametitle{}
 
-    On définit une classe \emph{Fraction} pour représenter un nombre rationnel. Cette classe possède deux attributs \emph{numerateur} et \emph{denominateur}. Le dénominateur doit être strictement positif.
-    \begin{enumerate}
-        \item Écrire le constructeur de cette classe. Il doit lever une ValueError si le dénominateur n'est pas strictement positif.
-        \item Définir la méthode \emph{\_\_str\_\_} qui renvoie une chaîne de caractère de la forme "12 / 7" ou simplement "12" si le dénominateur est égal à 1.
-        \item Définir les méthodes \emph{\_\_eq\_\_} et \emph{\_\_lt\_\_} qui reçoivent une deuxième fraction en argument et renvoient True si la première fraction représente respectivement un nombre égal ou strictement inférieur à la deuxième fraction.
-        \item Définir les méthodes \emph{\_\_add\_\_} et \emph{\_\_mul\_\_} qui reçoivent une deuxième fraction en argument et renvoient une nouvelle fraction représentant respectivement la somme et le produit des deux fractions.
-    \end{enumerate}
+    Quand le programmeur construit une classe, Python crée en réalité un \emph{enfant} de la classe \textbf{\texttt{Object}}. On parle d'\textbf{héritage}.\\ Ainsi la classe \textbf{\texttt{Fraction}} possède également la méthode \textbf{\texttt{\_\_str\_\_}}. Mieux il est possible de redéfinir le rôle de la méthode. On parle alors de \textbf{surcharge}.
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{activite}
+\begin{enumerate}
+    \item Écrire la méthode \ref{str2} dans la classe \textbf{\texttt{Fraction}}.
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+def __str__(self):
+    return "Bonjour je suis un objet!"
+\end{lstlisting}
+\captionof{code}{Surcharge de la méthode}
+\label{str2}
+\end{center}
+\item Exécuter à nouveau \textbf{\texttt{print(f)}}.
+\item Modifier la méthode pour qu'elle affiche la fraction sous la forme \textbf{\texttt{a/b}}.
+\end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+def __str__(self):
+    return "{}/{}".format(self.numerateur, self.denominateur)
+\end{lstlisting}
+\end{center}    
+\begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+print(f)
+>>> 2/3
+\end{lstlisting}
+    \end{center} 
+\end{frame}
+\section{Opérations sur les fractions}
+\subsection{Opérations mathématiques}
+\begin{frame}
+    \frametitle{Opérations mathématiques}
+
+    \begin{itemize}
+        \item<1-> Multiplier deux fractions:
+        $$\frac{a}{b}×\frac{c}{d}=\frac{a×c}{b×d}$$
+        \item<2-> Additionner deux fractions:
+        $$\frac{a}{b}+\frac{c}{d}=\frac{a×d}{b×d}+\frac{c×b}{d×b}=\frac{a×d+c×b}{b×d}$$
+    \end{itemize}
+
+\end{frame}
+\subsection{Opérateurs Python}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    Pour additionner deux nombres entiers, il suffit d'utiliser l'opérateur $+$
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+2 + 3
+>>> 5
+\end{lstlisting}
+\end{center}
+Mais comment Python sait-il ce qu'il doit réaliser dans les cas suivants?
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+[1, 2, 3] + [4, 5, 6]
+"Hello " + "world!"
+\end{lstlisting}
+\captionof{code}{L'opérateur d'addition a un comportement adapté à chaque situation.}
+\label{CODE}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    Il est possible de redéfinir le comportement des opérations de la classe \textbf{\texttt{Object}} en \emph{surchargeant} les méthodes:
+    \begin{itemize}
+        \item  \textbf{\texttt{\_\_add\_\_}} définit l'opérateur \textbf{\texttt{+}},
+        \item  \textbf{\texttt{\_\_mul\_\_}} définit l'opérateur \textbf{\texttt{*}},
+        \item \textbf{\texttt{\_\_eq\_\_}} définit l'opérateur \textbf{\texttt{==}},
+        \item \textbf{\texttt{\_\_lt\_\_}} définit l'opérateur \textbf{\texttt{<}},
+        \item \dots
+    \end{itemize}
+    On peut retrouver une liste exhaustive sur \url{https://docs.python.org/fr/3/library/operator.html}
+
+\end{frame}
+\subsection{Implémentation}
+\begin{frame}[fragile]
+    \frametitle{}
+\begin{activite}
+\begin{enumerate}
+    \item Redéfinir les méthodes \textbf{\texttt{\_\_eq\_\_}} et \textbf{\texttt{\_\_lt\_\_}} qui reçoivent une deuxième fraction en paramètre et renvoient \texttt{\textbf{True}} si la première fraction est égale ou strictement inférieure à la deuxième fraction.
+    \item Tester le code \ref{egal}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+f = Fraction()
+f.set_numerateur(2)
+f.set_denominateur(3)
+
+f1 = Fraction()
+f1.set_numerateur(8)
+f1.set_denominateur(12)
+print(f == f1)
+\end{lstlisting}
+\captionof{code}{Comparaison de fractions}
+\label{egal}
+\end{center}
+\end{enumerate}
+\end{activite}
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+def __eq__(self, f):
+    return self.numerateur * f.denominateur == self.denominateur * f.numerateur
+
+def __lt__(self, f):
+    return self.numerateur * f.denominateur < self.denominateur * f.numerateur
+
+\end{lstlisting}
+\captionof{code}{Méthodes de comparaison}
+\end{center}  
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Redéfinir les méthodes \textbf{\texttt{\_\_add\_\_}} et \textbf{\texttt{\_\_mul\_\_}} qui reçoivent une deuxième fraction en paramètre et renvoient une nouvelle fraction représentant respectivement la somme et le produit des deux
+        fractions.
+        \item Additionner et multiplier deux fractions.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+def __add__(self, f):
+    res = Fraction()
+    res.set_numerateur(self.numerateur * f.denominateur + f.numerateur * self.denominateur)
+    res.set_denominateur(self.denominateur * f.denominateur)
+    return res
+\end{lstlisting}
+\captionof{code}{Addition}
+\label{CODE}
+\end{center}   
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+def __mul__(self, f):
+    res = Fraction()
+    res.set_numerateur(self.numerateur * f.numerateur)
+    res.set_denominateur(self.denominateur * f.denominateur)
+    return res
+\end{lstlisting}
+\captionof{code}{Multiplication}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+f = Fraction()
+f.set_numerateur(2)
+f.set_denominateur(3)
+
+f2 = Fraction()
+f2.set_numerateur(12)
+f2.set_denominateur(7)
+print(f + f2)
+\end{lstlisting}
+\captionof{code}{Addition de deux fractions}
+\label{CODE}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Code complet}
+
+    Le code complet est accessible \href{https://cviroulaud.github.io/terminale/langages/paradigmes/POO/tp-fraction/scripts/fraction-correction.zip}{ici}.
 
 \end{frame}
 \end{document}

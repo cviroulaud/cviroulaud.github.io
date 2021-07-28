@@ -1,0 +1,5 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Repérage sur Terre}{5}{0}{1}
+\beamer@sectionintoc {2}{Se repérer grâce à des satellites}{13}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe: la trilatération}{14}{0}{2}
+\beamer@subsectionintoc {2}{2}{Différents systèmes}{19}{0}{2}

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  26 APR 2021 15:27
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 JUL 2021 12:05
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/localisation/principe-geolocalisation/principe-geolocalisation
 (/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/localisation/principe-geolocalisation/principe-geolocalisation.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.096 seconds
+luaotfload | main : initialization completed in 0.139 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1241,30 +1241,30 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (./principe-geolocalisation.aux)
 \openout1 = principe-geolocalisation.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1331,71 +1331,71 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 18.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 18.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 18.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 18.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 18.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 18.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 18.
-LaTeX Font Info:    Redeclaring math accent \check on input line 18.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 18.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 18.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 18.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 18.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 16.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 16.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 16.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 16.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 16.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 16.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 16.
+LaTeX Font Info:    Redeclaring math accent \check on input line 16.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 16.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 16.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 16.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 16.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 18.
+(Font)              `operators' in the math version `normal' on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 18.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 16.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 18.
+(Font)              `operators' in the math version `bold' on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 18.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 18.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 18.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 18.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 18.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 18.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 18.
-LaTeX Info: Redefining \dots on input line 18.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 16.
+LaTeX Info: Redefining \dots on input line 16.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 18.
+(french.ldf)             reported on input line 16.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 18.
-LaTeX Info: Redefining \up on input line 18.
+(french.ldf)             reported on input line 16.
+LaTeX Info: Redefining \up on input line 16.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count408
 \AtBeginShipoutBox=\box109
-Package hyperref Info: Link coloring ON on input line 18.
+Package hyperref Info: Link coloring ON on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1403,9 +1403,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count409
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
  (./principe-geolocalisation.out) (./principe-geolocalisation.out)
 \@outlinefile=\write7
 
@@ -1413,25 +1413,25 @@ LaTeX Info: Redefining \nameref on input line 18.
 
 No file pythontex-files-principe-geolocalisation/principe-geolocalisation.pytxmcr.
 Run PythonTeX to create it.
-Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 18.
+Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 16.
 \c@listing=\count410
-Package newfloat Info: float type `listing'=16 on input line 18.
+Package newfloat Info: float type `listing'=16 on input line 16.
 ABD: EveryShipout initializing macros
-<ressources/greenwich.jpg, id=28, 513.92pt x 289.08pt>
+<ressources/greenwich.jpg, id=23, 513.92pt x 289.08pt>
 File: ressources/greenwich.jpg Graphic file (type jpg)
 <use ressources/greenwich.jpg>
-Package luatex.def Info: ressources/greenwich.jpg  used on input line 33.
+Package luatex.def Info: ressources/greenwich.jpg  used on input line 28.
 (luatex.def)             Requested size: 227.62204pt x 128.03809pt.
-<ressources/coordonnees.png, id=30, 531.9875pt x 472.76625pt>
-File: ressources/coordonnees.png Graphic file (type png)
-<use ressources/coordonnees.png>
-Package luatex.def Info: ressources/coordonnees.png  used on input line 40.
-(luatex.def)             Requested size: 170.71652pt x 151.70668pt.
-<ressources/geoloc.png, id=32, 638.385pt x 676.5275pt>
+<ressources/geoloc.png, id=25, 638.385pt x 676.5275pt>
 File: ressources/geoloc.png Graphic file (type png)
 <use ressources/geoloc.png>
-Package luatex.def Info: ressources/geoloc.png  used on input line 51.
+Package luatex.def Info: ressources/geoloc.png  used on input line 40.
 (luatex.def)             Requested size: 170.71652pt x 180.90996pt.
+<ressources/zone.png, id=27, 123.3408pt x 69.3792pt>
+File: ressources/zone.png Graphic file (type png)
+<use ressources/zone.png>
+Package luatex.def Info: ressources/zone.png  used on input line 51.
+(luatex.def)             Requested size: 170.71652pt x 96.0366pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1439,96 +1439,74 @@ Make it at least 17.75844pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-</home/tof/Documents/Cozy/latex-include/cc.png, id=34, 88.33pt x 31.11626pt>
+</home/tof/Documents/Cozy/latex-include/cc.png, id=30, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 52.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 58.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-<./ressources/greenwich.jpg><./ressources/coordonnees.png></home/tof/Documents/Cozy/latex-include/cc.png>]
-<ressources/zone.png, id=53, 123.3408pt x 69.3792pt>
-File: ressources/zone.png Graphic file (type png)
-<use ressources/zone.png>
-Package luatex.def Info: ressources/zone.png  used on input line 62.
-(luatex.def)             Requested size: 170.71652pt x 96.0366pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+<./ressources/greenwich.jpg><./ressources/geoloc.png><./ressources/zone.png></home/tof/Documents/Cozy/latex-include/cc.png>]
+<ressources/gps0.jpg, id=47, 401.5pt x 279.0425pt>
+File: ressources/gps0.jpg Graphic file (type jpg)
+<use ressources/gps0.jpg>
+Package luatex.def Info: ressources/gps0.jpg  used on input line 60.
+(luatex.def)             Requested size: 170.71652pt x 118.64897pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<ressources/hamburger.png, id=57, 1204.5pt x 1204.5pt>
-File: ressources/hamburger.png Graphic file (type png)
-<use ressources/hamburger.png>
-Package luatex.def Info: ressources/hamburger.png  used on input line 72.
-(luatex.def)             Requested size: 10.9356pt x 10.95pt.
-<ressources/folder.png, id=58, 256.96pt x 256.96pt>
-File: ressources/folder.png Graphic file (type png)
-<use ressources/folder.png>
-Package luatex.def Info: ressources/folder.png  used on input line 73.
-(luatex.def)             Requested size: 10.94711pt x 10.95pt.
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 99.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [2<./ressources/geoloc.png><./ressources/zone.png><./ressources/hamburger.png><./ressources/folder.png>]
-<ressources/gps0.jpg, id=80, 401.5pt x 279.0425pt>
-File: ressources/gps0.jpg Graphic file (type jpg)
-<use ressources/gps0.jpg>
-Package luatex.def Info: ressources/gps0.jpg  used on input line 101.
-(luatex.def)             Requested size: 142.26378pt x 98.87555pt.
-<ressources/gps1.png, id=82, 259.97125pt x 189.70876pt>
+<ressources/gps1.png, id=48, 259.97125pt x 189.70876pt>
 File: ressources/gps1.png Graphic file (type png)
 <use ressources/gps1.png>
-Package luatex.def Info: ressources/gps1.png  used on input line 108.
-(luatex.def)             Requested size: 128.0374pt x 93.43283pt.
-<ressources/gps2.png, id=84, 306.14375pt x 280.04625pt>
+Package luatex.def Info: ressources/gps1.png  used on input line 67.
+(luatex.def)             Requested size: 142.26378pt x 103.8133pt.
+<ressources/gps2.png, id=49, 306.14375pt x 280.04625pt>
 File: ressources/gps2.png Graphic file (type png)
 <use ressources/gps2.png>
-Package luatex.def Info: ressources/gps2.png  used on input line 116.
-(luatex.def)             Requested size: 128.0374pt x 117.12292pt.
-<ressources/gps3.png, id=86, 322.20375pt x 246.9225pt>
+Package luatex.def Info: ressources/gps2.png  used on input line 69.
+(luatex.def)             Requested size: 142.26378pt x 130.13469pt.
+<ressources/gps3.png, id=50, 322.20375pt x 246.9225pt>
 File: ressources/gps3.png Graphic file (type png)
 <use ressources/gps3.png>
-Package luatex.def Info: ressources/gps3.png  used on input line 124.
+Package luatex.def Info: ressources/gps3.png  used on input line 71.
 (luatex.def)             Requested size: 142.26378pt x 109.02676pt.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 131.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 81.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [3<./ressources/gps0.jpg><./ressources/gps1.png><./ressources/gps2.png><./ressources/gps3.png>]
-Package mdframed Info: Not enough space on this page on input line 131.
-File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 140.
-(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
- [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+ [2<./ressources/gps0.jpg><./ressources/gps1.png><./ressources/gps2.png><./ressources/gps3.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (./principe-geolocalisation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `principe-geolocalisation.out' has not changed.
-(rerunfilecheck)             Checksum: CF39ED88C5C7E83A556D0F6C90949FCF;842.
+(rerunfilecheck)             Checksum: BA29F87B0647B9983E922CD9E61890F2;731.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 41649 strings out of 494383
+ 41577 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 30623 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 22 glue, 4 kern, 1 penalty, 3967 glyph, 860 attribute, 99 glue_spec, 145 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:4,2:2118,3:176,4:66,5:162,6:38,7:1126,8:122,9:229,10:9,11:118
- 44518 multiletter control sequences out of 65536+600000
- 54 fonts using 8020207 bytes
- 84i,18n,95p,1210b,1007s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on principe-geolocalisation.pdf (4 pages, 720341 bytes).
+ 12879 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 13 glue, 4 kern, 1 penalty, 1608 glyph, 362 attribute, 99 glue_spec, 62 attribute_list, 1 write nodes
+   avail lists: 1:2,2:2580,3:209,4:49,5:129,6:37,7:1425,8:51,9:199,10:6,11:112
+ 44493 multiletter control sequences out of 65536+600000
+ 53 fonts using 7894127 bytes
+ 84i,17n,95p,1210b,1007s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on principe-geolocalisation.pdf (2 pages, 686573 bytes).
 
-PDF statistics: 149 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 97 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 131072)
+ 48 words of extra memory for PDF output out of 10000 (max. 100000000)
 

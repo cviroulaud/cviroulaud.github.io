@@ -163,6 +163,24 @@ print(f)
 \end{lstlisting}
     \end{center} 
 \end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{aretenir}[Remarque]
+\textbf{\texttt{\_\_str\_\_}} est une méthode, elle peut donc être appelée classiquement.
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+print(f)
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+print(f.__str__())
+\end{lstlisting}
+\captionof{code}{Ces appels réalisent la même chose.}
+\label{CODE}
+\end{center}
+    \end{aretenir}
+
+\end{frame}
 \section{Opérations sur les fractions}
 \subsection{Opérations mathématiques}
 \begin{frame}
@@ -264,6 +282,24 @@ def __lt__(self, f):
 \end{lstlisting}
 \captionof{code}{Méthodes de comparaison}
 \end{center}  
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{aretenir}[Remarque]
+\textbf{\texttt{\_\_eq\_\_}} est une méthode, elle peut donc être appelée classiquement.
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+print(f == f1)
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+print(f.__eq__(f1))
+\end{lstlisting}
+\captionof{code}{Ces appels réalisent la même chose.}
+\label{CODE}
+\end{center}
+    \end{aretenir}
 
 \end{frame}
 \begin{frame}

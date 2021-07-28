@@ -1,0 +1,11 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Site SNT}{3}{0}{1}
+\beamer@sectionintoc {2}{Pronote}{5}{0}{2}
+\beamer@sectionintoc {3}{Lycée connecté}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Connexion}{12}{0}{3}
+\beamer@subsectionintoc {3}{2}{Mail}{15}{0}{3}
+\beamer@subsectionintoc {3}{3}{Casier}{19}{0}{3}
+\beamer@subsectionintoc {3}{4}{Évaluation automatisée}{21}{0}{3}
+\beamer@sectionintoc {4}{Outils divers}{23}{0}{4}
+\beamer@subsectionintoc {4}{1}{Espace personnel}{24}{0}{4}
+\beamer@subsectionintoc {4}{2}{Dossier compressé}{25}{0}{4}

@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Un nouveau partenariat}{2}{0}{1}
+\beamer@sectionintoc {2}{Géoportail}{9}{0}{2}
+\beamer@sectionintoc {3}{Le géocubX}{12}{0}{3}

@@ -1,0 +1,5 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{L'IGN}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Mission}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Moyens technologiques}{9}{0}{1}
+\beamer@sectionintoc {2}{Géoportail}{12}{0}{2}

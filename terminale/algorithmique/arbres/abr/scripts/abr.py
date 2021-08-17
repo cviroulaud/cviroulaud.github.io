@@ -1,86 +1,58 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Date de création Mon Feb 22 10:28:12 2021
 
-@auteur: Christophe Viroulaud
+"""
+@Author: Christophe Viroulaud
+@Time:   2021/08/06 11:01:49
 """
 
 
 class Noeud:
-
-    def __init__(self, v, g=None, d=None):
-        self.valeur = v
+    def __init__(self, val: int, d=None, g=None) -> None:
+        self.valeur = val
         self.gauche = g
         self.droite = d
 
-    def inserer(self, v: int) -> None:
-        """
-        crée un Noeud dans le sous-arbre gauche ou droit
-        """
-        if v < self.valeur:
-            if self.gauche is None:
-                self.gauche = Noeud(v)
-            else:
-                self.gauche.inserer(v)
-        elif v > self.valeur:  # permet de ne pas ajouter une valeur déjà présente
-            if self.droite is None:
-                self.droite = Noeud(v)
-            else:
-                self.droite.inserer(v)
 
-    def rechercher(self, v: int) -> bool:
-        """
-        recherche v dans les sous-arbre gauche ou droit
-        """
-        if v == self.valeur:
-            return True
-        elif v < self.valeur:
-            if self.gauche is None:
-                return False
-            else:
-                return self.gauche.rechercher(v)
-        elif v > self.valeur:
-            if self.droite is None:
-                return False
-            else:
-                return self.droite.rechercher(v)
-
-
-class ABR:
-
+class Abr:
     def __init__(self):
         self.racine = None
 
-    def est_vide(self) -> bool:
-        return self.racine is None
-
-    def inserer(self, v: int) -> None:
-        """
-        insère v dans l'ABR
-        en appelant la méthode inserer de Noeud
-        """
-        if self.est_vide():
-            # création de la racine
-            self.racine = Noeud(v)
+    def inserer_rec(self, val: int, pere: Noeud) -> None:
+        if val < pere.valeur:
+            if pere.gauche is None:
+                pere.gauche = Noeud(val)
+            else:
+                self.inserer_rec(val, pere.gauche)
         else:
-            # appel de la méthode inserer de Noeud
-            self.racine.inserer(v)
+            if pere.droite is None:
+                pere.droite = Noeud(val)
+            else:
+                self.inserer_rec(val, pere.droite)
 
-    def rechercher(self, v: int) -> bool:
-        """
-        recherche v dans l'ABR
-        en appelant la méthode rechercher de Noeud
-        """
-        if self.est_vide():
+    def inserer(self, val: int) -> None:
+        if self.racine is None:
+            self.racine = Noeud(val)
+        else:
+            self.inserer_rec(val, self.racine)
+
+    def rechercher_rec(self, val: int, pere: Noeud) -> bool:
+        if pere is None:
             return False
+        elif pere.valeur == val:
+            return True
+        elif val < pere.valeur:
+            return self.rechercher_rec(val, pere.gauche)
         else:
-            return self.racine.rechercher(v)
+            return self.rechercher_rec(val, pere.droite)
+
+    def rechercher(self, val: int) -> bool:
+        return self.rechercher_rec(val, self.racine)
 
 
 if __name__ == "__main__":
     tab = [33, 25, 56, 20, 28, 40, 60, 8, 21, 26, 35, 58, 65]
-    arbre = ABR()
+    arbre = Abr()
     for e in tab:
         arbre.inserer(e)
     print(arbre.rechercher(21))

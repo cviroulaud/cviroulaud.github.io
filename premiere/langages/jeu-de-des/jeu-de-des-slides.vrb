@@ -1,0 +1,15 @@
+\frametitle{}
+\note{Première approche rapide des bibliothèques}
+Python fournit des \textbf{bibliothèques} spécialisées. La bibliothèque \textbf{\texttt{random}} permet de générer des nombres aléatoires.
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+from random import randint
+
+de1 = randint(1,6)
+\end{lstlisting}
+\captionof{code}{Générer un entier aléatoire}
+\label{aleatoire}
+\end{center}
+\begin{activite}
+Modifier le programme \textbf{\texttt{jeu\_de}} en utilisant le code \ref{aleatoire}.
+\end{activite}

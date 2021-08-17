@@ -1,6 +1,5 @@
 #include "elements.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 
 Liste *initialisation() {
   Liste *liste = malloc(sizeof(Liste));
@@ -11,6 +10,8 @@ Liste *initialisation() {
 
   return liste;
 }
+
+void initialisation2(Liste *l) { l = malloc(sizeof(Liste)); }
 
 void insertion(Liste *l, int nb) {
   Element *element = malloc(sizeof(Element));
@@ -25,20 +26,45 @@ void insertion(Liste *l, int nb) {
 }
 
 void affichage(Liste *l) {
+  int i = 0;
   if (l != NULL) {
     Element *e = l->premier;
     while (e != NULL) {
-      printf("%d\n", e->nb);
+      printf("%d %d\n", i, e->nb);
       e = e->suivant;
+      i++;
     }
   }
 }
+//v1 OK
+/*
 int main(int argc, char *argv[]) {
-  Liste *ma_liste = initialisation();
+   Liste *ma_liste = initialisation();
   insertion(ma_liste, 2);
   insertion(ma_liste, 3);
   insertion(ma_liste, 7);
 
   affichage(ma_liste);
+  return 0;
+}
+//v2 OK
+int main(int argc, char *argv[]) {
+  Liste *ma_liste = malloc(sizeof(Liste));
+  insertion(ma_liste, 2);
+  insertion(ma_liste, 3);
+  insertion(ma_liste, 7);
+
+  affichage(ma_liste);
+  return 0;
+}*/
+//v3 NON
+int main(int argc, char *argv[]) {
+  Liste ma_liste;
+  initialisation2(&ma_liste);
+  insertion(&ma_liste, 2);
+  insertion(&ma_liste, 3);
+  insertion(&ma_liste, 7);
+
+  affichage(&ma_liste);
   return 0;
 }

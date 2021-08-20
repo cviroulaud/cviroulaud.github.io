@@ -1,0 +1,7 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{La documentation}{3}{0}{1}
+\beamer@sectionintoc {2}{Importation}{8}{0}{2}
+\beamer@sectionintoc {3}{Une bibliothèque graphique}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{Découverte}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{Premiers déplacements}{17}{0}{3}
+\beamer@subsectionintoc {3}{3}{Des figures plus complexes}{21}{0}{3}

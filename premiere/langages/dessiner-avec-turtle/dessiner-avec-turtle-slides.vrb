@@ -1,0 +1,24 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+for i in range(10):
+    # i est pair (le reste de la division par 2 est nul)
+    if i%2 == 0:
+        t.color("green", "green")
+    else:
+        t.color("red", "red")
+
+    t.begin_fill()
+    for j in range(4):    # on trace le carré
+        t.forward(100)
+        t.left(90)
+
+    t.end_fill()
+    t.left(36)
+t.done()
+\end{lstlisting}
+\captionof{code}{Rosaces colorées}
+\label{CODE}
+\end{center}
+

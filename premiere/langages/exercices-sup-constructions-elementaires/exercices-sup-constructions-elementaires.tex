@@ -1,0 +1,56 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Lang 03}}}}
+\fancyhead[C]{\textbf{Exercices sup - constructions élémentaires}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+Écrire un programme qui, à partir de la saisie d'un rayon et d'une hauteur, calcule le volume d'un cône droit.
+\end{exo}
+\begin{exo}
+L'utilisateur donne un entier positif \emph{n} et le programme affiche PAIR s'il est divisible par 2, IMPAIR sinon.
+\end{exo}
+\begin{exo}
+L'utilisateur donne un entier positif et le programme annonce combien de fois de suite cet entier est divisible par 2.
+\end{exo}
+\begin{exo}
+Écrire un programme qui demande à l’utilisateur de saisir 3 nombre x, y et z et de lui afficher leur maximum
+\end{exo}
+\begin{exo}
+Écrire un programme pour calculer:
+\begin{itemize}
+\item $1+2+3+....+100$
+\item $1+3+5+....+99$
+\end{itemize}
+\end{exo}
+\begin{exo}
+Écrire un programme qui demande à l’utilisateur de saisir deux nombres entiers a et b et de lui afficher le quotient et le reste de la division euclidienne de a par b.
+\end{exo}
+\begin{exo}
+On dispose d'une feuille de papier d'épaisseur 0,1 mm.
+Combien de fois doit-on la plier au minimum pour que l'épaisseur dépasse la hauteur de la tour Eiffel 324 m?
+Écrire un programme pour résoudre ce problème. 
+\end{exo}
+\begin{exo}
+Écrire un programme qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher tous les diviseurs de ce nombre.
+\end{exo}
+\begin{exo}
+Écrire un programme qui demande à l’utilisateur de saisir un nombre entier n et de lui afficher si ce nombre est premier ou non.
+\end{exo}
+\begin{exo}
+L'ordinateur cache une bombe dont les coordonnées (x,y) sont des entiers compris entre 0 et 100 inclus.
+Le joueur propose un point. Si la distance entre la bombe et le point proposé est inférieure ou égale à 10, le programme affiche "Bravo", sinon le joueur doit proposer à nouveau un point.\\
+\textbf{Rappel:} La distance euclidienne entre les points A et B se calcule:
+$$AB = \sqrt{(y_B-y_A)^2+(x_B-x_a)^2}$$
+\end{exo}
+\end{document}

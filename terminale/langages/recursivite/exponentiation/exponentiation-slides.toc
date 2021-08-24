@@ -1,0 +1,14 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Étude de la fonction native}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Fonctions Python "built-in"}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Tester un programme}{6}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{1}{Préconditions}{7}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{2}{Mettre en place des tests}{9}{0}{1}
+\beamer@subsubsectionintoc {1}{2}{3}{Durée d'exécution}{11}{0}{1}
+\beamer@sectionintoc {2}{Implémenter la fonction \emph {puissance}}{13}{0}{2}
+\beamer@subsectionintoc {2}{1}{S'appuyer sur la définition mathématique}{14}{0}{2}
+\beamer@subsectionintoc {2}{2}{Correction de l'algorithme}{16}{0}{2}
+\beamer@sectionintoc {3}{Formulations récursives}{19}{0}{3}
+\beamer@subsectionintoc {3}{1}{Notation mathématique}{20}{0}{3}
+\beamer@subsectionintoc {3}{2}{Implémentation}{21}{0}{3}
+\beamer@subsectionintoc {3}{3}{Nouvelle formulation mathématique}{28}{0}{3}

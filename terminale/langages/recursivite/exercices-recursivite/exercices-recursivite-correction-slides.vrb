@@ -1,0 +1,11 @@
+\frametitle{Exercice 10}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+for n in range(10): # chaque ligne
+    for p in range(n+1): # chaque élément de la ligne
+        print(C(n, p), end=" ")
+    print() # saut de ligne
+\end{lstlisting}
+\end{center}
+

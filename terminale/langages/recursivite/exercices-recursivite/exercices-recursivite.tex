@@ -1,0 +1,118 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Rec 02}}}}
+\fancyhead[C]{\textbf{Exercices récursivité}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+    Dans l'activité \emph{exponentiation} la méthode de mesure de la durée d'exécution des fonctions n'est pas très rigoureuse. En effet, le temps mesuré prend en compte toute l'activité de la machine et pas seulement l'exécution de la fonction Python. Il est plus judicieux de compter le nombre d'opérations réalisées lors de l'exécution de la fonction.
+    \begin{enumerate}
+        \item À l'aide d'une variable gloable \textbf{\texttt{COMPTEUR}}, compter le nombre d'opérations effectuées par les fonctions \textbf{\texttt{puissance\_perso, puissance\_recursif}} et \textbf{\texttt{puissance\_recursif\_rapide}} lors du calcul de $2701^{19406}$.
+        \item Écrire la fonction \textbf{\texttt{puissance\_iteratif\_rapide}} qui reprend la méthode de calcul de \\\textbf{\texttt{puissance\_recursif\_rapide}}.
+              \begin{aretenir}[Remarque]
+                  Il est toujours possible de transformer un algorithme itératif en récursif et réciproquement.
+              \end{aretenir}
+        \item Compter le nombre d'opérations de cette fonction.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    La somme des entiers s'écrit:
+    $$0+1+2+...+n$$
+    \begin{enumerate}
+        \item Donner une définition récursive de la somme des entiers.
+        \item Implémenter la fonction \texttt{\textbf{somme(n: int) $\rightarrow$ int}}.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    La fonction factorielle est définie par:
+    $$n!=1×2×3...×n \qquad si\qquad n>0 \qquad et \qquad 0!=1$$
+    \begin{enumerate}
+        \item Donner une définition récursive qui correspond au calcul de la fonction factorielle.
+        \item Implémenter la fonction \texttt{\textbf{factorielle(n: int) $\rightarrow$ int}}.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    Soit $u_n$ la suite d'entiers définie par $u_0>1$ et:
+    $$
+        u_{n+1} = \left\{
+        \begin{array}{ll}
+            u_n/2   & \mbox{si  }u_n \mbox{ est pair} \\
+            3×u_n+1 & \mbox{sinon}\
+        \end{array}
+        \right.
+    $$
+    Écrire la fonction \textbf{\texttt{syracuse(u:int) $\rightarrow$ None}} qui affiche les valeurs successives de la suite $u_n$ tant que $u_n>1$. L'appel de la fonction s'effectuera avec une valeur de $u_0$ quelconque.
+\end{exo}
+\begin{exo}
+    \begin{enumerate}
+        \item Écrire une fonction récursive \texttt{\textbf{entiers(i: int, k: int) $\rightarrow$ None}} qui affiche les entiers entre i et k. Par exemple, entiers(0,3) doit afficher 0 1 2 3.
+        \item Écrire une fonction récursive \texttt{\textbf{impairs(i: int, k: int) $\rightarrow$ None}} qui affiche les nombres impairs entre i et k.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+    \item Construire par compréhension un tableau de 10 entiers aléatoires compris entre 1 et 100.
+    \item Écrire la fonction itérative \textbf{\texttt{somme(tab: list) $\rightarrow$ int}} qui renvoie la somme des entiers de \textbf{\texttt{tab}}.
+    \item Écrire la fonction récursive \textbf{\texttt{somme\_rec}} équivalente. Le nombre de paramètres pourra évoluer par rapport à la fonction précédente.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+    \item Construire par compréhension un tableau de 30 entiers aléatoires compris entre 1 et 1000.
+    \item Écrire la fonction itérative \textbf{\texttt{mini(tab: list) $\rightarrow$ int}} qui renvoie le minimum de \textbf{\texttt{tab}}.
+    \item Écrire la fonction récursive \textbf{\texttt{mini\_rec}} équivalente. Le nombre de paramètres pourra évoluer par rapport à la fonction précédente.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+    L'algorithme d'Euclide est l'un des plus anciens algorithmes (300 avant JC). Il permet de déterminer le Plus Grand Commun Diviseur (PGCD) de deux entiers.\\Détermination du PGCD de 20 et 35:
+    \begin{itemize}
+        \item $35=20×1+15$
+        \item $20 = 15×1 + 5$
+        \item $15 = 5×3 + 0$
+        \item Le PGCD est 5.
+    \end{itemize}
+    \begin{enumerate}
+        \item Écrire la fonction itérative \texttt{\textbf{pgcd(a: int, b: int) $\rightarrow$ int}} qui renvoie le Plus Grand Commun Diviseur de a et b. On donne comme précondition: a < b.
+        \item Écrire la fonction récursive \texttt{\textbf{pgcd\_rec(a: int, b: int) $\rightarrow$ int}} qui renvoie le Plus Grand Commun Diviseur de a et b. 
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    Écrire une fonction récursive \texttt{\textbf{nombre\_chiffres(n: int) $\rightarrow$ int}} qui renvoie le nombre de chiffres qui compose n.
+\end{exo}
+\begin{exo}
+    La formulation récursive ci-après permet de calculer les coefficients binomiaux:
+    $$
+        C(n,p) = \left\{
+        \begin{array}{ll}
+            1                   & \mbox{si } p=0 \mbox{ ou } n=p \\
+            C(n-1,p-1)+C(n-1,p) & \mbox{sinon}                   \\
+        \end{array}
+        \right.
+    $$
+    \begin{enumerate}
+        \item Écrire une fonction récursive \texttt{\textbf{C(n: int, p: int) $\rightarrow$ int}} qui renvoie la valeur de C(n,p).
+        \item Le triangle de Pascal est une présentation des coefficients binomiaux sous la forme d'un triangle. Dessiner le triangle de Pascal à l'aide d'une double boucle \textbf{\texttt{for}} pour n variant de 0 à 10.
+              \begin{center}
+                  \begin{tabular}{l}
+                      1         \\
+                      1 1       \\
+                      1 2 1     \\
+                      1 3 3 1   \\
+                      1 4 6 4 1 \\
+                  \end{tabular}
+              \end{center}
+
+    \end{enumerate}
+\end{exo}
+
+\end{document}

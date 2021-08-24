@@ -1,0 +1,11 @@
+\frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+fonction récursive rapide 0.021007537841796875
+\end{lstlisting}
+        \captionof{code}{Les résultats s'améliorent sans égaler la fonction native.}
+        \label{CODE}
+        \end{center}
+\note[item]{Implémentation des fonctions builtin en C}
+\note[item]'itératif plus rapide car appels fonction coûtent; mais récursif donne souvent code plus clair/lisible

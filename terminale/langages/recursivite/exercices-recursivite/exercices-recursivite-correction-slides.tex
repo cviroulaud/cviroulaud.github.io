@@ -1,0 +1,505 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices récursivité\\Correction}
+\date{}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+COMPTEUR = 0
+
+def puissance_perso(x: int, n: int) -> int:
+    global COMPTEUR
+    res = 1
+    for i in range(n):
+        COMPTEUR += 1
+        res *= x
+    return res
+
+puissance_perso(2701, 19406)
+print("perso: ", COMPTEUR)
+\end{lstlisting}
+\captionof{code}{La fonction effectue 19406 itérations.}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+def puissance_recursif(x: int, n: int) -> int:
+    global COMPTEUR
+    if n == 0:
+        return 1
+    else:
+        COMPTEUR += 1
+        return x*puissance_recursif(x, n-1)
+\end{lstlisting}
+\captionof{code}{La fonction effectue  également 19406 itérations.}
+\label{CODE}
+\end{center}
+\begin{aretenir}[Remarque]
+Ne pas oublier de remettre \textbf{\texttt{COMPTEUR}} à 0.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def puissance_recursif_rapide(x, n):
+    global COMPTEUR
+    if n == 0:
+        return 1
+    elif n % 2 == 0:
+        COMPTEUR += 1
+        return puissance_recursif_rapide(x*x, n//2)
+    else:
+        COMPTEUR += 1
+        return x*puissance_recursif_rapide(x*x, n//2)
+\end{lstlisting}
+\captionof{code}{Il n'y a que 15 itérations.}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def puissance_iteratif_rapide(x, n):
+    global COMPTEUR
+    res = 1
+    while n > 0:
+        COMPTEUR += 1
+        if n % 2 != 0: #impair
+            res = res * x
+        x = x*x
+        n = n//2
+    return res
+\end{lstlisting}
+\captionof{code}{Version itérative}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}
+    \frametitle{Exercice 2}
+    $$
+    somme(n) = \left\{
+        \begin{array}{ll}
+            0 & \mbox{si  }n=0\\
+            \mbox{n + somme(n-1)} & \mbox{si }n>0\
+        \end{array}
+    \right.
+    $$
+   
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def somme(n: int) -> int:
+    if n == 0:
+        return 0
+    else:
+        return n + somme(n-1)  
+\end{lstlisting}
+    \captionof{code}{Somme des entiers}
+    \label{CODE}
+    \end{center} 
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{aretenir}[Hors programme]
+    Une fonction à récursivité terminale est une fonction où l'appel récursif est la dernière instruction à être évaluée.
+\end{aretenir}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def somme_terminale(n: int, res: int) -> int:
+    if n == 0:
+        return res
+    else:
+        return somme_terminale(n-1, res+n)
+\end{lstlisting}
+\captionof{code}{Version \emph{terminale}}
+\label{CODE}
+\end{center}
+\note[item]{Dans les langages fonctionnels, le compilateur ou l'interpréteur reconnait et optimise une récursivité terminale (en transformant en itération).}
+\end{frame}
+\section{Exercice 3}
+\begin{frame}
+    \frametitle{Exercice 3}
+    $$
+    n! = \left\{
+        \begin{array}{ll}
+            1 & \mbox{si  }n=0\\
+            \mbox{n × (n-1)!} & \mbox{si }n>0\
+        \end{array}
+    \right.
+    $$
+    
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def factorielle(n: int)->int:
+    if n == 0:
+        return 1
+    else:
+        return n * factorielle(n-1)
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\section{Exercice 4}
+\begin{frame}[fragile]
+    \frametitle{Exercice 4}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def syracuse(u: int) -> None:
+    print(u, end=" ")
+    if u > 1:
+        if u % 2 == 0:
+            syracuse(u // 2)
+        else:
+            syracuse(3 * u + 1)
+
+print(syracuse(5))
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def syracuse2(u: int, l: list) -> list:
+    l.append(u)
+    if u > 1:
+        if u % 2 == 0:
+            syracuse2(u // 2, l)
+        else:
+            syracuse2(3 * u + 1, l)
+    return l
+
+print(syracuse2(5, []))
+\end{lstlisting}
+\captionof{code}{Version avec renvoi des valeurs dans un tableau.}
+\label{CODE}
+\end{center}
+\note{quelle que soit la valeur de $u_0$ il existe un \emph{n} tel que $u_n=1$. Toujours pas prouvée à ce jour.}
+\end{frame}
+\section{Exercice 5}
+\begin{frame}[fragile]
+    \frametitle{Exercice 5}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def entiers(i: int, k: int) -> None:
+    if i <= k:
+        print(i, end=" ")
+        entiers(i+1, k)
+\end{lstlisting}
+\end{center}  
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def impairs(i: int, k: int) -> None:
+    if i <= k:
+        if i % 2 == 1:
+            print(i, end=" ")
+        impairs(i+2, k)
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\section{Exercice 6}
+\begin{frame}[fragile]
+    \frametitle{Exercice 6}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+from random import randint
+
+t = [randint(1, 100) for _ in range(10)]
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def somme(tab: list) -> int:
+    s = 0
+    for i in range(len(tab)):
+        s += tab[i]
+    return s
+
+somme(t)
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0.5em]
+def somme_rec(tab: list, deb: int, s: int) -> int:
+    """
+    calcule la somme des éléments du tableau
+
+    Args:
+        tab (list): le tableau
+        deb (int): indice de l'élément en cours
+        s (int): somme
+    """
+    if deb == len(tab):
+        return s
+    else:
+        return somme_rec(tab, deb+1, s+tab[deb])
+
+somme_rec(t, 0, 0)
+
+\end{lstlisting}
+\captionof{code}{Version récursive}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def somme_rec(tab: list, s: int) -> int:
+    if len(tab) == 0:
+        return s
+    else:
+        tete = tab[0]
+        queue = tab[1:] # slice
+        return somme_rec(queue, s+tete)
+
+somme_rec(t, 0)
+\end{lstlisting}
+\captionof{code}{Autre version récursive avec slice}
+\end{center}
+\begin{aretenir}[Remarque]
+Le \emph{slice} est hors programme.
+\end{aretenir}
+\end{frame}
+\section{Exercice 7}
+\begin{frame}[fragile]
+    \frametitle{Exercice 7}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+t = [randint(1, 1000) for _ in range(30)]
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def mini(tab: list) -> int:
+    m = float("inf")
+    for i in range(len(tab)):
+        if tab[i] < m:
+            m = tab[i]
+    return m
+
+mini(t)
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def mini_rec(tab: list, deb: int, m: int) -> int:
+    """
+    cherche le plus petit élément du tableau
+
+    Args:
+        tab (list): le tableau
+        deb (int): indice de l'élément en cours
+        m (int): l'élément mini
+    """
+    if deb == len(tab):
+        return m
+    else:
+        if tab[deb] < m:
+            m = tab[deb]
+        return mini_rec(tab, deb+1, m)
+
+mini_rec(t, 0, float("inf"))
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def mini_rec2(tab: list, m: int) -> int:
+    """
+    avec slice
+    """
+    if len(tab) == 0:
+        return m
+    else:
+        if tab[0] < m:
+            m = tab[0]
+        return mini_rec2(tab[1:], m)
+
+mini_rec2(t, float("inf"))
+\end{lstlisting}
+\captionof{code}{Avec slice}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\section{Exercice 8}
+\begin{frame}
+    \frametitle{Exercice 8}
+    \begin{center}
+        \begin{tabular}{l}
+    $a=20, b=35$\\
+            $35 = \overbrace{20}^{a\rightarrow b}×1 + \overbrace{15}^{b\%a\rightarrow a}$\\
+    20 = 15×1 + 5\\
+    15 = 5×3 + 0\\
+    pgcd = 5
+        \end{tabular}
+    \end{center}
+
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def pgcd(a: int, b: int) -> int:
+    while a != 0:
+        a, b = b % a, a
+    return b
+\end{lstlisting}
+        \captionof{code}{Version itérative}
+        \label{CODE}
+        \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def pgcd_rec(a: int, b: int) -> int:
+    if a == 0:
+        return b
+    else:
+        return pgcd_rec(b % a, a)
+\end{lstlisting}
+        \captionof{code}{Version récursive}
+        \label{CODE}
+        \end{center}
+
+\end{frame}
+\section{Exercice 9}
+\begin{frame}[fragile]
+    \frametitle{Exercice 9}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def nombre_chiffres(n: int) -> int:
+    if n < 10:
+        return 1
+    else:
+        return 1 + nombre_chiffres(n//10)
+\end{lstlisting}
+\captionof{code}{}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def nombre_chiffres_terminal(n: int, acc: int) -> int:
+    if n < 10:
+        return acc
+    else:
+        return nombre_chiffres_terminal(n//10, acc+1)
+\end{lstlisting}
+\captionof{code}{Version \emph{terminale}}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\section{Exercice 10}
+\begin{frame}[fragile]
+    \frametitle{Exercice 10}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def C(n: int, p: int) -> int:
+    if p == 0 or n == p:
+        return 1
+    else:
+        return C(n-1, p-1) + C(n-1, p)
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 10}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+for n in range(10): # chaque ligne
+    for p in range(n+1): # chaque élément de la ligne
+        print(C(n, p), end=" ")
+    print() # saut de ligne
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\end{document}

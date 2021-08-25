@@ -1,0 +1,14 @@
+\frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def flocon_carre(precision: int, mesure: int) -> None:
+    for _ in range(4):
+        courbe_koch_carre(precision, mesure)
+        right(90)
+\end{lstlisting}
+    \end{center}
+\begin{center}
+\centering
+\includegraphics[width=5cm]{ressources/quadratique.png}
+\end{center}

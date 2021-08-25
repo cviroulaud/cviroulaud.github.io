@@ -1,0 +1,6 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Bibliothèque \textbf {\texttt {turtle}}: rappels}{4}{0}{1}
+\beamer@sectionintoc {2}{Flocon de von Koch}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Construction récursive}{13}{0}{2}
+\beamer@subsectionintoc {2}{3}{Construction du flocon}{20}{0}{2}

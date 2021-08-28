@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  24 AUG 2021 18:19
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 AUG 2021 20:36
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/recursivite/exercices-recursivite/exercices-recursivite-correction-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/recursivite/exercices-recursivite/exercices-recursivite-correction-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.162 seconds
+luaotfload | main : initialization completed in 0.154 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1962,15 +1962,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  44927 strings out of 494383
- 381773,1144653 words of node,token memory allocated
- 141878 words of node memory still in use:
-   1465 hlist, 9 vlist, 809 rule, 85 disc, 9 local_par, 649 glue, 894 kern, 23 penalty, 10522 glyph, 14217 attribute, 106 glue_spec, 2372 attribute_list, 3 write, 1158 pdf_colorstack nodes
-   avail lists: 1:5,2:5965,3:318,4:6798,5:5252,6:63,7:1866,8:4743,9:8457,10:29,11:485,12:1
+ 381786,1144653 words of node,token memory allocated
+ 141934 words of node memory still in use:
+   1465 hlist, 9 vlist, 809 rule, 85 disc, 9 local_par, 649 glue, 894 kern, 23 penalty, 10528 glyph, 14223 attribute, 106 glue_spec, 2373 attribute_list, 3 write, 1158 pdf_colorstack nodes
+   avail lists: 1:4,2:5965,3:318,4:6798,5:5252,6:61,7:1866,8:4743,9:8457,10:29,11:485,12:1
  47214 multiletter control sequences out of 65536+600000
  64 fonts using 9323015 bytes
  70i,17n,95p,1232b,1092s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on exercices-recursivite-correction-slides.pdf (39 pages, 127307 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on exercices-recursivite-correction-slides.pdf (39 pages, 127790 bytes).
 
 PDF statistics: 926 PDF objects out of 1000 (max. 8388607)
  835 compressed objects within 9 object streams

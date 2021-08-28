@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  25 AUG 2021 11:47
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 AUG 2021 20:37
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/recursivite/tp-koch/tp-koch-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/recursivite/tp-koch/tp-koch-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.099 seconds
+luaotfload | main : initialization completed in 0.162 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1590,7 +1590,7 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <6> not available
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<ressources/flocon.png, id=58, 260.975pt x 264.99pt>
+<ressources/flocon.png, id=59, 260.975pt x 264.99pt>
 File: ressources/flocon.png Graphic file (type png)
 <use ressources/flocon.png>
 Package luatex.def Info: ressources/flocon.png  used on input line 26.
@@ -1636,7 +1636,7 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-<ressources/spirale.png, id=114, 240.9pt x 234.8775pt>
+<ressources/spirale.png, id=115, 240.9pt x 234.8775pt>
 File: ressources/spirale.png Graphic file (type png)
 <use ressources/spirale.png>
 Package luatex.def Info: ressources/spirale.png  used on input line 16.
@@ -1819,15 +1819,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  44741 strings out of 494383
- 244190,1144653 words of node,token memory allocated
- 91307 words of node memory still in use:
-   1066 hlist, 10 vlist, 578 rule, 60 disc, 11 local_par, 545 glue, 638 kern, 29 penalty, 7383 glyph, 5871 attribute, 106 glue_spec, 981 attribute_list, 3 write, 1 pdf_action, 794 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:5,2:5251,3:114,4:4474,5:3645,6:47,7:3135,8:3285,9:5878,10:20,11:351,12:1
+ 244179,1144653 words of node,token memory allocated
+ 91363 words of node memory still in use:
+   1066 hlist, 10 vlist, 578 rule, 60 disc, 11 local_par, 545 glue, 638 kern, 29 penalty, 7389 glyph, 5877 attribute, 106 glue_spec, 982 attribute_list, 3 write, 1 pdf_action, 794 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:3,2:5251,3:114,4:4474,5:3645,6:47,7:3135,8:3285,9:5878,10:20,11:351,12:1
  47149 multiletter control sequences out of 65536+600000
  102 fonts using 12647175 bytes
  70i,15n,95p,1193b,1032s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on tp-koch-slides.pdf (25 pages, 103754 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on tp-koch-slides.pdf (25 pages, 104372 bytes).
 
 PDF statistics: 449 PDF objects out of 1000 (max. 8388607)
  373 compressed objects within 4 object streams

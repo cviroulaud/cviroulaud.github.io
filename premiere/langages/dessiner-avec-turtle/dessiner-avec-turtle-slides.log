@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  18 AUG 2021 12:25
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  26 AUG 2021 23:21
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/dessiner-avec-turtle/dessiner-avec-turtle-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/dessiner-avec-turtle/dessiner-avec-turtle-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.092 seconds
+luaotfload | main : initialization completed in 0.144 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1788,15 +1788,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  44681 strings out of 494383
- 305233,1144653 words of node,token memory allocated
- 63222 words of node memory still in use:
-   19 hlist, 9 vlist, 3 rule, 4 disc, 3 local_par, 45 glue, 6 kern, 11 penalty, 7260 glyph, 4719 attribute, 106 glue_spec, 789 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 12 pdf_colorstack nodes
-   avail lists: 1:5,2:9367,3:139,4:6456,5:5037,6:60,7:3986,8:4579,9:8206,10:27,11:470,12:1
+ 305234,1144653 words of node,token memory allocated
+ 63278 words of node memory still in use:
+   19 hlist, 9 vlist, 3 rule, 4 disc, 3 local_par, 45 glue, 6 kern, 11 penalty, 7266 glyph, 4725 attribute, 106 glue_spec, 790 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 12 pdf_colorstack nodes
+   avail lists: 1:6,2:9367,3:139,4:6456,5:5037,6:60,7:3986,8:4579,9:8206,10:27,11:470,12:1
  47124 multiletter control sequences out of 65536+600000
  101 fonts using 12509583 bytes
  70i,15n,95p,1206b,951s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on dessiner-avec-turtle-slides.pdf (26 pages, 112515 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on dessiner-avec-turtle-slides.pdf (26 pages, 113187 bytes).
 
 PDF statistics: 504 PDF objects out of 1000 (max. 8388607)
  429 compressed objects within 5 object streams

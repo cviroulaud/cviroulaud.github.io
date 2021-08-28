@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 JUL 2021 12:03
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 AUG 2021 20:32
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/paradigmes/POO/exercices/exercices-corrections-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/paradigmes/POO/exercices/exercices-corrections-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.122 seconds
+luaotfload | main : initialization completed in 0.151 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1672,18 +1672,18 @@ Package rerunfilecheck Info: File `exercices-corrections-slides.out' has not cha
 
 Here is how much of LuaTeX's memory you used:
  44406 strings out of 494383
- 305234,1144653 words of node,token memory allocated
- 116901 words of node memory still in use:
-   2943 hlist, 6 vlist, 1645 rule, 166 disc, 17 local_par, 1280 glue, 1818 kern, 27 penalty, 3661 glyph, 9321 attribute, 106 glue_spec, 1556 attribute_list, 4 write, 2288 pdf_colorstack nodes
-   avail lists: 1:4,2:4369,3:59,4:4984,5:4051,6:37,7:2623,8:3638,9:6512,10:40,11:395,12:1
+ 305239,1144653 words of node,token memory allocated
+ 116957 words of node memory still in use:
+   2943 hlist, 6 vlist, 1645 rule, 166 disc, 17 local_par, 1280 glue, 1818 kern, 27 penalty, 3667 glyph, 9327 attribute, 106 glue_spec, 1557 attribute_list, 4 write, 2288 pdf_colorstack nodes
+   avail lists: 1:4,2:4369,3:60,4:4984,5:4051,6:37,7:2623,8:3638,9:6512,10:40,11:395,12:1
  46914 multiletter control sequences out of 65536+600000
  37 fonts using 7025919 bytes
  70i,15n,95p,1212b,830s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on exercices-corrections-slides.pdf (18 pages, 41843 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
+Output written on exercices-corrections-slides.pdf (18 pages, 43913 bytes).
 
-PDF statistics: 317 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
+PDF statistics: 324 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
  42 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

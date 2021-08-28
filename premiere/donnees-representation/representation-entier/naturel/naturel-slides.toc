@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Cellules mémoires}{4}{0}{1}
+\beamer@sectionintoc {2}{Encodage des entiers naturels}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Écriture en base 10}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Écriture en base 2}{14}{0}{2}
+\beamer@subsectionintoc {2}{3}{Conversion}{21}{0}{2}
+\beamer@subsectionintoc {2}{4}{Écriture en base 16}{26}{0}{2}
+\beamer@subsectionintoc {2}{5}{Python et les entiers}{30}{0}{2}

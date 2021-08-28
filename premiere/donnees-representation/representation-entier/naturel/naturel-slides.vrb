@@ -1,0 +1,17 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> 0b01001100
+76
+>>> 0xAD2
+2770
+>>> bin(76)
+'0b01001100'
+>>> 0b10101
+21
+>>> bin(0xF3A)
+'0b111100111010'
+\end{lstlisting}
+\end{center}
+

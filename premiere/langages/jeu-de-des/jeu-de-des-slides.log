@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  17 AUG 2021 09:26
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  26 AUG 2021 23:19
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/jeu-de-des/jeu-de-des-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/jeu-de-des/jeu-de-des-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.113 seconds
+luaotfload | main : initialization completed in 0.138 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1928,15 +1928,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  45091 strings out of 494383
- 244341,1144653 words of node,token memory allocated
- 144199 words of node memory still in use:
-   321 hlist, 10 vlist, 166 rule, 37 disc, 10 local_par, 312 glue, 192 kern, 42 penalty, 16391 glyph, 8493 attribute, 106 glue_spec, 1418 attribute_list, 5 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_dest, 1 pdf_action, 240 pdf_colorstack nodes
-   avail lists: 1:6,2:2234,3:394,4:1964,5:1569,6:60,7:923,8:1436,9:2603,10:21,11:172,12:1
+ 244335,1144653 words of node,token memory allocated
+ 144255 words of node memory still in use:
+   321 hlist, 10 vlist, 166 rule, 37 disc, 10 local_par, 312 glue, 192 kern, 42 penalty, 16397 glyph, 8499 attribute, 106 glue_spec, 1419 attribute_list, 5 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_dest, 1 pdf_action, 240 pdf_colorstack nodes
+   avail lists: 1:7,2:2234,3:394,4:1964,5:1569,6:60,7:923,8:1436,9:2603,10:21,11:172,12:1
  47395 multiletter control sequences out of 65536+600000
  95 fonts using 12142471 bytes
  70i,15n,95p,1186b,1077s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on jeu-de-des-slides.pdf (45 pages, 143654 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on jeu-de-des-slides.pdf (45 pages, 143885 bytes).
 
 PDF statistics: 1033 PDF objects out of 1200 (max. 8388607)
  937 compressed objects within 10 object streams

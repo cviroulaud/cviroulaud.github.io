@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  18 AUG 2021 10:53
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  26 AUG 2021 23:20
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/exercices-constructions-elementaires/exercices-constructions-elementaires-correction-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/exercices-constructions-elementaires/exercices-constructions-elementaires-correction-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.101 seconds
+luaotfload | main : initialization completed in 0.171 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -2126,15 +2126,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  45099 strings out of 494383
- 381781,1144653 words of node,token memory allocated
- 238217 words of node memory still in use:
-   4016 hlist, 11 vlist, 2243 rule, 238 disc, 20 local_par, 1738 glue, 2480 kern, 40 penalty, 14507 glyph, 17973 attribute, 106 glue_spec, 2998 attribute_list, 5 write, 3126 pdf_colorstack nodes
-   avail lists: 1:6,2:1751,3:744,4:3718,5:2946,6:59,7:2583,8:2673,9:4805,10:27,11:281,12:1
+ 381775,1144653 words of node,token memory allocated
+ 238273 words of node memory still in use:
+   4016 hlist, 11 vlist, 2243 rule, 238 disc, 20 local_par, 1738 glue, 2480 kern, 40 penalty, 14513 glyph, 17979 attribute, 106 glue_spec, 2999 attribute_list, 5 write, 3126 pdf_colorstack nodes
+   avail lists: 1:8,2:1751,3:745,4:3718,5:2946,6:58,7:2583,8:2673,9:4805,10:27,11:281,12:1
  47307 multiletter control sequences out of 65536+600000
  65 fonts using 9453519 bytes
  70i,15n,95p,1249b,1092s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on exercices-constructions-elementaires-correction-slides.pdf (44 pages, 118515 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on exercices-constructions-elementaires-correction-slides.pdf (44 pages, 119161 bytes).
 
 PDF statistics: 1129 PDF objects out of 1200 (max. 8388607)
  1040 compressed objects within 11 object streams

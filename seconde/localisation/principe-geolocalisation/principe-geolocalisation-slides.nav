@@ -48,10 +48,10 @@
 \headcommand {\beamer@framepages {19}{19}}
 \headcommand {\slideentry {2}{2}{2}{20/20}{Différents systèmes}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {2}{2}{3}{21/21}{Différents systèmes}{0}}
-\headcommand {\beamer@framepages {21}{21}}
 \headcommand {\beamer@partpages {1}{21}}
 \headcommand {\beamer@subsectionpages {19}{21}}
 \headcommand {\beamer@sectionpages {13}{21}}
 \headcommand {\beamer@documentpages {21}}
 \headcommand {\gdef \inserttotalframenumber {21}}
+\headcommand {\slideentry {2}{2}{3}{21/21}{Différents systèmes}{0}}
+\headcommand {\beamer@framepages {21}{21}}

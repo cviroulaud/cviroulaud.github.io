@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 JUN 2021 17:44
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 AUG 2021 20:31
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/paradigmes/POO/minecraft/minecraft-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/paradigmes/POO/minecraft/minecraft-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.163 seconds
+luaotfload | main : initialization completed in 0.108 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1695,7 +1695,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
 
 ]
-<ressources/jeu.png, id=144, 1208.515pt x 1461.46pt>
+<ressources/jeu.png, id=145, 1208.515pt x 1461.46pt>
 File: ressources/jeu.png Graphic file (type png)
 <use ressources/jeu.png>
 Package luatex.def Info: ressources/jeu.png  used on input line 45.
@@ -1741,17 +1741,17 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
 
 <./ressources/jeu.png>]
-<ressources/terre.png, id=192, 150.5625pt x 150.5625pt>
+<ressources/terre.png, id=193, 150.5625pt x 150.5625pt>
 File: ressources/terre.png Graphic file (type png)
 <use ressources/terre.png>
 Package luatex.def Info: ressources/terre.png  used on input line 71.
 (luatex.def)             Requested size: 85.35826pt x 85.36203pt.
-<ressources/roche.png, id=193, 150.5625pt x 150.5625pt>
+<ressources/roche.png, id=194, 150.5625pt x 150.5625pt>
 File: ressources/roche.png Graphic file (type png)
 <use ressources/roche.png>
 Package luatex.def Info: ressources/roche.png  used on input line 71.
 (luatex.def)             Requested size: 85.35826pt x 85.36203pt.
-<ressources/obsidienne.png, id=194, 150.5625pt x 150.5625pt>
+<ressources/obsidienne.png, id=195, 150.5625pt x 150.5625pt>
 File: ressources/obsidienne.png Graphic file (type png)
 <use ressources/obsidienne.png>
 Package luatex.def Info: ressources/obsidienne.png  used on input line 71.
@@ -1769,17 +1769,17 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
 
 ]
-<ressources/wood_pickaxe.png, id=216, 54.2025pt x 54.2025pt>
+<ressources/wood_pickaxe.png, id=217, 54.2025pt x 54.2025pt>
 File: ressources/wood_pickaxe.png Graphic file (type png)
 <use ressources/wood_pickaxe.png>
 Package luatex.def Info: ressources/wood_pickaxe.png  used on input line 85.
 (luatex.def)             Requested size: 85.35826pt x 85.36855pt.
-<ressources/diamond_pickaxe.png, id=217, 36.135pt x 36.135pt>
+<ressources/diamond_pickaxe.png, id=218, 36.135pt x 36.135pt>
 File: ressources/diamond_pickaxe.png Graphic file (type png)
 <use ressources/diamond_pickaxe.png>
 Package luatex.def Info: ressources/diamond_pickaxe.png  used on input line 85.
 (luatex.def)             Requested size: 85.35826pt x 85.36272pt.
-<ressources/shovel.png, id=218, 453.695pt x 453.695pt>
+<ressources/shovel.png, id=219, 453.695pt x 453.695pt>
 File: ressources/shovel.png Graphic file (type png)
 <use ressources/shovel.png>
 Package luatex.def Info: ressources/shovel.png  used on input line 85.
@@ -1797,7 +1797,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
 
 <./ressources/terre.png><./ressources/roche.png><./ressources/obsidienne.png>]
-<ressources/head.png, id=242, 231.86626pt x 217.81375pt>
+<ressources/head.png, id=243, 231.86626pt x 217.81375pt>
 File: ressources/head.png Graphic file (type png)
 <use ressources/head.png>
 Package luatex.def Info: ressources/head.png  used on input line 101.
@@ -2323,15 +2323,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  45937 strings out of 494383
- 931547,1144653 words of node,token memory allocated
- 238290 words of node memory still in use:
-   73 hlist, 29 vlist, 12 rule, 25 disc, 12 local_par, 238 glue, 15 kern, 29 penalty, 28218 glyph, 15675 attribute, 109 glue_spec, 2615 attribute_list, 5 write, 30 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 2 pdf_dest, 4 pdf_action, 46 pdf_colorstack nodes
+ 931557,1144653 words of node,token memory allocated
+ 238346 words of node memory still in use:
+   73 hlist, 29 vlist, 12 rule, 25 disc, 12 local_par, 238 glue, 15 kern, 29 penalty, 28224 glyph, 15681 attribute, 109 glue_spec, 2616 attribute_list, 5 write, 30 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 2 pdf_dest, 4 pdf_action, 46 pdf_colorstack nodes
    avail lists: 1:4,2:10229,3:1701,4:17436,5:13373,6:196,7:6161,8:12013,9:21859,10:34,11:1464,12:1
  48130 multiletter control sequences out of 65536+600000
  97 fonts using 12416175 bytes
  70i,16n,95p,1200b,1028s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmsans10-boldoblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on minecraft-slides.pdf (53 pages, 1206974 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmsans10-boldoblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on minecraft-slides.pdf (53 pages, 1207199 bytes).
 
 PDF statistics: 1432 PDF objects out of 1440 (max. 8388607)
  1209 compressed objects within 13 object streams

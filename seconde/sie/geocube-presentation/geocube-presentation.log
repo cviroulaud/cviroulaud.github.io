@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 JUL 2021 10:29
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 AUG 2021 20:44
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/sie/geocube-presentation/geocube-presentation
 (/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/sie/geocube-presentation/geocube-presentation.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.303 seconds
+luaotfload | main : initialization completed in 0.160 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1601,7 +1601,7 @@ Package newfloat Info: float type `listing'=16 on input line 11.
 ] (./geocube-presentation.toc) [2
 
 ]
-<ressources/ign.png, id=57, 451.6875pt x 496.85625pt>
+<ressources/ign.png, id=58, 451.6875pt x 496.85625pt>
 File: ressources/ign.png Graphic file (type png)
 <use ressources/ign.png>
 Package luatex.def Info: ressources/ign.png  used on input line 25.
@@ -1781,14 +1781,14 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of LuaTeX's memory you used:
  44371 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 33138 words of node memory still in use:
-   41 hlist, 12 vlist, 9 rule, 7 disc, 7 local_par, 2 math, 92 glue, 6 kern, 30 penalty, 3827 glyph, 1779 attribute, 106 glue_spec, 299 attribute_list, 5 write, 1 pdf_start_link, 1 pdf_end_link, 2 pdf_action, 26 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+ 33187 words of node memory still in use:
+   41 hlist, 12 vlist, 9 rule, 7 disc, 7 local_par, 2 math, 92 glue, 6 kern, 30 penalty, 3832 glyph, 1785 attribute, 106 glue_spec, 300 attribute_list, 5 write, 1 pdf_start_link, 1 pdf_end_link, 2 pdf_action, 26 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
    avail lists: 1:3,2:1006,3:118,4:153,5:89,6:36,7:682,8:79,9:208,10:12,11:78,12:1
  46865 multiletter control sequences out of 65536+600000
  107 fonts using 12903447 bytes
  70i,15n,95p,1193b,637s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on geocube-presentation.pdf (18 pages, 9205057 bytes).
+Output written on geocube-presentation.pdf (18 pages, 9205601 bytes).
 
 PDF statistics: 329 PDF objects out of 1000 (max. 8388607)
  250 compressed objects within 3 object streams

@@ -1,8 +1,0 @@
-\babel@toc {french}{}
-\beamer@sectionintoc {1}{Classe \textbf {\texttt {Object}}}{4}{0}{1}
-\beamer@subsectionintoc {1}{1}{La classe \textbf {\emph {Fraction}}}{5}{0}{1}
-\beamer@subsectionintoc {1}{2}{Héritage (notion hors programme)}{9}{0}{1}
-\beamer@sectionintoc {2}{Opérations sur les fractions}{16}{0}{2}
-\beamer@subsectionintoc {2}{1}{Opérations mathématiques}{17}{0}{2}
-\beamer@subsectionintoc {2}{2}{Opérateurs Python}{19}{0}{2}
-\beamer@subsectionintoc {2}{3}{Implémentation}{22}{0}{2}

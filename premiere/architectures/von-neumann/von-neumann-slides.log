@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  28 JUN 2021 17:41
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  26 AUG 2021 23:16
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/architectures/von-neumann/von-neumann-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/architectures/von-neumann/von-neumann-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.168 seconds
+luaotfload | main : initialization completed in 0.126 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1344,34 +1344,7 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
-Package: pgfpages 2011/01/05 ver 0.02
- (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count431
-\calc@Bcount=\count432
-\calc@Adimen=\dimen353
-\calc@Bdimen=\dimen354
-\calc@Askip=\skip144
-\calc@Bskip=\skip145
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count433
-\calc@Cskip=\skip146
-)
-\pgf@logicalpages=\count434
-\pgf@firstshipout=\count435
-\pgf@lastshipout=\count436
-\pgf@currentshipout=\count437
-\pgf@cpn=\count438
-\pgf@shipoutnextto=\count439
-\pgfphysicalheight=\dimen355
-\pgfphysicalwidth=\dimen356
-\pgfpages@shipoutbox=\box124
-)
-\pgfpages@box@1=\box125
-\pgfpages@box@2=\box126
- (./von-neumann-slides.aux
+))) (./von-neumann-slides.aux
 
 LaTeX Warning: Label `IMG' multiply defined.
 
@@ -1448,16 +1421,16 @@ LaTeX Font Info:    ... okay on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count440
-\scratchdimen=\dimen357
-\scratchbox=\box127
-\nofMPsegments=\count441
-\nofMParguments=\count442
+\scratchcounter=\count431
+\scratchdimen=\dimen353
+\scratchbox=\box124
+\nofMPsegments=\count432
+\nofMParguments=\count433
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count443
-\MPscratchDim=\dimen358
-\MPnumerator=\count444
-\makeMPintoPDFobject=\count445
+\MPscratchCnt=\count434
+\MPscratchDim=\dimen354
+\MPnumerator=\count435
+\makeMPintoPDFobject=\count436
 \everyMPtoPDFconversion=\toks66
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1471,14 +1444,14 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box128
+\AtBeginShipoutBox=\box125
 Package hyperref Info: Link coloring ON on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count446
+\c@section@level=\count437
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
@@ -1604,14 +1577,16 @@ LaTeX Info: Redefining \up on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count447
+\c@lstlisting=\count438
 
 No file pythontex-files-von-neumann-slides/von-neumann-slides.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
-\c@listing=\count448
+\c@listing=\count439
 Package newfloat Info: float type `listing'=16 on input line 11.
-(./von-neumann-slides.nav)
+(./von-neumann-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 LaTeX Font Info:    Try loading font information for U+msa on input line 28.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1624,17 +1599,17 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 28.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 28.
-<ressources/smartphone.jpeg, id=67, 346.29375pt x 230.8625pt>
+<ressources/smartphone.jpeg, id=88, 346.29375pt x 230.8625pt>
 File: ressources/smartphone.jpeg Graphic file (type jpg)
 <use ressources/smartphone.jpeg>
 Package luatex.def Info: ressources/smartphone.jpeg  used on input line 28.
 (luatex.def)             Requested size: 85.35826pt x 56.90526pt.
-<ressources/frigo.png, id=68, 1266.7325pt x 944.52875pt>
+<ressources/frigo.png, id=89, 1266.7325pt x 944.52875pt>
 File: ressources/frigo.png Graphic file (type png)
 <use ressources/frigo.png>
 Package luatex.def Info: ressources/frigo.png  used on input line 28.
 (luatex.def)             Requested size: 85.35826pt x 63.64484pt.
-<ressources/voiture.jpg, id=69, 2007.5pt x 1339.0025pt>
+<ressources/voiture.jpg, id=90, 2007.5pt x 1339.0025pt>
 File: ressources/voiture.jpg Graphic file (type jpg)
 <use ressources/voiture.jpg>
 Package luatex.def Info: ressources/voiture.jpg  used on input line 28.
@@ -1649,21 +1624,11 @@ Overfull \hbox (33.36378pt too wide) in paragraph at lines 28--28
 []  
  []
 
-[2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[2
 
+<./ressources/smartphone.jpeg><./ressources/frigo.png><./ressources/voiture.jpg>] (./von-neumann-slides.toc) [3
 
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation1'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-
-] (./von-neumann-slides.toc) [3
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation2'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-
-<./ressources/smartphone.jpeg><./ressources/frigo.png><./ressources/voiture.jpg>]
+]
 <ressources/processeur.jpg, id=131, 575.14874pt x 402.00188pt>
 File: ressources/processeur.jpg Graphic file (type jpg)
 <use ressources/processeur.jpg>
@@ -1688,42 +1653,20 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 43.
 [4
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation3'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
-
-]
-<ressources/Loi_de_Moore.png, id=159, 903.375pt x 627.34375pt>
+<./ressources/processeur.jpg>]
+<ressources/Loi_de_Moore.png, id=151, 903.375pt x 627.34375pt>
 File: ressources/Loi_de_Moore.png Graphic file (type png)
 <use ressources/Loi_de_Moore.png>
 Package luatex.def Info: ressources/Loi_de_Moore.png  used on input line 56.
 (luatex.def)             Requested size: 227.62204pt x 158.07039pt.
- [5
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation4'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
-
-<./ressources/processeur.jpg>]
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 56.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 56.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 56.
- (./von-neumann-slides.toc) [6
-
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[5
 
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation5'
+<./ressources/Loi_de_Moore.png>] (./von-neumann-slides.toc) [6
 
-warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
-
-<./ressources/Loi_de_Moore.png>]
-<ressources/barrette.jpg, id=216, 376.40625pt x 230.36063pt>
+]
+<ressources/barrette.jpg, id=193, 376.40625pt x 230.36063pt>
 File: ressources/barrette.jpg Graphic file (type jpg)
 <use ressources/barrette.jpg>
 Package luatex.def Info: ressources/barrette.jpg  used on input line 71.
@@ -1740,57 +1683,32 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 71.
 [7
 
+<./ressources/barrette.jpg>] [8
 
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation6'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
-
-] [8
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation7'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
-
-<./ressources/barrette.jpg>] [9
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation8'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
+] [9
 
 ]
-<ressources/memoires.jpg, id=291, 153.6942pt x 115.3911pt>
+<ressources/memoires.jpg, id=249, 153.6942pt x 115.3911pt>
 File: ressources/memoires.jpg Graphic file (type jpg)
 <use ressources/memoires.jpg>
 Package luatex.def Info: ressources/memoires.jpg  used on input line 114.
 (luatex.def)             Requested size: 227.62204pt x 170.90115pt.
  [10
 
+<./ressources/memoires.jpg>] (./von-neumann-slides.toc) [11
 
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation9'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
-
-] (./von-neumann-slides.toc) [11
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation10'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
-
-<./ressources/memoires.jpg>]
-<ressources/clavier.jpg, id=343, 1204.5pt x 487.8225pt>
+]
+<ressources/clavier.jpg, id=291, 1204.5pt x 487.8225pt>
 File: ressources/clavier.jpg Graphic file (type jpg)
 <use ressources/clavier.jpg>
 Package luatex.def Info: ressources/clavier.jpg  used on input line 128.
 (luatex.def)             Requested size: 85.35826pt x 34.5679pt.
-<ressources/souris.jpg, id=344, 803.0pt x 919.435pt>
+<ressources/souris.jpg, id=292, 803.0pt x 919.435pt>
 File: ressources/souris.jpg Graphic file (type jpg)
 <use ressources/souris.jpg>
 Package luatex.def Info: ressources/souris.jpg  used on input line 128.
 (luatex.def)             Requested size: 85.35826pt x 97.729pt.
-<ressources/webcam.jpg, id=345, 489.83pt x 451.6875pt>
+<ressources/webcam.jpg, id=293, 489.83pt x 451.6875pt>
 File: ressources/webcam.jpg Graphic file (type jpg)
 <use ressources/webcam.jpg>
 Package luatex.def Info: ressources/webcam.jpg  used on input line 128.
@@ -1802,23 +1720,18 @@ Overfull \hbox (13.23766pt too wide) in paragraph at lines 128--128
 
 [12
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation11'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
-
-]
-<ressources/ecran.jpg, id=374, 451.6875pt x 301.125pt>
+<./ressources/clavier.jpg><./ressources/souris.jpg><./ressources/webcam.jpg>]
+<ressources/ecran.jpg, id=311, 451.6875pt x 301.125pt>
 File: ressources/ecran.jpg Graphic file (type jpg)
 <use ressources/ecran.jpg>
 Package luatex.def Info: ressources/ecran.jpg  used on input line 141.
 (luatex.def)             Requested size: 85.35826pt x 56.90189pt.
-<ressources/imprimante.jpg, id=375, 903.375pt x 903.375pt>
+<ressources/imprimante.jpg, id=312, 903.375pt x 903.375pt>
 File: ressources/imprimante.jpg Graphic file (type jpg)
 <use ressources/imprimante.jpg>
 Package luatex.def Info: ressources/imprimante.jpg  used on input line 141.
 (luatex.def)             Requested size: 85.35826pt x 85.35284pt.
-<ressources/enceinte.jpg, id=376, 552.0625pt x 552.0625pt>
+<ressources/enceinte.jpg, id=313, 552.0625pt x 552.0625pt>
 File: ressources/enceinte.jpg Graphic file (type jpg)
 <use ressources/enceinte.jpg>
 Package luatex.def Info: ressources/enceinte.jpg  used on input line 141.
@@ -1830,60 +1743,31 @@ Overfull \hbox (13.23766pt too wide) in paragraph at lines 141--141
 
 [13
 
+<./ressources/ecran.jpg><./ressources/imprimante.jpg><./ressources/enceinte.jpg>] (./von-neumann-slides.toc) [14
 
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation12'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
-
-<./ressources/clavier.jpg><./ressources/souris.jpg><./ressources/webcam.jpg>] (./von-neumann-slides.toc) [14
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation13'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
-
-<./ressources/ecran.jpg><./ressources/imprimante.jpg><./ressources/enceinte.jpg>]
+]
 Overfull \hbox (10.35693pt too wide) in paragraph at lines 167--167
  [] 
  []
 
 [15
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation14'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
-
 ]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 184.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 184.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 184.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 184.
  [16
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation15'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
-
 ] [17
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation16'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
 
 ] [18
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation17'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
-
 ] (./von-neumann-slides.toc) [19
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation18'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1901,20 +1785,10 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 194.
 [20
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation19'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
-
 ] [21
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation20'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
-
 ]
-<ressources/babbage.jpg, id=589, 462.2871pt x 444.2196pt>
+<ressources/babbage.jpg, id=477, 462.2871pt x 444.2196pt>
 File: ressources/babbage.jpg Graphic file (type jpg)
 <use ressources/babbage.jpg>
 Package luatex.def Info: ressources/babbage.jpg  used on input line 212.
@@ -1929,13 +1803,8 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 212.
  [22
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation21'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
-
-]
-<ressources/zuse.jpg, id=612, 642.4pt x 481.8pt>
+<./ressources/babbage.jpg>]
+<ressources/zuse.jpg, id=496, 642.4pt x 481.8pt>
 File: ressources/zuse.jpg Graphic file (type jpg)
 <use ressources/zuse.jpg>
 Package luatex.def Info: ressources/zuse.jpg  used on input line 223.
@@ -1950,13 +1819,8 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 223.
  [23
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation22'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
-
-<./ressources/babbage.jpg>]
-<ressources/atanasoff.jpg, id=635, 125.268pt x 167.6664pt>
+<./ressources/zuse.jpg>]
+<ressources/atanasoff.jpg, id=514, 125.268pt x 167.6664pt>
 File: ressources/atanasoff.jpg Graphic file (type jpg)
 <use ressources/atanasoff.jpg>
 Package luatex.def Info: ressources/atanasoff.jpg  used on input line 234.
@@ -1971,13 +1835,8 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 234.
  [24
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation23'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
-
-<./ressources/zuse.jpg>]
-<ressources/eniac.jpg, id=659, 521.95pt x 398.48875pt>
+<./ressources/atanasoff.jpg>]
+<ressources/eniac.jpg, id=532, 521.95pt x 398.48875pt>
 File: ressources/eniac.jpg Graphic file (type jpg)
 <use ressources/eniac.jpg>
 Package luatex.def Info: ressources/eniac.jpg  used on input line 247.
@@ -1992,13 +1851,8 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 247.
  [25
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation24'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.24'
-
-<./ressources/atanasoff.jpg>]
-<ressources/configeniac.jpg, id=682, 25.696pt x 14.454pt>
+<./ressources/eniac.jpg>]
+<ressources/configeniac.jpg, id=550, 25.696pt x 14.454pt>
 File: ressources/configeniac.jpg Graphic file (type jpg)
 <use ressources/configeniac.jpg>
 Package luatex.def Info: ressources/configeniac.jpg  used on input line 261.
@@ -2007,12 +1861,7 @@ Package luatex.def Info: ressources/configeniac.jpg  used on input line 261.
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 [26
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation25'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
-
-<./ressources/eniac.jpg>]
+<./ressources/configeniac.jpg>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 286.
@@ -2028,13 +1877,8 @@ Overfull \hbox (10.35693pt too wide) in paragraph at lines 286--286
 
 [27
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation26'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
-
-<./ressources/configeniac.jpg>]
-<ressources/edvac.jpg, id=727, 571.13374pt x 451.6875pt>
+]
+<ressources/edvac.jpg, id=585, 571.13374pt x 451.6875pt>
 File: ressources/edvac.jpg Graphic file (type jpg)
 <use ressources/edvac.jpg>
 Package luatex.def Info: ressources/edvac.jpg  used on input line 300.
@@ -2051,103 +1895,43 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 300.
 [28
 
+<./ressources/edvac.jpg>] (./von-neumann-slides.toc) [29
 
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation27'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
-
-] (./von-neumann-slides.toc) [29
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation28'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
-
-<./ressources/edvac.jpg>]
-<ressources/cartemere.png, id=779, 1581.91pt x 812.03375pt>
+]
+<ressources/cartemere.png, id=626, 1581.91pt x 812.03375pt>
 File: ressources/cartemere.png Graphic file (type png)
 <use ressources/cartemere.png>
 Package luatex.def Info: ressources/cartemere.png  used on input line 309.
 (luatex.def)             Requested size: 227.62204pt x 116.84355pt.
-<ressources/inside.jpg, id=780, 803.0pt x 712.6625pt>
+<ressources/inside.jpg, id=627, 803.0pt x 712.6625pt>
 File: ressources/inside.jpg Graphic file (type jpg)
 <use ressources/inside.jpg>
 Package luatex.def Info: ressources/inside.jpg  used on input line 309.
 (luatex.def)             Requested size: 85.35826pt x 75.75064pt.
  [30
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation29'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.29'
-
-]
+<./ressources/cartemere.png><./ressources/inside.jpg>]
 File: ressources/voiture.jpg Graphic file (type jpg)
 <use ressources/voiture.jpg>
 Package luatex.def Info: ressources/voiture.jpg  used on input line 336.
 (luatex.def)             Requested size: 113.81102pt x 75.90305pt.
  [31
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation30'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.30'
-
-<./ressources/cartemere.png><./ressources/inside.jpg>] (./von-neumann-slides.toc) [32
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation31'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.31'
+] (./von-neumann-slides.toc) [32
 
 ] [33
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation32'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.32'
-
 ] [34
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation33'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.33'
 
 ] [35
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation34'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.34'
-
 ] [36
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation35'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.35'
 
 ] [37
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation36'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.36'
-
 ] [38
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation37'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.37'
-
 ] [39
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation38'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.38'
 
 ]
 \tf@nav=\write8
@@ -2159,14 +1943,6 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.38'
 \tf@snm=\write10
 
 \openout10 = von-neumann-slides.snm
- [40
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation39'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.39'
-
-]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
  (./von-neumann-slides.aux)
@@ -2181,19 +1957,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45227 strings out of 494383
- 244258,1144653 words of node,token memory allocated
- 168626 words of node memory still in use:
-   123 hlist, 29 vlist, 12 rule, 26 disc, 18 local_par, 28 math, 398 glue, 31 kern, 93 penalty, 20591 glyph, 7707 attribute, 109 glue_spec, 1287 attribute_list, 5 write, 30 pdf_literal, 9 pdf_start_link, 9 pdf_end_link, 2 pdf_dest, 6 pdf_action, 90 pdf_colorstack nodes
-   avail lists: 1:5,2:4832,3:1526,4:560,5:230,6:121,7:4096,8:275,9:1016,10:14,11:402,12:1
- 47578 multiletter control sequences out of 65536+600000
+ 44940 strings out of 494383
+ 156328,1144653 words of node,token memory allocated
+ 121206 words of node memory still in use:
+   44 hlist, 9 vlist, 3 rule, 5 disc, 6 local_par, 14 math, 180 glue, 13 kern, 43 penalty, 15112 glyph, 5349 attribute, 106 glue_spec, 894 attribute_list, 3 write, 3 pdf_start_link, 3 pdf_end_link, 3 pdf_action, 34 pdf_colorstack nodes
+   avail lists: 1:8,2:2606,3:567,4:191,5:121,6:43,7:1061,8:125,9:345,10:12,11:145,12:1
+ 47305 multiletter control sequences out of 65536+600000
  99 fonts using 12273287 bytes
- 70i,15n,95p,1193b,1086s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on von-neumann-slides.pdf (39 pages, 6602160 bytes).
+ 70i,15n,95p,1193b,1076s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on von-neumann-slides.pdf (39 pages, 6571608 bytes).
 
-PDF statistics: 1114 PDF objects out of 1200 (max. 8388607)
- 931 compressed objects within 10 object streams
+PDF statistics: 888 PDF objects out of 1000 (max. 8388607)
+ 777 compressed objects within 8 object streams
  91 named destinations out of 1000 (max. 131072)
  106 words of extra memory for PDF output out of 10000 (max. 100000000)
 

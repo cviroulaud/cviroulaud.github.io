@@ -1,0 +1,73 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{DonRep 03}}}}
+\fancyhead[C]{\textbf{Représentation des entiers - exercices}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{aretenir}[Humour]
+    \begin{center}
+        {\Large Le monde est partagé en 10 catégories: les informaticiens et les autres.}
+    \end{center}
+\end{aretenir}
+\begin{exo}
+    \begin{enumerate}
+        \item Écrire en base 2 les entiers de 0 à 10.
+        \item Donner la représentation en base de 2 et sur 8 bits des entiers 14, 222, 42, 79.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+Écrire un programme qui convertit un entier positif donné en sa représentation binaire.
+\end{exo}
+\begin{exo}
+    Donner la représentation décimale des nombres binaires (non signés) suivants:
+    \begin{itemize}
+        \item 1010
+        \item 111110
+        \item 100101001
+    \end{itemize}
+\end{exo}
+\begin{exo}
+    Donner la représentation hexadécimale des nombres binaires suivants:
+    \begin{itemize}
+        \item 10010101
+        \item 11010101
+        \item 100010001
+        \item 11001101001010
+    \end{itemize}
+\end{exo}
+\begin{exo}
+    \begin{enumerate}
+        \item Donner la représentation binaire des nombres hexadécimaux: AA, BB8
+        \item Quelle est la valeur en base 10 de l'entier qui s'écrit BEEF en base 16?
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    Donner, si c'est possible, la représentation en complément à 2 sur 8 bits des entiers suivants: -10, -128, -42, 97.
+\end{exo}
+\begin{exo}
+    Donner en base décimale la valeur des octets signés suivants:
+    \begin{itemize}
+        \item 11100111
+        \item 11000001
+    \end{itemize}
+\end{exo}
+\begin{exo}
+    Effectuer les additions suivantes en base 2:
+    \begin{enumerate}
+        \item $39+110$
+        \item $-53+35$
+        \item $119-8$
+        \item $19-93$
+    \end{enumerate}
+\end{exo}
+\end{document}

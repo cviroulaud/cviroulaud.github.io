@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Addition de deux nombres binaires}{4}{0}{1}
+\beamer@sectionintoc {2}{Une représentation naïve des entiers négatifs}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Bit de poids fort}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Inconvénients de la représentation}{13}{0}{2}
+\beamer@sectionintoc {3}{Le complément à 2 puissance \emph {n}}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{Définition}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{Calculer le complément à 2}{19}{0}{3}
+\beamer@subsectionintoc {3}{3}{Intérêt de la méthode}{24}{0}{3}

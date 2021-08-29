@@ -6,7 +6,7 @@
 @Time:   2021/06/30 14:45:04
 """
 
-
+#DODO assert x>0
 def dec_to_bin(x: int) -> str:
     """
     >>> dec_to_bin(35)

@@ -1,0 +1,15 @@
+\frametitle{}
+
+    Un système \emph{64 bits} peut représenter $2^{64}$ entiers.
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> import sys
+>>> sys.maxsize
+9223372036854775807
+\end{lstlisting}
+        \captionof{code}{Cette valeur correspond à $2^{63}-1$.}
+        \label{CODE}
+    \end{center}
+    \begin{aretenir}[Observation]
+        Un des bits ne semble pas utilisé.
+    \end{aretenir}

@@ -1,0 +1,101 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{DonRep 02}}}}
+\fancyhead[C]{\textbf{Représentation des entiers relatifs}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{center}
+    \framebox{Comment sont représentés les entiers négatifs en mémoire?}
+\end{center}
+\section{Addition de deux nombres binaires}
+Une addition en base 2 applique les mêmes principes qu'en base 10:
+    \begin{itemize}
+        \item $0 + 0 = 0$
+        \item $1 + 0 = 1$
+        \item $1 + 1 = 0$ et une retenue de 1
+        \item $1 + 1 + 1 = 1$ et une retenue de 1
+    \end{itemize}
+    \begin{center}
+        \begin{tabular}{*{9}{c}}
+              &   &   & {\small 1} & {\small 1} &   &   &   &   \\
+              & 0 & 0 & 0          & 1          & 1 & 0 & 0 & 1 \\
+            + & 0 & 0 & 0          & 0          & 1 & 1 & 0 & 0 \\
+            \hline
+              & 0 & 0 & 1          & 0          & 0 & 1 & 0 & 1 \\
+        \end{tabular}
+    \end{center}
+    \section{Une représentation naïve des entiers négatifs}
+    \subsection{Bit de poids fort}
+    Une première idée serait d'utiliser ce bit comme marqueur de signe:
+    \begin{itemize}
+        \item 0 pour un entier positif,
+        \item 1 pour un entier négatif.
+    \end{itemize}
+    Ainsi l'entier $-25$ serait encodé dans un mot mémoire de 1 octet:
+    $$-25_{10} = 10011001_2$$
+    \subsection{Inconvénients de la représentation}
+\begin{itemize}
+    \item Il y a 2 zéros.
+    \item L'algorithme d'addition ne fonctionne pas.
+\end{itemize}
+\section{Le complément à 2 puissance \emph{n}}
+\subsection{Définition}
+La valeur $2^n - \vert x\vert$ représente l'entier négatif \emph{x}.
+\begin{center}
+    \begin{tabular}{|cccccccccc|c|}
+        \hline
+        1 & 1   & 1 & 1 & 1 & 1 & 1 & 1 & = & $-1$   & $2^8 - \vert -1\vert = 255$   \\
+        \hline
+        1 & 1   & 1 & 1 & 1 & 1 & 1 & 0 & = & $-2$   & $2^8 - \vert -2\vert = 254$   \\
+        \hline
+        1 & ... &   &   &   &   &   &   & = & ...    &                               \\
+        \hline
+        1 & 0   & 0 & 0 & 0 & 0 & 0 & 1 & = & $-127$ & $2^8 - \vert -127\vert = 129$ \\
+        \hline
+        1 & 0   & 0 & 0 & 0 & 0 & 0 & 0 & = & $-128$ & $2^8 - \vert -128\vert=128$   \\
+        \hline
+        0 & 1   & 1 & 1 & 1 & 1 & 1 & 1 & = & 127    &                               \\
+        \hline
+        0 & ... &   &   &   &   &   &   & = & ...    &                               \\
+        \hline
+        0 & 0   & 0 & 0 & 0 & 0 & 1 & 0 & = & 2      &                               \\
+        \hline
+        0 & 0   & 0 & 0 & 0 & 0 & 0 & 1 & = & 1      &                               \\
+        \hline
+        0 & 0   & 0 & 0 & 0 & 0 & 0 & 0 & = & 0      &                               \\
+        \hline
+    \end{tabular}
+\end{center}
+\subsection{Calculer le complément à 2}
+Pour coder (−20):
+\begin{enumerate}
+    \item \begin{itemize}
+        \item Prendre le nombre positif 20 : 00010100
+        \item Inverser les bits : 11101011
+        \item Ajouter 1 : 11101100
+        \item −20 : 11101100
+    \end{itemize}
+    \item \begin{itemize}
+        \item Prendre le nombre positif 20 : 00010100
+        \item Garder la partie à droite telle quelle : 00010\underline{100}
+        \item Inverser la partie de gauche après le premier un : \underline{11101}100
+        \item −20 : 11101100
+    \end{itemize}
+\end{enumerate}
+\subsection{Intérêt de la méthode}
+\begin{itemize}
+    \item Il n'y a qu'un seul zéro.
+    \item On peut appliquer l'algorithme d'addition.
+\end{itemize}
+    
+\end{document}

@@ -56,6 +56,12 @@ def dijkstra(dico: dict, depart: str, arrivee: str) -> list:
         visites.add(en_cours)
         for voisin in dico[en_cours]:
             """
+            ERREUR: on ne calcule la distance que si le voisin
+            n'a pas déjà été visité (s'il a été visité sa distance
+            est déjà optimale)
+            if voisin[0] not in visites: devrait être avant dist_calc
+            """
+            """
             La distance calculée pour atteindre voisin est:
                 la distance du noeud en cours
                 + l'arc entre ce noeud et le voisin

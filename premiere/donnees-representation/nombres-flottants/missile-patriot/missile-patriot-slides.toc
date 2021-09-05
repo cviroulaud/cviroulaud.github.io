@@ -1,0 +1,13 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Représentation générale des nombres réels}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Écriture scientifique}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Représentation en mémoire}{7}{0}{1}
+\beamer@sectionintoc {2}{La norme \emph {IEEE 754}}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Les choix effectués}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Les formats}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Un exemple}{17}{0}{2}
+\beamer@subsectionintoc {2}{4}{Pour aller plus loin}{20}{0}{2}
+\beamer@sectionintoc {3}{Limites de la représentation}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{Convertir un nombre réel}{23}{0}{3}
+\beamer@subsectionintoc {3}{2}{Erreur de calcul?}{25}{0}{3}
+\beamer@sectionintoc {4}{Imprécision du missile Patriot}{29}{0}{4}

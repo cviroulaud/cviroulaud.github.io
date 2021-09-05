@@ -1,0 +1,19 @@
+\frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def choix_machine(variante: bool) -> str:
+    """
+    Donne la proposition de la machine.
+
+    Args:
+        variante (booléen): choix de la variante
+
+    Returns:
+        str: renvoie le choix de la machine
+    """
+    if variante:
+        ...
+\end{lstlisting}
+    \end{center}
+

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 AUG 2021 14:58
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 AUG 2021 15:44
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/representation-entier/exercices/exercices-entiers-slides-correction
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/representation-entier/exercices/exercices-entiers-slides-correction.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.148 seconds
+luaotfload | main : initialization completed in 0.152 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1573,7 +1573,11 @@ Package newfloat Info: New float `listing' with options `fileext=lopytx' on inpu
 Package newfloat Info: float type `listing'=16 on input line 11.
 (./exercices-entiers-slides-correction.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./exercices-entiers-slides-correction.toc) [2
+] (./exercices-entiers-slides-correction.toc)
+Overfull \vbox (26.73048pt too high) detected at line 15
+ []
+
+[2
 
 ]
 LaTeX Font Info:    Try loading font information for U+msa on input line 39.
@@ -1594,7 +1598,11 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
 
 ] [5
 
-] (./exercices-entiers-slides-correction.toc) [6
+] (./exercices-entiers-slides-correction.toc)
+Overfull \vbox (26.73048pt too high) detected at line 86
+ []
+
+[6
 
 ]
 \openout4 = exercices-entiers-slides-correction.vrb
@@ -1610,19 +1618,35 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 12.
 ) [7
 
-] (./exercices-entiers-slides-correction.toc) [8
+] (./exercices-entiers-slides-correction.toc)
+Overfull \vbox (26.73048pt too high) detected at line 104
+ []
+
+[8
 
 ] [9
 
-] (./exercices-entiers-slides-correction.toc) [10
+] (./exercices-entiers-slides-correction.toc)
+Overfull \vbox (26.73048pt too high) detected at line 115
+ []
+
+[10
 
 ] [11
 
-] (./exercices-entiers-slides-correction.toc) [12
+] (./exercices-entiers-slides-correction.toc)
+Overfull \vbox (26.73048pt too high) detected at line 128
+ []
+
+[12
 
 ] [13
 
-] (./exercices-entiers-slides-correction.toc) [14
+] (./exercices-entiers-slides-correction.toc)
+Overfull \vbox (26.73048pt too high) detected at line 139
+ []
+
+[14
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1635,13 +1659,21 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 153.
  [15
 
-] (./exercices-entiers-slides-correction.toc) [16
+] (./exercices-entiers-slides-correction.toc)
+Overfull \vbox (26.73048pt too high) detected at line 154
+ []
+
+[16
 
 ] [17
 
 ] [18
 
-] (./exercices-entiers-slides-correction.toc) [19
+] (./exercices-entiers-slides-correction.toc)
+Overfull \vbox (26.73048pt too high) detected at line 173
+ []
+
+[19
 
 ] [20
 
@@ -1656,6 +1688,14 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 200.
  [21
 
+] (./exercices-entiers-slides-correction.toc)
+Overfull \vbox (26.73048pt too high) detected at line 201
+ []
+
+[22
+
+] [23
+
 ]
 \tf@nav=\write8
 
@@ -1666,33 +1706,29 @@ Package mdframed Info: mdframed inside a box
 \tf@snm=\write10
 
 \openout10 = exercices-entiers-slides-correction.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
  (./exercices-entiers-slides-correction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
 Package rerunfilecheck Info: File `exercices-entiers-slides-correction.out' has not changed.
-(rerunfilecheck)             Checksum: 08EB77D2A712435D31D60284F24DB266;768.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: EA8E18446A2E22DEEA8A1F7A1F830FFC;864.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44683 strings out of 494383
- 156328,1144653 words of node,token memory allocated
- 50234 words of node memory still in use:
-   80 hlist, 8 vlist, 8 rule, 3 disc, 8 local_par, 8 math, 212 glue, 9 kern, 57 penalty, 5064 glyph, 4725 attribute, 106 glue_spec, 790 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 32 pdf_colorstack nodes
-   avail lists: 1:3,2:1153,3:203,4:1930,5:1525,6:48,7:798,8:1360,9:2506,10:20,11:165,12:1
- 47216 multiletter control sequences out of 65536+600000
+ 44703 strings out of 494383
+ 156322,1144653 words of node,token memory allocated
+ 52657 words of node memory still in use:
+   46 hlist, 11 vlist, 23 rule, 12 disc, 5 local_par, 4 math, 136 glue, 16 kern, 26 penalty, 5771 glyph, 4113 attribute, 106 glue_spec, 688 attribute_list, 3 write, 14 pdf_colorstack nodes
+   avail lists: 1:3,2:2140,3:344,4:1954,5:1519,6:54,7:658,8:1346,9:2545,10:20,11:157,12:1
+ 47224 multiletter control sequences out of 65536+600000
  87 fonts using 11108503 bytes
  70i,15n,95p,1239b,1175s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on exercices-entiers-slides-correction.pdf (21 pages, 84467 bytes).
+Output written on exercices-entiers-slides-correction.pdf (23 pages, 88950 bytes).
 
-PDF statistics: 507 PDF objects out of 1000 (max. 8388607)
- 447 compressed objects within 5 object streams
- 52 named destinations out of 1000 (max. 131072)
- 90 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 582 PDF objects out of 1000 (max. 8388607)
+ 519 compressed objects within 6 object streams
+ 57 named destinations out of 1000 (max. 131072)
+ 98 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Notion de fonction}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Fonction mathématique}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Fonction en programmation}{6}{0}{1}
+\beamer@sectionintoc {2}{Pierre feuille ciseaux}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Création de la fonction}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Variante}{13}{0}{2}
+\beamer@subsectionintoc {2}{3}{Variables locales}{18}{0}{2}
+\beamer@sectionintoc {3}{Bonnes pratiques}{22}{0}{3}

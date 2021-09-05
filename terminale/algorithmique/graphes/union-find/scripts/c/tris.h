@@ -1,0 +1,1 @@
+void tri_rapide(Arete **t, int deb, int fin);

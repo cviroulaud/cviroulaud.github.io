@@ -1,0 +1,12 @@
+\frametitle{Erreur de calcul?}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> 0.2 + 0.1
+0.30000000000000004
+\end{lstlisting}
+\captionof{code}{Ce code renvoie un résultat surprenant.
+}
+\label{CODE}
+\end{center}
+

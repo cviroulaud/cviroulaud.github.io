@@ -83,10 +83,10 @@
 \headcommand {\beamer@framepages {32}{32}}
 \headcommand {\slideentry {3}{3}{2}{33/38}{Évolutions du modèle}{0}}
 \headcommand {\beamer@framepages {33}{38}}
-\headcommand {\slideentry {3}{3}{3}{39/39}{Évolutions du modèle}{0}}
-\headcommand {\beamer@framepages {39}{39}}
 \headcommand {\beamer@partpages {1}{39}}
 \headcommand {\beamer@subsectionpages {32}{39}}
 \headcommand {\beamer@sectionpages {19}{39}}
 \headcommand {\beamer@documentpages {39}}
 \headcommand {\gdef \inserttotalframenumber {32}}
+\headcommand {\slideentry {3}{3}{3}{39/39}{Évolutions du modèle}{0}}
+\headcommand {\beamer@framepages {39}{39}}

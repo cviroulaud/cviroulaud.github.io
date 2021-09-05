@@ -1,0 +1,75 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_lua.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\fancyhead[L]{Exercices nombres flottants}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Première - NSI} %\today
+\fancyfoot[L]{~\\Christophe Viroulaud}
+\fancyfoot[C]{\textbf{Page \thepage}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{Form}
+\begin{exo}
+Quel est le type Python des valeurs suivantes?
+\begin{enumerate}
+\item 12$\;\rightarrow\;$int
+\item 23.7$\;\rightarrow\;$float
+\item -8$\;\rightarrow\;$int
+\item 36.$\;\rightarrow\;$float
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Convertir ces nombres réels en représentation binaire sur 32 bits, en utilisant la norme IEEE~754.
+\begin{enumerate}
+\item 1 01111110 11110000000000000000000
+\begin{itemize}
+\item signe: $(-1)^1=-1$
+\item exposant: $(2^6+2^5+2^4+2^3+2^2+2^1)-127=126-127=-1$
+\item mantisse: $1+2^{-1}+2^{-2}+2^{-3}+2^{-4} = 1,9375$
+\item $-1×1,9375×2^{-1}=-0,96875$
+\end{itemize}
+\item 0 10000011 11100000000000000000000
+\begin{itemize}
+\item signe: $(-1)^0=1$
+\item exposant: $(2^7+2^1+2^0)-127=131-127=4$
+\item mantisse: $1+2^{-1}+2^{-2}+2^{-3} = 1,875$
+\item $1×1,875×2^{4}=30$
+\end{itemize}
+\item 0 01011000 01000101100000000000000
+\begin{itemize}
+\item signe: $(-1)^0=1$
+\item exposant: $(2^6+2^4+2^3)-127=88-127=-39$
+\item mantisse: $1+2^{-2}+2^{-6}+2^{-8}+2^{-9} = 1,271484375$
+\item $1×1,271484375×2^{-39}=2,3128166×10^{-12}$
+\end{itemize}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Donner la représentation flottante en simple précision des nombres réels suivants:
+\begin{enumerate}
+\item $255_{10}=11111111_2=1,1111111×2^7$
+\begin{itemize}
+\item signe: 0
+\item exposant: $7+127=134_{10}=10000110_2$
+\item mantisse: $11111110000000000000000$
+\item $0 10000110 11111110000000000000000$
+\end{itemize}
+\item $-1×32,75_{10}=-1×100000,11=-1×1,0000011×2^5$
+\begin{itemize}
+\item signe: 1
+\item exposant: $5+127=132_{10}=10000100_2$
+\item mantisse: $00000110000000000000000$
+\item $1 10000100 00000110000000000000000$
+\end{itemize}
+\item $0,125_{10}=0,001_2=1×2^{-3}$
+\begin{itemize}
+\item signe: 0
+\item exposant: $-3+127=124_{10}=01111100_2$
+\item mantisse: $00000000000000000000000$
+\item $0 01111100 00000000000000000000000$
+\end{itemize}
+\end{enumerate}
+\end{exo}
+\end{Form}
+\end{document}

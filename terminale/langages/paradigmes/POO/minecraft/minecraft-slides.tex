@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Programmation Orientée Objet\\Minecraft}
 \date{\framebox{\textbf{Lang 01}}}
@@ -608,7 +608,7 @@ def ramasser_outil(self, outil: object) -> bool:
 
     \begin{center}
     \begin{lstlisting}[language=Python , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
-# récupère l'impact de l'objet en cours
+# récupère l'impact de l'outil en cours
 impact = self.outils[self.en_main].impact
 # l'outil s'use
 self.outils[self.en_main].resistance -= USURE

@@ -24,8 +24,8 @@ class File_priorite:
         # remonte
         i_fils = len(self.tas)-1
         i_pere = (i_fils-1)//2
-        # s'arrête tout seul à 0 (i_fils = i_pere = 0)
-        while self.tas[i_fils][1] < self.tas[i_pere][1]:
+        # s'arrête tout seul à 0 (i_fils = i_pere = 0) <-- Non: voir Prim
+        while i_fils == 0 or self.tas[i_fils][1] < self.tas[i_pere][1]:
             # inversion = remonte
             self.tas[i_fils], self.tas[i_pere] = self.tas[i_pere], self.tas[i_fils]
             # cas suivant

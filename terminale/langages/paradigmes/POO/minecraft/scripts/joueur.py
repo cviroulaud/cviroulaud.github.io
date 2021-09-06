@@ -34,7 +34,7 @@ class Joueur:
         if self.en_main >= len(self.outils):  # pas d'outil
             impact = 1
         else:
-            # récupère l'impact de l'objet en cours
+            # récupère l'impact de l'outil en cours
             impact = self.outils[self.en_main].impact
             # l'outil s'use
             self.outils[self.en_main].resistance -= USURE

@@ -49,6 +49,6 @@ while predecesseurs[noeud] is not None:
                         (noeud[1]+.5)*taille, 
                         (predecesseurs[noeud][0]+.5)*taille, 
                         (predecesseurs[noeud][1]+.5)*taille, 
-                        fill="#FF0000")
+                        fill="#FF0000", width=2)
     noeud = predecesseurs[noeud]
 fenetre.mainloop()

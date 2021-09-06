@@ -74,6 +74,7 @@ Noeud *defiler(Tas *t) {
   // faire redescendre sur le plus petit fils
   int en_cours = 0;
   int fils_mini = get_fils_mini(t, 0);
+  //TODO erreur dans la condition du while???
   while (fils_mini > 0 || t->tab[en_cours] < t->tab[fils_mini]) {
     Noeud *temp = t->tab[en_cours];
     t->tab[en_cours] = t->tab[fils_mini];

@@ -1,0 +1,151 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Calcul de la moyenne\\Exercice commenté}
+\date{\framebox{\textbf{ArchMat 04}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+Pour faciliter le travail des enseignants, on se propose de construire un programme qui permet de calculer la moyenne des notes d'un élève.
+
+\end{frame}
+\begin{frame}
+    \frametitle{Cahier des charges}
+
+Le programme devra:
+\begin{itemize}
+    \item demander à l'utilisateur de rentrer huit notes,
+    \item stocker chacune des notes dans la mémoire,
+    \item calculer la somme des notes,
+    \item calculer la moyenne,
+    \item stocker en mémoire puis afficher la moyenne.
+\end{itemize}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Initialisation des paramètres}
+
+\begin{center}
+\begin{lstlisting}[language={[x86masm]Assembler} , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+MOV R0,#0
+MOV R12,#8        //nombre de notes
+MOV R11,#0        //compteur
+MOV R10,#64       //adresse de stockage
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Récupération d'une note}
+
+\begin{center}
+\begin{lstlisting}[language={[x86masm]Assembler} , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+LDR R1,.InputNum
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Commentaire]
+Il faut effectuer cette opération huit fois.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Stockage d'une note}
+
+\begin{center}
+\begin{lstlisting}[language={[x86masm]Assembler} , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+STR R1,[R10]      //stockage de la note
+ADD R10,R10,#4
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Commentaire]
+Les adresses vont de quatre en quatre dans cette mémoire.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Somme des notes}
+
+\begin{center}
+\begin{lstlisting}[language={[x86masm]Assembler} , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+ADD R0,R0,R1
+\end{lstlisting}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Boucle}
+
+\begin{center}
+\begin{lstlisting}[language={[x86masm]Assembler} , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+ADD R11,R11,#1
+CMP R11,R12
+BNE entreenote
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Commentaire]
+Il faut définir un label (\textbf{\texttt{entreenote}}) pour boucler.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Boucle complète}
+
+\begin{center}
+\begin{lstlisting}[language={[x86masm]Assembler} , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    MOV R0,#0
+    MOV R12,#8        //nombre de notes
+    MOV R11,#0        //compteur
+    MOV R10,#64       //adresse de stockage
+entreenote:
+    LDR R1,.InputNum
+    STR R1,[R10]      //stockage de la note
+    ADD R10,R10,#4
+    ADD R0,R0,R1      //somme
+    ADD R11,R11,#1
+    CMP R11,R12
+    BNE entreenote
+\end{lstlisting}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Moyenne}
+
+\begin{center}
+\begin{lstlisting}[language={[x86masm]Assembler} , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+LSR R0,R0,#3      //moyenne
+STR R0,[R10]      //stockage moyenne
+STR R0,.WriteUnsignedNum
+HALT
+\end{lstlisting}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Code complet}
+
+\begin{center}
+\begin{lstlisting}[language={[x86masm]Assembler} , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    MOV R0,#0
+    MOV R12,#8        //nombre de notes
+    MOV R11,#0        //compteur
+    MOV R10,#64       //adresse de stockage
+entreenote:
+    LDR R1,.InputNum
+    STR R1,[R10]      //stockage de la note
+    ADD R10,R10,#4
+    ADD R0,R0,R1      //somme
+    ADD R11,R11,#1
+    CMP R11,R12
+    BNE entreenote
+    LSR R0,R0,#3      //moyenne
+    STR R0,[R10]      //stockage moyenne
+    STR R0,.WriteUnsignedNum
+    HALT
+\end{lstlisting}
+\end{center}
+\end{frame}
+\end{document}

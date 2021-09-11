@@ -31,6 +31,7 @@ int main(int argc, char *argv[]) {
   //non_visites->tab[0]->distance = 0;
   tab_final[0]->distance = 0;
 
+  // 'visites' ne sert à rien: la file est déjà remplie
   Noeud **visites = malloc(taille * sizeof(visites));
   int ligne = 0; // pour ajouter dans "visites" et parcourir matrice
 

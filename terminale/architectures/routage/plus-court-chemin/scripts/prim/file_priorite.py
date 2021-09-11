@@ -27,7 +27,8 @@ def enfiler(l: list, s: dict, nom: str) -> None:
     # remonte
     i_fils = len(l)-1
     i_pere = (i_fils-1)//2
-    while i_fils == 0 or s[l[i_fils]].cout < s[l[i_pere]].cout:
+    #i_fils=0 --> on est remonté à la racine
+    while i_fils > 0 and s[l[i_fils]].cout < s[l[i_pere]].cout:
         l[i_pere], l[i_fils] = l[i_fils], l[i_pere]
         i_fils = i_pere
         i_pere = (i_fils-1)//2
@@ -53,20 +54,12 @@ def defiler(l: list, s: dict) -> str:
     # redescend
     i_pere = 0
     i_fils = get_fils_mini(l, s, i_pere)
+    #i_fils > 0 car get_fils_mini renvoie -1 si on sort de la list
     while i_fils > 0 and s[l[i_fils]].cout < s[l[i_pere]].cout:
         l[i_pere], l[i_fils] = l[i_fils], l[i_pere]
         i_pere = i_fils
         i_fils = get_fils_mini(l, s, i_pere)
     return res
-
-
-def get_i_pere(i: int) -> int:
-    if i == 0:
-        return 0
-    elif i//2 == 0:  # fils droit
-        return (i-1)//2
-    else:  # fils gauche
-        return i//2
 
 
 def maj_file(l: list, s: dict, n: str) -> None:
@@ -77,9 +70,8 @@ def maj_file(l: list, s: dict, n: str) -> None:
 
     # maj la liste
     # remonte
-    i_pere = get_i_pere(i_fils)
+    i_pere = (i_fils-1)//2
     while i_fils == 0 or s[l[i_fils]].cout < s[l[i_pere]].cout:
         l[i_pere], l[i_fils] = l[i_fils], l[i_pere]
         i_fils = i_pere
-        i_pere = (i_fils-1)//2  # get_i_pere(i_fils)
-    return l
+        i_pere = (i_fils-1)//2

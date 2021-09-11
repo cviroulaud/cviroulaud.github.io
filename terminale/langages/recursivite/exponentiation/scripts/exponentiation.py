@@ -47,7 +47,7 @@ def puissance_recursif_rapide(x, n):
         return puissance_recursif_rapide(x*x, n//2)
     else:
         return x*puissance_recursif_rapide(x*x, n//2)
-print(puissance_recursif_rapide(6,4))
+
 
 def puissance_iteratif_rapide(x, n):
     res = 1
@@ -57,10 +57,22 @@ def puissance_iteratif_rapide(x, n):
             n = n // 2
         else:
             res = res * x
-            x=x*x
+            x = x*x
             n = n//2
     return res
 
+
+def puissance_terminal(x, n, res):
+    if n == 0:
+        return res
+    elif n % 2 == 0:
+        return puissance_terminal(x*x, n//2, res)
+    else:
+        return puissance_terminal(x*x, n//2, res*x)
+
+
+print("terminal ", puissance_terminal(6, 4, 1))
+print("rec rapide ", puissance_recursif_rapide(6, 4))
 
 debut = time()
 puissance_star(2701, 19406)

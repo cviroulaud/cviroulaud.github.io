@@ -1,0 +1,91 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Mini-projet\\La banque}
+\date{\framebox{\textbf{Lang 04}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    La \emph{Banque des Périgourdins (BdP)} est une institution nouvellement implantée en Dordogne. Outre un compte courant classique, elle propose également des comptes rémunérés à différents taux. À une date fixée, la banque calcule les intérêts et crédite les comptes rémunérés des clients. Elle vous demande de créer un logiciel pour administrer correctement sa clientèle.
+    \note{\fcolorbox{black}{red}{{\LARGE modularite.zip sur site}}}
+\end{frame}
+\section{Cahier des charges}
+\begin{frame}
+    \frametitle{Cahier des charges}
+
+    \begin{aretenir}[]
+    Pour pouvoir modéliser le projet il faut s'appuyer sur un \emph{cahier des charges}. Celui-ci doit être le plus précis possible.
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+    \begin{itemize}
+        \item<1-> Un \texttt{\textbf{compte}} possède une somme d'argent, initialisée à 0 à l'ouverture. Ce compte peut être rémunéré ou non. Ce compte peut être crédité ou débité. En cas de débit supérieur à la somme présente sur le compte, le retrait est refusé.
+        \item <2-> Un \textbf{\texttt{client}} possède un ou plusieurs \textbf{\texttt{comptes}} rémunérés ou non. Il peut alimenter ou utiliser l'argent sur son compte. Il peut également décider d'ouvrir un nouveau compte en demandant un nouveau numéro à la \textbf{\texttt{banque}}.
+        \item <3-> La \textbf{\texttt{banque}} possède une liste de tous ses clients. Elle peut enregistrer un nouveau \textbf{\texttt{client}}. Dans ce cas elle lui ouvre automatiquement un \textbf{\texttt{compte}} non rémunéré. Enfin elle peut également appliquer un taux de rémunération de 3\% à tous les comptes rémunérés.
+    \end{itemize}
+\end{frame}
+\section{Programmation modulaire}
+\begin{frame}
+    \frametitle{Programmation modulaire}
+\begin{itemize}
+    \item <1-> Un projet important implique plusieurs programmeurs. On le découpe en plusieurs objets.
+    \item <2-> Chaque personne n'a pas besoin de connaître l'implémentation de chaque objet. Ce dernier lui fournit par contre une \textbf{interface} qui définit ce que peut faire l'objet.
+    \item <3-> La \texttt{\textbf{classe}} garantit ce que va faire l'objet (mais pas comment le programmeur va s'en servir).
+\end{itemize}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[]
+On crée une classe dans un fichier séparé. La classe, ainsi que chacune de ses méthodes est complétée d'une \textbf{\texttt{docstring}}. Elle servira d'\textbf{interface}.
+    \end{aretenir}
+\begin{activite}
+\begin{itemize}
+    \item Télécharger le dossier compressé \textbf{\texttt{modularite.zip}} et extraire les fichiers.
+    \item Lancer le fichier \textbf{\texttt{modularite\_poo.py}}.
+    \item Observer l'aide affichée.
+\end{itemize}
+\end{activite}
+\end{frame}
+\section{Modélisation}
+\begin{frame}
+    \frametitle{Modélisation}
+
+    \begin{activite}
+    Réfléchir en commun pour modéliser le concept de la banque. Définir les objets nécessaires et les actions possibles (cahier des charges page suivante).
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+    \begin{itemize}
+        \item Un \texttt{\textbf{compte}} possède une somme d'argent, initialisée à 0 à l'ouverture. Ce compte peut être rémunéré ou non. Ce compte peut être crédité ou débité. En cas de débit supérieur à la somme présente sur le compte, le retrait est refusé.
+        \item Un \textbf{\texttt{client}} possède un ou plusieurs \textbf{\texttt{comptes}} rémunérés ou non. Il peut alimenter ou utiliser l'argent sur son compte. Il peut également décider d'ouvrir un nouveau compte en demandant un nouveau numéro à la \textbf{\texttt{banque}}.
+        \item La \textbf{\texttt{banque}} possède une liste de tous ses clients. Elle peut enregistrer un nouveau \textbf{\texttt{client}}. Dans ce cas elle lui ouvre automatiquement un \textbf{\texttt{compte}} non rémunéré. Enfin elle peut également appliquer un taux de rémunération de 3\% à tous les comptes rémunérés.
+    \end{itemize}
+\end{frame}
+\section{Implémentation}
+\begin{frame}
+    \frametitle{Implémentation}
+
+    \begin{activite}
+    \begin{itemize}
+        \item Partager les tâches à effectuer et construire les différentes classes.
+        \item Construire un programme qui crée la banque et plusieurs clients.
+    \end{itemize}
+    \end{activite}
+
+\end{frame}
+\end{document}

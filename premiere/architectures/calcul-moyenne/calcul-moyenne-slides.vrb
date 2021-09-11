@@ -1,0 +1,22 @@
+\frametitle{Code complet}
+
+\begin{center}
+\begin{lstlisting}[language={[x86masm]Assembler} , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    MOV R0,#0
+    MOV R12,#8        //nombre de notes
+    MOV R11,#0        //compteur
+    MOV R10,#64       //adresse de stockage
+entreenote:
+    LDR R1,.InputNum
+    STR R1,[R10]      //stockage de la note
+    ADD R10,R10,#4
+    ADD R0,R0,R1      //somme
+    ADD R11,R11,#1
+    CMP R11,R12
+    BNE entreenote
+    LSR R0,R0,#3      //moyenne
+    STR R0,[R10]      //stockage moyenne
+    STR R0,.WriteUnsignedNum
+    HALT
+\end{lstlisting}
+\end{center}

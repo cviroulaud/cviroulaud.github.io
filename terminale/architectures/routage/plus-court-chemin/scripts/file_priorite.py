@@ -25,7 +25,8 @@ class File_priorite:
         i_fils = len(self.tas)-1
         i_pere = (i_fils-1)//2
         # s'arrête tout seul à 0 (i_fils = i_pere = 0) <-- Non: voir Prim
-        while i_fils == 0 or self.tas[i_fils][1] < self.tas[i_pere][1]:
+        #i_fils=0 --> on est remonté à la racine
+        while i_fils > 0 and self.tas[i_fils][1] < self.tas[i_pere][1]:
             # inversion = remonte
             self.tas[i_fils], self.tas[i_pere] = self.tas[i_pere], self.tas[i_fils]
             # cas suivant
@@ -54,6 +55,7 @@ class File_priorite:
         # redescend sur le plus petit fils
         i_pere = 0
         i_fils = self.get_fils_mini(i_pere)
+        #i_fils > 0 car get_fils_mini renvoie -1 si on sort de la list
         while i_fils > 0 and self.tas[i_pere][1] > self.tas[i_fils][1]:
             # inversion = descend
             self.tas[i_fils], self.tas[i_pere] = self.tas[i_pere], self.tas[i_fils]
@@ -61,3 +63,18 @@ class File_priorite:
             i_pere = i_fils
             i_fils = self.get_fils_mini(i_pere)
         return res
+
+if __name__ == "__main__":
+    f=File_priorite()
+    f.enfiler(("C",10))
+    print(f.tas)
+    f.enfiler(("B",6))
+    print(f.tas)
+    f.enfiler(("D",17))
+    print(f.tas)
+    f.enfiler(("E",26))
+    print(f.tas)
+    f.enfiler(("F",23))
+    print(f.tas)
+    f.defiler()
+    print(f.tas)

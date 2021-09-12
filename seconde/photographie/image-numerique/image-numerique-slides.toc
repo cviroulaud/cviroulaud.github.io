@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Information discrète}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Principe de l'argentique}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Principe du numérique}{6}{0}{1}
+\beamer@sectionintoc {2}{Caractéristiques d'une image numérique}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Dimensions}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Couleurs}{17}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Synthèse additive}{18}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Synthèse soustractive}{25}{0}{2}

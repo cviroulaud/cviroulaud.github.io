@@ -1,0 +1,22 @@
+\frametitle{Correction}
+    Longueur de l'image:
+    \begin{center}
+        \begin{tabular}{|*{3}{c|}}
+            \hline
+            pixels & 72 & 4000 \\
+            \hline
+            pouces & 1  & ?    \\
+            \hline
+        \end{tabular}
+    \end{center}
+    $$\frac{1×4000}{72}=55,6\mbox{ pouces}$$
+    \begin{center}
+        \begin{tabular}{|*{3}{c|}}
+            \hline
+            cm     & 2,54 & ?    \\
+            \hline
+            pouces & 1    & 55,6 \\
+            \hline
+        \end{tabular}
+    \end{center}
+    $$\frac{55,6×2,54}{1}=141\mbox{ cm}$$

@@ -8,7 +8,7 @@
 \beamer@sectionintoc {2}{Implémenter la fonction \emph {puissance}}{13}{0}{2}
 \beamer@subsectionintoc {2}{1}{S'appuyer sur la définition mathématique}{14}{0}{2}
 \beamer@subsectionintoc {2}{2}{Correction de l'algorithme}{16}{0}{2}
-\beamer@sectionintoc {3}{Formulations récursives}{19}{0}{3}
-\beamer@subsectionintoc {3}{1}{Notation mathématique}{20}{0}{3}
-\beamer@subsectionintoc {3}{2}{Implémentation}{21}{0}{3}
-\beamer@subsectionintoc {3}{3}{Nouvelle formulation mathématique}{28}{0}{3}
+\beamer@sectionintoc {3}{Formulations récursives}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{Notation mathématique}{23}{0}{3}
+\beamer@subsectionintoc {3}{2}{Implémentation}{24}{0}{3}
+\beamer@subsectionintoc {3}{3}{Nouvelle formulation mathématique}{31}{0}{3}

@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Exponentiation \\Notion de récursivité}
 \date{\framebox{\textbf{Lang 05}}}
@@ -113,7 +113,7 @@ doctest.testmod(verbose=True)
     \frametitle{Durée d'exécution}
 
 \begin{activite}
-À l'aide de la bibliothèque \textbf{\texttt{time}} mesurer la durée d'exécution de la fonction \textbf{\texttt{puissance\_star}} pour calculer $2701^19406$.
+À l'aide de la bibliothèque \textbf{\texttt{time}} mesurer la durée d'exécution de la fonction \textbf{\texttt{puissance\_star}} pour calculer $2701^{19406}$.
 \end{activite}
 
 \end{frame}
@@ -181,7 +181,7 @@ fonction personnelle 0.13074541091918945
     \frametitle{Correction de l'algorithme}
 
     \begin{aretenir}[]
-        Un \textbf{invariant de boucle} est une propriété qui si elle est vraie avant l’exécution d’une itération le demeure après l’exécution de l’itération.
+        Un \textbf{invariant de boucle} est une propriété qui est vraie avant l’exécution de chaque itération.
     \end{aretenir}
 
 \end{frame}
@@ -198,6 +198,21 @@ for i in range(n):
     \label{CODE}
     \end{center}
 \note{C'est en fait un raisonnement par récurrence comme en mathématiques.}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item<1-> Si $i=0$ (début de la première itération) la propriété est vérifiée: $x^0=1=res$.
+        \item<2-> Supposons la propriété vraie au rang \emph{p}.
+        \item<3-> Vérifions au rang $p+1$:
+        \begin{itemize}
+            \item au début de l'itération \emph{p}, $res=x^p$
+            \item à la fin de l'itération \emph{p}, $res=x^p*x=x^{p+1}$
+            \item donc au début de l'itération \emph{p+1}, $res=x^{p+1}$
+        \end{itemize}
+    \end{itemize}
+
 \end{frame}
 \section{Formulations récursives}
 \subsection{Notation mathématique}
@@ -353,6 +368,6 @@ fonction récursive rapide 0.021007537841796875
         \label{CODE}
         \end{center}
 \note[item]{Implémentation des fonctions builtin en C}
-\note[item]'itératif plus rapide car appels fonction coûtent; mais récursif donne souvent code plus clair/lisible
+\note[item]{itératif plus rapide car appels fonction coûtent; mais récursif donne souvent code plus clair/lisible}
 \end{frame}
 \end{document}

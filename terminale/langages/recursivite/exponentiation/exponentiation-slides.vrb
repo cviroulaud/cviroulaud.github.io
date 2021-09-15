@@ -8,4 +8,4 @@ fonction récursive rapide 0.021007537841796875
         \label{CODE}
         \end{center}
 \note[item]{Implémentation des fonctions builtin en C}
-\note[item]'itératif plus rapide car appels fonction coûtent; mais récursif donne souvent code plus clair/lisible
+\note[item]{itératif plus rapide car appels fonction coûtent; mais récursif donne souvent code plus clair/lisible}

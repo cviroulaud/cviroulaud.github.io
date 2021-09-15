@@ -20,7 +20,7 @@ poids_max = 15
 solutions = [[0 for _ in range(poids_max+1)]for _ in range(len(objets))]
 
 for w in range(1, poids_max+1):
-    for i in range(len(objets)):
+    for i in range(1,len(objets)):
         # si le poids de l'objet <= contenance
         if objets[i].poids <= w:
             # - on ne prend pas l'objet -> prend sol optimale précédente
@@ -31,6 +31,7 @@ for w in range(1, poids_max+1):
             solutions[i][w] = solutions[i-1][w]
 
 # affichage solution
+print(solutions)
 val = solutions[len(objets)-1][poids_max]
 poids = poids_max
 objet = len(objets)-1

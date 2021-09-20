@@ -83,7 +83,7 @@ def dfs_rec(m: list, dep: int, suivi: list):
         if mat[dep][i] == 1:
             if suivi[i].couleur == BLANC:
                 dfs_rec(m, i, suivi)
-    suivi[dep].couleur = NOIR
+    #suivi[dep].couleur = NOIR
 
 
 dfs(mat, 0)

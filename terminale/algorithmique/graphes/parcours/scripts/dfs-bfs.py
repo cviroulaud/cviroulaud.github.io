@@ -26,6 +26,10 @@ def affichage(mat: list):
 
 
 def bfs(mat: list) -> list:
+    """
+    plutôt celui ci
+    équivalent à blanc gris dans bfs.py
+    """
     f = deque()
     f.appendleft(0)
     pred = [-1]*len(mat)
@@ -64,6 +68,8 @@ def dfs(mat: list):
     """
     "INCORRECT" car ne va pas à la profondeur max
     même si parcourt bien tout le graphe
+    "NON" en fait juste: équivalent à la version itérative
+    dans dfs.py
     """
     p = []
     p.append(0)

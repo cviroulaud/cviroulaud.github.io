@@ -9,8 +9,13 @@ let objets =
     {valeur=10;poids=9};
 |];;
 let poids_max = 15;;
-(*marche pas! bug dans les indices? tester avec un tab à 1D?*)
-let solutions = Array.make 6 (Array.make (poids_max+1) 0);;
+let solutions = 
+  let t = Array.make 6 [||] in
+    for i=0 to 5 do
+      let ligne = (Array.make (poids_max+1) 0) in
+      t.(i)<-ligne
+    done;
+    t;;
 for i=1 to 5 do
   for j=1 to poids_max do 
     begin   

@@ -75,7 +75,7 @@ def bfs(m: list, dep: Noeud):
                     suivi[i].dist = suivi[en_cours].dist+1
                     suivi[i].pred = en_cours
                     f.appendleft(i)
-        suivi[en_cours].couleur = NOIR
+        #suivi[en_cours].couleur = NOIR
 
 
 bfs(mat, 0)

@@ -4,26 +4,15 @@
 """
 @Author: Christophe Viroulaud
 @Time:   2021/09/05 20:27:34
-"""
 
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-"""
-@Author: Christophe Viroulaud
-@Time:   2021/03/29 10:40:26
-"""
-
-
-"""
 la file est déjà remplie au départ
 """
 
 
-
-
 from file_priorite_3 import File_priorite
 import tkinter as tk
+
+
 def lettre(i: int) -> str:
     """
     retourne la lettre correspondant
@@ -49,6 +38,8 @@ def mat_to_dict(matrice: list) -> dict:
 
 def dijkstra(dico: dict, depart: str, arrivee: str) -> list:
     """
+    FAUX voir ligne 67
+    
     renvoie le plus court chemin entre départ et arrivée
     NB: le dictionnaire distances contient les plus courtes distances 
     entre départ et chaque noeud
@@ -69,10 +60,14 @@ def dijkstra(dico: dict, depart: str, arrivee: str) -> list:
     while not f.est_vide():
         # récupère le tuple (nom, distance calculée) de 'distances' avec la plus courte distance
         en_cours = f.defiler(distances)
-        visites.add(en_cours)
+
         print(en_cours)
         for voisin in dico[en_cours]:
+            """
+            ATTENTION: ne pas mettre 'visites' --> FAUX (vérifié avec dico2)
+            """
             if voisin[0] not in visites:
+                visites.add(voisin[0])
                 # maj distance
                 dist_calc = distances[en_cours]["distance"] + voisin[1]
                 # si cette distance est plus petite que celle actuellement en mémoire
@@ -81,8 +76,53 @@ def dijkstra(dico: dict, depart: str, arrivee: str) -> list:
                     distances[voisin[0]]["precedant"] = en_cours
                 # maj file de priorité
                 f.maj_file(distances, voisin[0])
-                #visites.add(voisin[0])
-    
+                # visites.add(voisin[0])
+
+    # reconstruction du chemin
+    chemin = []
+    noeud = arrivee
+    while not(noeud == depart):
+        chemin.append(noeud)
+        noeud = distances[noeud]["precedant"]
+    chemin.append(depart)
+    chemin.reverse()
+    return chemin
+
+
+def dijkstra2(dico: dict, depart: str, arrivee: str) -> list:
+    """
+    renvoie le plus court chemin entre départ et arrivée
+    NB: le dictionnaire distances contient les plus courtes distances 
+    entre départ et chaque noeud
+
+    dico contient des ensembles de tuples (voisin, distance (arête))
+    la file contient des tuples (noeud, distance calculée (de 'distances'))
+
+    version sans 'visites' comme dans dijkstra_file_2
+    """
+    distances = {noeud: {"precedant": None,
+                         "distance": float("inf")} for noeud in dico.keys()}
+    distances[depart]["distance"] = 0
+
+    f = File_priorite()
+    for n in distances:
+        f.enfiler(distances, n)
+
+    # tant que la file n'est pas vide
+    while not f.est_vide():
+        # récupère le tuple (nom, distance calculée) de 'distances' avec la plus courte distance
+        en_cours = f.defiler(distances)
+        print(en_cours)
+        for voisin in dico[en_cours]:
+            # maj distance
+            dist_calc = distances[en_cours]["distance"] + voisin[1]
+            # si cette distance est plus petite que celle actuellement en mémoire
+            if dist_calc < distances[voisin[0]]["distance"]:
+                distances[voisin[0]]["distance"] = dist_calc
+                distances[voisin[0]]["precedant"] = en_cours
+                # maj file de priorité
+                f.maj_file(distances, voisin[0])
+
     # reconstruction du chemin
     chemin = []
     noeud = arrivee
@@ -107,8 +147,15 @@ reseau = [[0, 6, 10, 0, 0, 0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
           ]
 
+dico2 = {
+    "A": {("B", 3), ("C", 15)},
+    "B": {("C", 6)},
+    "C": {("D", 2)},
+    "D": set()
+}
 dico = mat_to_dict(reseau)
-chemin = dijkstra(dico, "A", "J")
+print(dico)
+chemin = dijkstra2(dico2, "A", "D")
 print(chemin)
 
 fenetre = tk.Tk()

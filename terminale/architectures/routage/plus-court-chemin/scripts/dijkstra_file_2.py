@@ -6,18 +6,11 @@
 @Time:   2021/09/05 20:27:34
 """
 
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-"""
-@Author: Christophe Viroulaud
-@Time:   2021/03/29 10:40:26
-"""
-
-
 
 from file_priorite import File_priorite
 import tkinter as tk
+
+
 def lettre(i: int) -> str:
     """
     retourne la lettre correspondant
@@ -57,15 +50,18 @@ def dijkstra(dico: dict, depart: str, arrivee: str) -> list:
 
     f = File_priorite()
     f.enfiler((depart, 0))
-    #visites.add(depart)
-    
+    # visites.add(depart)
+
     # tant que la file n'est pas vide
     while not f.est_vide():
         # récupère le tuple (nom, distance calculée) de 'distances' avec la plus courte distance
         en_cours = f.defiler()
         visites.add(en_cours[0])
         for voisin in dico[en_cours[0]]:
-            if voisin[0] not in visites: 
+            """
+            ATTENTION: ne pas mettre 'visites' --> FAUX (vérifié avec dico2 dans dijkstra_file_3)
+            """
+            if voisin[0] not in visites:
                 # maj distance
                 dist_calc = distances[en_cours[0]]["distance"] + voisin[1]
                 # si cette distance est plus petite que celle actuellement en mémoire
@@ -86,6 +82,7 @@ def dijkstra(dico: dict, depart: str, arrivee: str) -> list:
     chemin.reverse()
     return chemin
 
+
 def dijkstra2(dico: dict, depart: str, arrivee: str) -> list:
     """
     version sans 'visites': le calcul de la distance 'filtre' automatiquement
@@ -96,23 +93,23 @@ def dijkstra2(dico: dict, depart: str, arrivee: str) -> list:
 
     f = File_priorite()
     f.enfiler((depart, 0))
-    
+
     # tant que la file n'est pas vide
     while not f.est_vide():
         # récupère le tuple (nom, distance calculée) de 'distances' avec la plus courte distance
         en_cours = f.defiler()
-        #visites.add(en_cours[0])
+        # visites.add(en_cours[0])
         print(en_cours)
         for voisin in dico[en_cours[0]]:
-                # maj distance
-                dist_calc = distances[en_cours[0]]["distance"] + voisin[1]
-                # si cette distance est plus petite que celle actuellement en mémoire
-                if dist_calc < distances[voisin[0]]["distance"]:
-                    distances[voisin[0]]["distance"] = dist_calc
-                    distances[voisin[0]]["precedant"] = en_cours[0]
-                    # maj file de priorité
-                    # doit être dans le if (cf v1)
-                    f.enfiler((voisin[0], distances[voisin[0]]["distance"]))
+            # maj distance
+            dist_calc = distances[en_cours[0]]["distance"] + voisin[1]
+            # si cette distance est plus petite que celle actuellement en mémoire
+            if dist_calc < distances[voisin[0]]["distance"]:
+                distances[voisin[0]]["distance"] = dist_calc
+                distances[voisin[0]]["precedant"] = en_cours[0]
+                # maj file de priorité
+                # doit être dans le if (cf v1)
+                f.enfiler((voisin[0], distances[voisin[0]]["distance"]))
 
     # reconstruction du chemin
     chemin = []
@@ -123,6 +120,7 @@ def dijkstra2(dico: dict, depart: str, arrivee: str) -> list:
     chemin.append(depart)
     chemin.reverse()
     return chemin
+
 
 # http://graphonline.ru/fr/?graph=tVEgQyZcJcCaUBCy
 reseau = [[0, 6, 10, 0, 0, 0, 0, 0, 0, 0],

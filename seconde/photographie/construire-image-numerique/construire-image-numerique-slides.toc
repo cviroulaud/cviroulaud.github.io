@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Stocker une image en mémoire}{4}{0}{1}
+\beamer@sectionintoc {2}{Répéter une opération}{8}{0}{2}
+\beamer@sectionintoc {3}{Fonction}{15}{0}{3}

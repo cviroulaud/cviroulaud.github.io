@@ -1,0 +1,13 @@
+\frametitle{Correction}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def carre(o_x, o_y, longueur):
+    for x in range(o_x, o_x+longueur):
+        for y in range(o_y, o_y+longueur):
+            image.putpixel((x, y), (0, 0, 0))
+\end{lstlisting}
+\captionof{code}{Carré}
+\label{CODE}
+\end{center}
+
+

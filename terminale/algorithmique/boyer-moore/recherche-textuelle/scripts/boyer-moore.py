@@ -98,3 +98,6 @@ def boyer_moore(texte: str, motif: str) -> int:
 t = "atgatccatga"
 m = "cat"
 print(boyer_moore(t, m))
+t="stupid_spring_ring"
+m="ring_ring"
+print(boyer_moore(t, m))

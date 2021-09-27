@@ -9,7 +9,7 @@ version tri en place
 """
 
 from random import randint
-from time import time
+
 
 def fusionner(tab: list, deb: int, fin: int) -> None:
     res = [0 for _ in range(fin-deb+1)]
@@ -49,9 +49,3 @@ t = [randint(0, 100) for _ in range(10)]
 print(t)
 tri_fusion(t, 0, len(t)-1)
 print(t)
-
-tab2 = [randint(1, 10000) for _ in range(10000)]
-deb = time()
-tri_fusion(tab2, 0, len(tab2)-1)
-fin = time()
-print("fusion ", fin-deb)

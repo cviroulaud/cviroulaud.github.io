@@ -1,7 +1,7 @@
 \frametitle{Correction}
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-def carre(o_x, o_y, longueur):
+def carre(image, o_x, o_y, longueur):
     for x in range(o_x, o_x+longueur):
         for y in range(o_y, o_y+longueur):
             image.putpixel((x, y), (0, 0, 0))
@@ -10,4 +10,11 @@ def carre(o_x, o_y, longueur):
 \label{CODE}
 \end{center}
 
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1.5em]
+carre(image, 100, 200, 150)
+\end{lstlisting}
+\captionof{code}{Appel de la fonction dans le programme}
+\label{CODE}
+\end{center}
 

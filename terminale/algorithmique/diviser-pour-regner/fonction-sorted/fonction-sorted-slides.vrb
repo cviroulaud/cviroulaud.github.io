@@ -1,0 +1,18 @@
+\frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab = [randint(1, 10000) for _ in range(10000)]
+deb = time()
+tri_fusion(tab2, 0, len(tab)-1)
+fin = time()
+print("fusion ", fin-deb)
+\end{lstlisting}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> sélection  4.557838678359985
+>>> insertion 3.959839105606079
+>>> sort  0.0019469261169433594
+>>> fusion  0.1485743522644043
+\end{lstlisting}
+    \end{center}
+

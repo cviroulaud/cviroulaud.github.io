@@ -265,7 +265,7 @@ Une fonction est un outil qui possède des \textbf{paramètres} et que l'on peut
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-def trait_horizontal(position):
+def trait_horizontal(image, position):
     for x in range(800):
         image.putpixel((x,position),(0,0,0))
 \end{lstlisting}
@@ -275,7 +275,7 @@ def trait_horizontal(position):
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-trait_horizontal(10)
+trait_horizontal(image, 10)
 \end{lstlisting}
 \captionof{code}{Appel de la fonction}
 \label{CODE}
@@ -289,13 +289,13 @@ trait_horizontal(10)
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.em, xrightmargin=0.em]
 from PIL import Image
 
-def trait_horizontal(position):
+def trait_horizontal(image, position):
     for x in range(800):
         image.putpixel((x,position),(0,0,0))
 
 image = Image.new('RGB', (800, 600), (255, 255, 255))
 
-trait_horizontal(10)
+trait_horizontal(image, 10)
 
 image.show()
 \end{lstlisting}
@@ -311,12 +311,12 @@ image.show()
 
     \begin{activite}
     \begin{enumerate}
-        \item Écrire la fonction \textbf{\texttt{trait\_vertical(position)}} qui trace un trait vertical.
+        \item Écrire la fonction \textbf{\texttt{trait\_vertical(image, position)}} qui trace un trait vertical.
         \item Dans le programme principal, écrire le code \ref{horiz}.
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 for y in range(0,600,10):
-    trait_horizontal(y)
+    trait_horizontal(image, y)
 \end{lstlisting}
 \captionof{code}{}
 \label{horiz}
@@ -331,7 +331,7 @@ for y in range(0,600,10):
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-def trait_vertical(position):
+def trait_vertical(image, position):
     for y in range(600):
         image.putpixel((position,y),(0,0,0))
 \end{lstlisting}
@@ -340,7 +340,7 @@ def trait_vertical(position):
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 for x in range(0,800,10):
-    trait_vertical(x)
+    trait_vertical(image, x)
 \end{lstlisting}
 \captionof{code}{Traits verticaux}
 \end{center}
@@ -352,8 +352,8 @@ for x in range(0,800,10):
 
     \begin{activite}
     \begin{enumerate}
-        \item Modifier la fonction \textbf{\texttt{trait\_horizontal(position, couleur)}} pour qu'elle trace un trait de la couleur désirée.
-        \item Écrire la fonction \textbf{\texttt{carre(o\_x, o\_y, longueur)}} qui trace un carré dont le sommet haut gauche est en \texttt{\textbf{(o\_x, o\_y)}} et de côté \textbf{\texttt{longueur}}.
+        \item Modifier la fonction \textbf{\texttt{trait\_horizontal(image, position, couleur)}} pour qu'elle trace un trait de la couleur désirée.
+        \item Écrire la fonction \textbf{\texttt{carre(image, o\_x, o\_y, longueur)}} qui trace un carré dont le sommet haut gauche est en \texttt{\textbf{(o\_x, o\_y)}} et de côté \textbf{\texttt{longueur}}.
     \end{enumerate}
     \end{activite}
 
@@ -361,22 +361,29 @@ for x in range(0,800,10):
 \begin{frame}[fragile]
     \frametitle{Correction}
 \begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1.5em]
-def trait_horizontal(position, couleur):
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1.5em]
+def trait_horizontal(image, position, couleur):
     for x in range(800):
         image.putpixel((x, position), couleur)
 \end{lstlisting}
 \captionof{code}{Trait de couleur}
 \label{CODE}
 \end{center}
-    
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1.5em]
+trait_horizontal(image, 100, (120, 200, 150))
+\end{lstlisting}
+\captionof{code}{Appel de la fonction dans le programme}
+\label{CODE}
+\end{center}
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-def carre(o_x, o_y, longueur):
+def carre(image, o_x, o_y, longueur):
     for x in range(o_x, o_x+longueur):
         for y in range(o_y, o_y+longueur):
             image.putpixel((x, y), (0, 0, 0))
@@ -384,7 +391,41 @@ def carre(o_x, o_y, longueur):
 \captionof{code}{Carré}
 \label{CODE}
 \end{center}
-    
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1.5em]
+carre(image, 100, 200, 150)
+\end{lstlisting}
+\captionof{code}{Appel de la fonction dans le programme}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\section{Utilisation de la bibliothèque}
+\begin{frame}
+    \frametitle{Utilisation de la bibliothèque}
+
+Afin d'augmenter les possibilités, il est possible d'utiliser des \textbf{bibliothèques}. 
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+    \begin{enumerate}
+        \item Sur le site \url{https://cviroulaud.github.io}, télécharger l'annexe compressée \textbf{\texttt{construire-image.zip}}.
+        \item Extraire les fichiers dans un nouveau dossier dans \textbf{SNT}.
+        \item Ouvrir le fichier \textbf{\texttt{mon\_image.py}} avec Spyder.
+    \end{enumerate}
+Il est maintenant possible d'utiliser les fonctions:
+\begin{itemize}
+    \item \textbf{\texttt{trait\_vertical(image, x, debut, fin, couleur)}}
+    \item \textbf{\texttt{trait\_horizontal(image, y, debut, fin, couleur)}}
+    \item \textbf{\texttt{carre(image, o\_x, o\_y, longueur, couleur)}}
+    \item \textbf{\texttt{cercle(image, o\_x, o\_y, rayon, couleur)}}
+    \item \textbf{\texttt{disque(image, o\_x, o\_y, rayon, couleur)}}
+\end{itemize}
+    \end{activite}
 
 \end{frame}
 \end{document}

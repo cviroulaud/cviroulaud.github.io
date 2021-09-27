@@ -1,0 +1,6 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Déterminer les étapes: l'algorithme}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Découper en étapes simples}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Détailler les étapes critiques}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Traduire l'algorithme: le programme}{10}{0}{1}
+\beamer@sectionintoc {2}{Créer d'autres algorithmes}{21}{0}{2}

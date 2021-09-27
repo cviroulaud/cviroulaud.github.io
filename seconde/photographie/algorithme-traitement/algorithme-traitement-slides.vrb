@@ -1,0 +1,16 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+for y in range(ligne):
+    for x in range(colonne):
+        # récupérer le pixel
+        pixel = mon_image.getpixel((x,y))
+
+        # on replace le nouveau pixel
+        mon_image.putpixel((x,y), (pixel[0], 0, 0))
+\end{lstlisting}
+\captionof{code}{Niveaux de rouge}
+\label{CODE}
+\end{center}
+

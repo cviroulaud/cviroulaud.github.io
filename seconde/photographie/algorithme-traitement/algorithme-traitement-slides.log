@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  27 SEP 2021 22:37
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  27 SEP 2021 22:56
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/jeu-de-des/jeu-de-des-slides
-(/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/langages/jeu-de-des/jeu-de-des-slides.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/photographie/algorithme-traitement/algorithme-traitement-slides
+(/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/photographie/algorithme-traitement/algorithme-traitement-slides.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.184 seconds
+luaotfload | main : initialization completed in 0.152 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1174,7 +1174,7 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
 \pytx@codefile=\write6
 
-\openout6 = jeu-de-des-slides.pytxcode
+\openout6 = algorithme-traitement-slides.pytxcode
 \c@pytx@FancyVerbLineTemp=\count406
 \c@pytx@py@default@default=\count407
 \c@pytx@pycon@default@default=\count408
@@ -1344,37 +1344,58 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./jeu-de-des-slides.aux
+))) (./algorithme-traitement-slides.aux
+
+LaTeX Warning: Label `matrice' multiply defined.
+
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+
+LaTeX Warning: Label `CODE' multiply defined.
+
 
 LaTeX Warning: Label `CODE' multiply defined.
 
 )
-\openout1 = jeu-de-des-slides.aux
+\openout1 = algorithme-traitement-slides.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1436,7 +1457,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box125
-Package hyperref Info: Link coloring ON on input line 12.
+Package hyperref Info: Link coloring ON on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1444,55 +1465,55 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count437
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
- (./jeu-de-des-slides.out) (./jeu-de-des-slides.out)
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
+ (./algorithme-traitement-slides.out) (./algorithme-traitement-slides.out)
 \@outlinefile=\write7
 
-\openout7 = jeu-de-des-slides.out
+\openout7 = algorithme-traitement-slides.out
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 12.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 12.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 11.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 12.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 12.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 11.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 12.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 12.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 12.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 11.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 12.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 12.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 12.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 11.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 12.
+(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 12.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 12.
+(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 11.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 12.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 12.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 12.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 12.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmr/bx/n on input line 12.
+(Font)                  OT1/cmss/bx/n --> TU/lmr/bx/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 12.
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 12.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 12.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 12.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1512,414 +1533,265 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 12.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 12.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 12.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 12.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 12.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 12.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 12.
-LaTeX Font Info:    Redeclaring math accent \check on input line 12.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 12.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 12.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 12.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 12.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 12.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 11.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 11.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 11.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 11.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 11.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 11.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 11.
+LaTeX Font Info:    Redeclaring math accent \check on input line 11.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 11.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 11.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 11.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 11.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 11.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 12.
+(Font)              `operators' in the math version `normal' on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 12.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 11.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 12.
+(Font)              `operators' in the math version `bold' on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmr/m/n on input line 12.
+(Font)                  OT1/cmss/bx/n --> TU/lmr/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 12.
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 12.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 11.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  TU/lmss/m/it --> TU/lmr/m/it on input line 12.
+(Font)                  TU/lmss/m/it --> TU/lmr/m/it on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  TU/lmss/bx/n --> TU/lmr/bx/n on input line 12.
+(Font)                  TU/lmss/bx/n --> TU/lmr/bx/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 12.
+(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 12.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 12.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/bx/it --> TU/lmr/bx/it on input line 12.
+(Font)                  TU/lmss/bx/it --> TU/lmr/bx/it on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 12.
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 11.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/bx/n --> TU/lmtt/bx/n on input line 12.
-LaTeX Info: Redefining \dots on input line 12.
-LaTeX Info: Redefining \up on input line 12.
+(Font)                  TU/lmtt/bx/n --> TU/lmtt/bx/n on input line 11.
+LaTeX Info: Redefining \dots on input line 11.
+LaTeX Info: Redefining \up on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count438
 
-No file pythontex-files-jeu-de-des-slides/jeu-de-des-slides.pytxmcr.
+No file pythontex-files-algorithme-traitement-slides/algorithme-traitement-slides.pytxmcr.
 Run PythonTeX to create it.
-Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 12.
+Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
 \c@listing=\count439
-Package newfloat Info: float type `listing'=16 on input line 12.
-(./jeu-de-des-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+Package newfloat Info: float type `listing'=16 on input line 11.
+(./algorithme-traitement-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [2
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 49.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 28.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 49.
- [3
-
-] [4
-
-] (./jeu-de-des-slides.toc) [5
-
-] [6
-
-] [7
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 79.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 79.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 79.
- [8
-
-] (./jeu-de-des-slides.toc) [9
-
-] [10
-
-]
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 105.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 105.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 105.
- [11
-
-] (./jeu-de-des-slides.toc) [12
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-<ressources/console.png, id=308, 1276.77pt x 156.585pt>
-File: ressources/console.png Graphic file (type png)
-<use ressources/console.png>
-Package luatex.def Info: ressources/console.png  used on input line 7.
-(luatex.def)             Requested size: 227.62204pt x 27.91408pt.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 28.
+<ressources/maisons-colorees.png, id=58, 640.3925pt x 497.86pt>
+File: ressources/maisons-colorees.png Graphic file (type png)
+<use ressources/maisons-colorees.png>
+Package luatex.def Info: ressources/maisons-colorees.png  used on input line 28.
+(luatex.def)             Requested size: 113.81102pt x 88.47902pt.
+<ressources/maisons-colorees-NB.png, id=59, 480.29437pt x 373.395pt>
+File: ressources/maisons-colorees-NB.png Graphic file (type png)
+<use ressources/maisons-colorees-NB.png>
+Package luatex.def Info: ressources/maisons-colorees-NB.png  used on input line 28.
+(luatex.def)             Requested size: 113.81102pt x 88.47711pt.
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 8.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 28.
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 8.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 28.
 
+[2
+
+<./ressources/maisons-colorees.png><./ressources/maisons-colorees-NB.png>] [3
+
+] (./algorithme-traitement-slides.toc) [4
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 46.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 46.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 46.
+ [5
+
+] [6
+
+] (./algorithme-traitement-slides.toc) [7
+
+] [8
+
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'matrice'
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 109.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 109.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 109.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 109.
+[9
+
+] (./algorithme-traitement-slides.toc) [10
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 118.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 118.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 118.
+ [11
+
+]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 132.
+ [12
+
+]
+\openout4 = algorithme-traitement-slides.vrb
+ (./algorithme-traitement-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [13
+
+]
+\openout4 = algorithme-traitement-slides.vrb
+ (./algorithme-traitement-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 )
-Overfull \vbox (4.03142pt too high) detected at line 131
+Overfull \vbox (18.25337pt too high) detected at line 174
  []
 
-[13
-
-<./ressources/console.png>] [14
+[14
 
 ]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 5.
-
+\openout4 = algorithme-traitement-slides.vrb
+ (./algorithme-traitement-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [15
 
-]
-<ressources/execution.png, id=369, 70.2625pt x 78.2925pt>
-File: ressources/execution.png Graphic file (type png)
-<use ressources/execution.png>
-Package luatex.def Info: ressources/execution.png  used on input line 174.
-(luatex.def)             Requested size: 28.45274pt x 31.7047pt.
- [16
+] [16
 
-<./ressources/execution.png>] (./jeu-de-des-slides.toc) [17
-
-] [18
+] [17
 
 ]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
+\openout4 = algorithme-traitement-slides.vrb
+ (./algorithme-traitement-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [18
+
+]
+\openout4 = algorithme-traitement-slides.vrb
+ (./algorithme-traitement-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [19
 
-] [20
+]
+\openout4 = algorithme-traitement-slides.vrb
+ (./algorithme-traitement-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [20
+
+] (./algorithme-traitement-slides.toc) [21
+
+] [22
+
+] [23
 
 ]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 7.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 7.
-) [21
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 10.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 10.
-) [22
-
-] (./jeu-de-des-slides.toc) [23
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
+\openout4 = algorithme-traitement-slides.vrb
+ (./algorithme-traitement-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [24
 
 ]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
+\openout4 = algorithme-traitement-slides.vrb
+ (./algorithme-traitement-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [25
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 8.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 8.
-) [26
-
-] (./jeu-de-des-slides.toc) [27
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 10.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 10.
-) [28
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 4.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 12.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
-) [29
-
-] [30
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [31
-
-] (./jeu-de-des-slides.toc) [32
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 338.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 338.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 338.
- [33
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [34
-
-] [35
-
-] [36
-
-] [37
-
-] [38
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [39
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [40
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-)
-Overfull \vbox (14.59984pt too high) detected at line 439
- []
-
-[41
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [42
-
-] (./jeu-de-des-slides.toc) [43
-
-] [44
-
-]
-\openout4 = jeu-de-des-slides.vrb
- (./jeu-de-des-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [45
+) [25
 
 ]
 \tf@nav=\write8
 
-\openout8 = jeu-de-des-slides.nav
+\openout8 = algorithme-traitement-slides.nav
 \tf@toc=\write9
 
-\openout9 = jeu-de-des-slides.toc
+\openout9 = algorithme-traitement-slides.toc
 \tf@snm=\write10
 
-\openout10 = jeu-de-des-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
- (./jeu-de-des-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
-Package rerunfilecheck Info: File `jeu-de-des-slides.out' has not changed.
-(rerunfilecheck)             Checksum: C72F8200D298999F0ED9CA2DC00AC336;1217.
+\openout10 = algorithme-traitement-slides.snm
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 339.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
+ (./algorithme-traitement-slides.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 339.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 339.
+Package rerunfilecheck Info: File `algorithme-traitement-slides.out' has not changed.
+(rerunfilecheck)             Checksum: DB64245E099EE121C53B60C1E34FE31E;1081.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1927,19 +1799,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45091 strings out of 494383
- 244335,1144653 words of node,token memory allocated
- 144255 words of node memory still in use:
-   321 hlist, 10 vlist, 166 rule, 37 disc, 10 local_par, 312 glue, 192 kern, 42 penalty, 16397 glyph, 8499 attribute, 106 glue_spec, 1419 attribute_list, 5 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_dest, 1 pdf_action, 240 pdf_colorstack nodes
-   avail lists: 1:7,2:2234,3:394,4:1964,5:1569,6:60,7:923,8:1436,9:2603,10:21,11:172,12:1
- 47395 multiletter control sequences out of 65536+600000
- 95 fonts using 12142471 bytes
- 70i,15n,95p,1186b,1077s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on jeu-de-des-slides.pdf (45 pages, 143885 bytes).
+ 44885 strings out of 494383
+ 381545,1144653 words of node,token memory allocated
+ 129331 words of node memory still in use:
+   1949 hlist, 11 vlist, 1082 rule, 114 disc, 14 local_par, 942 glue, 1196 kern, 31 penalty, 8921 glyph, 8523 attribute, 106 glue_spec, 1423 attribute_list, 5 write, 1520 pdf_colorstack nodes
+   avail lists: 1:5,2:4572,3:408,4:6090,5:4955,6:48,7:2212,8:4481,9:8000,10:26,11:468,12:1
+ 47349 multiletter control sequences out of 65536+600000
+ 101 fonts using 12525759 bytes
+ 70i,15n,95p,1211b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on algorithme-traitement-slides.pdf (25 pages, 573357 bytes).
 
-PDF statistics: 1033 PDF objects out of 1200 (max. 8388607)
- 937 compressed objects within 10 object streams
- 106 named destinations out of 1000 (max. 131072)
- 98 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 438 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 58 named destinations out of 1000 (max. 131072)
+ 66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

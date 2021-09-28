@@ -5,63 +5,111 @@
 @Author: Christophe Viroulaud
 @Time:   Lundi 27 Septembre 2021 23:07
 """
+import doctest
+from collections import defaultdict
 
 
 def bad_char(motif: str) -> dict:
     """
-    crée la table "mauvais caractère"
+    position du "mauvais caractère"
+    nb sur wikipedia on calcule la distance / fin motif --> Horspool
     """
-    bad = {}
+    # pour avoir -1 pour tous les caractères non présents dans motif    
+    bad = defaultdict(lambda: -1)
     for i in range(len(motif)-1):
-        bad[motif[i]] = len(motif)-1-i
+        bad[motif[i]] = i
     return bad
 
 
-def good_suffix(motif: str) -> dict:
+def set_suffixe(motif: str) -> list:
     """
-    crée la table "bon suffixe"
+    position du début du plus long suffixe = au suffixe 
+    avec lettre précédente différente
+
+    >>> set_suffixe("abaaaa")
+    [-1, -1, -1, 2, 2, 2, 5]
     """
-    good = {}
-    for i in range(len(motif)):
-        suffixe = motif[i:]
-        # on essaie de trouver une répétition du suffixe 'avant"
-        j = i-len(suffixe)
-        while j >= 0 and suffixe != motif[j:j+len(suffixe)] and motif[i-1] != motif[j-1]:
-            j -= 1
-        if j < 0:  # on n'a pas trouvé
-            # on cherche le plus grand préfixe
-            prefixe = motif[:len(suffixe)]
-            while len(suffixe) > 0 and prefixe != suffixe:
-                suffixe = suffixe[1:]
-                prefixe = motif[:len(suffixe)]
-            good[suffixe] = len(motif)-len(suffixe)
-        else:  # on a trouvé
-            good[suffixe] = len(motif)-(j+len(suffixe))
-    return good
+    s = [-1 for _ in range(len(motif)+1)]
+    for j in range(1, len(motif)):
+        suffixe = motif[j:]
+        k = j-1
+        while k >= 0:
+            if suffixe == motif[k:k+len(suffixe)]:
+                if k == 0 or motif[j-1] != motif[k-1]:
+                    """
+                    on est au début de motif: la 'lettre précédente' est différente (convention)
+                    OU la lettre précédente est différente
+                    rq: évaluation paresseuse: on vérifie d'abord k==0
+                    """
+                    s[j] = k
+                    k = -1  # pour sortir de la boucle
+                else:
+                    # même lettre avant le suffixe (pas bon)
+                    k -= 1
+            else:
+                k -= 1
+    s[len(motif)] = len(motif)-1
+    return s
+
+
+def set_prefixe(motif: str) -> list:
+    """
+    longueur du plus long préfixe qui soit aussi
+    suffixe de suffixe
+
+    >>> set_prefixe("abaaaa")
+    [1, 1, 1, 1, 1, 1]
+    """
+    p = [0 for _ in range(len(motif))]
+    # pour chaque suffixe
+    for j in range(1, len(motif)):
+        k = j
+        suffixe = motif[k:]
+        # regarde tous les sous-suffixes
+        while len(suffixe) > 0 and suffixe != motif[:len(suffixe)]:
+            k += 1
+            suffixe = motif[k:]
+        p[j] = len(suffixe)
+    p[0] = p[1]
+    return p
 
 
 def boyer_moore(chaine: str, motif: str) -> int:
     """
     renvoie l'indice de la 1ere position de motif
     -1 sinon
+
+    >>> boyer_moore("anpanman","an")
+    [0, 3, 6]
+
+    >>> boyer_moore("abbcaacaaaabaaaa","dd")
+    []
+
+    >>> boyer_moore("abbcaacaaaabaaaa","abaaaa")
+    [10]
     """
-    bad = bad_char(motif)
-    good = good_suffix(motif)
-    positions=[]
+    d = bad_char(motif)
+    s = set_suffixe(motif)
+    p = set_prefixe(motif)
+    positions = []
     i = 0
     # tant qu'on n'a pas parcouru toute la chaine
-    while i < len(chaine)-len(motif):
+    while i <= len(chaine)-len(motif):
         j = len(motif)-1
         # comparaison à reculons
-        while j>=0 and chaine[i+j] == motif[j]:
+        while j >= 0 and chaine[i+j] == motif[j]:
             j -= 1
-        if j=-1:  # on a trouvé
+        if j == -1:  # on a trouvé
             positions.append(i)
+            i = i+len(motif)-p[1]
         else:  # fait le (meilleur) saut
-            deb += max(bad[chaine[fin]], good[chaine[fin:fin+taille]])
-    return -1
+            if s[j+1] >= 0:
+                # ya un suffixe
+                i = i+max(j+1-s[j+1], j-d[chaine[i+j]])
+            else:
+                # prend préfixe
+                i = i+max(len(motif)-p[j], j-d[[chaine[i+j]]])
+    return positions
 
 
-c = "anpanman"
-m = "an"
-print(boyer_moore(c,m))
+doctest.testmod(verbose=True)

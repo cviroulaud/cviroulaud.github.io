@@ -1,0 +1,5 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Principe}{4}{0}{1}
+\beamer@sectionintoc {2}{Algorithme de rotation}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{Chargement de l'image}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Résoudre un petit problème}{16}{0}{2}

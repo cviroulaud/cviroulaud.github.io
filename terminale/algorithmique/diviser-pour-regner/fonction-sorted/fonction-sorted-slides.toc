@@ -11,4 +11,4 @@
 \beamer@sectionintoc {3}{Performances du tri fusion}{43}{0}{3}
 \beamer@subsectionintoc {3}{1}{Mesure de la durée d'exécution}{44}{0}{3}
 \beamer@subsectionintoc {3}{2}{Complexité}{46}{0}{3}
-\beamer@sectionintoc {4}{Timsort}{57}{0}{4}
+\beamer@sectionintoc {4}{Timsort}{56}{0}{4}

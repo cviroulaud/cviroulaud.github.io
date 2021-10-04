@@ -20,8 +20,8 @@ def rotation_auxiliaire(px: object, x: int, y: int, t: int)->None:
         rotation_auxiliaire(px, x, y+t, t)
         rotation_auxiliaire(px, x+t, y+t, t)
 
-    for x1 in range(x, x+t):
-        for y1 in range(y, y+t):
+    for l in range(x, x+t):
+        for c in range(y, y+t):
             px[x1,y1+t], px[x1+t,y1+t], px[x1+t,y1  ], px[x1  ,y1] = \
             px[x1,y1  ], px[x1  ,y1+t], px[x1+t,y1+t], px[x1+t,y1]
 

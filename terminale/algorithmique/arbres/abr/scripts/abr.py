@@ -8,7 +8,7 @@
 
 
 class Noeud:
-    def __init__(self, val: int, d=None, g=None) -> None:
+    def __init__(self,val: int, d=None, g=None) -> None:
         self.valeur = val
         self.gauche = g
         self.droite = d

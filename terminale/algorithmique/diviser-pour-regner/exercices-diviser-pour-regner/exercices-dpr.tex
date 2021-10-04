@@ -1,0 +1,103 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Algo 02}}}}
+\fancyhead[C]{\textbf{Exercices Diviser pour régner}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+    \textbf{Révisions}
+    \begin{enumerate}
+        \item Soit \textbf{\texttt{tab}} un tableau de taille $n$, trié jusqu'au rang $j-1 (j<n)$. Écrire la fonction récursive \textbf{\texttt{inserer(tab: list, j: int) $\rightarrow$ None}} qui place l'élément de rang $j$ dans la partie triée du tableau.
+        \item Écrire la fonction \textbf{\texttt{tri\_insertion(tab: list) $\rightarrow$ None}} qui trie \textbf{\texttt{tab}} en utilisant la fonction \textbf{\texttt{inserer}}.
+        \item Construire par compréhension un tableau de 20 entiers compris entre 0 et 100.
+        \item Tester la fonction de tri sur le tableau.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    \textbf{Tri stable}\\ Un tri est stable quand les éléments de même valeur garde leur place relative.
+    \begin{center}
+        \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+t = [(1, 5), (3, 4), (1, 1), (2, 9), (1, 2)]
+# On décide de trier t par rapport au premier entier de chaque tuple
+t = [(1, 5), (1, 1), (1, 2), (2, 9), (3, 4)]
+# les deux premiers tuples gardent leur place relative.
+\end{lstlisting}
+        \captionof{code}{Tri stable}
+        \label{tab}
+    \end{center}
+    \begin{enumerate}
+        \item Dérouler le tri par insertion de l'exercice précédent sur le tableau du code \ref{tab}. Le tri par insertion semble-t-il stable?
+        \item Même question pour le tri fusion.
+        \item Écrire la fonction \textbf{\texttt{tri\_selection(tab: list) $\rightarrow$ None}}.
+        \item Montrer grâce à un exemple que le tri par sélection n'est pas stable.
+    \end{enumerate}
+\end{exo}
+\begin{exo}\textbf{Dichotomie}
+    \begin{enumerate}
+        \item Écrire la fonction impérative \textbf{\texttt{dichotomie\_imp(tab: int, x: int) $\rightarrow$ int}} de la recherche dichotomique, qui renvoie la position de \textbf{\texttt{x}} dans \textbf{\texttt{tab}} ou \emph{-1} s'in n'est pas présent.
+        \item Écrire la version récursive \textbf{\texttt{dichotomie\_rec(tab: list, x: int, debut: int, fin: int) $\rightarrow$ int}}
+        \item Tester les deux fonctions sur un tableau de 50 entiers aléatoires.
+        \item Déterminer la complexité de l'algorithme de recherche dichotomique.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    La fonction \textbf{\texttt{mystere}} implémente un algorithme de type \emph{diviser pour régner}.
+\begin{center}
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+def mystere(tab: list, debut: int, fin: int) -> int:
+    if debut == (fin-1):
+        return tab[debut]
+    else:
+        milieu = (debut + fin)//2
+        gauche = mystere(tab, debut, milieu)
+        droite = mystere(tab, milieu, fin)
+        if (gauche > droite):
+            return gauche
+        else:
+            return droite
+\end{lstlisting}
+\end{center}
+    Soit la liste:
+    \begin{lstlisting}
+    tab = [5, 71, 23, 45, 28, 89, 63, 39]
+\end{lstlisting}
+    \begin{enumerate}
+    \item Dessiner l'arbre des séparations engendré par la fonction sur la liste \emph{tab}.
+    \item Dessiner l'arbre des recombinaisons. Quelle valeur renvoie l'appel \texttt{\textbf{mystere(tab)}}?
+    \item Que fait cette fonction?
+    \item Discuter de la complexité de la fonction.
+    \end{enumerate}
+    \end{exo}
+    \begin{exo}
+        Le tri rapide est un autre exemple d'algorithme utilisant la méthode \emph{diviser pour régner}. C'est un algorithme naturellement récursif qui peut se décrire ainsi:
+        \begin{itemize}
+        \item Choisir un élément pivot.
+        \item Sélectionner tous les éléments inférieurs au pivot.
+        \item Sélectionner tous les éléments supérieurs ou égaux au pivot.
+        \item Placer récursivement à gauche du pivot les éléments inférieurs à ce-dernier et à droite les éléments supérieurs.
+        \end{itemize}
+        \begin{enumerate}
+        \item Écrire la fonction récursive \textbf{tri\_rapide(tab: list) $\rightarrow$ list} qui implémente l'algorithme du tri rapide et renvoie un tableau trié. Le premier élément du tableau sera choisi comme pivot. Les éléments inférieurs au pivot seront stockés dans un tableau \textbf{\texttt{petit}} et ceux supérieurs dans \textbf{\texttt{grand}}.
+        \item Construire en compréhension une liste \textbf{\texttt{t}} de vingt éléments compris entre 0 et 100 et tester la fonction de tri.
+        \end{enumerate}
+        La fonction précédente crée deux nouveaux tableaux à chaque appel récursif. Le coût en mémoire peut s'avérer important. Un tri en place serait plus efficace.
+        \begin{enumerate}
+            \setcounter{enumi}{2}
+            \item Écrire la fonction \textbf{\texttt{partitionner(tab: list, deb: int, fin: int) $\rightarrow$ None}} qui étudie les éléments de \textbf{\texttt{tab}} de l'indice \textbf{\texttt{deb}} (inclus) à celui d'indice \textbf{\texttt{fin}} exclus. La fonction positionne tous les éléments inférieurs à \textbf{\texttt{tab[deb]}} avant ce-dernier.
+            \item Écrire la fonction récursive \textbf{\texttt{tri\_rapide(tab: list, deb: int, fin: int) $\rightarrow$ None}} qui trie le tableau en place. La fonction utilisera \textbf{\texttt{partitionner}}.
+        \end{enumerate}
+        \begin{aretenir}[Remarque]\centering
+            Le tri rapide a une complexité en $O(n×log_2(n))$.
+        \end{aretenir}
+        \end{exo}
+\end{document}

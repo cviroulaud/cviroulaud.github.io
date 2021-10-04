@@ -26,8 +26,8 @@ def reines():
         else:
             for col in range(REINES):  # teste chaque colonne
                 possible = True
-                for k in range(ligne):  # chaque ligne précédante
-                    # teste même col et les 2 diago (x+y=x'+y' ou x-=x'-y')
+                for k in range(ligne):  # chaque ligne précédente
+                    # teste même col et les 2 diago (x+y=x'+y' ou x-y=x'-y')
                     if res[k] == col or res[k]+k == col+ligne or res[k]-k == col-ligne:
                         possible = False
                         break  # avec un while...
@@ -41,7 +41,7 @@ def reines():
             si on a testé toutes les colonnes de la ligne
             on sort de la boucle et on revient (récursif) à la ligne préc (backtracking)
             """
-
+    # indice = ligne, r[i] = colonne
     r = [-1 for _ in range(REINES)]
     placer_reine(r, 0)
     return r

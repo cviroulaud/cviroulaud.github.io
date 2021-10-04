@@ -1,0 +1,13 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+largeur, hauteur = im.size
+px = im.load()
+\end{lstlisting}
+\captionof{code}{Récupérer des informations}
+\label{CODE}
+\end{center}
+\begin{aretenir}[Information]
+    La variable \textbf{\texttt{px}} contient une matrice représentative des pixels de l'image. La couleur du pixel de coordonnées \textbf{\texttt{(x,y)}} est donnée par l'instruction \texttt{\textbf{px[x,y]}}. Il est également possible d'affecter une nouvelle couleur \textbf{\texttt{c}} à un pixel: \texttt{\textbf{px[x,y] = c}}.
+\end{aretenir}

@@ -1,0 +1,18 @@
+\frametitle{Exercice 5}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def tri_rapide(tab: list, deb: int, fin: int) -> None:
+    """
+    Args:
+        tab (list): tableau d'entiers
+        deb (int): indice de début (inclus)
+        fin (int): indice de fin (exclus)
+    """
+    if deb < fin:
+        pivot = partitionner(tab, deb, fin)
+        tri_rapide(tab, deb, pivot)
+        tri_rapide(tab, pivot+1, fin)
+\end{lstlisting}
+\end{center}
+

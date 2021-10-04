@@ -93,7 +93,7 @@ def dijkstra2(dico: dict, depart: str, arrivee: str) -> list:
 
     f = File_priorite()
     f.enfiler((depart, 0))
-
+    
     # tant que la file n'est pas vide
     while not f.est_vide():
         # récupère le tuple (nom, distance calculée) de 'distances' avec la plus courte distance
@@ -120,6 +120,7 @@ def dijkstra2(dico: dict, depart: str, arrivee: str) -> list:
     chemin.append(depart)
     chemin.reverse()
     return chemin
+
 
 
 # http://graphonline.ru/fr/?graph=tVEgQyZcJcCaUBCy

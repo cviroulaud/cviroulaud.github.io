@@ -84,7 +84,7 @@
         \end{tabular}
         \captionof{figure}{Rotation}
     \end{center}
-\note{pixel(l=0, c=0) $\rightarrow$ (l=1, c=0)}
+    \note{pixel(l=0, c=0) $\rightarrow$ (l=1, c=0)}
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
@@ -95,7 +95,7 @@
              & $$\rightarrow$$
              &
             \includegraphics[width=2.5cm]{ressources/carre2-int.png}
-            & $$\rightarrow$$
+             & $$\rightarrow$$
              &
             \includegraphics[width=2.5cm]{ressources/carre2-rot.png}
             \\
@@ -110,10 +110,10 @@
     \begin{itemize}
         \item Si la taille \texttt{\textbf{t}} est égal à 1, ne rien faire.
         \item Sinon: \textbf{découper en sous problèmes}
-        \begin{itemize}
-            \item diviser la taille \textbf{\texttt{t}} en 2,
-            \item effectuer récursivement la rotation des \textbf{quatre parties} de la portion carrée comprise entre (x,y) et (x+t, y+t)
-        \end{itemize}
+              \begin{itemize}
+                  \item diviser la taille \textbf{\texttt{t}} en 2,
+                  \item effectuer récursivement la rotation des \textbf{quatre parties} de la portion carrée comprise entre (x,y) et (x+t, y+t)
+              \end{itemize}
         \item \textbf{résoudre les petits problèmes:} Effectuer la rotation des pixels.
     \end{itemize}
 
@@ -123,33 +123,33 @@
 \begin{frame}[fragile]
     \frametitle{Chargement de l'image}
 
-    \emph{PIL (Python Image Library) -anciennement pillow-} est une bibliothèque de traitement d'image. 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \emph{PIL (Python Image Library) -anciennement pillow-} est une bibliothèque de traitement d'image.
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 from PIL import Image
 
 im = Image.open("image.png")
 im.show()
 \end{lstlisting}
-\captionof{code}{Charger une image}
-\label{CODE}
-\end{center}  
+        \captionof{code}{Charger une image}
+        \label{CODE}
+    \end{center}
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 largeur, hauteur = im.size
 px = im.load()
 \end{lstlisting}
-\captionof{code}{Récupérer des informations}
-\label{CODE}
-\end{center}
-\begin{aretenir}[Information]
-    La variable \textbf{\texttt{px}} contient une matrice représentative des pixels de l'image. La couleur du pixel de coordonnées \textbf{\texttt{(x,y)}} est donnée par l'instruction \texttt{\textbf{px[x,y]}}. Il est également possible d'affecter une nouvelle couleur \textbf{\texttt{c}} à un pixel: \texttt{\textbf{px[x,y] = c}}.
-\end{aretenir}
+        \captionof{code}{Récupérer des informations}
+        \label{CODE}
+    \end{center}
+    \begin{aretenir}[Information]
+        La variable \textbf{\texttt{px}} contient une matrice représentative des pixels de l'image. La couleur du pixel de coordonnées \textbf{\texttt{(x,y)}} est donnée par l'instruction \texttt{\textbf{px[x,y]}}. Il est également possible d'affecter une nouvelle couleur \textbf{\texttt{c}} à un pixel: \texttt{\textbf{px[x,y] = c}}.
+    \end{aretenir}
 \end{frame}
 \begin{frame}
     \frametitle{}
@@ -159,7 +159,7 @@ px = im.load()
             \item Récupérer une image carrée sur \url{https://www.freepng.fr/}.
             \item Charger et afficher cette image.
         \end{enumerate}
-        \end{activite}
+    \end{activite}
 
 \end{frame}
 \subsection{Résoudre un petit problème}
@@ -168,7 +168,7 @@ px = im.load()
     \begin{center}
         \begin{tabular}{cccc}
             {\Large $t=1$}
-            &
+             &
             \includegraphics[width=2cm]{ressources/carre1.png}
              & $$\rightarrow$$
              &
@@ -179,38 +179,38 @@ px = im.load()
     \begin{center}
         \begin{tabular}{cccc}
             {\Large $t=2$}
-            &
+             &
             \includegraphics[width=2cm]{ressources/carre2-int.png}
-            & $$\rightarrow$$
+             & $$\rightarrow$$
              &
             \includegraphics[width=2cm]{ressources/carre2-rot.png}
             \\
         \end{tabular}
     \end{center}
     \begin{activite}
-    Écrire la fonction \textbf{\texttt{tourner(px: object, x: int, y: int, t: int) $\rightarrow$ None}} qui effectue une rotation anti-horaire pour les pixels compris dans l'intervalle de colonnes $[x; x+t]$ et l'intervalle de lignes $[y; y+t]$.
+        Écrire la fonction \textbf{\texttt{tourner(px: object, x: int, y: int, t: int) $\rightarrow$ None}} qui effectue une rotation anti-horaire pour les pixels compris dans l'intervalle de colonnes $[x; x+t]$ et l'intervalle de lignes $[y; y+t]$.
     \end{activite}
 
 \end{frame}
 \begin{frame}
     \frametitle{Avant de regarder la correction}
-\begin{center}
-    \centering
-    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \begin{center}
+        \centering
+        \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
     \end{center}
-{\Large
+    {\Large
     \begin{itemize}
         \item Prendre le temps de réfléchir,
         \item Analyser les messages d'erreur,
         \item Demander au professeur.
     \end{itemize}
-}
+    }
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
 
-   \begin{center}
-   \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
 def tourner(px: object, x: int, y: int, t: int) -> None:
     for l in range(y, y+t):
         for c in range(x, x+t):
@@ -219,15 +219,15 @@ def tourner(px: object, x: int, y: int, t: int) -> None:
                 px[l, c], px[l, c+t], \
                 px[l+t, c+t], px[l+t, c]
 \end{lstlisting}
-   \captionof{code}{Chaque \emph{bloc} tourne d'un cran dans le sens anti-horaire}
-   \label{CODE}
-   \end{center} 
+        \captionof{code}{Chaque \emph{bloc} tourne d'un cran dans le sens anti-horaire}
+        \label{CODE}
+    \end{center}
 
 \end{frame}
 \subsection{Diviser}
 \begin{frame}
     \frametitle{Diviser}
-Partant d'une taille d'image \textbf{\texttt{t}} il faut diviser le problème en quatre problèmes plus petits.
+    Partant d'une taille d'image \textbf{\texttt{t}} il faut diviser le problème en quatre problèmes plus petits.
     \begin{center}
         \begin{tikzpicture}
             \draw (0,0) grid (4,4);
@@ -256,29 +256,29 @@ Partant d'une taille d'image \textbf{\texttt{t}} il faut diviser le problème en
 
         \end{tikzpicture}
     \end{center}
-\begin{activite}
-Écrire la fonction récursive \textbf{\texttt{rotation(px: object, x: int, y: int, t: int) $\rightarrow$ None}} qui divise récursivement le problème en quatre, puis effectue la rotation à l'aide de la fonction \textbf{\texttt{tourner}}.
-\end{activite}
+    \begin{activite}
+        Écrire la fonction récursive \textbf{\texttt{rotation(px: object, x: int, y: int, t: int) $\rightarrow$ None}} qui divise récursivement le problème en quatre, puis effectue la rotation à l'aide de la fonction \textbf{\texttt{tourner}}.
+    \end{activite}
 \end{frame}
 \begin{frame}
     \frametitle{Avant de regarder la correction}
-\begin{center}
-    \centering
-    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \begin{center}
+        \centering
+        \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
     \end{center}
-{\Large
+    {\Large
     \begin{itemize}
         \item Prendre le temps de réfléchir,
         \item Analyser les messages d'erreur,
         \item Demander au professeur.
     \end{itemize}
-}
+    }
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
 
     \begin{center}
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 def rotation(px: object, x: int, y: int, t: int) -> None:
     if t > 1:
         t //= 2
@@ -289,56 +289,56 @@ def rotation(px: object, x: int, y: int, t: int) -> None:
 
         tourner(px, x, y, t) 
 \end{lstlisting}
-    \captionof{code}{Le cas limite est atteint quand on a 1 seul pixel.}
-    \label{CODE}
+        \captionof{code}{Le cas limite est atteint quand on a 1 seul pixel.}
+        \label{CODE}
     \end{center}
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 rotation(px, 0, 0, largeur)
 \end{lstlisting}
-\captionof{code}{Appel principal}
-\label{CODE}
-\end{center}
+        \captionof{code}{Appel principal}
+        \label{CODE}
+    \end{center}
 \end{frame}
 \section{Créer une bibliothèque}
 \begin{frame}
     \frametitle{Créer une bibliothèque}
 
-Pour un utilisateur, le passage des différents paramètres (\textbf{\texttt{px}}, \textbf{\texttt{x}}, \textbf{\texttt{y}}, \textbf{\texttt{t}}) peut paraître fastidieux. Typiquement il ne devrait avoir à fournir qu'une information: le chemin du fichier image.
+    Pour un utilisateur, le passage des différents paramètres (\textbf{\texttt{px}}, \textbf{\texttt{x}}, \textbf{\texttt{y}}, \textbf{\texttt{t}}) peut paraître fastidieux. Typiquement il ne devrait avoir à fournir qu'une information: le chemin du fichier image.
 
 \end{frame}
 \begin{frame}
     \frametitle{}
 
     \begin{activite}
-    \begin{enumerate}
-        \item Créer une classe \textbf{\texttt{Image\_perso}} et son constructeur qui admet un paramètre: le chemin de l'image. Ce constructeur construira alors un objet \textbf{\texttt{Image}} de la bibliothèque \textbf{\texttt{PIL}}.
-        \item Écrire la méthode \textbf{\texttt{montrer}}, sans paramètre, qui affiche l'image.
-        \item Écrire la méthode \textbf{\texttt{fait\_tourner}} sans paramètre, qui effectue une raotation anti-horaire de l'image. Il faudra adapter les fonctions construites précédemment pour en faire des méthodes internes à la classe.
-        \item \textbf{Pour les plus avancés:} Adapter la méthode \textbf{\texttt{fait\_tourner}} qui acceptera un paramètre de type booléen. Si l'argument passé est \textbf{\texttt{True}} la rotation sera dans le sens horaire.
-    \end{enumerate}
+        \begin{enumerate}
+            \item Créer une classe \textbf{\texttt{Image\_perso}} et son constructeur qui admet un paramètre: le chemin de l'image. Ce constructeur construira alors un objet \textbf{\texttt{Image}} de la bibliothèque \textbf{\texttt{PIL}}.
+            \item Écrire la méthode \textbf{\texttt{montrer}}, sans paramètre, qui affiche l'image.
+            \item Écrire la méthode \textbf{\texttt{fait\_tourner}} sans paramètre, qui effectue une raotation anti-horaire de l'image. Il faudra adapter les fonctions construites précédemment pour en faire des méthodes internes à la classe.
+            \item \textbf{Pour les plus avancés:} Adapter la méthode \textbf{\texttt{fait\_tourner}} qui acceptera un paramètre de type booléen. Si l'argument passé est \textbf{\texttt{True}} la rotation sera dans le sens horaire.
+        \end{enumerate}
     \end{activite}
 
 \end{frame}
 \begin{frame}
     \frametitle{Avant de regarder la correction}
-\begin{center}
-    \centering
-    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \begin{center}
+        \centering
+        \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
     \end{center}
-{\Large
+    {\Large
     \begin{itemize}
         \item Prendre le temps de réfléchir,
         \item Analyser les messages d'erreur,
         \item Demander au professeur.
     \end{itemize}
-}
+    }
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 class Image_lib:
 
     def __init__(self, fichier: str) -> None:
@@ -346,50 +346,50 @@ class Image_lib:
         self.largeur, self.hauteur = self.image.size
         self.px = self.image.load()
 \end{lstlisting}
-\captionof{code}{Constructeur}
-\label{CODE}
-\end{center}  
-
-\end{frame}
-\begin{frame}[fragile]
-    \frametitle{}
-
-    \begin{center}
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-def montrer(self):
-    """
-    affiche l'image
-    """
-    self.image.show()
-\end{lstlisting}
-    \captionof{code}{Afficher l'image}
-    \label{CODE}
+        \captionof{code}{Constructeur}
+        \label{CODE}
     \end{center}
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def montrer(self):
+    """
+    affiche l'image
+    """
+    self.image.show()
+\end{lstlisting}
+        \captionof{code}{Afficher l'image}
+        \label{CODE}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 def fait_tourner(self) -> None:
     """
     tourne l'image de 90° dans le sens anti-horaire sinon
     """
     self.rotation(0, 0, self.largeur)
 \end{lstlisting}
-\captionof{code}{Il faut adapter la fonction \textbf{\texttt{rotation}.}}
-\label{CODE}
-\end{center}   
-\begin{aretenir}[Remarque]
-Le paramètre \textbf{\texttt{px}} n'est plus nécessaire dans la méthode \textbf{\texttt{rotation}}. En effet, il est accessible depuis l'attribut crée dans le constructeur.
-\end{aretenir}
+        \captionof{code}{Il faut adapter la fonction \textbf{\texttt{rotation}.}}
+        \label{CODE}
+    \end{center}
+    \begin{aretenir}[Remarque]
+        Le paramètre \textbf{\texttt{px}} n'est plus nécessaire dans la méthode \textbf{\texttt{rotation}}. En effet, il est accessible depuis l'attribut crée dans le constructeur.
+    \end{aretenir}
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 def rotation(self, x: int, y: int, t: int, horaire: bool) -> None:
     if t > 1:
         t //= 2
@@ -400,14 +400,14 @@ def rotation(self, x: int, y: int, t: int, horaire: bool) -> None:
 
         self.tourner(x, y, t)
 \end{lstlisting}
-\end{center}
+    \end{center}
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=.5em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=.5em]
 def tourner(self, x: int, y: int, t: int) -> None:
     for l in range(y, y+t):
         for c in range(x, x+t):
@@ -416,14 +416,14 @@ def tourner(self, x: int, y: int, t: int) -> None:
                 self.px[l, c], self.px[l, c + t], \
                 self.px[l+t, c+t], self.px[l+t, c]
 \end{lstlisting}
-\end{center}
+    \end{center}
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 def fait_tourner(self, horaire: bool = True) -> None:
     """
     tourne l'image de 90°
@@ -436,15 +436,15 @@ def fait_tourner(self, horaire: bool = True) -> None:
     """
     self.rotation(0, 0, self.largeur, horaire)
 \end{lstlisting}
-\captionof{code}{Avec choix de la rotation}
-\label{CODE}
-\end{center}
+        \captionof{code}{Avec choix de la rotation}
+        \label{CODE}
+    \end{center}
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{}
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 def rotation(self, x: int, y: int, t: int, horaire: bool) -> None:
     if t > 1:
         t //= 2
@@ -458,17 +458,17 @@ def rotation(self, x: int, y: int, t: int, horaire: bool) -> None:
         else:
             self.tourner_antihoraire(x, y, t)
 \end{lstlisting}
-\captionof{code}{adaptation de \textbf{\texttt{rotation}}}
-\label{CODE}
-\end{center}
-    
+        \captionof{code}{adaptation de \textbf{\texttt{rotation}}}
+        \label{CODE}
+    \end{center}
+
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.1em, xrightmargin=-0.4em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.1em, xrightmargin=-0.4em]
 def tourner_antihoraire(self, x: int, y: int, t: int) -> None:
     for l in range(y, y+t):
         for c in range(x, x+t):
@@ -485,9 +485,9 @@ def tourner_horaire(self, x: int, y: int, t: int) -> None:
                 self.px[l+t, c+t], self.px[l+t, c], \
                     self.px[l, c], self.px[l, c+t]
 \end{lstlisting}
-\captionof{code}{Tourner}
-\label{CODE}
-\end{center}  
+        \captionof{code}{Tourner}
+        \label{CODE}
+    \end{center}
 
 \end{frame}
 \end{document}

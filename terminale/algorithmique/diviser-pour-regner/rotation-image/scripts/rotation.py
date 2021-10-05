@@ -8,7 +8,7 @@ Date de création Mon Sep 28 11:01:42 2020
 
 
 from PIL import Image
-
+ 
 
 def tourner(px: object, x: int, y: int, t: int) -> None:
     for l in range(y, y+t):

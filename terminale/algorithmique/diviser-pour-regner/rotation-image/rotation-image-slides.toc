@@ -3,3 +3,5 @@
 \beamer@sectionintoc {2}{Algorithme de rotation}{12}{0}{2}
 \beamer@subsectionintoc {2}{1}{Chargement de l'image}{13}{0}{2}
 \beamer@subsectionintoc {2}{2}{Résoudre un petit problème}{16}{0}{2}
+\beamer@subsectionintoc {2}{3}{Diviser}{20}{0}{2}
+\beamer@sectionintoc {3}{Créer une bibliothèque}{25}{0}{3}

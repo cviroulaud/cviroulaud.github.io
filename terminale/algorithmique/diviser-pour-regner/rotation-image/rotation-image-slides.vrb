@@ -1,13 +1,24 @@
 \frametitle{}
 
 \begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-largeur, hauteur = im.size
-px = im.load()
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.1em, xrightmargin=-0.4em]
+def tourner_antihoraire(self, x: int, y: int, t: int) -> None:
+    for l in range(y, y+t):
+        for c in range(x, x+t):
+            self.px[l, c+t], self.px[l+t, c+t], \
+            self.px[l+t, c], self.px[l, c] = \
+                self.px[l, c], self.px[l, c + t], \
+                self.px[l+t, c+t], self.px[l+t, c]
+
+def tourner_horaire(self, x: int, y: int, t: int) -> None:
+    for l in range(y, y+t):
+        for c in range(x, x+t):
+            self.px[l, c+t], self.px[l+t, c+t], \
+                self.px[l+t, c], self.px[l, c] = \
+                self.px[l+t, c+t], self.px[l+t, c], \
+                    self.px[l, c], self.px[l, c+t]
 \end{lstlisting}
-\captionof{code}{Récupérer des informations}
+\captionof{code}{Tourner}
 \label{CODE}
 \end{center}
-\begin{aretenir}[Information]
-    La variable \textbf{\texttt{px}} contient une matrice représentative des pixels de l'image. La couleur du pixel de coordonnées \textbf{\texttt{(x,y)}} est donnée par l'instruction \texttt{\textbf{px[x,y]}}. Il est également possible d'affecter une nouvelle couleur \textbf{\texttt{c}} à un pixel: \texttt{\textbf{px[x,y] = c}}.
-\end{aretenir}
+

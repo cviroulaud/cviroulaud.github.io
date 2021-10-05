@@ -17,29 +17,23 @@ def tourner(px: object, x: int, y: int, t: int) -> None:
                 px[l, c], px[l, c+t], px[l+t, c+t], px[l+t, c]
 
 
-def rotation_auxiliaire(px: object, x: int, y: int, t: int) -> None:
-    if t == 1:
-        # on ne fait rien: inutile de continuer à découper
-        return
-    else:
+def rotation(px: object, x: int, y: int, t: int) -> None:
+    if t > 1:
         t //= 2
-        rotation_auxiliaire(px, x, y, t)
-        rotation_auxiliaire(px, x+t, y, t)
-        rotation_auxiliaire(px, x, y+t, t)
-        rotation_auxiliaire(px, x+t, y+t, t)
+        rotation(px, x, y, t)
+        rotation(px, x+t, y, t)
+        rotation(px, x, y+t, t)
+        rotation(px, x+t, y+t, t)
 
-    tourner(px, x, y, t)
-
-
-def rotation(px: object, taille: int) -> None:
-    rotation_auxiliaire(px, 0, 0, taille)
+        tourner(px, x, y, t)
 
 
-im = Image.open("../ressources/carre2.png")
+im = Image.open("angry.png")
 largeur, hauteur = im.size
 px = im.load()
 
 im.show()
-rotation(px, largeur)
+rotation(px, 0, 0, largeur)
+
 im.show()
 # im.save("rotation.png")

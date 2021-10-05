@@ -394,7 +394,7 @@ while not(int(input("Quel nombre? ")) == nb):
     essai += 1
 print(essai)
 \end{lstlisting}
-\captionof{code}{Deviner - première version}
+\captionof{code}{Deviner - seconde version}
 \label{CODE}
 \end{center}   
 \begin{aretenir}[Remarque]
@@ -509,7 +509,7 @@ somme = 0
 for i in range(10):
     somme += int(input("note: "))
 \end{lstlisting}
-\captionof{code}{Moyenne}
+\captionof{code}{Addition des notes}
 \label{CODE}
 \end{center}
 \begin{aretenir}[Remarque]
@@ -523,11 +523,27 @@ for i in range(10):
 \end{aretenir}
 \end{frame}
 \begin{frame}[fragile]
+    \frametitle{Exercice 11}
+
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
 somme = 0
 for i in range(10):
-    somme += int(input("note: "))
+    note = int(input("note: "))
+    somme = somme + note
+\end{lstlisting}
+\captionof{code}{Addition des notes - autre méthode}
+\label{CODE}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+somme = 0
+for i in range(10):
+    note = int(input("note: "))
+    somme = somme + note
+# calcul de la moyenne
 moyenne = round(somme/10, 2)
 \end{lstlisting}
 \captionof{code}{Moyenne}
@@ -540,7 +556,7 @@ moyenne = round(somme/10, 2)
 \end{frame}
 \begin{frame}[fragile]
     \begin{center}
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0.5em]
 if moyenne >= 15:
     print("{}/20, félicitations!".format(moyenne))
 elif moyenne >= 10:
@@ -576,7 +592,7 @@ print("Pensez à un nombre entre 1 et 100.")
     \frametitle{Exercice 11}
 
 \begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.em, xrightmargin=-1em]
 while not trouve:
     coups += 1
     # choix de la valeur (milieu de l'intervalle)

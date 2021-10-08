@@ -1,0 +1,174 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Archi 01}}}}
+\fancyhead[C]{\textbf{Découverte du système d'exploitation}}
+\newdate{madate}{10}{09}{2020}
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+%DODO Faire un historique de GNU/Linux??
+\section{Machine virtuelle}
+Dans le cadre de l'établissement certaines restrictions sont posées sur le système d'exploitation des machines. Cependant dans le cadre du cours de NSI, chaque élève dispose d'une \emph{machine virtuelle}. Il est alors possible de modifier, tester, se tromper, réinitialiser sans risquer d'interférer avec le réseau pédagogique de l'établissement.
+\begin{activite}
+    \begin{enumerate}
+        \item Depuis un navigateur, se rendre à l'adresse \url{https://172.17.171.3:8006} .
+        \item Remplir le formulaire comme suit:
+              \begin{itemize}
+                  \item \emph{utilisateur:} prenom.nom
+                  \item \emph{mot de passe:} date de naissance (JJMMAAAA)
+                  \item \emph{realm:} Proxmox
+                  \item \emph{langue:} Français
+              \end{itemize}
+        \item Modifier le mot de passe.
+        \item Sur le serveur (bandeau gauche), sélectionner la machine virtuelle avec son nom.
+        \item Démarrer la machine (clic-droit ou bouton \emph{démarrer}).
+        \item En haut à droite, cliquer sur \emph{Console} puis choisir \emph{SPICE}.
+    \end{enumerate}
+\end{activite}
+\begin{commentprof}
+NoVNC ou SPICE\\ possibilité de modifier la résolution plus tard.\\ spice plus immersif (capture raccourci)
+\end{commentprof}
+\section{Découvrir Debian}
+Le système d'exploitation \emph{Debian (version 10)} est installée sur la machine virtuelle. Debian est une distribution composée de logiciels libres et au code source ouvert.
+
+Pour l'instant le système ne possède qu'un compte utilisateur \textbf{nsi} et son mot de passe \textbf{nsi}.
+\begin{activite}
+    \begin{enumerate}
+        \item Que signifie un \emph{code source ouvert}?
+        \item Ouvrir le système avec le compte \emph{nsi}.
+        \item Cliquer sur \emph{Activités} en haut à gauche pour découvrir les applications installées. La touche \emph{Super (Windows sur les claviers)} est un raccourci vers ce menu.
+        \item Ouvrir l'application \emph{Terminal}.
+    \end{enumerate}
+\end{activite}
+\begin{commentprof}
+créer raccourci vers gnome-terminal
+\end{commentprof}
+\section{Comptes}
+L'invite de commande du Terminal indique l'utilisateur en cours. Les utilisateurs sont répartis dans des groupes qui possèdent certains privilèges. Un utilisateur peut appartenir à plusieurs groupes.
+\begin{aretenir}[]
+    Le \emph{super-utilisateur} possède tous les droits sur la machine. Son identifiant est \textbf{root}. Un utilisateur peut devenir administrateur temporairement. Pour cela il doit appartenir au groupe \textbf{sudo}.
+\end{aretenir}
+\begin{activite}
+    \begin{enumerate}
+        \item Dans le Terminal taper la commande. La liste des groupes auxquels appartient l'utilisateur apparaît.
+              \begin{lstlisting}[language=bash]
+groups
+\end{lstlisting}
+        \item Pour devenir super-utilisateur, taper la commande ci-après. Le mot de passe est également \textbf{nsi}.
+              \begin{lstlisting}[language=bash]
+su -
+\end{lstlisting}
+        \item Modifier le mot de passe du super-utilisateur. \textbf{Il est impératif de ne pas perdre ce mot de passe!}
+        \begin{lstlisting}[language=bash]
+passwd
+\end{lstlisting}
+        \begin{center}
+            \framebox{\textbf{Ai-je précisé qu'il fallait impérativement ne pas oublier ce mot de passe?}}
+        \end{center}
+        \begin{commentprof}
+        même mot de passe que la session peut être pertinent ici (et encore dans alcasar)
+        \end{commentprof}
+        \item Créer un compte personnel. Il faut remplacer \emph{mon\_identifiant}. \textbf{Bien retenir le mot de passe!} Le questionnaire qui est posé ensuite est facultatif.
+        \begin{lstlisting}[language=bash]
+# remplacer mon_identifiant par un identifiant personnel
+adduser mon_identifiant
+\end{lstlisting}
+        \item Ajouter le nouveau compte au groupe \emph{sudo}.
+        \begin{lstlisting}[language=bash]
+usermod -aG sudo mon_identifiant
+\end{lstlisting}
+        \item Vérifier les groupes auxquels appartient le nouveau compte.
+        \begin{lstlisting}[language=bash]
+groups mon_identifiant
+\end{lstlisting}
+        \item Sortir du mode super-utilisateur.
+        \begin{lstlisting}[language=bash]
+exit
+\end{lstlisting}
+        \item Redémarrer le système.
+        \item Se connecter avec le nouveau compte.
+        \item Supprimer le compte \textbf{nsi}.
+        \begin{lstlisting}[language=bash]
+# L'ajout du mot sudo exécute la commande en mode super-utilisateur.
+sudo deluser --remove-home nsi
+# On utilise ici le mot de passe du compte personnel
+\end{lstlisting}
+        \item Remplacer le nom de la machine (\emph{hostname}):
+        \begin{itemize}
+            \item Ouvrir le fichier hostname
+            \begin{lstlisting}[language=bash]
+sudo nano /etc/hostname
+\end{lstlisting}
+            \item Remplacer le nom de la machine.
+            \item Enregistrer avec le raccourci \emph{Ctrl+O}.
+            \item Sortir de l'éditeur \emph{nano}: \emph{Ctrl+X}.
+        \end{itemize}
+        
+    \end{enumerate}
+\end{activite}
+\section{Mise à jour et installation d'applications}
+\subsection{Connexion au web}
+Les machines virtuelles NSI sont dans une \emph{bulle} à l'intérieur du réseau pédagogique. Pour se connecter au web, il faut établir un tunnel vers l'extérieur. On utilise l'application \emph{alcasar}.
+\begin{activite}
+\begin{enumerate}
+    \item Ouvrir Firefox.
+    \item Ouvrir la page \url{http://alcasar.localdomain}
+    \item Entrer les identifiants. Il s'agit des mêmes que le serveur \emph{Proxmox} \textbf{lors de la première connexion}. Il faut donc utiliser la date de naissance pour mot de passe.
+    \item Modifier le mot de passe. 
+    \begin{center}
+        \framebox{\textbf{Je ne me rappelle plus si je vous ai déjà dit de ne pas oublier ce mot de passe.}}
+    \end{center}
+\end{enumerate}
+\end{activite}
+\subsection{Aptitude}
+Il existe un mode graphique qui permet d'installer des applications. Cependant nous allons réaliser les manipulations avec le Terminal. Sur Debian les logiciels sont installés via un dépôt officiel. Ce principe est similaire aux boutiques d'application (Play store\dots). Cette méthode permet de limiter la circulation de virus, malwares\dots L'application \emph{apt} permet de gérer les paquets installés.
+\begin{activite}
+\begin{enumerate}
+    \item Mettre à jour la liste des paquets. Cette étape n'installe rien mais compare seulement les versions des applications de la machine à celles du dépôt.
+    \begin{lstlisting}[language=bash]
+sudo apt update
+\end{lstlisting}
+    \item Mettre à jour les paquets. Cette étape installe les nouvelles versions.
+    \begin{lstlisting}[language=bash]
+sudo apt upgrade
+\end{lstlisting}
+    \item Vérifier la présence d'une application.
+    \begin{lstlisting}[language=bash]
+# vérifie si le logiciel wget est installé
+apt policy wget
+\end{lstlisting}
+    \item Installer une application. Nous installons \emph{wget} qui nous sera utile ensuite.
+    \begin{lstlisting}[language=bash]
+sudo apt install wget
+\end{lstlisting}
+            \begin{commentprof}
+            tabulation pour l'auto-complétion
+            \end{commentprof}
+\end{enumerate}
+\end{activite}
+\subsection{Dépôt non-officiel}
+Certaines applications ne sont pas présentes dans les dépôts officiels. Même s'il faut rester prudent, il est possible d'ajouter de nouveaux dépôts.
+\begin{activite}
+\begin{enumerate}
+    \item Se rendre sur le site de \emph{vscodium}.
+    \item Trouver la procédure d'installation du logiciel qui se découpent en trois étapes:
+    \begin{itemize}
+        \item Installer la clé d'authentification du dépôt.
+        \item Écrire le dépôt dans la liste du système.
+        \item Installer le logiciel.
+    \end{itemize}
+    \item Installer alors \emph{Vscodium}
+    \item \emph{Pour les plus avancés:} Découvrir \emph{Vscodium} et installer des extensions en s'aidant du guide sur le lien suivant: \url{https://tinyurl.com/vscodium}
+\end{enumerate}
+\end{activite}
+\begin{commentprof}
+ctrl+maj+v pour coller dans le Terminal
+\end{commentprof}
+\end{document}

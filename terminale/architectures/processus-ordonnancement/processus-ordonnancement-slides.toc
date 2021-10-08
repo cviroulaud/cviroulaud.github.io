@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Les processus}{4}{0}{1}
+\beamer@subsubsectionintoc {1}{0}{1}{Définition}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{Création d'un processus}{7}{0}{1}
+\beamer@sectionintoc {2}{Ordonnancement}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Le chef d'orchestre}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Le scheduling}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Quelques algorithmes d'ordonnancement}{15}{0}{2}

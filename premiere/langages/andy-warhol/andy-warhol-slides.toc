@@ -1,0 +1,5 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Manipuler une image}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Présentation de la bibliothèque}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Couleurs d'une image}{9}{0}{1}
+\beamer@subsectionintoc {1}{3}{Principe de la modification}{15}{0}{1}

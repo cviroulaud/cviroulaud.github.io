@@ -8,7 +8,19 @@
 
 
 def est_pair(x: int) -> bool:
+    """
+    vérifie si x est pair
+
+    Args:
+        x (int): entier
+
+    Returns:
+        bool: True si x est pair
+    """
     if x % 2 == 0:
         return True
     else:
         return False
+
+# appel de la fonction
+print(est_pair(5))

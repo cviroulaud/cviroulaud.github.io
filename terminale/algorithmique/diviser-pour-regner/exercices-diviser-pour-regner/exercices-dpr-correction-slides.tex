@@ -151,12 +151,51 @@ def dichotomie_rec(tab: list, x: int, debut: int, fin: int) -> int:
         \end{center}
         Cette fonction renvoie le maximum de la liste.
 \end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Complexité:
+    \begin{itemize}
+        \item À chaque appel récursif, la taille du tableau est divisé par 2. Comme pour le tri fusion, la complexité des appels est de l'ordre de $\log_2(n)$.
+        \item À chaque remontée d'appel, on compare deux éléments. Le nombre de comparaisons dépend du niveau. Le total des comparaisons est de l'ordre de $n$.
+    \end{itemize}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw, minimum height=.7cm,minimum width = .7cm] (50) at (2.45,6) {16};
+            \foreach \i in {0,1}
+                {\node[draw, minimum height=.7cm,minimum width = .7cm] (4\i) at (1.05+2.8*\i,5) {8};}
+            \foreach \i/\j in {00/0,01/1,10/2,11/3}
+                {\node[draw, minimum height=.7cm,minimum width = .7cm] (3\i) at (.35+1.4*\j,4) {4};}
+            \foreach \i/\j in {000/0,001/1,010/2,011/3,100/4,101/5,110/6,111/7}
+                {\node[draw, minimum height=.7cm,minimum width = .7cm] (2\i) at (.7*\j,3) {2};}
+
+            \foreach \i in {0,1}
+                {\draw (50.south) -- (4\i.north);}
+            \foreach \i in {0,1}{
+                \foreach \j in {0,1}
+                {\draw (4\i.south) -- (3\i\j.north);}
+                }
+            \foreach \i in {00,01,10,11}{
+                \foreach \j in {0,1}
+                {\draw (3\i.south) -- (2\i\j.north);}
+                }
+            
+                \draw (8,7) node{comparaisons};
+                \draw (8,6) node{$\dfrac{n}{16}$};
+                \draw (8,5) node{$\dfrac{n}{8}$};
+                \draw (8,4) node{$\dfrac{n}{4}$};
+                \draw (8,3) node{$\dfrac{n}{2}$};
+        \end{tikzpicture}
+        \captionof{figure}{Exemple avec un tableau de 16 éléments}
+    \end{center}
+    La complexité est quasi-linéaire $n×\log(n)$.
+\end{frame}
 \section{Exercice 5}
 \begin{frame}[fragile]
     \frametitle{Exercice 5}
 
 \begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=.5em]
 def tri_rapide(tab: list) -> list:
     if not tab:
         return []

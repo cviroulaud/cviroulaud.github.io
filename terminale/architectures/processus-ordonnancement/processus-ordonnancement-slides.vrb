@@ -1,0 +1,30 @@
+\frametitle{}
+
+    \begin{activite}
+    \begin{enumerate}
+        \item Afficher la liste de tous les processus:
+        \begin{center}
+        \begin{lstlisting}[language=Bash , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+ps all
+\end{lstlisting}
+        \end{center}
+        \item Retrouver le  PID du processus de Firefox. Tuer le processus avec l'instruction:
+        \begin{center}
+            \begin{lstlisting}[language=Bash , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+kill numéro_PID
+\end{lstlisting}
+            \end{center}
+    \end{enumerate}
+    \end{activite}
+\note{
+    d'autres infos: nom de l'utilisateur qui a crée, utilisation CPU, état (STAT):
+\begin{itemize}
+\item R en cours d'exécution.
+\item T processus stoppé.
+\item I processus endormi (>20s).
+\item S processus endormi (<20s).
+\item Z processus zombie.
+\item D processus non interruptible.
+\item W processus swappé (échangé) sur disque.
+\end{itemize}
+}

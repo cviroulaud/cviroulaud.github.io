@@ -3,4 +3,4 @@
 \beamer@sectionintoc {2}{Exercice 2}{4}{0}{2}
 \beamer@sectionintoc {3}{Exercice 3}{9}{0}{3}
 \beamer@sectionintoc {4}{Exercice 4}{12}{0}{4}
-\beamer@sectionintoc {5}{Exercice 5}{15}{0}{5}
+\beamer@sectionintoc {5}{Exercice 5}{16}{0}{5}

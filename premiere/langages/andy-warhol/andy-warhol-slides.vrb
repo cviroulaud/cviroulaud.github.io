@@ -1,0 +1,16 @@
+\frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+# Import de l'outil 'image' de la bibliothèque Pillow
+from PIL import Image
+
+# Affectation de l'image 'joconde' à la variable 'originale'
+originale = Image.open("joconde.jpg")
+
+# Récupération des dimensions de l'image
+ligne, colonne = originale.size
+\end{lstlisting}
+        \captionof{code}{La bibliothèque \textbf{\texttt{Pillow}}}
+    \end{center}
+

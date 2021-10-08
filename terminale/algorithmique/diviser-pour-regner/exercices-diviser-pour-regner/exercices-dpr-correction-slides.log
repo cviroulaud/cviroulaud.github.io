@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  1 OCT 2021 13:48
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 OCT 2021 11:18
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/diviser-pour-regner/exercices-diviser-pour-regner/exercices-dpr-correction-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/diviser-pour-regner/exercices-diviser-pour-regner/exercices-dpr-correction-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.173 seconds
+luaotfload | main : initialization completed in 0.151 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1698,15 +1698,9 @@ Package luatex.def Info: ressources/combinaison.png  used on input line 153.
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 [14
 
-<./ressources/combinaison.png>] (./exercices-dpr-correction-slides.toc) [15
+<./ressources/combinaison.png>] [15
 
-]
-\openout4 = exercices-dpr-correction-slides.vrb
- (./exercices-dpr-correction-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [16
+] (./exercices-dpr-correction-slides.toc) [16
 
 ]
 \openout4 = exercices-dpr-correction-slides.vrb
@@ -1725,6 +1719,14 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 ) [18
 
 ]
+\openout4 = exercices-dpr-correction-slides.vrb
+ (./exercices-dpr-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [19
+
+]
 \tf@nav=\write8
 
 \openout8 = exercices-dpr-correction-slides.nav
@@ -1734,11 +1736,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = exercices-dpr-correction-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
  (./exercices-dpr-correction-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 211.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `exercices-dpr-correction-slides.out' has not changed.
 (rerunfilecheck)             Checksum: B19A38EFEA7D9CC9F6054776F87C3A8F;480.
 
@@ -1748,19 +1750,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44465 strings out of 494383
- 381544,1144653 words of node,token memory allocated
- 132517 words of node memory still in use:
-   3145 hlist, 9 vlist, 1754 rule, 183 disc, 16 local_par, 1364 glue, 1947 kern, 30 penalty, 4674 glyph, 10773 attribute, 106 glue_spec, 1798 attribute_list, 3 write, 2538 pdf_colorstack nodes
-   avail lists: 1:3,2:5237,3:76,4:5133,5:4310,6:38,7:3070,8:3880,9:6938,10:33,11:419,12:1
- 46966 multiletter control sequences out of 65536+600000
+ 44685 strings out of 494383
+ 381539,1144653 words of node,token memory allocated
+ 136325 words of node memory still in use:
+   3145 hlist, 9 vlist, 1754 rule, 183 disc, 16 local_par, 1365 glue, 1947 kern, 30 penalty, 5151 glyph, 10971 attribute, 106 glue_spec, 1831 attribute_list, 3 write, 2538 pdf_colorstack nodes
+   avail lists: 1:4,2:5237,3:746,4:5132,5:4311,6:38,7:3070,8:3880,9:6938,10:33,11:419,12:1
+ 47184 multiletter control sequences out of 65536+600000
  64 fonts using 9319343 bytes
  70i,15n,95p,1245b,953s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on exercices-dpr-correction-slides.pdf (18 pages, 94541 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on exercices-dpr-correction-slides.pdf (19 pages, 115429 bytes).
 
-PDF statistics: 354 PDF objects out of 1000 (max. 8388607)
- 295 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 131072)
+PDF statistics: 382 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 46 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

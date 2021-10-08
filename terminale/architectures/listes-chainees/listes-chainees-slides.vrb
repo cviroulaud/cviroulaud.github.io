@@ -1,0 +1,18 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def inserer(self, val: int, n: int) -> None:
+    """
+    appel principal de l'insertion pour placer val en n
+    """
+    # gestion du cas particulier où l'insertion est en début
+    if n == 0:
+        nouveau = Maillon(val, self.tete)
+        self.tete = nouveau
+    else:
+        # n-1 pour ajuster la position
+        self.inserer_rec(val, n-1, self.tete)
+\end{lstlisting}
+\end{center}
+

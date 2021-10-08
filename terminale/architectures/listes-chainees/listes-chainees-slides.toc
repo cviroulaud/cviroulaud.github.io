@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Liste chaînée}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Principe}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Comparaison avec un tableau}{8}{0}{1}
+\beamer@sectionintoc {2}{Implémentation}{17}{0}{2}
+\beamer@sectionintoc {3}{Manipuler une liste chaînée}{26}{0}{3}
+\beamer@subsectionintoc {3}{1}{Taille de la liste}{27}{0}{3}
+\beamer@subsectionintoc {3}{2}{N-ième élément}{31}{0}{3}
+\beamer@sectionintoc {4}{Insertion}{37}{0}{4}

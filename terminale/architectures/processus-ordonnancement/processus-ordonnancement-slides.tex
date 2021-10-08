@@ -1,0 +1,144 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Ordonnancement des processus}
+\date{\framebox{\textbf{Archi 02}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Un processeur ne peut exécuter qu'une seule instruction à la fois. Pourtant sur un ordinateur, il est possible d'écouter de la musique tout en surfant sur le web.
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{framed}
+        \centering Comment exécuter plusieurs activités en même temps sur une machine?
+    \end{framed}
+
+\end{frame}
+\section{Les processus}
+\subsubsection{Définition}
+\begin{frame}
+    \frametitle{Les processus - définition}
+
+    \begin{aretenir}[]
+        Un \emph{programme} est un fichier en mémoire qui ne fait rien. Un \emph{processus} est l'exécution d'un programme. 
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{activite}
+    \begin{enumerate}
+        \item Ouvrir un terminal.
+        \item Écrire la commande
+        \begin{center}
+        \begin{lstlisting}[language=Bash , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+top
+\end{lstlisting}
+        \captionof{code}{Visualiser les processus en cours}
+        \label{CODE}
+        \end{center}
+        \item Dans Debian, ouvrir le logiciel \emph{Firefox} et observer l'apparition de nouveaux processus.
+        \item Depuis le terminal, utiliser la combinaison de touche \textbf{\texttt{Ctrl+c}} pour stopper la surveillance des processus.
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\subsection{Création d'un processus}
+\begin{frame}
+    \frametitle{Création d'un processus}
+
+    \begin{aretenir}[]
+        Chaque processus possède un identifiant unique, le \textbf{\texttt{PID}} (\textbf{P}rocess \textbf{ID}entifier). Au démarrage de la machine un premier processus spécial  (\emph{init}) est lancé. Ce processus crée d'autres \emph{processus fils}. Ainsi chaque processus possède un (et un seul) parent, le \textbf{\texttt{PPID}} (\textbf{P}arent \textbf{P}rocess \textbf{ID}entifier).
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{activite}
+    \begin{enumerate}
+        \item Afficher la liste de tous les processus:
+        \begin{center}
+        \begin{lstlisting}[language=Bash , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+ps all
+\end{lstlisting}
+        \end{center}
+        \item Retrouver le  PID du processus de Firefox. Tuer le processus avec l'instruction:
+        \begin{center}
+            \begin{lstlisting}[language=Bash , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+kill numéro_PID
+\end{lstlisting}
+            \end{center}
+    \end{enumerate}
+    \end{activite}
+\note{
+    d'autres infos: nom de l'utilisateur qui a crée, utilisation CPU, état (STAT):
+\begin{itemize}
+\item R en cours d'exécution.
+\item T processus stoppé.
+\item I processus endormi (>20s).
+\item S processus endormi (<20s).
+\item Z processus zombie.
+\item D processus non interruptible.
+\item W processus swappé (échangé) sur disque. 
+\end{itemize}
+}
+\end{frame}
+\section{Ordonnancement}
+\subsection{Le chef d'orchestre}
+\begin{frame}
+    \frametitle{Le chef d'orchestre}
+
+    
+    Dans le système plusieurs processus sont en cours simultanément, mais le processeur ne peut exécuter qu’une seule instruction à la fois. Le processeur travaille donc \emph{en temps partagé}. Il bascule constamment d’un processus à l’autre.
+
+    \note[item]{chaque processus considère qu'il a le processeur pour lui tout seul. multiprogrammation}
+    \note[item]{scheduleur = 1 module du système d'exploitation}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[]
+        \textbf{L'ordonnanceur (scheduleur)} sélectionne le prochain processus prêt (\emph{Ready}) qui sera exécuté par le processeur. L'objectif est d'obtenir un \emph{temps de traitement moyen} le plus court possible.
+    \end{aretenir}
+
+\end{frame}
+\subsection{Le scheduling}
+\begin{frame}
+    \frametitle{Le scheduling}
+
+    Les algorithmes d’ordonnancement peuvent être classés en deux catégories:
+    \begin{itemize}
+    \item<1-> \textbf{Non pré~emptif:} Sélectionne un processus, puis le laisse s’exécuter jusqu’à ce qu’il bloque (soit sur une E/S, soit en attente d’un autre processus) où qu’il libère volontairement le processeur.
+    \item<2-> \textbf{Pré~emptif:} Sélectionne un processus et le laisse s’exécuter pendant un délai déterminé.
+    \end{itemize}
+
+\end{frame}
+\subsection{Quelques algorithmes d'ordonnancement}
+\begin{frame}
+    \frametitle{Quelques algorithmes d'ordonnancement}
+
+  \begin{itemize}
+      \item \textbf{First Come First Served: }Une fois que le CPU a été allouée à un processus, celui-ci le garde jusqu’à ce qu’il décide de le libérer. 
+      \item \textbf{Shortest Job First:} Quand le CPU est disponible, elle est assignée au processus qui possède le prochain cycle le plus petit. 
+      \item \textbf{Round Robin:} Chaque processus a une petite unité de temps appelée \emph{quantum} (en général de 10 à 100 ms). L'ordonnanceur parcourt la file d’attente des processus prêts et alloue le CPU à chaque processus pendant un quantum.
+  \end{itemize}  
+\note[item]{\textbf{First Come: }Cet algorithme est particulièrement incommode pour le temps partagé où il est important que chaque utilisateur obtienne le CPU à des intervalles réguliers.}
+\note[item]{\textbf{Shortest:} La difficulté est pouvoir connaître la longueur de la prochaine requête du CPU.}
+\note[item]{La performance du \emph{tourniquet} dépend fortement du choix du quantum de base. }
+\note[item]{Linux propose ces 3 politiques d'ordonnancement. Un système de priorité est également mis en place. Par défaut, un processus est associé à la politique de temps partagé. Seul root peut associer un processus à une des classes d’ordonnancement en temps réel.}
+\end{frame}
+\end{document}

@@ -1,0 +1,11 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def afficher(self) -> str:
+    nom_mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+    return f"{self.jour} / {nom_mois[self.mois - 1]} / {self.annee}"
+
+\end{lstlisting}
+\end{center}
+

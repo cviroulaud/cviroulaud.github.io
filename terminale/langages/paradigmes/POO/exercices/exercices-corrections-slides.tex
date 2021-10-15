@@ -21,7 +21,7 @@
 \section{Exercice 1}
 \begin{frame}
     \frametitle{Exercice 1}
-\lstinputlisting[firstline=10 ,lastline=18 , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]{"scripts/livre.py"}
+\lstinputlisting[firstline=10 ,lastline=18 , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]{"scripts/livre.py"}
 
 \end{frame}
 \begin{frame}
@@ -49,13 +49,44 @@
 
 \end{frame}
 \section{Exercice 4}
-\begin{frame}
+\begin{frame}[fragile]
     \frametitle{Exercice 4}
-\lstinputlisting[firstline=10 ,lastline=19 , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]{"scripts/date.py"}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+class Date:
+    def __init__(self, j: int, m: int, a: int):
+        self.jour = j
+        self.mois = m
+        self.annee = a
+\end{lstlisting}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def est_avant(self, d) -> bool:
+    # Le \ permet d'écrire sur plusieurs lignes
+    # and est prioritaire devant or
+    return self.annee < d.annee or \
+        self.annee == d.annee and \
+            (self.mois < d.mois or \
+            self.mois == d.mois and \
+                self.jour < d.jour)
+\end{lstlisting}
+\end{center}
 
 \end{frame}
-\begin{frame}
-\lstinputlisting[firstline=24 ,lastline=29 , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]{"scripts/date.py"}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def afficher(self) -> str:
+    nom_mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+    return f"{self.jour} / {nom_mois[self.mois - 1]} / {self.annee}"
+
+\end{lstlisting}
+\end{center}
 
 \end{frame}
 \section{Exercice 5}

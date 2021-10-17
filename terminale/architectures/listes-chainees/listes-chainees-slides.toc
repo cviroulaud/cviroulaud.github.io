@@ -6,4 +6,4 @@
 \beamer@sectionintoc {3}{Manipuler une liste chaînée}{26}{0}{3}
 \beamer@subsectionintoc {3}{1}{Taille de la liste}{27}{0}{3}
 \beamer@subsectionintoc {3}{2}{N-ième élément}{31}{0}{3}
-\beamer@sectionintoc {4}{Insertion}{37}{0}{4}
+\beamer@subsectionintoc {3}{3}{Insertion}{37}{0}{3}

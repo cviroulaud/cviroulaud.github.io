@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 OCT 2021 14:25
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 OCT 2021 10:04
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/paradigmes/POO/miniprojet-banque/miniprojet-banque-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/langages/paradigmes/POO/miniprojet-banque/miniprojet-banque-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.155 seconds
+luaotfload | main : initialization completed in 0.131 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1655,19 +1655,15 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `miniprojet-banque-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 80534C87C3638AE4963F564F362824EF;522.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 )
 
 Here is how much of LuaTeX's memory you used:
- 44273 strings out of 494383
+ 44269 strings out of 494383
  100000,1144653 words of node,token memory allocated
  49674 words of node memory still in use:
    34 hlist, 11 vlist, 6 rule, 14 disc, 5 local_par, 4 math, 92 glue, 14 kern, 33 penalty, 6271 glyph, 1533 attribute, 106 glue_spec, 258 attribute_list, 3 write, 28 pdf_colorstack nodes
    avail lists: 1:4,2:1881,3:325,4:125,5:107,6:29,7:1222,8:24,9:204,10:12,11:169,12:1
- 46885 multiletter control sequences out of 65536+600000
+ 46881 multiletter control sequences out of 65536+600000
  59 fonts using 8675127 bytes
  70i,15n,95p,1216b,1065s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>

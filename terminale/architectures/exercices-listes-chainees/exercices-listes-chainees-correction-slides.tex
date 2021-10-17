@@ -1,0 +1,263 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices listes chaînées\\Correction}
+\date{\framebox{\textbf{Archi 04}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 1}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
+class Maillon:
+    """
+    Crée un maillon de la liste chaînée
+    """
+
+    def __init__(self, val: int, suiv: object) -> None:
+        self.valeur = val
+        self.suivant = suiv
+\end{lstlisting}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 2}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+class Liste:
+    """
+    Crée une liste chaînée
+    """
+
+    def __init__(self):
+        self.tete: Maillon = None
+\end{lstlisting}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 3}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def ajoute(self, val: int) -> None:
+    self.tete = Maillon(val, self.tete)
+\end{lstlisting}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 4}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+lst = Liste()
+lst.ajoute(8)
+lst.ajoute(5)
+lst.ajoute(3)
+lst.ajoute(9)
+lst.ajoute(10)
+\end{lstlisting}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 5}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def dernier(self) -> int:
+    # gestion d'erreur
+    if self.tete is None:
+        return -1
+
+    en_cours = self.tete
+    while en_cours.suivant is not None:
+        en_cours = en_cours.suivant
+    return en_cours.valeur
+\end{lstlisting}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 6}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def dernier_aux(self, m: Maillon) -> int:
+    if m.suivant is None:
+        return m.valeur
+    else:
+        return self.dernier_aux(m.suivant)
+
+def dernier_rec(self) -> int:
+    # gestion d'erreur
+    if self.tete is None:
+        return -1
+
+    return self.dernier_aux(self.tete)
+\end{lstlisting}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 7}
+\begin{center}
+    
+
+    \begin{tikzpicture}[scale=0.6]
+        \node[draw,minimum height=0.5cm] (9) at (-10,2) {9};
+        \node[draw,minimum height=0.5cm] (3) at (-8,2) {3};
+        \node[draw,minimum height=0.5cm] (5) at (-6,2) {5};
+        \node[draw,minimum height=0.5cm] (8) at (-4,2) {8};
+        \node[draw,minimum height=0.5cm] (fin) at (-2,2) {fin};
+        \draw[->,>=latex] (-10,0) -- (9);
+
+        \draw[->,>=latex] (9) -- (3);
+        \draw[->,>=latex] (3) -- (5);
+        \draw[->,>=latex] (5) -- (8);
+        \draw[->,>=latex] (8) -- (fin);
+
+        \node[draw,minimum height=0.5cm] (lst) at (-13,5) {fin};
+
+    \end{tikzpicture}
+    \captionof{figure}{Tant que le \textbf{\texttt{Maillon}} en cours n'est pas \textbf{\texttt{None}}}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 7}
+\begin{center}
+    \begin{tikzpicture}[scale=0.6]
+        \node[draw,minimum height=0.5cm] (9) at (-10,2) {9};
+        \node[draw,minimum height=0.5cm] (3) at (-8,2) {3};
+        \node[draw,minimum height=0.5cm] (5) at (-6,2) {5};
+        \node[draw,minimum height=0.5cm] (8) at (-4,2) {8};
+        \node[draw,minimum height=0.5cm] (fin) at (-2,2) {fin};
+        \draw[->,>=latex] (-8,0) -- (3);
+
+        \draw[->,>=latex] (9) -- (3);
+        \draw[->,>=latex] (3) -- (5);
+        \draw[->,>=latex] (5) -- (8);
+        \draw[->,>=latex] (8) -- (fin);
+
+        \node[draw,minimum height=0.5cm] (lst) at (-13,6) {fin};
+        \node[draw,minimum height=0.5cm] (92) at (-10,6) {9};
+
+        \draw[->,>=latex] (92) -- (lst);
+    \end{tikzpicture}
+    \captionof{figure}{Créer un nouveau \textbf{\texttt{Maillon}} et l'attacher au précédent.}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 8}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def renverser(self) -> None:
+    res = None
+    en_cours = self.tete
+    while en_cours is not None:
+        # crée maillon et l'attache au précédant
+        res = Maillon(en_cours.valeur, res)
+        # va voir le maillon suivant
+        en_cours = en_cours.suivant
+    self.tete = res
+\end{lstlisting}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1 - 9}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def dupliquer(self):
+    en_cours = self.tete
+    while en_cours is not None:
+        doublon = Maillon(en_cours.valeur, en_cours.suivant)
+        en_cours.suivant = doublon
+        en_cours = doublon.suivant
+\end{lstlisting}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}[fragile]
+    \frametitle{Exercice 2 - 1}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+from liste import Liste, Maillon
+\end{lstlisting}    
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 2 - 2}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+l1 = Liste()
+l1.ajoute(8)
+l1.ajoute(5)
+l1.ajoute(3)
+l1.ajoute(9)
+l1.ajoute(10)
+
+l2 = Liste()
+l2.ajoute(4)
+l2.ajoute(0)
+l2.ajoute(2)
+\end{lstlisting}    
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 2 - 3}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def concatener(l1: Liste, l2: Liste) -> Liste:
+    def concatener_rec(tete1: Maillon, tete2: Maillon) -> Maillon:
+        """
+        fonction interne pour additionner 2 listes
+        """
+        if tete1 is None:
+            return tete2
+        else:
+            return Maillon(tete1.valeur, concatener_rec(tete1.suivant, tete2))
+
+    res = Liste()
+    res.tete = concatener_rec(l1.tete, l2.tete)
+    return res
+\end{lstlisting}    
+
+\end{frame}
+\begin{frame}
+    \frametitle{Exercice 2 - 4}
+
+La liste 2 n'est pas recopiée dans la nouvelle liste. Une modification du contenu de l'une d'elle modifie l'autre: c'est un \textbf{effet de bord}.
+
+\end{frame}
+\begin{frame}
+    \frametitle{Exercice 2 - 5}
+
+Le complexité dépend de la taille de la première liste, qui est entièrement copiée.
+
+\end{frame}
+\section{Exercice 3}
+\begin{frame}[fragile]
+    \frametitle{Exercice 3 - 1}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def longueur(lst: tuple) -> int:
+    if len(lst) == 0:
+        return 0
+    else:
+        return 1+longueur(lst[1])
+\end{lstlisting}    
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Exercice 3 - 2}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def afficher(lst: tuple) -> str:
+    if len(lst) == 0:
+        return "fin"
+    else:
+        return lst[0] + " - " + afficher(lst[1])
+\end{lstlisting}    
+
+\end{frame}
+\end{document}

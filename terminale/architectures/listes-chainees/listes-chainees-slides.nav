@@ -85,21 +85,20 @@
 \headcommand {\beamer@framepages {35}{35}}
 \headcommand {\slideentry {3}{2}{6}{36/36}{N-ième élément}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\beamer@sectionpages {26}{36}}
 \headcommand {\beamer@subsectionpages {31}{36}}
-\headcommand {\sectionentry {4}{Insertion}{37}{Insertion}{0}}
-\headcommand {\slideentry {4}{0}{1}{37/37}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{37}{Insertion}}
+\headcommand {\slideentry {3}{3}{1}{37/37}{Insertion}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {4}{0}{2}{38/38}{}{0}}
+\headcommand {\slideentry {3}{3}{2}{38/38}{Insertion}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {4}{0}{3}{39/39}{}{0}}
+\headcommand {\slideentry {3}{3}{3}{39/39}{Insertion}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {4}{0}{4}{40/40}{}{0}}
+\headcommand {\slideentry {3}{3}{4}{40/40}{Insertion}{0}}
 \headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {3}{3}{5}{41/41}{Insertion}{0}}
+\headcommand {\beamer@framepages {41}{41}}
 \headcommand {\beamer@partpages {1}{41}}
 \headcommand {\beamer@subsectionpages {37}{41}}
-\headcommand {\beamer@sectionpages {37}{41}}
+\headcommand {\beamer@sectionpages {26}{41}}
 \headcommand {\beamer@documentpages {41}}
 \headcommand {\gdef \inserttotalframenumber {40}}
-\headcommand {\slideentry {4}{0}{5}{41/41}{}{0}}
-\headcommand {\beamer@framepages {41}{41}}

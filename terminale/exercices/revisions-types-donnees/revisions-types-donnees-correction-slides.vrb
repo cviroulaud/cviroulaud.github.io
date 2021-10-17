@@ -1,0 +1,22 @@
+\frametitle{Exercice 12}
+
+\begin{exo}
+\begin{lstlisting}[language=Python,basicstyle=\ttfamily\small , xleftmargin=2em, xrightmargin=2em]
+def lettres(mot: str)->dict:
+    """
+    compte le nombre d'occurrences
+    de chaque lettre du mot
+    """
+    occurrences = {}
+    for l in mot:
+        # si la lettre est déjà référencée
+        if l in occurrences:
+            occurrences[l] += 1
+        else:
+            occurrences[l] = 1
+    return occurrences
+
+print(lettres("bonjour"))
+\end{lstlisting}
+\end{exo}
+

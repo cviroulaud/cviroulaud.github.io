@@ -6,7 +6,6 @@ Date de création Fri Aug 21 10:10:53 2020
 @auteur: Christophe Viroulaud
 """
 
-
 class Date:
     def __init__(self, j: int, m: int, a: int):
         self.jour = j

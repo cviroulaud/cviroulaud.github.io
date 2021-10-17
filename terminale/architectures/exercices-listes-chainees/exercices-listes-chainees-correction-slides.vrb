@@ -1,0 +1,10 @@
+\frametitle{Exercice 3 - 2}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def afficher(lst: tuple) -> str:
+    if len(lst) == 0:
+        return "fin"
+    else:
+        return lst[0] + " - " + afficher(lst[1])
+\end{lstlisting}
+

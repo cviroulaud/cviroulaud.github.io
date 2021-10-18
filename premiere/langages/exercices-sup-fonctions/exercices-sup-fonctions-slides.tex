@@ -1,0 +1,143 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices supplémentaires\\fonctions}
+\date{\framebox{\textbf{Lang 07}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}
+    \frametitle{Exercice 1}
+
+    Écrire une fonction \texttt{\textbf{volume(long: int, larg: int, haut: int) $\rightarrow$ int}} qui calcule le volume d'un pavé.
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+def volume(long: int, larg: int, haut: int) -> int:
+    """
+    renvoie le volume d'un pavé
+
+    Args:
+        long (int): longueur
+        larg (int): largeur
+        haut (int): hauteur
+
+    Returns:
+        int: volume
+    """
+    return long*larg*haut
+\end{lstlisting}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}
+    \frametitle{Exercice 2}
+
+    Un entier naturel est dit parfait lorsqu’il est égal à la somme de tous ses diviseurs propres autres que lui-même. Par exemple 6 est parfait car $6 = 1 + 2 + 3$.\\
+    Écrire la fonction \textbf{\texttt{est\_parfait(n: int) $\rightarrow$ bool}} qui vérifie si \textbf{\texttt{n}} est un nombre parfait.
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def est_parfait(n: int) -> bool:
+    """
+    vérifie si n est parfait
+    """
+    somme = 0
+    for i in range(1, n):
+        if n % i == 0:  # i est multiple de n
+            somme += i
+    # la somme des multiples == n
+    return somme == n
+\end{lstlisting}
+
+\end{frame}
+\section{Exercice 3}
+\begin{frame}
+    \frametitle{Exercice 3}
+
+    La conjecture de COLLATZ est un énoncé mathématique dont on ne sait pas encore s’il est vrai. Prendre un nombre entier positif, et lui appliquer lui le traitement suivant :
+    \begin{itemize}
+        \item s’il est pair, le diviser par 2        
+        \item sinon, le multiplier par 3 et ajouter 1
+    \end{itemize}    
+    On obtient alors un nouveau nombre, sur lequel la procédure est répétée. \begin{center}
+        La conjecture s’énonce ainsi : \textbf{quel que soit l’entier choisi au départ, on finira par obtenir 1.}    
+    \end{center}
+    Écrire une fonction \texttt{\textbf{collatz(n: int) $\rightarrow$ bool}} qui renvoie \texttt{\textbf{True}} si le processus s'achève, c'est à dire si on finit par atteindre 1.
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def collatz(n: int) -> bool:
+    """
+    renvoie True si la procédure termine
+    Si la boucle ne se termine jamais, la conjecture
+    est fausse.
+    """
+    while n != 1:
+        if n % 2 == 0:  # pair
+            n = n//2
+        else:
+            n = 3*n+1
+    return True
+\end{lstlisting}
+
+\end{frame}
+\end{document}

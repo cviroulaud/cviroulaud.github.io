@@ -1,0 +1,3 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Des structures héritées de la liste chaînée}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Pile}{5}{0}{1}

@@ -10,7 +10,81 @@
 
 \begin{document}
 \begin{frame}
-\titlepage
+    \titlepage
 \end{frame}
+\begin{frame}
+    \frametitle{}
 
+    Le processeur peut adopter plusieurs stratégies pour exécuter l'enchaînement des processus. Selon l'algorithme utilisé la structure adoptée pour stocker la liste des tâches a une importance fondamentale.
+    \note{First Come First Served, Shortest Job First\dots}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{framed}\centering
+        Quelles structures de données adopter pour implémenter les algorithmes d'ordonnancement?
+    \end{framed}
+    \note{Il est possible de construire plusieurs structures tirant avantage du principe de la liste chaînée}
+\end{frame}
+\section{Des structures héritées de la liste chaînée}
+\subsection{Pile}
+\begin{frame}
+    \frametitle{Pile}
+    \begin{aretenir}[]
+        Les piles (\emph{stack}) sont fondées sur le principe du \emph{dernier arrivé premier sorti} : \textbf{L}ast \textbf{I}n \textbf{F}irst \textbf{O}ut.
+    \end{aretenir}
+
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.5]
+            \draw (0,0) grid (1,3);
+            \draw (-2,4) grid (-1,5);
+
+            \draw[->,>=latex] (-1,4.5) to[out=0,in=90] (0.5,3);
+
+            \draw (5,0) grid (6,3);
+            \draw (7,4) grid (8,5);
+
+            \draw[->,>=latex] (5.5,3) to[out=90,in=180] (7,4.5);
+        \end{tikzpicture}
+        \captionof{figure}{Empiler - dépiler}
+    \end{center}
+    \note{pile d'assiettes}
+\end{frame}
+\begin{frame}
+    \frametitle{Interface d'une pile}
+    Une pile stocke des éléments de type \textbf{\texttt{T}} quelconque.
+    \begin{itemize}
+        \item \texttt{\textbf{creer\_pile() $\rightarrow$ Pile()}}: crée une pile vide
+        \item \texttt{\textbf{est\_vide(p: Pile) $\rightarrow$ bool}}: renvoie \textbf{\texttt{True}} si la pile est vide, \textbf{\texttt{False}} sinon.
+        \item \texttt{\textbf{empiler(p: Pile, e: T) $\rightarrow$ None}}: ajoute un élément \emph{e} au sommet de la pile.
+        \item \texttt{\textbf{depiler(p: Pile) $\rightarrow$ T}}: retire et renvoie l'élément du sommet de la pile.
+    \end{itemize}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Implémentation}
+    \begin{itemize}
+        \item \texttt{\textbf{creer\_pile() $\rightarrow$ Pile()}}
+        \item \texttt{\textbf{est\_vide(p: Pile) $\rightarrow$ bool}}
+        \item \texttt{\textbf{empiler(p: Pile, e: T) $\rightarrow$ None}}
+        \item \texttt{\textbf{depiler(p: Pile) $\rightarrow$ T}}
+    \end{itemize}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Créer une classe \textbf{\texttt{Noeud}}. Son constructeur initialisera deux attributs:
+                  \begin{itemize}
+                      \item \textbf{\texttt{donnees: int}}
+                      \item \textbf{\texttt{successeur: Noeud}}
+                  \end{itemize}
+            \item Écrire les fonctions de l'interface d'une pile. On considérera qu'elle stocke des entiers.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
 \end{document}

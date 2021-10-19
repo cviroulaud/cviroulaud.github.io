@@ -1,0 +1,18 @@
+\frametitle{}
+    \begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+from random import randint
+
+a = File()
+for i in range(6):
+    a.enfiler(randint(1, 20))
+    print(a)
+
+for i in range(6):
+    a.defiler()
+    print(a)
+\end{lstlisting}
+    \captionof{code}{Affichage de la file}
+    \label{CODE}
+    \end{center}
+

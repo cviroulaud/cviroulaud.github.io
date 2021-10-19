@@ -1,41 +1,40 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 """
-Date de création Tue Oct 13 08:50:49 2020
-
-@auteur: Christophe Viroulaud
+@Author: Christophe Viroulaud
+@Time:   Lundi 18 Octobre 2021 23:11
 """
 
 
-class Noeud():
-    def __init__(self,e,s):
-        self.donnees = e
+class Element():
+    def __init__(self, d: int, s: object):
+        self.donnees = d
         self.successeur = s
 
-    def __str__(self):
-        return str(self.donnees) + '|'
 
 class File():
     def __init__(self):
         self.premier = None
         self.dernier = None
 
-    def est_vide(self):
+    def est_vide(self) -> bool:
         return self.premier == None
 
-    def enfiler(self,e):
+    def enfiler(self, e: int) -> None:
+        nouveau = Element(e, None)
+
         if self.est_vide():
-            # 1 seul élément: le premier est le dernier également
-            self.premier = Noeud(e,None)
-            self.dernier = self.premier
+            # 1 seul élément: le premier est le dernier
+            self.premier = nouveau
         else:
-            nouveau = Noeud(e,None)
             # le dernier devient avant-dernier
             self.dernier.successeur = nouveau
-            # le nouveau devient dernier
-            self.dernier = nouveau
 
-    def defiler(self):
+        # le nouveau devient dernier
+        self.dernier = nouveau
+
+    def defiler(self) -> int:
         if not self.est_vide():
             res = self.premier.donnees
             self.premier = self.premier.successeur
@@ -43,18 +42,19 @@ class File():
 
     def __str__(self):
         c = self.premier
-        s = ''
+        s = ""
         while not c is None:
-            s = s + str(c)
+            s = s + str(c.donnees)+"|"
             c = c.successeur
-        return '\u2BA4|' + s[:] + '\u2BA0'
+        return "\u2BA4|" + s[:] + "\u2BA0"
+
 
 if __name__ == "__main__":
     from random import randint
 
     a = File()
     for i in range(6):
-        a.enfiler(randint(1, 6))
+        a.enfiler(randint(1, 20))
         print(a)
 
     for i in range(6):

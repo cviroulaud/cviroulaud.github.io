@@ -1,0 +1,49 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Archi 06}}}}
+\fancyhead[C]{\textbf{Exercices pile - file}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Terminale - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+    Il est possible de construire une pile à partir d'un simple tableau. On note \textbf{\texttt{p}} une pile vide.
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+p = []
+\end{lstlisting}
+    \begin{enumerate}
+        \item Écrire les fonctions implémentant l'interface de la pile.
+              \begin{itemize}
+                  \item \texttt{\textbf{est\_vide(p: list) $\rightarrow$ bool}}
+                  \item \texttt{\textbf{empiler(p: list, e: int) $\rightarrow$ None}}
+                  \item \texttt{\textbf{depiler(p: list) $\rightarrow$ int}}
+              \end{itemize}
+        \item Sur le même modèle, construire une file.
+        \item Quel est l'inconvénient d'utiliser un tableau pour construire ce type de structure?
+    \end{enumerate}
+
+\end{exo}
+\begin{exo}
+    Il est possible de créer une file avec deux piles en appliquant l'algorithme suivant:
+    \begin{itemize}
+        \item Enfiler un élément dans la pile gauche.
+        \item Défiler un élément dans la pile droite. Si la pile est vide, dépiler la pile gauche dans la pile droite.
+    \end{itemize}
+    \begin{enumerate}
+        \item Vérifier sur le papier le fonctionnement de la file.
+        \item Reprendre la classe \textbf{\texttt{Pile}} construite en cours et implémenter la classe \textbf{File2} qui respecte l'algorithme précédant. Elle contiendra des entiers.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    Flavius Josèphe était un historien juif du premier siècle. Il participa aux révoltes contre les Romains et fut assiégé avec quarante de ses compatriotes dans la forteresse de Jotapata en 67. Les  extrémistes  du  groupe  persuadèrent l’ensemble de se tuer pour ne pas  tomber  aux  mains  des  Romains.  Ne partageant  pas  ce  point  de  vue  mais  n’osant  s’opposer  au groupe,  Josèphe  proposa  que  l’on  se  mette  en  cercle  et  que  chaque  troisième  personne  soit  tuée,  la  dernière devant  se  suicider.\\
+    En utilisant une \emph{file} trouver la position à choisir parmi les 41 soldats pour être le dernier éliminé.
+\end{exo}
+\end{document}

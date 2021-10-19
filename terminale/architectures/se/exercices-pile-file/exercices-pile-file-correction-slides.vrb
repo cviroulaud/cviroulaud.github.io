@@ -1,0 +1,19 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def est_vide(f: list) -> bool:
+    return len(f) == 0
+
+def enfiler(f: list, e: int) -> None:
+    f.insert(0, e)
+
+def defiler(f: list) -> int:
+    return f.pop()
+
+f = []
+\end{lstlisting}
+\captionof{code}{file}
+\label{CODE}
+\end{center}
+

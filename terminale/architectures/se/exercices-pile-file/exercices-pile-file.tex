@@ -46,4 +46,28 @@ p = []
     Flavius Josèphe était un historien juif du premier siècle. Il participa aux révoltes contre les Romains et fut assiégé avec quarante de ses compatriotes dans la forteresse de Jotapata en 67. Les  extrémistes  du  groupe  persuadèrent l’ensemble de se tuer pour ne pas  tomber  aux  mains  des  Romains.  Ne partageant  pas  ce  point  de  vue  mais  n’osant  s’opposer  au groupe,  Josèphe  proposa  que  l’on  se  mette  en  cercle  et  que  chaque  troisième  personne  soit  tuée,  la  dernière devant  se  suicider.\\
     En utilisant une \emph{file} trouver la position à choisir parmi les 41 soldats pour être le dernier éliminé.
 \end{exo}
+\begin{exo}
+    Un EDI se charge de vérifier si le code écrit par le programmeur est correctement parenthésée, c'est à dire si à chaque parenthèse ouvrante correspond une parenthèse fermante.
+    \begin{enumerate}
+        \item En utilisant une pile, trouver sur papier un algorithme permettant de vérifier le parenthésage d'une chaîne de caractère.
+        \item Écrire la fonction \textbf{bien\_parenthesee(code: str) $\rightarrow$ bool} qui renvoie \texttt{\textbf{True}} si la ligne de code \textbf{\texttt{code}} est correctement parenthésée.
+        \item Écrire la version récursive \textbf{bien\_parenthesee\_rec(code: str, i: int, p: Pile) $\rightarrow$ bool}.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    L'écriture polonaise inverse des expressions arithmétiques place l'opérateur après ses opérandes. Cette notation ne nécessite aucune parenthèse ni aucune règle de priorité. Ainsi l'expression polonaise inverse
+    \begin{center}
+        1 2 3 × + 4 ×
+    \end{center}
+    désigne l'expression traditionnelle
+    \begin{center}
+        (1 + 2 × 3) × 4
+    \end{center}
+    En utilisant une pile pour stocker les résultats intermédiaires, il est facile de calculer l'expression:
+    \begin{itemize}
+        \item Si on a un nombre on le place sur la pile.
+        \item Si on a un opérateur on récupère les deux nombres du sommet de la pile, on leur applique l'opérateur et on replace le résultat sur la pile.
+    \end{itemize}
+    Écrire la fonction \texttt{\textbf{polonaise(chaine: str) $\rightarrow$ int}} qui calcule l'expression \emph{chaine}. Les éléments de la chaîne seront séparés par un espace. On n'utilisera que l'addition et la multiplication.\\La méthode \textbf{\texttt{split}} permet de découper une chaîne de caractère (voir documentation).
+\end{exo}
 \end{document}

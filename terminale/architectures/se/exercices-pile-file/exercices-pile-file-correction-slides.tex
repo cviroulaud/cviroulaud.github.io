@@ -1,0 +1,160 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices pile - file\\correction}
+\date{\framebox{\textbf{Archi 06}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def est_vide(p: list) -> bool:
+    return len(p) == 0
+
+def empiler(p: list, e: int) -> None:
+    p.append(e)
+
+def depiler(p: list) -> int:
+    return p.pop()
+
+p = []
+\end{lstlisting}
+        \captionof{code}{pile}
+        \label{CODE}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def est_vide(f: list) -> bool:
+    return len(f) == 0
+
+def enfiler(f: list, e: int) -> None:
+    f.insert(0, e)
+
+def defiler(f: list) -> int:
+    return f.pop()
+
+f = []
+\end{lstlisting}
+        \captionof{code}{file}
+        \label{CODE}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    La modification de la taille d'un tableau a un coup qui peut être linéaire.
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}
+    \frametitle{Exercice 2}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,0) grid (1,3);
+            \draw[dashed] (0,3) grid (1,4);
+            \foreach \x/\y in {0/2,1/4,2/7}
+                {
+                    \node at(.5,.5+\x){\y};
+                }
+            \node at(.5,-1){gauche};
+            \node (emp) at(-1,5) {5};
+            \draw[->,>=latex] (emp) edge[bend left] (.5,3.5);
+            \draw (2,0) grid (3,.2);
+            \node at(2.5,-1){droite};
+
+        \end{tikzpicture}
+        \captionof{figure}{enfiler}
+    \end{center}
+    \begin{center}
+        Le premier entré est 2.
+    \end{center}
+\end{frame}
+\begin{frame}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,0) grid (1,4);
+            \foreach \x/\y in {0/2,1/4,2/7,3/5}
+                {
+                    \node at(.5,.5+\x){\y};
+                }
+            \node at(.5,-1){gauche};
+            \draw[->,>=latex] (1,3.5) edge[bend left] (2.5,.5);
+            \draw (2,0) grid (3,.2);
+            \node at(2.5,-1){droite};
+
+            \draw (5,0) grid (6,.2);
+            \foreach \x/\y in {0/5,1/7,2/4,3/2}
+                {
+                    \node at(7.5,.5+\x){\y};
+                }
+            \node at(5.5,-1){gauche};
+            \draw (7,0) grid (8,4);
+            \node at(7.5,-1){droite};
+            \draw[->,>=latex] (8,3.5) edge[bend left] (9,2.5);
+
+        \end{tikzpicture}
+        \captionof{figure}{défiler - cas 1}
+    \end{center}
+    \begin{center}
+        La pile droite est vide, on commence par dépiler celle de gauche.
+    \end{center}
+\end{frame}
+\begin{frame}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,0) grid (1,.2);
+            \foreach \x/\y in {0/5,1/7,2/4}
+                {
+                    \node at(2.5,.5+\x){\y};
+                }
+            \node at(.5,-1){gauche};
+            \draw (2,0) grid (3,3);
+            \node at(2.5,-1){droite};
+            \draw[->,>=latex] (3,2.5) edge[bend left] (4,1.5);
+
+        \end{tikzpicture}
+        \captionof{figure}{défiler - cas 2}
+    \end{center}
+    \begin{center}
+        La pile droite n'est pas vide. On dépile normalement.
+    \end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def est_vide(f: list) -> bool:
+    return len(f) == 0
+
+def enfiler(f: list, e: int) -> None:
+    f.insert(0, e)
+
+def defiler(f: list) -> int:
+    return f.pop()
+
+f = []
+\end{lstlisting}
+        \captionof{code}{file}
+        \label{CODE}
+    \end{center}
+
+\end{frame}
+\end{document}

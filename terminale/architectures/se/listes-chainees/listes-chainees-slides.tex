@@ -260,7 +260,7 @@
 
             \foreach \x/\y in {3/8,4/5,5/3,6/9,7/1,8/0,9/2}
                 {\draw (\x+0.5,2.5) node{\y};}
-        \end{tikzpicture}
+        \end{tikzpicture} 
         \captionof{figure}{Dans un tableau, l'adresse de chaque élément dépend de celle du premier.}
         \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
 adr[élément 2] = adr[élément 0] + 2×taille_élément
@@ -683,9 +683,9 @@ print(len(lst))
     Il faut parcourir la liste jusqu'au rang \emph{n} pour trouver l'élément.
     \begin{activite}
         \begin{enumerate}
-            \item Écrire la méthode récursive \textbf{\texttt{get\_element\_rec(self, n: int m: Maillon) $\rightarrow$ int}} qui renvoie la valeur du n-iéme élément de la liste démarrant à \textbf{\texttt{m}}
-            \item Écrire la méthode \textbf{\texttt{get\_element(self) $\rightarrow$ int}} qui renvoie la valeur du n-iéme élément. Cette méthode utilisera \textbf{\texttt{get\_element\_rec}}.
-            \item \textbf{Pour les plus avancés:} Écrire la méthode native (itérative) \textbf{\texttt{\_\_getitem\_\_(self) $\rightarrow$ int}} qui redéfinit la structure à crochets (\textbf{\texttt{lst[n]}}) pour la classe \textbf{\texttt{Liste}}.
+            \item Écrire la méthode récursive \textbf{\texttt{get\_element\_rec(self, n: int, m: Maillon) $\rightarrow$ int}} qui renvoie la valeur du n-iéme élément de la liste démarrant à \textbf{\texttt{m}}
+            \item Écrire la méthode \textbf{\texttt{get\_element(self, n: int) $\rightarrow$ int}} qui renvoie la valeur du n-iéme élément. Cette méthode utilisera \textbf{\texttt{get\_element\_rec}}.
+            \item \textbf{Pour les plus avancés:} Écrire la méthode native (itérative) \textbf{\texttt{\_\_getitem\_\_(self, n: int) $\rightarrow$ int}} qui redéfinit la structure à crochets (\textbf{\texttt{lst[n]}}) pour la classe \textbf{\texttt{Liste}}.
         \end{enumerate}
     \end{activite}
 

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  19 OCT 2021 13:47
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  19 OCT 2021 20:45
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/exercices-pile-file/exercices-pile-file-correction-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/exercices-pile-file/exercices-pile-file-correction-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.134 seconds
+luaotfload | main : initialization completed in 0.152 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1617,6 +1617,68 @@ LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
 ] [9
 
 ]
+\openout4 = exercices-pile-file-correction-slides.vrb
+ (./exercices-pile-file-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [10
+
+]
+\openout4 = exercices-pile-file-correction-slides.vrb
+ (./exercices-pile-file-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [11
+
+] (./exercices-pile-file-correction-slides.toc) [12
+
+]
+\openout4 = exercices-pile-file-correction-slides.vrb
+ (./exercices-pile-file-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+Overfull \vbox (7.13962pt too high) detected at line 193
+ []
+
+[13
+
+] (./exercices-pile-file-correction-slides.toc) [14
+
+]
+\openout4 = exercices-pile-file-correction-slides.vrb
+ (./exercices-pile-file-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+Overfull \vbox (7.13962pt too high) detected at line 217
+ []
+
+[15
+
+]
+\openout4 = exercices-pile-file-correction-slides.vrb
+ (./exercices-pile-file-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [16
+
+] (./exercices-pile-file-correction-slides.toc) [17
+
+]
+\openout4 = exercices-pile-file-correction-slides.vrb
+ (./exercices-pile-file-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [18
+
+]
 \tf@nav=\write8
 
 \openout8 = exercices-pile-file-correction-slides.nav
@@ -1626,13 +1688,13 @@ LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
 \tf@snm=\write10
 
 \openout10 = exercices-pile-file-correction-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
  (./exercices-pile-file-correction-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
 Package rerunfilecheck Info: File `exercices-pile-file-correction-slides.out' has not changed.
-(rerunfilecheck)             Checksum: CFBECD9C78B1EBF33D02E0AD4EEC2641;192.
+(rerunfilecheck)             Checksum: 89AB4AA47DC608D74EFAFC698C0817CD;480.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1640,19 +1702,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44323 strings out of 494383
- 156271,1144653 words of node,token memory allocated
- 18920 words of node memory still in use:
-   61 hlist, 7 vlist, 5 rule, 7 disc, 4 local_par, 152 glue, 5 kern, 21 penalty, 1406 glyph, 2667 attribute, 106 glue_spec, 447 attribute_list, 3 write, 92 pdf_literal, 16 pdf_colorstack nodes
-   avail lists: 1:4,2:4236,3:456,4:3714,5:2964,6:44,7:1639,8:2687,9:4786,10:20,11:257,12:1
- 46983 multiletter control sequences out of 65536+600000
+ 44472 strings out of 494383
+ 381546,1144653 words of node,token memory allocated
+ 149323 words of node memory still in use:
+   3991 hlist, 9 vlist, 2231 rule, 233 disc, 19 local_par, 1733 glue, 2464 kern, 29 penalty, 4195 glyph, 11217 attribute, 106 glue_spec, 1872 attribute_list, 3 write, 3028 pdf_colorstack nodes
+   avail lists: 1:4,2:5475,3:542,4:5184,5:4160,6:45,7:3123,8:3754,9:6709,10:28,11:392,12:1
+ 47036 multiletter control sequences out of 65536+600000
  39 fonts using 7291831 bytes
  70i,15n,95p,1224b,953s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on exercices-pile-file-correction-slides.pdf (9 pages, 30069 bytes).
+Output written on exercices-pile-file-correction-slides.pdf (18 pages, 47836 bytes).
 
-PDF statistics: 158 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 131072)
- 42 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 331 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 131072)
+ 66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

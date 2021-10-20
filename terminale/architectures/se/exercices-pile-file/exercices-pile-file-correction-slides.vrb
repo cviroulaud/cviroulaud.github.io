@@ -1,19 +1,19 @@
-\frametitle{}
+\frametitle{Exercice 6}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-def est_vide(f: list) -> bool:
-    return len(f) == 0
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
+def polonaise(chaine: str) -> int:
+    p = Pile()
+    for e in chaine.split():
+        if e == "+" or e == "*":
+            val1 = p.depiler()
+            val2 = p.depiler()
+            if e == "+":
+                p.empiler(val1+val2)
+            else:
+                p.empiler(val1*val2)
+        else:
+            p.empiler(int(e))
 
-def enfiler(f: list, e: int) -> None:
-    f.insert(0, e)
-
-def defiler(f: list) -> int:
-    return f.pop()
-
-f = []
+    return p.depiler()
 \end{lstlisting}
-\captionof{code}{file}
-\label{CODE}
-\end{center}
 

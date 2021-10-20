@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  17 OCT 2021 15:38
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  20 OCT 2021 11:06
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/exercices-listes-chainees/exercices-listes-chainees-correction-slides
-(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/exercices-listes-chainees/exercices-listes-chainees-correction-slides.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/exercices-listes-chainees/exercices-listes-chainees-correction-slides
+(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/exercices-listes-chainees/exercices-listes-chainees-correction-slides.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.619 seconds
+luaotfload | main : initialization completed in 0.227 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1682,11 +1682,7 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-)
-Overfull \vbox (7.13962pt too high) detected at line 225
- []
-
-[16
+) [16
 
 ] [17
 
@@ -1734,12 +1730,12 @@ Here is how much of LuaTeX's memory you used:
  244162,1144653 words of node,token memory allocated
  76007 words of node memory still in use:
    1319 hlist, 9 vlist, 728 rule, 75 disc, 10 local_par, 593 glue, 804 kern, 20 penalty, 4048 glyph, 6933 attribute, 106 glue_spec, 1158 attribute_list, 3 write, 998 pdf_colorstack nodes
-   avail lists: 1:6,2:4418,3:396,4:4844,5:3850,6:42,7:2730,8:3486,9:6253,10:27,11:354,12:1
+   avail lists: 1:6,2:4418,3:396,4:4844,5:3850,6:42,7:2718,8:3486,9:6247,10:27,11:354,12:1
  47033 multiletter control sequences out of 65536+600000
  43 fonts using 7802439 bytes
- 70i,15n,95p,1233b,943s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 70i,15n,95p,1236b,945s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on exercices-listes-chainees-correction-slides.pdf (21 pages, 51892 bytes).
+Output written on exercices-listes-chainees-correction-slides.pdf (21 pages, 51727 bytes).
 
 PDF statistics: 308 PDF objects out of 1000 (max. 8388607)
  254 compressed objects within 3 object streams

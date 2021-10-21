@@ -7,5 +7,5 @@ let rec last = function
 | [] | [_] -> None
 | [a;b]-> Some (a,b)
 | _::q -> last q;;
-print_int (conv (last l));;
+conv (last l);;
 print_int (conv (last [5]));;

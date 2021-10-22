@@ -1,0 +1,16 @@
+\frametitle{Partager les traitements longs}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab_threads = []
+# Lance en parallèle 4 exécutions de calcul
+for i in range(4):
+    p = Thread(target=calcul)
+    p.start()
+    tab_threads.append(p)
+\end{lstlisting}
+        \captionof{code}{Exécution en parallèle}
+        \label{simul2}
+    \end{center}
+    Le code \ref{simul2} lance quatre processus en parallèle pour réaliser les calculs longs.
+

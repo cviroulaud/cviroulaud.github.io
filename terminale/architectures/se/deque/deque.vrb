@@ -1,0 +1,20 @@
+\frametitle{}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+f = File2()
+deb = time()
+for i in range(NB):
+    f.enfiler(i)
+fin = time()
+print("enfiler ", fin-deb)
+
+deb = time()
+for i in range(NB):
+    f.defiler()
+fin = time()
+print("défiler ", fin-deb)
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+enfiler  0.02210521697998047
+défiler  0.038460731506347656
+\end{lstlisting}

@@ -1,0 +1,164 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Bibliothèque \textbf{\texttt{deque}}\\exercice commenté}
+\date{\framebox{\textbf{Archi 07}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+En utilisant la pile construite à partir d'un tableau, mesurer la durée d'exécution pour:
+\begin{itemize}
+    \item empiler 100000 éléments,
+    \item dépiler 100000 éléments.
+\end{itemize}
+    
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+class Pile:
+    def __init__(self):
+        self.donnees = []
+
+    def est_vide(self) -> bool:
+        return self.donnees == []
+
+    def empiler(self, e: int) -> None:
+        self.donnees.append(e)
+
+    def depiler(self) -> int:
+        if not self.est_vide():
+            return self.donnees.pop()
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+p = Pile()
+deb = time()
+for i in range(NB):
+    p.empiler(i)
+fin = time()
+print("empiler ", fin-deb)
+
+deb = time()
+for i in range(NB):
+    p.depiler()
+fin = time()
+print("dépiler ", fin-deb)
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+empiler  0.04126310348510742
+dépiler  0.06682586669921875    
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+Effectuer les mêmes mesures pour la file:
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+class File:
+    def __init__(self):
+        self.donnees = []
+
+    def est_vide(self) -> bool:
+        return self.donnees == []
+
+    def enfiler(self, e: int) -> None:
+        self.donnees.append(e)
+
+    def defiler(self) -> int:
+        if not self.donnees == []:
+            return self.donnees.pop(0)
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+f = File()
+deb = time()
+for i in range(NB):
+    f.enfiler(i)
+fin = time()
+print("enfiler ", fin-deb)
+
+deb = time()
+for i in range(NB):
+    f.defiler()
+fin = time()
+print("défiler ", fin-deb)    
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+enfiler  0.041974782943725586
+défiler  2.0046255588531494   
+\end{lstlisting}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[]
+Python propose des outils optimisés dans la bibliothèque \textbf{\texttt{collections}}: 
+\begin{center}
+    \url{https://docs.python.org/fr/3/library/collections.html}
+\end{center}
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Écrire une nouvelle classe \textbf{\texttt{File}} en utilisant une \textbf{\texttt{deque}}.
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+class File2:
+    def __init__(self):
+        self.donnees = deque()
+
+    def est_vide(self) -> bool:
+        return len(self.donnees) == 0
+
+    def enfiler(self, e: int) -> None:
+        self.donnees.append(e)
+
+    def defiler(self) -> int:
+        if not self.est_vide():
+            return self.donnees.popleft()    
+\end{lstlisting}
+\begin{aretenir}[Observation]
+L'\textbf{interface} reste identique pour l'utilisateur de la classe.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+f = File2()
+deb = time()
+for i in range(NB):
+    f.enfiler(i)
+fin = time()
+print("enfiler ", fin-deb)
+
+deb = time()
+for i in range(NB):
+    f.defiler()
+fin = time()
+print("défiler ", fin-deb)
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+enfiler  0.02210521697998047
+défiler  0.038460731506347656
+\end{lstlisting}
+\end{frame}
+\end{document}

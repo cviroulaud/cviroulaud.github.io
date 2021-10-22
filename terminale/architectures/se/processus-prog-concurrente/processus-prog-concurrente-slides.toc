@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Parallélisme}{8}{0}{1}
+\beamer@subsectionintoc {1}{1}{Programmation séquentielle}{9}{0}{1}
+\beamer@subsectionintoc {1}{2}{Programmation en parallèle}{11}{0}{1}
+\beamer@subsectionintoc {1}{3}{Répartition des tâches: solution à risques}{16}{0}{1}
+\beamer@sectionintoc {2}{Interblocage}{28}{0}{2}
+\beamer@subsectionintoc {2}{1}{Exemple de situation}{29}{0}{2}
+\beamer@subsectionintoc {2}{2}{Conditions d'interblocage}{34}{0}{2}
+\beamer@subsectionintoc {2}{3}{Traitement de l'interblocage}{39}{0}{2}

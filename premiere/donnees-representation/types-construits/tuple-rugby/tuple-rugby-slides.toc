@@ -1,0 +1,6 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Une représentation peu pratique}{4}{0}{1}
+\beamer@sectionintoc {2}{Regroupement de données: les tuples}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Présentation}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{Lire un tuple}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Propriétés d'un tuple}{15}{0}{2}

@@ -1,0 +1,7 @@
+\frametitle{Correction}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> dico
+{'a': 8, 'b': 9, 'c': 1, 'd': 8, 'e': 1}
+\end{lstlisting}
+

@@ -1,0 +1,17 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+# moyenne générale
+somme_moy = 0
+for eleve in groupe:
+    # calcule la moyenne de chaque élève
+    somme_moy += moyenne(eleve)
+
+moyenne_generale = somme_moy/len(groupe)
+print(moyenne_generale)
+\end{lstlisting}
+\captionof{code}{Calcul de la moyenne générale}
+\label{CODE}
+\end{center}
+

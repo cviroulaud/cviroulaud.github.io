@@ -1,0 +1,16 @@
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
+def nombre_victoires2(palmares: tuple, equipe: str) -> int:
+    """
+    nombre de victoires de l'équipe
+    """
+    victoires = 0
+    for e in palmares:
+        if e == equipe:
+            victoires += 1
+
+    return victoires
+\end{lstlisting}
+\captionof{code}{Seconde méthode}
+\label{CODE}
+\end{center}

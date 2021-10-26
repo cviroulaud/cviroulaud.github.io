@@ -1,0 +1,16 @@
+\frametitle{Itérer sur les couples}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+for cle, val in vehicule1.items():
+    print(cle, " -> ", val)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+marque  ->  Renault
+modele  ->  Twingo
+kilometrage  ->  23410
+immatriculation  ->  AA-123-AA
+premiere_imat  ->  2010-10
+date_vidange  ->  2020-01
+couleur  ->  rouge
+\end{lstlisting}

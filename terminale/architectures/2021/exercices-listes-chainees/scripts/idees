@@ -1,17 +1,17 @@
 #DODO exo listes chainées d'après 99 problems Ocaml
-1 dernier d'une liste
+OK      1 dernier d'une liste 
 2 les 2 derniers d'une liste
-3 le k-ieme d'une liste
-4 longueur d'une liste
-5 reverse liste
+OK      3 le k-ieme d'une liste
+OK      4 longueur d'une liste
+OK      5 reverse liste
 8 élimine duplicata d'une liste
 10 compte les duplicata d'une liste
 12 décode duplicata
-14 duplique éléments d'une liste
+OK      14 duplique éléments d'une liste
 15 duplique n fois
 16 drop éléments tous les n
 17 split list
 18 extract slice
 20 remove k-ieme
-21 insert à position k
+OK      21 insert à position k
 22 range

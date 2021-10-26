@@ -1,0 +1,10 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Première approche}{4}{0}{1}
+\beamer@sectionintoc {2}{Les dictionnaires}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Présentation}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Utiliser un dictionnaire}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{Propriétés}{13}{0}{2}
+\beamer@sectionintoc {3}{Itérer sur un dictionnaire}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{Itérer sur les clés}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{Itérer sur les valeurs}{17}{0}{3}
+\beamer@subsectionintoc {3}{3}{Itérer sur les couples}{19}{0}{3}

@@ -1,0 +1,117 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{DonRep 09}}}}
+\fancyhead[C]{\textbf{Exercices types construits}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+\begin{enumerate}
+    \item Ouvrir le qcm \url{https://tinyurl.com/qcmtyp} et répondre aux questions. L'identifiant sera donné par le professeur.
+    \item Vérifier les réponses dans le corrigé \url{https://tinyurl.com/qcmtypcor}
+\end{enumerate}
+\end{exo}
+\begin{exo}
+    On considère le tableau:
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+tab = [0, 1, 2, 3, 4, 5]
+\end{lstlisting}
+    Écrire un programme qui remplace chaque entier du tableau par son carré.
+\end{exo}
+\begin{exo}
+    On considère le tuple qui ne peut contenir que des entiers inférieurs ou égaux à 100:
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+tup = (17, 32, 8, 4, 35, 13)
+\end{lstlisting}
+    Écrire la fonction \textbf{\texttt{mini(t: tuple) $\rightarrow$ int}} qui renvoie l'entier minimum du tuple passé en paramètre.
+\end{exo}
+\begin{exo}
+    En mathématiques, la médiane est la valeur qui sépare la moitié inférieure de la moitié supérieure d'un ensemble ordonné. Deux cas existent:
+    \begin{itemize}
+        \item la taille de l'ensemble est impair: la médiane est l'élément du milieu,
+        \item la taille de l'ensemble est pair: la médiane est la moyenne des deux éléments du milieu.
+    \end{itemize}
+    On considère le tuple:
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+salaire = (800, 830, 830, 950, 1002, 1100, 1100, 1103, 1340, 1530, 1600)
+salaire1 = (900, 950, 950, 960, 1050, 1060, 1100, 1160, 1370, 1555)
+\end{lstlisting}
+    \begin{enumerate}
+        \item Quelle est la médiane des deux tuples?
+        \item Écrire la fonction \textbf{\texttt{mediane(t: tuple) $\rightarrow$ int}} qui renvoie la médiane du tuple passé en paramètre.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+On considère le tableau ordonné de mesures:
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+mesures = [10, 15, 16, 23, 25, 38, 41, 43]
+\end{lstlisting}
+Écrire la fonction \textbf{\texttt{ecart\_max(t: list) $\rightarrow$ int}} qui renvoie l'écart maximum entre deux mesures consécutives du tableau. Par exemple:
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+>>> ecart_max(mesures)
+13 # écart entre 38 et 25
+\end{lstlisting}
+\end{exo}
+\begin{exo}
+    On considère les tableaux de taille 5:
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+t1 = [12, 17, 8, 10, 13]
+t2 = [4, 18, 9, 11, 23]
+\end{lstlisting}
+    Écrire la fonction \textbf{\texttt{somme(t1: list, t2: list) $\rightarrow$ list}} qui:
+    \begin{itemize}
+        \item fait la somme des éléments de même indice des deux tableaux,
+        \item stocke ces sommes dans un nouveau tableau,
+        \item renvoie ce tableau.
+    \end{itemize}
+On considérera que les tableaux passés en paramètres ont obligatoirement une taille 5.
+\end{exo}
+\begin{exo}Un livre peut être caractérisé par son titre, son auteur, son éditeur, son prix.
+    \begin{enumerate}
+        \item Construire un dictionnaire qui contient les informations du livre: \emph{Il était deux fois} de Franck Thilliez aux éditions \emph{Poche} à 8,70€.
+        \item Construire un dictionnaire pour \emph{Fahrenheit 451} de Ray Bradbury aux éditions \emph{Folio} à 6,30€.
+        \item Construire un tableau \textbf{\texttt{bibliotheque}} contenant les deux dictionnaires.
+        \item Écrire une boucle qui parcourt le tableau et affiche l'auteur de chaque livre.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    Le groupe d'élèves de NSI est composé de:
+    \begin{itemize}
+        \item Alice Durant,
+        \item Bob Bois,
+        \item John Doe,
+        \item Jules Dupont,
+        \item Alan Turing.
+    \end{itemize}
+    Au cours du semestre les notes obtenues sont:
+    \begin{center}
+        \begin{tabular}{|c|*{4}{c}|}
+            \hline
+            Alice & 12   & 8  & 10   & 9.5  \\
+            \hline
+            Bob   & 15   & 17 & 18   & 14   \\
+            \hline
+            John  & 10.5 & 8  & 16   & 13.5 \\
+            \hline
+            Jules & 12   & 9  & 17.5 & 10   \\
+            \hline
+            Alan  & 14   & 18 & 16   & 19   \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \begin{enumerate}
+        \item Créer un dictionnaire contenant les informations de chaque élève et stocker tous ces dictionnaires dans un tableau.
+        \item Écrire la fonction \textbf{moyenne(eleve: dict) $\rightarrow$ float} qui renvoie la moyenne de l'élève.
+        \item Calculer la moyenne générale du groupe.
+    \end{enumerate}
+\end{exo}
+\end{document}

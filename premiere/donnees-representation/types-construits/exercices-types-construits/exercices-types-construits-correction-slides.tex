@@ -1,0 +1,255 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices types construits\\Correction}
+\date{\framebox{\textbf{DonRep 09}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}
+    \frametitle{Exercice 1}
+Éléments de correction:
+\begin{itemize}
+    \item Un tuple n'est pas mutable (modifiable).
+    \item Dans un dictionnaire, tenter de lire la valeur associée à une clé qui n'existe pas renvoie une erreur.
+    \item Dans un dictionnaire, il est possible de créer un nouveau couple clé/valeur.
+\end{itemize}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}[fragile]
+    \frametitle{Exercice 2}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab = [0, 1, 2, 3, 4, 5]
+
+for i in range(len(tab)):
+    tab[i] = tab[i]**2
+\end{lstlisting}
+
+\end{frame}
+\section{Exercice 3}
+\begin{frame}[fragile]
+    \frametitle{Exercice 3}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def mini(t: tuple) -> int:
+    """
+    renvoie l'entier minimum de t
+    """
+    minimum = 101
+    for elt in t:
+        if elt < minimum:
+            minimum = elt
+    return minimum
+\end{lstlisting}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> tup = (17, 32, 8, 4, 35, 13)
+>>> mini(tup)
+4
+\end{lstlisting}
+\captionof{code}{Appel de la fonction}
+\label{CODE}
+\end{center}
+\end{frame}
+\section{Exercice 4}
+\begin{frame}[fragile]
+    \frametitle{Exercice 4}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def mediane(t: tuple) -> float:
+    """
+    calcule la médiane du tuple
+    indications:
+        le tuple est ordonné
+        le tuple contient au moins 2 éléments
+    """
+    taille = len(t)
+    milieu = taille//2
+    if taille % 2 == 0:  # pair
+        # la numérotation commence à 0
+        med = (t[milieu-1]+t[milieu])/2
+    else:  # impair
+        med = t[milieu]
+    return med
+\end{lstlisting}
+
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[Observations]
+\begin{itemize}
+    \item Le programme respecte l'algorithme donné.
+    \item Dans le cas pair, que se passerait-il si la taille du tuple était inférieure à 2?
+\end{itemize}
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+    \begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+salaire = (800, 830, 830, 950, 1002, 1100,
+    1100, 1103, 1340, 1530, 1600)
+salaire1 = (900, 950, 950, 960, 1050, 1060,
+        1100, 1160, 1370, 1555)
+print(mediane(salaire))
+print(mediane(salaire1))
+\end{lstlisting}
+        \captionof{code}{Appel de la fonction}
+        \label{CODE}
+        \end{center}
+    
+
+\end{frame}
+
+\section{Exercice 5}
+\begin{frame}[fragile]
+    \frametitle{Exercice 5}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def ecart_max(t: list) -> int:
+    maxi = 0
+    # attention à ne par sortir du tableau
+    for i in range(len(t) - 1):
+        ecart = t[i+1]-t[i]
+        if ecart > maxi:
+            maxi = ecart
+    return maxi
+\end{lstlisting}
+
+\begin{aretenir}[Observation]
+Il faut remarquer le générateur \textbf{\texttt{range(len(t) - 1)}}. La boucle s'arrête à l'avant-dernier élément du tableau. Ceci permet de ne pas dépasser la taille du tableau dans l'appel \textbf{\texttt{t[i+1]}}.
+\end{aretenir}
+\end{frame}
+\section{Exercice 6}
+\begin{frame}[fragile]
+    \frametitle{Exercice 6}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def somme(t1: list, t2: list) -> list:
+    tab = [0, 0, 0, 0, 0]
+    for i in range(5):
+        tab[i] = t1[i]+t2[i]
+    return tab
+\end{lstlisting}
+
+\begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+t1 = [12, 17, 8, 10, 13]
+t2 = [4, 18, 9, 11, 23]
+print(somme(t1, t2))
+\end{lstlisting}
+    \captionof{code}{Appel de la fonction}
+    \label{CODE}
+    \end{center}
+\end{frame}
+\section{Exercice 7}
+\begin{frame}[fragile]
+    \frametitle{Exercice 7}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+bibliotheque = [
+    {"titre": "Il était deux fois",
+        "auteur": "Franck Thilliez",
+        "editeur": "Poche",
+        "prix": 8.70},
+    {"titre": "Fahrenheit 451",
+        "auteur": "Ray Bradbury",
+        "editeur": "Folio",
+        "prix": 6.30}
+]
+\end{lstlisting}
+
+\begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+for livre in bibliotheque:
+    # livre contient un dictionnaire
+    print(livre["auteur"])
+\end{lstlisting}
+    \captionof{code}{Le tableau \textbf{\texttt{bibliotheque}} contient des dictionnaires.}
+    \label{CODE}
+    \end{center}
+\end{frame}
+\section{Exercice 8}
+\begin{frame}[fragile]
+    \frametitle{Exercice 8}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+groupe = [
+    {"prenom": "Alice",
+        "nom": "Durant",
+        "notes": [12, 8, 10, 9.5]},
+    {"prenom": "Bob",
+        "nom": "Bois",
+        "notes": [15, 17, 18, 14]},
+    {"prenom": "John",
+        "nom": "Doe",
+        "notes": [10.5, 8, 16, 13.5]},
+    {"prenom": "Jules",
+        "nom": "Dupont",
+        "notes": [12, 9, 17.5, 10]},
+    {"prenom": "Alan",
+        "nom": "Turing",
+        "notes": [14, 18, 16, 19]},
+]
+\end{lstlisting}
+
+\begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+for livre in bibliotheque:
+    # livre contient un dictionnaire
+    print(livre["auteur"])
+\end{lstlisting}
+    \captionof{code}{Le tableau \textbf{\texttt{bibliotheque}} contient des dictionnaires.}
+    \label{CODE}
+    \end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def moyenne(eleve: dict) -> float:
+    """
+    calcule la moyenne de l'élève
+    """
+    somme = 0
+    for n in eleve["notes"]:
+        somme += n
+    
+    nb_notes = len(eleve["notes"])
+    return somme/nb_notes
+\end{lstlisting}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+# moyenne générale
+somme_moy = 0
+for eleve in groupe:
+    # calcule la moyenne de chaque élève
+    somme_moy += moyenne(eleve)
+
+moyenne_generale = somme_moy/len(groupe)
+print(moyenne_generale)
+\end{lstlisting}
+\captionof{code}{Calcul de la moyenne générale}
+\label{CODE}
+\end{center}    
+
+\end{frame}
+\end{document}

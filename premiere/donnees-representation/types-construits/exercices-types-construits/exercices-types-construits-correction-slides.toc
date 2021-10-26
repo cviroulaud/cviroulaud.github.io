@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Exercice 1}{2}{0}{1}
+\beamer@sectionintoc {2}{Exercice 2}{4}{0}{2}
+\beamer@sectionintoc {3}{Exercice 3}{6}{0}{3}
+\beamer@sectionintoc {4}{Exercice 4}{8}{0}{4}
+\beamer@sectionintoc {5}{Exercice 5}{12}{0}{5}
+\beamer@sectionintoc {6}{Exercice 6}{14}{0}{6}
+\beamer@sectionintoc {7}{Exercice 7}{16}{0}{7}
+\beamer@sectionintoc {8}{Exercice 8}{18}{0}{8}

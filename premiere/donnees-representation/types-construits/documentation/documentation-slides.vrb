@@ -1,0 +1,14 @@
+\frametitle{}
+
+    \begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+from random import randint
+
+tab = []
+for i in range(5):
+    tab.append(randint(1, 100))
+\end{lstlisting}
+\captionof{code}{Ajout de 5 entiers aléatoires dans le tableau}
+\label{CODE}
+\end{center}
+

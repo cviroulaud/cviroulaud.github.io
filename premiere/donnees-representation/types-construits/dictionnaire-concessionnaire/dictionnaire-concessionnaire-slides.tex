@@ -1,0 +1,214 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Le concessionnaire\\les dictionnaires}
+\date{\framebox{\textbf{DonRep 08}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Un concessionnaire désire concevoir une application qui permet de stocker les informations de ses véhicules (marque, modèle, kilométrage, date de première immatriculation\dots).
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{framed}
+        \centering Comment structurer des données hétérogènes dans un programme?
+    \end{framed}
+
+\end{frame}
+\section{Première approche}
+\begin{frame}[fragile]
+    \frametitle{Première approche}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+marques = ["Renault", "Mercedes", "Peugeot"]
+modeles = ["Twingo", "Classe A", "1007"]
+kilometrages = [23410, 45000, 34001]
+immatriculation = ["AA-123-AA", "AA-145-JU", "BB-156-TR"]
+premiere_immat = ["2010-10", "2019-06", "2018-01"]
+dates_vidanges = ["2020-01", "2019-06", "2020-10"]
+\end{lstlisting}
+        \captionof{code}{Utiliser des tableaux}
+        \label{CODE}
+    \end{center}
+    \begin{activite}
+        Déterminer les défauts des approches présentées.
+    \end{activite}
+\end{frame}
+\section{Les dictionnaires}
+\subsection{Présentation}
+\begin{frame}[fragile]
+    \frametitle{Les dictionnaires - présentation}
+
+    \begin{aretenir}[]
+    Un dictionnaire est une structure qui associe chaque \textbf{valeur} à une \textbf{clé}. Les données peuvent être hétérogènes.
+    \end{aretenir}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+vehicule1 = {"marque": "Renault", 
+            "modele": "Twingo", 
+            "kilometrage": 23410, 
+            "immatriculation": "AA-123-AA", 
+            "premiere_imat": "2010-10", 
+            "date_vidange": "2020-01"}
+\end{lstlisting}
+\captionof{code}{Construire un dictionnaire en Python}
+\label{CODE}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+vehicule1 = {"marque": "Renault", 
+            "modele": "Twingo", 
+            "kilometrage": 23410, 
+            "immatriculation": "AA-123-AA", 
+            "premiere_imat": "2010-10", 
+            "date_vidange": "2020-01"}
+\end{lstlisting}
+\captionof{code}{Construire un dictionnaire en Python}
+\label{CODE}
+\end{center} 
+\begin{activite}
+Créer le dictionnaire \textbf{\texttt{vehicule1}}.
+\end{activite}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[]
+    Les clés sont des éléments \textbf{non mutables}: entier, chaîne de caractère, tuple\dots
+    \end{aretenir}
+
+\end{frame}
+\subsection{Utiliser un dictionnaire}
+\begin{frame}[fragile]
+    \frametitle{Utiliser un dictionnaire - lecture}
+
+\begin{aretenir}[]
+On utilise la structure à crochets pour lire ou écrire dans un dictionnaire.
+\end{aretenir}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> vehicule1["marque"]
+'Renault'
+\end{lstlisting}
+\captionof{code}{Lire la valeur associée à une clé}
+\label{CODE}
+\end{center}
+
+\begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> vehicule1["puissance"]
+KeyError: 'puissance'
+\end{lstlisting}
+    \captionof{code}{\textbf{\texttt{Traceback: }}Erreur si la clé n'existe pas.}
+    \label{CODE}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Écriture}
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> vehicule1["kilometrage"] = 25000
+\end{lstlisting}
+    \captionof{code}{Modifier la valeur associée à une clé}
+    \label{CODE}
+    \end{center}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+vehicule1["couleur"] = "rouge"
+\end{lstlisting}
+\captionof{code}{Si la clé n'existe pas, le couple est crée.}
+\label{CODE}
+\end{center}
+\begin{activite}
+Ajouter la clé \textbf{\texttt{couleur}} et afficher le dictionnaire dans la console.
+\end{activite}
+\end{frame}
+\subsection{Propriétés}
+\begin{frame}[fragile]
+    \frametitle{Propriétés}
+\begin{aretenir}[]
+La fonction \textbf{\texttt{len}} renvoie la taille d'un dictionnaire.
+\end{aretenir}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> len(vehicule1)
+7
+\end{lstlisting}
+
+\end{frame}
+\section{Itérer sur un dictionnaire}
+\subsection{Itérer sur les clés}
+\begin{frame}[fragile]
+    \frametitle{Itérer sur les clés}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+for cle in vehicule1.keys():
+    print(cle)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+marque
+modele
+kilometrage
+immatriculation
+premiere_imat
+date_vidange
+couleur
+\end{lstlisting}
+\end{frame}
+\subsection{Itérer sur les valeurs}
+\begin{frame}[fragile]
+    \frametitle{Itérer sur les valeurs}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+for val in vehicule1.values():
+    print(val)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+Renault
+Twingo
+23410
+AA-123-AA
+2010-10
+2020-01
+rouge
+\end{lstlisting}
+\end{frame}
+\subsection{Itérer sur les couples}
+\begin{frame}[fragile]
+    \frametitle{Itérer sur les couples}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+for cle, val in vehicule1.items():
+    print(cle, " -> ", val)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+marque  ->  Renault
+modele  ->  Twingo
+kilometrage  ->  23410
+immatriculation  ->  AA-123-AA
+premiere_imat  ->  2010-10
+date_vidange  ->  2020-01
+couleur  ->  rouge
+\end{lstlisting}
+\end{frame}
+\end{document}

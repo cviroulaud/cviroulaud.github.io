@@ -150,7 +150,7 @@
 \begin{frame}
     \frametitle{Un exemple}
     Considérons le mot de 32 bits:
-    $$\overbrace{1}^{signe}\overbrace{10000110}^{exposant}\overbrace{10101101100000000000000}^{mantisse}$$
+    {\LARGE$$\overbrace{1}^{signe}\overbrace{10000110}^{exposant}\overbrace{10101101100000000000000}^{mantisse}$$}
     
 
 \end{frame}
@@ -159,11 +159,47 @@
 
     \begin{itemize}
         \item signe: $(-1)^1=-1$
-        \item mantisse: $1+2^{-1}+2^{-3}+2^{-5}+2^{-6}+2^{-8}+2^{-9} = 1,677734375$
         \item exposant: $(2^7+2^2+2^1)-127=134-127=7$
+        \item mantisse: $1+2^{-1}+2^{-3}+2^{-5}+2^{-6}+2^{-8}+2^{-9} = 1,677734375$        
         \end{itemize}
         Le nombre représenté est:
         $$-1×1,677734375×2^7=-214,75$$
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+    Retrouver le nombre décimal représenté par les mots de 32 bits suivants:
+    \begin{itemize}
+        \item {\Large $\overbrace{1}^{signe}\overbrace{10000111}^{exposant}\overbrace{11000000000000000000000}^{mantisse}$}
+        \item {\Large$0\;10000010\;10100100000000000000000$}
+    \end{itemize}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+    {\Large $$\overbrace{1}^{signe}\overbrace{10000111}^{exposant}\overbrace{11000000000000000000000}^{mantisse}$$}
+    
+\begin{itemize}
+    \item signe: $(-1)^1=-1$
+    \item exposant: $(2^7+2^2+2^1+2^0)-127=135-127=8$
+    \item mantisse: $1+2^{-1}+2^{-2} = 1,75$
+\end{itemize}
+Le nombre représenté est:
+        $$-1×1,75×2^8=-448$$
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+    {\Large$$0\;10000010\;10100100000000000000000$$}
+    
+\begin{itemize}
+    \item signe: $(-1)^0=1$
+    \item exposant: $(2^7+2^1)-127=130-127=3$
+    \item mantisse: $1+2^{-1}+2^{-3}+2^{-6} = 1,640625$
+\end{itemize}
+Le nombre représenté est:
+        $$1×1,640625×2^3=13,125$$
 \end{frame}
 \subsection{Pour aller plus loin}
 \begin{frame}

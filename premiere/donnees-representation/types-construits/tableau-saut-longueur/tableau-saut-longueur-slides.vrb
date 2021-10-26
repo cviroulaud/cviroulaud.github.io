@@ -1,0 +1,12 @@
+\frametitle{}
+
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def ma_fonction(t: list) -> None:
+    t[0] = 19
+
+tab = [3, 4, 5]
+ma_fonction(tab)
+\end{lstlisting}
+    \begin{activite}
+        Écrire le code précédent dans Pythontutor et observer l'exécution de la fonction.
+    \end{activite}

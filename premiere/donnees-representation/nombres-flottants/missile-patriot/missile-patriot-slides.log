@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 AUG 2021 16:10
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 OCT 2021 15:37
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/nombres-flottants/missile-patriot/missile-patriot-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/nombres-flottants/missile-patriot/missile-patriot-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.121 seconds
+luaotfload | main : initialization completed in 0.137 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1662,28 +1662,54 @@ Overfull \hbox (20.69472pt too wide) in paragraph at lines 130--130
 
 ] (./missile-patriot-slides.toc) [17
 
-] [18
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <17.28> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 156.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 156.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 156.
+
+Overfull \hbox (3.69939pt too wide) detected at line 156
+[] [] []
+ []
+
+[18
 
 ] [19
 
-] (./missile-patriot-slides.toc) [20
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 179.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 179.
+
+Overfull \hbox (16.33028pt too wide) in paragraph at lines 179--179
+[] [] []$  
+ []
+
+
+Overfull \hbox (0.65991pt too wide) in paragraph at lines 179--179
+\OT1/cmr/m/n/14.4 0 10000010 10100100000000000000000$  
+ []
+
+[20
 
 ] [21
 
-] (./missile-patriot-slides.toc) [22
+] [22
 
-] [23
+] (./missile-patriot-slides.toc) [23
 
-]
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 203.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 203.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 203.
- [24
+] [24
 
 ] (./missile-patriot-slides.toc) [25
+
+] [26
+
+] [27
+
+] (./missile-patriot-slides.toc) [28
 
 ]
 \openout4 = missile-patriot-slides.vrb
@@ -1691,41 +1717,41 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) [26
-
-] [27
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 245.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 245.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 245.
- [28
-
-] (./missile-patriot-slides.toc) [29
+) [29
 
 ] [30
 
-] [31
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 281.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 281.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 281.
+ [31
 
-] [32
+] (./missile-patriot-slides.toc) [32
 
 ] [33
+
+] [34
+
+] [35
+
+] [36
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 299.
+(mdframed)              on input line 335.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 299.
+(mdframed)              on input line 335.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 299.
- [34
+ mdframed uses option nobreak mdframed on input line 335.
+ [37
 
 ]
 \tf@nav=\write8
@@ -1737,29 +1763,45 @@ Package mdframed Info: mdframed inside a box
 \tf@snm=\write10
 
 \openout10 = missile-patriot-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 336.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
  (./missile-patriot-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
-Package rerunfilecheck Info: File `missile-patriot-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 3068661EA87E81F4F9B2AF5DD1A014F7;2069.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 336.
+
+
+Package rerunfilecheck Warning: File `missile-patriot-slides.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `missile-patriot-slides.out':
+(rerunfilecheck)             Before: 3DEDC1E42769DD5B20205F917D62C0D1;2069
+(rerunfilecheck)             After:  3E2B54FE744D8893D6DEDC7A6BCB5653;2069.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 44792 strings out of 494383
+ 44840 strings out of 494383
  156328,1144653 words of node,token memory allocated
- 119247 words of node memory still in use:
-   51 hlist, 8 vlist, 8 rule, 15 disc, 4 local_par, 194 glue, 12 kern, 22 penalty, 14642 glyph, 5781 attribute, 106 glue_spec, 966 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
+ 128480 words of node memory still in use:
+   51 hlist, 8 vlist, 8 rule, 15 disc, 4 local_par, 207 glue, 12 kern, 22 penalty, 15788 glyph, 6261 attribute, 106 glue_spec, 1046 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
    avail lists: 1:4,2:1440,3:232,4:425,5:288,6:59,7:860,8:230,9:549,10:14,11:105,12:1
- 47277 multiletter control sequences out of 65536+600000
- 91 fonts using 11631927 bytes
+ 47297 multiletter control sequences out of 65536+600000
+ 108 fonts using 13035127 bytes
  70i,15n,95p,1228b,1076s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on missile-patriot-slides.pdf (34 pages, 178186 bytes).
 
-PDF statistics: 905 PDF objects out of 1000 (max. 8388607)
- 812 compressed objects within 9 object streams
- 83 named destinations out of 1000 (max. 131072)
+warning  (pdf backend): unreferenced destination with name 'Outline0.3.2.27'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.3.1.25'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.2.4.22'
+</usr/share/texmf/fonts/opentype/public/lm/lmroman17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on missile-patriot-slides.pdf (37 pages, 186301 bytes).
+
+PDF statistics: 972 PDF objects out of 1000 (max. 8388607)
+ 873 compressed objects within 9 object streams
+ 92 named destinations out of 1000 (max. 131072)
  122 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,0 +1,132 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Construction par compréhension}
+\date{\framebox{\textbf{DonRep 11}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab = []
+for i in range(100):
+    tab.append(i)
+\end{lstlisting}
+\captionof{code}{Construire un tableau}
+\label{CODE}
+\end{center}   
+
+\begin{framed}\centering
+    Comment construire une structure de données efficacement?
+\end{framed}
+\end{frame}
+\section{Tableau par compréhension}
+\begin{frame}[fragile]
+    \frametitle{Tableau par compréhension}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab = [i for i in range(100)]
+\end{lstlisting}
+\captionof{code}{Construire un tableau de 100 entiers}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        Par compréhension, construire un tableau:
+    \begin{enumerate}
+        \item de dix zéros.
+        \item de dix entiers décroissants de 9 à 0.
+        \item des carrés des entiers de 0 à 9.
+        \item de dix entiers aléatoires entre 1 et 10.
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> tab1 = [i for i in range(10)]
+>>> tab1
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> tab2 = [i for i in range(9, -1, -1)]
+>>> tab2
+[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+>>> tab3 = [i**2 for i in range(10)]
+>>> tab3
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+>>> tab4 = [randint(1, 100) for i in range(10)]
+>>> tab4
+[32, 1, 18, 19, 87, 13, 43, 10, 98, 66]
+\end{lstlisting}
+\end{frame}
+\section{Tuple par compréhension}
+\begin{frame}[fragile]
+    \frametitle{Tuple par compréhension}
+
+    \begin{aretenir}[]
+    Un tuple est non mutable. Il est cependant possible de construire un tuple par compréhension.
+    \end{aretenir}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+t = tuple(i for i in range(10))
+\end{lstlisting}
+\captionof{code}{Tuple de dix entiers}
+\label{CODE}
+\end{center}
+\end{frame}
+\section{Dictionnaire par compréhension}
+\begin{frame}[fragile]
+    \frametitle{Dictionnaire par compréhension}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+from random import randint
+
+dico = {lettre: randint(1, 10) for lettre in ["a", "b", "c", "d", "e"]}
+\end{lstlisting}
+    \captionof{code}{Création d'un dictionnaire}
+    \label{dico}
+    \end{center}
+\begin{activite}
+Que fait le code \ref{dico}?
+\end{activite}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> dico
+{'a': 8, 'b': 9, 'c': 1, 'd': 8, 'e': 1}
+\end{lstlisting}
+
+\end{frame}
+\end{document}

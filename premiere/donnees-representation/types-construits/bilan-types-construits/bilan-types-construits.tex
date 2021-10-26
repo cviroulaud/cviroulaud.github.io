@@ -1,0 +1,64 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{DonRep 12}}}}
+\fancyhead[C]{\textbf{Bilan types construits}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\section{Tuple}
+Un tuple est un n-uplet non mutable.
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+tup = (3, 5, 9, 8)
+# lire un élément
+tup[2] # renvoie l'entier 9
+
+# Il n'est pas possible de modifier le contenu d'un tuple.
+\end{lstlisting}
+\section{Tableau (list)}
+Un tableau contient des éléments de même type (entiers, booléens\dots) repérés par leur indice (position) dans le tableau. Les indices commencent à zéro.
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+tab = [3, 5, 9, 8]
+# lire un élément
+tab[2] # renvoie l'entier 9
+
+# écrire un élément
+tab[2] = 10 # le 9 est remplacé par 10
+\end{lstlisting}
+En Python, les tableaux se nomment des \textbf{\texttt{list}}.
+\section{Dictionnaire}
+Un dictionnaire contient des éléments repérés par une clé. Une clé est un élément non mutable: entier, chaîne de caractères, tuple.
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+dico = {"prems": 18, "deuz": 13, "troiz": 9}
+# lire un élément
+dico["deuz"] # renvoie l'entier 13
+
+# écrire un élément
+tab["deuz"] = 10 # le 13 est remplacé par 10
+\end{lstlisting}
+
+\section{Construction par compréhension}
+En Python il est possible de construire une structure de données de manière rapide et efficace.
+\begin{center}
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+tup = tuple(0 for i in range(5))
+# tup = (0, 0, 0, 0, 0)
+
+tab = [0 for i in range(5)]
+# tab = [0, 0, 0, 0, 0]
+
+dico = {i: 0 for i in range(5)}
+# dico = {0:0, 1:0, 2:0, 3:0, 4:0}
+\end{lstlisting}
+    \captionof{code}{Construction par compréhension}
+    \label{CODE}
+\end{center}
+\end{document}

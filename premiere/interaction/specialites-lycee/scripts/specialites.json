@@ -1,0 +1,50 @@
+[
+    {
+        "nom": "Histoire géographie, géopolitique et sciences politiques",
+        "image": "spe0"
+    },
+    {
+        "nom": "Humanités, littérature et philosophie",
+        "image": "spe1"
+    },
+    {
+        "nom": "Langues, littératures et cultures étrangères",
+        "image": "spe2"
+    },
+    {
+        "nom": "Littérature, langues et cultures de l’Antiquité",
+        "image": "spe3"
+    },
+    {
+        "nom": "Mathématiques",
+        "image": "spe4"
+    },
+    {
+        "nom": "Numérique et sciences informatiques",
+        "image": "spe5"
+    },
+    {
+        "nom": "Sciences de la vie et de la Terre",
+        "image": "spe6"
+    },
+    {
+        "nom": "Sciences de l’ingénieur",
+        "image": "spe7"
+    },
+    {
+        "nom": "Sciences économiques et sociales",
+        "image": "spe8"
+    },
+    {
+        "nom": "Physique chimie",
+        "image": "spe9"
+    },
+    {
+        "nom": "Arts : histoire des arts, théâtre, arts plastiques, arts du spectacle, etc",
+        "image": "spe10"
+    },
+    {
+        "nom": "Biologie écologie",
+        "image": "spe11"
+    }
+]

@@ -3,10 +3,11 @@
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
 %\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
-\title{Traitement de données\\ Le Titanic}
-\date{}
+\title{Traitement de données\\Le Titanic}
+\date{\framebox{\textbf{Donn 01}}}
 %\logo{}
 \institute{Seconde - SNT}
+
 
 \begin{document}
 \begin{frame}
@@ -55,6 +56,18 @@
             \item Pour le descripteur \emph{tarif}, à quoi correspond la valeur indiquée pour chaque objet ?
         \end{enumerate}
     \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+\begin{aretenir}[]
+Un fichier \textbf{csv (Comma Separated Values)} rassemble des informations sur un thème. Les données sont classées selon des \textbf{descripteurs}. Chaque ligne du fichier représente un \textbf{enregistrement}.
+\end{aretenir}
+    \begin{itemize}
+        \item Un descripteur représente une caractéristique des données contenues dans le fichier.
+        \item Le 1 représente les hommes et le 2 les femmes.
+        \item Le prix du billet payé par chaque passager est donné dans la colonne \emph{tarif}. Il est donné en Livre Sterling. On peut remarquer que certains passagers n'ont pas payé.
+    \end{itemize}
 
 \end{frame}
 \section{Exploitation des données}
@@ -191,9 +204,11 @@ Le tarif maximum est 512£.
 
     \begin{center}
     \centering
-    \includegraphics[width=10cm]{ressources/diagramme.png}
+    \includegraphics[width=8cm]{ressources/diagramme.png}
     \end{center}
-
+\begin{aretenir}[]
+L'icône \textbf{Insérer un diagramme} permet de construire des représentations graphiques dans LibreOffice.
+\end{aretenir}
 \end{frame}
 \begin{frame}
     \frametitle{}
@@ -234,7 +249,7 @@ Le tarif maximum est 512£.
 \end{frame}
 \begin{frame}
     \frametitle{}
-    l n’y avait pas suffisamment de places dans les canots de sauvetage du Titanic pour tous les passagers et les membres de l’équipage (et certains canots sont partis à peine remplis). On souhaite examiner l’influence de la classe sociale des passagers sur l’obtention d’une place sur un canot de sauvetage.
+    Il n’y avait pas suffisamment de places dans les canots de sauvetage du Titanic pour tous les passagers et les membres de l’équipage (et certains canots sont partis à peine remplis). On souhaite examiner l’influence de la classe sociale des passagers sur l’obtention d’une place sur un canot de sauvetage.
 
     Pour calculer la fréquence de survie d'une classe, il faut, pour une classe donnée, calculer le rapport entre le nombre de survivants et le nombre total de passagers de cette classe.\\
     Pour calculer le nombre de survivants d'une classe, il peut être intéressant d'utiliser la fonction \textbf{\texttt{SOMME}}.

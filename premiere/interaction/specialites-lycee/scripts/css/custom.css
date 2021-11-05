@@ -1,93 +1,100 @@
-html{
-  background-color: #eaecfa;
-  font: 1em "Fira Sans", sans-serif;
+html {
+    background-color: #eaecfa;
+    font: 1em "Fira Sans", sans-serif;
 }
 
-body{
-  width: 800px;
-  margin: 2em auto;
-  padding: 1em;
-  background-color: #c4c8ec;
-  border: 0.2em ridge #8d94ca;
+body {
+    width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #c4c8ec;
+    border: 0.2em ridge #8d94ca;
 }
 
-h1{
-  color: #7a7aee;
+h1 {
+    color: #7a7aee;
 }
 
-p{
-  text-align: justify;
+p {
+    text-align: justify;
 }
 
-#img-spe{
-  width:100%;
+#img-spe {
+    width: 50%;
+    display: block;
+    margin: 2em auto;
 }
 
-table, th, td {
-  border: 0.1em ridge black;
-  border-collapse: collapse;
+table,
+th,
+td {
+    border: 0.1em ridge black;
+    border-collapse: collapse;
 }
 
-table#table-desc{
-    width:80%;
+table#table-desc {
+    width: 80%;
     margin: 20px auto;
 }
 
-td#td-img{
-  width:30%;
-}
-td#td-desc{
-  width:70%;
+td#td-img {
+    width: 30%;
 }
 
-tr{
-  height:4em;
+td#td-desc {
+    width: 70%;
 }
-td{
-  text-align: center;
-  padding: 0.5em;
-  width: 33%;
-  background: #f2e9fc;
+
+tr {
+    height: 4em;
 }
+
+td {
+    text-align: center;
+    padding: 0.5em;
+    width: 33%;
+    background: #f2e9fc;
+}
+
 a {
-  outline: none;
-  text-decoration: none;
-  padding: 2px 1px 0;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
 }
 
 a:link {
-  color: #1360c2;
+    color: #1360c2;
 }
 
 a:visited {
-  color: #4673ad;
+    color: #4673ad;
 }
 
 a:hover {
-  background: #1360c2;
-  color: #fff;
+    background: #1360c2;
+    color: #fff;
 }
 
-.titre{
-  text-align: center;
-  font-size: 2em;
-  color: #f8f8fa;
-  text-shadow: -1px -1px #fb6, 1px 1px #d60, -3px 0 4px #000;
-  background-image: url("../images/bandeau.jpg");
-  padding: 1em;
+.titre {
+    text-align: center;
+    font-size: 2em;
+    color: #f8f8fa;
+    text-shadow: -1px -1px #fb6, 1px 1px #d60, -3px 0 4px #000;
+    background-image: url("../images/bandeau.jpg");
+    padding: 1em;
 }
 
-.titre_liste{
-  font-weight: bold;
-  color: #3838d1;
+.titre_liste {
+    font-weight: bold;
+    color: #3838d1;
 }
 
-.list_custom{
-  list-style: georgian inside url('../images/cursor.png');
+.list_custom {
+    list-style: georgian inside url('../images/cursor.png');
 }
 
-.lien_img{
-  display: block;
-  margin: auto;
-  height: 200px;
+.lien_img {
+    display: block;
+    margin: auto;
+    height: 200px;
 }

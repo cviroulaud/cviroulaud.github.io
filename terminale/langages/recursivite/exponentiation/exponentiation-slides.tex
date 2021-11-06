@@ -1,13 +1,13 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Exponentiation \\Notion de récursivité}
 \date{\framebox{\textbf{Lang 05}}}
 %\logo{}
 \institute{Terminale - NSI}
-%DODO reformater les codes
+
 \begin{document}
 \begin{frame}
 \titlepage
@@ -341,7 +341,7 @@ Implémenter la fonction \textbf{\texttt{puissance\_recursif\_rapide(x: int, n: 
     \frametitle{Correction}
 
 \begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.5em, xrightmargin=0.5em]
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.5em, xrightmargin=-0.5em]
 def puissance_recursif_rapide(x: int, n: int) -> int:
     if n == 0: # cas limite
         return 1

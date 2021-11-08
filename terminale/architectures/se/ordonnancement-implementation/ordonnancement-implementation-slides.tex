@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Ordonnancement - implémentation}
 \date{\framebox{\textbf{Archi 05}}}
@@ -55,6 +55,24 @@
         \captionof{figure}{Empiler - dépiler}
     \end{center}
     \note{pile d'assiettes}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+    
+
+        \begin{tikzpicture}[scale=0.6]
+            \foreach \v/\y in {2/8,5/6,3/4,9/2}{
+            \node[draw,minimum height=0.5cm] at (0,\y) {\v};
+            \draw[->,>=latex] (0,\y-.5) -- (0,\y-1.5);
+            }  
+            \node at (0,0) {fin};  
+            \node (s) at (4,8) {sommet};
+            \draw[->,>=latex] (s) -- (0.5,8);
+        \end{tikzpicture}
+        \captionof{figure}{Implémentation}
+    \end{center}
 \end{frame}
 \begin{frame}
     \frametitle{Interface d'une pile}
@@ -179,13 +197,33 @@ def __str__(self):
 
 \end{frame}
 \begin{frame}
+    \frametitle{}
+
+    \begin{center}
+    
+
+        \begin{tikzpicture}[scale=0.6]
+            \foreach \v/\x in {2/8,5/6,3/4,9/2}{
+            \node[draw,minimum height=0.5cm] at (\x,0) {\v};
+            \draw[->,>=latex] (\x-.5,0) -- (\x-1.5,0);
+            }  
+            \node[draw,minimum height=0.5cm] at (0,0) {7};
+            \node (p) at (8,2) {premier};
+            \draw[->,>=latex] (p) -- (8,0.5);
+            \node (d) at (0,2) {dernier};
+            \draw[->,>=latex] (d) -- (0,0.5);
+        \end{tikzpicture}
+        \captionof{figure}{Implémentation}
+    \end{center}
+\end{frame}
+\begin{frame}
     \frametitle{Interface d'une file}
 
     \begin{itemize}
         \item \texttt{\textbf{creer\_file() $\rightarrow$ File()}}: crée une file vide.
-        \item \texttt{\textbf{est\_vide() $\rightarrow$ bool}}: renvoie \textbf{\texttt{True}} si la file est vide, \textbf{\texttt{False}} sinon.
-        \item \texttt{\textbf{enfiler(e: T) $\rightarrow$ None}}: ajoute un élément \emph{e} à l'arrière de la file.
-        \item \texttt{\textbf{defiler() $\rightarrow$ T}}: retire et renvoie l'élément de l'avant de la file.
+        \item \texttt{\textbf{est\_vide(f: File) $\rightarrow$ bool}}: renvoie \textbf{\texttt{True}} si la file est vide, \textbf{\texttt{False}} sinon.
+        \item \texttt{\textbf{enfiler(f: File, e: T) $\rightarrow$ None}}: ajoute un élément \emph{e} à l'arrière de la file.
+        \item \texttt{\textbf{defiler(f: File) $\rightarrow$ T}}: retire et renvoie l'élément de l'avant de la file.
         \end{itemize}
 
 \end{frame}
@@ -194,9 +232,9 @@ def __str__(self):
 
     \begin{itemize}
         \item \texttt{\textbf{creer\_file() $\rightarrow$ File()}}
-        \item \texttt{\textbf{est\_vide() $\rightarrow$ bool}}
-        \item \texttt{\textbf{enfiler(e: T) $\rightarrow$ None}}
-        \item \texttt{\textbf{defiler() $\rightarrow$ T}}
+        \item \texttt{\textbf{est\_vide(f: File) $\rightarrow$ bool}}
+        \item \texttt{\textbf{enfiler(f: File, e: T) $\rightarrow$ None}}
+        \item \texttt{\textbf{defiler(f: File) $\rightarrow$ T}}
         \end{itemize}
 
         \begin{activite}
@@ -216,7 +254,7 @@ class File():
         self.dernier = None
 
     def est_vide(self) -> bool:
-        return self.premier == None
+        return self.premier is None
 \end{lstlisting}
 
 \end{frame}

@@ -1,5 +1,5 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Des structures héritées de la liste chaînée}{4}{0}{1}
 \beamer@subsectionintoc {1}{1}{Pile}{5}{0}{1}
-\beamer@sectionintoc {2}{File}{15}{0}{2}
-\beamer@sectionintoc {3}{Ordonnancement}{25}{0}{3}
+\beamer@subsectionintoc {1}{2}{File}{15}{0}{1}
+\beamer@sectionintoc {2}{Ordonnancement}{25}{0}{2}

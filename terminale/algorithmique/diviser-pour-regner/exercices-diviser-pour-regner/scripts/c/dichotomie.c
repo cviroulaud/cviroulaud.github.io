@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
   srand(time(NULL));
   int *tab = malloc(taille * sizeof(tab));
   for (int i = 0; i < taille; i++) {
-    tab[i] = rand() % 11; // 0 et 100
+    tab[i] = rand() % 11; // 0 et 10
   }
   tri_fusion(tab, 0, taille - 1);
   // affichage

@@ -8,6 +8,8 @@
 
 from random import randint
 
+def creer_file() -> list:
+    return []
 
 def est_vide(f: list) -> bool:
     return len(f) == 0
@@ -18,10 +20,11 @@ def enfiler(f: list, e: int) -> None:
 
 
 def defiler(f: list) -> int:
-    return f.pop()
+    if not est_vide(f):
+        return f.pop()
 
 
-f = []
+f = creer_file()
 for i in range(5):
     enfiler(f, randint(0, 10))
     print("enfiler ->", f)

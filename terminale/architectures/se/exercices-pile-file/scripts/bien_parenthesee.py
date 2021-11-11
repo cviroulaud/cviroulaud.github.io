@@ -12,8 +12,8 @@ from pile import Pile
 def bien_parenthesee(code: str) -> bool:
     parentheses = Pile()
     i = 0
-    correct = True
-    while i < len(code) and correct:
+
+    while i < len(code):
         # empile une ouvrante
         if code[i] == "(":
             parentheses.empiler("(")
@@ -21,15 +21,17 @@ def bien_parenthesee(code: str) -> bool:
         elif code[i] == ")":
             # si rien à dépiler -> mauvais parenthésage
             if parentheses.depiler() is None:
-                correct = False
+                return False
         i += 1
 
-    return correct
+    # si la pile n'est pas vide: il reste des (
+    return parentheses.est_vide()
 
 
 def bien_parenthesee_rec(code: str, i: int, p: Pile) -> bool:
     if i == len(code):
-        return True
+        # si la pile n'est pas vide: il reste des (
+        return p.est_vide()
     else:
         if code[i] == "(":
             p.empiler("(")
@@ -40,10 +42,14 @@ def bien_parenthesee_rec(code: str, i: int, p: Pile) -> bool:
 
 
 chaine_correcte = "((e)ee(e))"
-chaine_incorrecte = "(e))"
+chaine_incorrecte = "(((e))"
+chaine_incorrecte2 = "((e)))"
+
 
 print(bien_parenthesee(chaine_correcte))
 print(bien_parenthesee(chaine_incorrecte))
+print(bien_parenthesee(chaine_incorrecte2))
 
 print(bien_parenthesee_rec(chaine_correcte, 0, Pile()))
 print(bien_parenthesee_rec(chaine_incorrecte, 0, Pile()))
+print(bien_parenthesee_rec(chaine_incorrecte2, 0, Pile()))

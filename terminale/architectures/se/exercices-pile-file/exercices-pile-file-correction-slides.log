@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  19 OCT 2021 20:45
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  10 NOV 2021 15:25
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/exercices-pile-file/exercices-pile-file-correction-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/exercices-pile-file/exercices-pile-file-correction-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.152 seconds
+luaotfload | main : initialization completed in 0.168 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1604,11 +1604,11 @@ warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ]
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 88.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 96.
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 88.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 96.
 
 [7
 
@@ -1641,7 +1641,7 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 )
-Overfull \vbox (7.13962pt too high) detected at line 193
+Overfull \vbox (7.13962pt too high) detected at line 201
  []
 
 [13
@@ -1655,7 +1655,7 @@ Overfull \vbox (7.13962pt too high) detected at line 193
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 )
-Overfull \vbox (7.13962pt too high) detected at line 217
+Overfull \vbox (7.13962pt too high) detected at line 226
  []
 
 [15
@@ -1688,13 +1688,13 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = exercices-pile-file-correction-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
  (./exercices-pile-file-correction-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `exercices-pile-file-correction-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 89AB4AA47DC608D74EFAFC698C0817CD;480.
+(rerunfilecheck)             Checksum: B19A38EFEA7D9CC9F6054776F87C3A8F;480.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1702,16 +1702,16 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44472 strings out of 494383
- 381546,1144653 words of node,token memory allocated
- 149323 words of node memory still in use:
-   3991 hlist, 9 vlist, 2231 rule, 233 disc, 19 local_par, 1733 glue, 2464 kern, 29 penalty, 4195 glyph, 11217 attribute, 106 glue_spec, 1872 attribute_list, 3 write, 3028 pdf_colorstack nodes
-   avail lists: 1:4,2:5475,3:542,4:5184,5:4160,6:45,7:3123,8:3754,9:6709,10:28,11:392,12:1
+ 44474 strings out of 494383
+ 381560,1144653 words of node,token memory allocated
+ 151598 words of node memory still in use:
+   3991 hlist, 9 vlist, 2231 rule, 233 disc, 19 local_par, 1733 glue, 2464 kern, 29 penalty, 4380 glyph, 11637 attribute, 106 glue_spec, 1942 attribute_list, 3 write, 3028 pdf_colorstack nodes
+   avail lists: 1:4,2:7099,3:540,4:6402,5:5050,6:46,7:3806,8:4555,9:8132,10:32,11:478,12:1
  47036 multiletter control sequences out of 65536+600000
- 39 fonts using 7291831 bytes
+ 40 fonts using 7418287 bytes
  70i,15n,95p,1224b,953s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on exercices-pile-file-correction-slides.pdf (18 pages, 47836 bytes).
+Output written on exercices-pile-file-correction-slides.pdf (18 pages, 48451 bytes).
 
 PDF statistics: 331 PDF objects out of 1000 (max. 8388607)
  283 compressed objects within 3 object streams

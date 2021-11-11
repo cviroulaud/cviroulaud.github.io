@@ -1,4 +1,4 @@
-\frametitle{Exercice 6}
+\frametitle{Exercice 5}
 
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
 def polonaise(chaine: str) -> int:

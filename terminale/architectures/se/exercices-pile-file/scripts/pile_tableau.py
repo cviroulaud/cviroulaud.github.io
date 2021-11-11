@@ -9,6 +9,10 @@
 from random import randint
 
 
+def creer_pile() -> list:
+    return []
+
+
 def est_vide(p: list) -> bool:
     return len(p) == 0
 
@@ -18,13 +22,17 @@ def empiler(p: list, e: int) -> None:
 
 
 def depiler(p: list) -> int:
-    return p.pop()
+    if not est_vide(p):
+        return p.pop()
+    raise IndexError("pile vide")
 
 
-p = []
+p = creer_pile()
 for i in range(5):
     empiler(p, randint(0, 10))
     print("empiler ", p)
 
 while not est_vide(p):
     print("dépiler ", p, "->", depiler(p))
+
+depiler(p)

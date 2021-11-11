@@ -18,6 +18,9 @@
 
     \begin{center}
         \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def creer_pile() -> list:
+    return []
+
 def est_vide(p: list) -> bool:
     return len(p) == 0
 
@@ -25,9 +28,10 @@ def empiler(p: list, e: int) -> None:
     p.append(e)
 
 def depiler(p: list) -> int:
-    return p.pop()
+    if not est_vide(p):
+        return p.pop()
 
-p = []
+p = creer_pile()
 \end{lstlisting}
         \captionof{code}{pile}
         \label{CODE}
@@ -39,6 +43,9 @@ p = []
 
     \begin{center}
         \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def creer_file() -> list:
+    return []
+
 def est_vide(f: list) -> bool:
     return len(f) == 0
 
@@ -46,9 +53,10 @@ def enfiler(f: list, e: int) -> None:
     f.insert(0, e)
 
 def defiler(f: list) -> int:
-    return f.pop()
+    if not est_vide(f):
+        return f.pop()
 
-f = []
+f = creer_file()
 \end{lstlisting}
         \captionof{code}{file}
         \label{CODE}
@@ -139,7 +147,7 @@ f = []
 \begin{frame}[fragile]
     \frametitle{}
 
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
 class File2:
     def __init__(self):
         self.gauche = Pile()
@@ -153,7 +161,7 @@ class File2:
 \begin{frame}[fragile]
     \frametitle{}
 
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
 def enfiler(self, e: int) -> None:
     self.gauche.empiler(e)
 
@@ -195,23 +203,24 @@ print(elimine)
 \begin{frame}[fragile]
     \frametitle{Exercice 4}
 
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
 def bien_parenthesee(code: str) -> bool:
     parentheses = Pile()
     i = 0
-    correct = True
-    while i < len(code) and correct:
+
+    while i < len(code):
         # empile une ouvrante
         if code[i] == "(":
             parentheses.empiler("(")
-        # dépile une ouvrante quand on trouve une fermante
+        # dépile une ( quand on trouve une )
         elif code[i] == ")":
             # si rien à dépiler -> mauvais parenthésage
             if parentheses.depiler() is None:
-                correct = False
+                return False
         i += 1
 
-    return correct
+    # si la pile n'est pas vide: il reste des (
+    return parentheses.est_vide()
 \end{lstlisting}
 
 \end{frame}
@@ -220,7 +229,8 @@ def bien_parenthesee(code: str) -> bool:
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
 def bien_parenthesee_rec(code: str, i: int, p: Pile) -> bool:
     if i == len(code):
-        return True
+        # si la pile n'est pas vide: il reste des (
+        return p.est_vide()
     else:
         if code[i] == "(":
             p.empiler("(")
@@ -231,9 +241,9 @@ def bien_parenthesee_rec(code: str, i: int, p: Pile) -> bool:
 \end{lstlisting}
 
 \end{frame}
-\section{Exercice 6}
+\section{Exercice 5}
 \begin{frame}[fragile]
-    \frametitle{Exercice 6}
+    \frametitle{Exercice 5}
 
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
 def polonaise(chaine: str) -> int:

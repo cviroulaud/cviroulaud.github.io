@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Organisation}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Un logiciel}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Retour historique}{7}{0}{1}

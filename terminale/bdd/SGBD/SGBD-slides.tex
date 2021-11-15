@@ -1,0 +1,73 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Système de Gestion de Base de Données}
+\date{\framebox{\textbf{BDD 03}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Le modèle relationnel présenté dans le cours précédent est un modèle mathématique qu'il faut maintenant concrétiser sur machine.
+\begin{framed}\centering 
+    Quels sont les outils permettant de construire une base de données?
+\end{framed}
+
+\end{frame}
+\section{Organisation}
+\subsection{Un logiciel}
+\begin{frame}
+    \frametitle{Organisation - un logiciel}
+
+    Un \textbf{Système de Gestion de Base de Données (SGBD)} est un logiciel permettant de manipuler les données d'une base de données.    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Ils sont la plupart du temps basés sur un modèle client-serveur:
+\begin{itemize}
+\item la base de données se trouve sur un \emph{serveur},
+\item un \emph{logiciel client} va interroger le serveur et transmettre la réponse que ce-dernier lui aura donné.
+\end{itemize}
+\begin{aretenir}[Remarque]
+    Un SGBD qui implémente le modèle relationnel est noté SGBDR. 
+\end{aretenir}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tabular}{ccccc}
+            \includegraphics[width=0.15\textwidth]{ressources/mysql.png} &
+            \includegraphics[width=0.15\textwidth]{ressources/oracle.png} &
+            \includegraphics[width=0.15\textwidth]{ressources/postgresql.png}
+            &
+            \includegraphics[width=0.15\textwidth]{ressources/maria.png}
+            &
+            \includegraphics[width=0.15\textwidth]{ressources/sqlite.png} \\
+            MySQL &
+            Oracle &
+            PostgreSQL &
+            MariaDB &
+            SQLite
+            \end{tabular}
+            \captionof{figure}{Principaux systèmes }
+    \end{center}
+
+\end{frame}
+\subsection{Retour historique}
+\begin{frame}
+    \frametitle{Retour historique}
+
+    
+
+\end{frame}
+\end{document}

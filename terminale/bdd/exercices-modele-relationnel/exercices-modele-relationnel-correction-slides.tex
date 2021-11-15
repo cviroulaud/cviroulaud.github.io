@@ -1,0 +1,83 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices modèle relationnel - correction}
+\date{\framebox{\textbf{BDD 02}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}
+    \frametitle{Exercice 1}
+
+   \begin{center}
+        Annuaires(nom \emph{String}, prenom \emph{String}, \underline{telephone \emph{String}}) 
+   \end{center}  
+    Il peut être judicieux de définir le numéro de téléphone en \emph{String} car cela permettra de prendre en compte ceux qui commencent par un +. Dans le cas contraire il faut réaliser un prétraitement avant d'insérer les données dans la base.
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{enumerate}
+        \item $\{\}$ Oui, l'ensemble vide est une relation valide.
+        \item $\{("Dupont","Jean","012345678")\}$ Oui.
+        \item $\{("Dupont","Jean","012345678"), ("Durant","Jacques","012345678")\}$ Non, car les deux numéros de téléphone sont identiques.
+        \item $\{("Dupont","Jean","012345678"), ("Dupont","Jean","896789")\}$ Oui, car les noms et prénoms ne forment pas une clé primaire.
+        \item $\{("Dupont","Jean","012345678"), ("Durant","Jacques")\}$ Non, car la seconde entité est mal formée.
+        \item $\{("Dupont","Jean",896789)\}$ Non, car le téléphone est un entier et non une chaîne de caractère.
+    \end{enumerate}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}
+    \frametitle{Exercice 2}
+
+    La clé primaire \emph{nom-prenom} ne permet pas de garantir l'unicité. On peut utiliser un identifiant supplémentaire (numéro d'étudiant). La remarque est valable également dans la relation \textbf{\texttt{Notes}}.
+    \begin{itemize}
+        \item Eleves(nom \emph{String}, prenom \emph{String}, \underline{num\_etudiant \emph{String}})
+        \item Matieres(intitule \emph{String}, \underline{id \emph{Integer}})
+        \item Notes(\underline{\dashuline{num\_etudiant} \emph{String}, \dashuline{id\_matiere} \emph{Integer}}, notes \emph{Integer})
+    \end{itemize}
+    Les attributs \emph{num\_etudiant} et \emph{id\_matiere} sont des clés étrangères qui référencent respectivement le numéro étudiant de l'élève et l'identifiant de la matière. Il ne peut y avoir qu'une note par matière existante et par élève existant.    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item $\{("Dupont", "Jean", "A2309"), ("Durand", "Jacques", "ER450")\}$
+        \item $\{("NSI", 1), ("EPS", 2)\}$
+        \item $\{("A2309", 1, 18), ("A2309", 2, 15)\}$
+    \end{itemize}    
+
+\end{frame}
+\section{Exercice 3}
+\begin{frame}
+    \frametitle{Exercice 3}
+
+    \begin{itemize}
+        \item Stations(nom \emph{String}, \underline{id \emph{Integer}})
+        \item Lignes(\underline{numero \emph{Integer}}, couleur \emph{String})
+    \end{itemize}
+    
+    \vspace{1cm}
+    La réflexion initiale du schéma est importante. A priori, définir le domaine du \emph{numéro} de la ligne peu paraître correct. Cependant si une ligne annexe se construit et que l'on nommerait 13-A et 13-B, le modèle ne tient plus.    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Horaires(\underline{\dashuline{numero} \emph{Integer}, \dashuline{id\_station} \emph{Integer}, heure \emph{Integer}})
+
+    \vspace{1cm}
+    Nous pourrions également décider de définir un \emph{id} pour clé primaire.   
+
+\end{frame}
+\end{document}

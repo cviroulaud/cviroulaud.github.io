@@ -1,0 +1,11 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO Animaux (nom, age, id_espece) VALUES
+("Minou", 15, 2);
+\end{lstlisting}
+\captionof{code}{Une requête peu pratique}
+\label{CODE}
+\end{center}
+

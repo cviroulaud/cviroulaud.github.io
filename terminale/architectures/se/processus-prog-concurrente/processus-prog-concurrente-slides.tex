@@ -153,7 +153,7 @@ appel 2
 appel 2
 appel 2
 \end{lstlisting}
-        \captionof{code}{L'interpréteur exécute les lignes de code séquentiellement.}
+         \captionof{code}{\centering L'interpréteur exécute les lignes de code séquentiellement.}
     \end{center}
 
 \end{frame}
@@ -219,7 +219,7 @@ appel 1
 appel 2
 appel 2
 \end{lstlisting}
-        \captionof{code}{L'interpréteur exécute les lignes de code séquentiellement.}
+        \captionof{code}{\centering L'interpréteur exécute les lignes de code parallèlement.}
     \end{center}
     \note{relancer plusieurs fois; sleep ×10 ou ÷10 si marche pas}
 \end{frame}
@@ -325,7 +325,7 @@ for i in range(4):
         \item \textbf{\texttt{fin thread 1:}} \textbf{\texttt{$INTERMEDIAIRE=temp_1+1=11$}}
         \item \textbf{\texttt{fin thread 2:}} \textbf{\texttt{$INTERMEDIAIRE=temp_2+1=11$}}
         \item \textbf{\texttt{thread 4:}} \textbf{\texttt{$temp_4=11$}}
-        \item \textbf{\texttt{fin thread 3:}} \textbf{\texttt{$temp_3=11$}}
+        \item \textbf{\texttt{fin thread 3:}} \textbf{\texttt{$INTERMEDIAIRE=temp_3+1=11$}}
         \item \textbf{\texttt{fin thread 4:}} \textbf{\texttt{$INTERMEDIAIRE=temp_4+1=12$}}
     \end{itemize}
     \begin{center}
@@ -367,7 +367,7 @@ for i in range(4):
         \item \textbf{\texttt{release}} libère le verrou.
     \end{itemize}
     \begin{center}
-        \textbf{\texttt{INTERMEDIAIRE}} vaut 100 à la fin de l'exécution du programme.
+        \textbf{\texttt{INTERMEDIAIRE}} vaut 400 à la fin de l'exécution du programme.
     \end{center}
 \end{frame}
 \section{Interblocage}

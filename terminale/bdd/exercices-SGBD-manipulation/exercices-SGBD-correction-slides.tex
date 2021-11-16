@@ -1,0 +1,225 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices SGBD manipulation\\correction}
+\date{\framebox{\textbf{BDD 05}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}
+    \frametitle{Exercice 1}
+
+    \begin{itemize}
+        \item colonne, column, attribut
+        \item entité, ligne, row
+        \item domaine, type
+        \item relation, table
+        \item schéma (description d'une relation)
+        \item base de données (ensemble des relations)
+    \end{itemize}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}
+    \frametitle{Exercice 2}
+
+    \begin{itemize}
+        \item Especes(\underline{id Integer}, nom String)
+        \item Animaux(\underline{id Integer}, nom String, age Integer, \dashuline{id\_espece Integer})
+        \item Soins(\underline{id Integer}, \dashuline{id\_animal Integer}, soin String)
+    \end{itemize}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+    \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+CREATE TABLE Especes (
+        id Integer PRIMARY KEY AUTOINCREMENT, 
+        nom String);
+
+CREATE TABLE Animaux (
+        id Integer PRIMARY KEY AUTOINCREMENT, 
+        nom String, 
+        age Integer, 
+        id_espece Integer, 
+        FOREIGN KEY (id_espece) REFERENCES Especes(id));
+
+CREATE TABLE Soins (
+    id Integer PRIMARY KEY AUTOINCREMENT, 
+    id_animal Integer, 
+    soin String,
+    FOREIGN KEY (id_animal) REFERENCES Animaux(id));
+\end{lstlisting}
+    \captionof{code}{Création des 3 tables}
+    \label{CODE}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO Especes (nom) VALUES 
+("chien"),
+("chat"),
+("poisson");
+\end{lstlisting}
+\captionof{code}{Insertion espèces}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO Animaux (nom, age, id_espece) VALUES 
+("Minou", 15, 2),
+("Tex", 8, 1),
+("Rrrrr", 2, 1);
+\end{lstlisting}
+\captionof{code}{Insertion animaux}
+\label{CODE}
+\end{center}
+\begin{aretenir}[Remarque]
+Les identifiants des espèces peuvent varier.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO Soins (id_animal, soin) VALUES 
+(2, "patte cassée - plâtre"),
+(1, "fièvre - antibiotiques");
+\end{lstlisting}
+\captionof{code}{Insertion soins}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\section{Exercice 3}
+\begin{frame}
+    \frametitle{Exercice 3}
+
+    \begin{center}
+        Soundex: algorithme phonétique d'indexation\\
+        corriger les erreurs orthographiques\\
+        \url{https://fr.wikipedia.org/wiki/Soundex}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+SELECT * FROM Departements WHERE 
+departement_code = 24;
+
+SELECT * FROM Departements WHERE departement_nom_soundex = 'M200';
+
+SELECT departement_nom FROM Departements WHERE departement_code < 10;
+
+SELECT departement_code, departement_nom FROM Departements WHERE 
+departement_code > 20 AND 
+departement_code < 30;
+\end{lstlisting}
+\end{center}    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[Remarque]
+        \begin{itemize}
+            \item SQLite LIKE operator is case-insensitive. It means "A" LIKE "a" is true.
+            \item However, for Unicode characters that are not in the ASCII ranges, the LIKE operator is case sensitive e.g., "Ä" LIKE "ä" is false
+        \end{itemize}
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+SELECT departement_nom FROM Departements WHERE
+departement_nom LIKE '%haut%';
+
+SELECT departement_nom FROM Departements WHERE
+departement_nom NOT LIKE '%-%' AND 
+departement_nom NOT LIKE '% %';
+\end{lstlisting}
+\end{center}    
+\begin{aretenir}[Remarque]
+    Il est possible de comparer des \emph{String} comme des \emph{Integer}. Le SQL est très permissif: departement\_code est de type \emph{String}, pourtant il accepte la comparaison avec un \emph{Integer}.
+    \end{aretenir}
+\end{frame}
+\section{Exercice 4}
+\begin{frame}[fragile]
+    \frametitle{Exercice 4}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+SELECT * FROM employees WHERE name = 'GARFIELD';
+
+SELECT name FROM employees WHERE designation = 'TECH';
+
+SELECT name FROM employees WHERE name LIKE 'H%';
+
+SELECT name FROM employees WHERE hired_on > '1997-01-01';
+
+SELECT name, salary FROM employees WHERE 
+salary > 25000 AND 
+salary < 55000;
+\end{lstlisting}
+\end{center}    
+
+\end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+SELECT name, salary FROM employees WHERE 
+salary > 25000 AND 
+salary < 55000 AND 
+commission IS NOT NULL;
+
+--ou bien
+SELECT name, salary FROM employees WHERE 
+salary > 25000 AND 
+salary < 55000 AND 
+commission > 0;
+\end{lstlisting}
+\end{center}    
+\begin{aretenir}[Remarque]
+    NULL est différent de 0; commission = 0 ne renverrait rien ici
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO employees (name, designation, manager, hired_on, salary, dept) VALUES ('DURAN', 'TECH', 6, '1999-01-13', 35000, 4);
+
+UPDATE employees SET salary = 60000 WHERE 
+name = 'FILLMORE';
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\end{document}

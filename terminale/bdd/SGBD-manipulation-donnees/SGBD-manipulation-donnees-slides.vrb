@@ -1,0 +1,8 @@
+\frametitle{Correction}
+La contrainte de référence (clé étrangère) impose qu'aucune référence à l'\texttt{\textbf{isbn}} 2205050699 n'existe encore dans une autre table avant de pouvoir la supprimer.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+DELETE FROM Emprunts WHERE isbn = 2205050699;
+\end{lstlisting}
+    \end{center}
+

@@ -1,0 +1,12 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Insérer des données}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Syntaxe}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Respect des contraintes d'intégrité}{8}{0}{1}
+\beamer@sectionintoc {2}{Sélectionner des données}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{Syntaxe}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Contrainte sur la sélection}{17}{0}{2}
+\beamer@subsectionintoc {2}{3}{Sélectionner une chaîne de caractère approchante}{22}{0}{2}
+\beamer@sectionintoc {3}{Modifier des données}{27}{0}{3}
+\beamer@sectionintoc {4}{Supprimer des données}{30}{0}{4}
+\beamer@subsectionintoc {4}{1}{Syntaxe}{31}{0}{4}
+\beamer@subsectionintoc {4}{2}{Respect des contraintes}{32}{0}{4}

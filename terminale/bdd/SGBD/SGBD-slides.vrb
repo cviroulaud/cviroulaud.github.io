@@ -1,0 +1,16 @@
+\frametitle{Correction}
+
+    \begin{center}
+    \begin{lstlisting}[language=sql , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+CREATE TABLE Emprunteurs( id INTEGER PRIMARY KEY AUTOINCREMENT,
+prenom TEXT,
+nom TEXT,
+naissance TEXT);
+
+CREATE TABLE Emprunts( isbn INTEGER PRIMARY KEY,
+id_emprunteurs INTEGER,
+FOREIGN KEY (isbn) REFERENCES Bandes_dessinees(isbn),
+FOREIGN KEY (id_emprunteurs) REFERENCES Emprunteurs(id) );
+\end{lstlisting}
+    \end{center}
+

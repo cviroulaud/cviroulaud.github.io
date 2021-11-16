@@ -1,0 +1,11 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO employees (name, designation, manager, hired_on, salary, dept) VALUES ('DURAN', 'TECH', 6, '1999-01-13', 35000, 4);
+
+UPDATE employees SET salary = 60000 WHERE
+name = 'FILLMORE';
+\end{lstlisting}
+\end{center}
+

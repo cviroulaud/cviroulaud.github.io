@@ -1,0 +1,379 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{SGBD\\Manipulation des données}
+\date{\framebox{\textbf{BDD 04}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+    \note{\fcolorbox{black}{red}{{\LARGE bd-avec-emprunts.zip sur site}}}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    La \emph{base de données} étant crée, il faut maintenant pouvoir en modifier son contenu en fonction des demandes de l'utilisateur.
+
+    \begin{framed}
+        Quelles sont les instructions permettant de réaliser des requêtes SQL?
+    \end{framed}
+
+\end{frame}
+\section{Insérer des données}
+\subsection{Syntaxe}
+\begin{frame}[fragile]
+    \frametitle{Insérer des données - syntaxe}
+
+    La collection de bandes dessinées étant amenées à augmenter, la première opération nécessaire est de pouvoir ajouter une entité dans une table. Le code \ref{insertion} ajoute l'auteur \emph{Riad Sattouf} dans la table \texttt{\textbf{Auteurs}}.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+INSERT INTO Auteurs VALUES (309, "Sattouf", "Riad");
+\end{lstlisting}
+        \captionof{code}{Insertion d'un auteur}
+        \label{insertion}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    La nécessité de connaître un \textbf{\texttt{id}} non utilisé peut être contraignant. Heureusement dans le schéma de la relation, cet attribut est affublé de l'étiquette \texttt{\textbf{AUTOINCREMENT}}. Le code \ref{insertion2} ajoute un nouvel auteur.
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO Auteurs (nom, prenom) VALUES ("Tardi", "Jacques");
+\end{lstlisting}
+        \captionof{code}{Insertion en spécifiant les attributs}
+        \label{insertion2}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Télécharger et utiliser la base \emph{bd-avec-emprunts.db}.
+            \item Ajouter les deux auteurs.
+            \item Ajouter trois emprunteurs:
+                  \begin{itemize}
+                      \item Alice Knuth né le 19 avril 2002,
+                      \item Bob Nelson né le 24 juillet 1990,
+                      \item Christophe Viroulaud né le 08 décembre 1987.
+                  \end{itemize}
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+INSERT INTO Auteurs (nom, prenom) VALUES ("Sattouf", "Riad");
+INSERT INTO Auteurs (nom, prenom) VALUES ("Tardi", "Jacques");
+\end{lstlisting}
+    \end{center}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=-1em]
+INSERT INTO Emprunteurs (nom, prenom, naissance) VALUES 
+("Knuth", "Alice", "2002-04-19"),
+("Nelson", "Bob", "1990-07-24"),
+("Viroulaud", "Christophe", "1987-12-08");
+\end{lstlisting}
+        \captionof{code}{\centering Il est possible d'enchaîner les insertions.}
+    \end{center}
+\end{frame}
+\subsection{Respect des contraintes d'intégrité}
+\begin{frame}[fragile]
+    \frametitle{Respect des contraintes d'intégrité}
+
+    Les contraintes d'intégrité sont vérifiées au moment de l'insertion. Ainsi le code \ref{insertionerror} renvoie une erreur.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+INSERT INTO Auteurs VALUES (309, "Giraud", "Jean");
+\end{lstlisting}
+        \captionof{code}{Erreur d'insertion}
+        \label{insertionerror}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Quelle contrainte d'intégrité n'est pas respectée lors de la tentative d'insertion du code \ref{insertionerror}?
+            \item La requête \ref{integriteerreur} provoquera-t-elle une erreur? Pour quelle raison?
+                  \begin{center}
+                      \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+INSERT INTO Auteurs (nom, prenom) VALUES 
+("Sfar", "Joann");
+\end{lstlisting}
+                      \captionof{code}{Provoque-t-on une erreur?}
+                      \label{integriteerreur}
+                  \end{center}
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{itemize}
+        \item La \textbf{contrainte d'entité} n'est pas respectée dans le code \ref{insertionerror}.
+        \item Le couple \emph{(nom, prenom)} n'est pas une clé primaire. Il n'y a donc pas d'erreur lors de l'exécution du code \ref{integriteerreur}.
+    \end{itemize}
+
+\end{frame}
+\section{Sélectionner des données}
+\subsection{Syntaxe}
+\begin{frame}[fragile]
+    \frametitle{Sélectionner des données - syntaxe}
+
+    Récupérer des données de la base est une autre manipulation indispensable afin de les utiliser ensuite dans une application. Le code \ref{select1} renvoie les informations des tous les auteurs.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT id, nom, prenom FROM Auteurs;
+\end{lstlisting}
+        \captionof{code}{Sélectionner des données}
+        \label{select1}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+
+    Si on sait que l'on doit récupérer toutes les colonnes, on peut utiliser le symbole *.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT * FROM Auteurs;
+\end{lstlisting}
+        \captionof{code}{Sélectionner toutes les données}
+        \label{select2}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Tester les codes \ref{select1} et \ref{select2}. Observer les résultats renvoyés.
+            \item Sélectionner les titres des bandes-dessinées.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT titre FROM Bandes_dessinees;
+\end{lstlisting}
+        \captionof{code}{Sélectionner les titres des bandes-dessinées}
+        \label{select1}
+    \end{center}
+
+\end{frame}
+\subsection{Contrainte sur la sélection}
+\begin{frame}[fragile]
+    \frametitle{Contrainte sur la sélection}
+
+    Les codes \ref{select1} ou \ref{select2} renvoient toutes les entités de la table \emph{Auteurs} ce qui ne représente que peu d'intérêt. Le code \ref{where} renvoie tous les auteurs qui ont \emph{Christophe} pour prénom.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT nom FROM Auteurs WHERE prenom = "Christophe";
+\end{lstlisting}
+        \captionof{code}{Clause \texttt{\textbf{WHERE}}}
+        \label{where}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    La clause \emph{WHERE} évalue une expression booléenne. Les opérateurs de comparaison classiques peuvent être utilisés, ainsi que les opérateurs logiques (AND, OR, NOT).
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT nom FROM Auteurs 
+WHERE prenom = "Christophe" AND NOT nom = "Arleston";
+\end{lstlisting}
+        \captionof{code}{Expression booléenne}
+        \label{where2}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Tester les requêtes précédentes.
+            \item Sélectionner les titres des bandes-dessinées dont l'\emph{id du genre} est supérieur à 10.
+            \item Sélectionner les bandes dessinées dont le premier tome est sorti en 2010 ou après.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT titre FROM Bandes_dessinees 
+WHERE id_genre > 10;
+\end{lstlisting}
+    \end{center}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT titre FROM Bandes_dessinees 
+WHERE tome =1 AND date_parution >= 2010;
+\end{lstlisting}
+    \end{center}
+\end{frame}
+\subsection{Sélectionner une chaîne de caractère approchante}
+\begin{frame}[fragile]
+    \frametitle{Sélectionner une chaîne de caractère approchante}
+
+    Il peut être fastidieux d'effectuer une recherche exacte sur une chaîne de caractère. Le code \ref{like} renvoie toutes les bandes dessinées qui contiennent \emph{Astérix} dans leur titre.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT * FROM Bandes_dessinees WHERE titre LIKE "%Astérix%";
+\end{lstlisting}
+        \captionof{code}{Recherche de chaîne de caractère}
+        \label{like}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    La chaîne \%Astérix\% est un motif où le \% est un \emph{joker}. Il signifie que SQL peut le remplacer par n'importe quelle chaîne. Si on sait qu'il n'y aura qu'un seul caractère on peut utiliser le \emph{joker} \_. Ainsi le code \ref{like2} renvoie toutes les lignes qui contiennent \emph{Astérix, Asterix...}.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT * FROM Bandes_dessinees WHERE titre LIKE "%Ast_rix%";
+\end{lstlisting}
+        \captionof{code}{Joker}
+        \label{like2}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+\begin{activite}
+    \begin{enumerate}
+        \item Tester les requêtes précédentes.
+        \item Sélectionner les auteurs dont le nom commence par un \emph{T}.
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+SELECT nom FROM Auteurs WHERE nom LIKE "T%";
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\section{Modifier des données}
+\begin{frame}[fragile]
+    \frametitle{Modifier des données}
+
+    Il peut être nécessaire de modifier le contenu de certaines entités. Ainsi l'emprunteur \emph{Christophe Viroulaud} n'est pas né en 1987 mais en 1977.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+UPDATE Emprunteurs SET naissance = "1977-12-08" 
+WHERE nom = "Viroulaud";
+\end{lstlisting}
+        \captionof{code}{Modification d'une date de naissance}
+        \label{update}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    La clause \texttt{\textbf{WHERE}} se construit sur les mêmes principes que précédemment. L'exécution de la requête renvoie le nombre d'entités (enregistrements) affectées. Il peut être nul.
+
+\end{frame}
+\section{Supprimer des données}
+\subsection{Syntaxe}
+\begin{frame}[fragile]
+    \frametitle{Supprimer des données - syntaxe}
+    Enfin la syntaxe suivante permet de supprimer une ligne d'une table.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+DELETE FROM Emprunteurs WHERE nom = "Viroulaud";
+\end{lstlisting}
+        \captionof{code}{Modification d'une date de naissance}
+        \label{delete}
+    \end{center}
+
+    \begin{aretenir}[Remarque]
+        Il est possible de supprimer plusieurs lignes en une seule requête.
+    \end{aretenir}
+\end{frame}
+\subsection{Respect des contraintes}
+\begin{frame}[fragile]
+    \frametitle{Respect des contraintes}
+
+    Le code \ref{reference} renvoie une erreur: il n'est pas possible de supprimer un emprunteurs s'il a encore des bandes dessinées en sa possession. Ainsi dans la table \texttt{\textbf{Emprunts}} l'attribut \texttt{\textbf{id\_emprunteurs}} est référencé comme une clé étrangère de l'attribut \emph{id} de la table \texttt{\textbf{Emprunteurs}}.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+DELETE FROM Emprunteurs WHERE id = 1;
+\end{lstlisting}
+        \captionof{code}{Contrainte de référence}
+        \label{reference}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Que doit réaliser la requête \ref{delete}?
+            \item Tester les requêtes \ref{update}, \ref{delete} et \ref{reference}.
+            \item Pour quelle raison la requête \ref{referenceisbn} renverra une erreur?
+            \begin{center}
+                \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+DELETE FROM Bandes_dessinees 
+WHERE isbn = 2205050699;
+\end{lstlisting}
+                \captionof{code}{Cette requête renvoie une erreur}
+                \label{referenceisbn}
+            \end{center}
+            \item Quelle requête doit-on réaliser préalablement avant d'effectuer la requête \ref{referenceisbn}? Que signifie-t-elle dans la vie réelle?
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+La contrainte de référence (clé étrangère) impose qu'aucune référence à l'\texttt{\textbf{isbn}} 2205050699 n'existe encore dans une autre table avant de pouvoir la supprimer.
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+DELETE FROM Emprunts WHERE isbn = 2205050699;
+\end{lstlisting}
+    \end{center}   
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[]
+        Toute exécution de requête est \textbf{définitive}. Il peut être pertinent d'effectuer une copie de sauvegarde avant d'effectuer d'importantes manipulations.
+        \end{aretenir}
+
+\end{frame}
+\end{document}

@@ -1,0 +1,38 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Requêtes avancées}
+\date{\framebox{\textbf{BDD 06}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+    \note{\fcolorbox{black}{red}{{\LARGE toujours sur bd-avec-emprunts.db (version initiale: il y a eu des modifications dans le cours précédent)
+    }}}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO Animaux (nom, age, id_espece) VALUES 
+("Minou", 15, 2);
+\end{lstlisting}
+\captionof{code}{Une requête peu pratique}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{framed}
+        \centering Comment mettre en relation plusieurs tables?
+    \end{framed}
+
+\end{frame}
+\end{document}

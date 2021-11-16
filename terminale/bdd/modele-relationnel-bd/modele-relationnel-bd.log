@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 NOV 2021 09:00
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 NOV 2021 15:20
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/bdd/modele-relationnel-bd/modele-relationnel-bd
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/bdd/modele-relationnel-bd/modele-relationnel-bd.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.149 seconds
+luaotfload | main : initialization completed in 0.145 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1834,28 +1834,28 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 328.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 328.
-<ressources/etrangere.png, id=539, 1302.8675pt x 815.045pt>
+<ressources/etrangere.png, id=539, 1399.2275pt x 889.3225pt>
 File: ressources/etrangere.png Graphic file (type png)
 <use ressources/etrangere.png>
 Package luatex.def Info: ressources/etrangere.png  used on input line 328.
-(luatex.def)             Requested size: 284.52756pt x 177.99217pt.
+(luatex.def)             Requested size: 284.52756pt x 180.83316pt.
 
 Overfull \hbox (5.69043pt too wide) in paragraph at lines 328--328
  [] 
  []
 
 
-Overfull \vbox (12.61467pt too high) detected at line 328
+Overfull \vbox (15.45566pt too high) detected at line 328
  []
 
 [32
 
 <./ressources/etrangere.png>]
-<ressources/etrangere-2.png, id=555, 1278.7775pt x 847.165pt>
+<ressources/etrangere-2.png, id=555, 1419.3025pt x 917.4275pt>
 File: ressources/etrangere-2.png Graphic file (type png)
 <use ressources/etrangere-2.png>
 Package luatex.def Info: ressources/etrangere-2.png  used on input line 339.
-(luatex.def)             Requested size: 284.52756pt x 188.49684pt.
+(luatex.def)             Requested size: 284.52756pt x 183.91621pt.
 
 Overfull \hbox (5.69043pt too wide) in paragraph at lines 339--339
  [] 
@@ -1881,7 +1881,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `modele-relationnel-bd.out' has not changed.
-(rerunfilecheck)             Checksum: 611196B008A217098CFA84C932A05486;1149.
+(rerunfilecheck)             Checksum: 9CDFFE17D90E4323A9B9ECE0B101FD8C;1131.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1890,15 +1890,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  44601 strings out of 494383
- 156328,1144653 words of node,token memory allocated
- 96091 words of node memory still in use:
-   33 hlist, 9 vlist, 8 rule, 4 disc, 4 local_par, 103 glue, 6 kern, 21 penalty, 12100 glyph, 4017 attribute, 107 glue_spec, 672 attribute_list, 5 write, 16 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:5,2:2409,3:416,4:210,5:131,6:46,7:637,8:187,9:295,10:12,11:101,12:1
+ 125070,1144653 words of node,token memory allocated
+ 95314 words of node memory still in use:
+   33 hlist, 9 vlist, 8 rule, 4 disc, 4 local_par, 103 glue, 6 kern, 21 penalty, 11989 glyph, 4017 attribute, 107 glue_spec, 672 attribute_list, 5 write, 16 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:4,2:2409,3:412,4:210,5:132,6:46,7:642,8:187,9:295,10:12,11:100,12:1
  47088 multiletter control sequences out of 65536+600000
  90 fonts using 11500559 bytes
  70i,15n,95p,1197b,1073s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on modele-relationnel-bd.pdf (33 pages, 1456130 bytes).
+Output written on modele-relationnel-bd.pdf (33 pages, 1472272 bytes).
 
 PDF statistics: 631 PDF objects out of 1000 (max. 8388607)
  545 compressed objects within 6 object streams

@@ -2,7 +2,7 @@ CREATE TABLE `Bandes_dessinees` (
   `serie` String,
   `titre` String,
   `tome` Integer,
-  `isbn` String PRIMARY KEY,
+  `isbn` Integer PRIMARY KEY,
   `id_genre` Integer
 );
 

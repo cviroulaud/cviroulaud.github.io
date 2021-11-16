@@ -189,12 +189,12 @@
         \item +3323019239
     \end{itemize}
 \end{frame}
-\subsection{Contrainte d'intégrité}
+\subsection{Contrainte d'entité}
 \begin{frame}
-    \frametitle{Contrainte d'intégrité}
+    \frametitle{Contrainte d'entité}
 
     \begin{aretenir}[]
-        La \textbf{contrainte d'intégrité} garantit que chaque entité d'une relation est \emph{unique} et l'identifie de manière non ambiguë.
+        La \textbf{contrainte d'entité} garantit que chaque entité d'une relation est \emph{unique} et l'identifie de manière non ambiguë.
     \end{aretenir}
 
 \end{frame}
@@ -227,7 +227,7 @@
         \end{aretenir}
         On indique la \emph{clé primaire} en la soulignant dans le schéma:\\
 \begin{center}
-    Bandes\_dessinees(serie \emph{String}, titre \emph{String}, tome \emph{Integer}, \underline{isbn \emph{String}}, genre \emph{String})
+    Bandes\_dessinees(serie \emph{String}, titre \emph{String}, tome \emph{Integer}, \underline{isbn \emph{Integer}}, genre \emph{String})
 \end{center}
 
 \end{frame}
@@ -274,7 +274,7 @@
     \begin{activite}
     Créer la relation \textbf{Emprunts} qui permet de gérer les emprunts de bandes-dessinées par les emprunteurs.
     \begin{itemize}
-        \item Bandes\_dessinees(serie \emph{String}, titre \emph{String}, tome \emph{Integer}, \underline{isbn \emph{String}}, genre \emph{String})
+        \item Bandes\_dessinees(serie \emph{String}, titre \emph{String}, tome \emph{Integer}, \underline{isbn \emph{Integer}}, genre \emph{String})
         \item Emprunteurs(\underline{id \emph{Integer}}, nom \emph{String}, prenom \emph{String}, naissance \emph{String})
     \end{itemize}
     \end{activite}
@@ -284,7 +284,7 @@
     \frametitle{Correction}
 
     \begin{center}
-        Emprunts(\underline{isbn String}, id\_emprunteurs Integer)
+        Emprunts(\underline{isbn Integer}, id\_emprunteurs Integer)
     \end{center}
 
     \begin{aretenir}[Remarque]

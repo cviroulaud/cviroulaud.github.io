@@ -3,6 +3,6 @@
 \beamer@sectionintoc {2}{Modèle relationnel}{9}{0}{2}
 \beamer@sectionintoc {3}{Contraintes d'intégrité}{13}{0}{3}
 \beamer@subsectionintoc {3}{1}{Contrainte de domaine}{15}{0}{3}
-\beamer@subsectionintoc {3}{2}{Contrainte d'intégrité}{19}{0}{3}
+\beamer@subsectionintoc {3}{2}{Contrainte d'entité}{19}{0}{3}
 \beamer@subsectionintoc {3}{3}{Contrainte de référence}{26}{0}{3}
 \beamer@sectionintoc {4}{Base de données}{31}{0}{4}

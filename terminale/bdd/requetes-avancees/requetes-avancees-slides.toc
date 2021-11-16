@@ -1,1 +1,5 @@
 \babel@toc {french}{}
+\beamer@sectionintoc {1}{Fonctions d'agrégation}{4}{0}{1}
+\beamer@sectionintoc {2}{Mettre des tables en relation}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Sous-requêtes}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Jointures}{17}{0}{2}

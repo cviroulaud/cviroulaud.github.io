@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 NOV 2021 09:24
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 NOV 2021 13:42
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/bdd/requetes-avancees/requetes-avancees-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/bdd/requetes-avancees/requetes-avancees-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.225 seconds
+luaotfload | main : initialization completed in 0.115 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1344,10 +1344,36 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-)))
-No file requetes-avancees-slides.aux.
-
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2011/01/05 ver 0.02
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count431
+\calc@Bcount=\count432
+\calc@Adimen=\dimen353
+\calc@Bdimen=\dimen354
+\calc@Askip=\skip144
+\calc@Bskip=\skip145
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count433
+\calc@Cskip=\skip146
+)
+\pgf@logicalpages=\count434
+\pgf@firstshipout=\count435
+\pgf@lastshipout=\count436
+\pgf@currentshipout=\count437
+\pgf@cpn=\count438
+\pgf@shipoutnextto=\count439
+\pgfphysicalheight=\dimen355
+\pgfphysicalwidth=\dimen356
+\pgfpages@shipoutbox=\box124
+)
+\pgfpages@box@1=\box125
+\pgfpages@box@2=\box126
+ (./requetes-avancees-slides.aux)
 \openout1 = requetes-avancees-slides.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -1366,7 +1392,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 11.
@@ -1409,16 +1435,16 @@ LaTeX Font Info:    ... okay on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count431
-\scratchdimen=\dimen353
-\scratchbox=\box124
-\nofMPsegments=\count432
-\nofMParguments=\count433
+\scratchcounter=\count440
+\scratchdimen=\dimen357
+\scratchbox=\box127
+\nofMPsegments=\count441
+\nofMParguments=\count442
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count434
-\MPscratchDim=\dimen354
-\MPnumerator=\count435
-\makeMPintoPDFobject=\count436
+\MPscratchCnt=\count443
+\MPscratchDim=\dimen358
+\MPnumerator=\count444
+\makeMPintoPDFobject=\count445
 \everyMPtoPDFconversion=\toks66
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1432,18 +1458,19 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box125
+\AtBeginShipoutBox=\box128
 Package hyperref Info: Link coloring ON on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count437
+\c@section@level=\count446
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
+ (./requetes-avancees-slides.out) (./requetes-avancees-slides.out)
 \@outlinefile=\write7
 
 \openout7 = requetes-avancees-slides.out
@@ -1564,27 +1591,347 @@ LaTeX Info: Redefining \up on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count438
+\c@lstlisting=\count447
 
 No file pythontex-files-requetes-avancees-slides/requetes-avancees-slides.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
-\c@listing=\count439
+\c@listing=\count448
 Package newfloat Info: float type `listing'=16 on input line 11.
-No file requetes-avancees-slides.nav.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./requetes-avancees-slides.nav)
+Overfull \hbox (403.3419pt too wide) in paragraph at lines 16--16
+[][][][][] 
+ []
 
-]
+
 \openout4 = requetes-avancees-slides.vrb
- (./requetes-avancees-slides.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(./requetes-avancees-slides.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) [2
+) [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 ] [3
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation2'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+
+] (./requetes-avancees-slides.toc) [4
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 9.
+) [5
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 8.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 9.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 9.
+) [6
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+
+] [7
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation6'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 12.
+) [8
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation7'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+
+] (./requetes-avancees-slides.toc) [9
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation8'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 10.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 12.
+) [10
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation9'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [11
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [12
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation11'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [13
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation12'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [14
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation13'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [15
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation14'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [16
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation15'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
+
+] (./requetes-avancees-slides.toc) [17
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation16'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
+
+]
+Overfull \hbox (62.14658pt too wide) in paragraph at lines 235--235
+ [] 
+ []
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 235.
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 235.
+
+[18
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation17'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
+
+]
+Overfull \hbox (28.85562pt too wide) in paragraph at lines 285--285
+ [] 
+ []
+
+[19
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation18'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 14.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 14.
+) [20
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation19'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb) [21
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation20'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [22
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation21'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [23
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation22'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [24
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation23'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [25
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation24'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.24'
+
+]
+\openout4 = requetes-avancees-slides.vrb
+ (./requetes-avancees-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [26
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation25'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
 
 ]
 \tf@nav=\write8
@@ -1596,39 +1943,37 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = requetes-avancees-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+ [27
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation26'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
  (./requetes-avancees-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
-
-
-Package rerunfilecheck Warning: File `requetes-avancees-slides.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `requetes-avancees-slides.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+Package rerunfilecheck Info: File `requetes-avancees-slides.out' has not changed.
+(rerunfilecheck)             Checksum: 5E28860CBB13F3434DEDD3F83D29A83B;588.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44163 strings out of 494383
- 100000,1373583 words of node,token memory allocated
- 4607 words of node memory still in use:
-   22 hlist, 11 vlist, 7 rule, 4 disc, 1 local_par, 31 glue, 17 kern, 21 penalty, 320 glyph, 417 attribute, 106 glue_spec, 72 attribute_list, 3 write, 4 pdf_colorstack nodes
-   avail lists: 1:3,2:1790,3:42,4:814,5:642,6:21,7:646,8:559,9:1064,10:17,11:61,12:1
- 46875 multiletter control sequences out of 65536+600000
- 36 fonts using 6899839 bytes
- 70i,12n,95p,1196b,1034s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on requetes-avancees-slides.pdf (3 pages, 18241 bytes).
+ 45114 strings out of 494383
+ 381766,1373583 words of node,token memory allocated
+ 154988 words of node memory still in use:
+   2427 hlist, 31 vlist, 1324 rule, 147 disc, 34 local_par, 1208 glue, 1451 kern, 65 penalty, 11010 glyph, 8253 attribute, 109 glue_spec, 1378 attribute_list, 5 write, 30 pdf_literal, 3 pdf_start_link, 3 pdf_end_link, 2 pdf_dest, 3 pdf_action, 1858 pdf_colorstack nodes
+   avail lists: 1:4,2:6057,3:1944,4:4298,5:3315,6:91,7:3088,8:3009,9:5704,10:25,11:363,12:1
+ 47545 multiletter control sequences out of 65536+600000
+ 48 fonts using 8460591 bytes
+ 70i,15n,95p,1196b,1099s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
+Output written on requetes-avancees-slides.pdf (26 pages, 100639 bytes).
 
-PDF statistics: 77 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 131072)
- 26 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 559 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 67 named destinations out of 1000 (max. 131072)
+ 58 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,11 +1,14 @@
-\frametitle{}
-
+\frametitle{Correction}
 \begin{center}
 \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
-INSERT INTO Animaux (nom, age, id_espece) VALUES
-("Minou", 15, 2);
+SELECT Bandes_dessinees.titre FROM Bandes_dessinees
+JOIN Emprunts
+    ON Bandes_dessinees.isbn = Emprunts.isbn
+JOIN Emprunteurs
+    ON Emprunts.id_emprunteurs = Emprunteurs.id
+WHERE Emprunteurs.nom = "Dupont"
+ORDER BY Bandes_dessinees.titre;
 \end{lstlisting}
-\captionof{code}{Une requête peu pratique}
-\label{CODE}
+\captionof{code}{\centering Renvoyer les titres ordonnés.}
 \end{center}
 

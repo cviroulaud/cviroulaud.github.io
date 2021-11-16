@@ -1,0 +1,112 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices requêtes avancées\\correctionn}
+\date{\framebox{\textbf{BDD 07}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO Especes(nom) VALUES ("poisson");
+\end{lstlisting}
+\captionof{code}{Insérer l'espèce \emph{poisson}}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+INSERT INTO Soins(id_animal,soin) VALUES (3,"patte cassée");
+\end{lstlisting}
+\captionof{code}{Insérer le soin \emph{patte cassée}}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+SELECT * FROM Animaux WHERE age >= 10 ORDER BY nom;
+\end{lstlisting}
+\captionof{code}{Sélectionner les animaux de plus de 10 ans}
+\label{CODE}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+SELECT DISTINCT(soin) FROM Soins;
+\end{lstlisting}
+\captionof{code}{Sélectionner les soins distincts}
+\label{CODE}
+\end{center}
+
+\end{frame} 
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+SELECT COUNT(soin) FROM Soins;
+\end{lstlisting}
+\captionof{code}{Compter les soins}
+\label{CODE}
+\end{center}
+
+\end{frame} 
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+SELECT COUNT(DISTINCT(soin)) FROM Soins;
+\end{lstlisting}
+\captionof{code}{Compter tous les soins distincts}
+\label{CODE}
+\end{center}
+
+\end{frame} 
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+SELECT COUNT(soin) FROM Soins WHERE soin = "stérilisation";
+\end{lstlisting}
+\captionof{code}{Compter les stérilisations}
+\label{CODE}
+\end{center}
+
+\end{frame} 
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+UPDATE Animaux SET nom="charlie" WHERE nom="charly";
+\end{lstlisting}
+\captionof{code}{Renommer Charly}
+\label{CODE}
+\end{center}
+
+\end{frame} 
+\end{document}

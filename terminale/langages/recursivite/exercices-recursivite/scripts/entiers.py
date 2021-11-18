@@ -22,7 +22,7 @@ def impairs(i: int, k: int) -> None:
     if i <= k:
         if i % 2 == 1:
             print(i, end=" ")
-        impairs(i+2, k)
+        impairs(i+1, k)
 
 
 impairs(1, 8)

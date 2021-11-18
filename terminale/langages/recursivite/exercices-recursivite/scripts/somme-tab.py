@@ -12,14 +12,29 @@ from random import randint
 def somme(tab: list) -> int:
     s = 0
     for i in range(len(tab)):
-        s += tab[i]
+        s = s + tab[i]
     return s
 
 
-def somme_rec(tab: list, deb: int, s: int) -> int:
+def somme_rec(tab: list, i: int) -> int:
     """
     calcule la somme des éléments du tableau
+    Args:
+        tab (list): le tableau
+        deb (int): indice de l'élément en cours
 
+    Returns:
+        int: la somme
+    """    
+    if i == len(tab):
+        return 0
+    else:
+        return tab[i] + somme_rec(tab, i+1)
+
+
+def somme_rec_term(tab: list, i: int, s: int) -> int:
+    """
+    version terminale
     Args:
         tab (list): le tableau
         deb (int): indice de l'élément en cours
@@ -28,10 +43,10 @@ def somme_rec(tab: list, deb: int, s: int) -> int:
     Returns:
         int: la somme
     """
-    if deb == len(tab):
+    if i == len(tab):
         return s
     else:
-        return somme_rec(tab, deb+1, s+tab[deb])
+        return somme_rec_term(tab, i+1, s+tab[i])
 
 
 def somme_rec2(tab: list, s: int) -> int:
@@ -46,5 +61,6 @@ def somme_rec2(tab: list, s: int) -> int:
 t = [randint(1, 100) for _ in range(10)]
 print(t)
 print(somme(t))
-print(somme_rec(t, 0, 0))
+print(somme_rec(t, 0))
+print(somme_rec_term(t, 0, 0))
 print(somme_rec2(t, 0))

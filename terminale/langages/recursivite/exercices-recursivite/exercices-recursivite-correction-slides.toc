@@ -5,7 +5,7 @@
 \beamer@sectionintoc {4}{Exercice 4}{14}{0}{4}
 \beamer@sectionintoc {5}{Exercice 5}{17}{0}{5}
 \beamer@sectionintoc {6}{Exercice 6}{20}{0}{6}
-\beamer@sectionintoc {7}{Exercice 7}{25}{0}{7}
-\beamer@sectionintoc {8}{Exercice 8}{30}{0}{8}
-\beamer@sectionintoc {9}{Exercice 9}{34}{0}{9}
-\beamer@sectionintoc {10}{Exercice 10}{37}{0}{10}
+\beamer@sectionintoc {7}{Exercice 7}{26}{0}{7}
+\beamer@sectionintoc {8}{Exercice 8}{31}{0}{8}
+\beamer@sectionintoc {9}{Exercice 9}{35}{0}{9}
+\beamer@sectionintoc {10}{Exercice 10}{38}{0}{10}

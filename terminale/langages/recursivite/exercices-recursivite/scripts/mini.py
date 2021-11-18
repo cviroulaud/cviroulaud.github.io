@@ -17,21 +17,21 @@ def mini(tab: list) -> int:
     return m
 
 
-def mini_rec(tab: list, deb: int, m: int) -> int:
+def mini_rec(tab: list, i: int, m: int) -> int:
     """
     cherche le plus petit élément du tableau
 
     Args:
         tab (list): le tableau
-        deb (int): indice de l'élément en cours
+        i (int): indice de l'élément en cours
         m (int): l'élément mini
     """
-    if deb == len(tab):
+    if i == len(tab):
         return m
     else:
-        if tab[deb] < m:
-            m = tab[deb]
-        return mini_rec(tab, deb+1, m)
+        if tab[i] < m:
+            m = tab[i]
+        return mini_rec(tab, i+1, m)
 
 
 def mini_rec2(tab: list, m: int) -> int:

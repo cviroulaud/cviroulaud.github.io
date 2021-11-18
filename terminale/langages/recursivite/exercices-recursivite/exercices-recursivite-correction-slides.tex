@@ -182,7 +182,7 @@ def factorielle(n: int)->int:
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 def syracuse(u: int) -> None:
     print(u, end=" ")
-    if u > 1:
+    if u > 1: # cas limite
         if u % 2 == 0:
             syracuse(u // 2)
         else:
@@ -237,7 +237,7 @@ def impairs(i: int, k: int) -> None:
     if i <= k:
         if i % 2 == 1:
             print(i, end=" ")
-        impairs(i+2, k)
+        impairs(i+1, k)
 \end{lstlisting}
 \end{center}
 
@@ -276,24 +276,51 @@ somme(t)
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0.5em]
-def somme_rec(tab: list, deb: int, s: int) -> int:
+def somme_rec(tab: list, i: int) -> int:
     """
     calcule la somme des éléments du tableau
-
     Args:
         tab (list): le tableau
         deb (int): indice de l'élément en cours
-        s (int): somme
-    """
-    if deb == len(tab):
-        return s
+
+    Returns:
+        int: la somme
+    """    
+    if i == len(tab):
+        return 0
     else:
-        return somme_rec(tab, deb+1, s+tab[deb])
+        return tab[i] + somme_rec(tab, i+1)
 
-somme_rec(t, 0, 0)
-
+somme_rec(t, 0)
 \end{lstlisting}
 \captionof{code}{Version récursive}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+def somme_rec_term(tab: list, i: int, s: int) -> int:
+    """
+    version terminale
+    Args:
+        tab (list): le tableau
+        i (int): indice de l'élément en cours
+        s (int): somme
+
+    Returns:
+        int: la somme
+    """
+    if i == len(tab):
+        return s
+    else:
+        return somme_rec_term(tab, i+1, s+tab[i])
+
+somme_rec_term(t, 0, 0)
+\end{lstlisting}
+\captionof{code}{Version récursive terminale}
 \label{CODE}
 \end{center}
 
@@ -352,21 +379,21 @@ mini(t)
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
-def mini_rec(tab: list, deb: int, m: int) -> int:
+def mini_rec(tab: list, i: int, m: int) -> int:
     """
     cherche le plus petit élément du tableau
 
     Args:
         tab (list): le tableau
-        deb (int): indice de l'élément en cours
+        i (int): indice de l'élément en cours
         m (int): l'élément mini
     """
-    if deb == len(tab):
+    if i == len(tab):
         return m
     else:
-        if tab[deb] < m:
-            m = tab[deb]
-        return mini_rec(tab, deb+1, m)
+        if tab[i] < m:
+            m = tab[i]
+        return mini_rec(tab, i+1, m)
 
 mini_rec(t, 0, float("inf"))
 \end{lstlisting}

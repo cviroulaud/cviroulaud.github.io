@@ -1,3 +1,4 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Découvrir la documentation}{4}{0}{1}
 \beamer@sectionintoc {2}{Comprendre la documentation}{7}{0}{2}
+\beamer@sectionintoc {3}{Avantage d'un langage de haut-niveau}{14}{0}{3}

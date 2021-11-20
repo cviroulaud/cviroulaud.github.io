@@ -116,7 +116,7 @@ print(tab)
 \begin{frame}[fragile]
     \frametitle{Correction}
     \begin{framed}
-        \texttt{\textbf{ list.append(x)}}\\
+        \texttt{\textbf{list.append(x)}}\\
         Ajoute un élément à la fin de la liste. Équivalent à \texttt{\textbf{a[len(a):] = [x]}}.
     \end{framed}
 
@@ -144,6 +144,91 @@ for i in range(5):
 \captionof{code}{Ajout de 5 entiers aléatoires dans le tableau}
 \label{CODE}
 \end{center}    
+
+\end{frame}
+\section{Avantage d'un langage de haut-niveau}
+\begin{frame}
+    \frametitle{Avantage d'un langage de haut-niveau}
+
+    
+    \begin{center}
+        \begin{tikzpicture}[scale=0.5]
+            \fill[gray!50] (3,2) rectangle (10,3);
+            \draw (0,0) grid (11,7);
+
+            \draw (0.5,2.5) node{h};
+            \draw (1.5,2.5) node{e};
+            \draw (2.5,2.5) node{y};
+
+            \draw (0.5,6.5) node{h};
+            \draw (1.5,6.5) node{e};
+            \draw (2.5,6.5) node{l};
+            \draw (3.5,6.5) node{l};
+            \draw (4.5,6.5) node{o};
+            \draw (5.5,6.5) node{!};
+
+            \draw (10.5,2.5) node{!};
+            \draw (7.5,4.5) node{9};
+            \draw (8.5,3.5) node{6};
+            \draw (1.5,4.5) node{3};
+            \draw (2.5,1.5) node{4};
+            \draw (1.5,1.5) node{3};
+
+            \foreach \x/\y in {3/8,4/5,5/3,6/9,7/1,8/0,9/2}
+                {\draw (\x+0.5,2.5) node{\y};}
+        \end{tikzpicture}
+        \captionof{figure}{\centering En théorie un tableau est enregistré dans un espace libre en mémoire.}
+        \label{IMG}
+    \end{center}
+    \begin{center}
+        Que se passe-t-il quand on veut agrandir le tableau?
+    \end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.5]
+            \fill[gray!50] (3,2) rectangle (10,3);
+            \draw (0,0) grid (11,7);
+
+            \draw (0.5,2.5) node{h};
+            \draw (1.5,2.5) node{e};
+            \draw (2.5,2.5) node{y};
+
+            \draw (0.5,6.5) node{h};
+            \draw (1.5,6.5) node{e};
+            \draw (2.5,6.5) node{l};
+            \draw (3.5,6.5) node{l};
+            \draw (4.5,6.5) node{o};
+            \draw (5.5,6.5) node{!};
+
+            \draw (10.5,2.5) node{!};
+            \draw (7.5,4.5) node{9};
+            \draw (8.5,3.5) node{6};
+            \draw (1.5,4.5) node{3};
+            \draw (2.5,1.5) node{4};
+            \draw (1.5,1.5) node{3};
+
+            \foreach \x/\y in {3/8,4/5,5/3,6/9,7/1,8/0,9/2}
+                {\draw (\x+0.5,2.5) node{\y};
+                    \draw[->,>=latex] (\x+.5,2) -- (\x+.5,.5);
+                }
+            \node[draw,dashed,fill=gray!50] at(10.5,.5) {7};
+        \end{tikzpicture}
+        \captionof{figure}{\centering Pour ajouter un élément au tableau il faut ici recopier entièrement ce-dernier dans un espace libre.}
+        \label{IMG}
+    \end{center}
+\begin{aretenir}[]
+L'ajout d'un élément à un tableau peut avoir un coût en temps d'exécution important.
+\end{aretenir}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[]
+    Par des mécanismes complexes, Python (\textbf{\texttt{list}}) minimisent les coûts d'exécution lors de l'agrandissement d'un tableau. \\Dans la mesure du possible on essaiera de privilégier des tableaux de taille fixe. 
+    \end{aretenir}
 
 \end{frame}
 \end{document}

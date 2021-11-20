@@ -1,0 +1,35 @@
+localhost:~# mkdir p
+localhost:~# cd p
+localhost:~/p# mkdir y
+localhost:~/p# mkdir s
+localhost:~/p# cd y
+localhost:~/p/y# mkdir t
+localhost:~/p/y# mkdir n
+localhost:~/p/y# cd t
+localhost:~/p/y/t# mkdir h
+localhost:~/p/y/t# mkdir o
+localhost:~/p/y/t# cd ..
+localhost:~/p/y# cd n
+localhost:~/p/y/n# mkdir i
+localhost:~/p/y/n# cd ..
+localhost:~/p/y# cd ..
+localhost:~/p# cd s
+localhost:~/p/s# mkdir f
+localhost:~/p/s# mkdir u
+localhost:~/p/s# cd u
+localhost:~/p/s/u# mkdir n
+localhost:~/p/s/u# cd ..
+localhost:~/p/s# cd ..
+localhost:~/p# find -print
+
+.
+./y
+./y/t
+./y/t/h
+./y/t/o
+./y/n
+./y/n/i
+./s
+./s/f
+./s/u
+./s/u/n

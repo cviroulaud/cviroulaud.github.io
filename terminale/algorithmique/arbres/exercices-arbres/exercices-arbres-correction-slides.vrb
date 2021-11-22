@@ -1,0 +1,10 @@
+\frametitle{Exercice 3}
+
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+dictionnaire = ['arbre', 'arbres', 'arbitre', 'arbitrent', 'arbitrer', 'arbitres', 'arbitrez', 'arbitrons', 'binaire', 'binaires', 'binette', 'binettes', 'bio', 'empile', 'empilent' 'empiler', 'empiles', 'empilez', 'empilons', 'exact', 'exacte', 'exactes', 'exacts']
+\end{lstlisting}
+    \captionof{code}{\centering 23 éléments dans la liste et 22 tests pour trouver \emph{exactes}.}
+    \label{CODE}
+    \end{center}
+

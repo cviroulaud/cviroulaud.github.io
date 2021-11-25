@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  16 NOV 2021 13:42
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  24 NOV 2021 08:02
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/bdd/requetes-avancees/requetes-avancees-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/bdd/requetes-avancees/requetes-avancees-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.115 seconds
+luaotfload | main : initialization completed in 0.119 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1599,13 +1599,8 @@ Package newfloat Info: New float `listing' with options `fileext=lopytx' on inpu
 \c@listing=\count448
 Package newfloat Info: float type `listing'=16 on input line 11.
 (./requetes-avancees-slides.nav)
-Overfull \hbox (403.3419pt too wide) in paragraph at lines 16--16
-[][][][][] 
- []
-
-
 \openout4 = requetes-avancees-slides.vrb
-(./requetes-avancees-slides.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+ (./requetes-avancees-slides.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 
@@ -1807,17 +1802,17 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
 
 ]
-Overfull \hbox (62.14658pt too wide) in paragraph at lines 235--235
+Overfull \hbox (62.14658pt too wide) in paragraph at lines 237--237
  [] 
  []
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 235.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 237.
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 235.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 237.
 
 [18
 
@@ -1827,7 +1822,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
 
 ]
-Overfull \hbox (28.85562pt too wide) in paragraph at lines 285--285
+Overfull \hbox (28.85562pt too wide) in paragraph at lines 287--287
  [] 
  []
 
@@ -1951,26 +1946,26 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 392.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 392.
  (./requetes-avancees-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 392.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 392.
 Package rerunfilecheck Info: File `requetes-avancees-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 5E28860CBB13F3434DEDD3F83D29A83B;588.
 )
 
 Here is how much of LuaTeX's memory you used:
  45114 strings out of 494383
- 381766,1373583 words of node,token memory allocated
- 154988 words of node memory still in use:
-   2427 hlist, 31 vlist, 1324 rule, 147 disc, 34 local_par, 1208 glue, 1451 kern, 65 penalty, 11010 glyph, 8253 attribute, 109 glue_spec, 1378 attribute_list, 5 write, 30 pdf_literal, 3 pdf_start_link, 3 pdf_end_link, 2 pdf_dest, 3 pdf_action, 1858 pdf_colorstack nodes
-   avail lists: 1:4,2:6057,3:1944,4:4298,5:3315,6:91,7:3088,8:3009,9:5704,10:25,11:363,12:1
+ 381767,1373583 words of node,token memory allocated
+ 155016 words of node memory still in use:
+   2427 hlist, 31 vlist, 1324 rule, 147 disc, 34 local_par, 1208 glue, 1451 kern, 65 penalty, 11004 glyph, 8283 attribute, 109 glue_spec, 1383 attribute_list, 5 write, 30 pdf_literal, 3 pdf_start_link, 3 pdf_end_link, 2 pdf_dest, 3 pdf_action, 1858 pdf_colorstack nodes
+   avail lists: 1:4,2:6058,3:1944,4:4297,5:3315,6:91,7:3088,8:3009,9:5704,10:25,11:363,12:1
  47545 multiletter control sequences out of 65536+600000
  48 fonts using 8460591 bytes
  70i,15n,95p,1196b,1099s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on requetes-avancees-slides.pdf (26 pages, 100639 bytes).
+Output written on requetes-avancees-slides.pdf (26 pages, 100736 bytes).
 
 PDF statistics: 559 PDF objects out of 1000 (max. 8388607)
  449 compressed objects within 5 object streams

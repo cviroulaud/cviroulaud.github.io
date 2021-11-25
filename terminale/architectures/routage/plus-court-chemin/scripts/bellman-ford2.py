@@ -11,7 +11,7 @@ def bf(mat: list, depart: int, arrivee: int) -> list:
     distances = [{"dist": float("inf"), "pred": None} for _ in range(len(mat))]
     distances[0]["dist"] = 0
     modif = True
-    while modif:
+    while modif: #ERREUR devrait être la 1° boucle for
         modif = False
         for i in range(len(mat)):
             for j in range(len(mat[i])):

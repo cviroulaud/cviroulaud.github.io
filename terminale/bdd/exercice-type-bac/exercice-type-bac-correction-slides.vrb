@@ -1,0 +1,17 @@
+\frametitle{4.b}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+SELECT nom_ordi, marque_video, Videoprojecteur.salle
+FROM Ordinateur
+JOIN Videoprojecteur ON Ordinateur.salle = Videoprojecteur.salle
+WHERE tni = true;
+\end{lstlisting}
+\captionof{code}{Avec jointure}
+    \end{center}
+\begin{aretenir}[Remarques]
+\begin{itemize}
+    \item Il faut préciser la table pour les attributs dont le nom se retrouve dans les 2 relations.
+    \item On récupère des informations des 2 tables: il faut faire une jointure.
+\end{itemize}
+\end{aretenir}

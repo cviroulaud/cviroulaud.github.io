@@ -67,7 +67,7 @@ def creer_arbre(mot: str) -> Noeud:
     return foret[0]
 
 
-def creer_codage(arbre: Noeud, code: str, acc: dict) -> dict:
+def creer_codage(arbre: Noeud, code: str, acc: dict) -> None:
     if arbre.gauche is None:  # droite aussi = feuille
         acc[arbre.lettre] = code
     else:

@@ -1,0 +1,117 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercice type bac BDD\\correction}
+\date{\framebox{\textbf{BDD 08}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{1.a}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+SELECT salle, marque_ordi FROM Ordinateur;
+\end{lstlisting}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|c|c|}
+            \hline
+            salle & marque\_ordi \\
+            \hline
+            012   & HP           \\
+            114   & Lenovo       \\
+            223   & Dell         \\
+            223   & Dell         \\
+            223   & Dell         \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{1.b}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+SELECT nom_ordi, salle FROM Ordinateur WHERE video = true;
+\end{lstlisting}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|c|c|}
+            \hline
+            salle & marque\_ordi \\
+            \hline
+            Gen-24&012          \\
+            Tech-62&114       \\
+            Gen-132&223        \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{2}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+SELECT * FROM Ordinateur WHERE annee >= 2017 ORDER BY annee;
+\end{lstlisting}
+    \end{center}
+\begin{aretenir}[Remarque]
+Les 3 lignes peuvent sortir dans un ordre aléatoire ici car l'année est 2019 pour chacune. On peut ajouter un deuxième attribut de tri.
+\end{aretenir}
+\end{frame}
+\begin{frame}
+    \frametitle{3.a}
+
+    L'attribut \textbf{\texttt{salle}} ne respecte pas \underline{la contrainte d'entité}: plusieurs entités (n-uplets) possèdent le même numéro de salle.
+
+\end{frame}
+\begin{frame}
+    \frametitle{3.b}
+
+    Imprimante(\underline{nom\_imprimante: \textbf{\texttt{String}}, \dashuline{nom\_ordi: \textbf{\texttt{String}}}}, marque\_imp: \textbf{\texttt{String}}, modele\_imp: \textbf{\texttt{String}}, salle: \textbf{\texttt{Int}})
+\begin{aretenir}[]
+Une clé étrangère référence une clé \underline{primaire} d'une autre table.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{4.a}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+INSERT INTO Videoprojecteur VALUES
+(315, "NEC", "ME402X", false);
+\end{lstlisting}
+    \end{center}
+\begin{aretenir}[Remarque]
+Le type \textbf{\texttt{boolean}} ne fait pas partie de la spécification du langage SQL. Tous les SGBD ne l'implémentent pas nécessairement.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{4.b}
+
+    \begin{center}
+        \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+SELECT nom_ordi, marque_video, Videoprojecteur.salle 
+FROM Ordinateur
+JOIN Videoprojecteur ON Ordinateur.salle = Videoprojecteur.salle
+WHERE tni = true;
+\end{lstlisting}
+\captionof{code}{Avec jointure}
+    \end{center}
+\begin{aretenir}[Remarques]
+\begin{itemize}
+    \item Il faut préciser la table pour les attributs dont le nom se retrouve dans les 2 relations.
+    \item On récupère des informations des 2 tables: il faut faire une jointure.
+\end{itemize}
+\end{aretenir}
+\end{frame}
+\end{document}

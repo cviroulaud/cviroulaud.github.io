@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Identifier les besoins}{4}{0}{1}
+\beamer@sectionintoc {2}{Modéliser}{7}{0}{2}
+\beamer@sectionintoc {3}{Implémenter}{18}{0}{3}

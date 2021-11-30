@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  25 NOV 2021 22:15
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 NOV 2021 12:18
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/types-construits/puissance-4/puissance-4-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/types-construits/puissance-4/puissance-4-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.130 seconds
+luaotfload | main : initialization completed in 0.131 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1882,11 +1882,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = puissance-4-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
  (./puissance-4-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
 Package rerunfilecheck Info: File `puissance-4-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 03DEDBBF59F09D397CF0D3731A28C69F;351.
 
@@ -1896,16 +1896,16 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44834 strings out of 494383
+ 44850 strings out of 494383
  381765,1144653 words of node,token memory allocated
- 110022 words of node memory still in use:
-   1392 hlist, 6 vlist, 763 rule, 86 disc, 10 local_par, 4 math, 668 glue, 863 kern, 31 penalty, 8435 glyph, 7455 attribute, 106 glue_spec, 1245 attribute_list, 3 write, 1042 pdf_colorstack nodes
-   avail lists: 1:8,2:4999,3:406,4:5421,5:3887,6:41,7:1591,8:3540,9:6324,10:31,11:361,12:1
- 47269 multiletter control sequences out of 65536+600000
+ 110666 words of node memory still in use:
+   1392 hlist, 6 vlist, 763 rule, 86 disc, 10 local_par, 4 math, 668 glue, 863 kern, 31 penalty, 8523 glyph, 7467 attribute, 106 glue_spec, 1247 attribute_list, 3 write, 1042 pdf_colorstack nodes
+   avail lists: 1:8,2:4986,3:402,4:5421,5:3886,6:41,7:1709,8:3540,9:6324,10:31,11:361,12:1
+ 47285 multiletter control sequences out of 65536+600000
  92 fonts using 11754279 bytes
  70i,15n,95p,1219b,1089s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on puissance-4-slides.pdf (36 pages, 242822 bytes).
+Output written on puissance-4-slides.pdf (36 pages, 243113 bytes).
 
 PDF statistics: 481 PDF objects out of 1000 (max. 8388607)
  404 compressed objects within 5 object streams

@@ -4,7 +4,7 @@
 %\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Puissance 4}
-\date{\framebox{\textbf{DonRep 13}}}
+\date{\framebox{\textbf{DonRep 14}}}
 %\logo{}
 \institute{Première - NSI}
 
@@ -125,7 +125,7 @@
     \frametitle{}
 
     \begin{aretenir}[Remarque]
-    Il sera peut-être nécessaire d'écrire d'autres fonctions pour 
+    Il sera peut-être nécessaire d'écrire d'autres fonctions  \emph{internes} pour exécuter certaines tâches, rendre le code plus lisible\dots
     \end{aretenir}
 
 \end{frame}
@@ -177,7 +177,7 @@ while remplie:
     colonne = choisir_colonne()
     remplie = est_remplie(grille, colonne)
 \end{lstlisting}
-    \captionof{code}{Initialisation}
+    \captionof{code}{Demander la colonne et vérifier}
     \end{center}
 \begin{aretenir}[Remarque]
 Il faut initialiser la variable \textbf{\texttt{remplie}}.
@@ -189,7 +189,7 @@ Il faut initialiser la variable \textbf{\texttt{remplie}}.
     \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 ligne = placer_jeton(grille, colonne, joueur)
 \end{lstlisting}
-    \captionof{code}{Initialisation}
+    \captionof{code}{Placer le jeton}
     \end{center}
 \begin{aretenir}[Remarque]
 On récupère la valeur de la \textbf{\texttt{ligne}}.
@@ -205,7 +205,7 @@ else:
     # au tour de l'autre joueur
     joueur = changer_joueur(joueur)
 \end{lstlisting}
-    \captionof{code}{Initialisation}
+    \captionof{code}{Vérifier le gagnant}
     \end{center}
 \end{frame}
 \begin{frame}
@@ -355,7 +355,9 @@ Pour vérifier si la partie est gagnée il suffit de regarder \emph{vers le bas}
 \end{aretenir}
     \begin{center}
     \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-while ligne < HAUTEUR and grille[ligne][colonne] == joueur and compteur < 4:
+while ligne < HAUTEUR and 
+        grille[ligne][colonne] == joueur and 
+        compteur < 4:
 \end{lstlisting}
     \end{center}
 \begin{itemize}

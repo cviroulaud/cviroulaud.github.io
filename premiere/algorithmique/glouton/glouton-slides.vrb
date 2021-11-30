@@ -1,0 +1,23 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+def rendu_monnaie(somme: int, systeme: list) -> list:
+    res = []
+    i_piece = 0
+    while somme > 0:
+        # si pièce est trop grande
+        if systeme[i_piece] > somme:
+            # on avance dans le système
+            i_piece += 1
+        else:
+            res.append(systeme[i_piece])
+            somme -= systeme[i_piece]
+    return res
+
+# appel de la fonction
+rendu_monnaie(14, [10, 5, 2, 1])
+\end{lstlisting}
+\captionof{code}{possibilité 2}
+\end{center}
+

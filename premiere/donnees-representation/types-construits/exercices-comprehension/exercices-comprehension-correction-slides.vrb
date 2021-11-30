@@ -1,0 +1,10 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+for t in tab: # t est un tableau interne
+    for elt in t: # elt est un entier
+        print(elt)
+\end{lstlisting}
+\end{center}

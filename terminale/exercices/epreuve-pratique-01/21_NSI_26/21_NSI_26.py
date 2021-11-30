@@ -23,7 +23,7 @@ def binaire(image, seuil):
     L = [[0 for k in range(nbCol(image))] for i in range(nbLig(image))] # on crée une image de 0 aux mêmes dimensions que le paramètre image 
     for i in range(len(image)):
         for j in range(...):
-            if L[i][j] < ... :
+            if image[i][j] < ... :
                 L[i][j] = ...
             else:
                 L[i][j] = ...

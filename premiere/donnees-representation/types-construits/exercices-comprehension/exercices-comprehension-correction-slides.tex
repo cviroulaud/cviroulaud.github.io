@@ -1,0 +1,125 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices\\Construction par compréhension\\correction}
+\date{\framebox{\textbf{DonRep 13}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> [1 for i in range(5)]
+[1, 1, 1, 1, 1]
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> [i for i in range(5, 10)]
+[5, 6, 7, 8, 9]
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> [i for i in range(1, 10, 2)]
+[1, 3, 5, 7, 9]
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+Le troisème paramètre de \textbf{\texttt{range}} est le pas.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> {i: i**2 for i in range(6)}
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+Chaque clé est associée à son carré; exemple: pour une clé de 4 on associe 16.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> [[0 for i in range(3)] for j in range(3)]
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+Le tableau \emph{externe} contient des tableaux. Les tableaux \emph{internes} contiennent des entiers.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> [[i for i in range(3)] for j in range(3)]
+[[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+Le tableau \emph{externe} contient des tableaux. Les tableaux \emph{internes} contiennent des entiers.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> [[j for i in range(3)] for j in range(3)]
+[[0, 0, 0], [1, 1, 1], [2, 2, 2]]
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+À chaque tour de boucle externe (compteur \textbf{\texttt{j}}) on crée un tableau de taille 3, qu'on remplit avec la valeur de \textbf{\texttt{j}}.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab = ["Bonjour", "ça", "va", "?"]
+for mot in tab :
+    print(mot)
+\end{lstlisting}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+for t in tab: # t est un tableau interne
+    for elt in t: # elt est un entier
+        print(elt)
+\end{lstlisting}
+\end{center}
+\end{frame}
+\end{document}

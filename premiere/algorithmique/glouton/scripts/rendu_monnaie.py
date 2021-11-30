@@ -22,7 +22,7 @@ def rendu_monnaie(somme: int, systeme: list) -> list:
     res = []
     i_piece = 0
     while somme > 0:
-        # vérifie si pièce est sélectionnable
+        # si pièce est trop grande
         if systeme[i_piece] > somme:
             # on avance dans le système
             i_piece += 1
@@ -32,4 +32,16 @@ def rendu_monnaie(somme: int, systeme: list) -> list:
     return res
 
 
-print(rendu_monnaie(6, [10, 5, 2, 1]))
+def rendu_monnaie2(somme: int, systeme: list) -> list:
+    res = []
+    while somme != 0:
+        i_piece = 0
+        while systeme[i_piece] > somme:
+            i_piece += 1
+        res.append(systeme[i_piece])
+        somme -= systeme[i_piece]
+    return res
+
+
+print(rendu_monnaie(14, [10, 5, 2, 1]))
+print(rendu_monnaie2(14, [10, 5, 2, 1]))

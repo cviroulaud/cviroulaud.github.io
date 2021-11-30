@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  25 OCT 2021 23:57
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 NOV 2021 12:01
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/types-construits/construction-par-comprehension/construction-par-comprehension-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/types-construits/construction-par-comprehension/construction-par-comprehension-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.190 seconds
+luaotfload | main : initialization completed in 0.117 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1688,15 +1688,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  44484 strings out of 494383
- 195393,1144653 words of node,token memory allocated
- 44192 words of node memory still in use:
-   695 hlist, 9 vlist, 377 rule, 40 disc, 7 local_par, 319 glue, 432 kern, 17 penalty, 2779 glyph, 3351 attribute, 106 glue_spec, 561 attribute_list, 3 write, 508 pdf_colorstack nodes
-   avail lists: 1:7,2:3796,3:304,4:2892,5:2425,6:31,7:1061,8:2139,9:3866,10:35,11:214,12:1
+ 195402,1144653 words of node,token memory allocated
+ 44178 words of node memory still in use:
+   695 hlist, 9 vlist, 377 rule, 40 disc, 7 local_par, 319 glue, 432 kern, 17 penalty, 2779 glyph, 3345 attribute, 106 glue_spec, 560 attribute_list, 3 write, 508 pdf_colorstack nodes
+   avail lists: 1:5,2:3775,3:304,4:2881,5:2415,6:31,7:1061,8:2130,9:3850,10:35,11:213,12:1
  47077 multiletter control sequences out of 65536+600000
  38 fonts using 7160407 bytes
  70i,15n,95p,1257b,1080s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on construction-par-comprehension-slides.pdf (12 pages, 35009 bytes).
+Output written on construction-par-comprehension-slides.pdf (12 pages, 34995 bytes).
 
 PDF statistics: 203 PDF objects out of 1000 (max. 8388607)
  165 compressed objects within 2 object streams

@@ -1,0 +1,16 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+def test_tomber(self):
+    # jeton en colonne 4
+    self.assertEqual(tomber_ligne(self.grille, 4), 5)
+    # jeton en colonne 3
+    self.assertEqual(tomber_ligne(self.grille, 3), 3)
+    # jeton en colonne 0
+    self.assertEqual(tomber_ligne(self.grille, 0), -1)
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+Il est possible de créer un fichier de tests pour chaque fichier de fonctions.
+\end{aretenir}

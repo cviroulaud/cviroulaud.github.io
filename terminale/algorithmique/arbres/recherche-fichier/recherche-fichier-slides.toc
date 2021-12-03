@@ -1,6 +1,6 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Structure hiérarchique arborescente}{4}{0}{1}
-\beamer@sectionintoc {2}{Parcourir un arbre}{10}{0}{2}
-\beamer@subsectionintoc {2}{1}{Parcours en largeur}{11}{0}{2}
-\beamer@subsectionintoc {2}{2}{Parcours en profondeur}{14}{0}{2}
-\beamer@subsectionintoc {2}{3}{Rechercher un fichier}{19}{0}{2}
+\beamer@sectionintoc {2}{Parcourir un arbre}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Parcours en largeur}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Parcours en profondeur}{15}{0}{2}
+\beamer@subsectionintoc {2}{3}{Rechercher un fichier}{20}{0}{2}

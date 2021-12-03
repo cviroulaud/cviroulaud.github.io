@@ -96,6 +96,40 @@ find -name "mon-fichier.pdf"
     \frametitle{}
 
     \begin{aretenir}[]
+        La \textbf{taille} d'un arbre est le nombre de nœuds de la structure.
+    \end{aretenir}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7,transform shape]
+            \node[draw] (P) at (0,0) {P};
+            \node[draw] (Y) at (-2,-1) {Y};
+            \node[draw] (T) at (-3,-2) {T};
+            \node[draw] (N) at (-1,-2) {N};
+            \node[draw] (H) at (-4,-3) {H};
+            \node[draw] (O) at (-2,-3) {O};
+            \node[draw] (I) at (0,-1) {I};
+            \node[draw] (S) at (2,-1) {S};
+            \node[draw] (F) at (1,-2) {F};
+            \node[draw] (U) at (2,-2) {U};
+            \node[draw] (N2) at (3,-2) {N};
+            \draw (P) -- (Y);
+            \draw (T) -- (Y);
+            \draw (T) -- (H);
+            \draw (T) -- (O);
+            \draw (N) -- (Y);
+            \draw (P) -- (I);
+            \draw (P) -- (S);
+            \draw (F) -- (S);
+            \draw (S) -- (U);
+            \draw (N2) -- (S);
+        \end{tikzpicture}
+        \captionof{figure}{La taille de l'arbre est 11.}
+        \label{arbre}
+    \end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[]
         La \textbf{hauteur (ou profondeur)} d'un arbre est la longueur du plus grand chemin entre la racine et une feuille.
     \end{aretenir}
     \begin{center}

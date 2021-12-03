@@ -60,10 +60,9 @@ class Liste:
         renvoie l'élément de rang n. Les indices commencent à 0.
         """
         maillon = self.tete
-        i = 0
-        while i < n and maillon is not None:
+        while n > 0 and maillon is not None:
             maillon = maillon.suivant
-            i += 1
+            n -= 1
 
         if maillon is None:
             raise IndexError("indice invalide")

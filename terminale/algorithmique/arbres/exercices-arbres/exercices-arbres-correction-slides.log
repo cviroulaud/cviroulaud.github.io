@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  21 NOV 2021 23:42
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  3 DEC 2021 11:22
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-arbres/exercices-arbres-correction-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-arbres/exercices-arbres-correction-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.154 seconds
+luaotfload | main : initialization completed in 0.098 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1645,19 +1645,23 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `exercices-arbres-correction-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 58681C10A1EB58C0D886646F2F4D4BBD;288.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
  45049 strings out of 494383
  195328,1144653 words of node,token memory allocated
- 75831 words of node memory still in use:
-   562 hlist, 8 vlist, 5 rule, 3 disc, 3 local_par, 1451 glue, 7 kern, 20 penalty, 1664 glyph, 18693 attribute, 106 glue_spec, 3118 attribute_list, 5 write, 1471 pdf_literal, 1 pdf_dest, 14 pdf_colorstack nodes
-   avail lists: 1:5,2:3382,3:1521,4:2981,5:2585,6:29,7:2660,8:2185,9:3467,10:22,11:248,12:1
+ 75210 words of node memory still in use:
+   561 hlist, 8 vlist, 5 rule, 2 disc, 3 local_par, 1443 glue, 5 kern, 19 penalty, 1588 glyph, 18693 attribute, 106 glue_spec, 3118 attribute_list, 5 write, 1471 pdf_literal, 1 pdf_dest, 14 pdf_colorstack nodes
+   avail lists: 1:5,2:3382,3:1520,4:2981,5:2587,6:29,7:2626,8:2185,9:3468,10:22,11:249,12:1
  47596 multiletter control sequences out of 65536+600000
  90 fonts using 11508999 bytes
  70i,15n,95p,1222b,947s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on exercices-arbres-correction-slides.pdf (9 pages, 45910 bytes).
+Output written on exercices-arbres-correction-slides.pdf (9 pages, 45704 bytes).
 
 PDF statistics: 188 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams

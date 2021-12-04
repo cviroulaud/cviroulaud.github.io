@@ -1,0 +1,17 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+# notation polonaise
+préfixe  ['×', 2, '+', 3, 4]
+
+# notation usuelle
+infixe  [2, '×', 3, '+', 4]
+
+# notation polonaise inverse
+postfixe  [2, 3, 4, '+', '×']
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+Dans la notation usuelle les parenthèses sont obligatoires pour éviter les ambiguïtés.
+\end{aretenir}

@@ -38,11 +38,11 @@ class Liste:
             en_cours = en_cours.suivant
         return en_cours.valeur
 
-    def dernier_aux(self, m: Maillon) -> int:
-        if m.suivant is None:
-            return m.valeur
+    def dernier_aux(self, en_cours: Maillon) -> int:
+        if en_cours.suivant is None:
+            return en_cours.valeur
         else:
-            return self.dernier_aux(m.suivant)
+            return self.dernier_aux(en_cours.suivant)
 
     def dernier_rec(self) -> int:
         # gestion d'erreur

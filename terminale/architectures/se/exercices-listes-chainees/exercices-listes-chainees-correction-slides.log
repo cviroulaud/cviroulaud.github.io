@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  20 OCT 2021 11:06
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  3 DEC 2021 14:10
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/exercices-listes-chainees/exercices-listes-chainees-correction-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/exercices-listes-chainees/exercices-listes-chainees-correction-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.227 seconds
+luaotfload | main : initialization completed in 0.156 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1726,16 +1726,16 @@ Package rerunfilecheck Info: File `exercices-listes-chainees-correction-slides.o
 )
 
 Here is how much of LuaTeX's memory you used:
- 44527 strings out of 494383
- 244162,1144653 words of node,token memory allocated
- 76007 words of node memory still in use:
-   1319 hlist, 9 vlist, 728 rule, 75 disc, 10 local_par, 593 glue, 804 kern, 20 penalty, 4048 glyph, 6933 attribute, 106 glue_spec, 1158 attribute_list, 3 write, 998 pdf_colorstack nodes
-   avail lists: 1:6,2:4418,3:396,4:4844,5:3850,6:42,7:2718,8:3486,9:6247,10:27,11:354,12:1
- 47033 multiletter control sequences out of 65536+600000
+ 44526 strings out of 494383
+ 244159,1144653 words of node,token memory allocated
+ 76203 words of node memory still in use:
+   1319 hlist, 9 vlist, 728 rule, 75 disc, 10 local_par, 593 glue, 804 kern, 20 penalty, 4076 glyph, 6933 attribute, 106 glue_spec, 1158 attribute_list, 3 write, 998 pdf_colorstack nodes
+   avail lists: 1:5,2:4418,3:396,4:4844,5:3850,6:42,7:2718,8:3486,9:6247,10:27,11:354,12:1
+ 47032 multiletter control sequences out of 65536+600000
  43 fonts using 7802439 bytes
  70i,15n,95p,1236b,945s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on exercices-listes-chainees-correction-slides.pdf (21 pages, 51727 bytes).
+Output written on exercices-listes-chainees-correction-slides.pdf (21 pages, 51748 bytes).
 
 PDF statistics: 308 PDF objects out of 1000 (max. 8388607)
  254 compressed objects within 3 object streams

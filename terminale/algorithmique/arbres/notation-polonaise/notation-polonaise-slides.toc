@@ -3,3 +3,7 @@
 \beamer@subsectionintoc {1}{1}{Définition}{6}{0}{1}
 \beamer@subsectionintoc {1}{2}{vocabulaire}{8}{0}{1}
 \beamer@subsectionintoc {1}{3}{Propriétés}{12}{0}{1}
+\beamer@sectionintoc {2}{Représentation d'une expression mathématique}{18}{0}{2}
+\beamer@subsectionintoc {2}{1}{Arbre binaire}{19}{0}{2}
+\beamer@subsectionintoc {2}{2}{Représentation en Python}{20}{0}{2}
+\beamer@subsectionintoc {2}{3}{Parcours en profondeur}{29}{0}{2}

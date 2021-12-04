@@ -1,0 +1,168 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices arbre binaire\\correction}
+\date{\framebox{\textbf{Algo 08}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}
+    \frametitle{Exercice 1}
+
+    \begin{enumerate}
+        \item \begin{itemize}
+                  \item préfixe: × - 12 8 + 7 9
+                  \item infixe: 12 - 8 × 7 + 9
+                  \item postfixe: 12 8 - 7 9 + ×
+              \end{itemize}
+        \item 64
+        \item Parcours infixe
+    \end{enumerate}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}
+    \frametitle{Exercice 2}
+
+    \begin{enumerate}
+        \item
+              \begin{itemize}
+                  \item en largeur: 1 2 3 4 5 6 7 8 9 10 11 12 13
+                  \item préfixe: 1 2 4 8 5 3 6 9 10 12 13 7 11
+                  \item infixe: 4 8 2 5 1 9 6 12 10 13 3 11 7
+                  \item postfixe: 8 4 5 2 9 12 13 10 6 11 7 3 1
+
+              \end{itemize}
+        \item La hauteur est 4.
+        \item Cet arbre est équilibré car la hauteur de chaque sous-arbre gauche diffère au plus de 1 de chaque sous-arbre droit.
+        \item Cet arbre n'est pas complet car tous les niveaux ne sont pas remplis.
+    \end{enumerate}
+
+\end{frame}
+\section{Exercice 3}
+\begin{frame}[fragile]
+    \frametitle{Exercice 3}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+class Arbre_binaire:
+    def __init__(self, h: int):
+        self.hauteur = h
+        self.arbre = [None for i in range(2**(h+1)-1)]
+        self.arbre[0] = "r"
+\end{lstlisting}
+\captionof{code}{Constructeur}
+\label{CODE}
+\end{center}    
+
+\end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+def get_taille(self) -> int:
+    taille = 0
+    for elt in self.arbre:
+        # on évite les noeuds vides
+        if elt is not None:
+            taille += 1
+    return taille
+\end{lstlisting}
+\end{center}    
+\begin{aretenir}[Remarque]
+Pour alléger le diaporama les \emph{docstring} ne sont pas présentes. Elles sont écrites dans le fichier Python. 
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+def get_indice(self, chaine: str) -> int:
+    i = 0
+    while self.arbre[i] != chaine:
+        i = i+1
+    return i
+\end{lstlisting}
+\end{center}    
+    \begin{aretenir}[Remarque]
+    Tous les nœuds sont distincts.
+    \end{aretenir}
+    \end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-5.5em]
+def inserer(self, pere: str, gauche: str, droit: str) -> None:
+    i_pere = self.get_indice(pere)
+    #assert 2*i_pere+2 < len(self.arbre)
+    assert 2*i_pere+2 < 2**(self.hauteur+1)-1, "dépassement de taille"
+    self.arbre[2*i_pere+1] = gauche
+    self.arbre[2*i_pere+2] = droit
+\end{lstlisting}
+\end{center}    
+    \begin{aretenir}[Remarque]
+La taille du tableau est fixée.
+    \end{aretenir}
+    \end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-3em]
+def prefixe(self, position: int, parcours: list) -> None:
+    if position < len(self.arbre) and \
+                    self.arbre[position] is not None:
+        parcours.append(self.arbre[position])
+        self.prefixe(2*position+1, parcours)
+        self.prefixe(2*position+2, parcours)
+\end{lstlisting}
+\end{center} 
+    \end{frame}
+    \begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-3.5em]
+def infixe(self, position: int, parcours: list) -> None:
+    if position < len(self.arbre) and \
+                    self.arbre[position] is not None:
+        self.infixe(2*position+1, parcours)
+        parcours.append(self.arbre[position])
+        self.infixe(2*position+2, parcours)
+
+
+
+
+def postfixe(self, position: int, parcours: list) -> None:
+    if position < len(self.arbre) and \
+                    self.arbre[position] is not None:
+        self.postfixe(2*position+1, parcours)
+        self.postfixe(2*position+2, parcours)
+        parcours.append(self.arbre[position])
+\end{lstlisting}
+\end{center} 
+    \end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+def prefixe_2(self, position: int) -> list:
+    if position < len(self.arbre) and \
+                    self.arbre[position] is not None:
+        return [self.arbre[position]] + \
+                    self.prefixe_2(2*position+1) + \
+                    self.prefixe_2(2*position+2)
+    else:  # cas limite
+        return []
+\end{lstlisting}
+\end{center} 
+\begin{aretenir}[Remarque]
+La méthode retourne un tableau, il faut donc retourner un tableau vide dans le cas limite.
+\end{aretenir}
+    \end{frame}
+\end{document}

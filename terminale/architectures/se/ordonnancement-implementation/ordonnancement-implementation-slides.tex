@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Ordonnancement - implémentation}
 \date{\framebox{\textbf{Archi 05}}}
@@ -248,7 +248,7 @@ def __str__(self):
     \frametitle{Correction}
 
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-class File():
+class File:
     def __init__(self):
         self.premier = None
         self.dernier = None

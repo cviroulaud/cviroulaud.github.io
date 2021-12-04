@@ -1,0 +1,16 @@
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+def prefixe_2(self, position: int) -> list:
+    if position < len(self.arbre) and \
+                    self.arbre[position] is not None:
+        return [self.arbre[position]] + \
+                    self.prefixe_2(2*position+1) + \
+                    self.prefixe_2(2*position+2)
+    else:  # cas limite
+        return []
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+La méthode retourne un tableau, il faut donc retourner un tableau vide dans le cas limite.
+\end{aretenir}

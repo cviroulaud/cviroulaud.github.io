@@ -7,13 +7,13 @@
 """
 
 
-class Element():
+class Element:
     def __init__(self, d: int, s: object):
         self.donnees = d
         self.successeur = s
 
 
-class File():
+class File:
     def __init__(self):
         self.premier = None
         self.dernier = None

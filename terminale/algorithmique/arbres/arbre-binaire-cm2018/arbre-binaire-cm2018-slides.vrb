@@ -1,0 +1,22 @@
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def get_matchs(arbre: list) -> list:
+    """
+    huitième de finale
+
+    Args:
+        arbre (list): tableau du tournoi
+
+    Returns:
+        list: tableau de tuples
+    """
+    matchs = []
+    i = i_feuille_gauche(arbre)
+    while i < len(arbre):
+        matchs.append((arbre[i], arbre[i+1]))
+        i = i+2
+    return matchs
+\end{lstlisting}
+\end{center}
+

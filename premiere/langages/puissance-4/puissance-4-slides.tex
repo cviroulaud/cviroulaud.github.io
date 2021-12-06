@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Puissance 4}
 \date{\framebox{\textbf{Lang 08}}}
@@ -111,13 +111,73 @@
 \end{frame}
 \begin{frame}
     \frametitle{Correction}
-
+    {\Large \textbf{\texttt{initialiser\_grille}}}
     \begin{itemize}
-        \item<1-> \textbf{\texttt{initialiser\_grille() -> list}}
-        \item<2-> \textbf{\texttt{choisir\_colonne() $\rightarrow$ int}}
-        \item<3-> \textbf{\texttt{est\_remplie(grille: list, colonne: int) $\rightarrow$ bool}}
-        \item<4-> \textbf{\texttt{placer\_jeton(grille: list, colonne: int, joueur) $\rightarrow$ int}}
-        \item<5-> \textbf{\texttt{verif\_gagnant(grille: list, joueur: int, ligne: int, colonne: int) $\rightarrow$ bool}}
+        \item rôle: construire la grille du jeu
+        \item paramètres:
+        \begin{itemize}
+            \item nb\_col: entier
+            \item nb\_lig: entier
+        \end{itemize}
+        \item renvoi: tableau de tableaux
+    \end{itemize}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    {\Large \textbf{\texttt{choisir\_colonne}}}
+    \begin{itemize}
+        \item rôle: demande la colonne où poser le jeton
+        \item paramètres: aucun
+        \item renvoi: la colonne choisie
+    \end{itemize}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    {\Large \textbf{\texttt{est\_remplie}}}
+    \begin{itemize}
+        \item rôle: vérifie si la colonne est remplie jusqu'en haut
+        \item paramètres:
+        \begin{itemize}
+            \item grille: tableau
+            \item colonne: entier
+        \end{itemize}
+        \item renvoi: booléen, vrai si la colonne est remplie
+    \end{itemize}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    {\Large \textbf{\texttt{placer\_jeton}}}
+    \begin{itemize}
+        \item rôle: place le jeton 
+        \item paramètres:
+        \begin{itemize}
+            \item grille: tableau
+            \item colonne: entier
+        \end{itemize}
+        \item renvoi: entier, la ligne où le jeton est placé
+    \end{itemize}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    {\Large \textbf{\texttt{verif\_gagnant}}}
+    \begin{itemize}
+        \item rôle: place le jeton 
+        \item paramètres:
+        \begin{itemize}
+            \item grille: tableau
+            \item joueur: entier
+            \item ligne: entier
+            \item colonne: entier
+        \end{itemize}
+        \item renvoi: booléen, vrai si le joueur a gagné
     \end{itemize}
 
 \end{frame}

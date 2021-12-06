@@ -14,7 +14,7 @@ from moteur import Moteur
 moteur = Moteur()
 
 #initialisation
-grille = initialiser_grille()
+grille = initialiser_grille(LARGEUR, HAUTEUR)
 joueur = ROUGE
 
 gagnant = False

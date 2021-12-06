@@ -20,6 +20,8 @@ class Moteur:
         self.canevas.pack()
 
     def afficher(self, grille: list) -> None:
+        self.fenetre.update_idletasks()
+        self.fenetre.update()
         for c in range(LARGEUR):
             for l in range(HAUTEUR):
                 self.canevas.create_oval(

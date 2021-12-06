@@ -13,15 +13,15 @@ from moteur import Moteur
 
 moteur = Moteur()
 
-#initialisation
-grille = initialiser_grille()
+# initialisation
+grille = initialiser_grille(LARGEUR, HAUTEUR)
 joueur = ROUGE
 
 gagnant = False
 while not gagnant:
     # affichage graphique
     moteur.afficher(grille)
-
+    
     # demande la colonne choisie (tant qu'elle est pleine)
     remplie = True
     while remplie:
@@ -37,6 +37,8 @@ while not gagnant:
     else:
         # au tour de l'autre joueur
         joueur = changer_joueur(joueur)
+
+    
 
 
 # fin du jeu

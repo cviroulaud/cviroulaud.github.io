@@ -8,10 +8,14 @@
 from constantes import *
 
 
-def initialiser_grille() -> list:
+def initialiser_grille(nb_col: int, nb_lig: int) -> list:
     """
     construire la grille du jeu
-
+    
+    Args:
+        nb_col (int): nombre de colonnes
+        nb_lig (int): nombre de lignes
+      
     Returns:
         list: un tableau de HAUTEUR lignes et LARGEUR colonnes
     """

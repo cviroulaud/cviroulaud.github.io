@@ -8,14 +8,18 @@
 from constantes import *
 
 
-def initialiser_grille() -> list:
+def initialiser_grille(nb_col: int, nb_lig: int) -> list:
     """
     construire la grille du jeu
-
+    
+    Args:
+        nb_col (int): nombre de colonnes
+        nb_lig (int): nombre de lignes
+      
     Returns:
         list: un tableau de HAUTEUR lignes et LARGEUR colonnes
     """
-    return [[VIDE for i in range(LARGEUR)] for j in range(HAUTEUR)]
+    return [[VIDE for i in range(nb_col)] for j in range(nb_lig)]
 
 
 def est_remplie(grille: list, colonne: int) -> bool:

@@ -1,17 +1,19 @@
 \frametitle{}
 
 \begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
-# notation polonaise
-préfixe  ['×', 2, '+', 3, 4]
-
-# notation usuelle
-infixe  [2, '×', 3, '+', 4]
-
-# notation polonaise inverse
-postfixe  [2, 3, 4, '+', '×']
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def prefixe_tab2(a: Noeud) -> list:
+    if a is not None:
+        # concatène les tableaux construits
+        return [a.valeur] + \
+                prefixe_tab2(a.gauche) + \
+                prefixe_tab2(a.droite)
+    else:
+        return []
 \end{lstlisting}
+\captionof{code}{Version avec concaténation}
+\label{CODE}
 \end{center}
 \begin{aretenir}[Remarque]
-Dans la notation usuelle les parenthèses sont obligatoires pour éviter les ambiguïtés.
+En fin de parcours, il faut renvoyer un tableau vide pour concaténer des structures de même type.
 \end{aretenir}

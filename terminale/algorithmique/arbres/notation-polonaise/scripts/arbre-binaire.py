@@ -56,27 +56,34 @@ def postfixe(a: Noeud) -> None:
         print(a.valeur, end=" ")
 
 
-def prefixe_tab(a: Noeud, parcours: list) -> list:
+def prefixe_tab(a: Noeud, parcours: list) -> None:
     if a is not None:
         parcours.append(a.valeur)
         prefixe_tab(a.gauche, parcours)
         prefixe_tab(a.droite, parcours)
-        return parcours
 
-def infixe_tab(a: Noeud, parcours: list) -> list:
+def infixe_tab(a: Noeud, parcours: list) -> None:
     if a is not None:
         infixe_tab(a.gauche, parcours)        
         parcours.append(a.valeur)
         infixe_tab(a.droite, parcours)
         return parcours
 
-def postfixe_tab(a: Noeud, parcours: list) -> list:
+def postfixe_tab(a: Noeud, parcours: list) -> None:
     if a is not None:
         postfixe_tab(a.gauche, parcours)        
         postfixe_tab(a.droite, parcours)
         parcours.append(a.valeur)
         return parcours
     
+def prefixe_tab2(a: Noeud) -> list:
+    if a is not None:
+        return [a.valeur] + \
+                    prefixe_tab2(a.gauche) + \
+                    prefixe_tab2(a.droite)
+    else:
+        return []
+        
 arbre = Noeud("×",
               Noeud(2, None, None),
               Noeud("+",
@@ -91,6 +98,17 @@ infixe(arbre)
 print()
 postfixe(arbre)
 print()
-print("préfixe ",prefixe_tab(arbre, []))
-print("infixe ", infixe_tab(arbre, []))
-print("postfixe ", postfixe_tab(arbre, []))
+
+tab_prefixe = []
+prefixe_tab(arbre, tab_prefixe)
+print("préfixe ", tab_prefixe)
+
+tab_infixe = []
+infixe_tab(arbre, tab_infixe)
+print("infixe ", tab_infixe)
+
+tab_postfixe = []
+postfixe_tab(arbre, tab_postfixe)
+print("postfixe ", tab_postfixe)
+
+print("préfixe v2", prefixe_tab2(arbre))

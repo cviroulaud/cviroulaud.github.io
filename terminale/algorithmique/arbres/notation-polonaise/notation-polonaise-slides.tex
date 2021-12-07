@@ -562,10 +562,11 @@ def prefixe(a: Noeud) -> None:
 \end{lstlisting}
 \end{center}    
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
-print(prefixe(arbre))
+prefixe(arbre)
 \end{lstlisting}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
-['×', 2, '+', 3, 4]\end{lstlisting}
+'×' 2 '+' 3 4
+\end{lstlisting}
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
@@ -593,36 +594,44 @@ def postfixe(a: Noeud) -> None:
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
-def prefixe_tab(a: Noeud, parcours: list) -> list:
+def prefixe_tab(a: Noeud, parcours: list) -> None:
     if a is not None:
         parcours.append(a.valeur)
         prefixe_tab(a.gauche, parcours)
         prefixe_tab(a.droite, parcours)
-        return parcours
 \end{lstlisting}
 \end{center}
-
+\begin{aretenir}[Remarque]
+Le tableau passé en paramètre est une \textbf{référence} à un tableau du programme principal
+\end{aretenir}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab_prefixe = []
+prefixe_tab(arbre, tab_prefixe)
+print("préfixe ", tab_prefixe)
+\end{lstlisting}
+\captionof{code}{Appel}
+\label{CODE}
+\end{center}
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{}
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
-def infixe_tab(a: Noeud, parcours: list) -> list:
+def infixe_tab(a: Noeud, parcours: list) -> None:
     if a is not None:
         infixe_tab(a.gauche, parcours)        
         parcours.append(a.valeur)
         infixe_tab(a.droite, parcours)
-        return parcours
 
 
 
-def postfixe_tab(a: Noeud, parcours: list) -> list:
+def postfixe_tab(a: Noeud, parcours: list) -> None:
     if a is not None:
         postfixe_tab(a.gauche, parcours)        
         postfixe_tab(a.droite, parcours)
         parcours.append(a.valeur)
-        return parcours
 \end{lstlisting}
 \end{center}
 
@@ -644,6 +653,27 @@ postfixe  [2, 3, 4, '+', '×']
 \end{center}
 \begin{aretenir}[Remarque]
 Dans la notation usuelle les parenthèses sont obligatoires pour éviter les ambiguïtés.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def prefixe_tab2(a: Noeud) -> list:
+    if a is not None:
+        # concatène les tableaux construits
+        return [a.valeur] + \
+                prefixe_tab2(a.gauche) + \
+                prefixe_tab2(a.droite)
+    else:
+        return []
+\end{lstlisting}
+\captionof{code}{Version avec concaténation}
+\label{CODE}
+\end{center}    
+\begin{aretenir}[Remarque]
+En fin de parcours, il faut renvoyer un tableau vide pour concaténer des structures de même type.
 \end{aretenir}
 \end{frame}
 \begin{frame}

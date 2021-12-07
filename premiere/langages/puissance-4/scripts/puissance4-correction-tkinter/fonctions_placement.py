@@ -11,11 +11,11 @@ from constantes import *
 def initialiser_grille(nb_col: int, nb_lig: int) -> list:
     """
     construire la grille du jeu
-    
+
     Args:
         nb_col (int): nombre de colonnes
         nb_lig (int): nombre de lignes
-      
+        
     Returns:
         list: un tableau de HAUTEUR lignes et LARGEUR colonnes
     """
@@ -48,9 +48,6 @@ def placer_jeton(grille: list, colonne: int, joueur) -> int:
     Returns:
         int: la ligne où le jeton s'est arrêté 
     """
-    # vérification de la validité de la colonne
-    assert colonne < LARGEUR, "La colonne est hors limite."
-
     ligne = tomber_ligne(grille, colonne)
     grille[ligne][colonne] = joueur
     return ligne
@@ -74,8 +71,3 @@ def tomber_ligne(grille: list, colonne: int) -> int:
 
     # renvoie la dernière place vide
     return ligne-1
-
-
-if __name__ == "__main__":
-    # tests des préconditions des fonctions
-    placer_jeton([], LARGEUR, 0)

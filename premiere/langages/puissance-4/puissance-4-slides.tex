@@ -261,6 +261,7 @@ On récupère la valeur de la \textbf{\texttt{ligne}}.
     \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
 if verif_gagnant(grille, joueur, ligne, colonne):
     gagnant = True
+    print(afficher_gagnant(joueur))
 else:
     # au tour de l'autre joueur
     joueur = changer_joueur(joueur)
@@ -305,7 +306,8 @@ def initialiser_grille() -> list:
     Returns:
         list: un tableau de HAUTEUR lignes et LARGEUR colonnes
     """
-    return [[VIDE for i in range(LARGEUR)] for j in range(HAUTEUR)]
+    return [ [VIDE for i in range(LARGEUR)] 
+                        for j in range(HAUTEUR) ]
 \end{lstlisting}
 \captionof{code}{Initialiser}
 \label{CODE}
@@ -351,7 +353,7 @@ def est_remplie(grille: list, colonne: int) -> bool:
     \frametitle{Correction}
 
 \begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=-1em]
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-5em]
 def tomber_ligne(grille: list, colonne: int) -> int:
     ligne = 0
     while ligne < HAUTEUR and grille[ligne][colonne] == VIDE:
@@ -398,10 +400,10 @@ def placer_jeton(grille: list, colonne: int, joueur) -> int:
     \frametitle{Correction}
 
     \begin{center}
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1.5em]
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.3em, xrightmargin=-6.3em]
 if verif_verticale(grille, joueur, ligne, colonne) or \
-    verif_horizontale_droite(grille, joueur, ligne, colonne) or \
-    verif_horizontale_gauche(grille, joueur, ligne, colonne):
+   verif_horizontale_droite(grille, joueur, ligne, colonne) or \
+   verif_horizontale_gauche(grille, joueur, ligne, colonne):
 \end{lstlisting}
     \captionof{code}{Gagnant?}
     \label{CODE}
@@ -414,9 +416,9 @@ Pour gagner il suffit (\textbf{\texttt{or}}) qu'une des conditions soient vérif
 Pour vérifier si la partie est gagnée il suffit de regarder \emph{vers le bas} de la grille.
 \end{aretenir}
     \begin{center}
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-while ligne < HAUTEUR and 
-        grille[ligne][colonne] == joueur and 
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+while ligne < HAUTEUR and \
+        grille[ligne][colonne] == joueur and \
         compteur < 4:
 \end{lstlisting}
     \end{center}
@@ -435,11 +437,11 @@ while ligne < HAUTEUR and
         \item modifier la condition de la fonction \textbf{\texttt{verif\_gagnant}}.
     \end{itemize}
     \begin{center}
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1.5em]
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.3em, xrightmargin=-6.3em]
 if verif_verticale(grille, joueur, ligne, colonne) or \
-    verif_horizontale_droite(grille, joueur, ligne, colonne) or \
-    verif_horizontale_gauche(grille, joueur, ligne, colonne) or \
-    verif_diagonale(grille, joueur, ligne, colonne):
+   verif_horizontale_droite(grille, joueur, ligne, colonne) or \
+   verif_horizontale_gauche(grille, joueur, ligne, colonne) or \
+   verif_diagonale(grille, joueur, ligne, colonne):
 \end{lstlisting}
         \end{center}
 \end{frame}

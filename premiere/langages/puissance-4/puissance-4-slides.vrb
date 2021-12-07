@@ -6,10 +6,10 @@
         \item modifier la condition de la fonction \textbf{\texttt{verif\_gagnant}}.
     \end{itemize}
     \begin{center}
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1.5em]
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.3em, xrightmargin=-6.3em]
 if verif_verticale(grille, joueur, ligne, colonne) or \
-    verif_horizontale_droite(grille, joueur, ligne, colonne) or \
-    verif_horizontale_gauche(grille, joueur, ligne, colonne) or \
-    verif_diagonale(grille, joueur, ligne, colonne):
+   verif_horizontale_droite(grille, joueur, ligne, colonne) or \
+   verif_horizontale_gauche(grille, joueur, ligne, colonne) or \
+   verif_diagonale(grille, joueur, ligne, colonne):
 \end{lstlisting}
         \end{center}

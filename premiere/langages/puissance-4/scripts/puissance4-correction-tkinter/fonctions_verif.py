@@ -20,7 +20,7 @@ def verif_gagnant(grille: list, joueur: int, ligne: int, colonne: int) -> bool:
 
     Returns:
         bool: True si la position est gagnante
-    """
+    """    
     if verif_verticale(grille, joueur, ligne, colonne) or \
             verif_horizontale_droite(grille, joueur, ligne, colonne) or \
             verif_horizontale_gauche(grille, joueur, ligne, colonne):

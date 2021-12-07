@@ -9,19 +9,16 @@ from constantes import *
 from fonctions_prof import *
 from fonctions_placement import *
 from fonctions_verif import *
-from moteur import Moteur
+from moteur_turtle import *
 
-moteur = Moteur()
-
-#initialisation
+# initialisation
 grille = initialiser_grille(LARGEUR, HAUTEUR)
 joueur = ROUGE
+# affichage graphique
+dessiner_grille(grille)
 
 gagnant = False
 while not gagnant:
-    # affichage graphique
-    moteur.afficher(grille)
-
     # demande la colonne choisie (tant qu'elle est pleine)
     remplie = True
     while remplie:
@@ -34,11 +31,9 @@ while not gagnant:
     # vérifie si gagnant
     if verif_gagnant(grille, joueur, ligne, colonne):
         gagnant = True
+        print(afficher_gagnant(joueur))
     else:
+        # affichage graphique
+        dessiner_jeton(grille, ligne, colonne)
         # au tour de l'autre joueur
         joueur = changer_joueur(joueur)
-
-
-# fin du jeu
-print(afficher_gagnant(joueur))
-moteur.afficher_fin(grille)

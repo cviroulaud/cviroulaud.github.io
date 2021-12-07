@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 DEC 2021 15:16
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 DEC 2021 23:44
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/donnees/titanic/titanic
 (/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/donnees/titanic/titanic.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.151 seconds
+luaotfload | main : initialization completed in 0.122 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1634,19 +1634,19 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 72.
+(mdframed)              on input line 73.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 72.
+(mdframed)              on input line 73.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 72.
+ mdframed uses option nobreak mdframed on input line 73.
  [8
 
 ] (./titanic.toc) [9
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 84.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 90.
  [10
 
 ] [11
@@ -1655,14 +1655,14 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 </home/tof/Documents/Cozy/latex-include/stop.png, id=184, 240.9pt x 240.9pt>
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 110.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 116.
 (luatex.def)             Requested size: 85.35826pt x 85.3565pt.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 110.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 116.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 110.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 116.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 110.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 116.
  [12
 
 </home/tof/Documents/Cozy/latex-include/stop.png>]
@@ -1700,7 +1700,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'age'
 ]
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 183.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 190.
 (luatex.def)             Requested size: 85.35826pt x 85.3565pt.
  [18
 
@@ -1710,18 +1710,18 @@ Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used o
 <ressources/diagramme.png, id=281, 1258.7025pt x 909.3975pt>
 File: ressources/diagramme.png Graphic file (type png)
 <use ressources/diagramme.png>
-Package luatex.def Info: ressources/diagramme.png  used on input line 212.
+Package luatex.def Info: ressources/diagramme.png  used on input line 219.
 (luatex.def)             Requested size: 227.62204pt x 164.44768pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 212.
+(mdframed)              on input line 219.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 212.
+(mdframed)              on input line 219.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 212.
+ mdframed uses option nobreak mdframed on input line 219.
 
-Overfull \vbox (1.23827pt too high) detected at line 212
+Overfull \vbox (1.23827pt too high) detected at line 219
  []
 
 [20
@@ -1731,7 +1731,7 @@ Overfull \vbox (1.23827pt too high) detected at line 212
 ]
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 236.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 243.
 (luatex.def)             Requested size: 85.35826pt x 85.3565pt.
  [22
 
@@ -1752,7 +1752,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'age'
 ]
 File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 283.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 290.
 (luatex.def)             Requested size: 85.35826pt x 85.3565pt.
  [26
 
@@ -1774,11 +1774,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = titanic.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
  (./titanic.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 299.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
 Package rerunfilecheck Info: File `titanic.out' has not changed.
 (rerunfilecheck)             Checksum: 6CCE64DF81B4B7E04D779674EB8DFB5B;633.
 
@@ -1790,14 +1790,14 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of LuaTeX's memory you used:
  44786 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 72339 words of node memory still in use:
-   235 hlist, 10 vlist, 110 rule, 12 disc, 11 local_par, 6 math, 222 glue, 121 kern, 36 penalty, 8204 glyph, 3441 attribute, 106 glue_spec, 576 attribute_list, 3 write, 170 pdf_colorstack nodes
-   avail lists: 1:4,2:873,3:299,4:326,5:284,6:33,7:658,8:244,9:470,10:17,11:118,12:1
+ 73326 words of node memory still in use:
+   235 hlist, 10 vlist, 110 rule, 12 disc, 11 local_par, 6 math, 223 glue, 121 kern, 36 penalty, 8332 glyph, 3477 attribute, 106 glue_spec, 582 attribute_list, 3 write, 170 pdf_colorstack nodes
+   avail lists: 1:3,2:873,3:303,4:326,5:284,6:33,7:658,8:244,9:470,10:17,11:125,12:1
  47241 multiletter control sequences out of 65536+600000
  109 fonts using 13161519 bytes
  70i,15n,95p,1171b,1073s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on titanic.pdf (27 pages, 185927 bytes).
+Output written on titanic.pdf (27 pages, 186484 bytes).
 
 PDF statistics: 449 PDF objects out of 1000 (max. 8388607)
  371 compressed objects within 4 object streams

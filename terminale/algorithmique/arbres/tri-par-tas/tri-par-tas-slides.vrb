@@ -1,0 +1,13 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+tab = [randint(0, 100) for _ in range(10)]
+print(tab)
+tri_par_tas(tab)
+print(tab)
+\end{lstlisting}
+\captionof{code}{Tester la fonction}
+\label{CODE}
+\end{center}
+

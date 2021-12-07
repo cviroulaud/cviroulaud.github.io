@@ -6,7 +6,6 @@ Date de création Thu Feb 18 10:42:14 2021
 @auteur: Christophe Viroulaud
 """
 
-#DODO fonction tamiser trop dure: donner le squelette à compléter
 
 def echanger(t: list, i1: int, i2: int)->None:
     """

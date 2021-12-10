@@ -9,7 +9,7 @@
 from pile import Pile
 
 
-def bien_parenthesee(code: str) -> bool:
+def bien_parenthesee2(code: str) -> bool:
     parentheses = Pile()
     i = 0
 
@@ -28,6 +28,25 @@ def bien_parenthesee(code: str) -> bool:
     return parentheses.est_vide()
 
 
+def bien_parenthesee(code: str) -> bool:
+    parentheses = Pile()
+
+    for car in code:
+        if car == "(":
+            # empile une ouvrante
+            parentheses.empiler("(")
+        elif car == ")":
+            # dépile une ouvrante quand on trouve une fermante
+            if parentheses.est_vide():
+                # pile vide = manque une parenthèse ouvrante
+                return False
+            else:
+                parentheses.depiler()
+
+    # si la pile n'est pas vide: il reste des (
+    return parentheses.est_vide()
+
+
 def bien_parenthesee_rec(code: str, i: int, p: Pile) -> bool:
     if i == len(code):
         # si la pile n'est pas vide: il reste des (
@@ -36,8 +55,11 @@ def bien_parenthesee_rec(code: str, i: int, p: Pile) -> bool:
         if code[i] == "(":
             p.empiler("(")
         elif code[i] == ")":
-            if p.depiler() is None:
+            if p.est_vide():
+                # pile vide = manque une parenthèse ouvrante
                 return False
+            else:
+                p.depiler()
         return bien_parenthesee_rec(code, i+1, p)
 
 

@@ -1,0 +1,11 @@
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.5em, xrightmargin=-2.5em]
+def infixe(self, noeud: object, parcours: list) -> None:
+    if n is not None:
+        self.infixe(noeud.gauche, parcours)
+        parcours.append(n.valeur)
+        self.infixe(noeud.droit, parcours)
+\end{lstlisting}
+\end{center}
+

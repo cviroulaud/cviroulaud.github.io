@@ -203,21 +203,21 @@ print(elimine)
 \begin{frame}[fragile]
     \frametitle{Exercice 4}
 
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
 def bien_parenthesee(code: str) -> bool:
     parentheses = Pile()
-    i = 0
 
-    while i < len(code):
-        # empile une ouvrante
-        if code[i] == "(":
+    for car in code:
+        if car == "(":
+            # empile une "("
             parentheses.empiler("(")
-        # dépile une ( quand on trouve une )
-        elif code[i] == ")":
-            # si rien à dépiler -> mauvais parenthésage
-            if parentheses.depiler() is None:
+        elif car == ")":
+            # dépile une "(" quand on trouve une ")"
+            if parentheses.est_vide():
+                # pile vide = manque une "("
                 return False
-        i += 1
+            else:
+                parentheses.depiler()
 
     # si la pile n'est pas vide: il reste des (
     return parentheses.est_vide()
@@ -226,7 +226,7 @@ def bien_parenthesee(code: str) -> bool:
 \end{frame}
 \begin{frame}[fragile]
 
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=-5em]
 def bien_parenthesee_rec(code: str, i: int, p: Pile) -> bool:
     if i == len(code):
         # si la pile n'est pas vide: il reste des (
@@ -235,8 +235,11 @@ def bien_parenthesee_rec(code: str, i: int, p: Pile) -> bool:
         if code[i] == "(":
             p.empiler("(")
         elif code[i] == ")":
-            if p.depiler() is None:
+            if p.est_vide():
+                # pile vide = manque une "("
                 return False
+            else:
+                p.depiler()
         return bien_parenthesee_rec(code, i+1, p)
 \end{lstlisting}
 

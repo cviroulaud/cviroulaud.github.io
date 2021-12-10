@@ -1,0 +1,16 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.5em, xrightmargin=-3em]
+def rechercher(val: int, abr: list, i_pere: int) -> bool:
+    if abr[i_pere] == 0: # non trouvé
+        return False
+    elif abr[i_pere] == val: # trouvé
+        return True
+    elif val < abr[i_pere]: # gauche
+        rechercher(val, abr, 2*i_pere+1)
+    else: # droit
+        rechercher(val, abr, 2*i_pere+2)
+\end{lstlisting}
+\end{center}
+

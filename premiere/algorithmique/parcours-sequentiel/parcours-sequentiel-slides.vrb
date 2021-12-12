@@ -1,0 +1,16 @@
+\frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def maximum(tab: list) -> int:
+    new_maxi = 0
+    for i in range(len(tab)):
+        if tab[i] > new_maxi:
+            new_maxi = tab[i]
+    # fin de la boucle, renvoie le maxi
+    return new_maxi
+\end{lstlisting}
+        \captionof{code}{\centering \guill{\textbf{\texttt{new\_maxi contient le maximum du début du tableau}}} est un invariant.}
+        \label{CODE}
+    \end{center}
+

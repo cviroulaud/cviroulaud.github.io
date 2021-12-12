@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Quel métier?}{2}{0}{1}
+\beamer@sectionintoc {2}{Après le bac}{5}{0}{2}
+\beamer@sectionintoc {3}{À partir de la Première}{8}{0}{3}

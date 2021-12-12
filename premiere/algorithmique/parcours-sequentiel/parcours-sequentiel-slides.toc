@@ -1,0 +1,5 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Algorithme}{3}{0}{1}
+\beamer@sectionintoc {2}{Complexité}{13}{0}{2}
+\beamer@sectionintoc {3}{Terminaison}{23}{0}{3}
+\beamer@sectionintoc {4}{Correction}{30}{0}{4}

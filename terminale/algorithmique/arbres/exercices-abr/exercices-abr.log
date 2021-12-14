@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  9 DEC 2021 22:35
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  13 DEC 2021 12:43
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-abr/exercices-abr
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-abr/exercices-abr.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.149 seconds
+luaotfload | main : initialization completed in 0.148 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1436,34 +1436,46 @@ This may cause the page layout to be inconsistent, however.
 </home/tof/Documents/Cozy/latex-include/cc.png, id=8, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 77.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 102.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+Package hyperref Info: bookmark level for unknown code defaults to 0 on input line 117.
+File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
+<use /home/tof/Documents/Cozy/latex-include/cc.png>
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 121.
+(luatex.def)             Requested size: 56.9055pt x 20.04631pt.
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
  (./exercices-abr.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `exercices-abr.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41440 strings out of 494383
+ 41734 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 10340 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 9 glue, 4 kern, 1 penalty, 1246 glyph, 374 attribute, 98 glue_spec, 64 attribute_list, 1 write nodes
-   avail lists: 1:2,2:3959,3:275,4:49,5:161,6:31,7:1912,8:39,9:216,10:7,11:91
- 44400 multiletter control sequences out of 65536+600000
- 52 fonts using 7757159 bytes
- 84i,17n,95p,1198b,771s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on exercices-abr.pdf (1 page, 33568 bytes).
+ 18327 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 11 glue, 4 kern, 1 penalty, 2117 glyph, 1178 attribute, 98 glue_spec, 198 attribute_list, 1 write nodes
+   avail lists: 1:2,2:6311,3:415,4:1540,5:1435,6:33,7:1928,8:1172,9:2214,10:64,11:152
+ 44626 multiletter control sequences out of 65536+600000
+ 53 fonts using 7900087 bytes
+ 84i,17n,95p,1198b,885s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on exercices-abr.pdf (2 pages, 42418 bytes).
 
-PDF statistics: 79 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 131072)
+PDF statistics: 105 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

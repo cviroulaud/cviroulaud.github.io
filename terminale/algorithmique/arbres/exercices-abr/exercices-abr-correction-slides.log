@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  9 DEC 2021 22:45
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  13 DEC 2021 12:43
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-abr/exercices-abr-correction-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-abr/exercices-abr-correction-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.154 seconds
+luaotfload | main : initialization completed in 0.143 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1657,6 +1657,16 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [13
 
+] (./exercices-abr-correction-slides.toc) [14
+
+]
+\openout4 = exercices-abr-correction-slides.vrb
+ (./exercices-abr-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [15
+
 ]
 \tf@nav=\write8
 
@@ -1667,29 +1677,29 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = exercices-abr-correction-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
  (./exercices-abr-correction-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 243.
 Package rerunfilecheck Info: File `exercices-abr-correction-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 58681C10A1EB58C0D886646F2F4D4BBD;288.
+(rerunfilecheck)             Checksum: 87D3ECE463F2D4CCAB972D612C2FFF49;384.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44471 strings out of 494383
- 305228,1144653 words of node,token memory allocated
- 68129 words of node memory still in use:
-   1586 hlist, 6 vlist, 880 rule, 91 disc, 8 local_par, 682 glue, 977 kern, 21 penalty, 2419 glyph, 5859 attribute, 106 glue_spec, 979 attribute_list, 3 write, 1194 pdf_colorstack nodes
-   avail lists: 1:4,2:4831,3:493,4:5752,5:4567,6:38,7:3465,8:4141,9:7395,10:24,11:425,12:1
- 47037 multiletter control sequences out of 65536+600000
- 59 fonts using 8674815 bytes
+ 44511 strings out of 494383
+ 305223,1144653 words of node,token memory allocated
+ 130645 words of node memory still in use:
+   3656 hlist, 9 vlist, 2042 rule, 217 disc, 14 local_par, 1554 glue, 2272 kern, 27 penalty, 3115 glyph, 9771 attribute, 106 glue_spec, 1631 attribute_list, 3 write, 2830 pdf_colorstack nodes
+   avail lists: 1:6,2:873,3:488,4:4116,5:3272,6:34,7:2247,8:2979,9:5322,10:37,11:299,12:1
+ 47048 multiletter control sequences out of 65536+600000
+ 60 fonts using 8803079 bytes
  70i,15n,95p,1216b,952s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on exercices-abr-correction-slides.pdf (13 pages, 35482 bytes).
+Output written on exercices-abr-correction-slides.pdf (15 pages, 39360 bytes).
 
-PDF statistics: 210 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 131072)
- 50 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 259 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 35 named destinations out of 1000 (max. 131072)
+ 58 words of extra memory for PDF output out of 10000 (max. 100000000)
 

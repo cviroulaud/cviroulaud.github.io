@@ -3,7 +3,7 @@
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
 \setlength{\fboxrule}{0.8pt}
-\fancyhead[L]{\fbox{\Large{\textbf{Algo 11}}}}
+\fancyhead[L]{\fbox{\Large{\textbf{Algo 10}}}}
 \fancyhead[C]{\textbf{Exercices arbre binaire de recherche}}
 \newdate{madate}{10}{09}{2020}
 %\fancyhead[R]{\displaydate{madate}} %\today
@@ -73,5 +73,49 @@
         \item Écrire la version récursive de \textbf{\texttt{minimum}}.
         \item Écrire la méthode récursive \textbf{\texttt{infixe(self, noeud: object, parcours: list) $\rightarrow$ None}} qui effectue un parcours infixe dans \textbf{\texttt{arbre}}.
     \end{enumerate}
+\end{exo}
+\begin{exo}
+D'après épreuve pratique BAC 2020\\
+Dans cet exercice, un arbre binaire de caractères est stocké sous la forme d’un dictionnaire où les clefs sont les caractères des nœuds de l’arbre et les valeurs, pour
+chaque clef, la liste des caractères des fils gauche et droit du nœud.
+\begin{center}
+    \begin{tikzpicture}
+        \node[draw] (A) at (1,0) {F};
+        \node[draw] (B) at (-3,-1) {B};
+        \node[draw] (C) at (-5,-2) {A};
+        \node[draw] (D) at (-1,-2) {D};
+        \node[draw] (H) at (0,-3) {E};
+        \node[draw] (I) at (4,-1) {G};
+        \node[draw] (L) at (-2,-3) {C};
+        \node[draw] (M) at (5,-2) {I};
+        \node[draw] (N) at (6,-3) {H};
+
+        \draw (A) -- (B);
+        \draw (C) -- (B);
+        \draw (D) -- (B);
+        \draw (D) -- (H);
+        \draw (A) -- (I);
+        \draw (L) -- (D);
+        \draw (M) -- (I);
+        \draw (M) -- (N);
+    \end{tikzpicture}
+\end{center}
+Par exemple, l'arbre ci-dessus est stocké dans:
+\begin{center}
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+a = {'F':['B','G'], 'B':['A','D'], 'A':['',''], 'D':['C','E'], 'C':['',''], 'E':['',''], 'G':['','I'], 'I':['','H'], 'H':['','']}
+\end{lstlisting}
+\end{center}
+Écrire une fonction récursive \texttt{\textbf{taille}} prenant en paramètres un arbre binaire arbre
+sous la forme d’un dictionnaire et un caractère lettre qui est la valeur du sommet de l’arbre, et qui renvoie la taille de l’arbre à savoir le nombre total de nœud.\\
+On pourra distinguer les 4 cas où les deux « fils » du nœud sont '', le fils gauche seulement est '', le fils droit seulement est '', aucun des deux fils n’est ''.
+\begin{center}
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+>>> taille(a, ’F’)
+9
+\end{lstlisting}
+\captionof{code}{Exemple}
+\label{CODE}
+\end{center}
 \end{exo}
 \end{document}

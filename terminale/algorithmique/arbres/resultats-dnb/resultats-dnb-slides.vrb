@@ -1,0 +1,9 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+print(arbre.recherche_college("0241042C"), "%")
+print(arbre.recherche_college("000"), "%")
+\end{lstlisting}
+\end{center}
+

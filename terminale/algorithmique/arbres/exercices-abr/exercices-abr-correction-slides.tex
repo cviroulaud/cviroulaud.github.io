@@ -4,7 +4,7 @@
 %\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Exercices ABR - correction}
-\date{\framebox{\textbf{Algo 11}}}
+\date{\framebox{\textbf{Algo 10}}}
 %\logo{}
 \institute{Terminale - NSI}
 
@@ -221,4 +221,23 @@ def infixe(self, noeud: object, parcours: list) -> None:
 \end{center}
     
     \end{frame}
+\section{Exercice 4}
+\begin{frame}[fragile]
+    \frametitle{Exercice 4}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.3em, xrightmargin=-3em]
+def taille(a: dict, s: str) -> int:
+    if a[s][0] == '' and a[s][1] == '':  # pas de fils
+        return 1
+    elif a[s][0] == '':  # pas de fils gauche
+        return 1 + taille(a, a[s][1])
+    elif a[s][1] == '':  # pas de fils droit
+        return 1 + taille(a, a[s][0])
+    else:  # deux fils
+        return 1 + taille(a, a[s][1]) + taille(a, a[s][0])
+\end{lstlisting}
+\end{center}    
+
+\end{frame}
 \end{document}

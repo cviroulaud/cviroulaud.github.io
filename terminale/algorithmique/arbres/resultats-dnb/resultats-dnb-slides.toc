@@ -1,0 +1,6 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Récupération des résultats}{3}{0}{1}
+\beamer@sectionintoc {2}{Un collège}{7}{0}{2}
+\beamer@sectionintoc {3}{L'arbre binaire de recherche}{17}{0}{3}
+\beamer@sectionintoc {4}{Créer l'arbre}{27}{0}{4}
+\beamer@sectionintoc {5}{Rechercher dans l'arbre}{31}{0}{5}

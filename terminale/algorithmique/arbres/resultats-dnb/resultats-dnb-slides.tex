@@ -1,0 +1,362 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Résultats du Diplôme du brevet}
+\date{\framebox{\textbf{Algo 11}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+    \note{\fcolorbox{black}{red}{{\LARGE dnb2018.zip sur site}}}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Chaque année l'Éducation Nationale publie les résultats du diplôme national du brevet sous forme d'un fichier \textbf{\texttt{csv}}.
+
+\end{frame}
+\section{Récupération des résultats}
+\begin{frame}
+    \frametitle{}
+
+\begin{activite}
+\begin{enumerate}
+    \item Télécharger et extraire le fichier compressé \texttt{\textbf{dnb2018.zip}} sur le site \url{https://cviroulaud.github.io}.
+    \item Ouvrir le fichier avec un tableur pour observer les données.
+    \item Créer le fichier Python \textbf{\texttt{dnb.py}}
+    \item Importer le fichier \textbf{\texttt{csv}} et créer un itérateur à l'aide de la méthode \textbf{\texttt{csv.DictReader}}.
+\end{enumerate}
+\end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+Le fichier contient de nombreuses informations pour chaque établissement, dont le taux de réussite au brevet.
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+f = open("dnb2018.csv")
+dico = csv.DictReader(f)
+f.close()
+\end{lstlisting}
+\end{center}   
+
+\end{frame}
+\section{Un collège}
+\begin{frame}
+    \frametitle{Un collège}
+L'objectif est de créer un arbre binaire de recherche ordonné selon les identifiants des collège.
+    \begin{activite}
+ Créer la classe \textbf{\texttt{College}} et son constructeur. Ce-dernier acceptera un dictionnaire \textbf{\texttt{data}} en paramètre et initialisera les attributs \textbf{\texttt{id, nom, ville, departement, taux}}. Enfin les attributs \textbf{\texttt{gauche}} et \textbf{\texttt{droite}} seront initialisés à \textbf{\texttt{None}}.
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=0em]
+class College:
+    def __init__(self, data: dict):
+        self.id = data["num_etab"]
+        self.nom = data["patronyme"]
+        self.ville = data["lib_commune"]
+        self.departement = data["lib_dep"]
+        self.taux = float(data["taux"])
+        self.gauche = None
+        self.droite = None
+\end{lstlisting}
+\end{center}   
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+    Écrire la méthode \textbf{\texttt{insere\_fils(self, data: dict) $\rightarrow$ None}} qui insère récursivement un nœud dans le sous-arbre gauche ou droite nœud en cours, en fonction des données contenues dans le dictionnaire \textbf{\texttt{data}}. Il faudra veiller à vérifier si le sous-arbre est vide ou non et agir en conséquence.
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+def insere_fils(self, data: dict) -> None:
+    id_fils = data["num_etab"]
+    if id_fils < self.id:  # gauche
+        if self.gauche is None: # sous-arbre vide
+            self.gauche = College(data)
+        else:
+            self.gauche.insere_fils(data)
+    else:  # droite
+        if self.droite is None: # sous-arbre vide
+            self.droite = College(data)
+        else:
+            self.droite.insere_fils(data)
+\end{lstlisting}
+\end{center}    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+    Écrire la méthode \textbf{\texttt{recherche\_fils(self, id\_fils) $\rightarrow$ float}} qui recherche récursivement le collège \textbf{\texttt{id\_fils}} dans le sous-arbre gauche ou droite nœud en cours. La fonction renverra le taux de réussite du collège ou -1 si le collège n'est pas trouvé.
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+def recherche_fils(self, id_fils: str) -> float:
+    if id_fils == self.id:  # collège trouvé
+        return self.taux
+    elif id_fils < self.id:  # gauche
+        if self.gauche is None:
+            return -1
+        else:
+            return self.gauche.recherche_fils(id_fils)
+    else:  # droite
+        if self.droite is None:
+            return -1
+        else:
+            return self.droite.recherche_fils(id_fils)
+\end{lstlisting}
+\end{center}    
+
+\end{frame}
+\section{L'arbre binaire de recherche}
+\begin{frame}
+    \frametitle{L'arbre binaire de recherche}
+
+\begin{activite}
+Créer la classe \textbf{\texttt{Arbre}} et son constructeur. Ce-dernier initialisera à \textbf{\texttt{None}} un attribut \textbf{\texttt{racine}}.
+\end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+class Arbre:
+    def __init__(self):
+        self.racine = None
+\end{lstlisting}
+\end{center}   
+
+\end{frame}
+\begin{frame}
+
+\begin{activite}
+Écrire la méthode \textbf{\texttt{insere\_college(self, data: dict) $\rightarrow$ None}} qui initialise la \textbf{\texttt{racine}} avec une instance de \textbf{\texttt{College}} si elle est vide ou insère un nœud dans l'arbre en utilisant la méthode \textbf{\texttt{insere\_fils}} de la classe \textbf{\texttt{College.}}
+\end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def insere_college(self, data: dict) -> None:
+    if self.racine is None:
+        self.racine = College(data)
+    else:
+        self.racine.insere_fils(data)
+\end{lstlisting}
+\end{center}   
+
+\end{frame}
+\begin{frame}
+
+    \begin{activite}
+    Écrire la méthode \textbf{\texttt{recherche\_college(self, id: str) $\rightarrow$ float}} qui recherche le collège en partant de la \textbf{\texttt{racine}}. La méthode renverra le taux de réussite ou -1 si le collège n'est pas trouvé.
+    \end{activite}
+    
+    \end{frame}
+    \begin{frame}
+        \frametitle{Avant de regarder la correction}
+    \begin{center}
+        \centering
+        \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+        \end{center}
+    {\Large
+        \begin{itemize}
+            \item Prendre le temps de réfléchir,
+            \item Analyser les messages d'erreur,
+            \item Demander au professeur.
+        \end{itemize}
+    }
+    \end{frame}
+    \begin{frame}[fragile]
+        \frametitle{Correction}
+    
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+def recherche_college(self, id: str) -> float:
+    if self.racine.id is None:
+        return -1
+    else:
+        return self.racine.recherche_fils(id)
+\end{lstlisting}
+    \end{center}   
+    
+    \end{frame}
+\section{Créer l'arbre}
+\begin{frame}
+    \frametitle{Créer l'arbre}
+
+    \begin{activite}
+    \begin{enumerate}
+        \item Dans le programme principal, créer une instance de \textbf{\texttt{Arbre}}.
+        \item En bouclant sur l'itérateur des données, créer l'arbre de recherche.
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+arbre = Arbre()
+for ligne in dico:
+    arbre.insere_college(ligne)
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\section{Rechercher dans l'arbre}
+\begin{frame}
+    \frametitle{Rechercher dans l'arbre}
+
+    \begin{activite}
+    \begin{enumerate} 
+        \item Rechercher le taux de réussite du collège Bertran de Born d'identifiant 0241042C.
+        \item En considérant que l'arbre est équilibré, combien d'appels récursifs seront nécessaires dans le pire des cas pour trouver le taux de réussite?
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+print(arbre.recherche_college("0241042C"), "%")
+print(arbre.recherche_college("000"), "%")
+\end{lstlisting}
+\end{center} 
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Le fichier compte environ 9000 entrées. \\$2^{13} = 8192$ donc la recherche effectuera entre 13 et 14 appels au maximum.
+
+\end{frame}
+\end{document}

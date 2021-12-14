@@ -4,7 +4,7 @@
 %\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Arbre binaire de recherche}
-\date{\framebox{\textbf{Algo 10}}}
+\date{\framebox{\textbf{Algo 09}}}
 %\logo{}
 \institute{Terminale - NSI}
 
@@ -14,9 +14,21 @@
 \end{frame}
 \begin{frame}
     \frametitle{}
-    Les arbres binaires, les tas imposent des contraintes aux structures arborescentes. Il en résulte des objets avec des propriétés très utiles. Par exemple, la complexité du tri par tas est $O(n) = n.log(n)$.
+    La recherche d'un élément dans un tableau est \textbf{linéaire} dans le pire des cas: elle dépend de la taille du tableau.
 
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,0) grid (7,1);
+            \node (0) at (0.5,0.5) {32};
+            \node (1) at (1.5,0.5) {14};
+            \node (2) at (2.5,0.5) {98};
+            \node (3) at (3.5,0.5) {1};
+            \node (4) at (4.5,0.5) {67};
+            \node (5) at (5.5,0.5) {19};
+            \node (5) at (6.5,0.5) {8};
 
+        \end{tikzpicture}
+    \end{center}
 \end{frame}
 \begin{frame}
     \frametitle{}
@@ -201,29 +213,29 @@
             \node (4) at (4.5,0.5) {4};
             \node (5) at (5.5,0.5) {5};
             \node (5) at (6.5,0.5) {6};
-    
+
             \draw[->,>=latex] (0.5,1) to[bend left=90] (1.5,1);
             \draw[->,>=latex] (0.5,1) to[bend left=90] (2.5,1);
             \draw[->,>=latex] (1.5,0) to[bend left=-90] (3.5,0);
             \draw[->,>=latex] (1.5,0) to[bend left=-90] (4.5,0);
             \draw[->,>=latex] (2.5,1) to[bend left=90] (5.5,1);
             \draw[->,>=latex] (2.5,1) to[bend left=90] (6.5,1);
-    
+
         \end{tikzpicture}
     \end{center}
     \begin{activite}
-    Il est judicieux d'utiliser un tableau pour représenter un arbre binaire de recherche.\\Construire par compréhension un tableau \textbf{\texttt{arbre}} rempli de cent 0. On considérera dans la suite, que la valeur 0 représente un nœud vide.
+        Il est judicieux d'utiliser un tableau pour représenter un arbre binaire de recherche.\\Construire par compréhension un tableau \textbf{\texttt{arbre}} rempli de cent 0. On considérera dans la suite, que la valeur 0 représente un nœud vide.
     \end{activite}
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 arbre = [0 for _ in range(100)]
 \end{lstlisting}
-\end{center}    
+    \end{center}
 
 \end{frame}
 \subsection{Hauteur}
@@ -236,8 +248,43 @@ arbre = [0 for _ in range(100)]
     \end{center}
 \end{frame}
 \begin{frame}
-    On peut également montrer que:
-    {\Large $$\log_2(n+1)-1 \leq h \leq n-1$$    }
+    \frametitle{Nouvelle propriété}
+    {\Large $$2^h  \leq n \leq 2^{h+1}-1$$    }
+    Car il y a entre 1 et $2^h$ nœuds sur le dernier niveau.
+    \begin{center}
+        \begin{tikzpicture}[scale=0.9, transform shape]
+            \node[draw] (1) at (0,0) {A};
+            \node[draw] (2) at (-2,-1) {B};
+            \node[draw] (3) at (2,-1) {C};
+            \node[draw] (4) at (-3,-2) {D};
+            \node[draw] (5) at (-1,-2) {E};
+            \node[draw] (6) at (1,-2) {F};
+            \node[draw] (7) at (3,-2) {G};
+            \node[draw] (8) at (0,-3) {H};
+            \node[draw] (9) at (-2,-3) {I};
+
+            \draw (1) -- (2);
+            \draw (1) -- (3);
+            \draw (2) -- (4);
+            \draw (2) -- (5);
+            \draw (3) -- (6);
+            \draw (3) -- (7);
+            \draw (5) -- (8);
+            \draw (5) -- (9);
+            \node at(-5,-1){$2^{h}-1$ };
+            \draw[stealth-stealth reversed] (-4,0) |- (-4,-2);
+            \node at(-5,-3){$2^{h}$ max };
+            \draw[stealth-stealth reversed] (-4,-2.5) |- (-4,-3.5);
+        \end{tikzpicture}
+    \end{center}
+\note{1 nœud au moins sur dernier niveau d'où $2^h$ dans 1° inégalité}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    {\Large $$2^h  \leq n \leq 2^{h+1}-1$$    }
+    {\Large $$\Rightarrow 2^h  \leq n \leq 2^{h+1} $$    }
+    {\Large $$\Leftrightarrow h  \leq \log_2 (n) \leq h+1 $$    }
     \begin{aretenir}[]
         Dans un arbre binaire \textbf{équilibré}:
         {\Large $$h = \log_2(n)$$}
@@ -259,9 +306,9 @@ arbre = [0 for _ in range(100)]
     \begin{itemize}
         \item On part de la racine.
         \item On descend dans le sous-arbre gauche si l'élément est inférieur à la racine.
-        \item On descend dans le sous-arbre droit si l'élément est supérieur à la racine. 
+        \item On descend dans le sous-arbre droit si l'élément est supérieur à la racine.
     \end{itemize}
-On applique récursivement cet algorithme jusqu'à une feuille. 
+    On applique récursivement cet algorithme jusqu'à une feuille.
 \end{frame}
 \begin{frame}
     \frametitle{}
@@ -308,19 +355,19 @@ On applique récursivement cet algorithme jusqu'à une feuille.
     \frametitle{}
 
     \begin{activite}
-    \begin{enumerate}
-        \item Quelle est la complexité temporelle de cet algorithme?
-        \item Écrire la fonction récursive \textbf{\texttt{inserer(val: int, abr: list, i\_pere: int) $\rightarrow$ None}} qui insère \textbf{\texttt{val}} dans l'arbre de recherche \textbf{\texttt{abr}} représenté par un tableau.
-        \item Insérer dans l'ordre les valeurs: 33, 56, 25, 20, 28, 40, 21, 8, 26, 60, 35, 58, 65.
-    \end{enumerate}
+        \begin{enumerate}
+            \item Quelle est la complexité temporelle de cet algorithme?
+            \item Écrire la fonction récursive \textbf{\texttt{inserer(val: int, abr: list, i\_pere: int) $\rightarrow$ None}} qui insère \textbf{\texttt{val}} dans l'arbre de recherche \textbf{\texttt{abr}} représenté par un tableau.
+            \item Insérer dans l'ordre les valeurs: 33, 56, 25, 20, 28, 40, 21, 8, 26, 60, 35, 58, 65.
+        \end{enumerate}
     \end{activite}
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
 
- \begin{center}
- \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=-1em]
 def inserer(val: int, abr: list, i_pere: int) -> None:
     if abr[i_pere] == 0:  # cellule vide: cas limite
         abr[i_pere] = val
@@ -329,25 +376,25 @@ def inserer(val: int, abr: list, i_pere: int) -> None:
     else:
         inserer(val, abr, 2*i_pere+2)  # droite
 \end{lstlisting}
- \end{center}   
-\begin{aretenir}[]
-L'insertion a une complexité linéaire $O(n)$. On parcourt au maximum la hauteur de l'arbre.
-\end{aretenir}
+    \end{center}
+    \begin{aretenir}[]
+        L'insertion a une complexité logarithmique $O(\log_2(n))$. On parcourt au maximum la hauteur de l'arbre.
+    \end{aretenir}
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 inserer(33, arbre, 0)
 inserer(56, arbre, 0)
 inserer(25, arbre, 0)
 ...
 \end{lstlisting}
-\end{center}   
-\begin{aretenir}[Remarque]
-Selon l'ordre d'ajout, l'arbre produit ne sera pas le même.
-\end{aretenir}
+    \end{center}
+    \begin{aretenir}[Remarque]
+        Selon l'ordre d'ajout, l'arbre produit ne sera pas le même.
+    \end{aretenir}
 \end{frame}
 \subsection{Recherche}
 \begin{frame}
@@ -357,9 +404,9 @@ Selon l'ordre d'ajout, l'arbre produit ne sera pas le même.
     \begin{itemize}
         \item On part de la racine.
         \item On descend dans le sous-arbre gauche si l'élément est inférieur à la racine.
-        \item On descend dans le sous-arbre droit si l'élément est supérieur à la racine. 
+        \item On descend dans le sous-arbre droit si l'élément est supérieur à la racine.
     \end{itemize}
-On applique récursivement cet algorithme jusqu'à trouver l'élément ou bien arriver à une feuille. 
+    On applique récursivement cet algorithme jusqu'à trouver l'élément ou bien arriver à une feuille.
 
 \end{frame}
 \begin{frame}[fragile]
@@ -424,17 +471,17 @@ On applique récursivement cet algorithme jusqu'à trouver l'élément ou bien a
 
 \end{frame}
 \begin{frame}
-\begin{activite}
-Écrire la fonction récursive \textbf{\texttt{rechercher(val: int, abr: list, i\_pere: int) $\rightarrow$ bool}} qui cherche si \textbf{\texttt{val}} est présent dans l'arbre \textbf{\texttt{abr}}.
-\end{activite}
-    
+    \begin{activite}
+        Écrire la fonction récursive \textbf{\texttt{rechercher(val: int, abr: list, i\_pere: int) $\rightarrow$ bool}} qui cherche si \textbf{\texttt{val}} est présent dans l'arbre \textbf{\texttt{abr}}.
+    \end{activite}
+
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.5em, xrightmargin=-3em]
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.5em, xrightmargin=-3em]
 def rechercher(val: int, abr: list, i_pere: int) -> bool:
     if abr[i_pere] == 0: # non trouvé
         return False
@@ -445,7 +492,16 @@ def rechercher(val: int, abr: list, i_pere: int) -> bool:
     else: # droit
         rechercher(val, abr, 2*i_pere+2)
 \end{lstlisting}
-\end{center}   
+    \end{center}
 
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item<1-> Considérons un arbre binaire de recherche qui contient 1 million d'éléments.
+        \item<2-> Sa hauteur est $h\simeq \log_2(1000000)\simeq 20$
+        \item<3-> Il faut seulement 20 étapes pour effectuer une recherche dans l'arbre, contre 1 million dans un tableau.
+    \end{itemize}
 \end{frame}
 \end{document}

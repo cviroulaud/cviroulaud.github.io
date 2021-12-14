@@ -1,11 +1,16 @@
+\frametitle{Exercice 4}
 
 \begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.5em, xrightmargin=-2.5em]
-def infixe(self, noeud: object, parcours: list) -> None:
-    if n is not None:
-        self.infixe(noeud.gauche, parcours)
-        parcours.append(n.valeur)
-        self.infixe(noeud.droit, parcours)
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.3em, xrightmargin=-3em]
+def taille(a: dict, s: str) -> int:
+    if a[s][0] == '' and a[s][1] == '':  # pas de fils
+        return 1
+    elif a[s][0] == '':  # pas de fils gauche
+        return 1 + taille(a, a[s][1])
+    elif a[s][1] == '':  # pas de fils droit
+        return 1 + taille(a, a[s][0])
+    else:  # deux fils
+        return 1 + taille(a, a[s][1]) + taille(a, a[s][0])
 \end{lstlisting}
 \end{center}
 

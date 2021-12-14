@@ -193,10 +193,10 @@ print(arbre.rechercher(17))  # False
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.5em, xrightmargin=0em]
 def minimum(self) -> int:
-    g = self.gauche
-    while g.gauche is not None:
-        g = g.gauche
-    return g.valeur
+    n = self # instance en cours
+    while n.gauche is not None:
+        n = n.gauche
+    return n.valeur
 
 
 def minimum_rec(self) -> int:
@@ -212,11 +212,12 @@ def minimum_rec(self) -> int:
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.5em, xrightmargin=-2.5em]
-def infixe(self, noeud: object, parcours: list) -> None:
-    if n is not None:
-        self.infixe(noeud.gauche, parcours)
-        parcours.append(n.valeur)
-        self.infixe(noeud.droit, parcours)
+def infixe(self, parcours: list) -> None:
+    if self.gauche is not None:
+        self.gauche.infixe(parcours)
+    parcours.append(self.valeur)
+    if self.droit is not None:
+        self.droit.infixe(parcours)
 \end{lstlisting}
 \end{center}
     

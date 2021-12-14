@@ -47,10 +47,10 @@ class Noeud:
                 return self.droit.rechercher(v)
 
     def minimum(self) -> int:
-        g = self.gauche
-        while g.gauche is not None:
-            g = g.gauche
-        return g.valeur
+        n = self # le noeud en cours
+        while n.gauche is not None:
+            n = n.gauche
+        return n.valeur
 
     def minimum_rec(self) -> int:
         """
@@ -64,11 +64,12 @@ class Noeud:
         else:
             return self.gauche.minimum_rec()
 
-    def infixe(self, noeud: object, parcours: list) -> None:
-        if n is not None:
-            self.infixe(noeud.gauche, parcours)
-            parcours.append(n.valeur)
-            self.infixe(noeud.droit, parcours)
+    def infixe(self, parcours: list) -> None:
+        if self.gauche is not None:
+            self.gauche.infixe(parcours)
+        parcours.append(self.valeur)
+        if self.droit is not None:
+            self.droit.infixe(parcours)
 
 
 arbre = Noeud(13)
@@ -89,5 +90,5 @@ print(arbre.minimum())
 print(arbre.minimum_rec())
 
 parcours = []
-arbre.infixe(arbre, parcours)
+arbre.infixe(parcours)
 print(parcours)

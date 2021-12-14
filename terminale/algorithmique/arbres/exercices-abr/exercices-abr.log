@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  13 DEC 2021 12:43
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 DEC 2021 15:21
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-abr/exercices-abr
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/exercices-abr/exercices-abr.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.148 seconds
+luaotfload | main : initialization completed in 0.172 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1463,16 +1463,16 @@ Package rerunfilecheck Info: File `exercices-abr.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41734 strings out of 494383
+ 41735 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 18327 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 11 glue, 4 kern, 1 penalty, 2117 glyph, 1178 attribute, 98 glue_spec, 198 attribute_list, 1 write nodes
-   avail lists: 1:2,2:6311,3:415,4:1540,5:1435,6:33,7:1928,8:1172,9:2214,10:64,11:152
- 44626 multiletter control sequences out of 65536+600000
- 53 fonts using 7900087 bytes
+ 18250 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 11 glue, 4 kern, 1 penalty, 2104 glyph, 1184 attribute, 98 glue_spec, 199 attribute_list, 1 write nodes
+   avail lists: 1:2,2:6353,3:415,4:1564,5:1457,6:33,7:1918,8:1190,9:2246,10:64,11:154
+ 44625 multiletter control sequences out of 65536+600000
+ 53 fonts using 7900711 bytes
  84i,17n,95p,1198b,885s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on exercices-abr.pdf (2 pages, 42418 bytes).
+Output written on exercices-abr.pdf (2 pages, 42365 bytes).
 
 PDF statistics: 105 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream

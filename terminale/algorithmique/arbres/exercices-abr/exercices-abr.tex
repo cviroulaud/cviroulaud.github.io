@@ -71,7 +71,7 @@
         \item Tester la méthode dans les deux cas de figures (valeur trouvée ou non).
         \item Écrire la méthode itérative \textbf{\texttt{minimum(self) $\rightarrow$ int}} qui renvoie la valeur minimale de l'arbre.
         \item Écrire la version récursive de \textbf{\texttt{minimum}}.
-        \item Écrire la méthode récursive \textbf{\texttt{infixe(self, noeud: object, parcours: list) $\rightarrow$ None}} qui effectue un parcours infixe dans \textbf{\texttt{arbre}}.
+        \item Écrire la méthode récursive \textbf{\texttt{infixe(self, parcours: list) $\rightarrow$ None}} qui effectue un parcours infixe dans \textbf{\texttt{arbre}}.
     \end{enumerate}
 \end{exo}
 \begin{exo}
@@ -111,7 +111,7 @@ sous la forme d’un dictionnaire et un caractère lettre qui est la valeur du s
 On pourra distinguer les 4 cas où les deux « fils » du nœud sont '', le fils gauche seulement est '', le fils droit seulement est '', aucun des deux fils n’est ''.
 \begin{center}
 \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
->>> taille(a, ’F’)
+>>> taille(a, 'F')
 9
 \end{lstlisting}
 \captionof{code}{Exemple}

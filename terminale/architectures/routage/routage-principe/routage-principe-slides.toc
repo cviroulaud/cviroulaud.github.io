@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Protocoles de communication}{3}{0}{1}
+\beamer@sectionintoc {2}{Couche Internet}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Adresse IP}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Masque de sous-réseau}{15}{0}{2}
+\beamer@sectionintoc {3}{Structure en étoile}{27}{0}{3}
+\beamer@sectionintoc {4}{Communiquer entre les réseaux}{31}{0}{4}
+\beamer@subsectionintoc {4}{1}{Passerelle}{32}{0}{4}
+\beamer@subsectionintoc {4}{2}{Structure maillée}{36}{0}{4}

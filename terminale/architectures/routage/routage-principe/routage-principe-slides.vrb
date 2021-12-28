@@ -1,0 +1,25 @@
+\frametitle{}
+    \begin{activite}
+        \begin{enumerate}
+            \item Installer le paquet \texttt{\textbf{traceroute}}
+                  \begin{center}
+                      \begin{lstlisting}[language=bash, basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+sudo apt install traceroute
+\end{lstlisting}
+                      \captionof{code}{Installation d'un paquet}
+                      \label{ip}
+                  \end{center}
+            \item Taper la commande (code \ref{trace}).
+                  \begin{center}
+                      \begin{lstlisting}[language=bash, basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+sudo traceroute -I fr.wikipedia.org
+\end{lstlisting}
+                      \captionof{code}{Tracer le chemin suivi vers une destination}
+                      \label{trace}
+                  \end{center}
+        \end{enumerate}
+    \end{activite}
+\note[item]{Envoi de 3 paquets $\;\rightarrow\;$ donne une information moyenne}
+\note[item]{La commande envoie des paquets avec un TTL (Time To Live) croissant pour découvrir la route au fur et à mesure.}
+\note[item]{* * * ? La commande limite le TTL à 30; les serveurs rejettent les paquets UDP (User Datagram Protocol) (n'accepte que les TCP - Transmission Control Protocol)}
+\note[item]{L'option -I de traceroute permet d'envoyer des paquets avec le protcole ICMP (Internet Control Message Protocol) = ping}

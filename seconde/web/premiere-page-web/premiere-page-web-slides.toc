@@ -1,0 +1,16 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Histoire du Web}{4}{0}{1}
+\beamer@sectionintoc {2}{Un langage: HTML}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Langage de balises}{15}{0}{2}
+\beamer@subsectionintoc {2}{2}{Squelette principal}{16}{0}{2}
+\beamer@subsectionintoc {2}{3}{head}{19}{0}{2}
+\beamer@subsectionintoc {2}{4}{body}{21}{0}{2}
+\beamer@subsectionintoc {2}{5}{Visualiser la page}{23}{0}{2}
+\beamer@subsectionintoc {2}{6}{Ajouter du contenu}{25}{0}{2}
+\beamer@subsubsectionintoc {2}{6}{1}{Blocs principaux}{26}{0}{2}
+\beamer@subsubsectionintoc {2}{6}{2}{Paragraphe}{27}{0}{2}
+\beamer@subsubsectionintoc {2}{6}{3}{Titre}{28}{0}{2}
+\beamer@subsubsectionintoc {2}{6}{4}{Liste}{29}{0}{2}
+\beamer@subsubsectionintoc {2}{6}{5}{Image}{30}{0}{2}
+\beamer@subsubsectionintoc {2}{6}{6}{Lien hypertexte}{32}{0}{2}
+\beamer@sectionintoc {3}{Page web sur l'orientation}{33}{0}{3}

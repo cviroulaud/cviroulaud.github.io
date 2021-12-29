@@ -1,0 +1,21 @@
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+def max_voyelles(voyelles: dict) -> list:
+    """
+    parcourt le dict voyelles et renvoie
+    celle qui a la plus grande valeur
+    """
+    maxi = 0
+    lettres_maxi = []
+    for lettre, nb in voyelles.items():
+        if nb > maxi:
+            maxi = nb
+            # on réinitialise le tableau avec la nouvelle lettre max
+            lettres_maxi = [lettre]
+        elif nb == maxi:
+            lettres_maxi.append(lettre)
+    return lettres_maxi
+\end{lstlisting}
+\end{center}
+

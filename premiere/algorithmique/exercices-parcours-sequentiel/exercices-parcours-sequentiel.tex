@@ -1,0 +1,67 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Algo 02}}}}
+\fancyhead[C]{\textbf{Exercices parcours séquentiel}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{aretenir}[Remarques]
+    \begin{itemize}
+        \item Les fonctions ne devront pas utiliser les méthodes natives fournies par le langage Python, telles que \emph{max(), min()}.
+        \item On attend une \emph{docstring} pour chaque fonction.
+        \item Pour les exercices 1 à 5 on utilisera, pour tester les fonctions, un tableau de 30 notes comprises entre 0 et 20 (que l'on construira par compréhension).
+    \end{itemize}
+\end{aretenir}
+
+\begin{exo}
+    Écrire la fonction \texttt{\textbf{extrema(tab: list) $\rightarrow$ tuple}} qui renvoie les notes minimale et maximale du tableau \emph{tab}, sous forme de tuple.
+\end{exo}
+\begin{exo}
+    Écrire la fonction \texttt{\textbf{maxi\_position(tab: list) $\rightarrow$ tuple}} qui renvoie la note maximale du tableau \emph{tab} et l'indice de la première apparition de cette note, sous forme de tuple.
+\end{exo}
+\begin{exo}
+    Écrire la fonction \texttt{\textbf{maxi\_position\_dernier(tab: list) $\rightarrow$ tuple}} qui renvoie la note maximale du tableau \emph{tab} et l'indice de la \underline{dernière} apparition de cette note, sous forme de tuple.
+\end{exo}
+\begin{exo}
+    Écrire la fonction \texttt{\textbf{maxi\_nb(tab: list) $\rightarrow$ int}} qui renvoie le nombre d'apparitions de la note maximale du tableau \emph{tab}.
+\end{exo}
+\begin{exo}
+    \begin{enumerate}
+        \item Écrire la fonction \texttt{\textbf{est\_present(tab: list, note: int) $\rightarrow$ bool}} qui renvoie \textbf{\texttt{True}} si \textbf{\texttt{note}} est présent dans \textbf{\texttt{tab}}.
+        \item De quel paramètre dépend la durée d'exécution de la fonction? Peut-on faire mieux?
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    On peut assimiler une chaîne de caractère à un tuple, c'est à dire une séquence ordonnée et non modifiable. Ainsi on peut repérer un caractère par son indice.
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+mot = "bonjour"
+print(mot[3]) # affiche 'j'
+\end{lstlisting}
+    \begin{enumerate}
+        \item Écrire la fonction \texttt{\textbf{compter\_voyelles(mot: str) $\rightarrow$ dict}} qui renvoie un dictionnaire du décompte des voyelles. On utilisera un dictionnaire \texttt{\textbf{voyelles}} qui associe chaque voyelle à l'entier 0.
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+voyelles = {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0, "y": 0}
+\end{lstlisting}
+        \item Dans le programme principal, écrire la boucle qui affiche dans la console chaque voyelle suivie de son nombre d'occurrences. Par exemple, on pourra afficher:
+              \begin{itemize}
+                  \item A: 3
+                  \item E: 5
+                  \item \dots
+              \end{itemize}
+        \item Écrire la fonction \textbf{max\_voyelles(voyelles: dict) $\rightarrow$ list} qui renvoie les voyelles qui comptent le plus d'occurrences dans le dictionnaire renvoyé par la fonction précédente. Par exemple, pour le mot "orangeade" la fonction \textbf{\texttt{compter\_voyelles}} renvoie le dictionnaire suivant:
+\begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+{'a': 2, 'e': 2, 'i': 0, 'o': 1, 'u': 0, 'y': 0}
+\end{lstlisting}
+        Ainsi le tableau renvoyé par la fonction \textbf{\texttt{max\_voyelles}} sera ['a', 'e'].
+    \end{enumerate}
+\end{exo}
+\end{document}

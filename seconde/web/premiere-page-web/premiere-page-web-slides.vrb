@@ -1,0 +1,15 @@
+\frametitle{Lien hypertexte}
+
+    Une page web sans lien vers d'autres pages n'a pas grand intérêt. La balise \textbf{\texttt{a}} est une des plus importantes du langage \textbf{\texttt{html}}.\\L'attribut \textbf{\texttt{href}} contient l'adresse de la page à visiter.
+    \begin{center}
+        \begin{lstlisting}[language=html , basicstyle=\ttfamily\small, xleftmargin=0.1em, xrightmargin=-1.8em]
+<a href="https://lyceejaydebeaufort.fr/">Page de Jay</a>
+\end{lstlisting}
+        \captionof{code}{Lien vers une page externe.}
+    \end{center}
+
+    \begin{center}
+        \centering
+        \includegraphics[width=5cm]{ressources/lien.png}
+    \end{center}
+

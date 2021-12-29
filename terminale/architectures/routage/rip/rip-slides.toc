@@ -1,7 +1,8 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Protocole de routage}{4}{0}{1}
 \beamer@subsectionintoc {1}{1}{Principe}{5}{0}{1}
-\beamer@subsectionintoc {1}{2}{Routing Information Protocol}{6}{0}{1}
-\beamer@sectionintoc {2}{Table de routage}{11}{0}{2}
-\beamer@subsectionintoc {2}{1}{Rôle}{12}{0}{2}
-\beamer@subsectionintoc {2}{2}{Construction}{17}{0}{2}
+\beamer@subsectionintoc {1}{2}{Routing Information Protocol}{7}{0}{1}
+\beamer@sectionintoc {2}{Table de routage}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{Rôle}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Construction}{18}{0}{2}
+\beamer@sectionintoc {3}{Gestion des pannes}{39}{0}{3}

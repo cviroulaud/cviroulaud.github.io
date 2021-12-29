@@ -1,0 +1,203 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices parcours séquentiel\\Correction}
+\date{\framebox{\textbf{Algo 02}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+les_notes = [randint(0, 20) for _ in range(30)]
+\end{lstlisting}
+\captionof{code}{Construction par compréhension}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\section{Exercice 1}
+\begin{frame}[fragile]
+    \frametitle{Exercice 1}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def extrema(tab: list) -> tuple:
+    """
+    Renvoie le mini et le maxi de tab
+
+    Args:
+        tab (list): 
+    Returns:
+        tuple: (mini, maxi)
+    """
+    mini = 20
+    maxi = 0
+    for note in tab:
+        if note < mini:
+            mini = note
+        if note > maxi:
+            maxi = note
+    return (mini, maxi)
+\end{lstlisting}
+\end{center}    
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}[fragile]
+    \frametitle{Exercice 2}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def maxi_position(tab: list) -> tuple:
+    """
+    renvoie le max et sa première position dans le tableau
+    """
+    # On peut affecter plusieurs variables sur 1 ligne
+    indice, note_max = 0, 0
+    for i in range(len(tab)):
+        if tab[i] > note_max:
+            note_max = tab[i]
+            indice = i
+    return (indice, note_max)
+\end{lstlisting}
+\end{center}    
+
+\end{frame}
+\section{Exercice 3}
+\begin{frame}[fragile]
+    \frametitle{Exercice 3}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=1em]
+def maxi_position_dernier(tab: list) -> tuple:
+    """
+    renvoie le max et sa dernière position dans le tableau
+    """
+    # On peut affecter plusieurs variables sur 1 ligne
+    indice, note_max = 0, 0
+    for i in range(len(tab)):
+        # il suffit juste de modifier la comparaison
+        if tab[i] >= note_max:
+            note_max = tab[i]
+            indice = i
+    return (indice, note_max)
+\end{lstlisting}
+\end{center}    
+
+\end{frame}
+\section{Exercice 4}
+\begin{frame}[fragile]
+    \frametitle{Exercice 4}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def maxi_nb(tab: list) -> int:
+    """
+    renvoie le nombre d'occurences du maximum
+    """
+    nb, note_max = 0, 0
+    for note in tab:
+        if note > note_max:
+            # réinitialisation du max
+            note_max = note
+            nb = 1
+        elif note == note_max:
+            nb += 1
+    return nb
+\end{lstlisting}
+\end{center}    
+
+\end{frame}
+\section{Exercice 5}
+\begin{frame}[fragile]
+    \frametitle{Exercice 5}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def est_present(tab: list, note: int)->bool:
+    """
+    vérifie si note est dans le tableau
+    """
+    for n in tab:
+        if n == note:
+            return True
+    # On est sorti de la boucle sans avoir trouvé note
+    return False
+\end{lstlisting}
+\end{center}    
+La fonction dépend de la taille du tableau. La complexité est \textbf{linéaire}.
+\end{frame}
+\section{Exercice 6}
+\begin{frame}[fragile]
+    \frametitle{Exercice 6}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=-6em]
+def compter_voyelles(mot: str)->dict:
+    """
+    compte le nombre de chaque voyelles de mot
+    """
+    voyelles = {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0, "y": 0}
+    list_voyelles = ["a", "e", "i", "o", "u", "y"]
+    for lettre in mot:
+        # compare la lettre aux voyelles
+        if lettre in list_voyelles:
+            voyelles[lettre] += 1
+    return voyelles
+\end{lstlisting}
+\captionof{code}{version 1}
+\end{center}    
+
+\end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0em, xrightmargin=-6em]
+def compter_voyelles(mot: str)->dict:
+    """
+    compte le nombre de chaque voyelles de mot
+    """
+    voyelles = {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0, "y": 0}
+    for lettre in mot:
+        # compare la lettre aux voyelles
+        if lettre in voyelles.keys():
+            voyelles[lettre] += 1
+    return voyelles
+\end{lstlisting}
+\captionof{code}{version 2}
+\end{center}    
+
+\end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+def max_voyelles(voyelles: dict) -> list:
+    """
+    parcourt le dict voyelles et renvoie
+    celle qui a la plus grande valeur
+    """
+    maxi = 0
+    lettres_maxi = []
+    for lettre, nb in voyelles.items():
+        if nb > maxi:
+            maxi = nb
+            # on réinitialise le tableau avec la nouvelle lettre max
+            lettres_maxi = [lettre]
+        elif nb == maxi:
+            lettres_maxi.append(lettre)
+    return lettres_maxi
+\end{lstlisting}
+\end{center}    
+    
+    \end{frame}
+\end{document}

@@ -1,0 +1,66 @@
+[{
+        "sigle": "HGGSP",
+        "nom": "Histoire géographie, géopolitique et sciences politiques",
+        "description": "Histoire géographie, géopolitique et sciences politiques"
+    },
+    {
+        "sigle": "HLP",
+        "nom": "Humanités, littérature et philosophie",
+        "description": "Humanités, littérature et philosophie"
+    },
+    {
+        "sigle": "LLCE",
+        "nom": "Langues, littératures et cultures étrangères",
+        "description": "Langues, littératures et cultures étrangères"
+    },
+    {
+        "sigle": "LLCA",
+        "nom": "Littérature, langues et cultures de l’Antiquité",
+        "description": "Littérature, langues et cultures de l’Antiquité"
+    },
+    {
+        "sigle": "Maths",
+        "nom": "Mathématiques",
+        "description": "Mathématiques"
+    },
+    {
+        "sigle": "NSI",
+        "nom": "Numérique et Sciences Informatiques",
+        "description": "Numérique et Sciences Informatiques"
+    },
+    {
+        "sigle": "SVT",
+        "nom": "Sciences de la vie et de la Terre",
+        "description": "Sciences de la vie et de la Terre"
+    },
+    {
+        "sigle": "SI",
+        "nom": "Sciences de l’ingénieur",
+        "description": "Sciences de l’ingénieur"
+    },
+    {
+        "sigle": "SES",
+        "nom": "Sciences économiques et sociales",
+        "description": "Sciences économiques et sociales"
+    },
+    {
+        "sigle": "PC",
+        "nom": "Physique chimie",
+        "description": "Physique chimie"
+    },
+    {
+        "sigle": "Arts",
+        "nom": "Arts : histoire des arts, théâtre, arts plastiques, arts du spectacle, etc",
+        "description": "Arts : histoire des arts, théâtre, arts plastiques, arts du spectacle, etc"
+    },
+    {
+        "sigle": "Bio",
+        "nom": "Biologie écologie",
+        "description": "Biologie écologie"
+    },
+    {
+        "sigle": "EPPCS",
+        "nom": "Éducation physique, pratiques et culture sportives",
+        "description": "Éducation physique, pratiques et culture sportives"
+    }
+]

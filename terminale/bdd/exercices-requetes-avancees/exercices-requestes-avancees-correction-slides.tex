@@ -109,4 +109,119 @@ UPDATE Animaux SET nom="charlie" WHERE nom="charly";
 \end{center}
 
 \end{frame} 
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+SELECT Especes.nom FROM Especes
+JOIN Animaux ON Especes.id = Animaux.id_espece
+WHERE Animaux.nom="zappy";
+\end{lstlisting}
+\captionof{code}{Espèce de Zappy}
+\label{CODE}
+\end{center}
+
+\end{frame} 
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+SELECT Animaux.nom FROM Animaux
+JOIN Especes ON Especes.id = Animaux.id_espece
+WHERE Especes.nom="chat"
+ORDER BY Animaux.nom;
+\end{lstlisting}
+\captionof{code}{Noms des chats}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+SELECT COUNT(Animaux.nom) FROM Animaux
+JOIN Especes ON Especes.id = Animaux.id_espece
+WHERE Especes.nom="chien";
+\end{lstlisting}
+\captionof{code}{Nombre de chiens}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+SELECT COUNT(Soins.soin) FROM Soins
+JOIN Animaux ON Animaux.id = Soins.id_animal
+WHERE Animaux.nom="chouchou";
+\end{lstlisting}
+\captionof{code}{Soins de \emph{chouchou}}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+SELECT Animaux.nom AS n FROM Animaux
+JOIN Soins ON Animaux.id = Soins.id_animal
+JOIN Especes ON Animaux.id_espece = Especes.id
+WHERE Especes.nom="chat" AND Soins.soin="stérilisation"
+ORDER BY n;
+\end{lstlisting}
+\captionof{code}{Chats stérilisés}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+INSERT INTO Animaux(nom,age,id_espece) VALUES ("bubulle",3,(SELECT id FROM Especes WHERE nom="poisson")); 
+\end{lstlisting}
+\captionof{code}{Insertion \emph{Bubulle}}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+INSERT INTO Soins(id_animal, soin) VALUES ((SELECT id FROM Animaux WHERE nom="cartman"),"stérilisation");
+\end{lstlisting}
+\captionof{code}{Soins \emph{Cartman}}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+Créer une table \emph{Types\_soins} qui référence les différentes possibilités de soins. Il faut alors remplacer l'attribut\emph{soin} de la table \emph{Soins} par une clé étrangère sur l'\emph{id} de \emph{Types\_soins}.
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    
+\begin{itemize}
+    \item Especes(\underline{id Integer}, nom String)
+    \item Animaux(\underline{id Integer}, nom String, age Integer, \dashuline{id\_espece Integer})
+    \item Soins(\underline{id Integer}, \dashuline{id\_animal Integer}, \dashuline{id\_soin Integer})
+    \item Types\_soins(\underline{id Integer}, soin String)
+    \end{itemize}
+
+\end{frame}
 \end{document}

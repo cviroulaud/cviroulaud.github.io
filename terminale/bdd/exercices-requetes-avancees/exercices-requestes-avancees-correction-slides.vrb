@@ -2,9 +2,9 @@
 
 \begin{center}
 \begin{lstlisting}[language=SQL , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
-UPDATE Animaux SET nom="charlie" WHERE nom="charly";
+INSERT INTO Soins(id_animal, soin) VALUES ((SELECT id FROM Animaux WHERE nom="cartman"),"stérilisation");
 \end{lstlisting}
-\captionof{code}{Renommer Charly}
+\captionof{code}{Soins \emph{Cartman}}
 \label{CODE}
 \end{center}
 

@@ -15,3 +15,12 @@ let length2 list =
     | [] -> n
     | _ :: t -> aux (n + 1) t
   in aux 0 list;;
+
+(*continuation*)
+let length3 list =
+  let rec aux k = function
+  | [] -> k 0
+  | h::t -> aux (fun a -> 1 + k a) t in
+  aux (fun h -> h) list;;
+
+  print_int (length3 l);;

@@ -1,33 +1,39 @@
-\documentclass[a4paper,11pt]{article}
-\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
-\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
-\setlength{\fboxrule}{0.8pt}
-\fancyhead[L]{\fbox{\Large{\textbf{Routage 03}}}}
-\fancyhead[C]{\textbf{Exercices RIP - correction}}
-\newdate{madate}{10}{09}{2020}
-%\fancyhead[R]{\displaydate{madate}} %\today
-%\fancyhead[R]{Seconde - SNT}
-%\fancyhead[R]{Première - NSI}
-\fancyhead[R]{Terminale - NSI}
-\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
-\AtEndDocument{\label{lastpage}}
-\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
-\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
-\usepackage{tikz}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices RIP\\Correction}
+\date{\framebox{\textbf{Archi 12}}}
+%\logo{}
+\institute{Terminale - NSI}
 
 \begin{document}
-\begin{exo}
+\begin{frame}
+\titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}
+    \frametitle{Exercice 1}
     \begin{aretenir}[Remarque]
         Selon la littérature les notations des interfaces et passerelles sont variables. \textbf{Pour chaque interface le routeur possède une adresse IP appartenant au réseau auquel il est connecté.}
     \end{aretenir}
-    \begin{enumerate}
-        \item \begin{itemize}
-            \item 18.13.0.0/16
-            \item 192.168.0.0/16
-            \item 19.20.1.0/24
-        \end{itemize}
-        \item Table de R1
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item 18.13.0.0/16
+        \item 192.168.0.0/16
+        \item 19.20.1.0/24
+    \end{itemize}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
         \begin{center}
             \begin{tabular}{|*{4}{c|}}
                 \hline
@@ -40,22 +46,35 @@
                 19.20.1.0/24 & 192.168.0.254 (R2) & 192.168.0.1 & 2\\
                 \hline
             \end{tabular}
+            \captionof{table}{Table de routage de R1}
         \end{center}
-    \end{enumerate}
-\end{exo}
-\begin{exo}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}
+    \frametitle{Exercice 2}
+
     \begin{aretenir}[Remarque]
-    Dans cet exercice, la destination à atteindre n'est pas un réseau mais un routeur.
-    \end{aretenir}
-\begin{enumerate}
-    \item Pour atteindre G on lit les tables de routage:
+        Dans cet exercice, la destination à atteindre n'est pas un réseau mais un routeur.
+        \end{aretenir}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Pour atteindre G on lit les tables de routage:
     \begin{itemize}
         \item table A: Vecteur (C,3),
         \item table C: Vecteur (F,2),
         \item table F: Vecteur (G,1)
     \end{itemize}
     Soit une distance de 6 pour un trajet: A $\rightarrow$ C $\rightarrow$ F $\rightarrow$ G.
-    \item Table de G:
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    
     \begin{center}
         \begin{tabular}{|*{3}{c|}}
             \hline
@@ -74,16 +93,17 @@
             F & F & 1\\
             \hline
         \end{tabular}
+        \captionof{table}{Table de routage de G}
     \end{center}
     \begin{aretenir}[Remarque]
     Pour atteindre A et C il est possible de passer par F.
     \end{aretenir}
-\end{enumerate}
-\end{exo}
-\begin{exo}
-    
-    \begin{enumerate}
-        \item Phase d'initialisation
+\end{frame}
+\section{Exercice 3}
+\begin{frame}
+    \frametitle{Exercice 3}
+
+    Phase d'initialisation
         \begin{center}
             \begin{tabular}{|*{4}{c|}}
                 \hline
@@ -95,7 +115,12 @@
                 \hline
             \end{tabular}
         \end{center}
-        \item Extrait de table pour atteindre G
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Extrait de table pour atteindre G
         \begin{center}
             \begin{tabular}{|*{5}{c|}}
                 \hline
@@ -115,14 +140,28 @@
                 \hline
             \end{tabular}
         \end{center}
-        \item B envoie une route infinie soit le vecteur (G,16). Le maximum de sauts est 15 avec le protocole RIP.
-        \item 
-              \begin{itemize}
-                  \item Les routeurs A et C reçoivent une route existante plus longue; cela signifie qu'un problème est apparu. Ils mettent leur table à jour: pour G ils enregistrent la route (B, 16).
-                  \item Le routeur D reçoit une nouvelle route plus longue vers G: il l'ignore.
-                  \item Le routeur C possède la route (B, 16) vers G. Il la remplace par (D, 4).
-              \end{itemize}
-        \item Le routeur C envoie le vecteur (G, 4) à A (et à B). Ces routeurs mettent leur route vers G à jour avec le vecteur (C, 5).
-    \end{enumerate}
-\end{exo}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    B envoie une route infinie soit le vecteur (G,16). Le maximum de sauts est 15 avec le protocole RIP.
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item Les routeurs A et C reçoivent une route existante plus longue; cela signifie qu'un problème est apparu. Ils mettent leur table à jour: pour G ils enregistrent la route (B, 16).
+        \item Le routeur D reçoit une nouvelle route plus longue vers G: il l'ignore.
+        \item Le routeur C possède la route (B, 16) vers G. Il la remplace par (D, 4).
+    \end{itemize}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Le routeur C envoie le vecteur (G, 4) à A (et à B). Ces routeurs mettent leur route vers G à jour avec le vecteur (C, 5).
+
+\end{frame}
 \end{document}

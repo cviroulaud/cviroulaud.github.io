@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Recherche classique dans un tableau}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Recherche classique - Génération des données}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Recherche dans les données}{8}{0}{1}
+\beamer@sectionintoc {2}{Recherche dans un tableau trié}{17}{0}{2}
+\beamer@subsectionintoc {2}{1}{Dans un tableau trié - Des données ordonnées}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Recherche dichotomique}{21}{0}{2}
+\beamer@subsectionintoc {2}{3}{Efficacité}{43}{0}{2}

@@ -1,0 +1,11 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+print(recherche_dicho(entiers, 57200))
+print(COMPTEUR)
+\end{lstlisting}
+\captionof{code}{Utilisation de la fonction}
+\label{CODE}
+\end{center}
+

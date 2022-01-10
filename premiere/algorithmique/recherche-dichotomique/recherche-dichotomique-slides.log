@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  8 JAN 2022 16:43
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  10 JAN 2022 16:36
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/recherche-dichotomique/recherche-dichotomique-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/recherche-dichotomique/recherche-dichotomique-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.142 seconds
+luaotfload | main : initialization completed in 0.133 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1344,34 +1344,7 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
-Package: pgfpages 2011/01/05 ver 0.02
- (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count431
-\calc@Bcount=\count432
-\calc@Adimen=\dimen353
-\calc@Bdimen=\dimen354
-\calc@Askip=\skip144
-\calc@Bskip=\skip145
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count433
-\calc@Cskip=\skip146
-)
-\pgf@logicalpages=\count434
-\pgf@firstshipout=\count435
-\pgf@lastshipout=\count436
-\pgf@currentshipout=\count437
-\pgf@cpn=\count438
-\pgf@shipoutnextto=\count439
-\pgfphysicalheight=\dimen355
-\pgfphysicalwidth=\dimen356
-\pgfpages@shipoutbox=\box124
-)
-\pgfpages@box@1=\box125
-\pgfpages@box@2=\box126
- (./recherche-dichotomique-slides.aux
+))) (./recherche-dichotomique-slides.aux
 
 LaTeX Warning: Label `CODE' multiply defined.
 
@@ -1448,16 +1421,16 @@ LaTeX Font Info:    ... okay on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count440
-\scratchdimen=\dimen357
-\scratchbox=\box127
-\nofMPsegments=\count441
-\nofMParguments=\count442
+\scratchcounter=\count431
+\scratchdimen=\dimen353
+\scratchbox=\box124
+\nofMPsegments=\count432
+\nofMParguments=\count433
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count443
-\MPscratchDim=\dimen358
-\MPnumerator=\count444
-\makeMPintoPDFobject=\count445
+\MPscratchCnt=\count434
+\MPscratchDim=\dimen354
+\MPnumerator=\count435
+\makeMPintoPDFobject=\count436
 \everyMPtoPDFconversion=\toks66
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1471,14 +1444,14 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box128
+\AtBeginShipoutBox=\box125
 Package hyperref Info: Link coloring ON on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count446
+\c@section@level=\count437
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
@@ -1604,14 +1577,16 @@ LaTeX Info: Redefining \up on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count447
+\c@lstlisting=\count438
 
 No file pythontex-files-recherche-dichotomique-slides/recherche-dichotomique-slides.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
-\c@listing=\count448
+\c@listing=\count439
 Package newfloat Info: float type `listing'=16 on input line 11.
-(./recherche-dichotomique-slides.nav)
+(./recherche-dichotomique-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 Overfull \hbox (6.0903pt too wide) in paragraph at lines 33--33
  [] 
  []
@@ -1628,12 +1603,7 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 33.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 33.
- [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation1'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+ [2
 
 ]
 Overfull \hbox (6.0903pt too wide) in paragraph at lines 49--49
@@ -1642,54 +1612,34 @@ Overfull \hbox (6.0903pt too wide) in paragraph at lines 49--49
 
 [3
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation2'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-
 ] (./recherche-dichotomique-slides.toc) [4
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation3'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
-
 ]
-<ressources/pomme.jpg, id=118, 501.875pt x 501.875pt>
+<ressources/pomme.jpg, id=116, 501.875pt x 501.875pt>
 File: ressources/pomme.jpg Graphic file (type jpg)
 <use ressources/pomme.jpg>
 Package luatex.def Info: ressources/pomme.jpg  used on input line 65.
 (luatex.def)             Requested size: 56.9055pt x 56.89883pt.
-<ressources/pull.jpg, id=119, 225.84375pt x 225.84375pt>
+<ressources/pull.jpg, id=117, 225.84375pt x 225.84375pt>
 File: ressources/pull.jpg Graphic file (type jpg)
 <use ressources/pull.jpg>
 Package luatex.def Info: ressources/pull.jpg  used on input line 65.
 (luatex.def)             Requested size: 56.9055pt x 56.90533pt.
-<ressources/pain.jpg, id=120, 1084.05pt x 609.77812pt>
+<ressources/pain.jpg, id=118, 1084.05pt x 609.77812pt>
 File: ressources/pain.jpg Graphic file (type jpg)
 <use ressources/pain.jpg>
 Package luatex.def Info: ressources/pain.jpg  used on input line 65.
 (luatex.def)             Requested size: 56.9055pt x 32.00731pt.
-<ressources/aspirateur.jpg, id=121, 301.125pt x 451.6875pt>
+<ressources/aspirateur.jpg, id=119, 301.125pt x 451.6875pt>
 File: ressources/aspirateur.jpg Graphic file (type jpg)
 <use ressources/aspirateur.jpg>
 Package luatex.def Info: ressources/aspirateur.jpg  used on input line 65.
 (luatex.def)             Requested size: 56.9055pt x 85.35284pt.
  [5
 
+<./ressources/pomme.jpg><./ressources/pull.jpg><./ressources/pain.jpg><./ressources/aspirateur.jpg>] [6
 
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation4'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
-
-] [6
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation5'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
-
-<./ressources/pomme.jpg><./ressources/pull.jpg><./ressources/pain.jpg><./ressources/aspirateur.jpg>]
+]
 \openout4 = recherche-dichotomique-slides.vrb
  (./recherche-dichotomique-slides.vrb
 
@@ -1697,56 +1647,31 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [7
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation6'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
-
 ] (./recherche-dichotomique-slides.toc) [8
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation7'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
 
 ]
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 108.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 110.
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 108.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 110.
 
 [9
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation8'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
-
 ] [10
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation9'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 133.
+(mdframed)              on input line 135.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 133.
+(mdframed)              on input line 135.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 133.
+ mdframed uses option nobreak mdframed on input line 135.
  [11
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation10'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
 
 ]
 \openout4 = recherche-dichotomique-slides.vrb
@@ -1754,11 +1679,6 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 5.
 ) [12
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation11'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
 
 ]
 \openout4 = recherche-dichotomique-slides.vrb
@@ -1774,11 +1694,6 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [13
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation12'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
-
 ]
 \openout4 = recherche-dichotomique-slides.vrb
  (./recherche-dichotomique-slides.vrb
@@ -1786,11 +1701,6 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [14
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation13'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
 
 ]
 \openout4 = recherche-dichotomique-slides.vrb
@@ -1804,57 +1714,32 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 )
-Overfull \vbox (35.13962pt too high) detected at line 205
+Overfull \vbox (35.13962pt too high) detected at line 208
  []
 
 [15
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation14'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
-
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 213.
+(mdframed)              on input line 216.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 213.
+(mdframed)              on input line 216.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 213.
+ mdframed uses option nobreak mdframed on input line 216.
  [16
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation15'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
 
 ] (./recherche-dichotomique-slides.toc) [17
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation16'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
-
 ]
-Overfull \hbox (13.38461pt too wide) in paragraph at lines 243--243
+Overfull \hbox (13.38461pt too wide) in paragraph at lines 246--246
  [] 
  []
 
 [18
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation17'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
-
 ] [19
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation18'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
 
 ]
 \openout4 = recherche-dichotomique-slides.vrb
@@ -1866,66 +1751,21 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [20
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation19'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
-
 ] (./recherche-dichotomique-slides.toc) [21
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation20'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
 
 ] [22
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation21'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
-
 ] [23
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation22'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
 
 ] [24
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation23'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
-
 ] [25
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation24'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.24'
 
 ] [26
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation25'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
-
 ] [27
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation26'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
-
 ] [28
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation27'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
 
 ]
 \openout4 = recherche-dichotomique-slides.vrb
@@ -1950,17 +1790,7 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [29
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation28'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
-
 ] [30
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation29'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.29'
 
 ]
 \openout4 = recherche-dichotomique-slides.vrb
@@ -1970,24 +1800,9 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [31
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation30'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.30'
-
 ] [32
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation31'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.31'
-
 ] [33
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation32'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.32'
 
 ]
 \openout4 = recherche-dichotomique-slides.vrb
@@ -1997,34 +1812,14 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [34
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation33'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.33'
-
 ] [35
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation34'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.34'
 
 ] [36
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation35'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.35'
-
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 575.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 578.
  [37
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation36'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.36'
 
 ]
 
@@ -2032,21 +1827,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 (./scripts/dicho.py) [38
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation37'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.37'
-
 ]
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 (./scripts/dicho.py) [39
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation38'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.38'
 
 ]
 
@@ -2054,21 +1839,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 (./scripts/dicho.py) [40
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation39'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.39'
-
 ]
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 (./scripts/dicho.py) [41
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation40'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.40'
 
 ]
 
@@ -2076,24 +1851,9 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 (./scripts/dicho.py) [42
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation41'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.41'
-
 ] (./recherche-dichotomique-slides.toc) [43
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation42'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.42'
-
 ] [44
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation43'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.43'
 
 ]
 \openout4 = recherche-dichotomique-slides.vrb
@@ -2102,15 +1862,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.43'
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 )
-Overfull \vbox (3.13962pt too high) detected at line 676
+Overfull \vbox (3.13962pt too high) detected at line 679
  []
 
 [45
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation44'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.44'
 
 ]
 \openout4 = recherche-dichotomique-slides.vrb
@@ -2122,64 +1877,29 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [46
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation45'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.45'
-
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 698.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 701.
  [47
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation46'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.46'
 
 ] [48
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation47'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.47'
-
 ] [49
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation48'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.48'
-
 ] [50
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation49'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.49'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 743.
+(mdframed)              on input line 746.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 743.
+(mdframed)              on input line 746.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 743.
+ mdframed uses option nobreak mdframed on input line 746.
  [51
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation50'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.50'
-
 ] [52
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation51'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.51'
 
 ]
 \tf@nav=\write8
@@ -2191,19 +1911,11 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.51'
 \tf@snm=\write10
 
 \openout10 = recherche-dichotomique-slides.snm
- [53
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation52'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.52'
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 750.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 750.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 753.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 753.
  (./recherche-dichotomique-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 750.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 750.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 753.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 753.
 Package rerunfilecheck Info: File `recherche-dichotomique-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 3B8CDCABD39C909A2E5454CF02396064;1528.
 
@@ -2213,19 +1925,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45430 strings out of 494383
- 932122,1144653 words of node,token memory allocated
- 217989 words of node memory still in use:
-   73 hlist, 29 vlist, 12 rule, 16 disc, 12 local_par, 163 glue, 15 kern, 29 penalty, 26447 glyph, 12555 attribute, 109 glue_spec, 2095 attribute_list, 5 write, 30 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 2 pdf_dest, 4 pdf_action, 46 pdf_colorstack nodes
-   avail lists: 1:4,2:12749,3:2103,4:14054,5:11005,6:166,7:8066,8:9950,9:18134,10:32,11:1142,12:1
- 47683 multiletter control sequences out of 65536+600000
- 104 fonts using 12910303 bytes
- 70i,15n,95p,1215b,1087s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on recherche-dichotomique-slides.pdf (52 pages, 347076 bytes).
+ 45158 strings out of 494383
+ 596378,1144653 words of node,token memory allocated
+ 160339 words of node memory still in use:
+   19 hlist, 9 vlist, 3 rule, 2 disc, 3 local_par, 51 glue, 6 kern, 11 penalty, 19401 glyph, 9909 attribute, 106 glue_spec, 1654 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 12 pdf_colorstack nodes
+   avail lists: 1:4,2:10908,3:877,4:6996,5:5557,6:69,7:2666,8:5011,9:9093,10:32,11:536,12:1
+ 47426 multiletter control sequences out of 65536+600000
+ 103 fonts using 12778623 bytes
+ 70i,15n,95p,1215b,1077s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on recherche-dichotomique-slides.pdf (52 pages, 290399 bytes).
 
-PDF statistics: 1204 PDF objects out of 1440 (max. 8388607)
- 991 compressed objects within 10 object streams
+PDF statistics: 916 PDF objects out of 1000 (max. 8388607)
+ 807 compressed objects within 9 object streams
  114 named destinations out of 1000 (max. 131072)
  82 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -6,8 +6,28 @@
 @Time:   2021/03/14 13:40:04
 """
 
+def est_voyelle(lettre:str)->bool:
+    """
+    vérifie si lettre est une voyelle
+    """    
+    voyelles = ["a", "e", "i", "o", "u", "y"]
+    for v in voyelles:
+        if lettre == v:
+            return True
+    return False
 
 def compter_voyelles(mot: str) -> dict:
+    """
+    compte le nombre de chaque voyelles de mot
+    """
+    voyelles = {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0, "y": 0}
+    for lettre in mot:
+        if est_voyelle(lettre):
+            voyelles[lettre] += 1
+    return voyelles
+            
+        
+def compter_voyelles3(mot: str) -> dict:
     """
     compte le nombre de chaque voyelles de mot
     """

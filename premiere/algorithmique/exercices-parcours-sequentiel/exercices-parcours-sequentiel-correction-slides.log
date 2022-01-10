@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 DEC 2021 15:36
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  10 JAN 2022 16:33
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/exercices-parcours-sequentiel/exercices-parcours-sequentiel-correction-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/exercices-parcours-sequentiel/exercices-parcours-sequentiel-correction-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.111 seconds
+luaotfload | main : initialization completed in 0.140 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1344,7 +1344,11 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./exercices-parcours-sequentiel-correction-slides.aux)
+))) (./exercices-parcours-sequentiel-correction-slides.aux
+
+LaTeX Warning: Label `CODE' multiply defined.
+
+)
 \openout1 = exercices-parcours-sequentiel-correction-slides.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1662,6 +1666,24 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 ) [16
 
 ]
+\openout4 = exercices-parcours-sequentiel-correction-slides.vrb
+ (./exercices-parcours-sequentiel-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [17
+
+]
+\openout4 = exercices-parcours-sequentiel-correction-slides.vrb
+ (./exercices-parcours-sequentiel-correction-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [18
+
+]
 \tf@nav=\write8
 
 \openout8 = exercices-parcours-sequentiel-correction-slides.nav
@@ -1671,29 +1693,33 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = exercices-parcours-sequentiel-correction-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
  (./exercices-parcours-sequentiel-correction-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 233.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 233.
 Package rerunfilecheck Info: File `exercices-parcours-sequentiel-correction-slides.out' has not changed.
 (rerunfilecheck)             Checksum: B2E6BFA122ECAE96F3F0FD26E2511256;576.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 44366 strings out of 494383
- 381544,1144653 words of node,token memory allocated
- 148217 words of node memory still in use:
-   3779 hlist, 6 vlist, 2113 rule, 218 disc, 18 local_par, 1644 glue, 2335 kern, 32 penalty, 4614 glyph, 11415 attribute, 106 glue_spec, 1905 attribute_list, 3 write, 2980 pdf_colorstack nodes
-   avail lists: 1:3,2:5237,3:66,4:5244,5:4124,6:50,7:3362,8:3730,9:6665,10:49,11:387,12:1
- 46920 multiletter control sequences out of 65536+600000
+ 44394 strings out of 494383
+ 305223,1144653 words of node,token memory allocated
+ 153369 words of node memory still in use:
+   3779 hlist, 6 vlist, 2113 rule, 218 disc, 18 local_par, 1644 glue, 2335 kern, 32 penalty, 5152 glyph, 12009 attribute, 106 glue_spec, 2004 attribute_list, 3 write, 2980 pdf_colorstack nodes
+   avail lists: 1:4,2:2409,3:66,4:3744,5:2975,6:49,7:2375,8:2683,9:4802,10:49,11:289,12:1
+ 46926 multiletter control sequences out of 65536+600000
  37 fonts using 7025919 bytes
  70i,15n,95p,1240b,943s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf>
-Output written on exercices-parcours-sequentiel-correction-slides.pdf (16 pages, 46528 bytes).
+Output written on exercices-parcours-sequentiel-correction-slides.pdf (18 pages, 49993 bytes).
 
-PDF statistics: 331 PDF objects out of 1000 (max. 8388607)
- 288 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 131072)
+PDF statistics: 358 PDF objects out of 1000 (max. 8388607)
+ 312 compressed objects within 4 object streams
+ 44 named destinations out of 1000 (max. 131072)
  74 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Recherche dichotomique}
 \date{\framebox{\textbf{Algo 03}}}
@@ -76,6 +76,8 @@
 
     \begin{center}
     \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-1em]
+from random import randint
+
 entiers = [randint(0, 1000000) for _ in range(100000)]
 \end{lstlisting}
     \captionof*{code}{Jeu de données}
@@ -151,7 +153,8 @@ entiers = [randint(0, 1000000) for _ in range(100000)]
     \end{center}
 
     \begin{center}
-    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-2em]
+entiers = [randint(0, 1000000) for _ in range(100000)]
 recherche_classique(entiers, 57500)
 \end{lstlisting}
     \captionof{code}{Utilisation de la fonction}

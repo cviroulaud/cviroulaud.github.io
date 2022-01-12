@@ -1,12 +1,12 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Représentation des réseaux}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Graphe orienté}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Graphe non orienté}{4}{0}{1}
 \beamer@subsectionintoc {1}{2}{Graphe pondéré}{6}{0}{1}
 \beamer@sectionintoc {2}{Protocole RIP: algorithme de Bellman-Ford}{8}{0}{2}
 \beamer@subsectionintoc {2}{1}{Principe}{9}{0}{2}
-\beamer@subsectionintoc {2}{2}{Mise en application}{17}{0}{2}
-\beamer@subsectionintoc {2}{3}{Complexité}{40}{0}{2}
-\beamer@sectionintoc {3}{OSPF: algorithme de Dijkstra}{44}{0}{3}
-\beamer@subsectionintoc {3}{1}{Principe}{45}{0}{3}
-\beamer@subsectionintoc {3}{2}{Mise en application}{48}{0}{3}
-\beamer@subsectionintoc {3}{3}{Complexité}{62}{0}{3}
+\beamer@subsectionintoc {2}{2}{Mise en application}{18}{0}{2}
+\beamer@subsectionintoc {2}{3}{Complexité}{48}{0}{2}
+\beamer@sectionintoc {3}{OSPF: algorithme de Dijkstra}{52}{0}{3}
+\beamer@subsectionintoc {3}{1}{Principe}{53}{0}{3}
+\beamer@subsectionintoc {3}{2}{Mise en application}{56}{0}{3}
+\beamer@subsectionintoc {3}{3}{Complexité}{70}{0}{3}

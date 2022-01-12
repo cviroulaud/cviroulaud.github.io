@@ -22,9 +22,9 @@ Pour calculer rapidement les distances dans le réseau, les routeurs appliquent 
 \end{frame}
 
 \section{Représentation des réseaux}
-\subsection{Graphe orienté}
+\subsection{Graphe non orienté}
 \begin{frame}
-    \frametitle{Représentation des réseaux - Graphe orienté}
+    \frametitle{Représentation des réseaux - Graphe non orienté}
 
     \begin{center}
         \begin{tikzpicture}
@@ -35,19 +35,25 @@ Pour calculer rapidement les distances dans le réseau, les routeurs appliquent 
             \node[draw] (E) at (-3,1) {E};
             \node[draw] (F) at (-4,0) {F};
     
-            \draw[->,>=latex] (B)--(A);
-            \draw[->,>=latex] (A)--(E);
-            \draw[->,>=latex] (D)--(E);
-            \draw[->,>=latex] (A)--(D);
-            \draw[->,>=latex] (D)--(C);
-            \draw[->,>=latex] (C)--(B);
-            \draw[->,>=latex] (F)--(E);
+            \draw (B)--(A);
+            \draw (A)--(E);
+            \draw (D)--(E);
+            \draw (A)--(D);
+            \draw (D)--(C);
+            \draw (C)--(B);
+            \draw (F)--(E);
     
         \end{tikzpicture}
-        \captionof{figure}{graphe orienté}
+        \captionof{figure}{graphe non orienté}
         \label{oriente}
     \end{center}
-
+\begin{aretenir}[]
+    Un graphe est composé:
+    \begin{itemize}
+        \item de sommets ou nœuds,
+        \item d'arêtes ou arcs qui relient les sommets.
+    \end{itemize}
+\end{aretenir}
 \end{frame}
 
 \begin{frame}
@@ -61,24 +67,21 @@ Pour calculer rapidement les distances dans le réseau, les routeurs appliquent 
             \node[draw] (E) at (-3,1) {E};
             \node[draw] (F) at (-4,0) {F};
     
-            \draw[->,>=latex] (B)--(A);
-            \draw[->,>=latex] (A)--(E);
-            \draw[->,>=latex] (D)--(E);
-            \draw[->,>=latex] (A)--(D);
-            \draw[->,>=latex] (D)--(C);
-            \draw[->,>=latex] (C)--(B);
-            \draw[->,>=latex] (F)--(E);
+            \draw (B)--(A);
+            \draw (A)--(E);
+            \draw (D)--(E);
+            \draw (A)--(D);
+            \draw (D)--(C);
+            \draw (C)--(B);
+            \draw (F)--(E);
     
         \end{tikzpicture}
-        \captionof{figure}{graphe orienté}
+        \captionof{figure}{graphe non orienté}
         \label{oriente}
     \end{center}
     \begin{aretenir}[]
-        Pour chaque nœud on peut définir ses \textbf{prédécesseurs} et ses \textbf{successeurs}.
-\begin{itemize}
-    \item Le nœud F ne possède pas de \emph{prédécesseur}.
-    \item Le nœud E ne possède pas de \emph{successeur}.
-\end{itemize}
+        Pour chaque nœud on peut définir ses \textbf{prédécesseurs}.\\
+        \textbf{E} est le prédécesseur de \textbf{F}.
     \end{aretenir}
 
 \end{frame}
@@ -94,12 +97,12 @@ Pour calculer rapidement les distances dans le réseau, les routeurs appliquent 
             \node[draw] (D) at (1,2) {D};
             \node[draw] (E) at (-3,1) {E};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(E) node[sloped, midway, fill=white]{10};
-            \draw[->,>=latex] (D)--(E) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (A)--(D) node[sloped, midway, fill=white]{-2};
-            \draw[->,>=latex] (D)--(C) node[sloped, midway, fill=white]{8};
-            \draw[->,>=latex] (C)--(B) node[sloped, midway, fill=white]{4};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (A)--(E) node[sloped, midway, fill=white]{10};
+            \draw (D)--(E) node[sloped, midway, fill=white]{1};
+            \draw (A)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(C) node[sloped, midway, fill=white]{8};
+            \draw (C)--(B) node[sloped, midway, fill=white]{4};
     
         \end{tikzpicture}
         \captionof{figure}{graphe pondéré}
@@ -132,6 +135,32 @@ Selon le protocole mis en place la pondération pourra représenter:
 \begin{frame}
     \frametitle{}
 
+    \begin{aretenir}[Remarque]
+    L'algorithme de Bellman-Ford est normalement appliqué dans un graphe orienté. Cependant, si les pondérations sont toutes positives, il est possible d'utiliser un graphe non orienté.
+    \end{aretenir}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (2,0) {B};
+            \node[draw] (C) at (3,1.5) {C};
+            \node[draw] (D) at (1,2) {D};
+            \node[draw] (E) at (-3,1) {E};
+    
+            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw[->,>=latex] (A)--(E) node[sloped, midway, fill=white]{10};
+            \draw[->,>=latex] (D)--(E) node[sloped, midway, fill=white]{1};
+            \draw[->,>=latex] (A)--(D) node[sloped, midway, fill=white]{2};
+            \draw[->,>=latex] (D)--(C) node[sloped, midway, fill=white]{8};
+            \draw[->,>=latex] (C)--(B) node[sloped, midway, fill=white]{4};
+    
+        \end{tikzpicture}
+        \captionof{figure}{graphe orienté}
+        \label{pondere}
+    \end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
     \begin{aretenir}[]
         La distance pour atteindre chaque nœud correspond à la distance pour atteindre son prédécesseur à laquelle on ajoute le poids de l'arête les séparant.
         \end{aretenir}
@@ -152,15 +181,15 @@ Selon le protocole mis en place la pondération pourra représenter:
         \node[draw] (E) at (6,-2) {E};
         \node[draw] (F) at (6,2) {F};
 
-        \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-        %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-        \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-        \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-        \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-        \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-        \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-        \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-        \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+        \draw (A)--(B) node[sloped, midway, fill=white]{2};
+        %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+        \draw (C)--(D) node[sloped, midway, fill=white]{2};
+        \draw (A)--(F) node[sloped, midway, fill=white]{3};
+        \draw (B)--(E) node[sloped, midway, fill=white]{4};
+        \draw (F)--(C) node[sloped, midway, fill=white]{2};
+        \draw (E)--(C) node[sloped, midway, fill=white]{1};
+        \draw (E)--(D) node[sloped, midway, fill=white]{5};
+        \draw (D)--(F) node[sloped, midway, fill=white]{2};
 
     \end{tikzpicture}
     \captionof{figure}{graphe orienté pondéré}
@@ -232,15 +261,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -267,15 +296,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -291,7 +320,6 @@ Selon le protocole mis en place la pondération pourra représenter:
     La distance calculée pour atteindre B correspond à la distance de son prédécesseur (A) augmentée du poids de l'arc A-B:
     $$0+2 = 2 < \infty$$
 \end{frame}
-
 \begin{frame}
     \frametitle{Première itération}
 
@@ -304,15 +332,51 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+    
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|*{6}{c|}}
+            \hline
+            A & B      & C      & D      & E      & F      \\
+            \hline
+            0 & \textbf{2 (A)} & \infty & \infty & \infty & \infty \\
+            \hline
+        \end{tabular}
+    \end{center}
+    Second prédécesseur de B: E
+    $$\infty+4 = \infty < \infty$$
+\end{frame}
+\begin{frame}
+    \frametitle{Première itération}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (3,0) {B};
+            \node[draw] (C) at (6,0) {C};
+            \node[draw] (D) at (9,0) {D};
+            \node[draw] (E) at (6,-2) {E};
+            \node[draw] (F) at (6,2) {F};
+    
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -325,12 +389,11 @@ Selon le protocole mis en place la pondération pourra représenter:
             \hline
         \end{tabular}
     \end{center}
-    Premier prédécesseur de C: E
+    Premier prédécesseur de C: D
     $$\infty+1 = \infty \nless \infty$$
     \note{On est toujours dans la première itération; on vérifie chaque arc.}
 \end{frame}
 
-
 \begin{frame}
     \frametitle{Première itération}
 
@@ -343,15 +406,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -364,7 +427,43 @@ Selon le protocole mis en place la pondération pourra représenter:
             \hline
         \end{tabular}
     \end{center}
-    Second prédécesseur de C: F
+    Deuxième prédécesseur de C: E
+    $$\infty+1 = \infty \nless \infty$$
+\end{frame}
+\begin{frame}
+    \frametitle{Première itération}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (3,0) {B};
+            \node[draw] (C) at (6,0) {C};
+            \node[draw] (D) at (9,0) {D};
+            \node[draw] (E) at (6,-2) {E};
+            \node[draw] (F) at (6,2) {F};
+    
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+    
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|*{6}{c|}}
+            \hline
+            A & B      & C      & D      & E      & F      \\
+            \hline
+            0 & 2 (A) & \infty & \infty & \infty & \infty \\
+            \hline
+        \end{tabular}
+    \end{center}
+    Troisième prédécesseur de C: F
     $$\infty+2 = \infty \nless  \infty$$
 \end{frame}
 \begin{frame}
@@ -382,15 +481,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -407,15 +506,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -443,15 +542,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -464,10 +563,9 @@ Selon le protocole mis en place la pondération pourra représenter:
             \hline
         \end{tabular}
     \end{center}
-    Prédécesseur de E: B
+    Premier prédécesseur de E: B
     $$2+4 = 6 <  \infty$$
 \end{frame}
-
 \begin{frame}
     \frametitle{Première itération}
 
@@ -480,15 +578,87 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+    
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|*{6}{c|}}
+            \hline
+            A & B      & C      & D      & E      & F      \\
+            \hline
+            0 & 2 (A) & \infty & \infty & \textbf{6 (B)} & \infty \\
+            \hline
+        \end{tabular}
+    \end{center}
+    Deuxième prédécesseur de E: C
+    $$\infty+1 = \infty >  6$$
+\end{frame}
+\begin{frame}
+    \frametitle{Première itération}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (3,0) {B};
+            \node[draw] (C) at (6,0) {C};
+            \node[draw] (D) at (9,0) {D};
+            \node[draw] (E) at (6,-2) {E};
+            \node[draw] (F) at (6,2) {F};
+    
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+    
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|*{6}{c|}}
+            \hline
+            A & B      & C      & D      & E      & F      \\
+            \hline
+            0 & 2 (A) & \infty & \infty & \textbf{6 (B)} & \infty \\
+            \hline
+        \end{tabular}
+    \end{center}
+    Troisième prédécesseur de E: D
+    $$\infty+5 = \infty >  6$$
+\end{frame}
+\begin{frame}
+    \frametitle{Première itération}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (3,0) {B};
+            \node[draw] (C) at (6,0) {C};
+            \node[draw] (D) at (9,0) {D};
+            \node[draw] (E) at (6,-2) {E};
+            \node[draw] (F) at (6,2) {F};
+    
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -517,15 +687,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -538,10 +708,9 @@ Selon le protocole mis en place la pondération pourra représenter:
             \hline
         \end{tabular}
     \end{center}
-    Second prédécesseur de F: D
+    Deuxième prédécesseur de F: C
     $$\infty+2 = \infty \nless  3$$
 \end{frame}
-
 \begin{frame}
     \frametitle{Première itération}
 
@@ -554,15 +723,51 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+    
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|*{6}{c|}}
+            \hline
+            A & B      & C      & D      & E      & F      \\
+            \hline
+            0 & 2 (A)& \infty & \infty & 6 (B) & 3 (A) \\
+            \hline
+        \end{tabular}
+    \end{center}
+    Troisième prédécesseur de F: D
+    $$\infty+2 = \infty \nless  3$$
+\end{frame}
+\begin{frame}
+    \frametitle{Première itération}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (3,0) {B};
+            \node[draw] (C) at (6,0) {C};
+            \node[draw] (D) at (9,0) {D};
+            \node[draw] (E) at (6,-2) {E};
+            \node[draw] (F) at (6,2) {F};
+    
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -592,15 +797,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -617,7 +822,6 @@ Selon le protocole mis en place la pondération pourra représenter:
     \end{center}
     {\Large Pas de modification pour A et B}
 \end{frame}
-
 \begin{frame}
     \frametitle{Deuxième itération}
 
@@ -630,15 +834,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -653,7 +857,46 @@ Selon le protocole mis en place la pondération pourra représenter:
             \hline
         \end{tabular}
     \end{center}
-    Premier prédécesseur de C: E
+    Premier prédécesseur de C: D
+    $$\infty+2 = \infty \nless \infty$$
+    
+\end{frame}
+\begin{frame}
+    \frametitle{Deuxième itération}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (3,0) {B};
+            \node[draw] (C) at (6,0) {C};
+            \node[draw] (D) at (9,0) {D};
+            \node[draw] (E) at (6,-2) {E};
+            \node[draw] (F) at (6,2) {F};
+    
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+    
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|*{6}{c|}}
+            \hline
+            A & B      & C      & D      & E      & F      \\
+            \hline
+            0 & 2 (A) & \infty & \infty & 6 (B) & 3 (A) \\
+            \hline
+            0 & 2 (A) & \textbf{7 (E)} & \infty & 6 (B)& 3 (A)\\
+            \hline
+        \end{tabular}
+    \end{center}
+    Deuxième prédécesseur de C: E
     $$6+1 = 7 < \infty$$
     
 \end{frame}
@@ -670,15 +913,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -693,7 +936,7 @@ Selon le protocole mis en place la pondération pourra représenter:
             \hline
         \end{tabular}
     \end{center}
-    Second prédécesseur de C: F
+    Troisième prédécesseur de C: F
     $$3+2 = 5 < 7$$
     
 \end{frame}
@@ -710,15 +953,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -750,15 +993,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -789,15 +1032,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -808,7 +1051,46 @@ Selon le protocole mis en place la pondération pourra représenter:
             \hline
             0 & 2 (A) & \infty & \infty & 6 (B) & 3 (A) \\
             \hline
-            0 & 2 (A) & 5 (F) & 7 (C) & 6 (B) & 3 (A) \\
+            0 & 2 (A) & 5 (F) & \textbf{5 (F)} & 6 (B) & 3 (A) \\
+            \hline
+        \end{tabular}
+    \end{center}
+    Troisième prédécesseur de D: F
+    $$3+2 = 5 < 7$$
+    
+\end{frame}
+\begin{frame}
+    \frametitle{Deuxième itération}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (A) at (0,0) {A};
+            \node[draw] (B) at (3,0) {B};
+            \node[draw] (C) at (6,0) {C};
+            \node[draw] (D) at (9,0) {D};
+            \node[draw] (E) at (6,-2) {E};
+            \node[draw] (F) at (6,2) {F};
+    
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+    
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|*{6}{c|}}
+            \hline
+            A & B      & C      & D      & E      & F      \\
+            \hline
+            0 & 2 (A) & \infty & \infty & 6 (B) & 3 (A) \\
+            \hline
+            0 & 2 (A) & 5 (F) & 5 (F) & 6 (B) & 3 (A) \\
             \hline
         \end{tabular}
     \end{center}
@@ -829,15 +1111,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -848,7 +1130,7 @@ Selon le protocole mis en place la pondération pourra représenter:
             \hline
             0 & 2 (A) & \infty & \infty & 6 (B) & 3 (A) \\
             \hline
-            0 & 2 (A) & 5 (F) & 7 (C) & 6 (B) & 3 (A) \\
+            0 & 2 (A) & 5 (F) & 5 (F) & 6 (B) & 3 (A) \\
             \hline
         \end{tabular}
     \end{center}
@@ -870,15 +1152,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -889,9 +1171,9 @@ Selon le protocole mis en place la pondération pourra représenter:
             \hline
             0 & 2 (A) & \infty & \infty & 6 (B) & 3 (A) \\
             \hline
-            0 & 2 (A) & 5 (F) & 7 (C) & 6 (B) & 3 (A) \\
+            0 & 2 (A) & 5 (F) & 5 (F) & 6 (B) & 3 (A) \\
             \hline
-            0 & 2 (A) & 5 (F) & 7 (C) & 6 (B) & 3 (A) \\
+            0 & 2 (A) & 5 (F) & 5 (F) & 6 (B) & 3 (A) \\
             \hline
         \end{tabular}
     \end{center}
@@ -914,15 +1196,15 @@ Selon le protocole mis en place la pondération pourra représenter:
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (6,2) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{2};
-            %\draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{6};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (A)--(F) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (F)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(C) node[sloped, midway, fill=white]{1};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{2};
+            %\draw (B)--(C) node[sloped, midway, fill=white]{6};
+            \draw (C)--(D) node[sloped, midway, fill=white]{2};
+            \draw (A)--(F) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{4};
+            \draw (F)--(C) node[sloped, midway, fill=white]{2};
+            \draw (E)--(C) node[sloped, midway, fill=white]{1};
+            \draw (E)--(D) node[sloped, midway, fill=white]{5};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -959,7 +1241,7 @@ Pour chaque arc du graphe
     \frametitle{Complexité de l'algorithme de Bellman Ford}
 
     {\LARGE$$O(S.A)$$}
-
+\note{précisément chaque arc est parcouru deux fois car on est dans un graphe non orienté}
 \end{frame}
 
 \section{OSPF: algorithme de Dijkstra}
@@ -997,19 +1279,19 @@ Pour chaque arc du graphe
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
-        \captionof{figure}{graphe orienté et pondéré}
+        \captionof{figure}{graphe non orienté et pondéré}
         \label{ospf}
     \end{center}
 
@@ -1042,7 +1324,7 @@ Pour chaque arc du graphe
 \begin{itemize}
     \item Tant qu'il reste des routeurs non sélectionnés
     \begin{itemize}
-        \item Parmi les routeurs non-sélectionnés, choisir le routeur (noté S) ayant la plus petite distance.
+        \item Parmi les routeurs non-sélectionnés, choisir celui (noté S) ayant la plus petite distance.
         \item Pour chaque routeur adjacent à S (noté V) et non déjà sélectionné:
             \begin{itemize}
                 \item Si (la distance de V) > (la distance de S + poids S-V)
@@ -1066,16 +1348,16 @@ Pour chaque arc du graphe
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -1103,16 +1385,16 @@ Pour chaque arc du graphe
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -1148,16 +1430,16 @@ Pour chaque arc du graphe
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -1206,16 +1488,16 @@ Pour chaque arc du graphe
                 \node[draw] (E) at (6,-2) {E};
                 \node[draw] (F) at (8,0) {F};
         
-                \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-                \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-                \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-                \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-                \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-                \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-                \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-                \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-                \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-                \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+                \draw (A)--(B) node[sloped, midway, fill=white]{3};
+                \draw (B)--(C) node[sloped, midway, fill=white]{3};
+                \draw (A)--(C) node[sloped, midway, fill=white]{2};
+                \draw (B)--(D) node[sloped, midway, fill=white]{3};
+                \draw (B)--(E) node[sloped, midway, fill=white]{2};
+                \draw (C)--(D) node[sloped, midway, fill=white]{5};
+                \draw (C)--(E) node[sloped, midway, fill=white]{4};
+                \draw (E)--(D) node[sloped, midway, fill=white]{2};
+                \draw (D)--(F) node[sloped, midway, fill=white]{2};
+                \draw (E)--(F) node[sloped, midway, fill=white]{2};
         
             \end{tikzpicture}
         \end{center}
@@ -1232,16 +1514,16 @@ Pour chaque arc du graphe
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -1282,16 +1564,16 @@ Pour chaque arc du graphe
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -1334,16 +1616,16 @@ Pour chaque arc du graphe
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -1388,16 +1670,16 @@ Pour chaque arc du graphe
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -1444,16 +1726,16 @@ Pour chaque arc du graphe
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}
@@ -1501,16 +1783,16 @@ pour F: F $\rightarrow$ E $\rightarrow$ B $\rightarrow$ A}
             \node[draw] (E) at (6,-2) {E};
             \node[draw] (F) at (8,0) {F};
     
-            \draw[->,>=latex] (A)--(B) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(C) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (A)--(C) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (B)--(D) node[sloped, midway, fill=white]{3};
-            \draw[->,>=latex] (B)--(E) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (C)--(D) node[sloped, midway, fill=white]{5};
-            \draw[->,>=latex] (C)--(E) node[sloped, midway, fill=white]{4};
-            \draw[->,>=latex] (E)--(D) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (D)--(F) node[sloped, midway, fill=white]{2};
-            \draw[->,>=latex] (E)--(F) node[sloped, midway, fill=white]{2};
+            \draw (A)--(B) node[sloped, midway, fill=white]{3};
+            \draw (B)--(C) node[sloped, midway, fill=white]{3};
+            \draw (A)--(C) node[sloped, midway, fill=white]{2};
+            \draw (B)--(D) node[sloped, midway, fill=white]{3};
+            \draw (B)--(E) node[sloped, midway, fill=white]{2};
+            \draw (C)--(D) node[sloped, midway, fill=white]{5};
+            \draw (C)--(E) node[sloped, midway, fill=white]{4};
+            \draw (E)--(D) node[sloped, midway, fill=white]{2};
+            \draw (D)--(F) node[sloped, midway, fill=white]{2};
+            \draw (E)--(F) node[sloped, midway, fill=white]{2};
     
         \end{tikzpicture}
     \end{center}

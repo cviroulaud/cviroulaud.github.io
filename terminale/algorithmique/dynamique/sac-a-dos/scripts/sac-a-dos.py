@@ -17,6 +17,7 @@ objets = [Objet(0, 0), Objet(1, 2), Objet(2, 5),
           Objet(3, 7), Objet(7, 12), Objet(10, 9)]
 poids_max = 15
 
+# contient les valeurs max pour chaque poids
 solutions = [[0 for _ in range(poids_max+1)]for _ in range(len(objets))]
 
 for w in range(1, poids_max+1):

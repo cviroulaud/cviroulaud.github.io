@@ -1,0 +1,136 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Sujet bac\\correction}
+\date{\framebox{\textbf{Archi 17}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\section{Exercice 3}
+\begin{frame}
+    \frametitle{Exercice 3}
+Partie A:
+\begin{enumerate}
+    \item \textbf{\texttt{/sbin/init:}} dans le dossier \textbf{\texttt{sbin}} de l'arborescence
+    \item processus actif: 5440 (et 5450), les autres sont endormis
+    \item C'est l'application \textbf{\texttt{Bash}}. Il s'agit d'un terminal.
+    \item Il faut remonter les pères successifs:
+    \begin{itemize}
+        \item père du programme 1: 1912
+        \item père du programme 2: 2013, qui a 1912 pour père.
+    \end{itemize}
+    Le programme 1 a été exécuté en premier. On peut évoquer l'ordre de \texttt{\textbf{PID (Process IDentifier)}} également.
+    \item Non, on n'a aucune information sur le contenu des programmes.
+\end{enumerate}
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Partie B:
+    \begin{center}
+        \begin{tabular}{|*{3}{c|}}
+            \hline
+            Machine&Prochain saut&Distance\\
+            \hline
+            A&D&3\\
+            \hline
+            B&C&3\\
+            \hline
+            C&E&2\\
+            \hline
+            D&E&2\\
+            \hline
+            E&F&1\\
+            \hline
+        \end{tabular}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+Il faut calculer les coûts
+    \begin{center}
+        \begin{tabular}{|*{3}{c|}}
+            \hline
+            Machine&Prochain saut&Distance\\
+            \hline
+            A&B&4\\
+            \hline
+            B&C&3\\
+            \hline
+            C&E&2\\
+            \hline
+            D&E&11\\
+            \hline
+            E&F&1\\
+            \hline
+        \end{tabular}
+    \end{center}
+Le protocole OSPF est plus performant en terme de débit, même si on traverse davantage de routeurs (en partant de A).
+\end{frame}
+\section{Exercice 4}
+\begin{frame}
+    \frametitle{Exercice 4}
+Partie A:
+\begin{enumerate}
+    \item Il y a 3 sous-réseaux. Le switch peut être vu comme une \emph{multiprise}. Pour les transferts intra-réseau, le paquet est dirigé directement par le switch, sans passer par le routeur. 
+    \item \begin{enumerate}
+        \item IPv4: 4 octets (32 bits)
+        \item document réponse
+        \begin{center}
+            \begin{tabular}{ccccc}
+                adresse IP & 192      & 168      & 20       & 10        \\
+                adresse IP & 11000000 & 10101000 & 00010100 & 00001010 \\
+                masque     & 11111111 & 11111111 & 11111111 & 00000000 \\
+                masque &255&255&255&0\\
+                réseau     & 11000000 & 10101000 & 00010100 & 00000000 \\
+                réseau&192&168&20&0\\
+                
+            \end{tabular}
+        \end{center}
+    \end{enumerate}
+    \item réponses correctes
+    \begin{itemize}
+        \item 192.168.20.0
+        \item 192.168.20.30
+        \item 192.168.20.230
+    \end{itemize}
+\end{enumerate}
+    
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+Partie B:
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def dec_bin(nb: int) -> list:
+    binaire = [0 for _ in range(8)]
+    for i in range(7, -1, -1):
+        binaire[i] = nb % 2
+        nb = nb//2
+    return binaire
+\end{lstlisting}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def IP_bin(ip: list) -> list:
+    return [dec_bin(ip[i]) for i in range(4)]
+\end{lstlisting}
+\end{center}
+\end{frame}
+\end{document}

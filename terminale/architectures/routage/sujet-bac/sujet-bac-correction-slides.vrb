@@ -1,0 +1,9 @@
+\frametitle{}
+
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def IP_bin(ip: list) -> list:
+    return [dec_bin(ip[i]) for i in range(4)]
+\end{lstlisting}
+\end{center}

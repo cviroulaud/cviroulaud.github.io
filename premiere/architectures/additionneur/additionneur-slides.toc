@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Notations booléennes}{4}{0}{1}
+\beamer@sectionintoc {2}{Demi-additionneur}{19}{0}{2}
+\beamer@sectionintoc {3}{Additionneur}{25}{0}{3}

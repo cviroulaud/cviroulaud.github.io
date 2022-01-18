@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Évolution de l'informatique}{5}{0}{1}
+\beamer@sectionintoc {2}{Microcontrôleur}{8}{0}{2}
+\beamer@sectionintoc {3}{Système sur puce}{11}{0}{3}

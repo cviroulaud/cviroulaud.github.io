@@ -1,0 +1,13 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Contexte historique}{4}{0}{1}
+\beamer@sectionintoc {2}{Produire un signal binaire}{15}{0}{2}
+\beamer@subsectionintoc {2}{1}{Le transistor}{16}{0}{2}
+\beamer@subsectionintoc {2}{2}{Première porte logique : NOT}{19}{0}{2}
+\beamer@sectionintoc {3}{Combinaisons de transistors}{24}{0}{3}
+\beamer@subsectionintoc {3}{1}{Porte NOT OR}{25}{0}{3}
+\beamer@subsectionintoc {3}{2}{Porte NOT AND}{28}{0}{3}
+\beamer@sectionintoc {4}{Combinaisons de portes logiques}{32}{0}{4}
+\beamer@subsectionintoc {4}{1}{Porte NOT}{33}{0}{4}
+\beamer@subsectionintoc {4}{2}{Porte OR}{34}{0}{4}
+\beamer@subsectionintoc {4}{3}{Porte AND}{38}{0}{4}
+\beamer@subsectionintoc {4}{4}{Porte XOR}{42}{0}{4}

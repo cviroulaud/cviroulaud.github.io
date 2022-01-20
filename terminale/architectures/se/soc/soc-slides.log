@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 JAN 2022 17:56
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  19 JAN 2022 09:04
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/soc/soc-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/se/soc/soc-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.111 seconds
+luaotfload | main : initialization completed in 0.132 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1724,11 +1724,11 @@ warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 \tf@snm=\write10
 
 \openout10 = soc-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (./soc-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `soc-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 9FF07A81A84F0D50DA02B12E9F411610;440.
 
@@ -1740,14 +1740,14 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of LuaTeX's memory you used:
  44348 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 38102 words of node memory still in use:
-   22 hlist, 8 vlist, 5 rule, 34 disc, 2 local_par, 101 glue, 17 kern, 27 penalty, 4702 glyph, 1269 attribute, 106 glue_spec, 214 attribute_list, 3 write, 12 pdf_colorstack nodes
-   avail lists: 1:3,2:1699,3:270,4:131,5:87,6:26,7:764,8:20,9:191,10:14,11:82,12:1
+ 38109 words of node memory still in use:
+   22 hlist, 8 vlist, 5 rule, 34 disc, 2 local_par, 101 glue, 17 kern, 27 penalty, 4703 glyph, 1269 attribute, 106 glue_spec, 214 attribute_list, 3 write, 12 pdf_colorstack nodes
+   avail lists: 1:3,2:1699,3:270,4:139,5:87,6:28,7:831,8:20,9:191,10:14,11:82,12:1
  46939 multiletter control sequences out of 65536+600000
  61 fonts using 8946327 bytes
  70i,15n,95p,1181b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on soc-slides.pdf (18 pages, 10272609 bytes).
+Output written on soc-slides.pdf (18 pages, 10272619 bytes).
 
 PDF statistics: 279 PDF objects out of 1000 (max. 8388607)
  226 compressed objects within 3 object streams

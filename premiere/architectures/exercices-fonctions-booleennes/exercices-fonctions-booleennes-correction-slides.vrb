@@ -1,0 +1,18 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def xor(x: bool, y: bool) -> bool:
+    return (x and not y) or (not x and y)
+
+print(xor(False, False)) # False
+print(xor(False, True)) # True
+print(xor(True, False)) # True
+print(xor(True, True)) # False
+
+print(xor(2>1, 0==1)) # True
+\end{lstlisting}
+\captionof{code}{Fonction xor}
+\label{CODE}
+\end{center}
+

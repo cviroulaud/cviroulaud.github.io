@@ -1,0 +1,349 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices fonctions booléennes\\Correction}
+\date{\framebox{\textbf{ArchMat 07}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}
+    \frametitle{Exercice 1}
+
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            P & Q & non (P) ou Q \\
+            \hline
+            0 & 0 & 1            \\
+            \hline
+            0 & 1 & 1            \\
+            \hline
+            1 & 0 & 0            \\
+            \hline
+            1 & 1 & 1            \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}
+    \frametitle{Exercice 2}
+
+    La réponse est: non(Q) et P. Pour s'en convaincre il faut dresser les tables de vérité de chaque proposition.
+
+
+\end{frame}
+\section{Exercice 3}
+\begin{frame}
+    \frametitle{Exercice 3}
+
+    \begin{center}
+        \begin{tabular}{|*4{c|}}
+            \hline
+            A & B & C & C et (A ou B) \\
+            \hline
+            0 & 0 & 0 & 0             \\
+            \hline
+            0 & 0 & 1 & 0             \\
+            \hline
+            0 & 1 & 0 & 0             \\
+            \hline
+            0 & 1 & 1 & 1             \\
+            \hline
+            1 & 0 & 0 & 0             \\
+            \hline
+            1 & 0 & 1 & 1             \\
+            \hline
+            1 & 1 & 0 & 0             \\
+            \hline
+            1 & 1 & 1 & 1             \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+\end{frame}
+\section{Exercice 4}
+\begin{frame}
+    \frametitle{Exercice 4}
+    Il faut établir la table de vérité des deux parties de l'égalité.
+
+    \begin{itemize}
+        \item $f_1(x,y,z)=(x\land y)\lor (\lnot y \land z)$
+        \item $f_2(x,y,z)=(x \lor \lnot y)\land (y \lor z)$
+    \end{itemize}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tabular}{|*6{c|}}
+            \hline
+            x & y & z & $x\land y$ & $\lnot y \land z$ & $f_1(x,y,z)$ \\
+            \hline
+            0 & 0 & 0 & 0          & 0                 & 0            \\
+            \hline
+            0 & 0 & 1 & 0          & 1                 & 1            \\
+            \hline
+            0 & 1 & 0 & 0          & 0                 & 0            \\
+            \hline
+            0 & 1 & 1 & 0          & 0                 & 0            \\
+            \hline
+            1 & 0 & 0 & 0          & 0                 & 0            \\
+            \hline
+            1 & 0 & 1 & 0          & 1                 & 1            \\
+            \hline
+            1 & 1 & 0 & 1          & 0                 & 1            \\
+            \hline
+            1 & 1 & 1 & 1          & 0                 & 1            \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tabular}{|*6{c|}}
+            \hline
+            x & y & z & $x \lor \lnot y$ & $y \lor z$ & $f_2(x,y,z)$ \\
+            \hline
+            0 & 0 & 0 & 1                & 0          & 0            \\
+            \hline
+            0 & 0 & 1 & 1                & 1          & 1            \\
+            \hline
+            0 & 1 & 0 & 0                & 1          & 0            \\
+            \hline
+            0 & 1 & 1 & 0                & 1          & 0            \\
+            \hline
+            1 & 0 & 0 & 1                & 0          & 0            \\
+            \hline
+            1 & 0 & 1 & 1                & 1          & 1            \\
+            \hline
+            1 & 1 & 0 & 1                & 1          & 1            \\
+            \hline
+            1 & 1 & 1 & 1                & 1          & 1            \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{multicols}{2}
+        \begin{center}
+            \begin{tabular}{|*4{c|}}
+                \hline
+                x & y & z & $f_1(x,y,z)$ \\
+                \hline
+                0 & 0 & 0 & 0            \\
+                \hline
+                0 & 0 & 1 & 1            \\
+                \hline
+                0 & 1 & 0 & 0            \\
+                \hline
+                0 & 1 & 1 & 0            \\
+                \hline
+                1 & 0 & 0 & 0            \\
+                \hline
+                1 & 0 & 1 & 1            \\
+                \hline
+                1 & 1 & 0 & 1            \\
+                \hline
+                1 & 1 & 1 & 1            \\
+                \hline
+            \end{tabular}
+        \end{center}
+        \begin{center}
+            \begin{tabular}{|*4{c|}}
+                \hline
+                x & y & z & $f_2(x,y,z)$ \\
+                \hline
+                0 & 0 & 0 & 0            \\
+                \hline
+                0 & 0 & 1 & 1            \\
+                \hline
+                0 & 1 & 0 & 0            \\
+                \hline
+                0 & 1 & 1 & 0            \\
+                \hline
+                1 & 0 & 0 & 0            \\
+                \hline
+                1 & 0 & 1 & 1            \\
+                \hline
+                1 & 1 & 0 & 1            \\
+                \hline
+                1 & 1 & 1 & 1            \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \end{multicols}
+
+\end{frame}
+\section{Exercice 5}
+\begin{frame}
+    \frametitle{Exercice 5}
+
+    \begin{center}
+        \begin{tabular}{|*4{c|}}
+            \hline
+            x & y & z & $f(x,y,z)$ \\
+            \hline
+            0 & 0 & 0 & 0          \\
+            \hline
+            0 & 0 & 1 & 1          \\
+            \hline
+            0 & 1 & 0 & 1          \\
+            \hline
+            0 & 1 & 1 & 0          \\
+            \hline
+            1 & 0 & 0 & 1          \\
+            \hline
+            1 & 0 & 1 & 0          \\
+            \hline
+            1 & 1 & 0 & 0          \\
+            \hline
+            1 & 1 & 1 & 0          \\
+            \hline
+        \end{tabular}
+    \end{center}
+    Cette fonction vérifie si une et une seule variable vaut 1
+\end{frame}
+\section{Exercice 6}
+\begin{frame}
+    \frametitle{Exercice 6}
+{\Large
+    \begin{center}
+        \begin{tabular}{ccc}
+            &$r$&\\
+              & $e_0$ & $e_1$ \\
+            + & $e_2$ & $e_3$ \\
+        \end{tabular}
+    \end{center}
+}
+Le premier additionneur ajoute $e_1$ et $e_3$. L'entrée $c_0$ vaut 0. La retenue du premier additionneur est envoyée dans le second ($r$).
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tabular}{|*4{c|}|*3{c|}}
+        \hline 
+        $e_0$ & $e_1$ & $e_2$ & $e_4$ & $s_0$ & $s_1$ & $c$ \\ 
+        \hline 
+        0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+        \hline 
+        0 & 0 & 0 & 1 & 0 & 1 & 0 \\ 
+        \hline
+        0 & 0 & 1 & 0 & 1 & 0 & 0 \\ 
+        \hline
+        0 & 0 & 1 & 1 & 1 & 1 & 0 \\ 
+        \hline
+        0 & 1 & 0 & 0 & 0 & 1 & 0 \\ 
+        \hline
+        0 & 1 & 0 & 1 & 1 & 0 & 0 \\ 
+        \hline
+        0 & 1 & 1 & 0 & 1 & 1 & 0 \\ 
+        \hline
+        0 & 1 & 1 & 1 & 0 & 0 & 1 \\ 
+        \hline
+        1 & 0 & 0 & 0 & 1 & 0 & 0 \\ 
+        \hline
+        1 & 0 & 0 & 1 & 1 & 1 & 0 \\ 
+        \hline
+        1 & 0 & 1 & 0 & 0 & 0 & 1 \\ 
+        \hline
+        1 & 0 & 1 & 1 & 0 & 1 & 1 \\ 
+        \hline
+        1 & 1 & 0 & 0 & 1 & 1 & 0 \\ 
+        \hline
+        1 & 1 & 0 & 1 & 0 & 0 & 1 \\ 
+        \hline
+        1 & 1 & 1 & 0 & 0 & 1 & 1 \\ 
+        \hline
+        1 & 1 & 1 & 1 & 1 & 0 & 1 \\ 
+        \hline
+        \end{tabular}
+        \end{center}
+
+\end{frame}
+\section{Exercice 7}
+\begin{frame}[fragile]
+    \frametitle{Exercice 7}
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+if x >= 0 and x < 100:
+    print("salut")
+else:
+    print("bonjour")
+\end{lstlisting}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,0) -- (8,0);
+            \draw (2,-1) -- (2,1);
+            \draw (2,-1) -- (2.5,-1);
+            \draw (2,1) -- (2.5,1);
+            \node at(2.2,-0.2){0};
+
+            \draw (7,-1) -- (7,1);
+            \draw (7,-1) -- (7.5,-1);
+            \draw (7,1) -- (7.5,1);
+            \node at(7.4,-0.2){100};
+
+            \node at(4.5,1){salut};
+            \node at(0,1){bonjour};
+            \node at(8.5,1){bonjour};
+        \end{tikzpicture}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+if x >= 0 or y < 0:
+    print("salut")
+else:
+    print("bonjour")
+\end{lstlisting}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[->] (-3,0) -- (3,0);
+            \draw[->] (0,-3) -- (0,3);
+            \node at(3,0.3){x};
+            \node at(0.3,3){y};
+            \node at(1.5,1.5){salut};
+            \node at(1.5,-1.5){salut};
+            \node at(-1.5,-1.5){bonjour};
+            \node at(-1.5,1.5){salut};
+        \end{tikzpicture}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def xor(x: bool, y: bool) -> bool:
+    return (x and not y) or (not x and y)
+
+print(xor(False, False)) # False
+print(xor(False, True)) # True
+print(xor(True, False)) # True
+print(xor(True, True)) # False
+
+print(xor(2>1, 0==1)) # True
+\end{lstlisting}
+\captionof{code}{Fonction xor}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\end{document}

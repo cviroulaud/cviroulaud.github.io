@@ -1,0 +1,7 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Langage CSS - présentation}{4}{0}{1}
+\beamer@sectionintoc {2}{Styliser le contenu des balises}{6}{0}{2}
+\beamer@sectionintoc {3}{Nombreuses modifications}{10}{0}{3}
+\beamer@sectionintoc {4}{Cibler des blocs précis}{12}{0}{4}
+\beamer@sectionintoc {5}{Paramétrer une image}{15}{0}{5}
+\beamer@sectionintoc {6}{Mise en application}{17}{0}{6}

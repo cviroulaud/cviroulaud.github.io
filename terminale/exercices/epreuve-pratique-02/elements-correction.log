@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  22 JAN 2022 15:13
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  22 JAN 2022 16:12
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/exercices/epreuve-pratique-02/elements-correction
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/exercices/epreuve-pratique-02/elements-correction.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.132 seconds
+luaotfload | main : initialization completed in 0.152 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1453,14 +1453,14 @@ Package rerunfilecheck Info: File `elements-correction.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  41325 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 8175 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 951 glyph, 314 attribute, 99 glue_spec, 54 attribute_list, 1 write nodes
-   avail lists: 1:4,2:1425,3:130,4:39,5:122,6:28,7:1539,8:30,9:147,10:2,11:103
+ 8623 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 16 glue, 4 kern, 1 penalty, 1011 glyph, 320 attribute, 99 glue_spec, 55 attribute_list, 1 write nodes
+   avail lists: 1:4,2:1481,3:132,4:39,5:132,6:28,7:1618,8:31,9:149,10:2,11:109
  44293 multiletter control sequences out of 65536+600000
  51 fonts using 7626599 bytes
  84i,17n,95p,1199b,482s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on elements-correction.pdf (1 page, 23067 bytes).
+Output written on elements-correction.pdf (1 page, 23742 bytes).
 
 PDF statistics: 80 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream

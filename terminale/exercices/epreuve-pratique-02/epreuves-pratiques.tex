@@ -48,7 +48,46 @@
     \end{center}
     \begin{enumerate}
         \item Construire le dictionnaire \textbf{\texttt{arbre}} représentant l'arbre binaire ci-dessus.
-        \item Écrire la fonction récursive \textbf{\texttt{taille(arbre: dict) $\rightarrow$ int}} qui renvoie la taille de l'\texttt{\textbf{arbre}}. 
+        \item Écrire la fonction récursive \textbf{\texttt{taille(arbre: dict, lettre: str) $\rightarrow$ int}} qui renvoie la taille de l'\texttt{\textbf{arbre}}. 
+        \item Écrire à nouveau la fonction récursive \textbf{\texttt{taille(arbre: dict, lettre: str) $\rightarrow$ int}} en prenant en compte les 4 cas suivants: \begin{itemize}
+            \item les deux fils du nœud sont '', 
+            \item le fils gauche seulement est '', 
+            \item le fils droit seulement est '', 
+            \item aucun des deux fils n’est ''.
+        \end{itemize}
     \end{enumerate}
+\end{exo}
+\begin{exo}
+    \begin{enumerate}
+        \item Écrire la fonction \texttt{\textbf{fusion}} prenant en paramètres deux tableaux non vides \texttt{\textbf{tab1}} et \texttt{\textbf{tab2}} d'entiers, chacun dans l’ordre croissant, renvoyant un tableau trié dans l’ordre croissant de l’ensemble des valeurs de \texttt{\textbf{tab1}} et \texttt{\textbf{tab2}}.
+        \item Établir un jeu de tests permettant de vérifier la correction de la fonction.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    On définit une classe gérant une adresse IPv4. On rappelle qu’une adresse IPv4 est une adresse de longueur 4 octets, notée en décimale à point, en séparant chacun des octets par un point. On considère un réseau privé avec une plage d’adresses IP de 192.168.0.0 à 192.168.0.255.
+    On considère que les adresses IP saisies sont valides.
+    Les adresses IP 192.168.0.0 et 192.168.0.255 sont des adresses réservées.
+    \begin{enumerate}
+        \item Compléter le code de la classe \texttt{\textbf{Adresse}} dans le fichier \texttt{\textbf{adresseip.py}}
+        \item Créer plusieurs instances de la classe qui permettent de vérifier la correction des différentes méthodes.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    Les chiffres romains sont un système ancien d’écriture des nombres. Les chiffres romains sont: I, V, X, L, C, D, et M.
+    Ces symboles représentent respectivement 1, 5, 10, 50, 100, 500, et 1000 en base dix.\\
+    Lorsque deux caractères successifs sont tels que:
+    \begin{itemize}
+        \item  le caractère placé à gauche possède une
+        valeur supérieure ou égale à celui de droite, le nombre s’obtient en additionnant le caractère de
+        gauche à la valeur de la chaîne située à droite.
+        Ainsi, "XVI" est le nombre 16 car X + VI = 10 + 6.
+        \item  le caractère placé à gauche possède une
+        valeur strictement inférieure à celui de droite, le nombre s’obtient en retranchant le caractère de
+        gauche à la valeur de la chaîne située à droite.
+        Ainsi, "CDIII" est le nombre 403 car DIII – C = 503 – 100.
+    \end{itemize}
+    On dispose d’un dictionnaire \texttt{\textbf{dico}}, à compléter, où les clés sont les caractères apparaissant dans l’écriture en chiffres romains et où les valeurs sont les nombres entiers associés en
+    écriture décimale.\\
+    Compléter la fonction récursive \texttt{\textbf{rom\_to\_dec(nombre: str) $\rightarrow$ int}} du fichier \textbf{\texttt{romain.py}}, qui renvoie l'écriture décimale du paramètre \textbf{\texttt{nombre}} écrit en chiffres romains
 \end{exo}
 \end{document}

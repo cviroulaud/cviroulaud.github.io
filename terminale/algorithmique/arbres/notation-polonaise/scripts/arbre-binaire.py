@@ -30,7 +30,8 @@ def hauteur(a: Noeud) -> int:
     hauteur max de l'arbre a
     """
     if a is None:
-        return 0
+        # on compte les arcs et pas les nœuds
+        return -1
     else:
         return 1 + max(hauteur(a.gauche), hauteur(a.droite))
 

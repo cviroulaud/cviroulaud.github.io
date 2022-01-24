@@ -23,8 +23,26 @@ def taille(arbre: dict, lettre: str) -> int:
     else:
         return 1 + taille(arbre, arbre[lettre][0]) + taille(arbre, arbre[lettre][1])
 
+def hauteur(arbre: dict, lettre: str) -> int:
+    """
+    hauteur de l'arbre
+
+    Args:
+        arbre (dict): arbre sous forme d'un dictionnaire
+        lettre (str): racine
+
+    Returns:
+        int: hauteur de l'arbre
+    """
+    if lettre == "":
+        return -1
+    else:
+        return 1 + max(hauteur(arbre, arbre[lettre][0]), hauteur(arbre, arbre[lettre][1]))
+
 
 a = {'F': ['B', 'G'], 'B': ['A', 'D'], 'A': ['', ''], 'D': ['C', 'E'],
      'C': ['', ''], 'E': ['', ''], 'G': ['', 'I'], 'I': ['', 'H'],
      'H': ['', '']}
 print(taille(a, 'F'))  # 9
+print(hauteur(a, 'F'))  # 9
+

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  20 JAN 2022 15:44
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  24 JAN 2022 09:36
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/notation-polonaise/notation-polonaise-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/arbres/notation-polonaise/notation-polonaise-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.130 seconds
+luaotfload | main : initialization completed in 0.133 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1963,12 +1963,12 @@ Package mdframed Info: mdframed inside a box
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 686.
+(mdframed)              on input line 687.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 686.
+(mdframed)              on input line 687.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 686.
+ mdframed uses option nobreak mdframed on input line 687.
  [41
 
 ]
@@ -1981,11 +1981,11 @@ Package mdframed Info: mdframed inside a box
 \tf@snm=\write10
 
 \openout10 = notation-polonaise-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 687.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 687.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 688.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 688.
  (./notation-polonaise-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 687.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 687.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 688.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 688.
 Package rerunfilecheck Info: File `notation-polonaise-slides.out' has not changed.
 (rerunfilecheck)             Checksum: 7B137342B23005CE7D62033CA6CF93EF;1212.
 
@@ -1996,15 +1996,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  45094 strings out of 494383
- 381610,1144653 words of node,token memory allocated
- 132104 words of node memory still in use:
-   51 hlist, 8 vlist, 8 rule, 9 disc, 4 local_par, 153 glue, 8 kern, 22 penalty, 14772 glyph, 11061 attribute, 106 glue_spec, 1846 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
+ 381607,1144653 words of node,token memory allocated
+ 132461 words of node memory still in use:
+   51 hlist, 8 vlist, 8 rule, 9 disc, 4 local_par, 153 glue, 8 kern, 22 penalty, 14803 glyph, 11121 attribute, 106 glue_spec, 1856 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
    avail lists: 1:7,2:8044,3:891,4:5929,5:4828,6:64,7:3076,8:4361,9:7814,10:34,11:446,12:1
  47470 multiletter control sequences out of 65536+600000
  92 fonts using 11758335 bytes
  70i,15n,95p,1215b,1089s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on notation-polonaise-slides.pdf (41 pages, 148290 bytes).
+Output written on notation-polonaise-slides.pdf (41 pages, 148523 bytes).
 
 PDF statistics: 808 PDF objects out of 1000 (max. 8388607)
  715 compressed objects within 8 object streams

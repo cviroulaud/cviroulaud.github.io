@@ -1,0 +1,57 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{DonRep 15}}}}
+\fancyhead[C]{\textbf{Exercices encodage}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+    Voici un message codé en ASCII:
+    \begin{center}
+        56 49 56 45 20 4C 45 53 20 56 41 43 41 4E 43 45 53 0A
+    \end{center}
+    \begin{enumerate}
+        \item Les caractères sont-ils notés en décimal ou hexadécimal?
+        \item Convertir le caractère $20_{hex}$ en binaire.
+        \item Le convertir en décimal.
+        \item En s'aidant d'une table ASCII, décoder le message.
+        \item Pour quel raison ne peut-on pas encoder le mot \textbf{éléphant} en ASCII?
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    \begin{enumerate}
+        \item Le caractère @ a le point de code \textbf{U+0040}. Convertir le point de code en binaire.
+        \item Combien d'octets sont nécessaires pour encoder ce caractère en UTF8?
+        \item Mêmes questions pour le caractère Ê.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+\begin{enumerate}
+    \item Rappeler et appliquer le principe de conversion d'un entier décimal en binaire.
+    \item Convertir 42 en binaire.
+    \item Écrire la fonction \textbf{\texttt{deci\_bin(entier: int) $\rightarrow$ str}} qui convertit l'\textbf{\texttt{entier}} décimal en binaire. La représentation binaire sera renvoyée sous forme d'une chaîne de caractère. Par exemple:
+    \begin{lstlisting}[language=Python  , xleftmargin=2em, xrightmargin=2em]
+>>> deci_bin(11)
+'1011'
+\end{lstlisting}
+    \item Donner le point de code \underline{en décimal} des lettres du mot \textbf{SALUT}. Pour rappel, la norme UTF-8 est compatible avec le code ASCII.
+    \item La fonction native Python \textbf{\texttt{chr(n: int) $\rightarrow$ str}} renvoie le caractère correspondant au point de code \textnormal{\texttt{n}}. Le point de code est ici représenté en écriture décimal. Par exemple, la lettre \textbf{é} est représenté par le point de code hexadécimal \textbf{\texttt{U+00E9}} équivalent à la valeur \textbf{\texttt{233}} décimale. Écrire la fonction \textbf{\texttt{decoder(code\_car: list) $\rightarrow$ str}} qui renvoie le mot correspondant aux points de code décimaux stockés dans le tableau \textbf{\texttt{code\_car}}.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+    \begin{enumerate}
+        \item Trouver le rôle des fonctions natives Python \textbf{ord} et \textbf{hex}.
+        \item Écrire la fonction \texttt{\textbf{utf8(car: str)$\;\rightarrow\;$str}} qui renvoie le point de code hexadécimal du caractère \textbf{\texttt{car}}.
+        \item Écrire la fonction \textbf{\texttt{encoder\_hexa(phrase: str) $\rightarrow$ list}} qui renvoie le tableau des points de code hexadécimaux de chaque lettre de \textbf{\texttt{phrase}}.
+    \end{enumerate}
+\end{exo}
+\end{document}

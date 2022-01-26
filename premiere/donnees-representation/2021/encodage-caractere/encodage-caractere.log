@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 MAY 2021 11:04
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  26 JAN 2022 11:49
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/encodage-caractere/encodage-caractere
-(/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/encodage-caractere/encodage-caractere.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/2021/encodage-caractere/encodage-caractere
+(/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/2021/encodage-caractere/encodage-caractere.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.106 seconds
+luaotfload | main : initialization completed in 0.170 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1443,6 +1443,8 @@ Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on 
 [1
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 92.
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
 Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 97.
@@ -1458,19 +1460,19 @@ Package rerunfilecheck Info: File `encodage-caractere.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41368 strings out of 494383
+ 41374 strings out of 494383
  100000,1144653 words of node,token memory allocated
  25201 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 31 glue, 4 kern, 1 penalty, 3281 glyph, 572 attribute, 98 glue_spec, 97 attribute_list, 1 write nodes
-   avail lists: 1:3,2:1418,3:170,4:49,5:209,6:31,7:2032,8:69,9:170,10:6,11:213
- 44305 multiletter control sequences out of 65536+600000
- 54 fonts using 7966911 bytes
- 84i,17n,95p,1209b,576s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on encodage-caractere.pdf (2 pages, 45526 bytes).
+   avail lists: 1:3,2:1453,3:170,4:49,5:209,6:31,7:2032,8:69,9:170,10:6,11:213
+ 44308 multiletter control sequences out of 65536+600000
+ 56 fonts using 8219447 bytes
+ 84i,17n,95p,1214b,576s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on encodage-caractere.pdf (2 pages, 47216 bytes).
 
-PDF statistics: 119 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+PDF statistics: 126 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  24 named destinations out of 1000 (max. 131072)
  114 words of extra memory for PDF output out of 10000 (max. 100000000)
 

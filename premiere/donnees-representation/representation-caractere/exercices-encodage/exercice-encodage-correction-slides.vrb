@@ -1,0 +1,23 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def encoder_hexa2(phrase: str) -> list:
+    # crée un tableau à la bonne dimension
+    codes = ["" for _ in range(len(phrase))]
+
+    for i in range(len(phrase)):
+        codes[i] = utf8(phrase[i])
+    return codes
+\end{lstlisting}
+\captionof{code}{Seconde version}
+\end{center}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> encoder_hexa2("éléphant")
+['0xe9', '0x6c', '0xe9', '0x70', '0x68', '0x61', '0x6e', '0x74']
+\end{lstlisting}
+\captionof{code}{Appel de la fonction}
+\label{CODE}
+\end{center}
+

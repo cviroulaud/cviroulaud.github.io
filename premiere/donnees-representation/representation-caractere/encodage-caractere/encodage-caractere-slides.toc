@@ -1,0 +1,6 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Première tentative de normalisation: ASCII}{5}{0}{1}
+\beamer@sectionintoc {2}{Prise en compte des différents langages: ISO 8859}{15}{0}{2}
+\beamer@sectionintoc {3}{Encodage universel}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Nouvelle norme}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{Représentation en mémoire}{24}{0}{3}

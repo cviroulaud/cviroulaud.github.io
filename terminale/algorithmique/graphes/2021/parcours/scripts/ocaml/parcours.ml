@@ -60,6 +60,8 @@ parcours_dfs2 mat;;
 (*FIN FAUX*)
 
 (*test construction tableaux*)
+print_newline();;
+
 let tab2 =
   let t = Array.make 3 [||] in
   for i = 0 to 2 do 
@@ -71,14 +73,22 @@ for i=0 to 2 do
   for j=0 to 3 do
     print_int tab2.(i).(j)
   done;
+  print_newline();
 done;;
+print_newline();;
+
 tab2.(0).(2)<-3;;
 for i=0 to 2 do
   for j=0 to 3 do
     print_int tab2.(i).(j)
   done;
+  print_newline();
 done;;
 print_newline();;
+
+print_string "faux: ";;
+print_newline();;
+
 (*FAUX: chaque ligne faire référence au même tableau!!*)
 let tab3 = Array.make 3 (Array.make 4 0);;
 tab3.(2).(0)<-1;;

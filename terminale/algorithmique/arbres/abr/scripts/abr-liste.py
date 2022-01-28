@@ -27,12 +27,13 @@ def rechercher(val: int, abr: list, i_pere: int) -> bool:
     elif abr[i_pere] == val:
         return True
     elif val < abr[i_pere]:
-        rechercher(val, abr, 2*i_pere+1)
+        return rechercher(val, abr, 2*i_pere+1)
     else:
-        rechercher(val, abr, 2*i_pere+2)
+        return rechercher(val, abr, 2*i_pere+2)
 
 
 abr = [0 for _ in range(100)]
 for _ in range(15):
     inserer(randint(1, 1000), abr, 0)
 print(abr)
+print(rechercher(23, abr, 0))

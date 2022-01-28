@@ -8,9 +8,9 @@ def rechercher(val: int, abr: list, i_pere: int) -> bool:
     elif abr[i_pere] == val: # trouvé
         return True
     elif val < abr[i_pere]: # gauche
-        rechercher(val, abr, 2*i_pere+1)
+        return rechercher(val, abr, 2*i_pere+1)
     else: # droit
-        rechercher(val, abr, 2*i_pere+2)
+        return rechercher(val, abr, 2*i_pere+2)
 \end{lstlisting}
     \end{center}
 

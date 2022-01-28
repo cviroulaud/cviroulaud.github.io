@@ -1,0 +1,46 @@
+#DODO commencer cours sur le variables avec ça
+
+
+Mieux vaut, pour se faire une meilleure idée, éviter de dire qu'une variable contient quelque chose. Une variable désigne quelque chose. Si une boîte figure les emplacements de mémoire à mobiliser pour y inscrire un truc, la variable ne sera pas la boîte, ce sera juste l'étiquette que tu colleras / attacheras à la boîte.  Il peut y avoir plusieurs étiquettes attachées à une seule et même boîte (a=1 ; b=1 ; id(a)==id(b) --> True, idem avec c="s" ; d="s" ; id(c)==id(d)).
+
+Lorsque tu ré-affectes une variable, tu réserves une nouvelle zone mémoire (donc tu utilises une nouvelle boîte), puis tu décolles l'étiquette de la boîte qu'elle désignait à l'origine et tu la recolles sur la nouvelle boîte :
+
+>>> e=(1,2)
+>>> id(e)
+140346057236992
+>>> e=e+e
+>>> id(e)
+140346057188512
+
+Les identifiants sont différents.
+
+>>> f=e=(1,2)
+>>> id(e)
+140346057229120
+>>> e=e+e
+>>> id(e)
+140346057188512
+>>> id(f)
+140346057229120
+
+Les identifiants diffèrent entre les deux affectations de e, celui de f ne change pas et reste identique à celui qui correspondait à la 1ère affectation de e. Note : une boîte qui n'a plus d'étiquette est libérée par le ramasse-miettes de Python (la zone de mémoire est de nouveau disponible pour participer à une nouvelle boîte).
+
+******************************
+
+https://gitlab.com/lyceeND/1ere/-/blob/master/2019_20/3_Langage_Progammation_1/01-Hello_World.md
+
+******************************
+
+Il faut distinguer la question de la mutabilité, (en gros, un objet est mutable s'il dispose de méthodes permettant de modifier sa valeur en mémoire),
+et le processus d'affectation.
+ 
+Il y a au moins deux visions très différentes sur l'affectation. Avec certains langages, si on écrit
+x = 3
+x = x + 1
+C'est la valeur enregistrée en mémoire qui est modifiée. Le nom x n'a pas d'importance, à l'exécution
+il peut être remplacé par l'adresse où se trouve la valeur. (D'où l'idée de case avec une étiquette x collée dessus,
+ le contenu de la case pouvant être modifié).
+En Python c'est complétement différent, la case où est enregistrée 3 ne sera jamais modifiée, elle sera vidée et disponible
+si le programme ne s'en sert plus. une nouvelle case est utilisée, contenant 4 et l'étiquette doit être décollée et recollée sur
+la bonne case. Le nom est capital, il peut être lié à différentes cases au cours de l'exécution d'un programme et c'est lui qui
+donne accès à chacune de ces cases.

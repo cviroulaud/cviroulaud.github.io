@@ -1,57 +1,58 @@
 \documentclass[svgnames,11pt]{beamer}
-\setbeamercolor{structure}{fg=SlateGray}
-\usetheme{Goettingen}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
-\usepackage{pgfpages}
-\setbeameroption{show notes on second screen=left}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
-\title{Applications Android}
-\date{}
+\title{Applications Android\\
+Données en table}
+\date{\framebox{\textbf{Tab 01}}}
 %\logo{}
-%\institute{Seconde SNT}
-\institute{Première NSI}
-%\institute{Terminale NSI}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
+\institute{Première - NSI}
 
 \begin{document}
+
 \begin{frame}
     \titlepage
-    \note{\fcolorbox{black}{red}{{\LARGE mettre googleplaystore.zip sur site}}
+    \note{\fcolorbox{black}{red}{{\LARGE googleplaystore.zip sur site}}
 
         googleplaystore.csv, specifications-app.csv, notes.csv}
 \end{frame}
 
-\section{Problématique}
 \begin{frame}
-    \frametitle{Un moteur de recherche pour aider l'utilisateur à faire son choix.}
     \begin{center}
         \centering
         \includegraphics[width=8cm]{ressources/playstore.png}
         \captionof{figure}{Magasin d'applications}
         \label{IMG}
     \end{center}
-
+\begin{center}
+    Chaque carte contient plusieurs informations:
+    \begin{itemize}
+        \item nom
+        \item description
+        \item note
+        \item image
+        \item \dots
+    \end{itemize}
+\end{center}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Jeu de données}
     \begin{center}
         \centering
         \includegraphics[width=8cm]{ressources/jeu-donnees.png}
-        \captionof{figure}{Données dans un fichier texte}
+        \captionof{figure}{Données stockées dans un fichier texte}
         \label{IMG}
     \end{center}
-    \note{dataset}
-    \begin{center}
-        \framebox{Comment manipuler un jeu de données?}
-    \end{center}
+    \begin{framed}
+        \centering Comment manipuler un jeu de données par programmation?
+    \end{framed}
 
 \end{frame}
 \section{Données en table}
 \subsection{Présentation}
 \begin{frame}
-    \frametitle{Vocabulaire des bases de données}
+    \frametitle{Données en table - présentation}
 
     \note{terme BDD: entité, table (ou relation), attributs}
     \begin{center}

@@ -1,0 +1,21 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+def degres_entrants(liste: list, s: int) -> int:
+    deg = 0
+    for liste_successeurs in liste:
+        for successeurs in liste_successeurs:
+            if successeurs == s:
+                deg = deg+1
+    return deg
+\end{lstlisting}
+\end{center}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> degres_entrants(suivants, 4)
+1
+\end{lstlisting}
+\captionof{code}{Appel}
+\label{CODE}
+\end{center}

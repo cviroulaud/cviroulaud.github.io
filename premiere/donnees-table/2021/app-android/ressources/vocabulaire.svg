@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg901"
+   width="1052"
+   height="440"
+   viewBox="0 0 1052 440"
+   sodipodi:docname="vocabulaire.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata907">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs905">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1229"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1227"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1217"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1215"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1211"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1209"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1207"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1205"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path920"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path917"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3200"
+     inkscape:window-height="1671"
+     id="namedview903"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="87.416253"
+     inkscape:cy="618.42184"
+     inkscape:window-x="0"
+     inkscape:window-y="55"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg901" />
+  <image
+     sodipodi:absref="/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-table/app-android/ressources/vocabulaire.png"
+     xlink:href="vocabulaire.png"
+     inkscape:export-ydpi="95"
+     inkscape:export-xdpi="95"
+     y="0"
+     x="0"
+     id="image909"
+     preserveAspectRatio="none"
+     height="440"
+     width="1052" />
+  <text
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:17.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="262"
+     y="-228"
+     id="text913"><tspan
+       sodipodi:role="line"
+       id="tspan911"
+       x="262"
+       y="-228"
+       style="font-size:133.33333333px">attributs</tspan></text>
+  <path
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95"
+     style="fill:none;stroke:#000000;stroke-width:1.88976378;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+     d="M 512,-196 306,10"
+     id="path915"
+     inkscape:connector-curvature="0" />
+  <path
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95"
+     style="fill:none;stroke:#000000;stroke-width:1.88976378;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker1211)"
+     d="M 512,-196 566,6"
+     id="path1183"
+     inkscape:connector-curvature="0" />
+  <path
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95"
+     style="fill:none;stroke:#000000;stroke-width:1.88976378;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker1217)"
+     d="M 512,-196 864.08449,8.6648631"
+     id="path1213"
+     inkscape:connector-curvature="0" />
+  <rect
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95"
+     style="opacity:1;fill:#00ffff;fill-opacity:0.26666668;stroke:#000000;stroke-width:1.87255251;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect1219"
+     width="1038.816"
+     height="92"
+     x="1.1840117"
+     y="176" />
+  <text
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:17.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="-590"
+     y="276"
+     id="text1223"><tspan
+       sodipodi:role="line"
+       id="tspan1221"
+       x="-590"
+       y="276"
+       style="font-size:133.33332825px">entité</tspan></text>
+  <path
+     inkscape:export-xdpi="95"
+     inkscape:export-ydpi="95"
+     style="fill:none;stroke:#000000;stroke-width:1.88976378;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker1229)"
+     d="M -188,236 -10,224"
+     id="path1225"
+     inkscape:connector-curvature="0" />
+</svg>

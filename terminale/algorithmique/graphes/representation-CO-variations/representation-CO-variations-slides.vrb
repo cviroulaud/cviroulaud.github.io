@@ -1,0 +1,16 @@
+\frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+{"A": [("B", 5)],
+ "B": [("A", 5)],
+ "C": [("A", 4), ("D", 3), ("E", 5)],
+ "D": [("C", 3), ("F", 2)],
+ "E": [("C", 5)],
+ "F": [("A", 6), ("D", 2)]
+}
+\end{lstlisting}
+        \end{center}
+\begin{aretenir}[Remarque]
+Cette solution n'est pas unique.
+\end{aretenir}

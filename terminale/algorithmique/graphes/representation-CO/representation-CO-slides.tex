@@ -164,7 +164,7 @@
     \frametitle{}
 
     \begin{aretenir}[]
-        Un graphe est \textbf{complet} si tous ses sommets sont adjacents.
+        Un graphe est \textbf{complet} si tous les sommets sont adjacents à tous les autres.
     \end{aretenir}
 
     \begin{center}
@@ -515,7 +515,8 @@ def mat_to_dic(mat: list) -> dict:
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 def dic_to_mat(dic: dict) -> list:
     # taille de la matrice connue
-    mat = [[0 for _ in range(len(dic))] for _ in range(len(dic))]
+    mat = [ [0 for _ in range(len(dic))] 
+                for _ in range(len(dic)) ]
     for noeud, adjacents in dic.items():
         # indice de la ligne
         ind_noeud = ord(noeud)-65
@@ -527,6 +528,46 @@ def dic_to_mat(dic: dict) -> list:
     return mat
 \end{lstlisting}
 \end{center}
+
+\end{frame}
+\subsection{Représentation de la carte de CO}
+\begin{frame}[fragile]
+    \frametitle{Représentation de la carte de CO}
+
+    \begin{activite}
+        L'organisme qui maintient les cartes à jour stocke les informations dans un fichier \textbf{\texttt{json}}. 
+        \begin{enumerate}
+            \item Télécharger le dossier compressé \textbf{\texttt{representation-co.zip}} et extraire le fichier \textbf{\texttt{parcours\_noir.json}}
+            \item Ouvrir le fichier et observer la structure des données.
+            \item Créer le fichier \textbf{\texttt{parcours\_noir.py}}
+            \item Importer les données \emph{json}.
+            \item Créer le dictionnaire d'adjacence associé à la carte de CO de la forme
+            \begin{center}
+            \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+{7: [17, 19, 45], 10: [18, 21, 43], 12: [26, 32],...}
+\end{lstlisting}
+            \end{center}
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+import json
+
+f = open("parcours_noir.json")
+donnees = json.load(f)  # tableau de dictionnaires
+dico_adj = {}
+for info in donnees:
+    sommet = info["sommet"]
+    adjacents = info["adjacents"]
+    dico_adj[sommet] = adjacents
+f.close()
+\end{lstlisting}
+\end{center}    
 
 \end{frame}
 \end{document}

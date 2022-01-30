@@ -1,13 +1,12 @@
 \babel@toc {french}{}
-\beamer@sectionintoc {1}{Problématique}{2}{0}{1}
-\beamer@sectionintoc {2}{Données en table}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{Présentation}{4}{0}{2}
-\beamer@subsectionintoc {2}{2}{Lire un fichier \emph {csv}}{9}{0}{2}
-\beamer@sectionintoc {3}{Manipuler les données}{21}{0}{3}
-\beamer@subsectionintoc {3}{1}{Valider les données}{21}{0}{3}
-\beamer@subsectionintoc {3}{2}{Rechercher des données}{26}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{1}{Sélectionner}{27}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{2}{Agréger}{32}{0}{3}
-\beamer@subsectionintoc {3}{3}{Trier des données}{35}{0}{3}
-\beamer@subsubsectionintoc {3}{3}{1}{Tri natif}{36}{0}{3}
-\beamer@subsubsectionintoc {3}{3}{2}{Clé de tri}{37}{0}{3}
+\beamer@sectionintoc {1}{Données en table}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Présentation}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Lire un fichier \emph {csv}}{10}{0}{1}
+\beamer@sectionintoc {2}{Manipuler les données}{23}{0}{2}
+\beamer@subsectionintoc {2}{1}{Valider les données}{24}{0}{2}
+\beamer@subsectionintoc {2}{2}{Rechercher des données}{29}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Sélectionner}{31}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Agréger}{36}{0}{2}
+\beamer@subsectionintoc {2}{3}{Trier des données}{39}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{1}{Tri natif}{41}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{2}{Clé de tri}{42}{0}{2}

@@ -1,0 +1,12 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Problématique}{2}{0}{1}
+\beamer@sectionintoc {2}{Informations disponibles}{4}{0}{2}
+\beamer@sectionintoc {3}{Interface graphique}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Bibliothèque tkinter}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Ajouter un composant}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{Construire par bloc}{18}{0}{3}
+\beamer@subsectionintoc {3}{4}{Remplissage des labels}{21}{0}{3}
+\beamer@subsectionintoc {3}{5}{Gestion des images}{24}{0}{3}
+\beamer@sectionintoc {4}{Interaction entre les composants}{26}{0}{4}
+\beamer@subsectionintoc {4}{1}{Liste de choix: \textbf {\texttt {Combobox}}}{27}{0}{4}
+\beamer@subsectionintoc {4}{2}{Choisir un Pokémon: un événement}{30}{0}{4}

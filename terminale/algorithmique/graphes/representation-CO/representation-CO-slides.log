@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  27 JAN 2022 00:02
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 JAN 2022 23:05
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/representation-CO/representation-CO-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/representation-CO/representation-CO-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.144 seconds
+luaotfload | main : initialization completed in 0.178 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1578,7 +1578,7 @@ Package newfloat Info: float type `listing'=16 on input line 11.
 (./representation-CO-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<ressources/co-noir.png, id=70, 452.4102pt x 516.0078pt>
+<ressources/co-noir.png, id=76, 452.4102pt x 516.0078pt>
 File: ressources/co-noir.png Graphic file (type png)
 <use ressources/co-noir.png>
 Package luatex.def Info: ressources/co-noir.png  used on input line 26.
@@ -1787,6 +1787,28 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [28
 
+] (./representation-CO-slides.toc) [29
+
+]
+\openout4 = representation-CO-slides.vrb
+ (./representation-CO-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+Overfull \vbox (17.33899pt too high) detected at line 553
+ []
+
+[30
+
+]
+\openout4 = representation-CO-slides.vrb
+ (./representation-CO-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [31
+
 ]
 \tf@nav=\write8
 
@@ -1797,13 +1819,13 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = representation-CO-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 532.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 532.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 573.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 573.
  (./representation-CO-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 532.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 532.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 573.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 573.
 Package rerunfilecheck Info: File `representation-CO-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 4F5812F845E05AD8476A818FB8DDEC15;1115.
+(rerunfilecheck)             Checksum: E9A460DE10BA543E476E4490C44D43E7;1351.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1811,19 +1833,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44896 strings out of 494383
- 305297,1144653 words of node,token memory allocated
- 176358 words of node memory still in use:
-   3561 hlist, 9 vlist, 1988 rule, 211 disc, 17 local_par, 1561 glue, 2200 kern, 31 penalty, 9338 glyph, 11493 attribute, 106 glue_spec, 1918 attribute_list, 3 write, 2772 pdf_colorstack nodes
-   avail lists: 1:7,2:1083,3:1335,4:2931,5:2359,6:43,7:2255,8:2107,9:3867,10:28,11:255,12:1
- 47427 multiletter control sequences out of 65536+600000
+ 44945 strings out of 494383
+ 305317,1144653 words of node,token memory allocated
+ 143210 words of node memory still in use:
+   1672 hlist, 9 vlist, 926 rule, 93 disc, 15 local_par, 760 glue, 1017 kern, 28 penalty, 11522 glyph, 9723 attribute, 106 glue_spec, 1623 attribute_list, 3 write, 1280 pdf_colorstack nodes
+   avail lists: 1:5,2:3995,3:1334,4:4821,5:3809,6:47,7:2184,8:3404,9:6180,10:31,11:401,12:1
+ 47444 multiletter control sequences out of 65536+600000
  64 fonts using 9324943 bytes
  70i,15n,95p,1214b,1073s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on representation-CO-slides.pdf (28 pages, 585961 bytes).
+Output written on representation-CO-slides.pdf (31 pages, 594842 bytes).
 
-PDF statistics: 564 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 65 named destinations out of 1000 (max. 131072)
- 82 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 652 PDF objects out of 1000 (max. 8388607)
+ 571 compressed objects within 6 object streams
+ 72 named destinations out of 1000 (max. 131072)
+ 90 words of extra memory for PDF output out of 10000 (max. 100000000)
 

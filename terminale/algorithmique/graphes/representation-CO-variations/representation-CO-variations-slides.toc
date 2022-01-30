@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Graphe orienté}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{Définition}{6}{0}{1}
+\beamer@subsectionintoc {1}{2}{Degré d'un sommet}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Représentation en mémoire}{12}{0}{1}
+\beamer@sectionintoc {2}{Graphe pondéré}{17}{0}{2}
+\beamer@subsectionintoc {2}{1}{Définition}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Représentation en mémoire}{19}{0}{2}

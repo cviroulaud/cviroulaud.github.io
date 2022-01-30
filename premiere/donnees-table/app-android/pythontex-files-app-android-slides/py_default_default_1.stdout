@@ -1,8 +1,0 @@
-OrderedDict([('nom', 'Turing'), ('prenom', 'Alan'), ('moyennes', '19')])
-
-OrderedDict([('nom', 'Von Neuman'), ('prenom', 'John'), ('moyennes', '18')])
-
-OrderedDict([('nom', 'Dijkstra'), ('prenom', 'Edsger'), ('moyennes', '17.5')])
-
-OrderedDict([('nom', 'Church'), ('prenom', 'Alonso'), ('moyennes', '19')])
-

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 JAN 2022 14:53
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  30 JAN 2022 18:11
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-table/app-android/app-android-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-table/app-android/app-android-slides.tex
@@ -1355,7 +1355,7 @@ LaTeX Warning: Label `IMG' multiply defined.
 LaTeX Warning: Label `IMG' multiply defined.
 
 
-LaTeX Warning: Label `iterer' multiply defined.
+LaTeX Warning: Label `ouvrir' multiply defined.
 
 
 LaTeX Warning: Label `CODE' multiply defined.
@@ -1609,12 +1609,12 @@ Package newfloat Info: New float `listing' with options `fileext=lopytx' on inpu
 \c@listing=\count439
 Package newfloat Info: float type `listing'=16 on input line 12.
 (./app-android-slides.nav)
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 19.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <4> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 19.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<ressources/playstore.png, id=79, 2848.6425pt x 792.9625pt>
+<ressources/playstore.png, id=75, 2848.6425pt x 792.9625pt>
 File: ressources/playstore.png Graphic file (type png)
 <use ressources/playstore.png>
 Package luatex.def Info: ressources/playstore.png  used on input line 38.
@@ -1643,7 +1643,7 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
  [2
 
 <./ressources/playstore.png>]
-<ressources/jeu-donnees.png, id=102, 1575.8875pt x 891.33pt>
+<ressources/jeu-donnees.png, id=96, 1575.8875pt x 891.33pt>
 File: ressources/jeu-donnees.png Graphic file (type png)
 <use ressources/jeu-donnees.png>
 Package luatex.def Info: ressources/jeu-donnees.png  used on input line 51.
@@ -1652,56 +1652,92 @@ Package luatex.def Info: ressources/jeu-donnees.png  used on input line 51.
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 [3
 
-<./ressources/jeu-donnees.png>] (./app-android-slides.toc) [4
+<./ressources/jeu-donnees.png>] (./app-android-slides.toc
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 5.
+) [4
 
 ]
-<ressources/vocabulaire-legende.png, id=144, 1230.87221pt x 578.92073pt>
-File: ressources/vocabulaire-legende.png Graphic file (type png)
-<use ressources/vocabulaire-legende.png>
-Package luatex.def Info: ressources/vocabulaire-legende.png  used on input line 65.
-(luatex.def)             Requested size: 227.62204pt x 107.05449pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 62.
 
-warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+Overfull \hbox (10.83678pt too wide) in paragraph at lines 62--62
+\TU/lmss/m/n/10.95 Dans un fi-chier \TU/lmtt/b/n/10.95 csv (Comma Separated Values)\TU/lmss/m/n/10.95 , chaque
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 62.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 62.
 [5
 
-<./ressources/vocabulaire-legende.png>]
-File: ressources/jeu-donnees.png Graphic file (type png)
-<use ressources/jeu-donnees.png>
-Package luatex.def Info: ressources/jeu-donnees.png  used on input line 76.
-(luatex.def)             Requested size: 227.62204pt x 128.74312pt.
-
-warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
-[6
+] [6
 
 ] [7
 
-] [8
+]
+<ressources/vocabulaire-legende.png, id=185, 1230.87221pt x 578.92073pt>
+File: ressources/vocabulaire-legende.png Graphic file (type png)
+<use ressources/vocabulaire-legende.png>
+Package luatex.def Info: ressources/vocabulaire-legende.png  used on input line 106.
+(luatex.def)             Requested size: 227.62204pt x 107.05449pt.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 106.
 
-] [9
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 106.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 106.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 106.
+[8
 
-] (./app-android-slides.toc) [10
+<./ressources/vocabulaire-legende.png>] [9
 
 ]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
+File: ressources/jeu-donnees.png Graphic file (type png)
+<use ressources/jeu-donnees.png>
+Package luatex.def Info: ressources/jeu-donnees.png  used on input line 131.
+(luatex.def)             Requested size: 227.62204pt x 128.74312pt.
 
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [11
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 131.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 131.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 131.
+[10
 
 ]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 145.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 145.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 145.
+ [11
 
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'iterer'
-) [12
+] (./app-android-slides.toc) [12
 
 ]
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 181.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 153.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 153.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 153.
  [13
 
 ]
@@ -1710,7 +1746,7 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(./scripts/lire-csv.py)) [14
+) [14
 
 ]
 \openout4 = app-android-slides.vrb
@@ -1718,9 +1754,59 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(./scripts/lire-csv.py)) [15
+) [15
 
-] [16
+]
+\openout4 = app-android-slides.vrb
+ (./app-android-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'ouvrir'
+) [16
+
+] (./app-android-slides.toc) [17
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 216.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 216.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 216.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 216.
+ [18
+
+]
+\openout4 = app-android-slides.vrb
+ (./app-android-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [19
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 248.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 248.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 248.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 248.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 248.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 248.
+ [20
 
 ]
 \openout4 = app-android-slides.vrb
@@ -1737,77 +1823,154 @@ Package mdframed Info: mdframed inside a box
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 14.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 14.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 14.
-) [17
-
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
-)
-Overfull \vbox (15.53949pt too high) detected at line 264
- []
-
-[18
-
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
-) [19
-
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
-)
-Overfull \vbox (17.13962pt too high) detected at line 315
- []
-
-[20
-
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
 ) [21
 
+] [22
+
 ]
 \openout4 = app-android-slides.vrb
  (./app-android-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [23
+
+]
+\openout4 = app-android-slides.vrb
+ (./app-android-slides.vrb
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 4.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 12.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 12.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 12.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [24
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 321.
+
+Overfull \hbox (4.88968pt too wide) in paragraph at lines 321--321
+[]\TU/lmss/m/n/10.95 La mé-thode \TU/lmtt/b/n/10.95 DictReader \TU/lmss/m/n/10.95 iden-ti-fie la pre-mière ligne comme
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 321.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 321.
+[25
+
+] [26
+
+]
+\openout4 = app-android-slides.vrb
+ (./app-android-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [27
+
+] (./app-android-slides.toc) [28
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 373.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 373.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 373.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 373.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 373.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 373.
+ [29
+
+]
+\openout4 = app-android-slides.vrb
+ (./app-android-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [30
+
+]
+\openout4 = app-android-slides.vrb
+ (./app-android-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [31
+
+] [32
+
+] [33
+
+]
+\openout4 = app-android-slides.vrb
+ (./app-android-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 )
-Overfull \vbox (17.13962pt too high) detected at line 356
+Overfull \vbox (8.45332pt too high) detected at line 469
  []
 
-[22
+[34
 
-] (./app-android-slides.toc) [23
-
-] [24
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 490.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 490.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 490.
+ [35
 
 ]
 \openout4 = app-android-slides.vrb
@@ -1815,47 +1978,17 @@ Overfull \vbox (17.13962pt too high) detected at line 356
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
-) [25
-
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
-) [26
-
-] [27
-
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 )
-Overfull \vbox (17.13962pt too high) detected at line 463
+Overfull \vbox (4.25337pt too high) detected at line 515
  []
 
-[28
+[36
 
-] (./app-android-slides.toc) [29
+] (./app-android-slides.toc) [37
 
-] [30
+] [38
 
-] [31
-
-]
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/appgoogle.py) [32
+] [39
 
 ]
 \openout4 = app-android-slides.vrb
@@ -1863,88 +1996,17 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) [33
-
-] [34
+) [40
 
 ]
 \openout4 = app-android-slides.vrb
  (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/appgoogle.py)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [35
-
-] [36
-
-]
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/appgoogle.py) [37
-
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
-) [38
-
-] (./app-android-slides.toc) [39
-
-] [40
-
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [41
 
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/tri-cle.py)) [42
-
-] [43
-
-]
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/appgoogle.py) [44
-
-]
-\openout4 = app-android-slides.vrb
- (./app-android-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-(./scripts/appgoogle.py) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-)
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [45
-
-] [46
+] [42
 
 ]
 \openout4 = app-android-slides.vrb
@@ -1956,15 +2018,30 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) [47
+) [43
 
-] [48
+] [44
 
 ]
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-(./scripts/appgoogle.py) [49
+(./scripts/appgoogle.py) [45
+
+]
+\openout4 = app-android-slides.vrb
+ (./app-android-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [46
 
 ]
 \tf@nav=\write8
@@ -1976,13 +2053,13 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = app-android-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 713.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 713.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 645.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 645.
  (./app-android-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 713.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 713.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 645.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 645.
 Package rerunfilecheck Info: File `app-android-slides.out' has not changed.
-(rerunfilecheck)             Checksum: EEE93AA1E8500531DEB2B1043F6BC216;1062.
+(rerunfilecheck)             Checksum: 221CDAC759DD76959C38A3123D1159D7;1181.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1990,19 +2067,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45337 strings out of 494383
- 477098,1373583 words of node,token memory allocated
- 281075 words of node memory still in use:
-   3846 hlist, 9 vlist, 2150 rule, 234 disc, 18 local_par, 8 math, 1788 glue, 2396 kern, 30 penalty, 19898 glyph, 21417 attribute, 106 glue_spec, 3572 attribute_list, 4 write, 2996 pdf_colorstack nodes
-   avail lists: 1:7,2:1370,3:313,4:4019,5:3268,6:60,7:2404,8:2959,9:5380,10:30,11:343,12:1
- 47473 multiletter control sequences out of 65536+600000
- 93 fonts using 11898095 bytes
- 70i,15n,107p,1193b,1080s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on app-android-slides.pdf (49 pages, 1563339 bytes).
+ 45194 strings out of 494383
+ 477297,1144653 words of node,token memory allocated
+ 216503 words of node memory still in use:
+   1921 hlist, 10 vlist, 1062 rule, 114 disc, 20 local_par, 907 glue, 1166 kern, 44 penalty, 19038 glyph, 15963 attribute, 106 glue_spec, 2663 attribute_list, 7 write, 1452 pdf_colorstack nodes
+   avail lists: 1:10,2:5552,3:514,4:6487,5:5219,6:54,7:2541,8:4710,9:8445,10:32,11:519,12:1
+ 47413 multiletter control sequences out of 65536+600000
+ 99 fonts using 12678975 bytes
+ 70i,15n,95p,1193b,1078s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on app-android-slides.pdf (46 pages, 1553982 bytes).
 
-PDF statistics: 1069 PDF objects out of 1200 (max. 8388607)
- 963 compressed objects within 10 object streams
- 113 named destinations out of 1000 (max. 131072)
+PDF statistics: 911 PDF objects out of 1000 (max. 8388607)
+ 812 compressed objects within 9 object streams
+ 105 named destinations out of 1000 (max. 131072)
  82 words of extra memory for PDF output out of 10000 (max. 100000000)
 

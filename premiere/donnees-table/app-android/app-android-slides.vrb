@@ -1,14 +1,23 @@
-\frametitle{Correction}
 
-\lstinputlisting[firstline=76 ,lastline=80, basicstyle=\small, xleftmargin=1em, xrightmargin=1em ]{"scripts/appgoogle.py"}
-\begin{center}
-    \begin{lstlisting}[language=bash]
-Top 1: FG Autumn Photo Puzzle
-Top 2: Blender BG - Photo Blend With Background
-Top 3: Simple Photo BG Changer
-Top 4: Best CG Photography
-Top 5: Life Made WI-Fi Touchscreen Photo Frame
-    \end{lstlisting}
+    \begin{center}
+        \begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+app_photos = trouver_app("Photo", applications)
+
+moyenne = moyenne_note(app_photos)
+
+meilleures_app = []
+for app in app_photos:
+    if app["Rating"] > moyenne:
+        meilleures_app.append(app)
+\end{lstlisting}
+        \captionof{code}{Sélection des meilleures applications photos}
+        \label{CODE}
     \end{center}
-
-
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+meilleures_app = [app for app in app_photos
+            if app["Rating"] > moyenne]
+\end{lstlisting}
+\captionof{code}{Version par compréhension}
+\label{CODE}
+\end{center}

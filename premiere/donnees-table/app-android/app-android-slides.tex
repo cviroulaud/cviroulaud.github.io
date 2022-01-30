@@ -25,16 +25,16 @@ Données en table}
         \captionof{figure}{Magasin d'applications}
         \label{IMG}
     \end{center}
-\begin{center}
-    Chaque carte contient plusieurs informations:
-    \begin{itemize}
-        \item nom
-        \item description
-        \item note
-        \item image
-        \item \dots
-    \end{itemize}
-\end{center}
+    \begin{center}
+        Chaque carte contient plusieurs informations:
+        \begin{itemize}
+            \item nom
+            \item description
+            \item note
+            \item image
+            \item \dots
+        \end{itemize}
+    \end{center}
 \end{frame}
 
 \begin{frame}
@@ -55,45 +55,9 @@ Données en table}
     \frametitle{Données en table - présentation}
 
     \note{terme BDD: entité, table (ou relation), attributs}
-    \begin{center}
-        \centering
-        \includegraphics[width=8cm]{ressources/vocabulaire-legende.png}
-        \captionof{figure}{Table de données}
-        \label{IMG}
-    \end{center}
-
-\end{frame}
-\begin{frame}
-    \frametitle{csv (Comma Separated Values)}
-
-    \begin{center}
-        \centering
-        \includegraphics[width=8cm]{ressources/jeu-donnees.png}
-        \captionof{figure}{Fichier csv ouvert avec LibreOffice}
-        \label{IMG}
-    \end{center}
-
-\end{frame}
-\begin{frame}
-    \frametitle{csv (Comma Separated Values)}
-    \begin{center}
-        \begin{tabular}{|*{3}{c}|}
-            \hline
-            "Turing" ;     & "Alan" ;  & "19"   \\
-            "Von Neuman" ; & "John";   & "18"   \\
-            "Dijkstra"  ;  & "Edsger"; & "17.5" \\
-            "Church"   ;   & "Alonso"; & "19"   \\
-            \hline
-        \end{tabular}
-    \end{center}
-    \begin{itemize}
-        \item Chaque ligne représente un nouvel élément du jeu de données.
-        \item Virgules, point-virgules ou tabulations.
-        \item Attributs pas forcément présents.
-        \item Guillemets pour encapsuler les données.
-    \end{itemize}
-
-    \note{Que se passe-t-il s'il y a des virgules dans une cellule? $\rightarrow$ guillemets}
+    \begin{aretenir}[]
+        Un fichier de données regroupe des informations organisées.\\Dans un fichier \textbf{\texttt{csv (Comma Separated Values)}}, chaque ligne représente une nouvelle \textbf{entité} du jeu de données. Les informations sont séparées par une virgule, un point-virgule, une tabulation\dots
+    \end{aretenir}
 
 \end{frame}
 \begin{frame}
@@ -101,16 +65,71 @@ Données en table}
 
     \begin{activite}
         \begin{enumerate}
-            \item Télécharger et décompresser l'annexe \emph{googleplaystore.zip} sur le site \url{https://cviroulaud.github.io}
-            \item Ouvrir le fichier \emph{googleplaystore.csv} avec un tableur (LibreOffice).
-            \item Repérer les \emph{attributs}.
-                  %traduire
+            \item Télécharger et décompresser l'annexe \textbf{\texttt{app-android.zip}} sur le site \url{https://cviroulaud.github.io}
+            \item Avec le \underline{bloc-notes de Windows} ouvrir le fichier \textbf{\texttt{notes.csv}}
+            \item Ouvrir le logiciel \emph{LibreOffice Calc}.
+            \item Depuis ce logiciel, ouvrir à nouveau le fichier \textbf{\texttt{notes.csv}}
         \end{enumerate}
     \end{activite}
 
 \end{frame}
 \begin{frame}
-    \frametitle{Correction}
+    \frametitle{}
+
+    \begin{center}
+        \begin{tabular}{*{3}{c}}
+            \hline
+            "Nom",         & "Prénom", & "Moyenne" \\
+            "Turing" ,     & "Alan" ,  & "19"      \\
+            "Von Neuman" , & "John",   & "18"      \\
+            "Dijkstra"  ,  & "Edsger", & "17.5"    \\
+            "Church"   ,   & "Alonso", & "19"      \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Chaque ligne représente une nouvelle entité}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        \centering
+        \includegraphics[width=8cm]{ressources/vocabulaire-legende.png}
+        \captionof{figure}{LibreOffice reconnaît les fichiers \textbf{\texttt{csv}}}
+        \label{IMG}
+    \end{center}
+    \begin{aretenir}[]
+        Un \textbf{attribut} identifie les données d'une même colonne.
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Ouvrir le fichier \textbf{\texttt{googleplaystore.csv}} avec LibreOffice Calc.
+            \item Trouver le séparateur utilisé.
+            \item Repérer les attributs.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+
+    \begin{center}
+        \centering
+        \includegraphics[width=8cm]{ressources/jeu-donnees.png}
+        \captionof{figure}{\centering Fichier csv ouvert avec LibreOffice. Le séparateur est la virgule.}
+        \label{IMG}
+    \end{center}
+
+    \begin{aretenir}[Remarque]
+        Quand le nombre de données est important, un tableur est moins approprié pour étudier les données.
+    \end{aretenir}
+\end{frame}
+\begin{frame}
 
     \begin{itemize}
         \item \emph{Name:} nom,
@@ -120,14 +139,22 @@ Données en table}
         \item \emph{Installs:} nombre d'installations.
 
     \end{itemize}
+    \begin{aretenir}[Remarque]
+        Chaque ligne représente une application Android
+    \end{aretenir}
+\end{frame}
+\subsection{Lire un fichier avec Python}
+\begin{frame}
+    \frametitle{Lire un fichier avec Python}
+    \begin{aretenir}[]
+        Un fichier de données est une \textbf{entrée} dans un programme. Quand on ouvre un fichier externe dans un programme, il est verrouillé. Il faut le \underline{libérer} à la fin de l'utilisation.
+    \end{aretenir}
 
 \end{frame}
-\subsection{Lire un fichier \emph{csv}}
 \begin{frame}[fragile]
-    \frametitle{Lire un fichier externe avec Python}
 
     \begin{center}
-        \begin{lstlisting}[language=Python]
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 # ouvrir le fichier
 fichier = open("notes.csv")
 
@@ -135,17 +162,65 @@ fichier = open("notes.csv")
 
 # libérer le fichier
 fichier.close()
-    \end{lstlisting}
+\end{lstlisting}
         \captionof{code}{Ouvrir et fermer}
-        \label{iterer}
+        \label{CODE}
     \end{center}
 \end{frame}
-
 \begin{frame}[fragile]
-    \frametitle{Lire un fichier externe avec Python}
+    \frametitle{}
 
+    \begin{activite}
+        \begin{enumerate}
+            \item Créer le fichier \textbf{\texttt{notes.py}} dans le même dossier que \textbf{\texttt{notes.csv}}
+            \item Écrire le code \ref{ouvrir}.
+        \end{enumerate}
+        \begin{center}
+            \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+# ouvrir le fichier
+fichier = open("notes.csv")
+
+# utiliser le fichier
+
+# libérer le fichier
+fichier.close()
+\end{lstlisting}
+            \captionof{code}{Ouvrir et fermer}
+            \label{ouvrir}
+        \end{center}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
     \begin{center}
-        \begin{lstlisting}[language=Python]
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+# ouvrir le fichier
+with open("notes.csv") as notes:
+    # utiliser le fichier
+
+# fermeture automatique
+\end{lstlisting}
+        \captionof{code}{Autre méthode}
+        \label{ouvrir}
+    \end{center}
+
+\end{frame}
+\subsection{Lire un fichier \textbf{\texttt{csv}} avec Python}
+\begin{frame}
+    \frametitle{Lire un fichier \textbf{\texttt{csv}} avec Python}
+    \begin{aretenir}[]
+        Un programme Python peut ouvrir tous types de fichiers externes (image, texte\dots). Il existe de nombreuses bibliothèques adaptées pour chaque type.\\La bibliothèque \textbf{\texttt{csv}} permet de \textbf{lire} ou \textbf{écrire} ligne après ligne dans un fichier \textbf{\texttt{csv}}.
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}[fragile]
+
+
+    \begin{activite}
+        Tester le code:
+        \begin{center}
+            \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 import csv
 # ouvrir le fichier
 fichier = open("notes.csv")
@@ -156,93 +231,113 @@ for ligne in lecteur:
 
 # libérer le fichier
 fichier.close()
-    \end{lstlisting}
-        \captionof{code}{Méthode pour itérer sur les données}
-        \label{iterer}
-    \end{center}
-    \note{Pour lire un fichier externe dans un programme Python, il faut d'abord ouvrir ce fichier à l'aide de la commande \textbf{\texttt{open}}. Ensuite la bibliothèque \texttt{csv} propose plusieurs méthodes pour itérer sur les lignes du fichier ouvert.}
+\end{lstlisting}
+        \end{center}
+    \end{activite}
 \end{frame}
+\begin{frame}
+    \frametitle{}
 
+    \begin{aretenir}[]
+        La méthode \textbf{\texttt{reader}} de la bibliothèque \textbf{\texttt{csv}} est un \textbf{itérateur}. À chaque appel (itération), l'itérateur lit une nouvelle ligne et la renvoie sous forme de tableau.\\
+        \underline{Attention:} un itérateur se vide au fur et à mesure. Il ne peut être parcouru qu'une fois.
+    \end{aretenir}
+    \begin{aretenir}[Remarque]
+        La fonction \textbf{\texttt{range}} est un itérateur qui fournit des entiers.
+    \end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{aretenir}[Remarque]
+        La méthode \textbf{\texttt{reader}} ne distingue pas les attributs.
+    \end{aretenir}
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+['nom', 'prenom', 'moyennes']
+['Turing', 'Alan', '19']
+['Von Neuman', 'John', '18']
+['Dijkstra', 'Edsger', '17.5']
+['Church', 'Alonso', '19'] 
+\end{lstlisting}
+    \end{center}
+\end{frame}
 \begin{frame}
     \frametitle{}
 
     \begin{activite}
         \begin{enumerate}
-            \item Tester le code \ref{iterer} dans un fichier \emph{notes.py}.
             \item Remplacer la méthode \textbf{\texttt{reader}} par \textbf{\texttt{DictReader}}.
-            \item Quel itérateur semble le plus adapté?
-            \item Créer un programme \emph{appgoogle.py}.
-            \item Dans le programme, ouvrir le fichier \emph{googleplaystore.csv}.
-            \item Créer un tableau de dictionnaires à partir des données du fichier \emph{csv}.
+            \item Observer les objets obtenus.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+lecteur = csv.DictReader(fichier)
+for ligne in lecteur:
+    print(ligne)
+\end{lstlisting}
+    \end{center}
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+OrderedDict([('nom', 'Turing'), ('prenom', 'Alan'), ('moyennes', '19')])
+OrderedDict([('nom', 'Von Neuman'), ('prenom', 'John'), ('moyennes', '18')])
+OrderedDict([('nom', 'Dijkstra'), ('prenom', 'Edsger'), ('moyennes', '17.5')])
+OrderedDict([('nom', 'Church'), ('prenom', 'Alonso'), ('moyennes', '19')])
+\end{lstlisting}
+        \captionof{code}{Dictionnaires ordonnés}
+        \label{CODE}
+    \end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+    \begin{aretenir}[Remarque]
+        Les dictionnaires ordonnés seront vus comme de simples dictionnaires.
+    \end{aretenir}
+    \begin{center}
+        \begin{lstlisting}[language=Python, xleftmargin=0.3em,xrightmargin=-4em,basicstyle=\ttfamily\small]
+{"nom": "Turing", "prenom": "Alan", "moyennes": "19"}
+{"nom": "Von Neuman", "prenom": "John", "moyennes": "18"}
+{"nom": "Dijkstra", "prenom": "Edsger", "moyennes": "17.5"}
+{"nom": "Church", "prenom": "Alonso", "moyennes": "19"}
+\end{lstlisting}
+        \captionof{code}{OrderedDict $\rightarrow$ dict}
+        \label{CODE}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[Remarque]
+        La méthode \textbf{\texttt{DictReader}} identifie la première ligne comme la liste des attributs du fichier.
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Créer un fichier Python \texttt{\textbf{appgoogle.py}}
+            \item Dans le programme, ouvrir le fichier \texttt{\textbf{googleplaystore.csv}}
+            \item Construire le tableau \textbf{\texttt{applications}} de dictionnaires. Chaque dictionnaire contiendra les informations d'une application.
         \end{enumerate}
     \end{activite}
 
 
 \end{frame}
-\begin{frame}[fragile]
-    \frametitle{Correction}
-    \lstinputlisting[firstline=12 ,lastline=14 ]{"scripts/lire-csv.py"}
-    \begin{pycode}
-import csv
-fichier = open("scripts/notes.csv")
-
-lecteur1 = csv.reader(fichier)
-for ligne in lecteur1:
-    print(ligne)
-    print()
-
-fichier.close()
-    \end{pycode}
-
-\end{frame}
-\begin{frame}[fragile]
-    \frametitle{Correction}
-    \lstinputlisting[firstline=20 ,lastline=22 ]{"scripts/lire-csv.py"}
-    \begin{pycode}
-import csv
-fichier = open("scripts/notes.csv")
-
-lecteur1 = csv.DictReader(fichier)
-for ligne in lecteur1:
-    print(ligne)
-    print()
-
-fichier.close()
-    \end{pycode}
-\end{frame}
-\begin{frame}
-    \frametitle{Correction}
-
-    \begin{itemize}
-        \item On utilisera préférentiellement la méthode \textbf{\texttt{DictReader}}: chaque donnée est étiquetée.
-        \item \texttt{\textbf{reader}} et \texttt{\textbf{DictReader}} sont des itérateurs: on ne peut les parcourir qu'une fois
-    \end{itemize}
-
-\end{frame}
-\begin{frame}[fragile]
-    \frametitle{Correction}
-
-    \begin{aretenir}[Commentaire]
-        Une variable de type \emph{OrderedDict} sera vue comme un simple dictionnaire.
-    \end{aretenir}
-    \begin{center}
-        \begin{lstlisting}[language=Python, xleftmargin=0.3em,xrightmargin=0.5em,basicstyle=\small]
-{"nom": "Turing", "prenom": "Alan", "moyennes": "19"}
-{"nom": "Von Neuman", "prenom": "John", "moyennes": "18"}
-{"nom": "Dijkstra", "prenom": "Edsger", "moyennes": "17.5"}
-{"nom": "Church", "prenom": "Alonso", "moyennes": "19"}
-
-\end{lstlisting}
-        \captionof{code}{OrderedDict $\rightarrow$ dict}
-        \label{CODE}
-    \end{center}
-\end{frame}
 
 \begin{frame}[fragile]
     \frametitle{Correction}
 
     \begin{center}
-        \begin{lstlisting}[language=Python]
+        \begin{lstlisting}[language=Python, xleftmargin=1em,xrightmargin=1em,basicstyle=\ttfamily\small]
 import csv
 # charge le fichier dans le programme
 fichier = open("googleplaystore.csv")
@@ -250,157 +345,109 @@ fichier = open("googleplaystore.csv")
 # crée un itérateur sur les données
 lecteur_donnees = csv.DictReader(fichier)
 
-table = []
+applications = []
 for ligne in lecteur_donnees:
-    table.append(ligne)
+    applications.append(ligne)
 
 # libère le fichier externe
 fichier.close()
 \end{lstlisting}
-        \captionof{code}{Liste de OrderedDict}
-        \label{CODE}
     \end{center}
 
-\end{frame}
-
-\begin{frame}[fragile]
-    \frametitle{Correction}
-
-    \begin{center}
-        \begin{lstlisting}[language=Python]
-import csv
-# charge le fichier dans le programme
-fichier = open("googleplaystore.csv")
-
-# crée un itérateur sur les données
-lecteur_donnees = csv.DictReader(fichier)
-
-table = list(lecteur_donnees)
-
-# libère le fichier externe
-fichier.close()
-\end{lstlisting}
-        \captionof{code}{Liste de OrderedDict - seconde méthode}
-        \label{CODE}
-    \end{center}
-
-\end{frame}
-
-\begin{frame}[fragile]
-    \frametitle{Correction}
-
-    \begin{center}
-        \begin{lstlisting}[language=Python, basicstyle=\small]
-import csv
-# charge le fichier dans le programme
-fichier = open("notes.csv")
-# crée un itérateur sur les données
-lecteur_donnees = csv.DictReader(fichier)
-
-table = []
-# Pour chaque ligne
-for ligne in lecteur_donnees:
-    dico = {}
-    # Pour chaque couple de la ligne
-    for cle, val in ligne.items():
-        dico[cle] = val
-    table.append(dico)
-# libère le fichier externe
-fichier.close()
-\end{lstlisting}
-        \captionof{code}{liste de dictionnaires}
-        \label{CODE}
-    \end{center}
-\note{Ce programme détaillé va être utile pour après.}
-\end{frame}
-\begin{frame}[fragile]
-    \frametitle{Correction}
-On obtient le même résultat
-\begin{center}
-    \begin{lstlisting}[language=Python, xleftmargin=0.3em,xrightmargin=0.5em,basicstyle=\small]
-{"nom": "Turing", "prenom": "Alan", "moyennes": "19"}
-{"nom": "Von Neuman", "prenom": "John", "moyennes": "18"}
-{"nom": "Dijkstra", "prenom": "Edsger", "moyennes": "17.5"}
-{"nom": "Church", "prenom": "Alonso", "moyennes": "19"}
-
-\end{lstlisting}
-\end{center}
-
-\end{frame}
-\begin{frame}[fragile]
-    \frametitle{Correction}
-
-    \begin{center}
-        \begin{lstlisting}[language=Python, basicstyle=\small]
-import csv
-# charge le fichier dans le programme
-fichier = open("googleplaystore.csv")
-# crée un itérateur sur les données
-lecteur_donnees = csv.DictReader(fichier)
-
-table = []
-# Pour chaque ligne
-for ligne in lecteur_donnees:
-    dico = {}
-    # Pour chaque couple de la ligne
-    for cle, val in ligne.items():
-        dico[cle] = val
-    table.append(dico)
-# libère le fichier externe
-fichier.close()
-\end{lstlisting}
-        \captionof{code}{Même programme pour googleplaystore.csv}
-        \label{CODE}
-    \end{center}
-\note{Ce programme détaillé va être utile pour après.}
 \end{frame}
 
 \section{Manipuler les données}
 \subsection{Valider les données}
 \begin{frame}
-    \frametitle{Valider les données}
-    Par défaut les données chargées dans un programme par la bibliothèque \textbf{\texttt{csv}} sont des chaînes de caractère.
-    \begin{activite}
-        \begin{enumerate}
-            \item Modifier le programme \emph{notes.py}, pour que la moyenne soit stockée comme un flottant.
-            \item  Modifier le programme \emph{appgoogle.py} pour typer correctement les informations récoltées.
-        \end{enumerate}
-    \end{activite}
+    \frametitle{Manipuler les données - Valider}
+    \begin{aretenir}[]
+        Par défaut les données chargées dans un programme par la bibliothèque \textbf{\texttt{csv}} sont des chaînes de caractère.
+    \end{aretenir}
+    \begin{aretenir}[Remarque]
+    Il appartient au développeur de traiter les données afin qu'elles soient utilisables dans le programme.
+    \end{aretenir}
     \note{note $\rightarrow$ flottants, Installs et Reviews $\rightarrow$entiers
 
         booléan possible aussi (payante/gratuite)
     }
 \end{frame}
 \begin{frame}[fragile]
-    \frametitle{Correction}
-
+    \frametitle{}
+Dans le programme \textbf{\texttt{notes.py}}, la moyenne doit être considérée comme un nombre flottant.
     \begin{center}
-    \begin{lstlisting}[language=Python, basicstyle=\small]
-table = []
+        \begin{lstlisting}[language=Python, xleftmargin=1em,xrightmargin=1em,basicstyle=\ttfamily\small]
+eleves = []
 # Pour chaque ligne
 for ligne in lecteur_donnees:
-    dico = {}
+    un_eleve = {}
     # Pour chaque couple de la ligne
     for cle, val in ligne.items():
         # type correctement la moyenne
         if cle == "moyennes":
             val = float(val)
-        dico[cle] = val
-    table.append(dico)
-    \end{lstlisting}
-    \captionof{code}{Typage des données}
-    \label{CODE}
-    \end{center}
-\note{il faut faire la même chose avec googleplaystore}
+        un_eleve[cle] = val
+    
+    eleves.append(un_eleve)
+\end{lstlisting}
+        \captionof{code}{Typage des données}
+        \label{CODE}
+    \end{center} 
+
 \end{frame}
 \begin{frame}[fragile]
-    \frametitle{Correction}
+    \frametitle{}
 
     \begin{center}
-        \begin{lstlisting}[language=Python, basicstyle=\small, xleftmargin=1em, xrightmargin=1em]
-table = []
+        \begin{lstlisting}[language=Python, xleftmargin=1em,xrightmargin=1em,basicstyle=\ttfamily\small]
 for ligne in lecteur_donnees:
-    dico = {}
+\end{lstlisting}
+        \captionof{code}{\textbf{\texttt{ligne}} est un dictionnaire (OrderedDict)}
+        \begin{lstlisting}[language=Python, xleftmargin=1em,xrightmargin=1em,basicstyle=\ttfamily\small]
+    un_eleve = {}
+    # Pour chaque couple de la ligne
+    for cle, val in ligne.items():
+        # type correctement la moyenne
+        if cle == "moyennes":
+            val = float(val)
+        un_eleve[cle] = val
+\end{lstlisting}
+        \captionof{code}{Analyse des données d'un élève}
+        \label{CODE}
+        \begin{lstlisting}[language=Python, xleftmargin=1em,xrightmargin=1em,basicstyle=\ttfamily\small]
+    eleves.append(un_eleve)
+\end{lstlisting}
+        \captionof{code}{Le dictionnaire traité est ajouté au tableau}
+        \label{CODE}
+    \end{center} 
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    
+    \begin{activite}
+        \begin{enumerate}
+            \item Quels attributs des applications Android demandent un traitement?
+            \item  Modifier alors le programme \texttt{\textbf{appgoogle.py}} pour typer correctement les informations récoltées.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Correction}
+
+    \begin{itemize}
+        \item \emph{Rating} est une note moyenne; c'est un flottant.
+        \item \emph{Installs} et \emph{Reviews} sont des entiers.
+    \end{itemize}
+
+\end{frame}
+\begin{frame}[fragile]
+
+    \begin{center}
+        \begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+applications = []
+for ligne in lecteur_donnees:
+    une_appli = {}
     for cle, val in ligne.items():
         # validation des données
         if cle == "Rating":
@@ -408,20 +455,26 @@ for ligne in lecteur_donnees:
         if cle == "Installs" or cle == "Reviews":
             val = int(val)
 
-        dico[cle] = val
-    table.append(dico)
+        une_appli[cle] = val
+
+    applications.append(une_appli)
 \end{lstlisting}
         \captionof{code}{Tentative de conversion des données}
-        \label{CODE}
-    \end{center}
-
-    \colorbox{LightCoral}{ValueError: invalid literal for int() with base 10: 'NaN'
-    }
-    \note{notre validation ne marche pas toujours; voir slide suivant: certaines lignes du fichier posent pb.}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.3em, xrightmargin=-3em]
+ValueError: invalid literal for int() with base 10: 'NaN'
+\end{lstlisting}
+\captionof{code}{erreur de traitement}
+\label{CODE}
+\end{center}
 \end{frame}
 \begin{frame}
-    \frametitle{Correction}
-
+\begin{aretenir}[]
+Les données brutes doivent être validées par le programmeur. Il devra:
+\begin{itemize}
+    \item typer correctement les informations,
+    \item vérifier la cohérence des informations.
+\end{itemize}
+\end{aretenir}
     \begin{center}
         \begin{tabular}{|*{5}{c|}}
             \hline
@@ -436,68 +489,85 @@ for ligne in lecteur_donnees:
     \note[item]{Rating: NaN $\rightarrow$ -1 (pas notée)}
 \end{frame}
 \begin{frame}[fragile]
-    \frametitle{Correction}
     \begin{center}
-        \begin{lstlisting}[language=Python, basicstyle=\small, xleftmargin=1em, xrightmargin=1em]
-table = []
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+applications = []
 for ligne in lecteur_donnees:
-    dico = {}
+    une_appli = {}
     for cle, val in ligne.items():
+        # validation des données
         if cle == "Rating":
             if val == "NaN":
-                val = -1.0
+                val = -1.0 # non noté
             else:
                 val = float(val)
-        if cle == "Installs":
+        if cle == "Installs" or cle == "Reviews":
             if val == "NaN":
                 val = 0
             else:
                 val = int(val)
-        dico[cle] = val
-    table.append(dico)
+
+        une_appli[cle] = val
+
+    applications.append(une_appli)
 \end{lstlisting}
-        \captionof{code}{Conversion des données}
-        \label{CODE}
     \end{center}
-    \note{non noté = -1}
 \end{frame}
 \subsection{Rechercher des données}
 \begin{frame}
-    \frametitle{Imiter un moteur de recherche}
+    \frametitle{Rechercher des données}
 
-    Une action courante sur un jeu de données est de sélectionner certaines lignes en fonction d'un critère.
+    Une action courante sur un jeu de données est de sélectionner certaines lignes en fonction d'un critère. C'est le rôle d'un moteur de recherche.
 
 \end{frame}
 
 \subsubsection{Sélectionner}
 \begin{frame}
-    \frametitle{}
+    \frametitle{Sélectionner}
 
     \begin{activite}
         \begin{enumerate}
-            \item Écrire la fonction \textbf{\texttt{trouver\_app(mot\_cle: str, tab: list) $\rightarrow$ list}} qui renvoie la liste des applications du tableau \emph{tab} dont le nom contient \emph{mot\_cle}.\\
-                  \underline{Indication:} L'instruction \textbf{\texttt{in}} permet de vérifier si une sous-chaîne est présente dans une chaîne de caractère.
-                  %tous les mots commencent par une majuscule
+            \item Écrire la fonction \textbf{\texttt{trouver\_app(mot\_cle: str, tab: list) $\rightarrow$ list}} qui renvoie la liste des applications du tableau \texttt{\textbf{tab}} dont le nom contient \texttt{\textbf{mot\_cle}}. \underline{Indications:} 
+            \begin{itemize}
+                \item L'instruction \textbf{\texttt{in}} permet de vérifier si une sous-chaîne est présente dans une chaîne de caractère.
+                \item Tous les mots commencent par une majuscule.
+            \end{itemize}
             \item Chercher toutes les applications dont le nom contient le mot \emph{Photo}.
             \item Compter le nombre d'applications renvoyées.
         \end{enumerate}
     \end{activite}
 
 \end{frame}
-\begin{frame}
+\begin{frame}[fragile]
     \frametitle{Correction}
 
-    \lstinputlisting[firstline=12 ,lastline=22, basicstyle=\small, xrightmargin=1em ]{"scripts/appgoogle.py"}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+def trouver_app(mot_cle: str, tab: list) -> list:
+    """
+    renvoie les applications contenant le 'mot_cle'
+
+    chaque mot commence par une majuscule dans la table
+    """
+    res = []
+    for app in tab:
+        # app est un dictionnaire
+        if mot_cle in app["Name"]:
+            res.append(app)
+    return res
+\end{lstlisting}
+\end{center}
 
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Correction}
 
     \begin{center}
-        \begin{lstlisting}[language=Python, basicstyle=\small]
-applications = trouver_app("Photo", table)
+        \begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+applications = trouver_app("Photo", applications)
 len(applications)
 \end{lstlisting}
+\captionof{code}{Appel de la fonction}
     \end{center}
 \end{frame}
 
@@ -508,13 +578,8 @@ len(applications)
         \begin{enumerate}
             \setcounter{enumi}{3}
 
-            \item Écrire la fonction \textbf{\texttt{meilleur\_app\_notee(tab: list) $\rightarrow$ dict}} qui renvoie l'application la mieux notée du tableau \emph{tab}.
+            \item Écrire la fonction \textbf{\texttt{meilleur\_app\_notee(tab: list) $\rightarrow$ dict}} qui renvoie l'application la mieux notée du tableau \texttt{\textbf{tab}}.
             \item Trouver l'application photo la mieux notée.
-            \item \underline{Pour les plus avancés:} en s'aidant de la documentation, modifier la fonction \textbf{\texttt{trouver\_app}} pour quelle:
-                  \begin{itemize}
-                      \item ne prenne pas en compte la casse des mots,
-                      \item renvoie les applications contenant plusieurs mots-clés; les mots sont passés à la fonction par le paramètre \emph{mot\_cle} séparés par un espace.
-                  \end{itemize}
         \end{enumerate}
     \end{activite}
 
@@ -522,12 +587,13 @@ len(applications)
 \begin{frame}[fragile]
     \frametitle{Correction}
 
-    \lstinputlisting[firstline=42 ,lastline=52, basicstyle=\small ]{"scripts/appgoogle.py"}
+    \lstinputlisting[firstline=42 ,lastline=52, basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em ]{"scripts/appgoogle.py"}
     \begin{center}
-        \begin{lstlisting}[language=Python, basicstyle=\small]
-applications = trouver_app("Photo", table)
+        \begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+applications = trouver_app("Photo", applications)
 meilleur_app_notee(applications)
 \end{lstlisting}
+\captionof{code}{Appels des fonctions}
     \end{center}
 
 \end{frame}
@@ -538,8 +604,8 @@ meilleur_app_notee(applications)
     On peut imaginer proposer à l'utilisateur toutes les applications notées au-dessus de la moyenne.
     \begin{activite}
         \begin{enumerate}
-            \item Écrire la fonction \textbf{\texttt{moyenne\_note(tab: list)  $\rightarrow$ float}} qui calcule la note moyenne des applications de \emph{tab}. Le résultat sera arrondi à deux chiffres significatifs.
-            \item Dans le programme principal, construire \emph{par compréhension }le tableau des applications photo dont la note est strictement supérieure à la moyenne.
+            \item Écrire la fonction \textbf{\texttt{moyenne\_note(tab: list)  $\rightarrow$ float}} qui calcule la note moyenne des applications de \texttt{\textbf{tab}}. Le résultat sera arrondi à deux chiffres significatifs.
+            \item Dans le programme principal, construire le tableau des applications photo dont la note est strictement supérieure à la moyenne.
         \end{enumerate}
     \end{activite}
     \note{
@@ -548,166 +614,32 @@ meilleur_app_notee(applications)
 \begin{frame}
     \frametitle{Correction}
 
-    \lstinputlisting[firstline=55 ,lastline=66, basicstyle=\small ]{"scripts/appgoogle.py"}
+    \lstinputlisting[firstline=55 ,lastline=66, basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em ]{"scripts/appgoogle.py"}
 
 \end{frame}
 \begin{frame}[fragile]
-    \frametitle{Correction}
 
     \begin{center}
-        \begin{lstlisting}[language=Python, basicstyle=\small]
-applications = trouver_app("Photo", table)
+        \begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, xleftmargin=.5em, xrightmargin=0em]
+app_photos = trouver_app("Photo", applications)
 
-moyenne = moyenne_note(applications)
+moyenne = moyenne_note(app_photos)
 
-meilleur_app = [app for app in applications if app["Rating"] > moyenne]
+meilleures_app = []
+for app in app_photos:
+    if app["Rating"] > moyenne:
+        meilleures_app.append(app)
 \end{lstlisting}
-        \captionof{code}{Sélection par compréhension}
+        \captionof{code}{Sélection des meilleures applications photos}
         \label{CODE}
     \end{center}
-
-\end{frame}
-\subsection{Trier des données}
-\begin{frame}
-    \frametitle{Trier}
-
-    Le tri est une autre opération fréquemment exécutée sur un jeu de données. On peut imaginer dans notre cas, ordonner les applications photo en fonction de leur note.
-
-\end{frame}
-
-\subsubsection{Tri natif}
-\begin{frame}[fragile]
-    \frametitle{}
-
-    En tant que langage de haut-niveau Python offre un outil de tri efficace:
-    \begin{itemize}
-        \item la méthode \textbf{\texttt{sort}} trie \emph{en place} un itérable,
-              \begin{center}
-                  \begin{lstlisting}[language=Python]
-ma_liste.sort()
-    \end{lstlisting}
-              \end{center}
-        \item la fonction \textbf{\texttt{sorted}} crée un nouvel itérable trié.
-              \begin{center}
-                  \begin{lstlisting}[language=Python]
-nouvelle = sorted(ma_liste)   
-    \end{lstlisting}
-              \end{center}
-    \end{itemize}
-
-\end{frame}
-
-\subsubsection{Clé de tri}
-\begin{frame}[fragile]
-    \frametitle{}
-
-    Dans notre cas les objets triés ne sont pas des simples entiers mais des dictionnaires. Il faut alors préciser la \textbf{clé de tri}.
-    \lstinputlisting[firstline=21 ,lastline=27, basicstyle=\small]{"scripts/tri-cle.py"}
-\note{Certains élèves ont la même note $\rightarrow$second critère?}
-\begin{pycode}
-import csv
-
-f = open("scripts/notes.csv")
-data = csv.DictReader(f)
-eleves = []
-for e in data:
-    dico = {"nom": e["nom"], "prenom": e["prenom"],
-            "moyennes": float(e["moyennes"])}
-    eleves.append(dico)
-f.close()
-
-
-def parametres_tri(eleve: dict) -> float:
-    """
-    renvoie le paramètre utilisé pour le tri
-    """
-    return eleve["moyennes"]
-
-eleves.sort(key=parametres_tri)
-for e in eleves:
-    print(e)
-    print()
-    \end{pycode}
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-
-    \begin{activite}
-        \begin{enumerate}
-            \item Écrire la fonction \textbf{\texttt{parametres\_tri\_1(app: dict) $\rightarrow$ float}} qui renvoie la note de l'application.
-            \item Trier le tableau des applications photo en fonction de leur note.
-            \item Afficher les cinq meilleures applications.
-        \end{enumerate}
-    \end{activite}
-
-\end{frame}
-\begin{frame}
-    \frametitle{Correction}
-
-\lstinputlisting[firstline=69 ,lastline=73, basicstyle=\small, xleftmargin=1em, xrightmargin=1em ]{"scripts/appgoogle.py"}
-
-
-\end{frame}
-\begin{frame}[fragile]
-    \frametitle{Correction}
-    \lstinputlisting[firstline=135 ,lastline=137, basicstyle=\small, xleftmargin=1em, xrightmargin=1em ]{"scripts/appgoogle.py"}
 \begin{center}
-\begin{lstlisting}[language=bash]
-Top 1: Simple Photo BG Changer
-Top 2: FG Autumn Photo Puzzle
-Top 3: Blender BG - Photo Blend With Background
-Top 4: Best CG Photography
-Top 5: Life Made WI-Fi Touchscreen Photo Frame 
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+meilleures_app = [app for app in app_photos 
+            if app["Rating"] > moyenne]
 \end{lstlisting}
+\captionof{code}{Version par compréhension}
+\label{CODE}
 \end{center}
-
-\end{frame}
-\begin{frame}
-    \frametitle{}
-\setcounter{compteuractivite}{5}
-    \begin{activite}
-        Pour départager les applications avec la même note, on choisit de définir un second paramètre de tri: le nombre de commentaires.
-        \begin{enumerate}
-            \setcounter{enumi}{3}
-            \item Écrire la fonction \textbf{\texttt{parametres\_tri\_2(app: dict) $\rightarrow$ tuple}} nouvelle clé de tri.
-            \item Appliquer cette nouvelle clé.
-        \end{enumerate}
-    \end{activite}
-
-\end{frame}
-\begin{frame}[fragile]
-    \frametitle{Correction}
-
-\lstinputlisting[firstline=76 ,lastline=80, basicstyle=\small, xleftmargin=1em, xrightmargin=1em ]{"scripts/appgoogle.py"}
-\begin{center}
-    \begin{lstlisting}[language=bash]
-Top 1: FG Autumn Photo Puzzle
-Top 2: Blender BG - Photo Blend With Background
-Top 3: Simple Photo BG Changer
-Top 4: Best CG Photography
-Top 5: Life Made WI-Fi Touchscreen Photo Frame
-    \end{lstlisting}
-    \end{center}
-
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-\setcounter{compteuractivite}{5}
-    \begin{activite}
-        \begin{enumerate}
-            \setcounter{enumi}{5}
-            \item \underline{Pour les plus avancés:} Reprendre la fonction \textbf{\texttt{tri\_insertion}} et la modifier pour effectuer le tri de la première question.
-        \end{enumerate}
-    \end{activite}
-
-\end{frame}
-\begin{frame}
-    \frametitle{Correction}
-
-    \lstinputlisting[firstline=83 ,lastline=96, basicstyle=\small, xleftmargin=1em, xrightmargin=1em ]{"scripts/appgoogle.py"}
-
 \end{frame}
 \end{document}

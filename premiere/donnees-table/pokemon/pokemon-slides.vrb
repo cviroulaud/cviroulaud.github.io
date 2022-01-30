@@ -1,0 +1,17 @@
+\frametitle{}
+
+Nous pouvons alors utiliser cette information pour mettre à jour la carte Pokémon.
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def callback_combo(event):
+    """
+    fonction de rappel quand on change de pokemon
+    dans la combobox
+    """
+    num = event.widget.current()
+    # mise à jour de la carte
+    remplir_carte(num)
+\end{lstlisting}
+\end{center}
+

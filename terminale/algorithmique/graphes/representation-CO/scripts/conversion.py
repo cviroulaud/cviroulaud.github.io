@@ -35,6 +35,14 @@ def dic_to_mat(dic: dict) -> list:
     return mat
 
 
+def est_symetrique(mat: list) -> bool:
+    for i in range(len(mat)):
+        for j in range(len(mat)):
+            if mat[i][j] != mat[j][i]:
+                return False
+    return True
+
+
 mat = [[0, 1, 1, 0, 0, 1],
        [1, 0, 0, 0, 0, 0],
        [1, 0, 0, 1, 1, 0],
@@ -44,4 +52,6 @@ mat = [[0, 1, 1, 0, 0, 1],
 
 dico = mat_to_dic(mat)
 print(dico)
+print(est_symetrique(mat))
+
 print(dic_to_mat(dico))

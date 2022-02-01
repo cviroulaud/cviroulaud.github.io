@@ -4,6 +4,6 @@
 \beamer@subsectionintoc {1}{2}{Propriétés}{11}{0}{1}
 \beamer@sectionintoc {2}{Représentations en mémoire}{14}{0}{2}
 \beamer@subsectionintoc {2}{1}{Matrice d'adjacence}{15}{0}{2}
-\beamer@subsectionintoc {2}{2}{Dictionnaire d'adjacence}{20}{0}{2}
-\beamer@subsectionintoc {2}{3}{Passage d'une structure à l'autre}{24}{0}{2}
-\beamer@subsectionintoc {2}{4}{Représentation de la carte de CO}{29}{0}{2}
+\beamer@subsectionintoc {2}{2}{Dictionnaire d'adjacence}{21}{0}{2}
+\beamer@subsectionintoc {2}{3}{Passage d'une structure à l'autre}{25}{0}{2}
+\beamer@subsectionintoc {2}{4}{Représentation de la carte de CO}{30}{0}{2}

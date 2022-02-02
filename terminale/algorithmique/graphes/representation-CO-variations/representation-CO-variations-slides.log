@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  29 JAN 2022 23:45
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 FEB 2022 08:45
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/representation-CO-variations/representation-CO-variations-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/representation-CO-variations/representation-CO-variations-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.171 seconds
+luaotfload | main : initialization completed in 0.214 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1780,14 +1780,14 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of LuaTeX's memory you used:
  44878 strings out of 494383
  244231,1144653 words of node,token memory allocated
- 113854 words of node memory still in use:
-   2142 hlist, 11 vlist, 1175 rule, 126 disc, 16 local_par, 993 glue, 1310 kern, 37 penalty, 5738 glyph, 9657 attribute, 106 glue_spec, 1612 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 1586 pdf_colorstack nodes
-   avail lists: 1:7,2:2717,3:1283,4:1831,5:1444,6:52,7:1499,8:1290,9:2405,10:32,11:171,12:1
+ 121740 words of node memory still in use:
+   2430 hlist, 11 vlist, 1337 rule, 144 disc, 16 local_par, 1105 glue, 1494 kern, 37 penalty, 5770 glyph, 10089 attribute, 106 glue_spec, 1684 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 1802 pdf_colorstack nodes
+   avail lists: 1:7,2:2717,3:1283,4:1893,5:1540,6:52,7:1627,8:1348,9:2543,10:32,11:175,12:1
  47443 multiletter control sequences out of 65536+600000
  60 fonts using 8806495 bytes
  70i,15n,95p,1236b,1089s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on representation-CO-variations-slides.pdf (23 pages, 567489 bytes).
+Output written on representation-CO-variations-slides.pdf (23 pages, 567508 bytes).
 
 PDF statistics: 486 PDF objects out of 1000 (max. 8388607)
  417 compressed objects within 5 object streams

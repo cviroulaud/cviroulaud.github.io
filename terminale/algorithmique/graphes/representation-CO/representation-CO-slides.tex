@@ -397,6 +397,23 @@ def est_symetrique(mat: list) -> bool:
 \end{center}
 
 \end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+def est_symetrique(mat: list) -> bool:
+    for i in range(len(mat)):
+        # on limite le parcours au triangle haut
+        for j in range(i, len(mat)):
+            if mat[i][j] != mat[j][i]:
+                return False
+    return True
+\end{lstlisting}
+\captionof{code}{version optimisée: inutile de parcourir toute la matrice}
+\end{center}
+
+\end{frame}
 \subsection{Dictionnaire d'adjacence}
 \begin{frame}
     \frametitle{Dictionnaire d'adjacence}

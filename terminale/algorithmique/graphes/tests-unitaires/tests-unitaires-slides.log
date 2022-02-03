@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 FEB 2022 10:36
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 FEB 2022 15:41
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/exercices-representation/exercices-representation-correction-slides
-(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/exercices-representation/exercices-representation-correction-slides.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/tests-unitaires/tests-unitaires-slides
+(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/tests-unitaires/tests-unitaires-slides.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.149 seconds
+luaotfload | main : initialization completed in 0.182 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1174,7 +1174,7 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
 \pytx@codefile=\write6
 
-\openout6 = exercices-representation-correction-slides.pytxcode
+\openout6 = tests-unitaires-slides.pytxcode
 \c@pytx@FancyVerbLineTemp=\count406
 \c@pytx@py@default@default=\count407
 \c@pytx@pycon@default@default=\count408
@@ -1344,13 +1344,49 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./exercices-representation-correction-slides.aux
-
-LaTeX Warning: Label `CODE' multiply defined.
-
-
-LaTeX Warning: Label `CODE' multiply defined.
-
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2019/02/02 v3.1.1 (3.1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2019/02/02 v3.1.1 (3.1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2019/02/02 v3.1.1 (3.1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2019/02/02 v3.1.1 (3.1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2019/02/02 v3.1.1 (3.1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfnodepartlowerbox=\box124
+\pgfnodeparttwobox=\box125
+\pgfnodepartthreebox=\box126
+\pgfnodepartfourbox=\box127
+\pgfnodeparttwentybox=\box128
+\pgfnodepartnineteenbox=\box129
+\pgfnodeparteighteenbox=\box130
+\pgfnodepartseventeenbox=\box131
+\pgfnodepartsixteenbox=\box132
+\pgfnodepartfifteenbox=\box133
+\pgfnodepartfourteenbox=\box134
+\pgfnodepartthirteenbox=\box135
+\pgfnodeparttwelvebox=\box136
+\pgfnodepartelevenbox=\box137
+\pgfnodeparttenbox=\box138
+\pgfnodepartninebox=\box139
+\pgfnodeparteightbox=\box140
+\pgfnodepartsevenbox=\box141
+\pgfnodepartsixbox=\box142
+\pgfnodepartfivebox=\box143
+))) (./tests-unitaires-slides.aux
 
 LaTeX Warning: Label `CODE' multiply defined.
 
@@ -1358,7 +1394,7 @@ LaTeX Warning: Label `CODE' multiply defined.
 LaTeX Warning: Label `CODE' multiply defined.
 
 )
-\openout1 = exercices-representation-correction-slides.aux
+\openout1 = tests-unitaires-slides.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -1423,7 +1459,7 @@ LaTeX Font Info:    ... okay on input line 11.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count431
 \scratchdimen=\dimen353
-\scratchbox=\box124
+\scratchbox=\box144
 \nofMPsegments=\count432
 \nofMParguments=\count433
 \everyMPshowfont=\toks65
@@ -1444,7 +1480,7 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box125
+\AtBeginShipoutBox=\box145
 Package hyperref Info: Link coloring ON on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1456,10 +1492,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
- (./exercices-representation-correction-slides.out) (./exercices-representation-correction-slides.out)
+ (./tests-unitaires-slides.out) (./tests-unitaires-slides.out)
 \@outlinefile=\write7
 
-\openout7 = exercices-representation-correction-slides.out
+\openout7 = tests-unitaires-slides.out
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1579,120 +1615,136 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count438
 
-No file pythontex-files-exercices-representation-correction-slides/exercices-representation-correction-slides.pytxmcr.
+No file pythontex-files-tests-unitaires-slides/tests-unitaires-slides.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
 \c@listing=\count439
 Package newfloat Info: float type `listing'=16 on input line 11.
-(./exercices-representation-correction-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./tests-unitaires-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./exercices-representation-correction-slides.toc) [2
+] [2
 
 ] [3
 
-] (./exercices-representation-correction-slides.toc) [4
+] (./tests-unitaires-slides.toc) [4
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 86.
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [5
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 86.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 86.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 67.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 86.
- [5
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 67.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 67.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 67.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 67.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 67.
+ [6
+
+] (./tests-unitaires-slides.toc) [7
 
 ]
-\openout4 = exercices-representation-correction-slides.vrb
- (./exercices-representation-correction-slides.vrb
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 4.
 
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [6
-
-] (./exercices-representation-correction-slides.toc) [7
-
-]
-\openout4 = exercices-representation-correction-slides.vrb
- (./exercices-representation-correction-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [8
 
 ]
-\openout4 = exercices-representation-correction-slides.vrb
- (./exercices-representation-correction-slides.vrb
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [9
 
 ]
-\openout4 = exercices-representation-correction-slides.vrb
- (./exercices-representation-correction-slides.vrb
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 14.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 14.
 ) [10
 
+] (./tests-unitaires-slides.toc) [11
+
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 180.
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 180.
+(mdframed)              on input line 129.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 180.
+(mdframed)              on input line 129.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 180.
- [11
-
-] (./exercices-representation-correction-slides.toc) [12
+ mdframed uses option nobreak mdframed on input line 129.
+ [12
 
 ]
-\openout4 = exercices-representation-correction-slides.vrb
- (./exercices-representation-correction-slides.vrb
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) [13
+)
+Overfull \vbox (4.8179pt too high) detected at line 150
+ []
+
+[13
 
 ]
-\openout4 = exercices-representation-correction-slides.vrb
- (./exercices-representation-correction-slides.vrb
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 11.
 ) [14
 
 ]
-\openout4 = exercices-representation-correction-slides.vrb
- (./exercices-representation-correction-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
@@ -1700,23 +1752,178 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
 ) [15
 
+] (./tests-unitaires-slides.toc) [16
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 197.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 197.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 197.
+ [17
+
+] [18
+
+]
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [19
+
+]
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [20
+
+]
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'CODE'
+) [21
+
+] [22
+
+]
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [23
+
+]
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [24
+
+]
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+Overfull \vbox (7.13962pt too high) detected at line 355
+ []
+
+[25
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 363.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 363.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 363.
+ [26
+
+] (./tests-unitaires-slides.toc) [27
+
+]
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 5.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [28
+
+]
+Overfull \vbox (3.73985pt too high) detected at line 414
+ []
+
+[29
+
+] [30
+
+]
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [31
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 460.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 460.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 460.
+ [32
+
+]
+\openout4 = tests-unitaires-slides.vrb
+ (./tests-unitaires-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [33
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 500.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 500.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 500.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 500.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 500.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 500.
+ [34
+
 ]
 \tf@nav=\write8
 
-\openout8 = exercices-representation-correction-slides.nav
+\openout8 = tests-unitaires-slides.nav
 \tf@toc=\write9
 
-\openout9 = exercices-representation-correction-slides.toc
+\openout9 = tests-unitaires-slides.toc
 \tf@snm=\write10
 
-\openout10 = exercices-representation-correction-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
- (./exercices-representation-correction-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
-Package rerunfilecheck Info: File `exercices-representation-correction-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 87D3ECE463F2D4CCAB972D612C2FFF49;384.
+\openout10 = tests-unitaires-slides.snm
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
+ (./tests-unitaires-slides.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
+Package rerunfilecheck Info: File `tests-unitaires-slides.out' has not changed.
+(rerunfilecheck)             Checksum: 65224A480B694CA00C96F8D6E95D52ED;1038.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1724,19 +1931,19 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44739 strings out of 494383
- 305293,1144653 words of node,token memory allocated
- 88059 words of node memory still in use:
-   2077 hlist, 8 vlist, 1149 rule, 116 disc, 17 local_par, 960 glue, 1268 kern, 38 penalty, 3003 glyph, 7557 attribute, 106 glue_spec, 1262 attribute_list, 5 write, 1570 pdf_colorstack nodes
-   avail lists: 1:4,2:3677,3:652,4:4710,5:3673,6:43,7:2192,8:3329,9:5981,10:38,11:344,12:1
- 47289 multiletter control sequences out of 65536+600000
- 61 fonts using 8932887 bytes
- 70i,15n,95p,1239b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on exercices-representation-correction-slides.pdf (15 pages, 91690 bytes).
+ 46843 strings out of 494383
+ 745652,1144653 words of node,token memory allocated
+ 105872 words of node memory still in use:
+   89 hlist, 10 vlist, 14 rule, 18 disc, 8 local_par, 244 glue, 16 kern, 34 penalty, 10890 glyph, 10773 attribute, 106 glue_spec, 1798 attribute_list, 5 write, 2 save_pos, 216 pdf_literal, 24 pdf_colorstack nodes
+   avail lists: 1:7,2:13295,3:549,4:12602,5:10339,6:59,7:5553,8:9260,9:16463,10:38,11:971,12:1
+ 49169 multiletter control sequences out of 65536+600000
+ 65 fonts using 9443183 bytes
+ 70i,15n,95p,1210b,1089s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on tests-unitaires-slides.pdf (34 pages, 122989 bytes).
 
-PDF statistics: 305 PDF objects out of 1000 (max. 8388607)
- 248 compressed objects within 3 object streams
- 36 named destinations out of 1000 (max. 131072)
- 58 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 589 PDF objects out of 1000 (max. 8388607)
+ 515 compressed objects within 6 object streams
+ 76 named destinations out of 1000 (max. 131072)
+ 74 words of extra memory for PDF output out of 10000 (max. 100000000)
 

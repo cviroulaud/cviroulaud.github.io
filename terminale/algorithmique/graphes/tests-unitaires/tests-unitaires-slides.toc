@@ -1,0 +1,7 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Nécessité de tester}{4}{0}{1}
+\beamer@sectionintoc {2}{Repérer les cas limites}{7}{0}{2}
+\beamer@sectionintoc {3}{Garantir le bon comportement}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{Mise en évidence}{12}{0}{3}
+\beamer@subsectionintoc {3}{2}{Automatiser les tests}{16}{0}{3}
+\beamer@subsectionintoc {3}{3}{Tester de manière exhaustive}{27}{0}{3}

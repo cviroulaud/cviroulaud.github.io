@@ -21,3 +21,7 @@ let rec reverse = function
   | [] -> []
   | h::t -> reverse t::Some h::[];;
   *)
+
+  let rec c f = function
+|[]->0
+|x::l->f(x)+c f l;;

@@ -1,0 +1,28 @@
+\frametitle{}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.7, transform shape]
+            \node[draw] (0)at(0,4){\textbf{\texttt{entrée: a, b}}};
+            \node[draw,ellipse] (1)at(0,2){\textbf{\texttt{$a\neq0$}}};
+            \node[draw] (2)at(-4,0){\textbf{\texttt{$b=5-a$}}};
+            \node[draw] (3)at(4,0){\textbf{\texttt{$b=b-a$}}};
+            \node[draw,ellipse] (4)at(0,-2){\textbf{\texttt{$b>3$}}};
+            \node[draw] (5)at(-4,-4){\textbf{\texttt{$b=b//a$}}};
+            \node[draw] (6)at(4,-4){\textbf{\texttt{$b=0$}}};
+            \node[draw] (7)at(0,-6){\textbf{\texttt{sortie: (a, b)}}};
+            \draw[->,>=latex] (0)--(1);
+            \draw[->,>=latex] (1)--(2) node[midway, fill=white] {$a\neq0$};
+            \draw[->,>=latex] (1)--(3) node[midway, fill=white] {$a=0$};
+            \draw[->,>=latex] (2)--(4);
+            \draw[->,>=latex] (3)--(4);
+            \draw[->,>=latex] (4)--(5) node[midway, fill=white] {$b>3$};
+            \draw[->,>=latex] (4)--(6) node[midway, fill=white] {$b\leqslant 3$};
+            \draw[->,>=latex] (5)--(7);
+            \draw[->,>=latex] (6)--(7);
+
+        \end{tikzpicture}
+    \end{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+ma_fonction(0, 4)
+ma_fonction(2, 1)
+\end{lstlisting}

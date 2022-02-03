@@ -3,7 +3,7 @@
 
 """
 @Author: Christophe Viroulaud
-@Time:   Samedi 29 Janvier 2022 23:12
+@Time:   Mercredi 02 Février 2022 11:44
 """
 
 
@@ -34,12 +34,3 @@ def est_complet(mat: list) -> bool:
                     (ligne == col and mat[ligne][col] == 1):
                 return False
     return True
-
-
-mat = [[0, 1, 1, 1, 1],
-       [1, 0, 1, 1, 1],
-       [1, 1, 0, 1, 1],
-       [1, 1, 1, 0, 1],
-       [1, 1, 1, 1, 0]]
-print(ordre(mat))
-print(est_complet(mat))

@@ -1,7 +1,7 @@
-pondération
+OK pondération
 graphe orienté (twitter)
 OK chemin le plus court
-somme des degrés (orienté ou non)
+OK somme des degrés (orienté ou non)
 cycle
 chemin le plus long
 coloration: incompatibilité (ex aquarium)
@@ -9,7 +9,7 @@ djikstra
 A*
 OK labyrinthe
 réseau
-ospf rip
+OK ospf rip
 OK Nim
 Dames?
 NO graphviz

@@ -1,0 +1,17 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def est_connexe(graphe: dict, depart: int) -> bool:
+    visites = []
+    profondeur(graphe, depart, visites)
+    return len(graphe) == len(visites)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> est_connexe(graphe, 70)
+False
+\end{lstlisting}
+    \captionof{code}{Appel de la fonction}
+\end{center}
+

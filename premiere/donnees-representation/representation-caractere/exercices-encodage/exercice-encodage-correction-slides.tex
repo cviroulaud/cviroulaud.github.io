@@ -41,6 +41,18 @@
     \end{enumerate}
 
 \end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Le point de code de la lettre € est U+20AC. En binaire on a: 0010 0000 1010 1100. Il faut alors 3 octets pour encoder ce caractère en UTF-8.
+
+              On utilise la suite d'octets: 1110xxxx 10xxxxxx 10xxxxxx et on remplace les \emph{x} par les chiffres binaires. On complète avec des 0:
+              \begin{center}
+                1110\textbf{0010} 10\textbf{000010} 10\textbf{101100}
+
+              \end{center}
+
+\end{frame}
 \section{Exercice 3}
 \begin{frame}
     \frametitle{Exercice 3}

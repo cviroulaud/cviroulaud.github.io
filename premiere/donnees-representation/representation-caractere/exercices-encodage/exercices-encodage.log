@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  26 JAN 2022 14:50
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  7 FEB 2022 15:35
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/representation-caractere/exercices-encodage/exercices-encodage
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/donnees-representation/representation-caractere/exercices-encodage/exercices-encodage.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.150 seconds
+luaotfload | main : initialization completed in 0.152 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -1426,7 +1426,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 41.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 43.
 
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
@@ -1440,16 +1440,16 @@ This may cause the page layout to be inconsistent, however.
 </home/tof/Documents/Cozy/latex-include/cc.png, id=8, 88.33pt x 31.11626pt>
 File: /home/tof/Documents/Cozy/latex-include/cc.png Graphic file (type png)
 <use /home/tof/Documents/Cozy/latex-include/cc.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 57.
+Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/cc.png  used on input line 59.
 (luatex.def)             Requested size: 56.9055pt x 20.04631pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 </home/tof/Documents/Cozy/latex-include/cc.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (./exercices-encodage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `exercices-encodage.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1459,19 +1459,19 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41539 strings out of 494383
+ 41540 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 12195 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 1510 glyph, 362 attribute, 98 glue_spec, 62 attribute_list, 1 write nodes
-   avail lists: 1:2,2:2286,3:141,4:171,5:318,6:33,7:2346,8:135,9:331,10:18,11:146
+ 12720 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 penalty, 1581 glyph, 374 attribute, 98 glue_spec, 64 attribute_list, 1 write nodes
+   avail lists: 1:2,2:2342,3:146,4:173,5:328,6:34,7:2448,8:136,9:335,10:18,11:149
  44491 multiletter control sequences out of 65536+600000
  52 fonts using 7753303 bytes
  84i,17n,95p,1234b,956s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on exercices-encodage.pdf (1 page, 50885 bytes).
+Output written on exercices-encodage.pdf (1 page, 51332 bytes).
 
-PDF statistics: 93 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 131072)
+PDF statistics: 94 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -319,8 +319,8 @@ def est_complet(mat: list) -> bool:
     vérifie si chaque sommet est relié à tous
     les autres (sauf lui même)
     """
-    for ligne in range(ordre(mat)):
-        for col in range(ordre(mat)):
+    for ligne in range(len(mat)):
+        for col in range(len(mat)):
             if (ligne != col and mat[ligne][col] == 0) or \
                     (ligne == col and mat[ligne][col] == 1):
                 return False

@@ -1,0 +1,1 @@
+reprendre fonction profondeur dans cours connexité et remplacer tableau visites par un dico noeud:bool (pour pb du coût) + faire un tab visites de booleen en associant indice à lettre (faire une fonction avec ord()?)

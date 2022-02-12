@@ -11,6 +11,7 @@ version tri en place
 from random import randint
 from time import time
 
+
 def fusionner(tab: list, deb: int, fin: int) -> None:
     res = [0 for _ in range(fin-deb+1)]
     milieu = (deb+fin)//2

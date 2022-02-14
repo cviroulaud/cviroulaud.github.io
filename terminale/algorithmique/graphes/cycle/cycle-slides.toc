@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Définition}{8}{0}{1}
+\beamer@subsectionintoc {1}{1}{Cycle dans un graphe}{9}{0}{1}
+\beamer@subsectionintoc {1}{2}{Vocabulaire}{10}{0}{1}
+\beamer@subsectionintoc {1}{3}{Cas de figures}{14}{0}{1}
+\beamer@sectionintoc {2}{Détection de cycle}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{Modification du parcours en profondeur}{17}{0}{2}
+\beamer@sectionintoc {3}{Algorithme}{36}{0}{3}
+\beamer@subsectionintoc {3}{1}{Implémentation}{39}{0}{3}

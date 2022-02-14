@@ -1,0 +1,18 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def parcours(mat: list) -> None:
+    visites = [False for _ in range(len(mat))]
+    for i in range(len(mat)):
+        # lance un parcours depuis chaque sommet
+        dfs(mat, i, visites)
+\end{lstlisting}
+\end{center}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+parcours(graphe)
+\end{lstlisting}
+\captionof{code}{Appel de la fonction}
+\label{CODE}
+\end{center}

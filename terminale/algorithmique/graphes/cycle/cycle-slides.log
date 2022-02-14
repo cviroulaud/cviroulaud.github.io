@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 FEB 2022 09:39
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 FEB 2022 01:16
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/connexite-CO/connexite-CO-slides
-(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/connexite-CO/connexite-CO-slides.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/cycle/cycle-slides
+(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/cycle/cycle-slides.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.106 seconds
+luaotfload | main : initialization completed in 0.122 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1174,7 +1174,7 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
 \pytx@codefile=\write6
 
-\openout6 = connexite-CO-slides.pytxcode
+\openout6 = cycle-slides.pytxcode
 \c@pytx@FancyVerbLineTemp=\count406
 \c@pytx@py@default@default=\count407
 \c@pytx@pycon@default@default=\count408
@@ -1344,8 +1344,8 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./connexite-CO-slides.aux)
-\openout1 = connexite-CO-slides.aux
+))) (./cycle-slides.aux)
+\openout1 = cycle-slides.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -1443,10 +1443,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
- (./connexite-CO-slides.out) (./connexite-CO-slides.out)
+ (./cycle-slides.out) (./cycle-slides.out)
 \@outlinefile=\write7
 
-\openout7 = connexite-CO-slides.out
+\openout7 = cycle-slides.out
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1566,308 +1566,244 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count438
 
-No file pythontex-files-connexite-CO-slides/connexite-CO-slides.pytxmcr.
+No file pythontex-files-cycle-slides/cycle-slides.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
 \c@listing=\count439
 Package newfloat Info: float type `listing'=16 on input line 11.
-(./connexite-CO-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./cycle-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<ressources/co-noir.png, id=70, 452.4102pt x 516.0078pt>
-File: ressources/co-noir.png Graphic file (type png)
-<use ressources/co-noir.png>
-Package luatex.def Info: ressources/co-noir.png  used on input line 24.
-(luatex.def)             Requested size: 227.62204pt x 259.61736pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 23.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 23.
+ [2
 
-Overfull \vbox (7.47073pt too high) detected at line 24
- []
-
-[2
-
-<./ressources/co-noir.png>]
-
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 95.
-
-
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 95.
-
-[3
+] [3
 
 ] [4
 
-] (./connexite-CO-slides.toc) [5
+]
+Overfull \hbox (3.8959pt too wide) in paragraph at lines 72--72
+ [] 
+ []
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 72.
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 72.
+
+[5
+
+]
+Overfull \hbox (3.8959pt too wide) in paragraph at lines 109--109
+ [] 
+ []
+
+[6
+
+] [7
+
+] (./cycle-slides.toc) [8
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 138.
+(mdframed)              on input line 127.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 138.
+(mdframed)              on input line 127.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 138.
- [6
+ mdframed uses option nobreak mdframed on input line 127.
+ [9
 
-]
-<ressources/labyrinthe.png, id=148, 137.5539pt x 84.5559pt>
-File: ressources/labyrinthe.png Graphic file (type png)
-<use ressources/labyrinthe.png>
-Package luatex.def Info: ressources/labyrinthe.png  used on input line 149.
-(luatex.def)             Requested size: 227.62204pt x 139.9279pt.
- [7
-
-<./ressources/labyrinthe.png>] [8
-
-] [9
-
-] [10
+] (./cycle-slides.toc) [10
 
 ] [11
 
 ] [12
 
-] [13
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 207.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 207.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 207.
+ [13
 
-] [14
-
-] [15
+] (./cycle-slides.toc) [14
 
 ]
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 421.
- [16
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 246.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 246.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 246.
+ [15
+
+] (./cycle-slides.toc) [16
 
 ] [17
 
-] [18
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 270.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 270.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 270.
+ [18
 
-] [19
+]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 291.
+ [19
 
 ] [20
 
-] (./connexite-CO-slides.toc) [21
+] [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+] [28
+
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 583.
-LaTeX Font Info:    Try loading font information for U+msa on input line 583.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 583.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 583.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 583.
+(mdframed)              on input line 584.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 583.
+(mdframed)              on input line 584.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 583.
+ mdframed uses option nobreak mdframed on input line 584.
+ [35
 
-Overfull \vbox (9.4597pt too high) detected at line 583
- []
-
-[22
+] (./cycle-slides.toc) [36
 
 ]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 583.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 583.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 583.
-
-Overfull \vbox (9.4597pt too high) detected at line 583
- []
-
-[23
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 583.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 583.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 583.
-
-Overfull \vbox (9.4597pt too high) detected at line 583
- []
-
-[24
-
-] (./connexite-CO-slides.toc) [25
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 603.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 603.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 604.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 603.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 604.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 603.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 603.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 603.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 603.
- [26
-
-]
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 604.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 638.
- [27
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 604.
+ [37
 
 ]
-\openout4 = connexite-CO-slides.vrb
- (./connexite-CO-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [28
-
-]
-\openout4 = connexite-CO-slides.vrb
- (./connexite-CO-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [29
-
-]
-\openout4 = connexite-CO-slides.vrb
- (./connexite-CO-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 32.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 37.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 37.
-) [30
-
-] (./connexite-CO-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 32.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 37.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 37.
-) [31
-
-] (./connexite-CO-slides.toc) [32
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 773.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 773.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 773.
- [33
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 783.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 783.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 783.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 783.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 783.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 783.
- [34
-
-] (./connexite-CO-slides.toc) [35
-
-]
-Overfull \vbox (2.46625pt too high) detected at line 857
+Overfull \vbox (17.71379pt too high) detected at line 637
  []
 
-[36
+[38
 
-] [37
+] [39
 
 ]
-\openout4 = connexite-CO-slides.vrb
- (./connexite-CO-slides.vrb
+\openout4 = cycle-slides.vrb
+ (./cycle-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
+) [40
+
+]
+\openout4 = cycle-slides.vrb
+ (./cycle-slides.vrb
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) [38
+)
+Overfull \vbox (15.13962pt too high) detected at line 719
+ []
+
+[41
+
+] [42
+
+]
+\openout4 = cycle-slides.vrb
+ (./cycle-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [43
 
 ]
 \tf@nav=\write8
 
-\openout8 = connexite-CO-slides.nav
+\openout8 = cycle-slides.nav
 \tf@toc=\write9
 
-\openout9 = connexite-CO-slides.toc
+\openout9 = cycle-slides.toc
 \tf@snm=\write10
 
-\openout10 = connexite-CO-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 893.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 893.
- (./connexite-CO-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 893.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 893.
-Package rerunfilecheck Info: File `connexite-CO-slides.out' has not changed.
-(rerunfilecheck)             Checksum: FBBF744C3E7714F79B3A25D3FD42061F;1033.
+\openout10 = cycle-slides.snm
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 774.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 774.
+ (./cycle-slides.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 774.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 774.
+Package rerunfilecheck Info: File `cycle-slides.out' has not changed.
+(rerunfilecheck)             Checksum: 7D792E458239F26DF1BF3CE226F7A9A6;1135.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45109 strings out of 494383
- 476995,1144653 words of node,token memory allocated
- 125365 words of node memory still in use:
-   1298 hlist, 10 vlist, 709 rule, 73 disc, 16 local_par, 625 glue, 784 kern, 33 penalty, 10439 glyph, 9021 attribute, 106 glue_spec, 1506 attribute_list, 3 write, 974 pdf_colorstack nodes
-   avail lists: 1:7,2:10515,3:1316,4:6660,5:5451,6:40,7:1339,8:4899,9:8904,10:32,11:517,12:1
- 47565 multiletter control sequences out of 65536+600000
- 104 fonts using 12909663 bytes
- 70i,15n,95p,1204b,1089s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on connexite-CO-slides.pdf (38 pages, 592040 bytes).
+ 44983 strings out of 494383
+ 476940,1144653 words of node,token memory allocated
+ 217478 words of node memory still in use:
+   4136 hlist, 9 vlist, 2312 rule, 244 disc, 18 local_par, 1798 glue, 2653 kern, 31 penalty, 12806 glyph, 12957 attribute, 106 glue_spec, 2162 attribute_list, 3 write, 3114 pdf_colorstack nodes
+   avail lists: 1:4,2:4551,3:910,4:6160,5:4700,6:52,7:3361,8:4332,9:7749,10:29,11:450,12:1
+ 47466 multiletter control sequences out of 65536+600000
+ 95 fonts using 12136871 bytes
+ 70i,15n,95p,1190b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on cycle-slides.pdf (43 pages, 127644 bytes).
 
-PDF statistics: 693 PDF objects out of 1000 (max. 8388607)
- 606 compressed objects within 7 object streams
- 85 named destinations out of 1000 (max. 131072)
- 82 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 803 PDF objects out of 1000 (max. 8388607)
+ 717 compressed objects within 8 object streams
+ 95 named destinations out of 1000 (max. 131072)
+ 90 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Représentation en mémoire}{5}{0}{1}
+\beamer@sectionintoc {2}{Parcours en profondeur}{9}{0}{2}
+\beamer@sectionintoc {3}{Parcours en profondeur de tout le graphe}{15}{0}{3}

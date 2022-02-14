@@ -2,7 +2,7 @@
 \beamer@sectionintoc {1}{Parcours en profondeur (Depth First Search)}{5}{0}{1}
 \beamer@subsectionintoc {1}{1}{Principe}{6}{0}{1}
 \beamer@subsectionintoc {1}{2}{Complexité}{21}{0}{1}
-\beamer@subsectionintoc {1}{3}{Implémentation}{25}{0}{1}
-\beamer@sectionintoc {2}{Connexité}{32}{0}{2}
-\beamer@subsectionintoc {2}{1}{Définition}{33}{0}{2}
-\beamer@subsectionintoc {2}{2}{Vérification de la connexité}{35}{0}{2}
+\beamer@subsectionintoc {1}{3}{Implémentation}{24}{0}{1}
+\beamer@sectionintoc {2}{Connexité}{31}{0}{2}
+\beamer@subsectionintoc {2}{1}{Définition}{32}{0}{2}
+\beamer@subsectionintoc {2}{2}{Vérification de la connexité}{34}{0}{2}

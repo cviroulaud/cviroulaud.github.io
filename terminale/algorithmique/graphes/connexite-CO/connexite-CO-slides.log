@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 FEB 2022 09:39
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 FEB 2022 10:13
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/connexite-CO/connexite-CO-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/connexite-CO/connexite-CO-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.106 seconds
+luaotfload | main : initialization completed in 0.173 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1653,104 +1653,81 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 583.
-LaTeX Font Info:    Try loading font information for U+msa on input line 583.
+(mdframed)              on input line 582.
+LaTeX Font Info:    Try loading font information for U+msa on input line 582.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 583.
+LaTeX Font Info:    Try loading font information for U+msb on input line 582.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 583.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 582.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 583.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 582.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 583.
+(mdframed)              on input line 582.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 583.
-
-Overfull \vbox (9.4597pt too high) detected at line 583
- []
-
-[22
+ mdframed uses option nobreak mdframed on input line 582.
+ [22
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 583.
+(mdframed)              on input line 582.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 583.
+(mdframed)              on input line 582.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 583.
+ mdframed uses option nobreak mdframed on input line 582.
+ [23
 
-Overfull \vbox (9.4597pt too high) detected at line 583
- []
-
-[23
+] (./connexite-CO-slides.toc) [24
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 583.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 583.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 583.
-
-Overfull \vbox (9.4597pt too high) detected at line 583
- []
-
-[24
-
-] (./connexite-CO-slides.toc) [25
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 603.
+(mdframed)              on input line 602.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 603.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 602.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 603.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 602.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 603.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 602.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 603.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 602.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 603.
+(mdframed)              on input line 602.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 603.
- [26
+ mdframed uses option nobreak mdframed on input line 602.
+ [25
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 638.
- [27
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 637.
+ [26
 
 ]
 \openout4 = connexite-CO-slides.vrb
  (./connexite-CO-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [27
+
+]
+\openout4 = connexite-CO-slides.vrb
+ (./connexite-CO-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [28
-
-]
-\openout4 = connexite-CO-slides.vrb
- (./connexite-CO-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [29
 
 ]
 \openout4 = connexite-CO-slides.vrb
@@ -1766,7 +1743,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 37.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 37.
-) [30
+) [29
 
 ] (./connexite-CO-slides.vrb
 
@@ -1780,49 +1757,49 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 37.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 37.
-) [31
+) [30
 
-] (./connexite-CO-slides.toc) [32
+] (./connexite-CO-slides.toc) [31
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 773.
+(mdframed)              on input line 772.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 773.
+(mdframed)              on input line 772.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 773.
+ mdframed uses option nobreak mdframed on input line 772.
+ [32
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 782.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 782.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 782.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 782.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 782.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 782.
  [33
 
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 783.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 783.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 783.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 783.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 783.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 783.
- [34
-
-] (./connexite-CO-slides.toc) [35
+] (./connexite-CO-slides.toc) [34
 
 ]
-Overfull \vbox (2.46625pt too high) detected at line 857
+Overfull \vbox (2.46625pt too high) detected at line 856
  []
 
-[36
+[35
 
-] [37
+] [36
 
 ]
 \openout4 = connexite-CO-slides.vrb
@@ -1833,7 +1810,7 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) [38
+) [37
 
 ]
 \tf@nav=\write8
@@ -1845,29 +1822,47 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = connexite-CO-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 893.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 893.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 892.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 892.
  (./connexite-CO-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 893.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 893.
-Package rerunfilecheck Info: File `connexite-CO-slides.out' has not changed.
-(rerunfilecheck)             Checksum: FBBF744C3E7714F79B3A25D3FD42061F;1033.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 892.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 892.
+
+
+Package rerunfilecheck Warning: File `connexite-CO-slides.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `connexite-CO-slides.out':
+(rerunfilecheck)             Before: FBBF744C3E7714F79B3A25D3FD42061F;1033
+(rerunfilecheck)             After:  A4A63E42AD5DBD9A4EA728E5CD9C8511;1033.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 45109 strings out of 494383
- 476995,1144653 words of node,token memory allocated
- 125365 words of node memory still in use:
-   1298 hlist, 10 vlist, 709 rule, 73 disc, 16 local_par, 625 glue, 784 kern, 33 penalty, 10439 glyph, 9021 attribute, 106 glue_spec, 1506 attribute_list, 3 write, 974 pdf_colorstack nodes
-   avail lists: 1:7,2:10515,3:1316,4:6660,5:5451,6:40,7:1339,8:4899,9:8904,10:32,11:517,12:1
- 47565 multiletter control sequences out of 65536+600000
+ 45118 strings out of 494383
+ 477017,1144653 words of node,token memory allocated
+ 121487 words of node memory still in use:
+   1298 hlist, 10 vlist, 709 rule, 73 disc, 16 local_par, 625 glue, 784 kern, 33 penalty, 9955 glyph, 8811 attribute, 106 glue_spec, 1471 attribute_list, 3 write, 974 pdf_colorstack nodes
+   avail lists: 1:6,2:10515,3:1280,4:6660,5:5451,6:40,7:1339,8:4899,9:8904,10:32,11:517,12:1
+ 47572 multiletter control sequences out of 65536+600000
  104 fonts using 12909663 bytes
  70i,15n,95p,1204b,1089s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on connexite-CO-slides.pdf (38 pages, 592040 bytes).
 
-PDF statistics: 693 PDF objects out of 1000 (max. 8388607)
- 606 compressed objects within 7 object streams
- 85 named destinations out of 1000 (max. 131072)
+warning  (pdf backend): unreferenced destination with name 'Navigation38'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.2.2.35'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.2.1.33'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.1.3.25'
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on connexite-CO-slides.pdf (37 pages, 588777 bytes).
+
+PDF statistics: 682 PDF objects out of 1000 (max. 8388607)
+ 597 compressed objects within 6 object streams
+ 87 named destinations out of 1000 (max. 131072)
  82 words of extra memory for PDF output out of 10000 (max. 100000000)
 

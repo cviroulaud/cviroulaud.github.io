@@ -1,0 +1,19 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-3em]
+def dfs(graphe: list, sommet: int, visites: list) -> None:
+    # en cours de parcours
+    visites[sommet]["coul"] = GRIS
+    for voisin in graphe[sommet]:
+        # pour chaque voisin non encore atteint
+        if visites[voisin]["coul"] == BLANC:
+            visites[voisin]["pred"] = sommet
+            dfs(graphe, voisin, visites)
+    # parcours terminé pour ce sommet
+    visites[sommet]["coul"] = NOIR
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+La vérification de la couleur s'effectue avant l'appel récursif (ligne 6) au lieu de se faire en début de fonction; ceci afin de ne modifier le prédécesseur qu'à la première visite.
+\end{aretenir}

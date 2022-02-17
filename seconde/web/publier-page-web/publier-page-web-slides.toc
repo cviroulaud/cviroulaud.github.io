@@ -1,0 +1,6 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Publier}{3}{0}{1}
+\beamer@sectionintoc {2}{Sécuriser}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{Définition}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Page non sécurisée}{18}{0}{2}
+\beamer@subsectionintoc {2}{3}{Force d'un mot de passe}{21}{0}{2}

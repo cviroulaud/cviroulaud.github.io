@@ -6,7 +6,9 @@
 @Time:   2021/03/04 22:18:50
 """
 
-#DODO faire avec une seule boucle!! voir: /home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/glouton/scripts/rendu_monnaie.py
+# DODO faire avec une seule boucle!! voir: /home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/glouton/scripts/rendu_monnaie.py
+
+
 def nb_pieces_glouton(somme: int, systeme: list) -> int:
     nb_piece = 0
     while not somme == 0:
@@ -101,7 +103,7 @@ def nb_pieces_BU_sol(somme: int, systeme: list) -> list:
                 if nb_pieces < mini:
                     mini = nb_pieces
                     choix_piece = piece
-        track[x] = mini   
+        track[x] = mini
         choix[x] = choix_piece
     # reconstitution des pièces à rendre
     rendre = somme
@@ -110,6 +112,7 @@ def nb_pieces_BU_sol(somme: int, systeme: list) -> list:
         resultat.append(choix[rendre])
         rendre -= choix[rendre]
     return resultat
+
 
 systeme = [10, 5, 2, 1]
 somme = 8
@@ -132,4 +135,4 @@ somme = 6
 nb_pieces_BU_sol(somme, systeme)
 detail_pieces_glouton(somme, systeme)
 
-#DODO pour top-down cas = 0 inutile -> mettre track = [0, 0,...] (comme dans TD2)
+# DODO pour top-down cas = 0 inutile -> mettre track = [0, 0,...] (comme dans TD2)

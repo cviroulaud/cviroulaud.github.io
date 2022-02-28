@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Rappels}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Les structures linéaires}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Représentation d'un graphe en mémoire}{14}{0}{1}
+\beamer@sectionintoc {2}{Parcours en profondeur}{17}{0}{2}
+\beamer@sectionintoc {3}{Parcours en largeur}{24}{0}{3}
+\beamer@subsectionintoc {3}{1}{Principe}{25}{0}{3}
+\beamer@subsectionintoc {3}{2}{Implémentation}{38}{0}{3}

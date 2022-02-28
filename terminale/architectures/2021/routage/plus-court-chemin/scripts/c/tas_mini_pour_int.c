@@ -30,7 +30,7 @@ void agrandir(Tas *t) {
   }
 }
 void enfiler(Tas *t, int val) {
-  agrandir(t); // vérifie la capacité et agrandis si besoin
+  agrandir(t); // vérifie la capacité et agrandit si besoin
   // on insère par le bas et on remonte
   int fils = t->dernier;
   t->tab[fils] = val;

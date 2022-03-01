@@ -8,7 +8,7 @@ Données en table}
 \date{\framebox{\textbf{Tab 01}}}
 %\logo{}
 \institute{Première - NSI}
-
+%DODO modifier (encoding="utf8")+ revoir la partie traitement (P30 environ) + enlever les "NaN"
 \begin{document}
 
 \begin{frame}
@@ -340,7 +340,7 @@ OrderedDict([('nom', 'Church'), ('prenom', 'Alonso'), ('moyennes', '19')])
         \begin{lstlisting}[language=Python, xleftmargin=1em,xrightmargin=1em,basicstyle=\ttfamily\small]
 import csv
 # charge le fichier dans le programme
-fichier = open("googleplaystore.csv")
+fichier = open("googleplaystore.csv", encoding="utf8")
 
 # crée un itérateur sur les données
 lecteur_donnees = csv.DictReader(fichier)

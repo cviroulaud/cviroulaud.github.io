@@ -1,0 +1,37 @@
+h1 {
+    color: red;
+    font-family: serif;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+h4 {
+    color: white;
+    font-family: sans-serif;
+    text-align: right;
+}
+
+p {
+   color: white;
+   font-family: sans-serif;
+   text-align: justify;
+}
+
+body {
+      width: 800px;
+      margin: auto;
+      background-color: #101015;
+}
+
+#imagegraphisme {
+      display: block;
+      margin: auto;
+      height: 300px;
+}
+
+

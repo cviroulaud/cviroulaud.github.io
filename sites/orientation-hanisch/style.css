@@ -1,0 +1,18 @@
+h1{
+  color :red;
+}
+h2{
+color :blue;
+}
+body {
+width: 700px;
+margin: auto;
+background-color: #F0E6E6;
+}
+
+#couleur {
+color: black;
+}
+li{
+color :green;
+}

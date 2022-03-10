@@ -1,0 +1,23 @@
+body {
+	width: 800px;
+	margin: auto;
+	background-color: #FFFF99;
+}
+h1 {
+	color: red;
+text-shadow: 1px 1px 2px orange, 0 0 1em orange, 0 0 2em red
+}
+#monidentifiant {
+	color: blue;
+}
+#paragraphe {
+	color: red;
+.titre {
+	text-align: center;
+	border: solid;
+}
+#image.jpg{
+	display: block;
+	margin: auto;
+	height: 200px;
+}

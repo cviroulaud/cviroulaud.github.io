@@ -14,7 +14,7 @@ function chgtSpe(fichier) {
 }
 
 function creerListe(res) {
-    let l = document.querySelector("ul[lis='spe']");
+    let l = document.querySelector("ul:nth-child(5)");
     for (let i = 0; i < res.length; i++) {
         let e = document.createElement("li");
         let t = document.createTextNode(res[i]["nom"]);

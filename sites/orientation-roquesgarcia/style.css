@@ -1,0 +1,46 @@
+h1{
+color:white;
+}
+body {
+width: 800px
+margin: auto;
+background-color:#777799;
+}
+h1{
+   text-shadow: 1px 1px 2px black, 0 0 1em purple, 0 0 0.2em purple;
+   color: white;
+   font: 1.5em Georgia, serif;
+}
+h1{
+  text-align: center;
+  border: solid;
+}
+
+h2{
+color:white;
+}
+
+h3{
+color:white;
+}
+
+li{
+color:white;
+}
+
+h2{
+   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+   color: white;
+   font: 1.5em Georgia, serif;
+}
+
+#image{
+display:block;
+margin: auto;
+height: 200px;
+}
+
+
+
+
+

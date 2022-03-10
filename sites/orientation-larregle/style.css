@@ -1,0 +1,33 @@
+h1 {
+    color: red;
+text-shadow: 1px 2px 2px black;
+}
+h2 {
+    color: purple;
+}
+#monidentifiant {
+    color: orange;
+}
+#lol {
+    color: turquoise;
+}  
+#moi {
+    color: blue;
+}  
+body {
+    width: 800px;
+    margin: auto;
+    background-color: #ECD8FE;
+text-align: center;
+font-family: Georgia, serif;
+background-image: url('https://fr.depositphotos.com/128913196/stock-photo-pastel-color-background-with-gradient.html');
+}
+#iecoles{
+    display: block;
+    margin: auto;
+    heigt: 200px ;     
+}
+a:link{
+text-decoration:none;
+color: #FE2B91;
+}

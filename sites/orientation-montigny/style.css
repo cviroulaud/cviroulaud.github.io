@@ -1,0 +1,44 @@
+h1 {
+	color: #7099ff;
+}
+
+h2 {
+	color: #b1d1fd;
+}
+
+p {
+	color: white;
+}
+
+h3 {
+	color: #597ea5;	
+}
+
+body {
+	width: 800px;
+	margin: auto;
+	background-color: #37393b;
+}
+
+li {
+	color: #68cffe;
+}
+	
+#titre {
+	text-align: center;
+}
+
+#under {
+	text-decoration: underline;
+}
+
+#monimg{
+display: block;
+margin: auto;
+height: 300px;
+}
+
+
+a:link {
+	color: #fbff92;
+}

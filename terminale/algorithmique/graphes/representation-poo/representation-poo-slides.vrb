@@ -1,0 +1,17 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def affiche_voisins(self, s: str) -> None:
+    for v in self.sommets[s]:
+        print(f"{s} --> {v[0]} : {v[1]}")
+\end{lstlisting}
+\captionof{code}{Méthode d'affichage}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> exemple.affiche_voisins("B")
+B --> A : 1
+B --> C : 1
+\end{lstlisting}
+    \captionof{code}{Appel de la méthode}
+\end{center}
+

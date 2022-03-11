@@ -1,0 +1,328 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Représentation d'un graphe\\en POO}
+\date{\framebox{\textbf{Algo 22}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{center}
+        Les graphes sont des outils très utilisés en informatique. Il semble donc intéressant de disposer d'une bibliothèque fournissant les outils nécessaires à la création et la manipulation d'un graphe.
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{framed}
+        \centering Construire une bibliothèque \textbf{\texttt{graphe}}.
+    \end{framed}
+
+\end{frame}
+\section{Conception}
+\subsection{Différents graphes}
+\begin{frame}
+    \frametitle{Conception - Différents graphes}
+
+\begin{multicols}{3}    
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw,circle,fill=gray!50] (A)at(0,0) {A};
+            \node[draw,circle,fill=gray!50] (B)at(0,2) {B};
+            \node[draw,circle,fill=gray!50] (C)at(2,2) {C};
+            \node[draw,circle,fill=gray!50] (D)at(2,0) {D};
+
+
+            \draw (A) -- (B);
+            \draw (A) -- (D);
+            \draw (B) -- (C);
+            \draw (C) -- (D);
+
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw,circle,fill=gray!50] (A)at(0,0) {A};
+            \node[draw,circle,fill=gray!50] (B)at(0,2) {B};
+            \node[draw,circle,fill=gray!50] (C)at(2,2) {C};
+            \node[draw,circle,fill=gray!50] (D)at(2,0) {D};
+
+
+            \draw[<-,>=latex] (A) -- (B);
+            \draw[->,>=latex] (A) -- (D);
+            \draw[->,>=latex] (B) -- (C);
+            \draw[<-,>=latex] (C) -- (D);
+
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw,circle,fill=gray!50] (A)at(0,0) {A};
+            \node[draw,circle,fill=gray!50] (B)at(0,2) {B};
+            \node[draw,circle,fill=gray!50] (C)at(2,2) {C};
+            \node[draw,circle,fill=gray!50] (D)at(2,0) {D};
+
+
+            \draw[<-,>=latex] (A) -- (B)node[midway, fill=white] {2};
+            \draw[->,>=latex] (A) -- (D)node[midway, fill=white] {4};
+            \draw[->,>=latex] (B) -- (C)node[midway, fill=white] {6};
+            \draw[<-,>=latex] (C) -- (D)node[midway, fill=white] {5};
+
+        \end{tikzpicture}
+    \end{center}
+\end{multicols}
+\begin{aretenir}[Observation]
+La bibliothèque \textbf{\texttt{graphe}} doit prendre en compte les différents cas de figures.
+\end{aretenir}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item Une arête non-orientée est équivalente à deux arêtes orientées de sens opposé.
+        \item Un graphe non pondéré est équivalent à un graphe où toutes les pondérations valent 1.
+    \end{itemize}
+
+\end{frame}
+\subsection{Les ensembles}
+\begin{frame}
+    \frametitle{Les ensembles}
+\begin{aretenir}[]
+    Un ensemble est une collection non ordonnée sans éléments en double. \url{https://tinyurl.com/set-pyt}
+\end{aretenir}
+    
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw,circle,fill=gray!50] (A)at(0,0) {A};
+            \node[draw,circle,fill=gray!50] (B)at(0,2) {B};
+            \node[draw,circle,fill=gray!50] (C)at(2,2) {C};
+            \node[draw,circle,fill=gray!50] (D)at(2,0) {D};
+
+
+            \draw (A) -- (B);
+            \draw (A) -- (D);
+            \draw (B) -- (C);
+            \draw (C) -- (D);
+
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+voisins_B = { ("A", 1), ("D", 1) }
+\end{lstlisting}
+    \captionof{code}{Ensemble des voisins de B}
+    \label{CODE}
+    \end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    
+\begin{aretenir}[Remarque]
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+# Crée un ensemble vide
+e = set()
+
+# Crée un dictionnaire vide
+d = {}
+\end{lstlisting}
+\end{center}
+\end{aretenir}
+
+\end{frame}
+\section{Implémentation}
+\subsection{Classe \textbf{\texttt{Graphe}}}
+\begin{frame}
+    \frametitle{Implémentation - Classe \textbf{\texttt{Graphe}}}
+
+\begin{activite}
+\begin{enumerate}
+    \item Créer le fichier \textbf{\texttt{biblio\_graphe.py}}
+    \item Construire la classe \textbf{\texttt{Graphe}} et son constructeur qui initialisera:
+    \begin{itemize}
+        \item un attribut booléen \textbf{\texttt{oriente}} qui sera initialisé par une valeur booléenne passée en paramètre.
+        \item un dictionnaire vide nommé \textbf{\texttt{sommets}}.
+    \end{itemize} 
+\end{enumerate}
+\end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1.5em, xrightmargin=2em]
+class Graphe:
+    def __init__(self, oriente: bool):
+        self.sommets = {}
+        self.oriente = oriente
+\end{lstlisting}
+\end{center}
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+    \begin{enumerate}
+        
+    \item Écrire la méthode \textbf{\texttt{ajouter\_sommet(self, s: str) $\rightarrow$ None}} qui ajoute un nouveau sommet dans le dictionnaire \textbf{\texttt{sommets}} s'il n'est pas déjà présent. Un ensemble vide sera associé au sommet.
+    \item Écrire la méthode \textbf{\texttt{ajouter\_arete(self, s1: str, s2: str, d: int = 1) $\rightarrow$ None}} qui crée une arête, éventuellement orientée de \textbf{\texttt{s1}} vers \textbf{\texttt{s2}}, de pondération \textbf{\texttt{d}}. Si la pondération n'est pas précisée la valeur \textbf{\texttt{1}} est utilisée par défaut. Si les sommets n'existent pas, la méthode devra les créer préalablement.
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def ajouter_sommet(self, s: str) -> None:
+    if not(s in self.sommets):
+        self.sommets[s] = set()
+
+def ajouter_arete(self, s1: str, s2: str, d: int = 1) -> None:
+    # ajout éventuel des sommets
+    self.ajouter_sommet(s1)
+    self.ajouter_sommet(s2)
+    # création arête
+    self.sommets[s1].add((s2, d))
+    if not self.oriente:
+        self.sommets[s2].add((s1, d))
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw,circle,fill=gray!50] (A)at(0,0) {A};
+            \node[draw,circle,fill=gray!50] (B)at(0,2) {B};
+            \node[draw,circle,fill=gray!50] (C)at(2,2) {C};
+            \node[draw,circle,fill=gray!50] (D)at(2,0) {D};
+
+
+            \draw[<-,>=latex] (A) -- (B);
+            \draw[->,>=latex] (A) -- (D);
+            \draw[->,>=latex] (B) -- (C);
+            \draw[<-,>=latex] (C) -- (D);
+
+        \end{tikzpicture}
+        \captionof{figure}{Exemple}
+        \label{exemple}
+    \end{center}
+    \begin{activite}
+    \begin{enumerate}
+        \item Créer un fichier \textbf{\texttt{exemple.py}}
+        \item Importer la bibliothèque et créer une instance de \textbf{\texttt{Graphe}} représentant le graphe (figure \ref{exemple}).
+        \item Dans la classe \textbf{\texttt{Graphe}} créer la méthode \textbf{\texttt{affiche\_voisins(self, s: str) $\rightarrow$ None}} qui affiche dans la console les voisins de \textbf{\texttt{s}} ainsi que la distance entre les 2 sommets. 
+    \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+exemple = Graphe()
+exemple.ajouter_arete("A", "D")
+exemple.ajouter_arete("D", "C")
+exemple.ajouter_arete("B", "A")
+exemple.ajouter_arete("B", "C")
+\end{lstlisting}
+\captionof{code}{Instanciation}
+\label{CODE}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def affiche_voisins(self, s: str) -> None:
+    for v in self.sommets[s]:
+        print(f"{s} --> {v[0]} : {v[1]}")
+\end{lstlisting}
+\captionof{code}{Méthode d'affichage}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> exemple.affiche_voisins("B")
+B --> A : 1
+B --> C : 1
+\end{lstlisting}
+    \captionof{code}{Appel de la méthode}
+\end{center}
+
+\end{frame}
+\subsection{Méthodes de parcours}
+\begin{frame}
+    \frametitle{Méthodes de parcours}
+\begin{activite}
+\begin{enumerate}
+    \item Dans le même dossier que la bibliothèque, placer le fichier \textbf{\texttt{structures.py}} construit dans les cours précédents.
+    \item Écrire la méthode itérative \textbf{\texttt{dfs\_it(self, s: str) $\rightarrow$ list}} qui renvoie la liste des sommets visités depuis \textbf{\texttt{s}} avec un parcours en profondeur.
+\end{enumerate}
+\end{activite}
+    
+
+\end{frame}
+\end{document}

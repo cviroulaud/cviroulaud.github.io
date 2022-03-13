@@ -1,0 +1,13 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+for i in range(TAILLE):
+    canevas.create_line(i*DIM, 0,
+                        i*DIM, TAILLE*DIM,
+                        fill="black", width=2)
+    canevas.create_line(0, i*DIM,
+                        TAILLE*DIM, i*DIM,
+                        fill="black", width=2)
+\end{lstlisting}
+\end{center}

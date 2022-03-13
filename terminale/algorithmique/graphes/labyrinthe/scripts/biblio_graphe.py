@@ -41,6 +41,9 @@ class Graphe:
         for v in self.sommets[s]:
             print(f"{s} --> {v[0]} : {v[1]}")
 
+    def sont_relies(self, s1, s2) -> bool:
+        return s1 in self.sommets[s2]
+
     def dfs_it(self, s: str) -> list:
         """
         parcours en profondeur depuis un sommet s

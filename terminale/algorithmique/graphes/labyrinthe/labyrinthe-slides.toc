@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Types de labyrinthe}{2}{0}{1}
+\beamer@sectionintoc {2}{Construire un labyrinthe}{6}{0}{2}
+\beamer@sectionintoc {3}{Utiliser une bibliothèque graphique}{9}{0}{3}

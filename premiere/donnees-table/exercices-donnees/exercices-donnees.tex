@@ -1,0 +1,57 @@
+\documentclass[a4paper,11pt]{article}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_doc.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
+\setlength{\fboxrule}{0.8pt}
+\fancyhead[L]{\fbox{\Large{\textbf{Tab 03}}}}
+\fancyhead[C]{\textbf{Exercices - données en table}}
+\newdate{madate}{10}{09}{2020}
+%\fancyhead[R]{\displaydate{madate}} %\today
+\fancyhead[R]{Première - NSI}
+\fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
+\AtEndDocument{\label{lastpage}}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
+\fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
+
+\begin{document}
+\begin{exo}
+    Repérer les erreurs de construction du fichier \textbf{\texttt{csv}} suivant:\\
+    titre,auteur,Présentation,Parution\\
+    Le cas Nelson Kerr, John Grisham,Le jour où Bruce Cable,2022\\
+    Lucia,Bernard Minier,À l'université de Salamanque, un groupe d'étudiants,2022\\
+    Impact,Olivier Norek,Face au mal qui se propage,2021,\\
+    "Labyrinthes,Franck Thilliez,Suivez le fil infernal, une scène de pure folie dans un chalet,2022"
+\end{exo}
+\begin{exo}
+    Un institut de sondage a étudié la corrélation entre l'âge, la profession et le salaire des individus. Les données sont rassemblées dans le fichier \textbf{\texttt{sondage.csv}}
+    \begin{enumerate}
+        \item Télécharger le fichier compressé \textbf{\texttt{exercices-donnees.zip}} sur le site \url{https://cviroulaud.github.io}
+        \item À l'aide du bloc-notes, ouvrir le fichier et observer les données.
+        \item Dans un programme Python, importer les données sous la forme d'un tableau de dictionnaire. Il faudra veiller à formater correctement les données en typant les données chiffrées.
+        \item Écrire la fonction \textbf{\texttt{salaire\_max(donnees: list) $\rightarrow$ int}} qui renvoie le salaire le plus élevé.
+        \item Écrire la fonction \textbf{\texttt{age\_moyen(donnees:list) $\rightarrow$ float}} qui calcule la moyenne d'âge des individus.
+        \item Écrire la fonction \textbf{\texttt{dernier(donnees: list) $\rightarrow$ str}} qui renvoie le dernier nom dans l'ordre alphabétique.
+    \end{enumerate}
+\end{exo}
+\begin{exo}
+    Le Géocube (\url{https://geobs.fr}) est un outil de mesures météorologiques conçu par l'IGN. Grâce à partenariat avec l'organisme, le lycée Jay de Beaufort a la chance de posséder un de ces appareils (sur le toit de l'établissement). Voici un exemple des données récoltées:
+    \begin{itemize}
+        \item Jour, Heure, Temperature
+        \item 2021-12-03, 23:09:43, 9.1
+        \item 2021-12-03, 23:29:43, 9.4
+        \item 2021-12-03, 23:49:43, 9.8
+        \item 2021-12-04, 00:09:43, 10.2
+    \end{itemize}
+    Pour écrire dans un fichier \textbf{\texttt{csv}}, il faut:
+    \begin{itemize}
+        \item Ouvrir un fichier en écriture; s'il n'existe pas le fichier et crée.
+        \item Écrire les entêtes.
+        \item Écrire les lignes.
+        \item Fermer le fichier
+    \end{itemize}
+    \begin{enumerate}
+        \item En s'aidant de la documentation \url{https://tinyurl.com/pytdic}, écrire un programme qui crée le fichier \textbf{\texttt{csv}} des données précédentes.
+        \item Cette implémentation pose l'inconvénient d'écraser les données déjà présentes dans le fichier \textbf{\texttt{csv}} à chaque exécution du fichier. Que faut-il modifier dans la ligne de l'ouverture du fichier pour pouvoir ajouter de nouvelles lignes dans un fichier \texttt{csv} existant?
+    \end{enumerate}
+\end{exo}
+\end{document}

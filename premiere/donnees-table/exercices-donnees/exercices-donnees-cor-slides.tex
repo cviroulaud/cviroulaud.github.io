@@ -1,0 +1,131 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Exercices - données en table\\Correction}
+\date{\framebox{\textbf{Tab 03}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\section{Exercice 1}
+\begin{frame}
+    \frametitle{Exercice 1}
+
+    \begin{itemize}
+        \item \underline{ligne 3: }\emph{À l'université de Salamanque, un groupe d'étudiants:} la virgule est interprétée comme un séparateur. On peut entourer ce texte avec des guillemets.
+        \item \underline{ligne 4: } La virgule finale est en trop.
+        \item \underline{ligne 5: } Les guillemets sont mal placés.
+    \end{itemize}
+
+\end{frame}
+\section{Exercice 2}
+\begin{frame}[fragile]
+    \frametitle{Exercice 2}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+f = open("sondage.csv", "r", encoding="utf8")
+reader = csv.DictReader(f)
+donnees = []
+for ligne in reader:
+    individu = {}
+    # formatage des données
+    for cle, val in ligne.items():
+        if cle == "age" or cle == "salaire":
+            val = int(val)
+        individu[cle] = val
+    # ajout dans le tableau
+    donnees.append(individu)
+f.close()
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def salaire_max(donnees: list) -> int:
+    maxi = 0
+    for individu in donnees:
+        # individu est un dictionnaire
+        if individu["salaire"] > maxi:
+            maxi = individu["salaire"]
+    return maxi
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+
+\begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def age_moyen(donnees: list) -> float:
+    somme = 0
+    for individu in donnees:
+        somme = somme+individu["age"]
+    return somme/len(donnees)
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def dernier(donnees: list) -> str:
+    nom = ""
+    for individu in donnees:
+        # on peut comparer des chaînes de caractères
+        if individu["nom"] > nom:
+            nom = individu["nom"]
+    return nom
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\section{Exercice 3}
+\begin{frame}[fragile]
+    \frametitle{Exercice 3}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=0em]
+import csv
+
+f = open("geocube.csv", "w")
+writer = csv.DictWriter(f, ["Jour", "Heure", "Temperature"])
+writer.writeheader()
+writer.writerow(
+    {"Jour": "2021-12-03", 
+    "Heure": "23:09:43", 
+    "Temperature": 9.1})
+
+writer.writerow(
+    {"Jour": "2021-12-03", 
+    "Heure": "23:29:43", 
+    "Temperature": 9.4})
+
+f.close()    
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+# a pour append
+f = open("geocube.csv", "a")
+\end{lstlisting}
+        \captionof{code}{Ajouter des données en fin de fichier.}
+        \label{CODE}
+    \end{center}
+
+\end{frame}
+\end{document}

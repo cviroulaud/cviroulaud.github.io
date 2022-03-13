@@ -1,0 +1,11 @@
+\frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+# a pour append
+f = open("geocube.csv", "a")
+\end{lstlisting}
+        \captionof{code}{Ajouter des données en fin de fichier.}
+        \label{CODE}
+    \end{center}
+

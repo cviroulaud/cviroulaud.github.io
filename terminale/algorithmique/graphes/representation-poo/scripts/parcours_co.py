@@ -1,6 +1,10 @@
-\frametitle{Correction}
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+@Author: Christophe Viroulaud
+@Time:   Vendredi 11 Mars 2022 15:04
+"""
 import json
 from biblio_graphe import Graphe
 
@@ -16,9 +20,7 @@ for couple in list_graphe:
     for voisin in adjacents:
         # les sommets sont ajoutés automatiquement
         graphe.ajouter_arete(sommet, voisin)
-
+        
 f.close()
-\end{lstlisting}
-\end{center}
-
-
+print(graphe.predecesseurs(34))
+print(graphe.plus_court(34, 19))

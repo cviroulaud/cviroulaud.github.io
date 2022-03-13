@@ -5,3 +5,5 @@
 \beamer@sectionintoc {2}{Implémentation}{11}{0}{2}
 \beamer@subsectionintoc {2}{1}{Classe \textbf {\texttt {Graphe}}}{12}{0}{2}
 \beamer@subsectionintoc {2}{2}{Méthodes de parcours}{22}{0}{2}
+\beamer@sectionintoc {3}{Application}{27}{0}{3}
+\beamer@sectionintoc {4}{Pour aller plus loin}{33}{0}{4}

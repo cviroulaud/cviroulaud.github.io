@@ -1,10 +1,23 @@
-\frametitle{}
+\frametitle{Correction}
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
-def tri_insertion(tab: list) -> None:
-    for i in range(len(tab)):
-        inserer(tab, i)
+def inserer(tab: list, j: int) -> None:
+    while j-1 >= 0 and tab[j-1] > tab[j]:
+        echanger(tab, j-1, j)
+        j = j-1
 \end{lstlisting}
 \end{center}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,-2) grid (5,-1);
+            \node at(0.5,-1.5) {8};
+            \node at(1.5,-1.5) {7};
+            \node at(2.5,-1.5) {5};
+            \node at(3.5,-1.5) {4};
+            \node at(4.5,-1.5) {1};
+        \end{tikzpicture}
+        \captionof{code}{Le tableau est inversé. La boucle \textbf{\texttt{wile}} effectue \textbf{\texttt{i}} itérations.}
+        \label{CODE}
+        \end{center}
 

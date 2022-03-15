@@ -6,7 +6,7 @@
 \beamer@sectionintoc {2}{Implémentation}{20}{0}{2}
 \beamer@subsectionintoc {2}{1}{Rappel: Passer un tableau à une fonction}{21}{0}{2}
 \beamer@subsectionintoc {2}{2}{Implémentations des tris}{22}{0}{2}
-\beamer@sectionintoc {3}{Études des implémentations}{30}{0}{3}
-\beamer@subsectionintoc {3}{1}{Terminaison}{31}{0}{3}
-\beamer@subsectionintoc {3}{2}{Correction}{33}{0}{3}
-\beamer@subsectionintoc {3}{3}{Complexité}{34}{0}{3}
+\beamer@sectionintoc {3}{Études des implémentations}{32}{0}{3}
+\beamer@subsectionintoc {3}{1}{Terminaison}{33}{0}{3}
+\beamer@subsectionintoc {3}{2}{Correction}{36}{0}{3}
+\beamer@subsectionintoc {3}{3}{Complexité}{44}{0}{3}

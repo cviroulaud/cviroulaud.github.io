@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  2 MAR 2022 09:26
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 MAR 2022 14:16
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/parcours-structures-lineaires/parcours-structures-lineaires-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/parcours-structures-lineaires/parcours-structures-lineaires-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.147 seconds
+luaotfload | main : initialization completed in 0.151 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1866,14 +1866,14 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of LuaTeX's memory you used:
  45064 strings out of 494383
  596320,1144653 words of node,token memory allocated
- 161853 words of node memory still in use:
-   886 hlist, 8 vlist, 427 rule, 52 disc, 9 local_par, 629 glue, 485 kern, 35 penalty, 14618 glyph, 15663 attribute, 106 glue_spec, 2613 attribute_list, 4 write, 1 save_pos, 349 pdf_literal, 574 pdf_colorstack nodes
+ 161832 words of node memory still in use:
+   886 hlist, 8 vlist, 427 rule, 52 disc, 9 local_par, 629 glue, 485 kern, 35 penalty, 14615 glyph, 15663 attribute, 106 glue_spec, 2613 attribute_list, 4 write, 1 save_pos, 349 pdf_literal, 574 pdf_colorstack nodes
    avail lists: 1:6,2:7610,3:632,4:8592,5:6945,6:62,7:4655,8:6295,9:11135,10:30,11:644,12:1
  47449 multiletter control sequences out of 65536+600000
  94 fonts using 12010791 bytes
  70i,15n,95p,1238b,1089s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on parcours-structures-lineaires-slides.pdf (43 pages, 138405 bytes).
+Output written on parcours-structures-lineaires-slides.pdf (43 pages, 138417 bytes).
 
 PDF statistics: 746 PDF objects out of 1000 (max. 8388607)
  664 compressed objects within 7 object streams

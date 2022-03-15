@@ -3,10 +3,10 @@
 \beamer@subsectionintoc {1}{1}{Recherche}{5}{0}{1}
 \beamer@subsectionintoc {1}{2}{Tri par sélection}{6}{0}{1}
 \beamer@subsectionintoc {1}{3}{Tri par insertion}{12}{0}{1}
-\beamer@sectionintoc {2}{Implémentation}{17}{0}{2}
-\beamer@subsectionintoc {2}{1}{Rappel: Passer un tableau à une fonction}{18}{0}{2}
-\beamer@subsectionintoc {2}{2}{Implémentations des tris}{18}{0}{2}
-\beamer@sectionintoc {3}{Études des implémentations}{19}{0}{3}
-\beamer@subsectionintoc {3}{1}{Terminaison}{20}{0}{3}
-\beamer@subsectionintoc {3}{2}{Correction}{20}{0}{3}
-\beamer@subsectionintoc {3}{3}{Complexité}{21}{0}{3}
+\beamer@sectionintoc {2}{Implémentation}{20}{0}{2}
+\beamer@subsectionintoc {2}{1}{Rappel: Passer un tableau à une fonction}{21}{0}{2}
+\beamer@subsectionintoc {2}{2}{Implémentations des tris}{22}{0}{2}
+\beamer@sectionintoc {3}{Études des implémentations}{30}{0}{3}
+\beamer@subsectionintoc {3}{1}{Terminaison}{31}{0}{3}
+\beamer@subsectionintoc {3}{2}{Correction}{33}{0}{3}
+\beamer@subsectionintoc {3}{3}{Complexité}{34}{0}{3}

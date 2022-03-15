@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 MAR 2022 13:54
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 MAR 2022 18:37
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/trier-cartes/trier-cartes-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/trier-cartes/trier-cartes-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.130 seconds
+luaotfload | main : initialization completed in 0.160 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1344,7 +1344,11 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./trier-cartes-slides.aux)
+))) (./trier-cartes-slides.aux
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+)
 \openout1 = trier-cartes-slides.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1574,7 +1578,7 @@ Package newfloat Info: float type `listing'=16 on input line 11.
 (./trier-cartes-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<ressources/cartes.jpg, id=91, 1355.0625pt x 903.375pt>
+<ressources/cartes.jpg, id=92, 1355.0625pt x 903.375pt>
 File: ressources/cartes.jpg Graphic file (type jpg)
 <use ressources/cartes.jpg>
 Package luatex.def Info: ressources/cartes.jpg  used on input line 25.
@@ -1595,7 +1599,7 @@ LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
 ] (./trier-cartes-slides.toc) [4
 
 ]
-<ressources/jeu-coeur-melange.png, id=154, 760.73685pt x 192.46642pt>
+<ressources/jeu-coeur-melange.png, id=155, 760.73685pt x 192.46642pt>
 File: ressources/jeu-coeur-melange.png Graphic file (type png)
 <use ressources/jeu-coeur-melange.png>
 Package luatex.def Info: ressources/jeu-coeur-melange.png  used on input line 50.
@@ -1728,15 +1732,149 @@ Overfull \hbox (17.47252pt too wide) in paragraph at lines 270--270
 
 [16
 
-] (./trier-cartes-slides.toc) [17
+]
+Overfull \hbox (17.47252pt too wide) in paragraph at lines 302--302
+ [] 
+ []
 
-] (./trier-cartes-slides.toc) [18
 
-] (./trier-cartes-slides.toc) [19
+Overfull \hbox (17.47252pt too wide) in paragraph at lines 302--302
+ [] 
+ []
+
+[17
+
+]
+Overfull \hbox (17.47252pt too wide) in paragraph at lines 334--334
+ [] 
+ []
+
+
+Overfull \hbox (17.47252pt too wide) in paragraph at lines 334--334
+ [] 
+ []
+
+[18
+
+]
+Overfull \hbox (17.47252pt too wide) in paragraph at lines 396--396
+ [] 
+ []
+
+
+Overfull \hbox (17.47252pt too wide) in paragraph at lines 396--396
+ [] 
+ []
+
+
+Overfull \hbox (17.47252pt too wide) in paragraph at lines 396--396
+ [] 
+ []
+
+
+Overfull \hbox (17.47252pt too wide) in paragraph at lines 396--396
+ [] 
+ []
+
+
+Overfull \hbox (17.47252pt too wide) in paragraph at lines 396--396
+ [] 
+ []
+
+[19
 
 ] (./trier-cartes-slides.toc) [20
 
-] (./trier-cartes-slides.toc) [21
+]
+\openout4 = trier-cartes-slides.vrb
+ (./trier-cartes-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+<ressources/tutor-mutable.png, id=462, 720.6925pt x 407.5225pt>
+File: ressources/tutor-mutable.png Graphic file (type png)
+<use ressources/tutor-mutable.png>
+Package luatex.def Info: ressources/tutor-mutable.png  used on input line 14.
+(luatex.def)             Requested size: 199.16928pt x 112.61934pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+) [21
+
+<./ressources/tutor-mutable.png>] (./trier-cartes-slides.toc) [22
+
+]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 438.
+ [23
+
+]
+\openout4 = trier-cartes-slides.vrb
+ (./trier-cartes-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [24
+
+]
+\openout4 = trier-cartes-slides.vrb
+ (./trier-cartes-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [25
+
+]
+\openout4 = trier-cartes-slides.vrb
+ (./trier-cartes-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [26
+
+] [27
+
+]
+\openout4 = trier-cartes-slides.vrb
+ (./trier-cartes-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 11.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 13.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 13.
+) [28
+
+]
+\openout4 = trier-cartes-slides.vrb
+ (./trier-cartes-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [29
+
+] (./trier-cartes-slides.toc) [30
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 537.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 537.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 537.
+ [31
+
+] [32
+
+] (./trier-cartes-slides.toc) [33
+
+] (./trier-cartes-slides.toc) [34
 
 ]
 \tf@nav=\write8
@@ -1748,29 +1886,43 @@ Overfull \hbox (17.47252pt too wide) in paragraph at lines 270--270
 \tf@snm=\write10
 
 \openout10 = trier-cartes-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 546.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 546.
  (./trier-cartes-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
-Package rerunfilecheck Info: File `trier-cartes-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 848691D52DCD964E0325CE5BD206DEBD;1647.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 546.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 546.
+
+
+Package rerunfilecheck Warning: File `trier-cartes-slides.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `trier-cartes-slides.out':
+(rerunfilecheck)             Before: 22CFEE585EFD6C21123D0ACD0292B85A;1647
+(rerunfilecheck)             After:  64136D08FCDF491FF5CEBEFB0BBCF09E;1647.
+
+LaTeX Warning: There were multiply-defined labels.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 44568 strings out of 494383
- 100000,1144653 words of node,token memory allocated
- 59086 words of node memory still in use:
-   35 hlist, 12 vlist, 4 rule, 17 disc, 8 local_par, 99 glue, 7 kern, 17 penalty, 6750 glyph, 4035 attribute, 106 glue_spec, 675 attribute_list, 3 write, 8 pdf_literal, 6 pdf_start_link, 6 pdf_end_link, 6 pdf_action, 54 pdf_colorstack nodes
-   avail lists: 1:3,2:9031,3:1097,4:173,5:90,6:38,7:646,8:27,9:593,10:11,11:54,12:1
- 47082 multiletter control sequences out of 65536+600000
- 87 fonts using 11116719 bytes
- 70i,15n,95p,1200b,748s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on trier-cartes-slides.pdf (21 pages, 398396 bytes).
+ 45042 strings out of 494383
+ 305285,1144653 words of node,token memory allocated
+ 101387 words of node memory still in use:
+   35 hlist, 12 vlist, 4 rule, 17 disc, 8 local_par, 117 glue, 7 kern, 17 penalty, 11559 glyph, 7683 attribute, 106 glue_spec, 1283 attribute_list, 3 write, 8 pdf_literal, 6 pdf_start_link, 6 pdf_end_link, 6 pdf_action, 54 pdf_colorstack nodes
+   avail lists: 1:6,2:13736,3:2199,4:3867,5:3091,6:44,7:646,8:2757,9:5047,10:26,11:304,12:1
+ 47462 multiletter control sequences out of 65536+600000
+ 92 fonts using 11758631 bytes
+ 70i,15n,95p,1200b,1092s stack positions out of 5000i,500n,10000p,200000b,100000s
 
-PDF statistics: 541 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 55 named destinations out of 1000 (max. 131072)
+warning  (pdf backend): unreferenced destination with name 'Outline0.3.3.32'
+
+warning  (pdf backend): unreferenced destination with name 'Outline0.3.2.31'
+</usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on trier-cartes-slides.pdf (34 pages, 468608 bytes).
+
+PDF statistics: 809 PDF objects out of 1000 (max. 8388607)
+ 727 compressed objects within 8 object streams
+ 83 named destinations out of 1000 (max. 131072)
  114 words of extra memory for PDF output out of 10000 (max. 100000000)
 

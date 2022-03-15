@@ -1,0 +1,10 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+def tri_insertion(tab: list) -> None:
+    for i in range(len(tab)):
+        inserer(tab, i)
+\end{lstlisting}
+\end{center}
+

@@ -38,7 +38,7 @@
     \begin{center}
         \centering
         \includegraphics[width=10cm]{ressources/jeu-coeur-melange.png}
-        \end{center}
+    \end{center}
     \begin{activite}
         \begin{enumerate}
             \item Prendre le paquet de cartes mélangées et les étaler sur la table.
@@ -67,78 +67,78 @@
     \begin{center}
         \centering
         \includegraphics[width=10cm]{ressources/jeu-coeur-melange.png}
-        \end{center}
-        \begin{center}
-            \begin{tikzpicture}[scale=0.8,transform shape]
-                \draw (0,0) grid (13,1);
-                \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw (0,0) grid (13,1);
+            \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
                     \node (\n) at (0.5+\x,0.5) {\n};
 
-                }    
-            \end{tikzpicture}
-            \captionof{figure}{Modélisation}
-        \end{center}
+                }
+        \end{tikzpicture}
+        \captionof{figure}{Modélisation}
+    \end{center}
 
 \end{frame}
 \begin{frame}
 
 
-        \begin{center}
-            \begin{tikzpicture}[scale=0.8,transform shape]
-                \draw (0,0) grid (13,1);
-                \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw (0,0) grid (13,1);
+            \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
                     \node (\n) at (0.5+\x,0.5) {\n};
 
                 }
-    
-                \draw[<->,>=latex] (0.5,1) to[bend left=90] (8.5,1);
-    
-            \end{tikzpicture}
-            
-            \captionof{figure}{Sélection du plus petit élément.}
-        \end{center}
-        \begin{center}
-            \begin{tikzpicture}[scale=0.8,transform shape]
-                \draw (0,0) grid (13,1);
-                \draw[fill=gray!50] (0,0)--(1,0)--(1,1)--(0,1)--cycle;
-                \foreach \n/\x in {1/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,6/8,3/9,7/10,9/11,8/12}{
+
+            \draw[<->,>=latex] (0.5,1) to[bend left=90] (8.5,1);
+
+        \end{tikzpicture}
+
+        \captionof{figure}{Sélection du plus petit élément.}
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw (0,0) grid (13,1);
+            \draw[fill=gray!50] (0,0)--(1,0)--(1,1)--(0,1)--cycle;
+            \foreach \n/\x in {1/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,6/8,3/9,7/10,9/11,8/12}{
                     \node (\n) at (0.5+\x,0.5) {\n};
 
-                }    
-            \end{tikzpicture}
-            \captionof{figure}{La partie triée est à gauche.}
-        \end{center}
+                }
+        \end{tikzpicture}
+        \captionof{figure}{La partie triée est à gauche.}
+    \end{center}
 
 \end{frame}
 \begin{frame}
 
 
-        \begin{center}
-            \begin{tikzpicture}[scale=0.8,transform shape]
-                \draw (0,0) grid (13,1);
-                \draw[fill=gray!50] (0,0)--(1,0)--(1,1)--(0,1)--cycle;
-                \foreach \n/\x in {1/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,6/8,3/9,7/10,9/11,8/12}{
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw (0,0) grid (13,1);
+            \draw[fill=gray!50] (0,0)--(1,0)--(1,1)--(0,1)--cycle;
+            \foreach \n/\x in {1/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,6/8,3/9,7/10,9/11,8/12}{
                     \node (\n) at (0.5+\x,0.5) {\n};
 
                 }
-    
-                \draw[<->,>=latex] (1.5,1) to[bend left=90] (5.5,1);
-    
-            \end{tikzpicture}
-            
-            \captionof{figure}{Sélection du plus petit élément.}
-        \end{center}
-        \begin{center}
-            \begin{tikzpicture}[scale=0.8,transform shape]
-                \draw[fill=gray!50] (0,0)--(2,0)--(2,1)--(0,1)--cycle;
-                \draw (0,0) grid (13,1);
-                \foreach \n/\x in {1/0,2/1,10/2,12/3,4/4,5/5,11/6,13/7,6/8,3/9,7/10,9/11,8/12}{
+
+            \draw[<->,>=latex] (1.5,1) to[bend left=90] (5.5,1);
+
+        \end{tikzpicture}
+
+        \captionof{figure}{Sélection du plus petit élément.}
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(2,0)--(2,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+            \foreach \n/\x in {1/0,2/1,10/2,12/3,4/4,5/5,11/6,13/7,6/8,3/9,7/10,9/11,8/12}{
                     \node (\n) at (0.5+\x,0.5) {\n};
 
-                }    
-            \end{tikzpicture}
-            \captionof{figure}{La partie triée est à gauche.}
-        \end{center}
+                }
+        \end{tikzpicture}
+        \captionof{figure}{La partie triée est à gauche.}
+    \end{center}
 
 \end{frame}
 \begin{frame}
@@ -150,14 +150,14 @@
             \draw (0,0) grid (13,1);
 
             \foreach \n/\x in {1/0,2/1,10/2,12/3,4/4,5/5,11/6,13/7,6/8,3/9,7/10,9/11,8/12}{
-                \node (\n) at (0.5+\x,0.5) {\n};
+                    \node (\n) at (0.5+\x,0.5) {\n};
 
-            }
+                }
 
             \draw[<->,>=latex] (2.5,1) to[bend left=90] (9.5,1);
 
         \end{tikzpicture}
-        
+
         \captionof{figure}{Sélection du plus petit élément.}
     \end{center}
     \begin{center}
@@ -165,9 +165,9 @@
             \draw[fill=gray!50] (0,0)--(3,0)--(3,1)--(0,1)--cycle;
             \draw (0,0) grid (13,1);
             \foreach \n/\x in {1/0,2/1,3/2,12/3,4/4,5/5,11/6,13/7,6/8,10/9,7/10,9/11,8/12}{
-                \node (\n) at (0.5+\x,0.5) {\n};
+                    \node (\n) at (0.5+\x,0.5) {\n};
 
-            }    
+                }
         \end{tikzpicture}
         \captionof{figure}{La partie triée est à gauche.}
     \end{center}
@@ -192,48 +192,48 @@
     \begin{center}
         \centering
         \includegraphics[width=10cm]{ressources/jeu-coeur-melange.png}
-        \end{center}
-        \begin{center}
-            \begin{tikzpicture}[scale=0.8,transform shape]
-                \draw (0,0) grid (13,1);
-                \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw (0,0) grid (13,1);
+            \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
                     \node (\n) at (0.5+\x,0.5) {\n};
 
-                }    
-            \end{tikzpicture}
-            \captionof{figure}{Modélisation}
-        \end{center}
+                }
+        \end{tikzpicture}
+        \captionof{figure}{Modélisation}
+    \end{center}
 
 \end{frame}
 \begin{frame}
 
 
-        \begin{center}
-            \begin{tikzpicture}[scale=0.8,transform shape]
-                \draw (0,0) grid (13,1);
-                \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw (0,0) grid (13,1);
+            \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
                     \node (\n) at (0.5+\x,0.5) {\n};
 
                 }
-    
-                \draw[->,>=latex] (0.5,2) -- (0.5,1);
-    
-            \end{tikzpicture}
-            
-            \captionof{figure}{Carte en cours}
-        \end{center}
-        \begin{center}
-            \begin{tikzpicture}[scale=0.8,transform shape]
-                \draw[fill=gray!50] (0,0)--(1,0)--(1,1)--(0,1)--cycle;
-                \draw (0,0) grid (13,1);
-                
-                \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+
+            \draw[->,>=latex] (0.5,2) -- (0.5,1);
+
+        \end{tikzpicture}
+
+        \captionof{figure}{Carte en cours}
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(1,0)--(1,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+
+            \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
                     \node (\n) at (0.5+\x,0.5) {\n};
 
-                }    
-            \end{tikzpicture}
-            \captionof{figure}{La partie triée est à gauche.}
-        \end{center}
+                }
+        \end{tikzpicture}
+        \captionof{figure}{La partie triée est à gauche.}
+    \end{center}
 
 \end{frame}
 \begin{frame}
@@ -244,25 +244,151 @@
             \draw[fill=gray!50] (0,0)--(1,0)--(1,1)--(0,1)--cycle;
             \draw (0,0) grid (13,1);
             \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
-                \node (\n) at (0.5+\x,0.5) {\n};
+                    \node (\n) at (0.5+\x,0.5) {\n};
 
-            }
+                }
 
             \draw[->,>=latex] (1.5,2) -- (1.5,1);
             \draw[<->,>=latex] (0.5,0) to[bend right=90] (1.5,0);
         \end{tikzpicture}
-        
+
         \captionof{figure}{Carte en cours}
     \end{center}
     \begin{center}
         \begin{tikzpicture}[scale=0.8,transform shape]
             \draw[fill=gray!50] (0,0)--(2,0)--(2,1)--(0,1)--cycle;
             \draw (0,0) grid (13,1);
-            
-            \foreach \n/\x in {5/0,6/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
-                \node (\n) at (0.5+\x,0.5) {\n};
 
-            }    
+            \foreach \n/\x in {5/0,6/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
+        \end{tikzpicture}
+        \captionof{figure}{La partie triée est à gauche.}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(2,0)--(2,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+            \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
+
+            \draw[->,>=latex] (2.5,2) -- (2.5,1);
+            \draw[<->,>=latex] (1.5,0) to[bend right=90] (2.5,0);
+        \end{tikzpicture}
+
+        \captionof{figure}{Carte en cours}
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(3,0)--(3,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+
+            \foreach \n/\x in {5/0,6/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
+        \end{tikzpicture}
+        \captionof{figure}{La partie triée est à gauche.}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(3,0)--(3,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+            \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
+
+            \draw[->,>=latex] (3.5,2) -- (3.5,1);
+            \draw[<->,>=latex] (2.5,0) to[bend right=90] (3.5,0);
+        \end{tikzpicture}
+
+        \captionof{figure}{Carte en cours}
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(4,0)--(4,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+
+            \foreach \n/\x in {5/0,6/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
+        \end{tikzpicture}
+        \captionof{figure}{La partie triée est à gauche.}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(4,0)--(4,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+            \foreach \n/\x in {6/0,5/1,10/2,12/3,4/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
+
+            \draw[->,>=latex] (4.5,2) -- (4.5,1);
+            \draw[<->,>=latex] (3.5,0) to[bend right=90] (4.5,0);
+        \end{tikzpicture}
+
+        \captionof{figure}{Carte en cours}
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(5,0)--(5,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+
+            \foreach \n/\x in {5/0,6/1,10/2,4/3,12/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
+            \draw[<->,>=latex] (2.5,0) to[bend right=90] (3.5,0);
+        \end{tikzpicture}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(5,0)--(5,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+
+            \foreach \n/\x in {5/0,6/1,4/2,10/3,12/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
+            \draw[<->,>=latex] (1.5,0) to[bend right=90] (2.5,0);
+        \end{tikzpicture}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(5,0)--(5,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+
+            \foreach \n/\x in {5/0,4/1,6/2,10/3,12/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
+            \draw[<->,>=latex] (0.5,0) to[bend right=90] (1.5,0);
+        \end{tikzpicture}
+        \begin{tikzpicture}[scale=0.8,transform shape]
+            \draw[fill=gray!50] (0,0)--(5,0)--(5,1)--(0,1)--cycle;
+            \draw (0,0) grid (13,1);
+
+            \foreach \n/\x in {4/0,5/1,6/2,10/3,12/4,2/5,11/6,13/7,1/8,3/9,7/10,9/11,8/12}{
+                    \node (\n) at (0.5+\x,0.5) {\n};
+
+                }
         \end{tikzpicture}
         \captionof{figure}{La partie triée est à gauche.}
     \end{center}
@@ -270,9 +396,151 @@
 \end{frame}
 \section{Implémentation}
 \subsection{Rappel: Passer un tableau à une fonction}
+\begin{frame}[fragile]
+
+    \begin{center}
+        \begin{lstlisting}[language=Python]
+def ma_fonction(tab: list) -> None:
+        tab[2] = 199
+        
+    tab = [3, 8, 1, 10, 9]
+    ma_fonction(tab)
+\end{lstlisting}
+        \captionof{code}{\centering Quand on passe un tableau en argument à une fonction, on passe en réalité \textbf{une référence} au tableau original.}
+    \end{center}
+    \begin{center}
+        \centering
+        \includegraphics[width=7cm]{ressources/tutor-mutable.png}
+        \label{IMG}
+    \end{center}
+\end{frame}
 \subsection{Implémentations des tris}
+\begin{frame}
+    \frametitle{Implémentation des tris}
+
+    \begin{itemize}
+        \item Pour chaque carte du tas:
+              \begin{itemize}
+                  \item \textbf{Trouver la plus petite} carte dans la partie non triée.
+                  \item \textbf{Échanger} cette carte avec la première de la partie non triée.
+              \end{itemize}
+
+    \end{itemize}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Écrire la fonction \textbf{\texttt{indice\_mini(tab: list, dep: int) $\rightarrow$ int}} qui renvoie l'indice de la valeur minimale de \textbf{\texttt{tab}}, entre l'élément d'indice \textbf{\texttt{deb}} et la fin du tableau.
+            \item Écrire la fonction \textbf{\texttt{echanger(tab: list, i: int, j: int) $\rightarrow$ None}} qui échange les éléments d'indices \textbf{\texttt{i}} et \textbf{\texttt{j}}.
+            \item Écrire alors la fonction \textbf{\texttt{tri\_insertion(tab: list) $\rightarrow$ None}}.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+def indice_mini(tab: list, dep: int) -> int:
+    i_mini = dep
+    mini = tab[dep]
+    # parcours de la partie du tableau
+    for i in range(dep, len(tab)):
+        if tab[i] < mini:
+            i_mini = i
+            mini = tab[i]
+    return i_mini
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+def echanger(tab: list, i: int, j: int) -> None:
+    temp = tab[i]
+    tab[i] = tab[j]
+    tab[j] = temp
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+def tri_selection(tab: list) -> None:
+    for i in range(len(tab)):
+        i_mini = indice_mini(tab, i)
+        echanger(tab, i, i_mini)
+\end{lstlisting}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+    \begin{itemize}
+        \item Pour chaque carte du tas:
+              \begin{itemize}
+                  \item Tant que la carte précédente est plus petite
+                  \item \textbf{Échanger} cette carte avec la carte en cours.
+              \end{itemize}
+
+    \end{itemize}
+    \begin{activite}
+        \begin{enumerate}
+            \item Écrire la fonction \textbf{\texttt{inserer(tab: list, j: int) $\rightarrow$ None}} qui insère l'élément de rang \textbf{\texttt{j}} dans la partie déjà triée.
+            \item Écrire alors la fonction \textbf{\texttt{tri\_insertion(tab: list) $\rightarrow$ None}}.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+def inserer(tab: list, j: int) -> None:
+    while j-1 >= 0 and tab[j-1] > tab[j]:
+        echanger(tab, j-1, j)
+        j = j-1
+\end{lstlisting}
+\end{center}
+\begin{aretenir}[Remarque]
+La condition \textbf{\texttt{j-1 >= 0}} évite de \emph{sortir} du tableau.
+\end{aretenir}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=0em]
+def tri_insertion(tab: list) -> None:
+    for i in range(len(tab)):
+        inserer(tab, i)
+\end{lstlisting}
+\end{center}
+
+\end{frame}
 \section{Études des implémentations}
 \subsection{Terminaison}
+\begin{frame}
+    \frametitle{Études: Terminaison}
+
+\begin{aretenir}[]
+Pour montrer que l'algorithme termine (ne part pas dans une boucle sans fin), on utilise \textbf{un variant de boucle}.
+\end{aretenir}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Dans le tri par sélection, on utilise deux boucles \textbf{bornées}. Dans chaque boucle, le variant utilisé est la v
+
+\end{frame}
 \subsection{Correction}
 \subsection{Complexité}
 \end{document}

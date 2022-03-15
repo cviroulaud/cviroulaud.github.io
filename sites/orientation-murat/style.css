@@ -1,0 +1,75 @@
+h2 {
+    color: black;
+}
+
+body{
+    width: 800px;
+    margin: auto;
+    background-color: #f4EDDE;
+}
+
+p {
+ color: grey;
+}
+
+li {
+   color: brown;
+}
+
+p {
+  text-align: center;
+  border: neutre;
+}
+
+
+h2 {
+  text-align: center;
+  border: neutre;
+}
+
+h1 {
+  text-align: center;
+  border: neutre;
+}
+
+h1 {
+   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+   color: white;
+   font: 1.5em Georgia, serif;
+}
+
+h2 {
+  background-color: beige;
+  color: black;
+}
+
+#uneligne {
+  text-decoration-line: underline;
+  text-decoration-style: law;
+  text-decoration-color: orange;
+  text-underline-offset: 0.5em;
+}
+
+#deuxligne {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: orange;
+  text-underline-offset: 0.5em;
+}
+
+#troisligne {
+  text-decoration-line: underline;
+  text-decoration-style: law;
+  text-decoration-color: white;
+  text-underline-offset: 0.5em;
+}
+
+#lafin {
+ color: brown;
+}
+
+
+#lafin {
+  text-align: end;
+  border: neutre;
+}

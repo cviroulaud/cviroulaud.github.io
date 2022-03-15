@@ -1,0 +1,46 @@
+h2 {
+ color: black;
+}
+
+h2 {
+  font-family: cursive;
+}
+
+p{
+  font-family: cursive;
+}
+
+html {
+  background-color: #c4948d;
+  color: #black;
+}
+
+h2{
+   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+   color: white;
+   font: 1.5em Georgia, serif;
+}
+
+h1{
+   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+   color: red;
+   font: 1.5em Georgia, serif;
+}
+
+h1 {
+  text-align: center;
+  border: ;
+}
+
+h2 {
+  text-align: center;
+  border: ;
+}
+
+p {
+ color: white;
+}
+
+p {
+  text-align: center;
+}

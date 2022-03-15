@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  13 MAR 2022 22:40
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 MAR 2022 15:32
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/representation-poo/representation-poo-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/graphes/representation-poo/representation-poo-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.108 seconds
+luaotfload | main : initialization completed in 0.147 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1842,16 +1842,16 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45157 strings out of 494383
- 381557,1144653 words of node,token memory allocated
- 119427 words of node memory still in use:
-   176 hlist, 7 vlist, 5 rule, 5 disc, 6 local_par, 6 math, 432 glue, 7 kern, 30 penalty, 11612 glyph, 13215 attribute, 106 glue_spec, 2205 attribute_list, 3 write, 539 pdf_literal, 28 pdf_colorstack nodes
+ 45158 strings out of 494383
+ 381554,1144653 words of node,token memory allocated
+ 119483 words of node memory still in use:
+   176 hlist, 7 vlist, 5 rule, 5 disc, 6 local_par, 6 math, 432 glue, 7 kern, 30 penalty, 11616 glyph, 13227 attribute, 106 glue_spec, 2207 attribute_list, 3 write, 539 pdf_literal, 28 pdf_colorstack nodes
    avail lists: 1:5,2:6042,3:1130,4:8144,5:6471,6:64,7:1602,8:5824,9:10281,10:29,11:588,12:1
- 47528 multiletter control sequences out of 65536+600000
+ 47529 multiletter control sequences out of 65536+600000
  106 fonts using 13160591 bytes
  70i,15n,95p,1216b,1077s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on representation-poo-slides.pdf (37 pages, 580558 bytes).
+Output written on representation-poo-slides.pdf (37 pages, 580672 bytes).
 
 PDF statistics: 725 PDF objects out of 1000 (max. 8388607)
  642 compressed objects within 7 object streams

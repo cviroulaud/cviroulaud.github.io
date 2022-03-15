@@ -1,0 +1,21 @@
+h1 {
+    color: black;
+}
+
+h2 {
+    color:red;
+}
+h3  {
+     color:green;
+}
+
+h4  {
+     color:blue;
+}
+body {
+     width: 800px;
+     margin: auto;
+     background-color: #152ff152;
+}
+   
+   

@@ -1,0 +1,10 @@
+body {
+    width: 800px;
+    margin: auto;  
+    background-color:  #edbb99;
+
+#monimage{
+ display: block;
+ margin: auto;
+ height: 150px;
+ }

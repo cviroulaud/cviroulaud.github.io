@@ -1,0 +1,30 @@
+﻿h1 {
+    color: ;
+}
+body {
+    width: 1000px;
+    margin: auto;
+    background-color: #BDBDBD;
+    background-image: linear-gradient(rgba(176, 190, 197, 0.5), rgba(144, 202, 249, 0.5)),
+                  url("blanc.webp");
+}
+
+#Po {
+	color: red;
+}
+
+#justice {
+	color: red;
+}
+
+#affaire {
+	color: blue
+}
+
+#pénal {
+	color: blue
+}
+#civile {
+	color: blue
+}
+text-align: center;

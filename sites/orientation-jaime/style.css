@@ -1,0 +1,36 @@
+h1{color:#581845;}
+h2{color:#900C3F;}
+h3{color:#C70039;}
+h4{color:#55B0B6;}
+
+
+
+
+body{
+
+width: 800px;
+margin: auto;
+background-color: #CBF3F3;
+
+
+text-align: start;
+font-family: cursive;
+backround-position: center;
+}
+
+
+h1 {
+text-align: center;
+}
+
+#archi {
+color: blue;
+text-align: center;
+}
+
+#inge {
+color: blue;
+text-align: center;
+display: block;
+}					
+

@@ -1,0 +1,29 @@
+h1  {
+    color: pink;
+    text-align: center;
+    font-family: cursive;
+    text-shadow: 2px 2px 3px #d71b07;
+}
+h2 {
+    text-shadow: 2px 2px 3px pink;
+    text-decoration-line: underline;
+}
+body {
+    width: 800px;
+    margin: auto;
+    background-color: #7ea7c5;
+    font-family: cursive;
+    
+}
+#monimage {
+	height: 200px;
+	
+}
+
+#monimage2 {
+	height: 130px
+
+}
+#monimage1 {
+	height: 300px
+}

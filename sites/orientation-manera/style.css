@@ -1,0 +1,21 @@
+h1{color:#CD5C5C;}
+h2{color:#F08080;}
+li{color:#FA8072;}
+img src{ alt="Image" style="width:500px;height:600px;"}
+body{width:800px;
+margin:auto;
+background-color:#f4dfdf;
+text-align: start;
+font-family: cursive;
+background-position: center;
+}
+#police scientifique{
+display: block;
+margin: auto;
+height: 200px;
+ }
+#Interprète{
+display: block;
+margin: auto;
+height: 200px;
+ }

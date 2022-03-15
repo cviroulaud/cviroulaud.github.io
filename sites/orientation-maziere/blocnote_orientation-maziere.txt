@@ -1,0 +1,30 @@
+<html>
+   <head>
+    <title>orientation-Samuel Maziere</title>
+ <link rel="stylesheet" href="style.css">
+ </head>
+ <title>orientation-Samuel Maziere</title>
+ </head>
+   <body> 
+       <p>Je vous présente mon projet d'avenir</p>
+       <h1>Mon projet d'avenir est axé sur le scientifique comme medecin ou kinésitherapeute.</h1>
+       <h2>Quel parcour faut-il suivre pour accéder à ces métiers?</h2>
+<img src="sct.jpg"       
+
+
+<h3>Le métier de medecin.</h3>
+<p>Un médecin est une "personne qui exerce la médecine,est titulaire du diplôme de docteur en médecine"selon le dictionnaire Le Robert.
+     <p>Pour devenir medecin, il faut:<p>
+<ul>
+<li>obtenir un baccalauréat scientifique</li>
+<li>réussir la premiere année d'étude de medecine (PACES)</li>
+<li>faire des études de medecine en unniversité qui durent 9 ans en tout </li>
+<li>pour devenir medecin specialistes, il faut compter 10 ou 11 ansd'études.<li>
+
+
+</body>
+</html>
+<a href="https://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Principaux-domaines-d-etudes/Les-etudes-de-sante-organisation-des-etudes/Les-etudes-de-medecine"target=_blank><img src="chirurgie.jpg"</a>
+</ul>
+
+<p> J'ai pour

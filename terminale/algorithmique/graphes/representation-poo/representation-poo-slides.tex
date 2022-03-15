@@ -122,7 +122,7 @@ La bibliothèque \textbf{\texttt{graphe}} doit prendre en compte les différents
     \end{center}
     \begin{center}
     \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-voisins_B = { ("A", 1), ("D", 1) }
+voisins_B = { ("A", 1), ("C", 1) }
 \end{lstlisting}
     \captionof{code}{Ensemble des voisins de B}
     \label{CODE}
@@ -283,7 +283,7 @@ def ajouter_arete(self, s1: str, s2: str, d: int = 1) -> None:
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-exemple = Graphe()
+exemple = Graphe(True)
 exemple.ajouter_arete("A", "D")
 exemple.ajouter_arete("D", "C")
 exemple.ajouter_arete("B", "A")
@@ -320,7 +320,7 @@ B --> C : 1
 \begin{enumerate}
     \item Dans le même dossier que la bibliothèque, placer le fichier \textbf{\texttt{structures.py}} construit dans les cours précédents.
     \item Écrire la méthode itérative \textbf{\texttt{dfs\_it(self, s: str) $\rightarrow$ list}} qui renvoie la liste des sommets visités depuis \textbf{\texttt{s}} avec un parcours en profondeur.
-    \item \textbf{Pour les plus avancés:} Écrire la méthode récursive \textbf{\texttt{dfs\_rec(self, s: str, parcours: list)} $\rightarrow$ list}.
+    \item \textbf{Pour les plus avancés:} Écrire la méthode récursive \textbf{\texttt{dfs\_rec(self, s: str, parcours: list)} $\rightarrow$ None}.
 \end{enumerate}
 \end{activite}
     

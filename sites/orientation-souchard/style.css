@@ -1,0 +1,25 @@
+h1{color:#C3ACA0;
+text-shadow: 5px 5px #A38D81;}
+h2{color:#bc9086;
+text-decoration: underline;
+text-shadow: 1px 1px 2px white;}
+
+body {width: 800px;
+     margin: auto;
+     background-color:#e0d3cc;}
+     
+.{
+  height: 50px;
+  width: 50px;}
+
+#premiereimage{display : block;
+                margin : left;
+                height: 200px;}
+
+#deuxiemeimage{display : block;
+                margin : left;
+                height: 200px;}
+
+#troisiemeimage{display : block;
+                margin : left;
+                height: 200px;}

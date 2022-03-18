@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Problématique}{2}{0}{1}
+\beamer@sectionintoc {2}{Chiffrement symétrique}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe: le code de César}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Chiffrement polyalphabétique}{15}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Principe}{15}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Chiffrement par \emph {ou exclusif}}{20}{0}{2}
+\beamer@sectionintoc {3}{Avantages du chiffrement symétrique}{24}{0}{3}

@@ -1,68 +1,42 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\beamer@sectionpages {1}{1}}
-\headcommand {\beamer@subsectionpages {1}{1}}
-\headcommand {\sectionentry {1}{Problématique}{2}{Problématique}{0}}
-\headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\slideentry {1}{0}{2}{3/3}{}{0}}
+\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@sectionpages {2}{3}}
-\headcommand {\beamer@subsectionpages {2}{3}}
-\headcommand {\sectionentry {2}{Chiffrement symétrique}{4}{Chiffrement symétrique}{0}}
-\headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Principe: le code de César}}
-\headcommand {\slideentry {2}{1}{1}{4/5}{Principe: le code de César}{0}}
-\headcommand {\beamer@framepages {4}{5}}
-\headcommand {\slideentry {2}{1}{2}{6/6}{Principe: le code de César}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {2}{1}{3}{7/7}{Principe: le code de César}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{1}{4}{8/8}{Principe: le code de César}{0}}
+\headcommand {\beamer@sectionpages {1}{3}}
+\headcommand {\beamer@subsectionpages {1}{3}}
+\headcommand {\sectionentry {1}{Chiffrement symétrique}{4}{Chiffrement symétrique}{0}}
+\headcommand {\slideentry {1}{0}{1}{4/4}{}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Principe}}
+\headcommand {\slideentry {1}{1}{1}{5/5}{Principe}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {1}{1}{2}{6/7}{Principe}{0}}
+\headcommand {\beamer@framepages {6}{7}}
+\headcommand {\slideentry {1}{1}{3}{8/8}{Principe}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{1}{5}{9/9}{Principe: le code de César}{0}}
+\headcommand {\beamer@subsectionpages {5}{8}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{Chiffrement de César}}
+\headcommand {\slideentry {1}{2}{1}{9/9}{Chiffrement de César}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{1}{6}{10/10}{Principe: le code de César}{0}}
+\headcommand {\slideentry {1}{2}{2}{10/10}{Chiffrement de César}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{1}{7}{11/11}{Principe: le code de César}{0}}
+\headcommand {\slideentry {1}{2}{3}{11/11}{Chiffrement de César}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{1}{8}{12/12}{Principe: le code de César}{0}}
+\headcommand {\slideentry {1}{2}{4}{12/12}{Chiffrement de César}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{1}{9}{13/14}{Principe: le code de César}{0}}
-\headcommand {\beamer@framepages {13}{14}}
-\headcommand {\beamer@subsectionpages {4}{14}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{15}{Chiffrement polyalphabétique}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{2}{1}{15}{Principe}}
-\headcommand {\slideentry {2}{2}{1}{15/15}{Chiffrement polyalphabétique}{0}}
+\headcommand {\slideentry {1}{2}{5}{13/13}{Chiffrement de César}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {1}{2}{6}{14/14}{Chiffrement de César}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {1}{2}{7}{15/15}{Chiffrement de César}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {2}{2}{2}{16/16}{Chiffrement polyalphabétique}{0}}
+\headcommand {\slideentry {1}{2}{8}{16/16}{Chiffrement de César}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {2}{2}{3}{17/17}{Chiffrement polyalphabétique}{0}}
-\headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {2}{2}{4}{18/18}{Chiffrement polyalphabétique}{0}}
-\headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {2}{2}{5}{19/19}{Chiffrement polyalphabétique}{0}}
-\headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{2}{2}{20}{Chiffrement par \emph {ou exclusif}}}
-\headcommand {\slideentry {2}{2}{6}{20/20}{Chiffrement polyalphabétique}{0}}
-\headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {2}{2}{7}{21/21}{Chiffrement polyalphabétique}{0}}
-\headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {2}{2}{8}{22/22}{Chiffrement polyalphabétique}{0}}
-\headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {2}{2}{9}{23/23}{Chiffrement polyalphabétique}{0}}
-\headcommand {\beamer@framepages {23}{23}}
-\headcommand {\beamer@sectionpages {4}{23}}
-\headcommand {\beamer@subsectionpages {15}{23}}
-\headcommand {\sectionentry {3}{Avantages du chiffrement symétrique}{24}{Avantages du chiffrement symétrique}{0}}
-\headcommand {\slideentry {3}{0}{1}{24/26}{}{0}}
-\headcommand {\beamer@framepages {24}{26}}
-\headcommand {\slideentry {3}{0}{2}{27/29}{}{0}}
-\headcommand {\beamer@framepages {27}{29}}
-\headcommand {\beamer@partpages {1}{30}}
-\headcommand {\beamer@subsectionpages {24}{30}}
-\headcommand {\beamer@sectionpages {24}{30}}
-\headcommand {\beamer@documentpages {30}}
-\headcommand {\gdef \inserttotalframenumber {24}}
-\headcommand {\slideentry {3}{0}{3}{30/30}{}{0}}
-\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@partpages {1}{16}}
+\headcommand {\beamer@subsectionpages {9}{16}}
+\headcommand {\beamer@sectionpages {4}{16}}
+\headcommand {\beamer@documentpages {16}}
+\headcommand {\gdef \inserttotalframenumber {15}}

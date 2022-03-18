@@ -288,7 +288,100 @@ print(t)
 \begin{frame}[fragile]
     \frametitle{Exercice 6}
 
-    
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def echanger(tab: list, i: int, j: int) -> None:
+    temp = tab[i]
+    tab[i] = tab[j]
+    tab[j] = temp
+
+def inserer(tab: list, j: int) -> None:
+    # Le changement se fait dans la comparaison
+    while j-1 >= 0 and tab[j-1][0] > tab[j][0]:
+        echanger(tab, j-1, j)
+        j = j-1
+
+def tri_insertion(tab: list) -> None:
+    for i in range(len(tab)):
+        inserer(tab, i)
+\end{lstlisting}
+\end{center}    
+\begin{aretenir}[]
+Le tri par insertion est stable. Ce n'est pas le cas du tri par sélection.
+\end{aretenir}
+\end{frame}
+\section{Exercie 7}
+\begin{frame}[fragile]
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-3em]
+def max_occurrences(tab: list) -> tuple:
+    tri_insertion(tab)
+    # départ 1° série
+    en_cours = tab[0]
+    serie_en_cours = 1
+    elt_max = tab[0]
+    serie_max = 1
+    for i in range(1, len(tab)):
+        # cas même élément que le précédent
+        if en_cours == tab[i]:
+            serie_en_cours += 1
+        else:
+            # vérifie alors la taille de la dernière série
+            if serie_en_cours > serie_max:
+                serie_max = serie_en_cours
+                elt_max = en_cours
+            # départ nouvelle série
+            en_cours = tab[i]
+            serie_en_cours = 1
+    return (elt_max, serie_max)
+\end{lstlisting}
+\end{center} 
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-2em]
+t = [randint(0, 10) for _ in range(100)]
+maxi = max_occurrences(t)
+print(f"Le nombre {maxi[0]} est apparu {maxi[1]} fois.")
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\section{Exercice 8}
+\begin{frame}[fragile]
+    \frametitle{Exercice 8}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def echanger(tab: list, i: int, j: int) -> None:
+    """
+    échange deux éléments de tab
+    """
+    temp = tab[i]
+    tab[i] = tab[j]
+    tab[j] = temp
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def tri_bulles(tab: list) -> None:
+    for i in range(len(tab)):
+        # on s'arrête avant la partie déjà triée
+        for j in range(1, len(tab)-i):
+            # remonte l'élément le plus grand
+            if tab[j-1] > tab[j]:
+                echanger(tab, j-1, j)
+\end{lstlisting}
+\end{center} 
 
 \end{frame}
 \end{document}

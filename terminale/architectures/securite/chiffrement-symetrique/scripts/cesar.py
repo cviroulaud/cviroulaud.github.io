@@ -3,26 +3,42 @@
 
 """
 @Author: Christophe Viroulaud
-@Time:   2021/04/20 16:08:18
+@Time:   Vendredi 18 Mars 2022 15:33
 """
 
 
 def chiffrement(message: str, cle: int) -> str:
     sortie = ""
     for lettre in message:
-        sortie += chr(ord(lettre)+cle)
+        # code ASCII de la lettre chiffrée
+        code = ord(lettre) + cle
+        # ajout
+        sortie = sortie+chr(code)
     return sortie
 
+
+def chiffrement2(message: str, cle: int) -> str:
+    sortie = ""
+    for lettre in message:
+        # code ASCII de la lettre chiffrée
+        code = (ord(lettre) + cle) % 91  # Z = 90
+        # ajustement du code ASCII
+        if code < ord("A"):
+            code = code+ord("A")
+        # ajout
+        sortie = sortie+chr(code)
+    return sortie
 
 def dechiffrement(message: str, cle: int) -> str:
     sortie = ""
     for lettre in message:
-        sortie += chr(ord(lettre)-cle)
+        # code ASCII de la lettre chiffrée
+        code = ord(lettre) - cle
+        # ajustement du code ASCII
+        if code < ord("A"):
+            code = code+ord("A")
+        # ajout
+        sortie = sortie+chr(code)
     return sortie
 
-
-k = 3
-entree = "LANSIESTFANTASTIQUE"
-m_chiffre = chiffrement(entree, k)
-print(m_chiffre)
-print(dechiffrement(m_chiffre, k))
+print(chiffrement("ABZ", 2))

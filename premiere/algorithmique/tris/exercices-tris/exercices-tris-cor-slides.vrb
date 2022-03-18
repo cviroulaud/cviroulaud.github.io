@@ -1,4 +1,14 @@
-\frametitle{Exercice 6}
+\frametitle{}
 
-
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def tri_bulles(tab: list) -> None:
+    for i in range(len(tab)):
+        # on s'arrête avant la partie déjà triée
+        for j in range(1, len(tab)-i):
+            # remonte l'élément le plus grand
+            if tab[j-1] > tab[j]:
+                echanger(tab, j-1, j)
+\end{lstlisting}
+\end{center}
 

@@ -25,26 +25,40 @@ def tri_insertion(tab: list) -> None:
         tab[pos] = en_cours
 
 
-def max_occurrences(tab: list) -> int:
+def max_occurrences(tab: list) -> tuple:
     """
     renvoie l'élément le plus présent dans le tableau
+
+    Args:
+        tab (list): tableau     
+
+    Returns:
+        tuple: élément le plus présent et son nombre d'apparition
     """
     tri_insertion(tab)
+    # départ 1° série
     en_cours = tab[0]
-    nb_en_cours = 1
+    serie_en_cours = 1
     elt_max = tab[0]
-    nb_max = 1
+    serie_max = 1
     for i in range(1, len(tab)):
+        # cas même élément que le précédent
         if en_cours == tab[i]:
-            nb_en_cours += 1
+            serie_en_cours += 1
         else:
-            if nb_en_cours > nb_max:
-                nb_max = nb_en_cours
+            """
+            un nouvel élément: 
+            on vérifie alors la taille de la dernière série
+            """
+            if serie_en_cours > serie_max:
+                serie_max = serie_en_cours
                 elt_max = en_cours
+            # départ nouvelle série
             en_cours = tab[i]
-            nb_en_cours = 1
-    return elt_max
+            serie_en_cours = 1
+    return (elt_max, serie_max)
 
 
 t = [randint(0, 10) for _ in range(100)]
-print(max_occurrences(t))
+maxi = max_occurrences(t)
+print(f"Le nombre {maxi[0]} est apparu {maxi[1]} fois.")

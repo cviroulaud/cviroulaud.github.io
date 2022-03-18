@@ -6,23 +6,23 @@
 @Time:   2021/04/10 22:23:23
 """
 
-from random import shuffle
+
+def echanger(tab: list, i: int, j: int) -> None:
+    temp = tab[i]
+    tab[i] = tab[j]
+    tab[j] = temp
+
+
+def inserer(tab: list, j: int) -> None:
+    # Le changement se fait dans la comparaison
+    while j-1 >= 0 and tab[j-1][0] > tab[j][0]:
+        echanger(tab, j-1, j)
+        j = j-1
 
 
 def tri_insertion(tab: list) -> None:
-    """
-    tri le tableau de tuples dans l'ordre croissant
-    """
     for i in range(len(tab)):
-        # mémoriser
-        en_cours = tab[i]
-        pos = i
-        # décaler
-        while pos > 0 and en_cours[0] < tab[pos-1][0]:
-            tab[pos] = tab[pos-1]
-            pos = pos-1
-        # insérer
-        tab[pos] = en_cours
+        inserer(tab, i)
 
 
 tab = [(5, "a"), (8, "b"), (1, "e"), (5, "d"), (7, "f"), (8, "c")]

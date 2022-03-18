@@ -25,7 +25,7 @@ def tri_bulles(tab: list) -> None:
                 echanger(tab, j-1, j)
 
 
-t = [randint(0,1000) for _ in range(20)]
+t = [randint(0, 1000) for _ in range(20)]
 print(t)
 tri_bulles(t)
 print(t)

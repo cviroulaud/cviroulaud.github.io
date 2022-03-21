@@ -1,0 +1,26 @@
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-2.5em]
+def dechiffrement(secret_ascii: list, cle: str) -> str:
+    # convertit la clé en valeurs ASCII
+    cle_ascii = str_en_int(cle, len(secret_ascii))
+
+    # déchiffre les valeurs ASCII
+    message_ascii = [0 for _ in range(len(secret_ascii))]
+    for i in range(len(secret_ascii)):
+        # opérateur binaire xor
+        message_ascii[i] = secret_ascii[i] ^ cle_ascii[i]
+
+    # convertit les valeurs ASCII en lettre
+    message = ""
+    for lettre_ascii in message_ascii:
+        message = message+chr(lettre_ascii)
+    return message
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-2.5em]
+cle = "NSI"
+s = chiffrement("BRAVO", cle)
+print(dechiffrement(s, cle))
+\end{lstlisting}
+\end{center}
+
+

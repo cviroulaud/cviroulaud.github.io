@@ -403,8 +403,8 @@
 def ma_fonction(tab: list) -> None:
         tab[2] = 199
         
-    tab = [3, 8, 1, 10, 9]
-    ma_fonction(tab)
+t = [3, 8, 1, 10, 9]
+ma_fonction(t)
 \end{lstlisting}
         \captionof{code}{\centering Quand on passe un tableau en argument à une fonction, on passe en réalité \textbf{une référence} au tableau original.}
     \end{center}
@@ -431,7 +431,7 @@ def ma_fonction(tab: list) -> None:
         \begin{enumerate}
             \item Écrire la fonction \textbf{\texttt{indice\_mini(tab: list, dep: int) $\rightarrow$ int}} qui renvoie l'indice de la valeur minimale de \textbf{\texttt{tab}}, entre l'élément d'indice \textbf{\texttt{deb}} et la fin du tableau.
             \item Écrire la fonction \textbf{\texttt{echanger(tab: list, i: int, j: int) $\rightarrow$ None}} qui échange les éléments d'indices \textbf{\texttt{i}} et \textbf{\texttt{j}}.
-            \item Écrire alors la fonction \textbf{\texttt{tri\_insertion(tab: list) $\rightarrow$ None}}.
+            \item Écrire alors la fonction \textbf{\texttt{tri\_selection(tab: list) $\rightarrow$ None}}.
         \end{enumerate}
     \end{activite}
 

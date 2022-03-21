@@ -1,4 +1,9 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Chiffrement symétrique}{4}{0}{1}
-\beamer@subsectionintoc {1}{1}{Principe}{5}{0}{1}
-\beamer@subsectionintoc {1}{2}{Chiffrement de César}{9}{0}{1}
+\beamer@sectionintoc {2}{Chiffrement de César}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Algorithme}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Un chiffrement faible}{18}{0}{2}
+\beamer@sectionintoc {3}{Chiffrement polyalphabétique}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Principe}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{Porte XOR}{26}{0}{3}
+\beamer@sectionintoc {4}{Utilisations}{32}{0}{4}

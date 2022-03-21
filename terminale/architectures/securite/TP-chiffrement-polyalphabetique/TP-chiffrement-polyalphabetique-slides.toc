@@ -1,0 +1,6 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Conversions}{5}{0}{1}
+\beamer@sectionintoc {2}{Convertir la clé}{12}{0}{2}
+\beamer@sectionintoc {3}{Appliquer le chiffrement XOR}{17}{0}{3}
+\beamer@sectionintoc {4}{Chiffrement, déchiffrement}{25}{0}{4}
+\beamer@sectionintoc {5}{Opérateurs binaires}{33}{0}{5}

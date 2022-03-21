@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  18 MAR 2022 17:47
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  20 MAR 2022 17:53
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/chiffrement-symetrique/chiffrement-symetrique-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/chiffrement-symetrique/chiffrement-symetrique-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.158 seconds
+luaotfload | main : initialization completed in 0.164 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1344,7 +1344,11 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./chiffrement-symetrique-slides.aux)
+))) (./chiffrement-symetrique-slides.aux
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+)
 \openout1 = chiffrement-symetrique-slides.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1589,7 +1593,7 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
  [2
 
 ]
-<ressources/serveur-web.png, id=56, 798.985pt x 313.17pt>
+<ressources/serveur-web.png, id=91, 798.985pt x 313.17pt>
 File: ressources/serveur-web.png Graphic file (type png)
 <use ressources/serveur-web.png>
 Package luatex.def Info: ressources/serveur-web.png  used on input line 47.
@@ -1611,7 +1615,7 @@ LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 76.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 75.
  [6
 
 ] [7
@@ -1619,12 +1623,12 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 84.
+(mdframed)              on input line 83.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 84.
+(mdframed)              on input line 83.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 84.
+ mdframed uses option nobreak mdframed on input line 83.
  [8
 
 ] (./chiffrement-symetrique-slides.toc) [9
@@ -1667,7 +1671,144 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ]
 \openout4 = chiffrement-symetrique-slides.vrb
- (./chiffrement-symetrique-slides.vrb) [16
+ (./chiffrement-symetrique-slides.vrb
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [16
+
+]
+\openout4 = chiffrement-symetrique-slides.vrb
+ (./chiffrement-symetrique-slides.vrb
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 5.
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) [17
+
+] (./chiffrement-symetrique-slides.toc) [18
+
+]
+<ressources/frequence-apparition.png, id=355, 462.528pt x 346.896pt>
+File: ressources/frequence-apparition.png Graphic file (type png)
+<use ressources/frequence-apparition.png>
+Package luatex.def Info: ressources/frequence-apparition.png  used on input line 226.
+(luatex.def)             Requested size: 199.16928pt x 149.37938pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[19
+
+<./ressources/frequence-apparition.png>]
+File: ressources/frequence-apparition.png Graphic file (type png)
+<use ressources/frequence-apparition.png>
+Package luatex.def Info: ressources/frequence-apparition.png  used on input line 226.
+(luatex.def)             Requested size: 199.16928pt x 149.37938pt.
+ [20
+
+] (./chiffrement-symetrique-slides.toc) [21
+
+] [22
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 258.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 258.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 258.
+ [23
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 258.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 258.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 258.
+ [24
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 258.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 258.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 258.
+ [25
+
+] (./chiffrement-symetrique-slides.toc) [26
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 268.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 268.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 268.
+ [27
+
+] [28
+
+] [29
+
+]
+Overfull \hbox (23.2226pt too wide) in paragraph at lines 313--313
+ [] 
+ []
+
+[30
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 330.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 330.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 330.
+
+Overfull \hbox (23.2226pt too wide) in paragraph at lines 330--330
+ [] 
+ []
+
+[31
+
+] (./chiffrement-symetrique-slides.toc) [32
+
+] [33
+
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 364.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 364.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 364.
+ [34
+
+] [35
+
+] [36
 
 ]
 \tf@nav=\write8
@@ -1679,29 +1820,33 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 \tf@snm=\write10
 
 \openout10 = chiffrement-symetrique-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 365.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 365.
  (./chiffrement-symetrique-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 365.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 365.
 Package rerunfilecheck Info: File `chiffrement-symetrique-slides.out' has not changed.
-(rerunfilecheck)             Checksum: 01EDE16D7093E6E752D3FE926F68E619;422.
+(rerunfilecheck)             Checksum: 00867396108F0959CA56FFD3EA32AE64;1084.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 44613 strings out of 494383
- 244191,1144653 words of node,token memory allocated
- 32952 words of node memory still in use:
-   17 hlist, 9 vlist, 3 rule, 2 disc, 2 local_par, 32 glue, 5 kern, 10 penalty, 3814 glyph, 2157 attribute, 106 glue_spec, 362 attribute_list, 3 write, 10 pdf_colorstack nodes
-   avail lists: 1:6,2:6763,3:292,4:5440,5:4329,6:44,7:3345,8:3907,9:7003,10:35,11:415,12:1
- 47184 multiletter control sequences out of 65536+600000
- 64 fonts using 9324943 bytes
- 70i,15n,95p,1225b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chiffrement-symetrique-slides.pdf (16 pages, 101806 bytes).
+ 44872 strings out of 494383
+ 305291,1144653 words of node,token memory allocated
+ 115336 words of node memory still in use:
+   69 hlist, 6 vlist, 2 rule, 54 disc, 11 local_par, 22 math, 233 glue, 33 kern, 51 penalty, 13413 glyph, 7329 attribute, 106 glue_spec, 1224 attribute_list, 3 write, 24 pdf_literal, 52 pdf_colorstack nodes
+   avail lists: 1:9,2:4650,3:415,4:5588,5:4454,6:53,7:1320,8:3996,9:7217,10:23,11:393,12:1
+ 47320 multiletter control sequences out of 65536+600000
+ 91 fonts using 11626951 bytes
+ 70i,15n,95p,1225b,1115s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on chiffrement-symetrique-slides.pdf (36 pages, 166854 bytes).
 
-PDF statistics: 272 PDF objects out of 1000 (max. 8388607)
- 216 compressed objects within 3 object streams
- 37 named destinations out of 1000 (max. 131072)
- 50 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 715 PDF objects out of 1000 (max. 8388607)
+ 631 compressed objects within 7 object streams
+ 82 named destinations out of 1000 (max. 131072)
+ 90 words of extra memory for PDF output out of 10000 (max. 100000000)
 

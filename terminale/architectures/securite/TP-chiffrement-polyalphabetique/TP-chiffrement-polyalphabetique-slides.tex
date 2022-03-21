@@ -1,0 +1,674 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{TP\\chiffrement polyalphabétique}
+\date{\framebox{\textbf{Algo 21}}}
+%\logo{}
+\institute{Terminale - NSI}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Un chiffrement polyalphabétique consiste à:
+    \begin{itemize}
+        \item utiliser une clé de chiffrement composée de plusieurs lettres,
+        \item recopier la clé de façon à obtenir une chaîne de la longueur du message.
+    \end{itemize}
+    \begin{center}
+        \begin{tabular}{*{5}{c}}
+            B & R & A & V & O \\
+            N & S & I & N & S \\
+        \end{tabular}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{framed}
+        \centering Construire un algorithme de chiffrement polyalphabétique.
+    \end{framed}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{aretenir}[Remarque]
+        Dans un souci de simplification, nous nous limiterons à des lettres majuscules. Chaque caractère sera donc:
+        \begin{itemize}
+            \item équivalent à une valeur ASCII comprise entre 65 (A) et 90 (Z),
+            \item codé sur 7 bits.
+        \end{itemize}
+    \end{aretenir}
+
+\end{frame}
+\section{Conversions}
+\begin{frame}
+    \frametitle{Conversions}
+
+    La première étape consiste à convertir une chaîne de caractère en sa correspondance binaire.
+    \begin{center}
+        \begin{tabular}{*{5}{c}}
+            B       & R       & A       & V       & O       \\
+
+            66      & 82      & 65      & 86      & 79      \\
+            1000010 & 1010010 & 1000001 & 1010110 & 1001111 \\
+            N       & S       & I       & N       & S       \\
+
+            78      & 83      & 73      & 78      & 83      \\
+            1001110 & 1010011 & 1001001 & 1001110 & 1010011 \\
+        \end{tabular}
+        \captionof{table}{Conversion en binaire}
+    \end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+        \begin{enumerate}
+            \item Télécharger et extraire le dossier compressé \textbf{\texttt{TP-annexe-chiffrement.zip}} sur le site \url{https://cviroulaud.github.io}
+            \item Écrire la fonction \textbf{\texttt{renverser(tab: list) $\rightarrow$ list}} qui renverse le contenu de \textbf{\texttt{tab}}
+            \item Écrire la fonction \textbf{\texttt{int\_en\_bin(nb: int) $\rightarrow$ list}} qui renvoie le tableau des bits de l'entier \textbf{\texttt{nb}}
+            \item Écrire la fonction \textbf{\texttt{bin\_en\_int(paquet: list) $\rightarrow$ int}} qui renvoie l'entier correspondant à la représentation binaire \textbf{\texttt{paquet}}.
+            \item Exécuter le fichier \textbf{\texttt{test\_conversion.py}} pour tester les trois fonctions.
+        \end{enumerate}
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def renverser(tab: list) -> list:
+    """
+    renverse un tableau
+    """
+    l = len(tab)
+    res = [0 for _ in range(l)]
+    for i in range(l):
+        res[l-1-i] = tab[i]
+    return res
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def int_en_bin(nb: int) -> list:
+    """
+    Convertit un entier en sa représentation binaire
+    """
+    q = nb
+    r = []
+    while q > 0:
+        r.append(q % 2)
+        q = q//2
+
+    return renverser(r)
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{}
+
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-0.5em]
+def bin_en_int(paquet: list) -> int:
+    """
+    Convertit un paquet de bits en entier
+    """
+    entier = 0
+    for i in range(len(paquet)):
+        entier += int(paquet[i])*2**(len(paquet)-1-i)
+    return entier
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\section{Convertir la clé}
+\begin{frame}
+    \frametitle{Convertir la clé}
+
+    Afin de pouvoir chiffrer le message lettre par lettre, il faut allonger la clé de la taille du message:
+    \begin{center}
+        \begin{tabular}{*{5}{c}}
+            B&R&A&V&O\\
+            N&S&I&N&S\\
+        \end{tabular}
+    \end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{activite}
+    Écrire la fonctionne \textbf{\texttt{creer\_cle\_bin(cle: str, taille: int) $\rightarrow$ list}} qui construit dans un tableau la version \underline{binaire} de la clé, à la \textbf{\texttt{taiile}} du message.
+    \end{activite}
+    \begin{center}
+        \begin{tabular}{*{5}{c}}
+            N&S&I&N&S\\
+    
+            78&83&73&78&83\\
+            1001110&1010011&1001001&1001110&1010011\\
+        \end{tabular}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+>>> creer_cle_bin("NSI", 5)
+[[1, 0, 0, 1, 1, 1, 0], 
+ [1, 0, 1, 0, 0, 1, 1], 
+ [1, 0, 0, 1, 0, 0, 1], 
+ [1, 0, 0, 1, 1, 1, 0], 
+ [1, 0, 1, 0, 0, 1, 1]]
+\end{lstlisting}
+\captionof{code}{Conversion en binaire}
+\label{CODE}
+\end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def creer_cle_bin(cle: str, taille: int) -> list:
+    """
+    crée la version binaire de la clé, de la taille
+    du message à chiffrer
+    """
+    cle_bin = []
+    for i in range(taille):
+        # si dépasse taille de la clé, revient à 0
+        lettre = cle[i % len(cle)]
+        cle_bin.append(int_en_bin(ord(lettre)))
+    return cle_bin
+\end{lstlisting}
+\end{center}   
+
+\end{frame}
+\section{Appliquer le chiffrement XOR}
+\begin{frame}
+    \frametitle{Appliquer le chiffrement XOR}
+
+La porte \textbf{\texttt{xor}} n'existe pas par défaut en Python. Il faut donc la créer.
+\begin{activite}
+\begin{enumerate}
+    \item Écrire la fonction \textbf{\texttt{xor(x: int, y: int) $\rightarrow$ int}}
+    \item Écrire alors la table de vérité de la porte logique \textbf{\texttt{XOR}}.
+\end{enumerate}
+\end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def xor(x: int, y: int) -> int:
+    if x == 0:
+        if y == 0:
+            return 0
+        else:
+            return 1
+    else:
+        if y == 0:
+            return 1
+        else:
+            return 0
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+print(f"0 xor 0 -> {xor(0, 0)}")
+print(f"0 xor 1 -> {xor(0, 1)}")
+print(f"1 xor 0 -> {xor(1, 0)}")
+print(f"1 xor 1 -> {xor(1, 1)}")
+\end{lstlisting}
+\end{center}
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    La fonction créée permet de chiffrer la version binaire du message.
+    \begin{center}
+        \begin{tabular}{*{6}{c}}
+            Message&1000010&1010010&1000001&1010110&1001111\\
+            $\oplus$&1001110&1010011&1001001&1001110&1010011\\
+            \hline
+            Chiffré&0001100&0000001&0001000&0011000&0011100\\
+        \end{tabular}
+        \captionof{table}{Application de la porte XOR}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+    Écrire la fonction \textbf{\texttt{appliquer\_xor(entree\_bin: list, cle\_bin: list) $\rightarrow$ list}} qui renvoie un tableau de tableau représentant la version binaire chiffrée du message.
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-4em]
+def appliquer_xor(entree_bin: list, cle_bin: list) -> list:
+    # préparation du tableau de tableau de sortie
+    sortie_bin = [[0 for _ in range(len(entree_bin[0]))]
+                  for _ in range(len(entree_bin))]
+    
+    # application de xor sur chaque bit
+    for i in range(len(entree_bin)):
+        for j in range(len(entree_bin[0])):
+            sortie_bin[i][j] = xor(entree_bin[i][j], 
+                                        cle_bin[i][j])
+    
+    return sortie_bin
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\section{Chiffrement, déchiffrement}
+\begin{frame}
+    \frametitle{Chiffrement, déchiffrement}
+
+L'algorithme de chiffrement s'écrit alors:
+\begin{itemize}
+    \item Convertir le message en binaire.
+    \item Convertir la clé en binaire.
+    \item Chiffrer le message en binaire.
+\end{itemize}
+\begin{aretenir}[Remarque]
+Il est inutile de convertir le message en caractères. C'est la version binaire qui transite jusqu'au destinataire.
+\end{aretenir}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{activite}
+    Écrire la fonction \textbf{\texttt{chiffrement(message: str, cle: str) $\rightarrow$ list}} qui applique l'algorithme précédent.
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def chiffrement(message: str, cle: str) -> list:
+    # convertit le message en binaire
+    message_bin = []
+    for lettre in message:
+        message_bin.append(int_en_bin(ord(lettre)))
+
+    # convertit la clé en binaire
+    cle_bin = creer_cle_bin(cle, len(message))
+
+    # chiffre le message
+    secret_bin = appliquer_xor(message_bin, cle_bin)
+    return secret_bin
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    Pour le déchiffrement, le destinataire applique l'algorithme suivant:
+    \begin{itemize}
+        \item Convertir la clé en binaire.
+        \item Déchiffrer le message en binaire.
+        \item Convertir le message en caractères.
+    \end{itemize}
+\begin{activite}
+    Écrire la fonction \textbf{\texttt{dechiffrement(secret\_bin: list, cle: str) $\rightarrow$ str}} qui applique l'algorithme précédent.
+\end{activite}
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-1em]
+def dechiffrement(secret_bin: list, cle: str) -> str:
+    # convertit la clé en binaire
+    cle_bin = creer_cle_bin(cle, len(secret_bin))
+
+    # déchiffre le secret binaire
+    message_bin = appliquer_xor(secret_bin, cle_bin)
+
+    # convertit le message binaire en caractères
+    message = ""
+    for lettre_bin in message_bin:
+        message = message+chr(bin_en_int(lettre_bin))
+    return message
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-1em]
+cle = "NSI"
+s = chiffrement("BRAVO", cle)
+print(dechiffrement(s, cle))
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\section{Opérateurs binaires}
+\begin{frame}[fragile]
+    \frametitle{Opérateurs binaires}
+
+En Python, il est possible d'effectuer des opérations directement sur les bits des entiers.
+\begin{center}
+    \begin{tabular}{*{6}{c}}
+        &$10_{10}=$&1&0&1&0\\
+        \&&$8_{10}=$&1&0&0&0\\
+        \hline
+        &$8_{10}=$&1&0&0&0\\
+    \end{tabular}
+\end{center}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> 10 & 8
+8
+\end{lstlisting}
+\captionof{code}{\textbf{\texttt{AND}} binaire}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+    \begin{tabular}{*{6}{c}}
+        &$10_{10}=$&1&0&1&0\\
+        |&$8_{10}=$&1&0&0&0\\
+        \hline
+        &$10_{10}=$&1&0&1&0\\
+    \end{tabular}
+\end{center}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> 10 | 8
+10
+\end{lstlisting}
+\captionof{code}{\textbf{\texttt{OR}} binaire}
+\end{center}
+\begin{center}
+    \begin{tabular}{*{6}{c}}
+        &$10_{10}=$&1&0&1&0\\
+        \^&$8_{10}=$&1&0&0&0\\
+        \hline
+        &$2_{10}=$&0&0&1&0\\
+    \end{tabular}
+\end{center}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> 10 ^ 8
+2
+\end{lstlisting}
+\captionof{code}{\textbf{\texttt{XOR}} binaire}
+\end{center}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+    \begin{center}
+        \begin{tabular}{*{5}{c}}
+            B&R&A&V&O\\
+            66&82&65&86&79\\
+            N&S&I&N&S\\
+            78&83&73&78&83\\
+        \end{tabular}
+        \captionof{table}{Conversion en ASCII}
+    \end{center}
+    \begin{activite}
+    Écrire la fonction \textbf{\texttt{str\_en\_int(texte: str, taille: int) $\rightarrow$ list}} qui renvoie le tableau des valeurs ASCII d'un \textbf{\texttt{texte}}. La \textbf{\texttt{taille}} correspond à la longueur de la chaîne \textbf{\texttt{texte}}.
+    \end{activite}
+
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def str_en_int(texte: str, taille: int) -> list:
+    """
+    renvoie le tableau des valeurs ASCII d'un texte
+    """
+    texte_ascii = [0 for _ in range(taille)]
+    for i in range(taille):
+        texte_ascii[i] = ord(texte[i % len(texte)])
+    return texte_ascii
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+>>> str_en_int("BRAVO",5)
+[66, 82, 65, 86, 79]
+>>> str_en_int("NSI", 5)
+[78, 83, 73, 78, 83]
+\end{lstlisting}
+\end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    L'algorithme de chiffrement s'écrit alors:
+    \begin{itemize}
+        \item Convertir le message en entiers ASCII.
+        \item Convertir la clé en entiers ASCII, de la même taille que le message.
+        \item Chiffre les entiers ASCII en appliquant un \textbf{\texttt{OU EXCLUSIF}} binaire.
+    \end{itemize}
+\begin{activite}
+Écrire la fonction \textbf{\texttt{chiffrement(message: str, cle: str) $\rightarrow$ list}} qui applique l'algorithme précédent.
+\end{activite}
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-2.5em]
+def chiffrement(message: str, cle: str) -> list:
+    # convertit le message en valeurs sASCII
+    message_ascii = str_en_int(message, len(message))
+
+    # convertit la clé en valeurs ASCII
+    cle_ascii = str_en_int(cle, len(message))
+
+    # chiffre les valeurs ASCII
+    secret_ascii = [0 for _ in range(len(message))]
+    for i in range(len(message_ascii)):
+        # opérateur binaire xor
+        secret_ascii[i] = message_ascii[i] ^ cle_ascii[i]
+    return secret_ascii
+\end{lstlisting}
+\end{center}
+    
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+\begin{activite}
+\begin{enumerate}
+    \item Écrire l'algorithme de déchiffrement.
+    \item Écrire la fonction \textbf{\texttt{dechiffrement(secret\_ascii: list, cle: str) $\rightarrow$ str}} qui applique l'algorithme précédent.
+\end{enumerate}
+\end{activite}
+\end{frame}
+\begin{frame}
+    \frametitle{Avant de regarder la correction}
+\begin{center}
+    \centering
+    \includegraphics[width=3cm]{/home/tof/Documents/Cozy/latex-include/stop.png}
+    \end{center}
+{\Large
+    \begin{itemize}
+        \item Prendre le temps de réfléchir,
+        \item Analyser les messages d'erreur,
+        \item Demander au professeur.
+    \end{itemize}
+}
+\end{frame}
+\begin{frame}
+    \frametitle{}
+\begin{itemize}
+    \item Convertir la clé en entier ASCII, de la taille du message.
+    \item Déchiffrer les entiers ASCII du message secret.
+    \item Convertir les entiers ASCII en lettres
+\end{itemize}
+    
+
+\end{frame}
+\begin{frame}[fragile]
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-2.5em]
+def dechiffrement(secret_ascii: list, cle: str) -> str:
+    # convertit la clé en valeurs ASCII
+    cle_ascii = str_en_int(cle, len(secret_ascii))
+
+    # déchiffre les valeurs ASCII
+    message_ascii = [0 for _ in range(len(secret_ascii))]
+    for i in range(len(secret_ascii)):
+        # opérateur binaire xor
+        message_ascii[i] = secret_ascii[i] ^ cle_ascii[i]
+
+    # convertit les valeurs ASCII en lettre
+    message = ""
+    for lettre_ascii in message_ascii:
+        message = message+chr(lettre_ascii)
+    return message
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-2.5em]
+cle = "NSI"
+s = chiffrement("BRAVO", cle)
+print(dechiffrement(s, cle))
+\end{lstlisting}
+\end{center}
+    
+
+\end{frame}
+\section{Niveau de sécurité}
+\begin{frame}
+    \frametitle{Niveau de sécurité}
+
+Le chiffrement par \textbf{\texttt{OU EXCLUSIF}} est faible si la clé n'est pas suffisamment longue et si, de plus, nous disposons de quelques informations sur le contenu du message.
+
+\end{frame}
+\end{document}

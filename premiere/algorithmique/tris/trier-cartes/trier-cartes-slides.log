@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  18 MAR 2022 11:53
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  21 MAR 2022 15:44
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/trier-cartes/trier-cartes-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/algorithmique/tris/trier-cartes/trier-cartes-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.162 seconds
+luaotfload | main : initialization completed in 0.151 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1797,11 +1797,11 @@ Overfull \hbox (17.47252pt too wide) in paragraph at lines 396--396
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-<ressources/tutor-mutable.png, id=464, 720.6925pt x 407.5225pt>
+<ressources/tutor-mutable.png, id=464, 722.7pt x 405.515pt>
 File: ressources/tutor-mutable.png Graphic file (type png)
 <use ressources/tutor-mutable.png>
 Package luatex.def Info: ressources/tutor-mutable.png  used on input line 14.
-(luatex.def)             Requested size: 199.16928pt x 112.61934pt.
+(luatex.def)             Requested size: 199.16928pt x 111.75519pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
 ) [21
@@ -2188,15 +2188,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  45292 strings out of 494383
- 477088,1144653 words of node,token memory allocated
- 194433 words of node memory still in use:
-   71 hlist, 8 vlist, 8 rule, 39 disc, 6 local_par, 10 math, 288 glue, 36 kern, 32 penalty, 21998 glyph, 15309 attribute, 106 glue_spec, 2554 attribute_list, 4 write, 1 save_pos, 132 pdf_literal, 28 pdf_colorstack nodes
-   avail lists: 1:7,2:7687,3:2066,4:6046,5:4900,6:66,7:1090,8:4449,9:8024,10:26,11:456,12:1
+ 477082,1144653 words of node,token memory allocated
+ 194405 words of node memory still in use:
+   71 hlist, 8 vlist, 8 rule, 39 disc, 6 local_par, 10 math, 288 glue, 36 kern, 32 penalty, 21994 glyph, 15309 attribute, 106 glue_spec, 2554 attribute_list, 4 write, 1 save_pos, 132 pdf_literal, 28 pdf_colorstack nodes
+   avail lists: 1:7,2:7687,3:2065,4:6047,5:4900,6:66,7:1090,8:4448,9:8024,10:26,11:456,12:1
  47565 multiletter control sequences out of 65536+600000
  94 fonts using 12010791 bytes
  70i,15n,95p,1200b,1092s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on trier-cartes-slides.pdf (59 pages, 578765 bytes).
+Output written on trier-cartes-slides.pdf (59 pages, 578230 bytes).
 
 PDF statistics: 1295 PDF objects out of 1440 (max. 8388607)
  1174 compressed objects within 12 object streams

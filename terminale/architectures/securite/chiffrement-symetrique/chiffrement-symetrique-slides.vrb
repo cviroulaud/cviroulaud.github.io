@@ -1,4 +1,12 @@
-\frametitle{Correction}
+\frametitle{}
 
-
+    \begin{aretenir}[Remarque]
+        Si la clé vaut \textbf{\texttt{13}}, la fonction de chiffrement permet également de déchiffrer.
+        \end{aretenir}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+>>> chiffrement("NSI", 13) # AFV
+>>> chiffrement("AFV", 13) # NSI
+\end{lstlisting}
+\end{center}
 

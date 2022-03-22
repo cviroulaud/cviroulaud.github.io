@@ -6,7 +6,7 @@
 @Time:   Dimanche 20 Mars 2022 18:15
 """
 import unittest
-from xor import int_en_bin, bin_en_int, renverser
+from tp_chiffrement import int_en_bin, bin_en_int, renverser
 
 
 class Test(unittest.TestCase):

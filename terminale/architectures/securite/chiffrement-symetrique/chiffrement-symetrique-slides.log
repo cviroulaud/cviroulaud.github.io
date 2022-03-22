@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  20 MAR 2022 17:53
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  22 MAR 2022 14:44
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/chiffrement-symetrique/chiffrement-symetrique-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/chiffrement-symetrique/chiffrement-symetrique-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.164 seconds
+luaotfload | main : initialization completed in 0.108 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1835,15 +1835,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  44872 strings out of 494383
- 305291,1144653 words of node,token memory allocated
- 115336 words of node memory still in use:
-   69 hlist, 6 vlist, 2 rule, 54 disc, 11 local_par, 22 math, 233 glue, 33 kern, 51 penalty, 13413 glyph, 7329 attribute, 106 glue_spec, 1224 attribute_list, 3 write, 24 pdf_literal, 52 pdf_colorstack nodes
+ 305286,1144653 words of node,token memory allocated
+ 115294 words of node memory still in use:
+   69 hlist, 6 vlist, 2 rule, 54 disc, 11 local_par, 22 math, 233 glue, 33 kern, 51 penalty, 13411 glyph, 7317 attribute, 106 glue_spec, 1222 attribute_list, 3 write, 24 pdf_literal, 52 pdf_colorstack nodes
    avail lists: 1:9,2:4650,3:415,4:5588,5:4454,6:53,7:1320,8:3996,9:7217,10:23,11:393,12:1
  47320 multiletter control sequences out of 65536+600000
  91 fonts using 11626951 bytes
  70i,15n,95p,1225b,1115s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on chiffrement-symetrique-slides.pdf (36 pages, 166854 bytes).
+Output written on chiffrement-symetrique-slides.pdf (36 pages, 166849 bytes).
 
 PDF statistics: 715 PDF objects out of 1000 (max. 8388607)
  631 compressed objects within 7 object streams

@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{S'aider des mathématiques}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Principe}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Analogie des couleurs}{11}{0}{1}
+\beamer@subsectionintoc {1}{3}{Formalisme mathématique}{19}{0}{1}
+\beamer@sectionintoc {2}{Faiblesse du protocole}{25}{0}{2}
+\beamer@subsectionintoc {2}{1}{Eve}{26}{0}{2}
+\beamer@subsectionintoc {2}{2}{Man in the middle attack}{27}{0}{2}

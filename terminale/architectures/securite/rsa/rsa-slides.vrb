@@ -1,0 +1,18 @@
+\frametitle{}
+
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+>>> cles = creer_nombre(9, 11, 5, 8)
+>>> cles
+{'publique': (499, 4048), 'privee': (795, 4048)}
+
+>>> s = chiffrer(538, cles["publique"])
+>>> s
+1294
+
+>>> e = dechiffrer(s, cles["privee"])
+>>> e
+538
+\end{lstlisting}
+\end{center}

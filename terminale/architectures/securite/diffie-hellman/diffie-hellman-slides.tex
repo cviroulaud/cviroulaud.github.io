@@ -206,37 +206,6 @@
     \end{aretenir}
 
 \end{frame}
-\begin{frame}
-    \frametitle{}
-
-    \begin{center}
-        \begin{tikzpicture}[scale=0.7]
-            \node at(-6,0){Alice};
-            \node at(0,0){Canal non sécurisé};
-            \node at(6,0){Bob};
-            \draw[dashed] (-3,0) -- (-3,-11) ;
-            \draw[dashed] (3,0) -- (3,-11) ;
-    
-            \node[draw] at(0,-1){Étape 1};
-            \node[fill=yellow] at(0,-2){x};
-    
-            \node[draw] at(0,-3){Étape 2};
-            \node[fill=DodgerBlue] at(-6,-4){y};
-            \node[fill=Red] at(6,-4){z};
-            \node[fill=Lime] at(-6,-5){f(x, y)};
-            \node[fill=Orange] at(6,-5){f(x, z)};
-    
-            \node[draw] at(0,-6){Étape 3};
-            \node[fill=Lime] at(-6,-6.5){f(x, y)};
-            \node[fill=Orange] at(6,-6.5){f(x, z)};
-            \draw[->,>=latex] (-6,-6.8) -- (6,-7.7);
-            \draw[->,>=latex] (6,-6.8) -- (-6,-7.7);
-    
-        \end{tikzpicture}
-        \captionof{figure}{\centering Chaque individu partage sa couleur.}
-    \end{center}
-
-\end{frame}
 \subsection{Formalisme mathématique}
 \begin{frame}
     \frametitle{Formalisme mathématique}

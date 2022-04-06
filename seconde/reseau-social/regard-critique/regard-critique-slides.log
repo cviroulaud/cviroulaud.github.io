@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  27 MAR 2022 22:48
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  6 APR 2022 10:51
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/reseau-social/regard-critique/regard-critique-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/reseau-social/regard-critique/regard-critique-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.156 seconds
+luaotfload | main : initialization completed in 0.108 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1705,14 +1705,14 @@ Package rerunfilecheck Info: File `regard-critique-slides.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  44254 strings out of 494383
  100000,1144653 words of node,token memory allocated
- 22632 words of node memory still in use:
-   21 hlist, 8 vlist, 5 rule, 28 disc, 1 local_par, 91 glue, 21 kern, 24 penalty, 2716 glyph, 657 attribute, 106 glue_spec, 112 attribute_list, 3 write, 12 pdf_colorstack nodes
-   avail lists: 1:4,2:2717,3:402,4:100,5:71,6:25,7:570,8:38,9:190,10:14,11:44,12:1
+ 22821 words of node memory still in use:
+   21 hlist, 8 vlist, 5 rule, 28 disc, 1 local_par, 92 glue, 21 kern, 24 penalty, 2742 glyph, 657 attribute, 106 glue_spec, 112 attribute_list, 3 write, 12 pdf_colorstack nodes
+   avail lists: 1:5,2:2717,3:402,4:100,5:71,6:25,7:570,8:38,9:190,10:14,11:44,12:1
  46890 multiletter control sequences out of 65536+600000
  62 fonts using 9072407 bytes
  70i,12n,95p,1200b,1065s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on regard-critique-slides.pdf (13 pages, 665763 bytes).
+Output written on regard-critique-slides.pdf (13 pages, 665795 bytes).
 
 PDF statistics: 174 PDF objects out of 1000 (max. 8388607)
  125 compressed objects within 2 object streams

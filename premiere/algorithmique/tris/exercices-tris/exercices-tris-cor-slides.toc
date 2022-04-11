@@ -5,5 +5,5 @@
 \beamer@sectionintoc {4}{Exercice 4}{9}{0}{4}
 \beamer@sectionintoc {5}{Exercice 5}{11}{0}{5}
 \beamer@sectionintoc {6}{Exercice 6}{14}{0}{6}
-\beamer@sectionintoc {7}{Exercie 7}{16}{0}{7}
+\beamer@sectionintoc {7}{Exercice 7}{16}{0}{7}
 \beamer@sectionintoc {8}{Exercice 8}{19}{0}{8}

@@ -1,10 +1,10 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{Recherche textuelle}
-\date{\framebox{\textbf{Algo 27}}}
+\date{}
 %\logo{}
 \institute{Terminale - NSI}
 
@@ -13,38 +13,39 @@
 \titlepage
 \end{frame}
 
+\section{Problématique}
 \begin{frame}
+    \frametitle{Problématique}
 
-    La recherche textuelle est une fonctionnalité intégrée dans tous les logiciels de traitements de texte.
+    Une fonctionnalité intégrée dans tous les logiciels de traitements de texte.
 \note{également dans EDI}
 \end{frame}
 \begin{frame}
+    \frametitle{Des applications multiples}
 \begin{center}
 \centering
-\includegraphics[width=6cm]{ressources/adn.png}
-\captionof{figure}{\centering Des applications multiples}
+\includegraphics[width=8cm]{ressources/adn.png}
+\captionof{figure}{Séquence ADN}
 \label{adn}
 \end{center}
-
 \begin{itemize}
     \item 4 bases nucléiques: Adénine, Cytosine, Guanine, Thymine,
     \item ADN humain: 3 milliards de bases répartis sur 23 paires de chromosomes.
 \end{itemize}
-\begin{aretenir}[Remarque]
-À titre de comparaison un roman compte environ 500000 caractères.
-\end{aretenir}
+\note{roman = 500 000 caractères}
 \end{frame}
 \begin{frame}
     \frametitle{}
-\begin{framed}
-    \centering Comment effectuer une recherche textuelle efficace?
-\end{framed}
+
+    \begin{center}
+        \framebox{Comment effectuer une recherche textuelle efficace?}
+    \end{center}
 
 \end{frame}
 \section{Approche naïve}
 \subsection{Principe}
 \begin{frame}
-    \frametitle{Approche naïve - Principe}
+    \frametitle{Principe}
 
 \begin{itemize}
     \item observer une \textbf{fenêtre} du texte,
@@ -156,26 +157,13 @@
     \end{activite}
 
 \end{frame}
-\begin{frame}[fragile]
+\begin{frame}
     \frametitle{Correction}
+
 \begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
-def recherche_naive(texte: str, motif: str) -> int:
-    """
-    renvoie la position du motif dans le texte
-    -1 s'il n'est pas présent
-    """
-    # dernière position = taille(texte) - taille(motif)
-    for i in range(len(texte)-len(motif)+1):
-        j = 0
-        while j < len(motif) and 
-                motif[j] == texte[i+j]:
-            j += 1
-        # correspondance sur toute la fenêtre
-        if j == len(motif): 
-            return i
-    return -1
-\end{lstlisting}
+\lstinputlisting[firstline= 10, basicstyle=\small ,lastline=22  , xleftmargin=1em, xrightmargin=1em]{"scripts/recherche-naive.py"}
+\captionof{code}{Approche naïve}
+\label{CODE}
 \end{center}
 
 \end{frame}
@@ -202,7 +190,7 @@ Imaginons le cas:
 \begin{itemize}
     \item On vérifie toute la fenêtre à chaque fois.
     \item À chaque \textbf{non correspondance} la fenêtre avance de 1. 
-    \item La complexité dépend de la taille du texte et de celle du motif.
+    \item La complexité dépend de la taille de la fenêtre et de celle du motif.
 \end{itemize}
 \note{$O(P.S)$}
 \end{frame}
@@ -213,10 +201,6 @@ Imaginons le cas:
     \begin{itemize}
         \item<1-> 1970: algorithme de Knuth-Morris-Pratt. $O(T+M)$
         \item <2-> 1977: algorithme de Boyer-Moore.
-        \begin{itemize}
-            \item meilleur des cas: $O(T/M)$
-            \item pire des cas: $O(T+M)$
-        \end{itemize} 
         \item <3-> 1980: Horspool propose une version simplifiée de l'algorithme de Boyer-Moore. $O(T)$
     \end{itemize}
 \note[item]{évoquera la complexité de Boyer-Moore en fin de cours}
@@ -252,9 +236,7 @@ Imaginons le cas:
 \begin{frame}
     \frametitle{}
 
-    \begin{aretenir}[Remarque]
-        Pour l'instant cette approche ne semble par apporter d'amélioration par rapport à l'algorithme précédent.
-    \end{aretenir}
+    Pour l'instant cette approche ne semble par apporter d'amélioration par rapport à l'algorithme précédent.
 
 \end{frame}
 
@@ -338,7 +320,7 @@ Imaginons le cas:
 \begin{frame}
     \frametitle{}
 
-    On peut donc directement décaler le motif à l'indice 3 du texte.
+    On peut donc directement décaler le motif à l'indice 3 du texte (figure \ref{saut0}).
 \begin{center}
     \begin{tikzpicture}
         \fill[LightGray] (5.3,0.5)--(5.75,0.5) -- (5.75,-0.7) -- (5.3,-0.7) -- cycle;
@@ -424,9 +406,7 @@ Imaginons le cas:
 \begin{frame}
     \frametitle{Prétraitement du motif}
 
-    \begin{aretenir}[]
-        Pour pouvoir décaler par saut, il faut connaître la dernière position de chaque lettre dans le motif. Le prétraitement consiste à calculer le décalage à appliquer pour amener chaque caractère du motif à la place du dernier caractère.
-    \end{aretenir}
+    Pour pouvoir décaler par saut, il faut connaître la dernière position de chaque lettre dans le motif. Le prétraitement consiste à calculer le décalage à appliquer pour amener chaque caractère du motif à la place du dernier caractère.
     \begin{center}
         \begin{tikzpicture}
             \node[anchor=south] at(1.3,0){texte};
@@ -472,9 +452,8 @@ Imaginons le cas:
 \note{attention t pourrait être présent ailleurs dans motif $\rightarrow$ on prend en compte alors}
 \end{frame}
 \begin{frame}
-\begin{aretenir}[]
-Dans le cas de la répétition d'un caractère, on garde la distance la plus courte.
-\end{aretenir}
+    \frametitle{Autre exemple}
+
     \begin{center}
         \begin{tikzpicture}
             \node[anchor=south] at(1.3,0){texte};
@@ -502,25 +481,11 @@ Dans le cas de la répétition d'un caractère, on garde la distance la plus cou
     \end{activite}
 
 \end{frame}
-\begin{frame}[fragile]
+\begin{frame}
     \frametitle{Correction}
 
-\begin{center}
-\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
-def pretraitement_decalages(motif: str) -> dict:
-    """
-    renvoie le dictionnaire des décalages à appliquer
-    pour chaque lettre du motif (sauf dernière)
-    """
-    decalages = dict()
-    # on s'arrête à l'avant dernière lettre du motif
-    for i in range(len(motif)-1):
-        # la distance est mise à jour en cas de répétition
-        decalages[motif[i]] = len(motif)-1-i
-    return decalages
-\end{lstlisting}
-\end{center}
-
+    \lstinputlisting[firstline=10 ,lastline=20 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/boyer-moore.py"}
+\note{S'il y a répétition (slide précédent) le dictionnaire est mis à jour (ligne 10).}
 \end{frame}
 \subsection{Algorithme de Boyer-Moore (simplifié - version Horspool)}
 \begin{frame}[fragile]
@@ -529,7 +494,7 @@ def pretraitement_decalages(motif: str) -> dict:
 
     L'algorithme de Boyer-Moore s'écrit alors:
 \begin{center}
-\begin{lstlisting}[language=Bash, basicstyle=\small\ttfamily, xleftmargin=2em, xrightmargin=2em]
+\begin{lstlisting}[language=Bash, basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
 Créer le tableau des décalages
 Tant qu'on n'est pas à la fin du texte
     Comparer le motif à la position du texte

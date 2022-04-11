@@ -1,0 +1,7 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Mise en évidence du problème}{3}{0}{1}
+\beamer@sectionintoc {2}{Programmation dynamique}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Approche top-down}{13}{0}{2}
+\beamer@subsectionintoc {2}{3}{Approche bottom-up}{19}{0}{2}
+\beamer@subsectionintoc {2}{4}{Optimisation}{23}{0}{2}

@@ -1,0 +1,14 @@
+\frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+>>> C = 0
+>>> rendu_bu(s, [10, 5, 2, 1])
+[10, 2, 2]
+>>> C
+42
+\end{lstlisting}
+\captionof{code}{Nombre d'appels récursifs}
+\label{CODE}
+\end{center}
+

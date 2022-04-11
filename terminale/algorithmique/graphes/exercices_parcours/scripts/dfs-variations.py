@@ -19,7 +19,7 @@ def get_indice(sommet: str) -> int:
     return ord(sommet)-65
 
 
-def profondeur_tab(graphe: dict, noeud: str, visites: dict) -> None:
+def profondeur_tab(graphe: dict, noeud: str, visites: list) -> None:
     ind = get_indice(noeud)
     if not visites[ind]:
         print(noeud, end=" ")

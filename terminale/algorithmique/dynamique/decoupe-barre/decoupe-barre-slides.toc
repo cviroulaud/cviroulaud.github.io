@@ -1,0 +1,5 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Approche naïve}{4}{0}{1}
+\beamer@sectionintoc {2}{Programmation dynamique}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{Approche descendante}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Approche ascendante}{16}{0}{2}

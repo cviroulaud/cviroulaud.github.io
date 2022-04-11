@@ -100,7 +100,7 @@ def get_indice(sommet: str) -> int:
 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
-def profondeur_tab(graphe: dict, noeud: str, visites: dict) -> None:
+def profondeur_tab(graphe: dict, noeud: str, visites: list) -> None:
     ind = get_indice(noeud)
     if not visites[ind]:
         print(noeud, end=" ")

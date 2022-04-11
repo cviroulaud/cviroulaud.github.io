@@ -1,24 +1,17 @@
 \documentclass[svgnames,11pt]{beamer}
-\setbeamercolor{structure}{fg=SlateGray}
-\usetheme{Goettingen}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
-\title{Suite de Fibonacci}
-\date{}
+\title{Programmation dynamique\\suite de Fibonacci}
+\date{\framebox{\textbf{Algo 24}}}
 %\logo{}
-%\institute{Seconde SNT}
-%\institute{Première NSI}
-\institute{Terminale NSI}
-\setbeamertemplate{navigation symbols}{}
-\setbeamertemplate{footline}[frame number]
-\usepackage{tikz}
+\institute{Terminale - NSI}
 
 \begin{document}
 \begin{frame}
-    \titlepage
+\titlepage
 \end{frame}
-
-\section{Problématique}
 \begin{frame}
     \frametitle{}
     $$
@@ -30,95 +23,150 @@
         \end{array}
         \right.
     $$
-    \begin{center}
-        \framebox{Comment obtenir un calcul efficace des termes de la suite?}
-    \end{center}
+    \begin{framed}
+        \centering Comment obtenir un calcul efficace des termes de la suite?
+    \end{framed}
 \end{frame}
 
 \section{Mise en évidence du problème}
 \begin{frame}
-    \frametitle{}
-    \lstinputlisting[firstline=9 ,lastline= 19]{"scripts/fibo.py"}
+    \frametitle{Mise en évidence du problème}
+    $$
+        F_n = \left\{
+        \begin{array}{ll}
+            F_0 = 0                 & \mbox{si } n=0 \\
+            F_1=1                   & \mbox{si } n=1 \\
+            F_{n} = F_{n-1}+F_{n-2} & \mbox{si } n>1 \\
+        \end{array}
+        \right.
+    $$
+\begin{activite}
+Écrire la fonction \textbf{\texttt{fibo(n: int) $\rightarrow$ int}} qui calcule le terme de rang \textbf{\texttt{n}} de la suite.
+\end{activite}
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+def fibo(n: int)->int:
+    """
+    calcule le terme de rang n
+    de la suite de Fibonacci
+    """
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibo(n-1) + fibo(n-2)
+\end{lstlisting}
+\end{center}
 
 \end{frame}
-
 \begin{frame}
     \frametitle{}
-    \includegraphics[width=\textwidth,height=8cm]{ressources/fibo1.png}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-
-    \begin{activite}
-        \begin{enumerate}
-            \item Tester la fonction \emph{fibo} pour $n=8$, $n=10$.
-            \item À l'aide d'une variable globale (c'est mal) \emph{compteur}, observer le nombre d'appels réalisés en fonction de \emph{n}.
-        \end{enumerate}
-    \end{activite}
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{}
-    \lstinputlisting[firstline=21 ,lastline= 34]{"scripts/fibo.py"}
-
-\end{frame}
-\begin{frame}
-    \frametitle{Nombre d'appels en fonction de n}
     \begin{center}
-        \centering
-        \includegraphics[width=10cm]{ressources/nb-appels.png}
-        \label{IMG}
+    \centering
+    \includegraphics[width=10cm]{ressources/fibo1.png}
+    \captionof{figure}{Pour \textbf{\texttt{n = 8}}}
+    \label{IMG}
     \end{center}
 \end{frame}
 
-\section{Programmation dynamique}
-\subsection{Approche top-down}
 \begin{frame}
     \frametitle{}
-
-    Une amélioration de l'approche \emph{diviser pour régner}
-
+    \begin{center}
+        \centering
+        \includegraphics[width=11cm]{ressources/nb-appels.png}
+        \captionof{figure}{Nombre d'appels en fonction de n}
+    \end{center}
 \end{frame}
 \begin{frame}
     \frametitle{}
 
-    \lstinputlisting[firstline=9 ,lastline= 24,basicstyle=\small]{"scripts/fibo-dyn.py"}
-
-\end{frame}
-\begin{frame}
-    \frametitle{Appel de la fonction}
-    \lstinputlisting[firstline=26 ,lastline= 28]{"scripts/fibo-dyn.py"}
-\end{frame}
-\begin{frame}
-    \frametitle{}
-
-    \begin{aretenir}[]
-        La \emph{mémoïsation} consiste à la \emph{mise en cache} les valeurs déjà calculées pour pouvoir être réutilisées.
+    \begin{aretenir}[Remarque]
+    La fonction calcule plusieurs fois la même valeur. Le nombre d'appels augmente de manière exponentielle.
     \end{aretenir}
 
 \end{frame}
+\section{Programmation dynamique}
+\subsection{Principe}
+\begin{frame}
+    \frametitle{Programmation dynamique - Principe}
+La programmation dynamique:
+    \begin{itemize}
+        \item s'appuie sur le principe de \textbf{diviser pour régner},
+        \item stocke les résultats intermédiaires pour éviter de les calculer à nouveau.
+    \end{itemize}
 
+\end{frame}
 \begin{frame}
     \frametitle{}
 
-    \begin{activite}
-        Tester la fonction en approche top-down. Compter le nombre d'appels.
-    \end{activite}
+    \begin{aretenir}[Remarque]
+    \textbf{Richard Bellman} développe cette stratégie algorithmique dès les années 1950.
+    \end{aretenir}
 
+    
 \end{frame}
 \begin{frame}
-    \frametitle{Nombre d'appels en fonction de n}
+    \frametitle{}
 
-    \begin{center}
-        \centering
-        \includegraphics[width=10cm]{ressources/nb-appels-dyn.png}
-        \label{IMG}
-    \end{center}
+    \begin{aretenir}[Remarque]
+        En toute rigueur, on n'applique pas tout à fait le principe \textbf{diviser pour régner} dans la suite de Fibonacci: les problèmes ne sont pas indépendants.
+        \end{aretenir}
 
 \end{frame}
+\subsection{Approche top-down}
+\begin{frame}
+    \frametitle{Approche top-down}
+
+    
+    \begin{aretenir}[]
+    Dans l'approche \textbf{top-down (ou descendante)}, on:
+    \begin{itemize}
+        \item applique une méthode récursive,
+        \item stocke les résultats des appels récursifs (\textbf{mémoïsation}).
+    \end{itemize}
+    \end{aretenir}
+
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def fibo_td(n: int, track: list) -> int:
+    # déjà calculé
+    if track[n] > 0:
+        return track[n]
+    if n == 0:
+        track[0] = 0
+        return track[0]
+    elif n == 1:
+        track[1] = 1
+        return track[1]
+    else:
+        track[n] = fibo_td(n-1, track) + \
+                    fibo_td(n-2, track)
+        return track[n]
+\end{lstlisting}
+\captionof{code}{\centering \textbf{\texttt{track}} stocke les résultats déjà calculés.}
+\end{center}
+\end{frame}
+\begin{frame}[fragile]
+    
+\begin{center}
+    \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=2em]
+n = 20
+track = [-1 for _ in range(n+1)]
+fibo_td(n, track)
+\end{lstlisting}
+\captionof{code}{Appel de la fonction}
+    \label{CODE}
+    \end{center}
+\end{frame}
+
 
 \begin{frame}
     \frametitle{}
@@ -161,48 +209,85 @@
     \end{center}
 
 \end{frame}
-
-\subsection{Bottom-up}
-\begin{frame}
-    \frametitle{}
-
-    Approche \emph{itérative} qui résout d'abord les sous-problèmes.
-
-\end{frame}
-
 \begin{frame}
     \frametitle{}
 
     \begin{center}
-        \lstinputlisting[firstline=30 ,lastline= 35,basicstyle=\small]{"scripts/fibo-dyn.py"}
-        \captionof{code}{Approche bottom-up}
-        \label{moncode}
+        \centering
+        \includegraphics[width=10cm]{ressources/nb-appels-dyn.png}
+        \captionof{figure}{Nombre d'appels en fonction de \textbf{\texttt{n}}}
     \end{center}
+
+\end{frame}
+\subsection{Approche bottom-up}
+\begin{frame}
+    \frametitle{Approche bottom-up}
+
+    
+    \begin{aretenir}[]
+    Dans l'approche \textbf{bottom-up (ou ascendante)}, on:
+    \begin{itemize}
+        \item applique une méthode itérative,
+        \item résout d'abord les petits problèmes.
+    \end{itemize}
+    \end{aretenir}
+
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def fibo_bu(n: int) -> int:
+    # résultats déjà calculés
+    track = [0 for _ in range(n+1)]
+    track[1] = 1
+
+    # calcule de proche en proche
+    for i in range(2, n+1):
+        track[i] = track[i-1] + track[i-2]
+
+    return track[n]
+\end{lstlisting}
+\captionof{code}{\textbf{\texttt{track}} stocke les résultats.}
+\label{CODE}
+\end{center}
 
 \end{frame}
 \begin{frame}
     \frametitle{}
 
-    \begin{activite}
-        Combien d'itérations effectue-t-on?
-    \end{activite}
+    \begin{aretenir}[]
+    La complexité en temps de cette approche est équivalente à celle précédente: on ne calcule chaque sous-problème qu'une seule fois.
+    \end{aretenir}
+
+\end{frame}
+\subsection{Optimisation}
+\begin{frame}
+    \frametitle{Optimisation}
+\begin{aretenir}[Remarque]
+La complexité en espace dépend de la taille du tableau \textbf{\texttt{track}}. Cependant, si seul le résultat final nous intéresse, il est possible d'optimiser l'approche ascendante.
+\end{aretenir}
 
 \end{frame}
 
-\begin{frame}
-    \frametitle{Top-down ou Bottom-up?}
+\begin{frame}[fragile]
+    \frametitle{}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def fibo_bu(n: int) -> int:
+    track0 = 0
+    track1 = 1
 
-    \begin{itemize}
-        \item<1-> Complexité en temps souvent équivalente,
-        \item<2-> Complexité en espace peut être optimisée: s'il est simple de déterminer quels résultats vont être nécessaires, l'approche bottom-up est intéressante.
-    \end{itemize}
+    for i in range(2, n+1):
+        # calcule de proche en proche
+        track0, track1 = track1, track0 + track1
 
-\end{frame}
-
-\begin{frame}
-    \frametitle{Approche bottom-up optimisée en espace}
-
-    \lstinputlisting[firstline=39 ,lastline= 44,basicstyle=\small]{"scripts/fibo-dyn.py"}
-
+    return track1
+\end{lstlisting}
+\captionof{code}{On ne garde en mémoire que les deux dernières valeurs.}
+\label{CODE}
+\end{center}
 \end{frame}
 \end{document}

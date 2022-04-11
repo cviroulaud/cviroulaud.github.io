@@ -1,0 +1,10 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Le rendu de monnaie}{4}{0}{1}
+\beamer@sectionintoc {2}{Approche gloutonne}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Algorithme}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Optimalité}{13}{0}{2}
+\beamer@sectionintoc {3}{Approche dynamique}{18}{0}{3}
+\beamer@subsectionintoc {3}{1}{Algorithme naïf}{19}{0}{3}
+\beamer@subsectionintoc {3}{2}{Approche descendante (top-down)}{26}{0}{3}
+\beamer@subsectionintoc {3}{3}{Approche ascendante (bottom-up)}{32}{0}{3}

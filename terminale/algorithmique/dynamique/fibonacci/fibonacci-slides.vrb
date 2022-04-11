@@ -1,0 +1,16 @@
+\frametitle{}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def fibo_bu(n: int) -> int:
+    track0 = 0
+    track1 = 1
+
+    for i in range(2, n+1):
+        # calcule de proche en proche
+        track0, track1 = track1, track0 + track1
+
+    return track1
+\end{lstlisting}
+\captionof{code}{On ne garde en mémoire que les deux dernières valeurs.}
+\label{CODE}
+\end{center}

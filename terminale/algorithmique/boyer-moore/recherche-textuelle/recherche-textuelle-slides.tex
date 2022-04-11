@@ -550,32 +550,88 @@ Renvoyer -1 si le motif n'est pas présent
 
     \begin{activite}
         \begin{enumerate}
-            \item Écrire la fonction \textbf{\texttt{compare(texte: str, position: int, motif: str) $\rightarrow$ bool}} qui renvoie \emph{True} si le motif est présent à la position \emph{i} du texte.
-            \item Écrire la fonction \textbf{\texttt{decalage\_fenetre(decalages: dict, taille: int, lettre: str) $\rightarrow$ int}} qui renvoie le décalage à appliquer pour faire coïncider le motif à la dernière \emph{lettre} de la fenêtre. Si la lettre n'est pas présente, la \emph{taille} du motif est renvoyée.
+            \item Écrire la fonction \textbf{\texttt{compare(texte: str, position: int, motif: str) $\rightarrow$ bool}} qui renvoie \texttt{\textbf{True}} si le motif est présent à la position \textbf{\texttt{i}} du texte.
+            \item Écrire la fonction \textbf{\texttt{decalage\_fenetre(decalages: dict, taille: int, lettre: str) $\rightarrow$ int}} qui renvoie le décalage à appliquer pour faire coïncider le motif à la dernière \emph{lettre} de la fenêtre. Si la lettre n'est pas présente, la \texttt{\textbf{taille}} du motif est renvoyée.
             \item Écrire alors la fonction \textbf{\texttt{boyer\_moore(texte: str, motif: str) $\rightarrow$ int}} qui renvoie la position du motif dans le texte et -1 sinon.
         \end{enumerate}
     \end{activite}
 
 \end{frame}
-\begin{frame}
+\begin{frame}[fragile]
     \frametitle{Correction}
 
-\lstinputlisting[firstline=57 ,lastline=74 , basicstyle=\small, xleftmargin=1em, xrightmargin=1em]{"scripts/boyer-moore.py"}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def compare(texte: str, position: int, motif: str) -> bool:
+    # position de la dernière lettre de la fenêtre
+    en_cours = position+len(motif)-1
+    # parcours de la fenêtre à l'envers
+    for i in range(len(motif)-1, -1, -1):
+        if not(texte[en_cours] == motif[i]):
+            return False
+        else:
+            en_cours -= 1
+    return True
+\end{lstlisting}
+\end{center}
 
 \end{frame}
-\begin{frame}
-
-\lstinputlisting[firstline=23 ,lastline=41 , basicstyle=\small, xleftmargin=0.2em, xrightmargin=0.2em]{"scripts/boyer-moore.py"}
+\begin{frame}[fragile]
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def decalage_fenetre(decalages: dict, taille: int, lettre: str) -> int:
+    for cle, val in decalages.items():
+        if cle == lettre:
+            return val
+    # si la lettre n'est pas dans le dico (= le motif)
+    return taille
+\end{lstlisting}
+\end{center}
 
 \end{frame}
-\begin{frame}
+\begin{frame}[fragile]
 
-\lstinputlisting[firstline=44 ,lastline=54 , basicstyle=\small, xleftmargin=0.2em, xrightmargin=0.2em]{"scripts/boyer-moore.py"}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def decalage_fenetre2(decalages: dict, taille: int, lettre: str) -> int:
+    # la méthode get renvoie une valeur par défaut si elle ne trouve pas la clé
+    return decalages.get(lettre, taille)
+\end{lstlisting}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def decalage_fenetre3(decalages: dict, taille: int, lettre: str) -> int:
+    try:
+        res = decalages[lettre]
+    except KeyError:
+        res = taille
+    return res
+\end{lstlisting}
+\captionof{code}{Variantes}
+\label{CODE}
+\end{center}
 
 \end{frame}
-\begin{frame}
-
-\lstinputlisting[firstline=77 ,lastline=95 , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]{"scripts/boyer-moore.py"}
+\begin{frame}[fragile]
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+def boyer_moore(texte: str, motif: str) -> int:
+    decalages = pretraitement_decalages(motif)
+    i = 0
+    while i <= len(texte)-len(motif):
+        # si on trouve le motif
+        if compare(texte, i, motif):
+            return i
+        else:
+            # sinon on décale (en fonction de la dernière lettre de la fenêtre)
+            decale = decalage_fenetre(
+                            decalages, 
+                            len(motif), 
+                            texte[i+len(motif)-1]
+                            )
+            i += decale
+    # si on sort de la boucle, on n'a rien trouvé
+    return -1
+\end{lstlisting}
+\end{center}
 
 \end{frame}
 % d'autres versions (bad char, good suffix)
@@ -609,7 +665,9 @@ Renvoyer -1 si le motif n'est pas présent
         \end{tabular}
         \captionof{figure}{Algorithme naïf}
     \end{center}
-
+\begin{aretenir}[Observation]
+L'algorithme naïf effectue 10 décalages.
+\end{aretenir}
 \end{frame}
 \begin{frame}
     \frametitle{}
@@ -627,24 +685,9 @@ Renvoyer -1 si le motif n'est pas présent
         \end{tabular}
         \captionof{figure}{Algorithme de Boyer-Moore}
     \end{center}
-
-\end{frame}
-\begin{frame}
-    \frametitle{}
-    \begin{activite}
-        Compter le nombre d'itérations de la recherche avec l'algorithme naïf puis celui de Boyer-Moore.
-        \end{activite}
-    
-
-\end{frame}
-\begin{frame}
-    \frametitle{Correction}
-
-    \begin{itemize}
-        \item Algorithme naïf: 10 décalages,
-        \item Algorithme de Boyer-Moore: 3 décalages.
-    \end{itemize}
-
+    \begin{aretenir}[Observation]
+        L'algorithme de Boyer-Moore-Horspool effectue 3 décalages.
+        \end{aretenir}
 \end{frame}
 \begin{frame}
     \frametitle{}
@@ -653,18 +696,13 @@ Renvoyer -1 si le motif n'est pas présent
         \begin{itemize}
             \item Dans le meilleur des cas, la complexité temporelle de l'algorithme est $O(T/M)$ où T est la taille du texte et M celle du motif.
             \item Plus le motif est long plus l'algorithme est rapide.
+            \item Le prétraitement a un coût (temporel et spatial) mais qui est grandement compensé.
         \end{itemize}
         \end{aretenir}
 \note[item]{complexité sous-linéaire!}
 \note[item]{Naïf $O(T.M)$}
 \note[item]{Complexité moyenne: $O(3.M)$ démontrée par Richard Cole en 1991.}
-
-\end{frame}
-\begin{frame}
-    \frametitle{}
-
-    Le prétraitement a un coût (temporel et spatial) mais qui est grandement compensé.
-    \note[item]{coût spatial si alphabet grand.}
+\note[item]{coût spatial si alphabet grand.}
 
 \end{frame}
 \begin{frame}
@@ -697,12 +735,14 @@ Renvoyer -1 si le motif n'est pas présent
         \captionof{figure}{Cas critique}
 
     \end{center}
-\note{La version plus complexe de l'algorithme recherche des sous-motifs dans le motif (good suffix).}
+\note{.}
 \end{frame}
 \begin{frame}
-    \frametitle{Code complet}
+    \frametitle{}
 
-    Les programmes du cours sont téléchargeables \href{https://cviroulaud.github.io/terminale/algorithmique/boyer-moore/recherche-textuelle/scripts/boyer-moore.zip}{ici}.
+    \begin{aretenir}[Remarque]
+        En plus d'un traitement du mauvais caractère, la version complète de l'algorithme de Boyer-Moore recherche des bons suffixes dans le motif.
+    \end{aretenir}
 
 \end{frame}
 \end{document}

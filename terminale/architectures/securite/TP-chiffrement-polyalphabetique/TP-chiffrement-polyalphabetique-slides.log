@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 MAR 2022 08:40
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 APR 2022 17:30
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/TP-chiffrement-polyalphabetique/TP-chiffrement-polyalphabetique-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/TP-chiffrement-polyalphabetique/TP-chiffrement-polyalphabetique-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.133 seconds
+luaotfload | main : initialization completed in 0.130 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1889,15 +1889,15 @@ Package rerunfilecheck Info: File `TP-chiffrement-polyalphabetique-slides.out' h
 
 Here is how much of LuaTeX's memory you used:
  44940 strings out of 494383
- 381620,1144653 words of node,token memory allocated
- 140477 words of node memory still in use:
-   51 hlist, 8 vlist, 8 rule, 12 disc, 4 local_par, 149 glue, 10 kern, 22 penalty, 15256 glyph, 13191 attribute, 106 glue_spec, 2201 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
-   avail lists: 1:5,2:7813,3:187,4:6897,5:5428,6:62,7:4483,8:4885,9:8797,10:46,11:516,12:1
+ 381625,1144653 words of node,token memory allocated
+ 140400 words of node memory still in use:
+   51 hlist, 8 vlist, 8 rule, 12 disc, 4 local_par, 149 glue, 10 kern, 22 penalty, 15251 glyph, 13173 attribute, 106 glue_spec, 2198 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
+   avail lists: 1:5,2:7813,3:188,4:6897,5:5428,6:62,7:4483,8:4885,9:8797,10:46,11:516,12:1
  47271 multiletter control sequences out of 65536+600000
  91 fonts using 11613199 bytes
  70i,15n,95p,1243b,1076s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on TP-chiffrement-polyalphabetique-slides.pdf (46 pages, 140066 bytes).
+Output written on TP-chiffrement-polyalphabetique-slides.pdf (46 pages, 140045 bytes).
 
 PDF statistics: 695 PDF objects out of 1000 (max. 8388607)
  609 compressed objects within 7 object streams

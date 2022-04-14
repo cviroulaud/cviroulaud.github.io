@@ -37,7 +37,7 @@ def bin_en_int(paquet: list) -> int:
     """
     entier = 0
     for i in range(len(paquet)):
-        entier += int(paquet[i])*2**(len(paquet)-1-i)
+        entier += paquet[i]*2**(len(paquet)-1-i)
     return entier
 
 

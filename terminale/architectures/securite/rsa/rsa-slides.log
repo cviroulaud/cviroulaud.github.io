@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 MAR 2022 15:31
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  14 APR 2022 12:34
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/rsa/rsa-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/rsa/rsa-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.124 seconds
+luaotfload | main : initialization completed in 0.185 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1884,15 +1884,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Here is how much of LuaTeX's memory you used:
  45035 strings out of 494383
- 381620,1144653 words of node,token memory allocated
- 159801 words of node memory still in use:
-   60 hlist, 7 vlist, 5 rule, 42 disc, 7 local_par, 10 math, 237 glue, 38 kern, 40 penalty, 19673 glyph, 7785 attribute, 106 glue_spec, 1300 attribute_list, 3 write, 30 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:5,2:4572,3:611,4:5719,5:4309,6:57,7:1102,8:3921,9:6991,10:32,11:384,12:1
+ 381613,1144653 words of node,token memory allocated
+ 159808 words of node memory still in use:
+   60 hlist, 7 vlist, 5 rule, 42 disc, 7 local_par, 10 math, 237 glue, 38 kern, 40 penalty, 19674 glyph, 7785 attribute, 106 glue_spec, 1300 attribute_list, 3 write, 30 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:4,2:4572,3:611,4:5720,5:4309,6:57,7:1102,8:3921,9:6991,10:32,11:384,12:1
  47452 multiletter control sequences out of 65536+600000
  92 fonts using 11753967 bytes
  70i,15n,95p,1187b,1079s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on rsa-slides.pdf (46 pages, 315679 bytes).
+Output written on rsa-slides.pdf (46 pages, 315683 bytes).
 
 PDF statistics: 1008 PDF objects out of 1200 (max. 8388607)
  902 compressed objects within 10 object streams

@@ -166,7 +166,7 @@ track = [0 for _ in range(longueur+1)]
 \end{lstlisting}
 \end{center}
 \begin{activite}
-Écrire la fonction \textbf{\texttt{decoupe\_TD(l: int, prix: dict, track: int) $\rightarrow$ int}} qui reprend l'algorithme naïf mais évite de calculer des valeurs déjà connues.
+Écrire la fonction \textbf{\texttt{decoupe\_TD(l: int, prix: dict, track: list) $\rightarrow$ int}} qui reprend l'algorithme naïf mais évite de calculer des valeurs déjà connues.
 \end{activite}
 
 \end{frame}
@@ -188,7 +188,7 @@ track = [0 for _ in range(longueur+1)]
     \frametitle{Correction}
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-2em]
-def decoupe_TD(l: int, prix: dict, track: int) -> int:
+def decoupe_TD(l: int, prix: dict, track: list) -> int:
     # valeur déjà calculée
     if track[l] > 0:
         return track[l]

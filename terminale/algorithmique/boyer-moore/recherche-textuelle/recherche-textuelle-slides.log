@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 APR 2022 13:54
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  11 APR 2022 17:49
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/recherche-textuelle/recherche-textuelle-slides
 (/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/algorithmique/boyer-moore/recherche-textuelle/recherche-textuelle-slides.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.098 seconds
+luaotfload | main : initialization completed in 0.104 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1344,7 +1344,34 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./recherche-textuelle-slides.aux)
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2011/01/05 ver 0.02
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count431
+\calc@Bcount=\count432
+\calc@Adimen=\dimen353
+\calc@Bdimen=\dimen354
+\calc@Askip=\skip144
+\calc@Bskip=\skip145
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count433
+\calc@Cskip=\skip146
+)
+\pgf@logicalpages=\count434
+\pgf@firstshipout=\count435
+\pgf@lastshipout=\count436
+\pgf@currentshipout=\count437
+\pgf@cpn=\count438
+\pgf@shipoutnextto=\count439
+\pgfphysicalheight=\dimen355
+\pgfphysicalwidth=\dimen356
+\pgfpages@shipoutbox=\box124
+)
+\pgfpages@box@1=\box125
+\pgfpages@box@2=\box126
+ (./recherche-textuelle-slides.aux)
 \openout1 = recherche-textuelle-slides.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1408,16 +1435,16 @@ LaTeX Font Info:    ... okay on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count431
-\scratchdimen=\dimen353
-\scratchbox=\box124
-\nofMPsegments=\count432
-\nofMParguments=\count433
+\scratchcounter=\count440
+\scratchdimen=\dimen357
+\scratchbox=\box127
+\nofMPsegments=\count441
+\nofMParguments=\count442
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count434
-\MPscratchDim=\dimen354
-\MPnumerator=\count435
-\makeMPintoPDFobject=\count436
+\MPscratchCnt=\count443
+\MPscratchDim=\dimen358
+\MPnumerator=\count444
+\makeMPintoPDFobject=\count445
 \everyMPtoPDFconversion=\toks66
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1431,14 +1458,14 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box125
+\AtBeginShipoutBox=\box128
 Package hyperref Info: Link coloring ON on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count437
+\c@section@level=\count446
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
@@ -1564,19 +1591,22 @@ LaTeX Info: Redefining \up on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count438
+\c@lstlisting=\count447
 
 No file pythontex-files-recherche-textuelle-slides/recherche-textuelle-slides.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
-\c@listing=\count439
+\c@listing=\count448
 Package newfloat Info: float type `listing'=16 on input line 11.
-(./recherche-textuelle-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./recherche-textuelle-slides.nav) [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 ]
-<ressources/adn.png, id=98, 371.3875pt x 224.84pt>
+<ressources/adn.png, id=95, 371.3875pt x 224.84pt>
 File: ressources/adn.png Graphic file (type png)
 <use ressources/adn.png>
 Package luatex.def Info: ressources/adn.png  used on input line 36.
@@ -1612,24 +1642,69 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 36.
  [3
 
-<./ressources/adn.png>] [4
 
-] (./recherche-textuelle-slides.toc) [5
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation2'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+
+] [4
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+
+<./ressources/adn.png>] (./recherche-textuelle-slides.toc) [5
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
 
 ] [6
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+
 ] [7
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation6'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
 
 ] [8
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation7'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+
 ] [9
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation8'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
+
 ] (./recherche-textuelle-slides.toc) [10
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation9'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 158.
  [11
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
 
 ]
 \openout4 = recherche-textuelle-slides.vrb
@@ -1639,24 +1714,59 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [12
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation11'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
+
 ] [13
 
-] (./recherche-textuelle-slides.toc) [14
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation12'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 224.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 208.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 224.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 208.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 224.
- [15
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 208.
+ (./recherche-textuelle-slides.toc) [14
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation13'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
+
+] [15
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation14'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
 
 ] [16
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation15'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
+
 ] [17
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation16'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
+
 ] [18
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation17'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1669,19 +1779,59 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 259.
  [19
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation18'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
+
 ] (./recherche-textuelle-slides.toc) [20
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation19'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
 
 ] [21
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation20'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
+
 ] [22
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation21'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
 
 ] [23
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation22'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
+
 ] [24
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation23'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
 
 ] [25
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation24'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.24'
+
 ] [26
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation25'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1694,7 +1844,17 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 421.
  [27
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation26'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
+
 ] (./recherche-textuelle-slides.toc) [28
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation27'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1707,6 +1867,11 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 447.
  [29
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation28'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
+
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1717,6 +1882,11 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 473.
  [30
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation29'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.29'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1729,7 +1899,17 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 496.
  [31
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation30'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.30'
+
 ] [32
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation31'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.31'
 
 ]
 \openout4 = recherche-textuelle-slides.vrb
@@ -1739,7 +1919,17 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [33
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation32'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.32'
+
 ] (./recherche-textuelle-slides.toc) [34
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation33'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.33'
 
 ]
 \openout4 = recherche-textuelle-slides.vrb
@@ -1753,7 +1943,17 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [35
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation34'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.34'
+
 ] [36
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation35'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.35'
 
 ]
 \openout4 = recherche-textuelle-slides.vrb
@@ -1763,6 +1963,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [37
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation36'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.36'
+
 ]
 \openout4 = recherche-textuelle-slides.vrb
  (./recherche-textuelle-slides.vrb
@@ -1770,6 +1975,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [38
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation37'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.37'
 
 ]
 \openout4 = recherche-textuelle-slides.vrb
@@ -1782,6 +1992,11 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [39
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation38'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.38'
+
 ]
 \openout4 = recherche-textuelle-slides.vrb
  (./recherche-textuelle-slides.vrb
@@ -1790,9 +2005,24 @@ Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
 ) [40
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation39'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.39'
+
 ] (./recherche-textuelle-slides.toc) [41
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation40'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.40'
+
 ] [42
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation41'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.41'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1805,6 +2035,11 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 671.
  [43
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation42'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.42'
+
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1815,6 +2050,11 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 691.
  [44
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation43'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.43'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1827,7 +2067,17 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 707.
  [45
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation44'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.44'
+
 ] [46
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation45'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.45'
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1840,6 +2090,11 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 747.
  [47
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation46'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.46'
+
 ]
 \tf@nav=\write8
 
@@ -1850,6 +2105,14 @@ Package mdframed Info: mdframed inside a box
 \tf@snm=\write10
 
 \openout10 = recherche-textuelle-slides.snm
+ [48
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation47'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.47'
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 748.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 748.
  (./recherche-textuelle-slides.aux)
@@ -1860,19 +2123,19 @@ Package rerunfilecheck Info: File `recherche-textuelle-slides.out' has not chang
 )
 
 Here is how much of LuaTeX's memory you used:
- 45101 strings out of 494383
- 745412,1373583 words of node,token memory allocated
- 167629 words of node memory still in use:
-   51 hlist, 8 vlist, 8 rule, 14 disc, 4 local_par, 213 glue, 12 kern, 22 penalty, 18760 glyph, 14097 attribute, 106 glue_spec, 2352 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 5 pdf_action, 14 pdf_colorstack nodes
-   avail lists: 1:11,2:12483,3:911,4:11884,5:9459,6:61,7:4424,8:8532,9:15199,10:37,11:890,12:1
- 47485 multiletter control sequences out of 65536+600000
- 92 fonts using 11755839 bytes
- 70i,15n,107p,1222b,1081s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on recherche-textuelle-slides.pdf (47 pages, 184048 bytes).
+ 45380 strings out of 494383
+ 1164560,1373583 words of node,token memory allocated
+ 224707 words of node memory still in use:
+   133 hlist, 26 vlist, 20 rule, 37 disc, 13 local_par, 482 glue, 32 kern, 51 penalty, 25447 glyph, 16755 attribute, 109 glue_spec, 2795 attribute_list, 7 write, 2 save_pos, 246 pdf_literal, 3 pdf_start_link, 3 pdf_end_link, 2 pdf_dest, 15 pdf_action, 50 pdf_colorstack nodes
+   avail lists: 1:6,2:14730,3:1956,4:19918,5:15704,6:167,7:10619,8:14087,9:25444,10:37,11:1620,12:1
+ 47749 multiletter control sequences out of 65536+600000
+ 93 fonts using 11887519 bytes
+ 70i,15n,107p,1222b,1092s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on recherche-textuelle-slides.pdf (47 pages, 245625 bytes).
 
-PDF statistics: 954 PDF objects out of 1000 (max. 8388607)
- 860 compressed objects within 9 object streams
+PDF statistics: 1231 PDF objects out of 1440 (max. 8388607)
+ 1050 compressed objects within 11 object streams
  114 named destinations out of 1000 (max. 131072)
  98 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -28,7 +28,7 @@ prix = {1: 2, 2: 5, 3: 8, 4: 10, 5: 11, 6: 14, 8: 17, 10: 20}
 print(decoupe_naif(longueur, prix))
 
 
-def decoupe_TD(l: int, prix: dict, track: int) -> int:
+def decoupe_TD(l: int, prix: dict, track: list) -> int:
     """
     renvoie le prix maximum pour une barre de taille l
     """

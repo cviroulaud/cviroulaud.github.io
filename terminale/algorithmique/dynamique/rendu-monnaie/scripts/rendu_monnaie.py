@@ -96,7 +96,7 @@ def rendu_bu(somme: int, systeme: list) -> list:
     # pour chaque pièce de track on cherche le nombre minimum de pièces à rendre
     for x in range(1, somme+1):
         # on ne rend que des pièces de 1
-        mini = [1 for _ in range(somme)]
+        mini = [1 for _ in range(x)]
         for piece in systeme:
             if piece <= x:
                 C += 1

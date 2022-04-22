@@ -1,0 +1,17 @@
+\frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=-2em]
+k = 3
+inconnu = {"espece": "inconnu",
+            "longueur": 5.1,
+            "largeur": 1.55}
+
+varietes = charger_donnees("data-iris.csv")
+distances_cible = calculer_distances(varietes, inconnu)
+variete = trouver_variete(k, distances_cible)
+
+print("La variété est", variete)
+\end{lstlisting}
+    \end{center}
+

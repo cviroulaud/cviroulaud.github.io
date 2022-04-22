@@ -1,0 +1,13 @@
+\frametitle{Correction}
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+k = 3
+vin_inconnu = {'fixed acidity': 6.9, 'volatile acidity': 0.5, 'citric acid': 0.19, 'residual sugar': 3.9, 'chlorides': 0.16, 'free sulfur dioxide': 31.0, 'total sulfur dioxide': 50.0, 'density': 0.994, 'pH': 3.01, 'sulphates': 0.61, 'alcohol': 9.3}
+
+distances = calculer_distances(vins, vin_inconnu)
+tri_insertion(distances)
+print(trouver_qualite(k, distances))
+\end{lstlisting}
+\end{center}
+
+

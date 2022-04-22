@@ -7,28 +7,11 @@
 """
 
 import csv
-
-
-def charger_donnees(f: str) -> list:
-    fichier = open(f, encoding="utf8")
-    data = csv.DictReader(fichier)
-
-    vins = []
-    for v in data:
-        vin = {}
-        for attribut, valeur in v.items():
-            # qualité est le seul entier
-            if attribut == "quality":
-                vin[attribut] = int(valeur)
-            else:
-                vin[attribut] = float(valeur)
-        vins.append(vin)
-    return vins
-
+from tri import tri_insertion
 
 def distance(connu: dict, inconnu: dict) -> float:
     """
-    calcule (le carrée de) la distance euclidienne
+    calcule (le carré de) la distance euclidienne
     entre les vins connu et inconnu
     """
     dist = 0
@@ -46,8 +29,6 @@ def calculer_distances(vins: list, inconnu: dict) -> list:
         # stocke le tuple (qualité, distance)
         distances.append((v["quality"], d))
 
-    # trie les vins en fonction de la distance
-    distances.sort(key=lambda vin: vin[1])
     return distances
 
 
@@ -71,6 +52,24 @@ def trouver_qualite(k: int, distances: list) -> int:
             maxi = valeur
     return qualite_maxi
 
+# programme principal
+
+
+# importation des données
+fichier = open("winequality-red.csv", encoding="utf8")
+data = csv.DictReader(fichier)
+
+vins = []
+for v in data:
+    vin = {}
+    for attribut, valeur in v.items():
+        # qualité est le seul entier
+        if attribut == "quality":
+            vin[attribut] = int(valeur)
+        else:
+            vin[attribut] = float(valeur)
+    vins.append(vin)
+
 
 k = 3
 vin_inconnu = {'fixed acidity': 6.9, 'volatile acidity': 0.5, 'citric acid': 0.19,
@@ -78,6 +77,6 @@ vin_inconnu = {'fixed acidity': 6.9, 'volatile acidity': 0.5, 'citric acid': 0.1
                'total sulfur dioxide': 50.0, 'density': 0.994, 'pH': 3.01,
                'sulphates': 0.61, 'alcohol': 9.3}
 
-vins = charger_donnees("winequality-red.csv")
 distances = calculer_distances(vins, vin_inconnu)
+tri_insertion(distances)
 print(trouver_qualite(k, distances))

@@ -1,0 +1,5 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Couche réseau}{5}{0}{1}
+\beamer@sectionintoc {2}{Couche IP}{10}{0}{2}
+\beamer@sectionintoc {3}{Couche TCP}{24}{0}{3}
+\beamer@sectionintoc {4}{Couche application}{32}{0}{4}

@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Études des données}{5}{0}{1}
+\beamer@sectionintoc {2}{Algorithme kNN}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Importation des données}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Distance}{16}{0}{2}
+\beamer@subsectionintoc {2}{4}{Trier}{24}{0}{2}
+\beamer@subsectionintoc {2}{5}{Sélectionner}{28}{0}{2}
+\beamer@subsectionintoc {2}{6}{Programme principal}{32}{0}{2}

@@ -97,7 +97,7 @@ def tri_insertion(tab: list) -> None:
 
 
 # charge le fichier dans le programme
-fichier = open("googleplaystore.csv")
+fichier = open("googleplaystore.csv", encoding="utf8")
 # crée un itérateur sur les données
 lecteur_donnees = csv.DictReader(fichier)
 

@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 APR 2022 13:29
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  15 APR 2022 16:00
  system commands enabled.
-**/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/TP-chiffrement-polyalphabetique/TP-chiffrement-polyalphabetique-slides
-(/home/tof/Documents/Cozy/cviroulaud.github.io/terminale/architectures/securite/TP-chiffrement-polyalphabetique/TP-chiffrement-polyalphabetique-slides.tex
+**/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/internet/reseau-internet/reseau-internet-slides
+(/home/tof/Documents/Cozy/cviroulaud.github.io/seconde/internet/reseau-internet/reseau-internet-slides.tex
 LaTeX2e <2018-12-01>
 Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
 Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initialization
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.144 seconds
+luaotfload | main : initialization completed in 0.125 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1174,7 +1174,7 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
 \pytx@codefile=\write6
 
-\openout6 = TP-chiffrement-polyalphabetique-slides.pytxcode
+\openout6 = reseau-internet-slides.pytxcode
 \c@pytx@FancyVerbLineTemp=\count406
 \c@pytx@py@default@default=\count407
 \c@pytx@pycon@default@default=\count408
@@ -1344,8 +1344,36 @@ Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 ) (/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeGoettingen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen351
 \beamer@headheight=\dimen352
-))) (./TP-chiffrement-polyalphabetique-slides.aux)
-\openout1 = TP-chiffrement-polyalphabetique-slides.aux
+))) (./reseau-internet-slides.aux
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+
+LaTeX Warning: Label `IMG' multiply defined.
+
+)
+\openout1 = reseau-internet-slides.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -1443,10 +1471,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
- (./TP-chiffrement-polyalphabetique-slides.out) (./TP-chiffrement-polyalphabetique-slides.out)
+ (./reseau-internet-slides.out) (./reseau-internet-slides.out)
 \@outlinefile=\write7
 
-\openout7 = TP-chiffrement-polyalphabetique-slides.out
+\openout7 = reseau-internet-slides.out
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 11.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1566,341 +1594,236 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count438
 
-No file pythontex-files-TP-chiffrement-polyalphabetique-slides/TP-chiffrement-polyalphabetique-slides.pytxmcr.
+No file pythontex-files-reseau-internet-slides/reseau-internet-slides.pytxmcr.
 Run PythonTeX to create it.
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 11.
 \c@listing=\count439
 Package newfloat Info: float type `listing'=16 on input line 11.
-(./TP-chiffrement-polyalphabetique-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./reseau-internet-slides.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] [2
+
+] (./reseau-internet-slides.toc) [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+<ressources/darpa.png, id=85, 1006.76125pt x 1006.76125pt>
+File: ressources/darpa.png Graphic file (type png)
+<use ressources/darpa.png>
+Package luatex.def Info: ressources/darpa.png  used on input line 34.
+(luatex.def)             Requested size: 170.71652pt x 170.71701pt.
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 34.
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 34.
+
+[4
+
+<./ressources/darpa.png>]
+<ressources/roberts.jpg, id=101, 380.42125pt x 481.8pt>
+File: ressources/roberts.jpg Graphic file (type jpg)
+<use ressources/roberts.jpg>
+Package luatex.def Info: ressources/roberts.jpg  used on input line 44.
+(luatex.def)             Requested size: 113.81102pt x 144.13676pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[5
+
+<./ressources/roberts.jpg>]
+<ressources/arpanet.png, id=114, 2569.6pt x 1618.045pt>
+File: ressources/arpanet.png Graphic file (type png)
+<use ressources/arpanet.png>
+Package luatex.def Info: ressources/arpanet.png  used on input line 54.
+(luatex.def)             Requested size: 227.62204pt x 143.32166pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[6
+
+<./ressources/arpanet.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 68.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 30.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 68.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 30.
- [2
-
-] [3
-
-]
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 68.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 50.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 50.
+(mdframed)              on input line 68.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 50.
- [4
-
-] (./TP-chiffrement-polyalphabetique-slides.toc) [5
-
-] [6
-
-]
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 84.
+ mdframed uses option nobreak mdframed on input line 68.
  [7
 
 ]
-</home/tof/Documents/Cozy/latex-include/stop.png, id=139, 240.9pt x 240.9pt>
-File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 98.
-(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 98.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 98.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 98.
- [8
+<ressources/internet.png, id=141, 441.65pt x 226.8475pt>
+File: ressources/internet.png Graphic file (type png)
+<use ressources/internet.png>
+Package luatex.def Info: ressources/internet.png  used on input line 78.
+(luatex.def)             Requested size: 227.62204pt x 116.91603pt.
 
-</home/tof/Documents/Cozy/latex-include/stop.png>]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[8
 
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
+<./ressources/internet.png>]
+<ressources/connexion.jpeg, id=156, 147.6717pt x 82.8696pt>
+File: ressources/connexion.jpeg Graphic file (type jpg)
+<use ressources/connexion.jpeg>
+Package luatex.def Info: ressources/connexion.jpeg  used on input line 94.
+(luatex.def)             Requested size: 227.62204pt x 127.7485pt.
 
-) [9
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[9
 
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [10
+<./ressources/connexion.jpeg>] (./reseau-internet-slides.toc) [10
 
 ]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
+<ressources/switch.jpg, id=183, 154.176pt x 115.632pt>
+File: ressources/switch.jpg Graphic file (type jpg)
+<use ressources/switch.jpg>
+Package luatex.def Info: ressources/switch.jpg  used on input line 105.
+(luatex.def)             Requested size: 227.62204pt x 170.7198pt.
 
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[11
 
-) [11
+<./ressources/switch.jpg>]
+<ressources/local.png, id=197, 716.6775pt x 395.4775pt>
+File: ressources/local.png Graphic file (type png)
+<use ressources/local.png>
+Package luatex.def Info: ressources/local.png  used on input line 116.
+(luatex.def)             Requested size: 227.62204pt x 125.60193pt.
 
-] (./TP-chiffrement-polyalphabetique-slides.toc) [12
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[12
 
-] [13
-
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [14
-
-]
-File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 207.
-(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
- [15
+<./ressources/local.png>] [13
 
 ]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 135.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 135.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 135.
+ [14
 
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [16
-
-] (./TP-chiffrement-polyalphabetique-slides.toc) [17
-
-] [18
+] (./reseau-internet-slides.toc) [15
 
 ]
-File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 254.
-(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
+<ressources/routeur.png, id=251, 642.4pt x 481.8pt>
+File: ressources/routeur.png Graphic file (type png)
+<use ressources/routeur.png>
+Package luatex.def Info: ressources/routeur.png  used on input line 148.
+(luatex.def)             Requested size: 227.62204pt x 170.71304pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[16
+
+<./ressources/routeur.png>]
+<ressources/maille.png, id=264, 798.985pt x 313.17pt>
+File: ressources/maille.png Graphic file (type png)
+<use ressources/maille.png>
+Package luatex.def Info: ressources/maille.png  used on input line 159.
+(luatex.def)             Requested size: 284.52756pt x 111.52257pt.
+
+Overfull \hbox (5.69043pt too wide) in paragraph at lines 159--159
+ [] 
+ []
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+[17
+
+<./ressources/maille.png>] [18
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 178.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 178.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 178.
  [19
 
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [20
+] (./reseau-internet-slides.toc) [20
 
 ]
-Overfull \hbox (23.2226pt too wide) in paragraph at lines 289--289
- [] 
+<ressources/routage.png, id=318, 924.45375pt x 719.68875pt>
+File: ressources/routage.png Graphic file (type png)
+<use ressources/routage.png>
+Package luatex.def Info: ressources/routage.png  used on input line 190.
+(luatex.def)             Requested size: 256.0748pt x 199.34811pt.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'IMG'
+
+Overfull \vbox (8.08774pt too high) detected at line 190
  []
 
 [21
 
-] [22
-
-]
-File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 311.
-(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
- [23
-
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [24
-
-] (./TP-chiffrement-polyalphabetique-slides.toc) [25
-
-]
+<./ressources/routage.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 346.
+(mdframed)              on input line 198.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 346.
+(mdframed)              on input line 198.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 346.
- [26
-
-] [27
-
-]
-File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 368.
-(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
- [28
-
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [29
-
-] [30
-
-]
-File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 416.
-(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
- [31
-
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [32
-
-] (./TP-chiffrement-polyalphabetique-slides.toc) [33
-
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 17.
-) [34
-
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [35
-
-] [36
-
-]
-File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 527.
-(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
- [37
-
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [38
-
-] [39
-
-]
-File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 577.
-(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
- [40
-
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) [41
-
-] [42
-
-]
-File: /home/tof/Documents/Cozy/latex-include/stop.png Graphic file (type png)
-<use /home/tof/Documents/Cozy/latex-include/stop.png>
-Package luatex.def Info: /home/tof/Documents/Cozy/latex-include/stop.png  used on input line 623.
-(luatex.def)             Requested size: 85.35826pt x 85.3565pt.
- [43
-
-] [44
-
-]
-\openout4 = TP-chiffrement-polyalphabetique-slides.vrb
- (./TP-chiffrement-polyalphabetique-slides.vrb
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-)
-Overfull \vbox (4.65337pt too high) detected at line 661
- []
-
-[45
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 668.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 668.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 668.
- [46
+ mdframed uses option nobreak mdframed on input line 198.
+ [22
 
 ]
 \tf@nav=\write8
 
-\openout8 = TP-chiffrement-polyalphabetique-slides.nav
+\openout8 = reseau-internet-slides.nav
 \tf@toc=\write9
 
-\openout9 = TP-chiffrement-polyalphabetique-slides.toc
+\openout9 = reseau-internet-slides.toc
 \tf@snm=\write10
 
-\openout10 = TP-chiffrement-polyalphabetique-slides.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 669.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 669.
- (./TP-chiffrement-polyalphabetique-slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 669.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 669.
-Package rerunfilecheck Info: File `TP-chiffrement-polyalphabetique-slides.out' has not changed.
-(rerunfilecheck)             Checksum: CC27030B544B514E0C2B2F01A5093470;745.
+\openout10 = reseau-internet-slides.snm
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
+ (./reseau-internet-slides.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
+Package rerunfilecheck Info: File `reseau-internet-slides.out' has not changed.
+(rerunfilecheck)             Checksum: AFE38D2A78C4D4260793D6D0B08CCF9A;657.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 44940 strings out of 494383
- 381623,1144653 words of node,token memory allocated
- 139784 words of node memory still in use:
-   51 hlist, 8 vlist, 8 rule, 12 disc, 4 local_par, 149 glue, 10 kern, 22 penalty, 15205 glyph, 13047 attribute, 106 glue_spec, 2177 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
-   avail lists: 1:5,2:7813,3:188,4:6897,5:5428,6:62,7:4483,8:4885,9:8797,10:46,11:516,12:1
- 47271 multiletter control sequences out of 65536+600000
- 91 fonts using 11613199 bytes
- 70i,15n,95p,1243b,1076s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on TP-chiffrement-polyalphabetique-slides.pdf (46 pages, 139734 bytes).
+ 44485 strings out of 494383
+ 100000,1144653 words of node,token memory allocated
+ 46875 words of node memory still in use:
+   51 hlist, 8 vlist, 8 rule, 15 disc, 4 local_par, 154 glue, 8 kern, 22 penalty, 5318 glyph, 2865 attribute, 106 glue_spec, 480 attribute_list, 4 write, 1 save_pos, 108 pdf_literal, 14 pdf_colorstack nodes
+   avail lists: 1:3,2:943,3:175,4:163,5:80,6:33,7:513,8:21,9:174,10:13,11:40,12:1
+ 47022 multiletter control sequences out of 65536+600000
+ 62 fonts using 9078007 bytes
+ 70i,15n,95p,1195b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on reseau-internet-slides.pdf (22 pages, 1588485 bytes).
 
-PDF statistics: 695 PDF objects out of 1000 (max. 8388607)
- 609 compressed objects within 7 object streams
- 99 named destinations out of 1000 (max. 131072)
+PDF statistics: 391 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 51 named destinations out of 1000 (max. 131072)
  66 words of extra memory for PDF output out of 10000 (max. 100000000)
 

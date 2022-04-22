@@ -257,16 +257,10 @@ La porte \textbf{\texttt{xor}} n'existe pas par défaut en Python. Il faut donc 
 \begin{center}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 def xor(x: int, y: int) -> int:
-    if x == 0:
-        if y == 0:
-            return 0
-        else:
-            return 1
+    if x == y:
+        return 0
     else:
-        if y == 0:
-            return 1
-        else:
-            return 0
+        return 1
 \end{lstlisting}
 \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 print(f"0 xor 0 -> {xor(0, 0)}")

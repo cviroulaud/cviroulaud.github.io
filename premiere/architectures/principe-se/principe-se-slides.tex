@@ -1,0 +1,45 @@
+\documentclass[svgnames,11pt]{beamer}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
+\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\author[]{Christophe Viroulaud}
+\title{Principe d'un\\système d'exploitation}
+\date{\framebox{\textbf{ArchMat 08}}}
+%\logo{}
+\institute{Première - NSI}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}[fragile]
+    \frametitle{}
+
+    \begin{center}
+        \begin{lstlisting}[language=Bash , basicstyle=\small, xleftmargin=2em, xrightmargin=2em]
+MOV R0, #3
+ADD R1,R0,#5
+HALT
+\end{lstlisting}
+\captionof{code}{\centering Pour communiquer directement avec le processeur il faut utiliser un langage de bas-niveau.}
+    \end{center}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{itemize}
+        \item <1-> Chaque processeur accepte un langage différent.
+        \item <2-> Chaque matériel (carte graphique, webcam, clavier\dots) possède des caractéristiques différentes.
+    \end{itemize}
+
+\end{frame}
+\begin{frame}
+    \frametitle{}
+
+    \begin{framed}
+        \centering Comment gérer les accès matériels de manière transparente?
+    \end{framed}
+
+\end{frame}
+\end{document}

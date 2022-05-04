@@ -3,19 +3,18 @@
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \newcommand{\showprof}{show them}  % comment this line if you don't want to see todo environment
 \setlength{\fboxrule}{0.8pt}
-\fancyhead[L]{\fbox{\Large{\textbf{SE 01}}}}
-\fancyhead[C]{\textbf{Découverte du système d'exploitation}}
+\fancyhead[L]{\fbox{\Large{\textbf{ArchMat 09}}}}
+\fancyhead[C]{\textbf{Découverte du système Debian}}
 \newdate{madate}{10}{09}{2020}
 %\fancyhead[R]{\displaydate{madate}} %\today
-%\fancyhead[R]{Seconde - SNT}
 \fancyhead[R]{Première - NSI}
-%\fancyhead[R]{Terminale - NSI}
 \fancyfoot[L]{\vspace{1mm}Christophe Viroulaud}
 \AtEndDocument{\label{lastpage}}
 \fancyfoot[C]{\textbf{Page \thepage/\pageref{lastpage}}}
 \fancyfoot[R]{\includegraphics[width=2cm,align=t]{/home/tof/Documents/Cozy/latex-include/cc.png}}
 
 \begin{document}
+
 \section{Machine virtuelle}
 Dans le cadre de l'établissement certaines restrictions sont posées sur le système d'exploitation des machines. Cependant dans le cadre du cours de NSI, chaque élève dispose d'une \emph{machine virtuelle}. Il est alors possible de modifier, tester, se tromper, réinitialiser sans risquer d'interférer avec le réseau pédagogique de l'établissement.
 \begin{activite}
@@ -31,27 +30,20 @@ Dans le cadre de l'établissement certaines restrictions sont posées sur le sys
         \item Modifier le mot de passe.
         \item Sur le serveur (bandeau gauche), sélectionner la machine virtuelle avec son nom.
         \item Démarrer la machine (clic-droit ou bouton \emph{démarrer}).
-        \item En haut à droite, cliquer sur \emph{Console} puis choisir \emph{SPICE}.
+        \item En haut à droite de l'écran, cliquer sur \emph{Console} puis choisir \emph{SPICE}.
     \end{enumerate}
 \end{activite}
-\begin{commentprof}
-NoVNC ou SPICE\\ possibilité de modifier la résolution plus tard.\\ spice plus immersif (capture raccourci)
-\end{commentprof}
 \section{Découvrir Debian}
-Le système d'exploitation \emph{Debian (version 10)} est installée sur la machine virtuelle. Debian est une distribution faite de logiciels libres et au code source ouvert.
+Le système d'exploitation \emph{Debian (version 10)} est installée sur la machine virtuelle. Debian est une distribution GNU/Linux constituée de logiciels libres et au code source ouvert.
 
 Pour l'instant le système ne possède qu'un compte utilisateur \textbf{nsi} et son mot de passe \textbf{nsi}.
 \begin{activite}
     \begin{enumerate}
-        \item Que signifie un \emph{code source ouvert}?
         \item Ouvrir le système avec le compte \emph{nsi}.
         \item Cliquer sur \emph{Activités} en haut à gauche pour découvrir les applications installées. La touche \emph{Super (Windows sur les claviers)} est un raccourci vers ce menu.
         \item Ouvrir l'application \emph{Terminal}.
     \end{enumerate}
 \end{activite}
-\begin{commentprof}
-créer raccourci vers gnome-terminal
-\end{commentprof}
 \section{Comptes}
 L'invite de commande du Terminal indique l'utilisateur en cours. Les utilisateurs sont répartis dans des groupes qui possèdent certains privilèges. Un utilisateur peut appartenir à plusieurs groupes.
 \begin{aretenir}[]
@@ -62,11 +54,11 @@ L'invite de commande du Terminal indique l'utilisateur en cours. Les utilisateur
         \item Dans le Terminal taper la commande. La liste des groupes auxquels appartient l'utilisateur apparaît.
               \begin{lstlisting}[language=bash]
 groups
-    \end{lstlisting}
+\end{lstlisting}
         \item Pour devenir super-utilisateur, taper la commande ci-après. Le mot de passe est également \textbf{nsi}.
               \begin{lstlisting}[language=bash]
 su -
-        \end{lstlisting}
+\end{lstlisting}
         \item Modifier le mot de passe du super-utilisateur. \textbf{Il est impératif de ne pas perdre ce mot de passe!}
         \begin{lstlisting}[language=bash]
 passwd

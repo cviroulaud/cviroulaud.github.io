@@ -1,0 +1,16 @@
+\frametitle{}
+L'application \textbf{extrepo} précédemment installée permet d'activer facilement des dépôts non-officiels.
+\begin{activite}
+\begin{enumerate}
+\item Activer le dépôt du logiciel \textbf{vscodium}.
+\begin{lstlisting}[language=bash , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+sudo extrepo enable vscodium
+\end{lstlisting}
+\item Installer le logiciel \textbf{vscodium}
+\begin{lstlisting}[language=bash , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
+sudo apt install vscodium
+\end{lstlisting}
+\item \emph{Pour les plus avancés:} Découvrir \textbf{vscodium} et installer des extensions en s'aidant du guide sur le lien suivant: \url{https://tinyurl.com/vscodium}
+\end{enumerate}
+\end{activite}
+

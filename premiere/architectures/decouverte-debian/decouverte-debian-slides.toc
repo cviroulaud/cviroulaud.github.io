@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Machine virtuelle}{3}{0}{1}
+\beamer@sectionintoc {2}{Découvrir Debian}{6}{0}{2}
+\beamer@sectionintoc {3}{Comptes}{9}{0}{3}
+\beamer@sectionintoc {4}{Mise à jour et installation d'applications}{18}{0}{4}
+\beamer@subsectionintoc {4}{1}{Connexion au web}{19}{0}{4}
+\beamer@subsectionintoc {4}{2}{Aptitude}{22}{0}{4}
+\beamer@subsectionintoc {4}{3}{Dépôt non-officiel}{25}{0}{4}

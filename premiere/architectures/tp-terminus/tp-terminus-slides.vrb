@@ -1,0 +1,16 @@
+\frametitle{Commandes de base - Se déplacer}
+
+    Pour interagir avec le système de fichiers, il faut le connaître:
+\begin{center}
+\begin{lstlisting}[language=Bash , basicstyle=\ttfamily\small, xleftmargin=1em, xrightmargin=1em]
+# Lire le contenu d'un fichier
+cat mon_fichier
+
+# Lister le contenu d'un répertoire
+ls
+
+# Se déplacer dans les répertoires
+cd nom_repertoire
+\end{lstlisting}
+\end{center}
+

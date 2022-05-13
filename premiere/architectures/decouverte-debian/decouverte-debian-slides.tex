@@ -188,7 +188,7 @@ sudo deluser --remove-home nsi
 sudo nano /etc/hostname
 \end{lstlisting}
 \item Remplacer le nom de la machine.
-\item Enregistrer avec le raccourci \textbf{Ctrl+O}.
+\item Enregistrer avec le raccourci \textbf{Ctrl+O}, puis valider.
 \item Sortir de l'éditeur \textbf{nano}: \textbf{Ctrl+X}.
     \end{itemize}
 \end{activite}
@@ -243,10 +243,6 @@ Dans le lycée les machines virtuelles sont isolées dans une \emph{bulle}. Pour
 \item Mettre à jour la liste des paquets. Cette étape n'installe rien mais compare seulement les versions des applications de la machine à celles du dépôt.
 \begin{lstlisting}[language=bash, basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 sudo apt update
-\end{lstlisting}
-\item Mettre à jour les paquets. Cette étape installe les nouvelles versions des logiciels déjà installés.
-\begin{lstlisting}[language=bash, basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-sudo apt upgrade
 \end{lstlisting}
 \item Vérifier la présence d'une application.
 \begin{lstlisting}[language=bash, basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]

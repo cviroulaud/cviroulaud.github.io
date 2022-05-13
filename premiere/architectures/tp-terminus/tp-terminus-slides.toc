@@ -1,0 +1,3 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Commandes de base}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Se déplacer}{5}{0}{1}

@@ -1,3 +1,5 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Commandes de base}{4}{0}{1}
-\beamer@subsectionintoc {1}{1}{Se déplacer}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{Les répertoires}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Les fichiers}{13}{0}{1}
+\beamer@sectionintoc {2}{Jeu sérieux}{18}{0}{2}

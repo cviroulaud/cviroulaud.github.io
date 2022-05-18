@@ -1,18 +1,27 @@
 \documentclass[svgnames,11pt]{beamer}
+\setbeamercolor{structure}{fg=SlateGray}
+\usetheme{Goettingen}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
-\input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+\usepackage{pgfpages}
+\setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
-\title{Thymio - découverte}
-\date{\framebox{\textbf{SIE 02}}}
+\title{Découvrir le robot Thymio}
+\date{}
 %\logo{}
-\institute{Seconde - SNT}
+\institute{Seconde SNT}
+%\institute{Première NSI}
+%\institute{Terminale NSI}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
 
 \begin{document}
 \begin{frame}
 \titlepage
 \end{frame}
+
+\section{Problématique}
 \begin{frame}
+    \frametitle{Problématique}
 
     La voiture autonome utilise des capteurs pour obtenir des informations de son environnement.  C'est le programmeur qui paramètre les attitudes de la voiture.
     \begin{center}

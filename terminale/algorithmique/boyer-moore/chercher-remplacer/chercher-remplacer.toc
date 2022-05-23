@@ -1,0 +1,8 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Importer un texte}{3}{0}{1}
+\beamer@sectionintoc {2}{Rechercher}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Recherche naïve}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{Gestion de la casse}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Évaluer l'efficacité}{16}{0}{2}
+\beamer@subsectionintoc {2}{4}{Algorithme de Boyer-Moore}{22}{0}{2}
+\beamer@sectionintoc {3}{Remplacer}{30}{0}{3}

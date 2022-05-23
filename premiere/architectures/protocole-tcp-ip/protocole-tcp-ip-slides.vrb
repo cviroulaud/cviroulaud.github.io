@@ -1,0 +1,12 @@
+\frametitle{}
+
+    \begin{aretenir}[]
+    Chaque machine possède une \textbf{adresse MAC (Media Access Control)} unique sur 6 octets; exemple: 47:13:b8:31:07:73
+    \end{aretenir}
+\begin{center}
+\begin{lstlisting}[language=Bash,basicstyle=\ttfamily\small , xleftmargin=1em, xrightmargin=1em]
+ip link
+\end{lstlisting}
+\captionof{code}{Récupérer l'adresse MAC de la carte réseau.}
+\label{CODE}
+\end{center}

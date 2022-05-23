@@ -1,0 +1,13 @@
+\frametitle{Correction}
+
+\begin{center}
+\begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=0.2em, xrightmargin=0em]
+modifie = remplacer(livre, "guerre", "paix")
+fichier = open("la-paix-des-mondes.txt", "w",                         encoding="utf8")
+fichier.write(modifie)
+fichier.close()
+\end{lstlisting}
+\captionof*{code}{Création du livre}
+\label{CODE}
+\end{center}
+

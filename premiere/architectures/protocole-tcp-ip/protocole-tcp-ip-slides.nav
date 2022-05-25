@@ -53,8 +53,44 @@
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\slideentry {3}{2}{5}{21/21}{Couche réseau}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@partpages {1}{21}}
 \headcommand {\beamer@subsectionpages {17}{21}}
-\headcommand {\beamer@sectionpages {15}{21}}
-\headcommand {\beamer@documentpages {21}}
-\headcommand {\gdef \inserttotalframenumber {21}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{22}{Couche IP}}
+\headcommand {\slideentry {3}{3}{1}{22/22}{Couche IP}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{3}{2}{23/23}{Couche IP}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{3}{3}{24/24}{Couche IP}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {3}{3}{4}{25/27}{Couche IP}{0}}
+\headcommand {\beamer@framepages {25}{27}}
+\headcommand {\slideentry {3}{3}{5}{28/28}{Couche IP}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\slideentry {3}{3}{6}{29/29}{Couche IP}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\beamer@subsectionpages {22}{29}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{30}{Couche TCP}}
+\headcommand {\slideentry {3}{4}{1}{30/30}{Couche TCP}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {3}{4}{2}{31/31}{Couche TCP}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {3}{4}{3}{32/32}{Couche TCP}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {3}{4}{4}{33/37}{Couche TCP}{0}}
+\headcommand {\beamer@framepages {33}{37}}
+\headcommand {\slideentry {3}{4}{5}{38/38}{Couche TCP}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\beamer@subsectionpages {30}{38}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{39}{Application}}
+\headcommand {\slideentry {3}{5}{1}{39/39}{Application}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {3}{5}{2}{40/40}{Application}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {3}{5}{3}{41/41}{Application}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\slideentry {3}{5}{4}{42/42}{Application}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\beamer@partpages {1}{42}}
+\headcommand {\beamer@subsectionpages {39}{42}}
+\headcommand {\beamer@sectionpages {15}{42}}
+\headcommand {\beamer@documentpages {42}}
+\headcommand {\gdef \inserttotalframenumber {36}}

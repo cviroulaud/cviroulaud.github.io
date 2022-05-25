@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  3 MAY 2022 23:08
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.5.30)  23 MAY 2022 14:43
  system commands enabled.
 **/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/architectures/principe-se/principe-se-slides-correction
 (/home/tof/Documents/Cozy/cviroulaud.github.io/premiere/architectures/principe-se/principe-se-slides-correction.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.109 seconds
+luaotfload | main : initialization completed in 0.132 seconds
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -1708,23 +1708,19 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
 Package rerunfilecheck Info: File `principe-se-slides-correction.out' has not changed.
 (rerunfilecheck)             Checksum: 6BE0628A05B81E309FF071A39322AFD0;304.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 )
 
 Here is how much of LuaTeX's memory you used:
- 44526 strings out of 494383
+ 44530 strings out of 494383
  100000,1373583 words of node,token memory allocated
  41516 words of node memory still in use:
    60 hlist, 8 vlist, 8 rule, 19 disc, 5 local_par, 4 math, 177 glue, 20 kern, 28 penalty, 4591 glyph, 2541 attribute, 106 glue_spec, 426 attribute_list, 4 write, 1 save_pos, 124 pdf_literal, 24 pdf_colorstack nodes
    avail lists: 1:3,2:1576,3:302,4:581,5:457,6:31,7:679,8:378,9:736,10:12,11:92,12:1
- 47125 multiletter control sequences out of 65536+600000
+ 47129 multiletter control sequences out of 65536+600000
  61 fonts using 8946327 bytes
  70i,15n,107p,1204b,1064s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on principe-se-slides-correction.pdf (17 pages, 50474 bytes).
+Output written on principe-se-slides-correction.pdf (17 pages, 50486 bytes).
 
 PDF statistics: 237 PDF objects out of 1000 (max. 8388607)
  190 compressed objects within 2 object streams

@@ -4,3 +4,6 @@
 \beamer@sectionintoc {3}{Le protocole TCP/IP}{15}{0}{3}
 \beamer@subsectionintoc {3}{1}{Présentation}{16}{0}{3}
 \beamer@subsectionintoc {3}{2}{Couche réseau}{17}{0}{3}
+\beamer@subsectionintoc {3}{3}{Couche IP}{22}{0}{3}
+\beamer@subsectionintoc {3}{4}{Couche TCP}{30}{0}{3}
+\beamer@subsectionintoc {3}{5}{Application}{39}{0}{3}

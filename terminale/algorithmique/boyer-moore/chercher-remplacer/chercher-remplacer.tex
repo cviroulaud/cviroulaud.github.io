@@ -1,7 +1,7 @@
 \documentclass[svgnames,11pt]{beamer}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_commun.tex}
 \input{/home/tof/Documents/Cozy/latex-include/preambule_beamer.tex}
-\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
+%\usepackage{pgfpages} \setbeameroption{show notes on second screen=left}
 \author[]{Christophe Viroulaud}
 \title{TP Chercher - remplacer}
 \date{\framebox{\textbf{Algo 28}}}
@@ -56,7 +56,7 @@
     \begin{center}
     \begin{lstlisting}[language=Python ,basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
 f = open("la-guerre-des-mondes-wells.txt", 
-        encoding="utf8")
+                    encoding="utf8")
 livre = f.read()
 f.close()
 print(len(livre))
@@ -67,7 +67,8 @@ print(len(livre))
 
  \begin{center}
     \begin{lstlisting}[language=Python , basicstyle=\ttfamily\small, xleftmargin=2em, xrightmargin=2em]
-with open("la-guerre-des-mondes-wells.txt", encoding="utf8") as f:
+with open("la-guerre-des-mondes-wells.txt", 
+                    encoding="utf8") as f:
     livre = f.read()
 print(len(livre))
 \end{lstlisting}

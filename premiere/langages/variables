@@ -1,4 +1,3 @@
-#DODO commencer cours sur le variables avec ça
 
 
 Mieux vaut, pour se faire une meilleure idée, éviter de dire qu'une variable contient quelque chose. Une variable désigne quelque chose. Si une boîte figure les emplacements de mémoire à mobiliser pour y inscrire un truc, la variable ne sera pas la boîte, ce sera juste l'étiquette que tu colleras / attacheras à la boîte.  Il peut y avoir plusieurs étiquettes attachées à une seule et même boîte (a=1 ; b=1 ; id(a)==id(b) --> True, idem avec c="s" ; d="s" ; id(c)==id(d)).
